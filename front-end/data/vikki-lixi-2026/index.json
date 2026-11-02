@@ -3,6 +3,7 @@
   "hasTopSpace": true,
   "hasBackground": true,
   "layout": "template",
+  "className": "vikki-lixi-2026",
   "components": [
     {
       "type": "topMenu",

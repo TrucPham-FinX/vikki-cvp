@@ -98,7 +98,45 @@ function loadLocaleData(pageName, locale) {
   return JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 }
 
+const KNOWN_BLOCK_TYPES = new Set([
+  'activation',
+  'imageSection',
+  'flex',
+  'qa',
+  'safePlusOverview',
+  'safePlusPlanDetails',
+  'slider',
+  'list',
+  'paragraph',
+  'subheading',
+  'table',
+  'title',
+  'tooltip',
+  'topMenu',
+  'video'
+]);
+
+function validateComponents(data, pageName, templateName) {
+  if (data && Array.isArray(data.components)) {
+    data.components.forEach((component, idx) => {
+      if (!component || typeof component !== 'object' || !component.type) {
+        throw new Error(
+          `[Build Error] Missing or invalid "type" for component at index ${idx} in page "${pageName}/${templateName}"`
+        );
+      }
+      if (!KNOWN_BLOCK_TYPES.has(component.type)) {
+        throw new Error(
+          `[Build Error] Unknown block type "${component.type}" at component index ${idx} in page "${pageName}/${templateName}". ` +
+          `Registered types are: ${Array.from(KNOWN_BLOCK_TYPES).join(', ')}`
+        );
+      }
+    });
+  }
+}
+
 function renderPage({ pageName, templateName, templatePath, data, outDir, outputName }) {
+  validateComponents(data, pageName, templateName);
+
   if(data.qaGroup) {
     prepareNumOrder(data.qaGroup)
   }
@@ -283,6 +321,7 @@ function buildPage(dir) {
 
     const data = loadData(pageName, templateName); // ⭐ HERE
 
+    validateComponents(data, pageName, templateName);
 
     if(data.qaGroup) {
       prepareNumOrder(data.qaGroup)

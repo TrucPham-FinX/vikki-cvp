@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cvp:action",
+  "title": "CVP Declarative Action Contract",
+  "description": "Standardized interaction action contract replacing inline JS in blocks and content",
+  "type": "object",
+  "required": ["type"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["popup", "scroll", "link", "openCard", "navigate", "openPromo"]
+    },
+    "target": {
+      "type": "string",
+      "description": "Target ID or selector (e.g. 'qa', '#intro', or document URL for popup/scroll)"
+    },
+    "title": {
+      "type": "string",
+      "description": "Optional modal or popup title"
+    },
+    "href": {
+      "type": "string",
+      "description": "Destination URL for link actions"
+    },
+    "screen": {
+      "type": "string",
+      "description": "Target mobile app screen identifier"
+    },
+    "campaignCode": {
+      "type": "string",
+      "description": "Optional campaign or referral code for navigation"
+    },
+    "actionType": {
+      "type": "string",
+      "enum": ["navigate-screen"],
+      "default": "navigate-screen"
+    },
+    "id": {
+      "type": "string",
+      "description": "Entity ID (e.g. promo ID for openPromo)"
+    }
+  }
+}

@@ -6,7 +6,7 @@
   {{> header}}
 </head>
 
-<body class="{{#if hasTopSpace}}hasTopSpace{{/if}} {{#if hasBackground}}hasBackground{{/if}}{{#if className}}{{className}}{{/if}}" id="body">
+<body class="{{#if hasTopSpace}}hasTopSpace{{/if}}{{#if hasBackground}} hasBackground{{/if}}{{#if className}} {{className}}{{/if}}" id="body">
   {{{body}}}
   {{#if components}}
     {{#each components}}

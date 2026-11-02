@@ -36,6 +36,8 @@
 <h2>Promotion Input Tool</h2>
 <input type="file" id="excelFile" accept=".xlsx, .xls" />
 <button onclick="handleImport()">Import Excel</button>
+<button onclick="copyJSON()">Copy JSON</button>
+<button onclick="downloadJSON()">Download JSON</button>
 <br><br>
 
 <div class="preview">
@@ -44,12 +46,29 @@
 </div>
 
 <h3>Output JSON</h3>
-<textarea id="output" class="ouputJson"></textarea>
+<textarea id="output" class="ouputJson" placeholder="Output JSON will appear here..."></textarea>
 
 <script>
 let imageName = "";
-//handle excel file
 let promotionList = [];
+
+function normalizePromoId(rawId) {
+  if (!rawId) return "";
+  const str = String(rawId).trim();
+  const match = str.match(/^(?:promo-)?(\d+)$/i);
+  if (match) {
+    return `promo-${match[1].padStart(3, "0")}`;
+  }
+  return str.startsWith("promo-") ? str : `promo-${str}`;
+}
+
+function normalizeThumbnail(rawImage, promoId) {
+  const img = (rawImage || promoId || "default.png").trim();
+  if (/\.(png|jpe?g|webp|svg)$/i.test(img)) {
+    return `./assets/${img}`;
+  }
+  return `./assets/${img}.png`;
+}
 
 function handleImport() {
   const fileInput = document.getElementById("excelFile");
@@ -64,48 +83,54 @@ function handleImport() {
 
   reader.onload = function (e) {
     const data = new Uint8Array(e.target.result);
-
     const workbook = XLSX.read(data, { type: "array" });
     const sheet = workbook.Sheets[workbook.SheetNames[0]];
-
     const rows = XLSX.utils.sheet_to_json(sheet);
 
     promotionList = []; // reset
 
     rows.forEach((row, index) => {
-      const longHTML = convertToHTML(row.longContent || "");
+      // Find row keys trimmed
+      const getVal = (key) => {
+        for (const k of Object.keys(row)) {
+          if (k.trim().toLowerCase() === key.toLowerCase()) return row[k];
+        }
+        return "";
+      };
+
+      const title = getVal("title") || row.title || "";
+      const shortContent = getVal("shortContent") || row.shortContent || "";
+      const longContent = getVal("longContent") || row.longContent || "";
+      const rawImage = getVal("image") || row.image || "";
+      const timeVal = getVal("time") || row.time || "";
+      const cardType = getVal("cardType") || row.cardType || "";
+      const code = getVal("code") || row.code || "";
+
+      const promoId = normalizePromoId(rawImage || `promo-${index + 1}`);
+      const longHTML = convertToHTML(longContent);
 
       const item = {
-        id: row.image,
+        id: promoId,
         promotionGroup: "HDB",
-        promotionCate: row.cardType || "",
-        promotionCode: row.code || "",
-
-        name: row.title || "",
-
-        thumbnail: `./assets/${row.image || "default.png"}`+".png",
-
-        shortDesc: (row.shortContent || "").replace(/(\d+%)/g, "<strong>$1</strong>"),
-
+        promotionCate: cardType ? cardType.replace(/\s+/g, "") : "",
+        promotionCode: code || "",
+        name: title,
+        thumbnail: normalizeThumbnail(rawImage, promoId),
+        shortDesc: formatBold(shortContent),
         longDesc: longHTML,
-
         startDate: row.startDate || new Date().toISOString(),
         endDate: row.endDate || new Date().toISOString(),
-
         createdDate: new Date().toISOString(),
         updatedDate: new Date().toISOString(),
-
         isHotDeal: false,
-
-        extraData: row.time
+        extraData: timeVal
       };
 
       promotionList.push(item);
     });
 
     // 👉 show JSON
-    document.getElementById("output").value =
-      JSON.stringify(promotionList, null, 2);
+    document.getElementById("output").value = JSON.stringify(promotionList, null, 2);
 
     // 👉 render preview
     renderPreviewList(promotionList);
@@ -113,19 +138,26 @@ function handleImport() {
 
   reader.readAsArrayBuffer(file);
 }
-// upload image
-document.getElementById("imageInput").addEventListener("change", function(e) {
-  const file = e.target.files[0];
-  if (file) {
-    imageName = file.name; // 👉 chỉ lấy tên file
-  }
-});
-function formatBold(text) {
-  return text.replace(/(\d+%)/g, "<strong>$1</strong>");
+
+// upload image safely guarded
+const imageInputEl = document.getElementById("imageInput");
+if (imageInputEl) {
+  imageInputEl.addEventListener("change", function(e) {
+    const file = e.target.files[0];
+    if (file) {
+      imageName = file.name;
+    }
+  });
 }
+
+function formatBold(text) {
+  return String(text || "").replace(/(\d+%)/g, "<strong>$1</strong>");
+}
+
 // convert text -> html
 function convertToHTML(text) {
-  const lines = text.split("\n");
+  if (!text) return "";
+  const lines = String(text).split("\n");
   let html = "";
   let inList = false;
 
@@ -153,91 +185,49 @@ function convertToHTML(text) {
   if (inList) html += "</ul>";
   return html;
 }
-function formatExtraTime(start, end) {
-  if (!start || !end) return "";
 
-  const s = new Date(start).toLocaleDateString("vi-VN");
-  const e = new Date(end).toLocaleDateString("vi-VN");
-
-  return `Thời gian: Từ ${s} - ${e}`;
-}
 function renderPreviewList(list) {
   const container = document.getElementById("listPreview");
-
   container.innerHTML = list.map(item => `
     <div style="border:1px solid #ccc; padding:10px; margin-bottom:10px">
-      <h4>${item.name}</h4>
-      <p><b>${item.promotionCode}</b></p>
+      <h4>${item.name} (${item.id})</h4>
+      <p><b>${item.promotionCode}</b> | <i>${item.promotionCate}</i></p>
       <p>${item.shortDesc}</p>
-
       <div>${item.longDesc}</div>
-
       <p><i>${item.extraData}</i></p>
-
     </div>
   `).join("");
-}
-function generate() {
-  const longText = document.getElementById("longContent").value;
-  const longHTML = convertToHTML(longText);
-
-  const now = new Date().toISOString();
-
-  const data = {
-    id: imageName,
-    promotionGroup: "HDB",
-    promotionCate: document.getElementById("cardType").value.toUpperCase(),
-    promotionCode: "AUTO" + Math.floor(Math.random() * 100),
-
-    name: document.getElementById("title").value,
-
-    thumbnail: imageName ? `./assets/${imageName}` : "./assets/default.png",
-
-    shortDesc: formatBold(document.getElementById("shortContent").value),
-
-    longDesc: longHTML,
-
-    startDate: new Date().toISOString(),
-    endDate: new Date().toISOString(),
-
-    createdDate: now,
-    updatedDate: now,
-
-    isHotDeal: false,
-
-    extraData: document.getElementById("time").value
-  };
-
-//   document.getElementById("preview").innerHTML = `
-//     <h4>${data.name}</h4>
-//     <p>${data.shortDesc}</p>
-//     ${data.longDesc}
-//     ${data.thumbnail ? `<img src="${data.thumbnail}" />` : ""}
-//   `;
-
-  document.getElementById("output").value =
-    JSON.stringify(data, null, 2);
 }
 
 // copy
 function copyJSON() {
   const output = document.getElementById("output");
+  if (!output.value) {
+    alert("Không có nội dung JSON để sao chép!");
+    return;
+  }
   output.select();
-  document.execCommand("copy");
-  alert("Copied!");
+  navigator.clipboard.writeText(output.value).then(() => {
+    alert("Đã sao chép JSON vào clipboard!");
+  }).catch(() => {
+    document.execCommand("copy");
+    alert("Đã sao chép JSON!");
+  });
 }
 
 // download file
 function downloadJSON() {
   const dataStr = document.getElementById("output").value;
+  if (!dataStr) {
+    alert("Không có nội dung JSON để tải!");
+    return;
+  }
   const blob = new Blob([dataStr], { type: "application/json" });
-
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "promotion.json";
+  a.download = "promotion-list.json";
   a.click();
-
   URL.revokeObjectURL(url);
 }
 </script>

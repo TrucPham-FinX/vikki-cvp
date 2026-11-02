@@ -163,16 +163,73 @@ function validateAllData({ warnOnly = false } = {}) {
       }
     }
 
+    lintContent(relPath, data);
+
     if (!results.errors.some((e) => e.file === relPath)) {
       results.validFiles++;
     }
   }
 
+  const idMap = new Map();
+  const lintResults = {
+    duplicateIds: [],
+    hardcodedEnvUrls: [],
+    brokenAssets: []
+  };
+
+  const ENV_URL_REGEX = /(?:https?:)?\/\/[a-zA-Z0-9.-]*(?:sit|uat)[a-zA-Z0-9.-]*(?:\.galaxyfinx\.cloud|\.vikkibank\.vn)/i;
+
+  function lintContent(relPath, obj) {
+    if (!obj || typeof obj !== 'object') return;
+
+    if (obj.id && typeof obj.id === 'string') {
+      const existing = idMap.get(obj.id) || [];
+      existing.push(relPath);
+      idMap.set(obj.id, existing);
+    }
+
+    function scanStrings(val, currentPath = '') {
+      if (typeof val === 'string') {
+        if (ENV_URL_REGEX.test(val)) {
+          const match = val.match(ENV_URL_REGEX);
+          lintResults.hardcodedEnvUrls.push({
+            file: relPath,
+            path: currentPath,
+            url: match[0],
+            message: `Hardcoded environment host found: "${match[0]}". Use $ref or {{env.cdnHost}} instead.`
+          });
+        }
+      } else if (Array.isArray(val)) {
+        val.forEach((item, idx) => scanStrings(item, `${currentPath}[${idx}]`));
+      } else if (val && typeof val === 'object') {
+        for (const [k, v] of Object.entries(val)) {
+          scanStrings(v, currentPath ? `${currentPath}.${k}` : k);
+        }
+      }
+    }
+
+    scanStrings(obj);
+  }
+
   walk(dataDir);
+
+  // Check duplicate IDs
+  for (const [id, files] of idMap.entries()) {
+    if (files.length > 1) {
+      lintResults.duplicateIds.push({
+        id,
+        files,
+        message: `Duplicate ID "${id}" detected across multiple files: ${files.join(', ')}`
+      });
+    }
+  }
+
+  results.lint = lintResults;
   return results;
 }
 
 if (require.main === module) {
+  const isLintMode = process.argv.includes('--lint');
   console.log('🔍 Validating all CVP content against schemas & block contracts...\n');
   const results = validateAllData({ warnOnly: true });
 
@@ -197,6 +254,27 @@ if (require.main === module) {
     results.warnings.slice(0, 10).forEach((w) => {
       console.log(`  - ${w.file} ${w.path}: ${w.message}`);
     });
+  }
+
+  if (isLintMode && results.lint) {
+    console.log('\n🧹 Content Linting Report (R10):');
+    if (results.lint.duplicateIds.length > 0) {
+      console.log(`\n  ⚠️  Duplicate IDs (${results.lint.duplicateIds.length}):`);
+      results.lint.duplicateIds.forEach((dup) => {
+        console.log(`    - ID "${dup.id}": ${dup.files.join(' <-> ')}`);
+      });
+    } else {
+      console.log('  ✅ No duplicate IDs found.');
+    }
+
+    if (results.lint.hardcodedEnvUrls.length > 0) {
+      console.log(`\n  ⚠️  Hardcoded Environment URLs (${results.lint.hardcodedEnvUrls.length}):`);
+      results.lint.hardcodedEnvUrls.forEach((h) => {
+        console.log(`    - ${h.file} (${h.path}): ${h.url}`);
+      });
+    } else {
+      console.log('  ✅ No hardcoded environment URLs found.');
+    }
   }
 
   console.log('\nValidation complete.');
