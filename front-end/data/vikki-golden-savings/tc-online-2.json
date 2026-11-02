@@ -1,0 +1,2342 @@
+{
+  "id": "vikki-golden-savings-online-tnc-2",
+  "version": "1.0.0",
+  "layout": "static",
+  "header": {
+    "img": "assets/logo-vikki.png",
+    "h1": "ĐIỀU KHOẢN, ĐIỀU KIỆN VỀ MỞ, SỬ DỤNG TIỀN GỬI TIẾT KIỆM TRỰC TUYẾN VIKKI VÀ THỂ LỆ CHƯƠNG TRÌNH KHUYẾN MẠI"
+  },
+  "sections": [
+    {
+      "id": "giai-thich-tu-ngu",
+      "title": "Điều 1. Giải thích từ ngữ",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "dinh-nghia",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "numeric",
+              "items": [
+                {
+                  "text": "Vikki Digital Bank: là Ngân hàng Trách nhiệm Hữu hạn Một thành viên Số Vikki (gọi tắt là “Ngân hàng”)."
+                },
+                {
+                  "text": "Khách hàng (gọi tắt là KH): là khách hàng cá nhân đủ điều kiện gửi tiết kiệm và được Vikki Digital Bank chấp thuận cung cấp sản phẩm “Tiền gửi tiết kiệm trực tuyến Vikki” bằng việc thực hiện giao dịch qua ứng dụng Vikki và trở thành Chủ sở hữu khoản tiền gửi “Tiền gửi tiết kiệm trực tuyến Vikki”."
+                },
+                {
+                  "text": "Tài khoản thanh toán trực tuyến Vikki (gọi tắt là “TKTT trực tuyến Vikki”): là tài khoản thanh toán Vikki Digital Bank được mở bằng phương thức điện tử và áp dụng định danh trực tuyến (eKYC) đối với Khách hàng thực hiện trên ứng dụng Vikki. Theo đó, Khách hàng được xác thực và định danh trên các phương tiện điện tử tại thời điểm mở Tài khoản mà không cần phải đến điểm giao dịch của Vikki Digital Bank."
+                },
+                {
+                  "text": "Tiền gửi tiết kiệm: là khoản tiền được KH gửi tại Vikki Digital Bank theo nguyên tắc được hoàn trả đầy đủ gốc, lãi theo thỏa thuận với Vikki Digital Bank."
+                },
+                {
+                  "text": "Tiền gửi Tiết kiệm trực tuyến Vikki (gọi tắt là “TG Tiết kiệm trực tuyến Vikki”): là một sản phẩm tiền gửi tiết kiệm bằng đồng Việt Nam, theo đó KH có thể trích tiền từ TKTT trực tuyến Vikki của KH để gửi tiết kiệm bằng phương tiện điện tử tại Vikki Digital Bank thông qua ứng dụng Vikki và được hưởng lãi theo thỏa thuận với Vikki Digital Bank."
+                },
+                {
+                  "text": "Ứng dụng Vikki: là ứng dụng trên thiết bị di động của Vikki Digital Bank, cho phép khách hàng sử dụng các dịch vụ Mobile Banking của Vikki Digital Bank theo quy định của Vikki Digital Bank từng thời kỳ."
+                },
+                {
+                  "text": "Dịch vụ TG Tiết kiệm trực tuyến (Dịch vụ): là một hoặc một số dịch vụ do KH đăng ký và được Vikki Digital Bank chấp thuận cung cấp, bao gồm dịch vụ gửi (mở)/rút (tất toán) một phần hoặc toàn bộ TG Tiết kiệm trực tuyến Vikki hoặc các dịch vụ khác được Vikki Digital Bank triển khai theo từng thời kỳ."
+                },
+                {
+                  "text": "Giao dịch TKTT trực tuyến Vikki: là các giao dịch được thực hiện bởi KH trên TKTT trực tuyến Vikki của KH theo các dịch vụ mà KH đăng ký và được Vikki Digital Bank chấp thuận cung cấp."
+                },
+                {
+                  "text": "Ngày gửi tiền TG tiết kiệm trực tuyến Vikki: là ngày KH thực hiện giao dịch trích tiền từ TKTT trực tuyến Vikki của KH mở qua ứng dụng Vikki để gửi tiết kiệm trực tuyến."
+                },
+                {
+                  "text": "Ngày giá trị: là ngày KH gửi TG Tiết kiệm trực tuyến Vikki và Vikki Digital Bank bắt đầu tính lãi theo thỏa thuận. Ngày giá trị sẽ được tính từ thời điểm KH gửi tiền và bắt đầu được tính lãi. Trường hợp thời điểm KH gửi TG Tiết kiệm trực tuyến Vikki trùng hoặc sau thời điểm hệ thống Vikki khóa ngày làm việc, khi đó hệ thống Vikki sẽ thông báo cho KH Ngày giá trị để bắt đầu tính lãi là ngày tiếp theo của ngày gửi TG Tiết kiệm trực tuyến Vikki sau khi KH hoàn tất giao dịch trên ứng dụng Vikki."
+                },
+                {
+                  "text": "Ngày đến hạn: là ngày trả vốn gốc và lãi tiền gửi."
+                },
+                {
+                  "text": "Số ngày tính lãi: là số ngày gửi thực tế được tính từ Ngày giá trị đến ngày đến hạn/ ngày KH thực hiện tất toán TG Tiết kiệm trực tuyến Vikki (theo nguyên tắc tính ngày đầu, bỏ ngày cuối)."
+                },
+                {
+                  "text": "Thời hạn gửi tiền: là khoảng thời gian từ ngày giá trị đến ngày đến hạn của TG Tiết kiệm trực tuyến Vikki."
+                },
+                {
+                  "text": "Kỳ hạn gửi tiền: là thời hạn gửi tiền được xác định cụ thể, theo thỏa thuận giữa Vikki Digital Bank với KH."
+                },
+                {
+                  "text": "Kéo dài thời hạn gửi tiền: Vào ngày đến hạn của khoản tiền gửi tiết kiệm, nếu KH không thực hiện giao dịch tất toán và không có yêu cầu hoặc thỏa thuận khác thì Vikki Digital Bank sẽ tự động kéo dài thêm một kỳ hạn mới theo quy định của Vikki Digital Bank về hình thức TG Tiết kiệm trực tuyến Vikki nếu tại thời điểm đến hạn, Vikki Digital Bank còn triển khai sản phẩm và KH đáp ứng điều kiện gửi tiền."
+                },
+                {
+                  "text": "Điều khoản và Điều kiện về mở và sử dụng tiền gửi tiết kiệm trực tuyến Vikki (gọi tắt là Điều khoản và Điều kiện”): là điều khoản và điều kiện của sản phẩm Tiền gửi tiết kiệm trực tuyến Vikki, bao gồm các văn bản sửa đổi, bổ sung thay thế trong từng thời kỳ."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quy-dinh-tien-gui",
+      "title": "Điều 2. Quy định về Tiền gửi Tiết kiệm trực tuyến Vikki",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "gui-tien",
+          "title": "1. Gửi tiền TG Tiết kiệm trực tuyến Vikki:",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.1</span> KH phải tuân theo các quy định của pháp luật, quy định của Vikki Digital Bank về việc gửi TG Tiết kiệm trực tuyến Vikki và cung cấp thông tin, tài liệu đầy đủ, chính xác, theo yêu cầu của Vikki Digital Bank và chịu mọi trách nhiệm về các thông tin, tài liệu mà KH cung cấp cho Ngân hàng."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.2</span> KH chỉ có thể gửi TG Tiết kiệm trực tuyến Vikki thông qua ứng dụng Vikki."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.3</span> Tài khoản “TG Tiết kiệm trực tuyến Vikki” sẽ được mở ngay tại thời điểm KH hoàn tất các bước đăng ký mở và chấp thuận theo các điều khoản, điều kiện Tiết kiệm trực tuyến Vikki tại Vikki Digital Bank."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.4</span> Sau khi KH hoàn tất thủ tục để gửi TG Tiết kiệm trực tuyến Vikki theo quy định, Vikki Digital Bank sẽ gửi thông báo về việc mở TG Tiết kiệm trực tuyến thành công qua ứng dụng Vikki cho KH."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.5</span> KH có thể theo dõi, tra cứu, tìm kiếm các thông tin về TG Tiết kiệm trực tuyến Vikki (số lượng TG Tiết kiệm trực tuyến Vikki, số tiền gửi, ngày gửi, ngày đến hạn, lãi suất, kỳ hạn,…) thông qua ứng dụng Vikki."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.6</span> KH không được gửi thêm tiền vào TG Tiết kiệm trực tuyến Vikki đã mở trừ trường hợp Vikk Bank có quy định khác."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.7</span> Việc cầm cố, sử dụng TG Tiết kiệm trực tuyến Vikki để làm tài sản bảo đảm cho nghĩa vụ của KH tại Vikki Digital Bank hoặc tại bất kỳ bên thứ ba nào sẽ được Vikki Digital Bank thông báo và triển khai theo từng thời kỳ."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.8</span> KH lưu ý rằng KH không được chuyển quyền sở hữu hoặc ủy quyền giao dịch đối với TG Tiết kiệm trực tuyến Vikki đã mở trừ trường hợp quy định tại điểm 1.9 Khoản 1 Điều này."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.9</span> Trường hợp KH chết hoặc bị hạn chế/mất năng lực hành vi dân sự, TG Tiết kiệm trực tuyến Vikki sẽ được xử lý theo các quy định tương ứng về tiền gửi tiết kiệm hiện hành của Vikki Digital Bank và theo các phương thức được Vikki Digital Bank triển khai trong từng thời kỳ."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.10</span>Trừ trường hợp có thỏa thuận khác về việc thông báo khi có thay đổi đối với khoản tiền gửi tiết kiệm, Vikki Digital Bank sẽ thông báo cho người gửi tiền theo các hình thức: thông báo bằng văn bản tới địa chỉ cư trú hoặc thông báo qua tin nhắn SMS với số điện thoại mà KH đăng ký với Vikki Digital Bank, hoặc các hình thức khác phù hợp theo quy định Vikki Digital Bank từng thời kỳ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "tat-toan",
+          "title": "2. Tất toán TG Tiết kiệm trực tuyến Vikki",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.1</span> KH có thể tất toán TG Tiết kiệm trực tuyến Vikki thông qua ứng dụng Vikki."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.2</span> Tất toán trước hạn:",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "KH được quyền tất toán TG Tiết kiệm trực tuyến Vikki trước hạn."
+                      },
+                      {
+                        "text": "Số tiền rút trước hạn được áp dụng mức lãi suất không kỳ hạn thấp nhất của Vikki Digital Bank tại thời điểm rút trước hạn tính theo số ngày thực gửi từ ngày giá trị đến ngày tất toán TG Tiết kiệm trực tuyến Vikki."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.3</span> Rút một phần vốn trước hạn:",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "KH được phép rút 1 phần vốn trước hạn trên ứng dụng Vikki hoặc theo quy định sản phẩm của từng thời kỳ."
+                      },
+                      {
+                        "text": "Đối với khoản TG Tiết kiệm nhận lãi đầu kỳ không được rút một phần vốn trước hạn."
+                      },
+                      {
+                        "text": "Số tiền tối thiểu áp dụng rút 1 phần vốn trước hạn của 01 khoản TG Tiết kiệm trực tuyến Vikki là 1.000.000 VND (Bằng chữ: Một triệu đồng), không giới hạn số lần rút 1 phần vốn trước hạn."
+                      },
+                      {
+                        "text": "Số tiền còn lại sau khi rút một phần vốn trước hạn phải lớn hơn hoặc bằng 1.000.000 VND (Bằng chữ: Một triệu đồng)."
+                      },
+                      {
+                        "text": "Số tiền rút trước hạn được áp dụng mức lãi suất không kỳ hạn thấp nhất của Vikki Digital Bank tại thời điểm rút trước hạn tính theo số ngày thực gửi từ Ngày giá trị đến ngày rút trước hạn TG Tiết kiệm trực tuyến Vikki."
+                      },
+                      {
+                        "text": "Đối với số tiền còn lại tiếp tục được duy trì và áp dụng mức lãi suất đang áp dụng đối với khoản tiền gửi theo như đã thoả thuận giữa Vikki Digital Bank với khách hàng."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.4</span> Đối với các khoản tiền gửi nhận lãi đầu kỳ hoặc nhận lãi định kỳ (tháng, quý) rút một phần vốn hoặc tất toán trước hạn: phần chênh lệch giữa số tiền lãi khách hàng thực sự được hưởng vào thời điểm rút và số tiền lãi khách hàng đã lãnh (lãi trả đầu kỳ/ lãi hàng tháng/lãi hàng quý) trước đó sẽ được thu hồi lại."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.5</span> Trường hợp Vikki Digital Bank phải thực hiện tất toán trước hạn TG Tiết kiệm trực tuyến Vikki của KH theo: (i) các cam kết/thỏa thuận giữa KH với Vikki Digital Bank trong trường hợp KH sử dụng TG Tiết kiệm trực tuyến Vikki làm tài sản bảo đảm cho nghĩa vụ tại Vikki Digital Bank hoặc tại bất kỳ bên thứ ba nào; và/hoặc (ii) theo các quyết định của Cơ quan có thẩm quyền; mức lãi suất áp dụng trong các trường hợp này cũng áp dụng tương tự trường hợp KH tất toán TG Tiết kiệm trực tuyến Vikki trước hạn."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dac-diem",
+          "title": "3. Đặc điểm TG Tiết kiệm trực tuyến Vikki:",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.1</span> Đồng tiền nhận và chi trả tiền gửi tiết kiệm: Đồng Việt Nam (VND)"
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.2</span> Số tiền gửi tối thiểu, tối đa TG Tiết kiệm trực tuyến Vikki:",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Tối thiểu: 1.000.000 VND (Một triệu đồng)."
+                      },
+                      {
+                        "text": "Tối đa: không giới hạn."
+                      },
+                      {
+                        "text": "Tại một thời điểm, Khách hàng có thể gửi nhiều TG Tiết kiệm trực tuyến Vikki trên ứng dụng Vikki."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.3</span> Thời hạn gửi tiền: Kỳ hạn gửi tiền của TG Tiết kiệm trực tuyến Vikki sẽ được Vikki Digital Bank triển khai từng thời kỳ."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.4</span> Lãi suất và cơ sở tính lãi",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Lãi suất của sản phẩm TG Tiết kiệm trực tuyến Vikki do Vikki Digital Bank quy định từng thời kỳ và được cố định trong suốt kỳ hạn gửi tiền."
+                      },
+                      {
+                        "text": "Cơ sở tính lãi: một năm có 365 ngày."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.5</span> Phương thức tính lãi",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Tiền lãi KH được trả vào ngày đến hạn và được tính theo công thức:",
+                        "children": {
+                          "type": "list",
+                          "style": "no-list-style formula-list",
+                          "items": [
+                            {
+                              "text": "<span>Tiền lãi KH<br>được nhận<br>vào ngày đến<br>hạn</span><span>=</span><span>Số dư TG<br>Tiết kiệm<br>trực tuyến<br>Vikki</span><span>x</span><span>Lãi suất<br>(%/năm)</span><span>x</span><span>Số<br>ngày<br>tính lãi</span><span>/</span><span>365</span>"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Trường hợp KH tất toán trước hạn: Khách hàng được hưởng lãi suất không kỳ hạn (KKH) thấp nhất tại thời điểm rút vốn tính theo số ngày thực gửi thực tế theo công thức sau:",
+                        "children": {
+                          "type": "list",
+                          "style": "no-list-style formula-list",
+                          "items": [
+                            {
+                              "text": "<span>Tiền lãi KH<br>được nhận</span><span>=</span><span>Số tiền<br>rút</span><span>x</span><span>Lãi suất KKH<br>thấp nhất tại<br>thời điểm rút<br>(%/năm)</span><span>x</span><span>Số<br>ngày<br>tính lãi</span><span>/</span><span>365</span>"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">3.6</span> Phương thức tái tục",
+                  "children": {
+                    "type": "list",
+                    "style": "no-list-style decimal-inline-list sub-decimal-list",
+                    "items": [
+                      {
+                        "text": "<span class=\"legal-decimal-marker\">3.6.1</span> Khi đăng ký mở TG Tiết kiệm trực tuyến Vikki, KH có thể lựa chọn một trong ba phương thức tái tục sau đây:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Tự động tái tục vốn và lãi: tiền lãi KH được hưởng sẽ được nhập vào vốn gốc khi đến hạn TG Tiết kiệm trực tuyến Vikki và tự động gia hạn thêm một kỳ hạn mới theo lãi suất áp dụng tại thời điểm gia hạn nếu KH không có giao dịch khác."
+                            },
+                            {
+                              "text": "Tự động tái tục vốn, lãi chuyển vào TKTT trực tuyến Vikki: tiền lãi được tính và tự động chuyển vào TKTT trực tuyến Vikki, vốn gốc được gia hạn thêm một kỳ hạn mới theo lãi suất áp dụng tại thời điểm gia hạn nếu KH không có giao dịch gì khác."
+                            },
+                            {
+                              "text": "Tự động tất toán: khi đến hạn TG Tiết kiệm trực tuyến Vikki, tiền lãi KH được hưởng cùng với vốn gốc được tự động chuyển vào TKTT trực tuyến Vikki."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<span class=\"legal-decimal-marker\">3.6.2</span> KH lưu ý rằng đối với phương thức “tự động tái tục vốn và lãi” và “tự động tái tục vốn, lãi chuyển vào TKTT trực tuyến Vikki” nhưng đến ngày đến hạn, nếu Vikki Digital Bank ngừng triển khai kỳ hạn gửi tiền tương ứng hoặc ngừng triển khai sản phẩm TG Tiết kiệm trực tuyến Vikki hoặc KH không còn thuộc đối tượng được gửi tiết kiệm bằng phương tiện điện tử, thì Vikki Digital Bank sẽ chuyển toàn bộ tiền gốc và lãi KH được hưởng vào TKTT trực tuyến Vikki của KH tại Vikki Digital Bank:"
+                      },
+                      {
+                        "text": "<span class=\"legal-decimal-marker\">3.6.3</span> Vikki Digital Bank không giới hạn số lần tái tục theo phương thức tái tục KH đã chọn khi mở TG Tiết kiệm trực tuyến Vikki trừ trường hợp Vikki Digital Bank có quy định khác."
+                      },
+                      {
+                        "text": "<span class=\"legal-decimal-marker\">3.6.4</span> Thời gian giao dịch: KH có thể thực hiện các giao dịch liên quan đến TG Tiết kiệm trực tuyến Vikki bất kỳ thời gian nào (24/7) trên ứng dụng Vikki."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "the-le-chuong-trinh-khuyen-mai",
+      "title": "Điều 3. Thể lệ chương trình khuyến mại",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "the-le-phu-luc",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "(Chi tiết theo Phụ lục đính kèm)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quyen-nghia-vu-khach-hang",
+      "title": "Điều 4. Quyền và Nghĩa vụ của KH",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "quyen-kh",
+          "title": "1. Quyền của KH:",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.1</span> Được gửi tiền, tất toán, rút một phần vốn TG Tiết kiệm trực tuyến Vikki, hưởng lãi theo đúng quy định Vikki Digital Bank."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.2</span> Các quyền khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của Vikki Digital Bank và quy định pháp luật."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "nghia-vu-kh",
+          "title": "2. Trách nhiệm của KH:",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.1</span> Tuân thủ các quy định của Điều khoản và Điều kiện này, quy định của Vikki Digital Bank về việc gửi và sử dụng TG Tiết kiệm trực tuyến Vikki."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.2</span> Kiểm tra và thanh toán đầy đủ các khoản phí liên quan đến việc sử dụng dịch vụ theo biểu phí được Vikki Digital Bank quy định theo từng thời kỳ."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.3</span> Khi Khách hàng có nhu cầu khiếu nại, tra soát các thông tin về TG Tiết kiệm trực tuyến Vikki mở tại Vikki Digital Bank, Khách hàng có thể liên hệ đến bộ phận Dịch vụ Khách hàng Vikki Care hoặc theo đường dây nóng 19006608 hoặc qua kênh ứng dụng Vikki trong vòng 07 ngày làm việc kể từ ngày KH nhận được thông báo giao dịch hoặc kể từ ngày quyền và lợi ích của KH bị vi phạm. KH phải chịu phí khiếu nại theo quy định của Vikki Digital Bank. KH lưu ý rằng nếu KH khiếu nại quá thời hạn trên, Vikki Digital Bank sẽ không phải chịu bất kỳ trách nhiệm nào phát sinh."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.4</span> Đã đọc, hiểu và cam kết thực hiện đúng và đầy đủ theo các quy định tại Điều khoản và Điều kiện này. KH phải chịu trách nhiệm thanh toán tất cả các giao dịch được thực hiện có sử dụng chữ ký điện tử của KH mà không được hủy, phủ nhận, từ chối, thay đổi, thoái thác giao dịch với bất kỳ lý do nào; cam kết chịu mọi rủi ro liên quan đến giao dịch đã được thực hiện với Vikki Digital Bank."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.5</span> KH nhận thức đầy đủ các rủi ro có thể gặp phải khi sử dụng Dịch vụ, cam kết các hoạt động diễn ra do chứng từ điện tử có sử dụng chữ ký điện tử của mình lập phù hợp với quy định và chịu trách nhiệm về những thiệt hại xảy ra do vô tình hay cố ý để lộ chữ ký điện tử hay bất kỳ thông tin bảo mật nào dẫn đến bị kẻ gian lợi dụng."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.6</span> KH đồng ý từ bỏ quyền khiếu nại, khiếu kiện khi dịch vụ cung cấp bị gián đoạn do sự kiện bất khả kháng hoặc do lỗi của bên thứ ba cung ứng dịch vụ đường truyền, lỗi hệ thống, lỗi mạng, virus."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.7</span> Chịu mọi trách nhiệm về những sai sót hay hành vi lợi dụng, lừa đảo hoặc bị lợi dụng, lừa đảo khi sử dụng dịch vụ do lỗi của chính KH hoặc do KH không cung cấp đúng, đầy đủ, chính xác, kịp thời khi có thay đổi thông tin; cam kết chịu mọi rủi ro bao gồm cả thiệt hại về tài chính, chi phí phát sinh do thông tin KH cung cấp sai hoặc không thống nhất."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.8</span> Các nghĩa vụ khác theo quy định của Điều khoản và Điều kiện này và các quy định có liên quan của Pháp luật."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quyen-nghia-vu-vikki",
+      "title": "Điều 5. Quyền và Nghĩa vụ của Vikki Digital Bank",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "quyen-vikki",
+          "title": "1. Quyền của Vikki Digital Bank",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.1</span> Được quyền tự động trích nợ tài khoản TG Tiết kiệm trực tuyến Vikki của KH để (i) Thanh toán các khoản lãi, phí, chi phí phát sinh trong quá trình quản lý TG Tiết kiệm trực tuyến Vikki; (ii) Thực hiện các nghĩa vụ tài chính theo quyết định của cơ quan nhà nước có thẩm quyền yêu cầu KH phải thực hiện nghĩa vụ; (iii) Xử lý các khoản giao dịch rút thừa, rút quá số dư, các khoản tiền ghi có nhầm, thừa vào TKTT trực tuyến Vikki (nếu có); (iv) xử lý các nghĩa vụ của KH theo các cam kết/thỏa thuận đã xác lập tại Vikki Digital Bank; (v) xử lý các trường hợp khác theo thỏa thuận giữa Vikki Digital Bank và KH hoặc theo quy định của pháp luật;"
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.2</span> Được quyền tự động trích số dư TG Tiết kiệm trực tuyến Vikki là tài sản bảo đảm hoặc trong trường hợp KH có nghĩa vụ nợ với Vikki Digital Bank, để thực hiện nghĩa vụ trả nợ trong trường hợp đến hạn nghĩa vụ trả nợ mà không được KH và/hoặc các bên có liên quan thực hiện theo đúng thỏa thuận với Vikki Digital Bank."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.3</span> Phong tỏa, đóng, chuyển đổi hoặc tất toán hoặc rút một phần vốn TG Tiết kiệm trực tuyến Vikki theo quy định của pháp luật và của Vikki Digital Bank."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.4</span> Chấm dứt cung cấp Dịch vụ cho KH do vi phạm các quy định về sử dụng TG Tiết kiệm trực tuyến Vikki theo quy định của Điều khoản và Điều kiện này, các nội dung đã thỏa thuận hoặc đã có quy định."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.5</span> Được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin, điện, lỗi hệ thống, lỗi mạng, virus… bị trục trặc, lỗi do bên thứ ba cung ứng dịch vụ hoặc vì bất kỳ lý do gì ngoài khả năng kiểm soát của Vikki Digital Bank hoặc trong trường hợp vì lý do để bảo đảm an toàn và hạn chế rủi ro cho KH, Vikki Digital Bank không thực hiện hoặc chậm trễ trong việc thực hiện các thỏa thuận tại Điều khoản và Điều kiện này."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.6</span>Trong trường hợp phát hiện KH vi phạm các quy định hiện hành hoặc thỏa thuận đã có với ngân hàng, có dấu hiệu vi phạm pháp luật, Vikki Digital Bank có quyền không thực hiện các yêu cầu sử dụng dịch vụ của KH, giữ lại tang vật và thông báo ngay với cấp/cơ quan có thẩm quyền xem xét và xử lý."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">1.7</span> Các quyền khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của pháp luật."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trach-nhiem-vikki",
+          "title": "2. Trách nhiệm của Vikki Digital Bank",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "no-list-style decimal-inline-list",
+              "items": [
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.1</span> Đảm bảo cung cấp dịch vụ cho KH đúng theo thỏa thuận tại Điều khoản và Điều kiện này. Giải quyết các yêu cầu tra soát, khiếu nại của KH liên quan đến việc sử dụng dịch vụ theo quy định của pháp luật và của Vikki Digital Bank – Vikki Digital Bank không có trách nhiệm với những thiệt hại do nguyên nhân vượt quá phạm vi kiểm soát của Vikki Digital Bank dẫn đến sự không thể thực hiện được dịch vụ, bao gồm nhưng không giới hạn các nguyên nhân sự cố kỹ thuật, phá hoại, động đất, thiên tai, đứt nghẽn mạng, đường truyền, mất điện."
+                },
+                {
+                  "text": "<span class=\"legal-decimal-marker\">2.2</span> Các trách nhiệm khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của pháp luật."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "giao-dich-khong-huy-ngang",
+      "title": "Điều 6. Giao dịch không hủy ngang",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "khong-huy-ngang",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "numeric",
+              "items": [
+                {
+                  "text": "KH không thể hủy, thay đổi, phủ nhận, thoái thác bất kỳ giao dịch nào đã thực hiện thành công (tức là từ thời điểm dữ liệu đã được nhập vào hệ thống của Vikki Digital Bank). Trường hợp KH muốn hủy yêu cầu thực hiện giao dịch của mình, Ngân hàng có quyền (nhưng không có nghĩa vụ) xem xét, với điều kiện (i) yêu cầu hủy giao dịch được gửi đến Vikki Digital Bank ngay lập tức sau khi KH thực hiện giao dịch, và (ii) Ngân hàng chưa ghi nhận và/hoặc chưa xử lý giao dịch trên hệ thống của mình theo yêu cầu của KH, và (iii) việc hủy giao dịch không ảnh hưởng đến lợi ích của Ngân hàng cũng như quyền và lợi ích của bất kỳ một bên thứ ba nào khác."
+                },
+                {
+                  "text": "Bất kỳ giao dịch nào đã được thực hiện thành công sẽ được Vikki Digital Bank coi là có giá trị và không hủy ngang và KH cam kết chịu hoàn toàn trách nhiệm cũng như nghĩa vụ với Vikki Digital Bank đối với các giao dịch đó."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thay-doi-dich-vu",
+      "title": "Điều 7. Thay đổi, sửa đổi, chấm dứt dịch vụ, sửa đổi nội dung điều khoản",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "thay-doi",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "numeric",
+              "items": [
+                {
+                  "text": "Vikki Digital Bank có quyền thay đổi, sửa đổi, điều chỉnh các tính năng, nội dung của Dịch vụ, được phép khóa/ tạm ngừng/ chấm dứt/ từ chối/ sửa đổi/ bổ sung/ thay đổi giao diện, đổi tên Dịch vụ và các điều chỉnh khác liên quan đến việc cung cấp Dịch vụ cho KH mà không cần báo trước khi Vikki Digital Bank thấy là cần thiết, bao gồm nhưng không giới hạn các trường hợp: KH không tuân thủ Điều khoản và Điều kiện này, quy định của Vikki Digital Bank hoặc quy định của pháp luật về việc sử dụng dịch vụ; theo quyết định, yêu cầu pháp luật hoặc cơ quan nhà nước có thẩm quyền; các trường hợp liên quan đến giả mạo, rủi ro hoặc có gian lận; khi lợi ích của Vikki Digital Bank/ KH/ Bên thứ ba có thể bị vi phạm; Vikki Digital Bank tạm ngưng dịch vụ để bảo trì; khi có sự cố của nhà cung cấp dịch vụ viễn thông; khi có sự cố do nguyên nhân vượt quá phạm vi kiểm soát của Vikki Digital Bank dẫn đến sự không thể thực hiện được Dịch vụ, bao gồm nhưng không giới hạn các nguyên nhân sự cố kỹ thuật, phá hoại, động đất, thiên tai, đứt nghẽn mạng, mất điện do nhà cung ứng dịch vụ hoặc do Vikki Digital Bank, khi giao dịch không đúng hạn mức KH đăng ký; TKTT của KH không đủ tiền thanh toán hoặc chuyển khoản sau khi trừ các khoản phí; mã và/ hoặc mật khẩu (chữ ký điện tử) không đúng; KH không tuân thủ các yêu cầu bảo mật hoặc dịch vụ có khả năng rủi ro theo khuyến cáo của tổ chức liên quan; nghi ngờ giao dịch có liên quan đến yếu tố tội phạm, rửa tiền, vi phạm pháp luật hoặc để thực hiện chính sách phòng chống rửa tiền theo quy định của Ngân hàng và pháp luật ; các trường hợp ngoài khả năng kiểm soát của Ngân hàng."
+                },
+                {
+                  "text": "Ngân hàng có quyền sửa đổi, bổ sung các Điều khoản và Điều kiện này vào bất cứ lúc nào. Các sửa đổi, bổ sung này có hiệu lực kể từ ngày được ghi rõ trong thông báo. Nếu KH tiếp tục sử dụng dịch vụ sau thời điểm có hiệu lực của sửa đổi, bổ sung có nghĩa là KH chấp nhận hoàn toàn các sửa đổi, bổ sung đó."
+                },
+                {
+                  "text": "Khi có các sự kiện trên, Vikki Digital Bank sẽ thông báo trên website và/ hoặc trên các phương tiện thông tin đại chúng và/ hoặc gửi thông báo cho KH qua một trong các các phương tiện: email, điện thoại cố định, điện thoại di động của KH (đã đăng ký với Vikki Digital Bank). Những thay đổi, sửa đổi, điều chỉnh sẽ có hiệu lực vào ngày được xác định trong thông báo. Nếu KH tiếp tục sử dụng dịch vụ sau ngày đó thì được hiểu là KH chấp nhận các thay đổi, sửa đổi này."
+                },
+                {
+                  "text": "KH tại đây đồng ý và không có bất kỳ khiếu nại nào rằng Vikki Digital Bank được thực hiện các hành vi thay đổi, sửa đổi, chấm dứt dịch vụ, sửa đổi nội dung điều khoản bằng việc thông báo trên các phương tiện như quy định tại điều này."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "luat-dieu-chinh",
+      "title": "Điều 8. Luật điều chỉnh, giải quyết tranh chấp",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "tranh-chap",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "numeric",
+              "items": [
+                {
+                  "text": "Điều khoản và điều kiện này được điều chỉnh bởi pháp luật Việt Nam. Nếu có bất kỳ tranh chấp nào liên quan đến việc giải thích từ ngữ trong Điều khoản và Điều kiện này thì việc giải thích từ ngữ theo ý chí của Vikki Digital Bank sẽ được ưu tiên áp dụng."
+                },
+                {
+                  "text": "Nếu có bất kỳ tranh chấp nào phát sinh từ việc thực hiện Dịch vụ giữa KH và Vikki Digital Bank, thì tranh chấp đó trước hết sẽ được giải quyết thông qua thương lượng, hòa giải. Trường hợp hòa giải không thành, các Bên có quyền đưa tranh chấp ra Tòa án có thẩm quyền tại thành phố Hồ Chí Minh, Việt Nam để giải quyết."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hieu-luc",
+      "title": "Điều 9. Thời hạn hiệu lực và Điều khoản thi hành",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "hieu-luc-thi-hanh",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Điều khoản và điều kiện về mở và sử dụng TG Tiết kiệm trực tuyến Vikki này có hiệu lực kể từ ngày KH xác nhận đã đọc, hiểu rõ và đồng ý với tất cả các Điều khoản và Điều kiện này, cam kết thực hiện đúng nội dung các Điều khoản và Điều kiện cũng như các quy định của Vikki Digital Bank về dịch vụ và các thỏa thuận liên quan khác với ngân hàng cho đến khi có sự kiện pháp lý làm chấm dứt dịch vụ giữa KH và Vikki Digital Bank."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phu-luc-the-le",
+      "title": "THỂ LỆ CHƯƠNG TRÌNH KHUYẾN MẠI “TIẾT KIỆM Vikki - Trúng Bóng VÀNG Ký”",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "ten-chuong-trinh",
+          "title": "1. Tên chương trình",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "<strong>“TIẾT KIỆM Vikki - Trúng Bóng VÀNG Ký”.</strong>"
+            }
+          ]
+        },
+        {
+          "id": "hang-hoa-dich-vu",
+          "title": "2. Hàng hóa, dịch vụ được khuyến mại",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "<strong>Nhóm sản phẩm thông thường:</strong> Tiết kiệm có kỳ hạn VND, Tiết kiệm Tài Sắc, Tiết kiệm Trường An, Tiết kiệm Ưu Việt, Tiết kiệm Phú Quý, Tiết kiệm Phát Lộc, Tiết kiệm An Tâm, Tiết kiệm An Nhàn."
+                },
+                {
+                  "text": "<strong>Nhóm sản phẩm tích lũy:</strong> Tiết kiệm Kế Thừa, Tiết kiệm [GenV] Future."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "thoi-gian-trien-khai",
+          "title": "3. Thời gian triển khai chương trình",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Từ 00:00:00 ngày 08/07/2026 đến 23:59:59 ngày 31/10/2026."
+            }
+          ]
+        },
+        {
+          "id": "dia-ban-khuyen-mai",
+          "title": "4. Địa bàn (phạm vi) khuyến mại",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Tất cả các Điểm giao dịch Vikki Digital Bank trên toàn hệ thống và kênh Online (App Vikki)."
+            }
+          ]
+        },
+        {
+          "id": "khach-hang-ap-dung",
+          "title": "5. Khách hàng áp dụng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Khách hàng cá nhân (KH) tham gia gửi tiết kiệm có kỳ hạn VND tại quầy và kênh Online (Vikki App) thỏa mãn điều kiện chương trình."
+            }
+          ]
+        },
+        {
+          "id": "hinh-thuc-khuyen-mai",
+          "title": "6. Hình thức khuyến mại",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "Quà tặng ngay cho KH gửi tiết kiệm Online (Vikki App)."
+                },
+                {
+                  "text": "Ưu đãi NGÀY: 10 KH được cấp Mã số dự thưởng (MSDT) hợp lệ và sớm nhất trong Ngày theo từng Vùng được xác định là trúng thưởng khi thỏa mãn đồng thời các điều kiện chương trình."
+                },
+                {
+                  "text": "Quay số trúng thưởng: quay số điện tử xác định KH may mắn trúng thưởng hàng Tuần, hàng Tháng và Cuối Kỳ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "co-cau-giai-thuong",
+          "title": "7. Cơ cấu giải thưởng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "<strong>a. <u>Ưu đãi 01</u>: Quà tặng ngay cho KH gửi tiết kiệm trên kênh Online (App Vikki)</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Stt"
+                    },
+                    {
+                      "value": "Số tiền gửi (X)"
+                    },
+                    {
+                      "value": "Quà tặng"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "200 triệu ≤ X < 500 triệu đồng"
+                    },
+                    {
+                      "value": "E-voucher Got It trị giá 50,000 đồng"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "2"
+                    },
+                    {
+                      "value": "500 triệu ≤ X < 1 tỷ đồng"
+                    },
+                    {
+                      "value": "E-voucher Got It trị giá 100,000 đồng"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "X ≥ 1 tỷ đồng"
+                    },
+                    {
+                      "value": "E-voucher Got It trị giá 200,000 đồng"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>b. <u>Ưu đãi 02</u>: Ưu đãi NGÀY</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng"
+                    },
+                    {
+                      "value": "Số giải/ ngày"
+                    },
+                    {
+                      "value": "Tổng số giải"
+                    },
+                    {
+                      "value": "Giải thưởng"
+                    },
+                    {
+                      "value": "Trị giá giải thưởng (VND)"
+                    },
+                    {
+                      "value": "Thành tiền (VND)"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 1"
+                    },
+                    {
+                      "value": "10"
+                    },
+                    {
+                      "value": "1,160"
+                    },
+                    {
+                      "value": "01 ly Vàng SJC 999.9"
+                    },
+                    {
+                      "value": "1,462,300"
+                    },
+                    {
+                      "value": "1,696,268,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 2"
+                    },
+                    {
+                      "value": "10"
+                    },
+                    {
+                      "value": "1,160"
+                    },
+                    {
+                      "value": "01 ly Vàng SJC 999.9"
+                    },
+                    {
+                      "value": "1,462,300"
+                    },
+                    {
+                      "value": "1,696,268,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 3"
+                    },
+                    {
+                      "value": "10"
+                    },
+                    {
+                      "value": "1,160"
+                    },
+                    {
+                      "value": "01 ly Vàng SJC 999.9"
+                    },
+                    {
+                      "value": "1,462,300"
+                    },
+                    {
+                      "value": "1,696,268,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng cộng</strong>"
+                    },
+                    {
+                      "value": "<strong>30</strong>"
+                    },
+                    {
+                      "value": "<strong>3,480</strong>"
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": "<strong>5,088,804,000</strong>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>c. <u>Ưu đãi 03</u>: Quay số trúng thưởng</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "STT"
+                    },
+                    {
+                      "value": "Hạng mục"
+                    },
+                    {
+                      "value": "Cơ cấu giải thưởng"
+                    },
+                    {
+                      "value": "Giá trị (VND)"
+                    },
+                    {
+                      "value": "Tổng số giải"
+                    },
+                    {
+                      "value": "Thành tiền (VND)"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>1</strong>"
+                    },
+                    {
+                      "value": "<strong>Giải thưởng Tuần (17 kỳ)</strong>",
+                      "colspan": 4
+                    },
+                    {
+                      "value": "<strong>1,416,968,700</strong>"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "a"
+                    },
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "01 chỉ vàng SJC 999.9"
+                    },
+                    {
+                      "value": "14,623,000"
+                    },
+                    {
+                      "value": "51"
+                    },
+                    {
+                      "value": "745,773,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "b"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "03 ly vàng SJC 999.9"
+                    },
+                    {
+                      "value": "4,386,900"
+                    },
+                    {
+                      "value": "153"
+                    },
+                    {
+                      "value": "671,195,700"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>2</strong>"
+                    },
+                    {
+                      "value": "<strong>Giải thưởng Tháng (04 kỳ)</strong>",
+                      "colspan": 4
+                    },
+                    {
+                      "value": "<strong>2,368,866,000</strong>"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "a"
+                    },
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "05 chỉ vàng SJC 999.9"
+                    },
+                    {
+                      "value": "73,110,000"
+                    },
+                    {
+                      "value": "12"
+                    },
+                    {
+                      "value": "877,320,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "b"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "02 chỉ vàng SJC 999.9"
+                    },
+                    {
+                      "value": "29,246,000"
+                    },
+                    {
+                      "value": "36"
+                    },
+                    {
+                      "value": "1,052,856,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "c"
+                    },
+                    {
+                      "value": "Giải ba"
+                    },
+                    {
+                      "value": "0,5 chỉ vàng SJC 999.9"
+                    },
+                    {
+                      "value": "7,311,500"
+                    },
+                    {
+                      "value": "60"
+                    },
+                    {
+                      "value": "438,690,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>3</strong>"
+                    },
+                    {
+                      "value": "<strong>Giải thưởng Cuối chương trình</strong>",
+                      "colspan": 4
+                    },
+                    {
+                      "value": "<strong>4,093,720,000</strong>"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "a"
+                    },
+                    {
+                      "value": "Giải đặc biệt"
+                    },
+                    {
+                      "value": "10 lượng vàng SJC 999.9"
+                    },
+                    {
+                      "value": "1,462,000,000"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "1,462,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "b"
+                    },
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "02 lượng vàng SJC 999.9"
+                    },
+                    {
+                      "value": "292,400,000"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "877,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "c"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "01 lượng vàng SJC 999.9"
+                    },
+                    {
+                      "value": "146,200,000"
+                    },
+                    {
+                      "value": "6"
+                    },
+                    {
+                      "value": "877,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "d"
+                    },
+                    {
+                      "value": "Giải ba"
+                    },
+                    {
+                      "value": "05 chỉ vàng SJC 999.9"
+                    },
+                    {
+                      "value": "73,110,000"
+                    },
+                    {
+                      "value": "12"
+                    },
+                    {
+                      "value": "877,320,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng cộng</strong>",
+                      "colspan": 4
+                    },
+                    {
+                      "value": "<strong>334</strong>"
+                    },
+                    {
+                      "value": "<strong>7,879,554,700</strong>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Số lượng giải thưởng phân theo Vùng tại Vikki Digital Bank theo Tuần, Tháng và Cuối kỳ được quy định như sau:"
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>i. Giải thưởng Tuần: 17 kỳ</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Số lượng Giải/Kỳ",
+                      "colspan": 2
+                    },
+                    {
+                      "value": "Tổng số lượng giải/Vùng",
+                      "colspan": 2
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 1"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "17"
+                    },
+                    {
+                      "value": "51"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 2"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "17"
+                    },
+                    {
+                      "value": "51"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 3"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "17"
+                    },
+                    {
+                      "value": "51"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng cộng</strong>"
+                    },
+                    {
+                      "value": "<strong>3</strong>"
+                    },
+                    {
+                      "value": "<strong>9</strong>"
+                    },
+                    {
+                      "value": "<strong>51</strong>"
+                    },
+                    {
+                      "value": "<strong>153</strong>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>ii. Giải thưởng Tháng: 4 kỳ</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Số lượng Giải/Kỳ",
+                      "colspan": 3
+                    },
+                    {
+                      "value": "Tổng số lượng giải/Vùng",
+                      "colspan": 3
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "Giải ba"
+                    },
+                    {
+                      "value": "Giải nhất"
+                    },
+                    {
+                      "value": "Giải nhì"
+                    },
+                    {
+                      "value": "Giải ba"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 1"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "5"
+                    },
+                    {
+                      "value": "4"
+                    },
+                    {
+                      "value": "12"
+                    },
+                    {
+                      "value": "20"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 2"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "5"
+                    },
+                    {
+                      "value": "4"
+                    },
+                    {
+                      "value": "12"
+                    },
+                    {
+                      "value": "20"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 3"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "3"
+                    },
+                    {
+                      "value": "5"
+                    },
+                    {
+                      "value": "4"
+                    },
+                    {
+                      "value": "12"
+                    },
+                    {
+                      "value": "20"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng cộng</strong>"
+                    },
+                    {
+                      "value": "<strong>3</strong>"
+                    },
+                    {
+                      "value": "<strong>9</strong>"
+                    },
+                    {
+                      "value": "<strong>15</strong>"
+                    },
+                    {
+                      "value": "<strong>12</strong>"
+                    },
+                    {
+                      "value": "<strong>36</strong>"
+                    },
+                    {
+                      "value": "<strong>60</strong>"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "<strong>iii. Giải thưởng Cuối kỳ</strong>"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng"
+                    },
+                    {
+                      "value": "Giải Đặc biệt"
+                    },
+                    {
+                      "value": "Giải Nhất"
+                    },
+                    {
+                      "value": "Giải Nhì"
+                    },
+                    {
+                      "value": "Giải Ba"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 1"
+                    },
+                    {
+                      "value": "1",
+                      "rowspan": 3
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "2"
+                    },
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 2"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "2"
+                    },
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Vùng 3"
+                    },
+                    {
+                      "value": "1"
+                    },
+                    {
+                      "value": "2"
+                    },
+                    {
+                      "value": "4"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng cộng</strong>"
+                    },
+                    {
+                      "value": "<strong>1</strong>"
+                    },
+                    {
+                      "value": "<strong>3</strong>"
+                    },
+                    {
+                      "value": "<strong>6</strong>"
+                    },
+                    {
+                      "value": "<strong>12</strong>"
+                    }
+                  ]
+                }
+              ],
+              "note": "<p><strong><em><u>Ghi chú</u></em></strong>:</p><ul><li>Quy định phân Vùng theo mục 8.d. Thể lệ này.</li><li>Giá trị giải thưởng Vàng SJC 999.9 do SJC công bố ngày 25/06/2026:<ul class=\"note-plus-list\"><li>Đối với giải thưởng ưu đãi NGÀY: Vikki Digital Bank thực hiện trao thưởng bằng tiền mặt với giá trị tương đương được quy định tại Thể lệ này.</li><li>Giải thưởng Quay số trúng thưởng: KH có thể nhận bằng hiện vật hoặc quy đổi bằng tiền mặt với giá trị tương đương được quy định tại Thể lệ này.</li></ul></li></ul>"
+            }
+          ]
+        },
+        {
+          "id": "noi-dung-chi-tiet",
+          "title": "8. Nội dung chi tiết thể lệ chương trình",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "<strong>Lãi suất huy động tiền gửi tiết kiệm áp dụng:</strong> Theo quy định Vikki Digital Bank từng thời kỳ, áp dụng đồng thời các CTKM, ưu đãi khác tại Vikki Digital Bank."
+                },
+                {
+                  "text": "<strong>Điều kiện, cách thức tham gia chương trình khuyến mại (CTKM):</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong>Quà tặng ngay cho KH gửi tiết kiệm trên kênh Online (App Vikki):</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "KH tham gia gửi tiết kiệm có kỳ hạn trên kênh Online (App Vikki) các sản phẩm Tiết kiệm Phú Quý, Tiết kiệm Phát Lộc, Tiết kiệm An Tâm, Tiết kiệm An Nhàn với số tiền tối thiểu từ 200 triệu đồng và kỳ hạn từ 6 tháng trở lên."
+                            },
+                            {
+                              "text": "Mỗi thẻ tiết kiệm thoả điều kiện chương trình sẽ được nhận một (1) E-voucher với mệnh giá tương ứng số tiền gửi theo bảng sau:",
+                              "type": "table",
+                              "headerRows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "Số tiền gửi (X)"
+                                    },
+                                    {
+                                      "value": "Quà tặng"
+                                    },
+                                    {
+                                      "value": "Giá trị quà (VND)"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "rows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "200 triệu ≤ X < 500 triệu đồng"
+                                    },
+                                    {
+                                      "value": "E-voucher Got It trị giá 50,000 đồng"
+                                    },
+                                    {
+                                      "value": "50,000"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "500 triệu ≤ X < 1 tỷ đồng"
+                                    },
+                                    {
+                                      "value": "E-voucher Got It trị giá 100,000 đồng"
+                                    },
+                                    {
+                                      "value": "100,000"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "X ≥ 1 tỷ đồng"
+                                    },
+                                    {
+                                      "value": "E-voucher Got It trị giá 200,000 đồng"
+                                    },
+                                    {
+                                      "value": "200,000"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "text": "Số lượng quà tặng tối đa trên mỗi KH: 03 E-voucher/KH/tháng."
+                            },
+                            {
+                              "text": "Số lượng quà tặng có hạn và ưu tiên KH thỏa điều kiện sớm nhất."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Ưu đãi Ngày và Quay số trúng thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Áp dụng cho KH gửi tiết kiệm VND tại quầy hoặc Online trên App Vikki thỏa mãn điều kiện chương trình từ 00:00:00 ngày 08/07/2026 đến 23:59:59 ngày 31/10/2026.",
+                              "children": {
+                                "type": "list",
+                                "style": "eligibility-plus-list",
+                                "items": [
+                                  {
+                                    "text": "Số tiền gửi tối thiểu của Thẻ tiết kiệm (TTK) tham gia chương trình:",
+                                    "children": {
+                                      "type": "list",
+                                      "style": "disc",
+                                      "items": [
+                                        {
+                                          "text": "Nhóm sản phẩm thông thường: Tối thiểu 20.000.000 VND/TTK."
+                                        },
+                                        {
+                                          "text": "Nhóm sản phẩm tích lũy: Số dư đầu tiên để khởi tạo TTK: Tối thiểu 20.000.000 VND."
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "text": "Kỳ hạn gửi tối thiểu: Từ 01 tháng trở lên."
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "text": "KH gửi tiết kiệm VND tại quầy hoặc App Vikki đáp ứng được điều kiện về kỳ hạn và mức gửi tối thiểu sẽ được cấp mã số dự thưởng (MSDT) theo từng TTK là số nguyên, làm tròn xuống để tham gia Ưu đãi NGÀY, quay số may mắn hàng Tuần, hàng Tháng và Cuối kỳ."
+                            },
+                            {
+                              "text": "Việc cấp MSDT chỉ áp dụng đối với kỳ hạn đầu tiên của TTK (nhóm sản phẩm thông thường) và lần nộp tiền đầu tiên (nhóm sản phẩm tích lũy)."
+                            },
+                            {
+                              "text": "Thời hạn cuối cùng gửi tiết kiệm online để được tham gia chương trình là 23:59:59 ngày 31/10/2026."
+                            },
+                            {
+                              "text": "<strong>Công thức tính số lượng MSDT</strong>: Số lượng MSDT chỉ lấy số nguyên, làm tròn xuống:<br/><strong>Số lượng MSDT = (Số tiền gửi trên một TTK x Kỳ hạn gửi) / 20.000.000 đồng</strong>"
+                            },
+                            {
+                              "text": "<strong>Tặng thêm MSDT</strong>: KH được tặng thêm MSDT khi thỏa một hoặc nhiều điều kiện sau:",
+                              "type": "table",
+                              "headerRows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "Stt"
+                                    },
+                                    {
+                                      "value": "Hạng mục"
+                                    },
+                                    {
+                                      "value": "Số lượng MSDT tặng thêm"
+                                    },
+                                    {
+                                      "value": "Điều kiện áp dụng"
+                                    }
+                                  ]
+                                }
+                              ],
+                              "rows": [
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "1"
+                                    },
+                                    {
+                                      "value": "KH mới"
+                                    },
+                                    {
+                                      "value": "05 MSDT/ KH"
+                                    },
+                                    {
+                                      "value": "- Ngày mở thông tin lần đầu tại Vikki Digital Bank trùng với ngày mở TTK tham gia chương trình.<br/>- Tặng 1 lần duy nhất/ KH."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "2"
+                                    },
+                                    {
+                                      "value": "Mở TTK Online"
+                                    },
+                                    {
+                                      "value": "03 MSDT/ TTK"
+                                    },
+                                    {
+                                      "value": "Không giới hạn số lần tặng trong suốt thời gian triển khai chương trình."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "3"
+                                    },
+                                    {
+                                      "value": "Mở TTK vào Ngày/ dịp đặc biệt",
+                                      "colspan": 3
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "a"
+                                    },
+                                    {
+                                      "value": "Quốc khánh 02/09"
+                                    },
+                                    {
+                                      "value": "09 MSDT/ TTK"
+                                    },
+                                    {
+                                      "value": "- Áp dụng cho KH gửi Tiết kiệm Online.<br/>- Không giới hạn số lần TTK được tặng trong ngày ưu đãi."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "b"
+                                    },
+                                    {
+                                      "value": "Ngày 20/10"
+                                    },
+                                    {
+                                      "value": "10 MSDT/ TTK"
+                                    },
+                                    {
+                                      "value": "- Áp dụng cho KH giới tính Nữ gửi Tiết kiệm Online và tại quầy.<br/>- Không giới hạn số lần TTK được tặng trong ngày ưu đãi."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "c"
+                                    },
+                                    {
+                                      "value": "Ngày đôi (08/08, 09/09, 10/10)"
+                                    },
+                                    {
+                                      "value": "02 MSDT/ TTK"
+                                    },
+                                    {
+                                      "value": "- Áp dụng cho KH gửi Tiết kiệm Online và tại quầy.<br/>- Không giới hạn số lần TTK được tặng trong ngày ưu đãi."
+                                    }
+                                  ]
+                                },
+                                {
+                                  "cells": [
+                                    {
+                                      "value": "d"
+                                    },
+                                    {
+                                      "value": "Ngày sinh nhật KH"
+                                    },
+                                    {
+                                      "value": "08 MSDT/ KH"
+                                    },
+                                    {
+                                      "value": "- Áp dụng cho TTK đầu tiên phát sinh trong ngày sinh nhật của KH.<br/>- Tối đa 1 lần/ KH."
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "text": "Số lượng MSDT tối đa trên một KH: Không giới hạn."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Quy định rút 1 phần vốn hoặc tất toán trước hạn đối với TTK tham gia chương trình:</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "<strong>Nguyên tắc chung:</strong>",
+                              "children": {
+                                "type": "list",
+                                "style": "disc",
+                                "items": [
+                                  {
+                                    "text": "KH tham gia chương trình khuyến mại <strong>không được rút 1 phần vốn hoặc tất toán trước hạn</strong> TTK tham dự."
+                                  },
+                                  {
+                                    "text": "Đối với TTK mở trên kênh Online:",
+                                    "children": {
+                                      "type": "list",
+                                      "style": "disc",
+                                      "items": [
+                                        {
+                                          "text": "Trường hợp nhận E-voucher và MSDT: Vikki Digital Bank sẽ <strong>tự động khóa tính năng rút tiền trước hạn online trong kỳ hạn đầu tiên của TTK.</strong> Nếu có nhu cầu vốn, KH có thể đăng ký vay cầm cố TTK dự thưởng tại các Chi nhánh/Phòng giao dịch của Vikki Digital Bank theo quy định tín dụng hiện hành.",
+                                          "className": "check-marker"
+                                        },
+                                        {
+                                          "text": "Trường hợp chỉ nhận MSDT: Tính năng <strong>rút tiền trước hạn online không bị ảnh hưởng.</strong>",
+                                          "className": "check-marker"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "text": "Đối với trường hợp KH rút một phần vốn hoặc tất trước hạn chưa tròn kỳ (kỳ cấp MSDT) được Vikki Digital Bank đồng ý, KH sẽ bị hủy toàn bộ MSDT theo quy định đồng thời thu hồi toàn bộ giá trị giải thưởng/ quà tặng đã nhận tương đương bằng tiền mặt tại thời điểm rút một phần gốc hoặc tất toán trước hạn."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Quy định về hình thức tái tục:</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Khi TTK đến hạn và tái tục sang kỳ hạn mới trong thời gian diễn ra chương trình, hệ thống <strong>KHÔNG TỰ ĐỘNG</strong> cấp MSDT mới cho kỳ hạn tái tục này."
+                            },
+                            {
+                              "text": "Để tiếp tục tham gia chương trình và nhận MSDT mới, KH cần mở mới TTK."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Thời gian, cách thức phát hành bằng chứng xác định trúng thưởng/quà tặng</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong>Ưu đãi 1:</strong> KH được nhận thông báo quà tặng E-voucher trên Vikki App ngay khi hoàn tất giao mở thẻ tiết kiệm thỏa điều kiện chương trình."
+                      },
+                      {
+                        "text": "<strong>Ưu đãi 2 và Ưu đãi 3:</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "<strong>Tại quầy</strong><br/>- Sau khi Vikki Digital Bank hoàn thành thủ tục mở TTK cho KH, Vikki Digital Bank sẽ cấp MSDT tham gia xét thưởng giải ưu đãi Ngày và quay số may mắn hàng Tuần, hàng Tháng, Cuối Kỳ được in từ hệ thống cho KH.<br/>- MSDT hợp lệ để tham gia xét thưởng giải ưu đãi Ngày và quay số xác định trúng thưởng là MSDT in trên Phiếu dự thưởng.",
+                              "className": "diamond-marker"
+                            },
+                            {
+                              "text": "<strong>Kênh Online (App Vikki)</strong><br/>- Hình thức cấp MSDT: MSDT sẽ được Vikki Digital Bank gửi qua tin nhắn OTT cho KH sau khi gửi tiết kiệm online thành công.<br/>- Thời gian thông báo: Trong vòng 60 phút kể từ khi KH hoàn tất mở TTK online thành công.<br/>- Nội dung tin nhắn OTT:<br/><em>{{firstName}} ơi, bạn nhận được {{number of lucky draw codes}} mã dự thưởng khi mở khoản tiết kiệm {{ accountId }}. Nhấn vào đây để xem ngay bạn nhé!<br/>Mở càng nhiều, cơ hội “trúng vàng” càng lớn.</em>",
+                              "className": "diamond-marker"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong><u>Lưu ý</u></strong>: Trường hợp KH rút một phần vốn và/hoặc tất toán trước hạn đối với các TTK dự thưởng <strong>gửi chưa tròn kỳ, các MSDT được cấp trong kỳ hạn đó sẽ bị hủy</strong> và hết hiệu lực tham gia xét thưởng ưu đãi NGÀY, quay số may mắn (hàng Tuần, hàng Tháng, Cuối Kỳ).",
+                        "className": "no-list-style"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Quy định về bằng chứng xác định trúng thưởng (Áp dụng cho Ưu đãi 2 và Ưu đãi 3):</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong>Quy định phân Vùng tại Vikki Digital Bank:</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "MSDT được phân theo Vùng căn cứ theo Đơn vị kinh doanh (ĐVKD) nơi hạch toán và ghi nhận phát sinh tiền gửi tiết kiệm có kỳ hạn của KH. Theo đó, mỗi giao dịch gửi tiết kiệm có kỳ hạn được hạch toán và ghi nhận tại ĐVKD nào thì MSDT cấp cho giao dịch đó được xếp vào Vùng tương ứng của ĐVKD.",
+                              "className": "hyphen-marker"
+                            },
+                            {
+                              "text": "Danh sách ĐVKD theo từng Vùng được quy định tại Vikki Digital Bank như sau:",
+                              "className": "hyphen-marker",
+                              "children": {
+                                "type": "list",
+                                "style": "eligibility-plus-list",
+                                "items": [
+                                  {
+                                    "text": "<strong>Vùng 1:</strong> CN Hà Nội, PGD Hoàng Mai, PGD Ba Đình, PGD Bạch Mai, PGD Cầu Giấy, PGD Hà Thành, PGD Thanh Xuân, PGD Long Biên, PGD Minh Khai, PGD Hà Đông, PGD Đông Đô, PGD Vạn Xuân, PGD Tây Hồ, PGD Vạn Phúc, PGD Sơn Tây, PGD Thăng Long, PGD Đông Anh, CN Hải Phòng, PGD Kiến An, PGD Thủy Nguyên, PGD Ngô Quyền, PGD Hồng Bàng, CN Quảng Ninh, PGD Hạ Long, CN Thái Bình, PGD Thái Thụy, PGD Đông Hưng, PGD Kiến Xương, PGD Tiền Hải, PGD Vũ Thư, CN Hưng Yên, PGD Yên Mỹ, CN Bắc Ninh, PGD Quế Võ, PGD Gia Bình, CN Thái Nguyên, CN Vĩnh Phúc, PGD Phúc Yên, CN Bắc Giang, PGD Lạng Giang, PGD Tân Yên, PGD Hiệp Hòa, CN Nam Định, CN Hà Nam, CN Sở Giao Dịch, Sở Giao Dịch 1, Hội Sở."
+                                  },
+                                  {
+                                    "text": "<strong>Vùng 2:</strong> CN Nha Trang, CN Đà Nẵng, PGD Hải Châu, PGD Ngũ Hành Sơn, PGD Phan Đình Phùng, PGD Hòa Khánh, PGD Hòa Cường, PGD Đống Đa, PGD Hòa Vang, PGD Khuê Trung, PGD Cẩm Lệ, PGD Điện Biên Phủ, CN TP. Huế, PGD Trần Hưng Đạo, CN Quảng Ngãi, PGD Hùng Vương, PGD Châu Ổ, PGD Đức Phổ, CN Bình Định, PGD Quy Nhơn, PGD Phú Tài, CN Quảng Nam, PGD Hội An, PGD Tam Kỳ, PGD Chu Lai, PGD Đại Lộc, PGD Duy Xuyên, PGD Hà Lam, PGD Vĩnh Điện, CN Ninh Thuận, CN Phú Yên, CN Daklak, PGD Buôn Hồ, PGD Cumgar, PGD Eakar, PGD Eatam, PGD Krông Păk, PGD Eahleo, CN Đắk Nông, CN Kontum, CN Lâm Đồng, PGD Đức Trọng, CN Gia Lai, CN Bình Thuận, PGD Lagi, CN Thủ Đức, PGD Đặng Văn Bi, PGD Nguyễn Duy Trinh, PGD Lương Định Của, CN Củ Chi, PGD Quận 12, PGD Tân Thạnh Đông, PGD Nguyễn Ảnh Thủ, PGD Hóc Môn, PGD Xuân Thới Thượng, CN Bình Dương, PGD Đại Lộ Bình Dương, CN Thuận An, PGD Sóng Thần, CN Vũng Tàu, CN Bình Phước, PGD Bình Long, CN Đồng Nai, PGD Đồng Khởi."
+                                  },
+                                  {
+                                    "text": "<strong>Vùng 3:</strong> CN TP. Hồ Chí Minh, PGD Nơ Trang Long, PGD Bạch Đằng, PGD Thanh Đa, PGD Nguyễn Thị Tú, PGD Hiệp Bình, PGD An Sương, PGD Nguyễn Tất Thành, CN Quận 1, PGD Bến Thành, PGD Hòa Hưng, PGD An Dương Vương, CN Đinh Tiên Hoàng, PGD Bà Chiểu, PGD Lê Văn Sỹ, PGD Hai Bà Trưng, CN Tân Bình, PGD Lê Văn Quới, PGD Trường Chinh, PGD Hiệp Phước, PGD Lý Thường Kiệt, PGD Tân Phú, PGD Bà Quẹo, PGD Nguyễn Sơn, PGD Lê Trọng Tấn, CN Quận 5, PGD Bình Chánh, PGD BX Miền Tây, PGD Bình Tân, PGD Lê Văn Lương, PGD Bình Tây, PGD PouYuen, CN Gò Vấp, PGD Lê Văn Thọ, PGD Phan Văn Trị, PGD Hà Huy Giáp, PGD Phú Nhuận, CN Quận 10, PGD Lê Đại Hành, PGD Lý Thái Tổ, PGD Hạnh Thông Tây, CN Quận 7, PGD Phú Mỹ Hưng, PGD Nhà Bè, PGD Nguyễn Thị Thập, CN Quận 3, PGD Nguyễn Chí Thanh, PGD Nguyễn Thị Tần, PGD Cư Xá Bắc Hải, PGD Quận 8. CN Cần Thơ, PGD Thới Lai, PGD Ninh Kiều, PGD An Bình, PGD Trà Nóc, PGD Bình Thủy, PGD Cái Răng, PGD Thốt Nốt, PGD Cờ Đỏ, PGD An Hòa, CN Tây Ninh, PGD Long Hoa, CN Kiên Giang, PGD Kiên Lương, PGD Kinh B, PGD Rạch Sỏi, PGD Giồng Riềng, PGD An Biên, PGD Nguyễn Trung Trực, PGD Phú Quốc, CN Tiền Giang, PGD Cai Lậy, PGD Mỹ Tho, PGD Gò Công, PGD An Hữu, CN An Giang, PGD Thoại Sơn, PGD TP Long Xuyên, PGD Tân Châu, PGD Chợ Mới, PGD Châu Đốc, CN Bạc Liêu, PGD Lý Tự Trọng, PGD Phước Long, PGD Hộ Phòng, PGD Giá Rai, PGD Hồng Dân, CN Trà Vinh, PGD Cầu Ngang, PGD Càng Long, CN Cà Mau, CN Sóc Trăng, CN Bến Tre, PGD Bình Đại, PGD Mỏ Cày, PGD Giồng Trôm, CN Vĩnh Long, PGD Vũng Liêm, PGD Bình Minh, CN Hậu Giang, CN Đồng Tháp, CN Long An, PGD Bến Lức."
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "text": "Danh sách ĐVKD theo từng Vùng được áp dụng theo danh mục hiện hành của Vikki Digital Bank và bao gồm cả các ĐVKD mở mới hoặc đổi tên phát sinh trong thời gian triển khai Chương trình.",
+                              "className": "hyphen-marker"
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Mã số dự thưởng (MSDT):</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Kho MSDT tại Quầy và kênh Online là 2 kho mã số tách biệt với tổng số lượng MSDT của 2 kho kênh tại quầy và kênh Online: 1.999.999.998 mã (mỗi kênh tối đa: 999.999.999 MSDT)."
+                            },
+                            {
+                              "text": "Cấu trúc MSDT tại Quầy hợp lệ là dãy số có 9 (chín) số liên tiếp và có nhận dạng là xxxxxxxxx gồm hàng đơn vị, hàng chục, hàng trăm, hàng nghìn, hàng chục nghìn, hàng trăm nghìn, hàng triệu, hàng chục triệu, hàng trăm triệu bắt đầu từ số 000000001 đến 999999999 được in trên Phiếu dự thưởng của KH khi KH mở TTK thành công."
+                            },
+                            {
+                              "text": "Cấu trúc MSDT kênh Online bao gồm chữ V và 9 (chín) số duy nhất có nhận dạng Vxxxxxxxxx gồm hàng đơn vị, hàng chục, hàng trăm, hàng nghìn, hàng chục nghìn, hàng trăm nghìn, hàng triệu, hàng chục triệu, hàng trăm triệu bắt đầu từ số 000000001 đến 999999999 được cấp khi KH mở TTK online thành công."
+                            },
+                            {
+                              "text": "Chương trình sẽ ngưng cấp MSDT khi cấp hết số lượng MSDT đã đăng ký."
+                            },
+                            {
+                              "text": "Vikki Digital Bank không chịu trách nhiệm về việc tham gia dự thưởng theo Thể lệ chương trình khuyến mại này đối với những TTK bị mất, tách rời, tẩy xóa, nhàu nát không còn nhận dạng thông tin hay chỉnh sửa nội dung trên TTK hoặc KH rút vốn hoặc tất toán trước thời điểm quay số hàng Tuần, hàng Tháng và Cuối Kỳ."
+                            },
+                            {
+                              "text": "KH trúng thưởng là KH có MSDT trùng với mã số trúng thưởng được xác định trong chương trình quay số trúng thưởng theo phương thức do Vikki Digital Bank tổ chức."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Phiếu dự thưởng:</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Nội dung trên Phiếu dự thưởng gồm:<br/>- Tên chương trình khuyến mại và thời gian triển khai.<br/>- Họ và tên KH, số CCCD/CC, ngày cấp, nơi cấp, địa chỉ.<br/>- Số tài khoản tiết kiệm, đơn vị mở tài khoản, kỳ hạn, số tiền tham gia, ngày gửi, ngày đáo hạn.<br/>- Ngày cấp MSDT, tổng số lượng MSDT phát hành.<br/>- Mã số dự thưởng."
+                            },
+                            {
+                              "text": "Quy định Phiếu dự thưởng hợp lệ:<br/>- Phải có đầy đủ thông tin và chữ ký của KH, chữ ký của Giao dịch viên, chữ ký của Giám đốc Đơn vị/Người được ủy quyền ký thay Giám đốc Đơn vị và có đóng dấu của Đơn vị.<br/>- Phải nguyên vẹn, không bị rách, nhàu nát, phần MSDT có thể nhìn thấy được và không có dấu hiệu chỉnh sửa."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Thời gian, địa điểm và cách thức xác định trúng thưởng (Áp dụng Ưu đãi 2 và 3):</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong><u>Ưu đãi 02</u>: Ưu đãi NGÀY</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "10 Khách hàng (KH) được cấp Mã số dự thưởng (MSDT) hợp lệ và sớm nhất trong Ngày theo từng Vùng được xác định là trúng thưởng khi thỏa mãn đồng thời các điều kiện sau:<br/>- MSDT có <strong>03 số cuối</strong> (đuôi số) là <strong>“999”</strong>; và<br/>- KH có tài khoản thanh toán VikkiME."
+                            },
+                            {
+                              "text": "Thời gian ghi nhận MSDT hợp lệ từng ngày:<br/>- Từ 08/07/2026 đến 30/10/2026: MSDT được cấp từ 00:00:00 đến 23:59:59 của từng ngày xét thưởng tương ứng.<br/>- Riêng ngày 31/10/2026: MSDT được cấp từ 00:00:00 ngày 31/10/2026 đến 00:59:59 ngày 01/11/2026."
+                            },
+                            {
+                              "text": "<strong>Nguyên tắc xét thưởng</strong>: MSDT phát sinh trong ngày nào chỉ được tham gia xét thưởng cho giải thưởng của ngày đó."
+                            },
+                            {
+                              "text": "<strong>Thời gian thực hiện xét thưởng</strong>: T+2, với T là ngày cấp phát MSDT. Trường hợp ngày xét thưởng rơi vào ngày nghỉ/lễ sẽ chuyển qua xét thưởng vào ngày làm việc kế tiếp."
+                            },
+                            {
+                              "text": "Trường hợp có từ hai KH trở lên thỏa điều kiện nhận thưởng (có thời gian cấp phát MSDT trùng nhau giờ: phút: giây) sẽ ưu tiên xét thưởng cho KH thỏa tiêu chí bổ sung như sau:<br/>- <strong>Tiêu chí 1</strong>: KH có tổng số dư tiền gửi tiết kiệm trong ngày T cao hơn (tính trên tổng tất cả các Thẻ tiết kiệm (TTK) có kỳ hạn từ 06 tháng trở lên).<br/>- <strong>Tiêu chí 2</strong>: Trường hợp tiêu chí 1 vẫn bằng nhau, KH có kỳ hạn gửi tiền bình quân của tất cả các Thẻ tiết kiệm trong ngày dài hơn."
+                            },
+                            {
+                              "text": "Quy định số lượng tối đa giải ưu đãi NGÀY trên KH:<br/>- Giới hạn trong ngày: Trong cùng 01 ngày, mỗi KH chỉ được trúng <strong>tối đa 01 Giải thưởng Ngày</strong> (áp dụng cho mã số hợp lệ và sớm nhất).<br/>- KH được nhận giải thưởng vào các ngày tiếp theo nếu MSDT hợp lệ và thỏa điều kiện chương trình."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong><u>Ưu đãi 03</u>: Quay số trúng thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "<strong>Thời gian quay số dự kiến:</strong>",
+                              "className": "hyphen-marker",
+                              "children": {
+                                "type": "list",
+                                "style": "eligibility-plus-list",
+                                "items": [
+                                  {
+                                    "text": "<strong>Quay số may mắn hàng Tuần:</strong> gồm 17 kỳ quay số hàng Tuần.",
+                                    "children": {
+                                      "type": "list",
+                                      "style": "disc",
+                                      "items": [
+                                        {
+                                          "text": "<strong>Tuần 1: 14/07/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 08/07/2026 đến 23:59:59 ngày 12/07/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 2: 21/07/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 13/07/2026 đến 23:59:59 ngày 19/07/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 3: 28/07/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 20/07/2026 đến 23:59:59 ngày 26/07/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 4: 04/08/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 27/07/2026 đến 23:59:59 ngày 02/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 5: 11/08/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 03/08/2026 đến 23:59:59 ngày 09/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 6: 18/08/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 10/08/2026 đến 23:59:59 ngày 16/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 7: 25/08/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 17/08/2026 đến 23:59:59 ngày 23/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 8: 08/09/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 24/08/2026 đến 23:59:59 ngày 30/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 9: 08/09/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 31/08/2026 đến 23:59:59 ngày 06/09/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 10: 15/09/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 07/09/2026 đến 23:59:59 ngày 13/09/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 11: 22/09/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 14/09/2026 đến 23:59:59 ngày 20/09/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 12: 29/09/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 21/09/2026 đến 23:59:59 ngày 27/09/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 13: 06/10/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 28/09/2026 đến 23:59:59 ngày 04/10/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 14: 13/10/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 05/10/2026 đến 23:59:59 ngày 11/10/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 15: 20/10/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 12/10/2026 đến 23:59:59 ngày 18/10/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 16: 27/10/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 19/10/2026 đến 23:59:59 ngày 25/10/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Tuần 17: 11/11/2026</strong> xác định 12 giải thưởng tuần cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 26/10/2026 đến 00:59:59 ngày 01/11/2026."
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "text": "<strong>Quay số may mắn hàng Tháng:</strong> gồm 4 kỳ quay số hàng Tháng.",
+                                    "children": {
+                                      "type": "list",
+                                      "style": "disc",
+                                      "items": [
+                                        {
+                                          "text": "<strong>Kỳ 1: 04/08/2026</strong> xác định 27 giải thưởng Tháng cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 08/07/2026 đến 23:59:59 ngày 31/07/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Kỳ 2: 08/09/2026</strong> xác định 27 giải thưởng Tháng cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 01/08/2026 đến 23:59:59 ngày 31/08/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Kỳ 3: 06/10/2026</strong> xác định 27 giải thưởng Tháng cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 01/09/2026 đến 23:59:59 ngày 30/09/2026."
+                                        },
+                                        {
+                                          "text": "<strong>Kỳ 4: 11/11/2026</strong> xác định 27 giải thưởng Tháng cho các MSDT hợp lệ được cấp từ 00:00:00 ngày 01/10/2026 đến 00:59:59 ngày 01/11/2026."
+                                        }
+                                      ]
+                                    }
+                                  },
+                                  {
+                                    "text": "<strong>Quay số may mắn Cuối kỳ</strong> (Kỳ đặc biệt kết thúc chương trình): <strong>11/11/2026</strong> xác định các giải thưởng cuối kỳ cho tất cả các MSDT hợp lệ được cấp từ 00:00:00 ngày 08/07/2026 đến 00:59:59 ngày 01/11/2026."
+                                  }
+                                ]
+                              }
+                            },
+                            {
+                              "text": "<strong>Địa điểm tổ chức quay số dự kiến:</strong>",
+                              "className": "hyphen-marker",
+                              "children": {
+                                "type": "list",
+                                "style": "eligibility-plus-list",
+                                "items": [
+                                  {
+                                    "text": "Quay số may mắn hàng Tuần (Tuần 1 - Tuần 16) và hàng Tháng (Kỳ 1 - Kỳ 3): Hồ Chí Minh (25Bis Nguyễn Thị Minh Khai, Phường Sài Gòn, TP HCM hoặc địa điểm khác do Vikki Digital Bank thông báo cho KH trước 03 ngày quay thưởng)."
+                                  },
+                                  {
+                                    "text": "Quay số may mắn hàng Tuần (Tuần 17), hàng Tháng (Kỳ 4) và quay số may mắn Cuối kỳ: Hồ Chí Minh (Tòa nhà Galaxy Innovation Hub - Đường D1 Khu Công Nghệ Cao, Phường Tăng Nhơn Phú, TP HCM hoặc địa điểm khác do Vikki Digital Bank thông báo cho KH trước 07 ngày quay thưởng)."
+                                  },
+                                  {
+                                    "text": "Quay số điện tử: hệ thống quay số tự động lựa chọn ngẫu nhiên MSDT trúng thưởng."
+                                  },
+                                  {
+                                    "text": "Cách xác định trúng thưởng quay số:",
+                                    "children": {
+                                      "type": "list",
+                                      "style": "disc",
+                                      "items": [
+                                        {
+                                          "text": "Vikki Digital Bank thực hiện chốt danh sách MSDT hợp lệ theo từng Vùng theo mục 8.d."
+                                        },
+                                        {
+                                          "text": "Hệ thống quay số ngẫu nhiên để xác định MSDT trúng thưởng theo từng Vùng với nguyên tắc và thứ tự quay thưởng như sau:",
+                                          "children": {
+                                            "type": "list",
+                                            "style": "disc",
+                                            "items": [
+                                              {
+                                                "text": "Quay thưởng theo Vùng bắt đầu từ Vùng 1 đến Vùng 2 đến Vùng 3. Mỗi Vùng được quay riêng (độc lập) và chỉ lựa chọn ngẫu nhiên trong danh sách MSDT của Vùng đó để xác định MSDT trúng thưởng theo cơ cấu giải thưởng đã công bố theo từng Vùng. Riêng đối với giải đặc biệt của Giải thưởng Cuối kỳ sẽ thực hiện quay thưởng trong danh sách MSDT của tất cả các Vùng <strong>đã loại trừ các MSDT không hợp lệ</strong>.",
+                                                "className": "check-marker"
+                                              },
+                                              {
+                                                "text": "Quay thưởng theo thứ tự từ giải thấp nhất cho đến giải cao nhất.",
+                                                "className": "check-marker"
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        {
+                                          "text": "Một (01) MSDT chỉ được trúng tối đa 01 giải hàng Tuần, 01 giải hàng Tháng và 01 giải Cuối Kỳ."
+                                        },
+                                        {
+                                          "text": "Trường hợp MSDT được xác nhận trúng thưởng đã bị hủy trước đó (do KH tất toán hoặc rút 1 phần vốn trước hạn) thì hệ thống quay lại cho đến khi xác định được MSDT trúng thưởng hợp lệ."
+                                        }
+                                      ]
+                                    }
+                                  }
+                                ]
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Thông báo trúng thưởng:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong><u>Ưu đãi 01:</u> Quà tặng ngay cho KH gửi tiết kiệm trên kênh Online (App Vikki)</strong><br/>KH được nhận thông báo quà tặng E-voucher trên Vikki App ngay khi hoàn tất giao mở thẻ tiết kiệm thỏa điều kiện chương trình."
+                      },
+                      {
+                        "text": "<strong><u>Ưu đãi 02:</u> Ưu đãi NGÀY</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Vikki Digital Bank thực hiện liên hệ cho KH trúng thưởng theo số điện thoại KH đã đăng ký tại Vikki Digital Bank trong vòng 07 ngày làm việc kể từ ngày Vikki xét thưởng, qua các đầu Hotline của Vikki Digital Bank (19006608 hoặc 0383.338.253 hoặc 0368.939.309)."
+                            },
+                            {
+                              "text": "Kết quả trúng thưởng được tổng hợp và thông báo vào tuần kế tiếp. Vikki Digital Bank công bố kết quả định kỳ vào Thứ Năm hằng tuần (trường hợp rơi vào ngày Nghỉ/Lễ sẽ công bố vào ngày làm việc kế tiếp). Trường hợp có điều chỉnh lịch công bố, Vikki Digital Bank sẽ thông báo trước trên các kênh truyền thông chính thức và việc điều chỉnh này không làm thay đổi quyền lợi của KH."
+                            },
+                            {
+                              "text": "Danh sách trúng thưởng công bố trong tuần hiện tại bao gồm các ngày xét thưởng của tuần liền trước (từ Thứ Hai đến Chủ nhật)."
+                            },
+                            {
+                              "text": "Danh sách KH trúng thưởng hàng tuần sẽ được đăng tải trên website <strong><u>https://www.vikkibank.vn</u></strong> của ngân hàng."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong><u>Ưu đãi 03:</u> Quay số trúng thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Quay số công khai, công bố kết quả ngay sau khi xác định từng giải dưới sự chứng kiến của đại diện cơ quan quản lý về thương mại và KH."
+                            },
+                            {
+                              "text": "Vikki Digital Bank thực hiện liên hệ cho KH trúng thưởng theo số điện thoại KH đã đăng ký tại Vikki Digital Bank trong vòng 10 ngày làm việc kể từ ngày tổ chức quay số may mắn qua các đầu Hotline của Vikki Digital Bank (19006608 hoặc 0383.338.253 hoặc 0368.939.309)."
+                            },
+                            {
+                              "text": "Vikki Digital Bank thực hiện công bố kết quả trúng thưởng trên website www.vikkibank.vn trong vòng 15 ngày làm việc kể từ ngày quay thưởng."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Thời gian địa điểm, cách thức và thủ tục trao thưởng:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong><u>Ưu đãi 02:</u> Ưu đãi NGÀY</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Vikki Digital Bank thực hiện chuyển khoản vào tài khoản VikkiME của KH trong vòng 07 ngày làm việc kể từ ngày Vikki Digital Bank thông báo KH trúng thưởng."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong><u>Ưu đãi 03:</u> Quay số trúng thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "KH trúng thưởng sẽ nhận thưởng tại CN/PGD Vikki Digital Bank gần nơi sinh sống của KH hoặc CN/PGD Vikki Digital Bank khác theo lựa chọn của KH."
+                            },
+                            {
+                              "text": "Khi đến nhận thưởng, KH cần xuất trình: CCCD/CC còn hiệu lực, cung cấp MSDT hợp lệ (TTK và Phiếu dự thưởng có in MSDT hoặc MSDT được cấp trên App Vikki) trùng với mã số trúng thưởng được công bố của Vikki Digital Bank. Giải thưởng chỉ được trao khi tên và số CCCD/CC người nhận thưởng phải trùng khớp với thông tin được lưu trữ trên hệ thống Vikki Digital Bank."
+                            },
+                            {
+                              "text": "Trường hợp người khác nhận thay giải thưởng cho người trúng thưởng, thì người nhận thay phải xuất trình CCCD/CC và văn bản ủy quyền theo quy định pháp luật."
+                            },
+                            {
+                              "text": "Nếu KH không thể nhận thưởng trong thời gian Vikki Digital Bank quy định thì sẽ dời sang những ngày sau đó nhưng không được quá 45 ngày kể từ ngày kết thúc chương trình khuyến mại."
+                            },
+                            {
+                              "text": "Đối với KH trúng thưởng nhưng không đến nhận, trong vòng <strong>45 ngày</strong> kể từ ngày kết thúc chương trình khuyến mại, quyền nhận thưởng của KH sẽ bị hủy, tính đến <strong>17h00 ngày cuối cùng của thời hạn trao thưởng</strong>."
+                            },
+                            {
+                              "text": "Nếu KH trúng thưởng nhưng không đến nhận hoặc giải thưởng không có người trúng thưởng thì giải thưởng đó sẽ được xử lý như sau: Vikki Digital Bank trích nộp 50% giá trị đã công bố của giải thưởng đó vào ngân sách nhà nước theo quy định tại Khoản 4 Điều 96 Luật Thương mại."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dau-moi-giai-dap",
+          "title": "9. Đầu mối giải đáp thắc mắc cho Khách hàng về các vấn đề liên quan đến Chương trình khuyến mại (người liên hệ, điện thoại…)",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "Mọi thắc mắc liên quan đến CTKM này, KH liên hệ:",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Ngân hàng TNHH MTV Số Vikki (Vikki Digital Bank) - 72 phố Lý Thường Kiệt, Phường Cửa Nam, Thành phố Hà Nội - Điện thoại: 024 33986060."
+                      },
+                      {
+                        "text": "Chi nhánh/ Phòng giao dịch Vikki Digital Bank trên toàn quốc (danh sách cập nhật theo website tại <strong><u>https://www.vikkibank.vn</u></strong>)."
+                      },
+                      {
+                        "text": "Hotline: 19006608."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Thời hạn tra soát cho các giao dịch là trong vòng 60 ngày kể từ ngày cuối cùng của tháng phát sinh các giao dịch đó."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trach-nhiem-cong-bo-thong-tin",
+          "title": "10. Trách nhiệm công bố thông tin",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Vikki Digital Bank có trách nhiệm thông báo nội dung chi tiết chương trình khuyến mại và kết quả chương trình khuyến mại trên website: www.vikkibank.vn của ngân hàng."
+            }
+          ]
+        },
+        {
+          "id": "cac-quy-dinh-khac",
+          "title": "11. Các quy định khác",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "Bằng việc tham gia vào Chương trình khuyến mại này, KH chấp nhận tất cả các điều khoản và điều kiện của Chương trình được liệt kê trong Thể lệ trên đây và theo tất cả các quy định khác trong các điều khoản và điều kiện gửi tiết kiệm do Vikki Digital Bank phát hành."
+                },
+                {
+                  "text": "Thời gian/địa điểm tổ chức quay số xác định các giải thưởng Tuần, Tháng, Cuối kỳ có thể thay đổi do các sự kiện bất khả kháng (thiên tai, hỏa hoạn, sự cố hệ thống,…) và Vikki Digital Bank sẽ thực hiện thông báo đến KH trên website: <strong><u>https://www.vikkibank.vn</u></strong>."
+                },
+                {
+                  "text": "KH nhận quà tặng ngay/trúng giải ưu đãi NGÀY và quay số may mắn (hàng Tuần, hàng Tháng, Cuối Kỳ) phải duy trì trạng thái TTK cho đến khi gửi tròn kỳ hạn phát sinh giải thưởng. Nếu tất toán trước hạn hoặc rút một phần gốc tại kỳ hạn chưa hoàn thành này, người trúng thưởng có trách nhiệm hoàn trả lại toàn bộ giá trị quà tặng/giải thưởng đã nhận theo quy định."
+                },
+                {
+                  "text": "Trong trường hợp xảy ra tranh chấp liên quan đến Chương trình khuyến mại này, Vikki Digital Bank có trách nhiệm trực tiếp giải quyết, nếu không thỏa thuận được, tranh chấp sẽ được xử lý theo quy định của pháp luật Việt Nam hiện hành."
+                },
+                {
+                  "text": "Nếu KH tham gia chương trình khuyến mại đồng ý, Vikki Digital Bank sẽ sử dụng hình ảnh, thông tin của KH trúng giải vào các hoạt động quảng cáo, thông báo rộng rãi với công chúng mà không phải trả thêm bất cứ khoản chi phí nào khác."
+                },
+                {
+                  "text": "KH nhận thưởng phải nộp các loại thuế, phí, lệ phí có liên quan đến giải thưởng, kể cả thuế thu nhập cá nhân theo quy định của pháp luật hiện hành. Vikki Digital Bank sẽ khấu trừ khoản thuế, phí, lệ phí (nếu có) này trên trị giá giải thưởng KH nhận được và Vikki Digital Bank thay mặt KH nộp cho cơ quan có thẩm quyền theo quy định của pháp luật."
+                },
+                {
+                  "text": "KH trúng thưởng tự chịu hoàn toàn các chi phí phát sinh liên quan đến việc nhận thưởng (lưu trú, di chuyển, ăn uống,…)."
+                },
+                {
+                  "text": "Thể lệ chương trình khuyến mại được công bố trên website của Vikki Digital Bank (<strong><u>https://www.vikkibank.vn</u></strong>). Trong trường hợp phát sinh yêu cầu sửa đổi, điều chỉnh Thể lệ này, Vikki Digital Bank đảm bảo hoàn tất thủ tục thông báo với các cơ quan nhà nước có thẩm quyền và công bố công khai Thể lệ sửa đổi/bổ sung theo đúng quy định."
+                },
+                {
+                  "text": "KH tham gia chương trình khuyến mại đồng ý nhận các thông báo ưu đãi qua các kênh truyền thông (SMS, Email, Banner điện tử, trang xã hội…) của Vikki Digital Bank và đối tác thứ ba để truyền thông cho chương trình."
+                },
+                {
+                  "text": "Sau khi kết thúc chương trình khuyến mại, Vikki Digital Bank có trách nhiệm báo cáo kết quả thực hiện khuyến mại theo đúng quy định của pháp luật. Các chứng từ, tài liệu"
+                },
+                {
+                  "text": "Liên quan đến báo cáo kết quả thực hiện khuyến mại phải được Vikki Digital Bank lưu trữ và chịu trách nhiệm theo đúng quy định của pháp luật để phục vụ công tác thanh tra, kiểm tra, giám sát."
+                },
+                {
+                  "text": "Trường hợp sau ngày đăng ký thông báo thể lệ này, lãi suất huy động áp dụng cho chương trình không phù hợp quy định mới của NHNN hoặc cơ quan có thẩm quyền thì Vikki Digital Bank sẽ điều chỉnh phù hợp với yêu cầu."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<style>
+  body{
+    margin:0;
+  }
+  #golden_saving {
+    border: none;
+    padding: 0;
+  }
+</style>
+<script>
+  window.addEventListener("message", (event) => {
+    if (event.data?.type !== "setHeight") return;
+
+    const iframe = document.getElementById("golden_saving");
+    const height = event.data.height;
+    
+    if (iframe.offsetHeight !== height) {
+      iframe.style.height = `${height}px`;
+    }
+    
+  });
+</script>
+
+<iframe
+  id="golden_saving"
+  src="./index.html"
+  width="100%"
+  title="Iframe Example"
+  scrolling="no"
+></iframe>

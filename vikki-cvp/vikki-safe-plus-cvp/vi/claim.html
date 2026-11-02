@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HƯỚNG DẪN BỒI THƯỜNG BẢO HIỂM TAI NẠN CON NGƯỜI</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(4, 11, 30, 0.92);
+      }
+      .legal-page {
+        padding: 16px;
+        line-height: 135%;
+        padding-top: 20px;
+      }
+      .legal-content > .accordion {
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        overflow: hidden;
+      }
+      .legal-content > .accordion > .accordion-header {
+        background: rgba(232, 241, 255, 1);
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .accordion-body {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .accordion-header {
+        font-size: 16px;
+        padding: 12px 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color:  rgba(0, 0, 255, 1);
+        line-height: 22px;
+      }
+      .article .accordion-header {
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+      .legal-list {
+        margin: 8px 0 12px 6px;
+        padding: 0;
+      }
+      .legal-list-item {
+        margin-bottom: 6px;
+        margin-left: 15px;
+      }
+      .legal-list-text {
+        display: inline;
+        line-height: 1.6;
+      }
+
+      /* ===== Marker styles ===== */
+      .legal-list.numeric,
+      .legal-list.decimal {
+        list-style-type: decimal;
+      }
+      .legal-list.alpha {
+        list-style-type: lower-alpha;
+      }
+      .legal-list.roman {
+        list-style-type: lower-roman;
+      }
+      .legal-list.disc {
+        list-style-type: disc;
+      }
+      .legal-list.none {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      .legal-title {
+        font-size: 20px;
+        color: rgba(0, 0, 255, 1);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+        padding-top:20px;
+      }
+      .center img {
+        width: 85px;
+      }
+      .legal-small-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      thead {
+        background: rgba(0, 72, 255, 1);
+        color: #fff;
+      }
+      thead th {
+        font-weight: normal;
+        font-size: 12px;
+      }
+      .bg-blue {
+        background: rgba(237, 248, 255, 1);
+      }
+      tbody td {
+        font-size: 14px;
+        color: rgba(1, 5, 15, 1);
+      }
+      tbody td,
+      table {
+        border-collapse: collapse;
+        border: 1px solid #dfdfdf;
+        min-width: 100%;
+        table-layout: fixed;
+      }
+      table th:first-child,
+      table td:first-child {
+        width: 40px;
+      }
+      thead th,
+      tbody td {
+        max-width: 150px;
+        padding: 8px;
+      }
+      .scroll-x {
+        overflow-x: auto;
+      }
+      .auto-table {
+        table-layout: auto;
+        width: auto;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 700px;
+      }
+      thead th {
+        border: 1px solid #fff;
+      }
+      .m-w-100 {
+        min-width: 100px;
+      }
+      .fz-14 {
+        font-size: 14px;
+      }
+      .p-8 {
+        padding: 8px;
+      }
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .fee-table {
+        min-width: 100%;
+        width: max-content;
+        border-collapse: collapse;
+      }
+      .w-150 {
+        width: 150px;
+      }
+      .legal-note {
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .legal-footer {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .legal-content {
+        padding-bottom: 120px;
+      }
+      .w-unset {
+        width: unset !important;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .bold-center{
+        font-weight: bold;
+        text-align: center;
+      }
+      .w-150-f {
+        width: 150px !important;
+      }
+      .no-list-style {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legal-page">
+      <span class="legal-small-title">Điều khoản và Điều kiện</span>
+      <div class="center"><img src="../assets/vikki-logo.png" alt="Vikki" /></div>
+      <h1 class="legal-title">HƯỚNG DẪN BỒI THƯỜNG BẢO HIỂM TAI NẠN CON NGƯỜI</h1>
+
+
+      <div class="legal-layout">
+
+        <main class="legal-content">
+            <div class="accordion" id="claim-content">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-claim-content')"
+              >
+                NỘI DUNG
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-claim-content"
+                style="display: block"
+              >
+                  <div class="accordion" id="claim-notice">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-notice')"
+                    >
+                      THÔNG BÁO SỰ KIỆN BẢO HIỂM
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-notice"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khi xảy ra rủi ro được bảo hiểm, Người được bảo hiểm hoặc thân nhân của Người được bảo hiểm phải áp dụng các biện pháp cần thiết và có thể thực hiện được để cứu chữa nạn nhân.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Trong trường hợp cần thiết, thông báo cho cơ quan công an, chính quyền địa phương nơi xảy ra tai nạn để hỗ trợ người bị nạn theo quy định.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Nhanh chóng liên hệ với HDI qua số tổng đài 1900068898 để thông báo sự kiện bảo hiểm và cung cấp thông tin vụ việc để nhận hướng dẫn cụ thể, thông tin khai báo như sau:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Thông tin người yêu cầu trả tiền bảo hiểm.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Thông tin hợp đồng bảo hiểm tai nạn con người: Chủ bảo hiểm; Số chứng minh thư, căn cước công dân: Số hợp đồng/ giấy chứng nhận bảo hiểm; Đơn vị tham gia bảo hiểm.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Thông tin về sự kiện bảo hiểm: Thời gian, địa điểm và nguyên dân, diễn biến của sự kiện bảo hiểm.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Trong vòng 30 ngày kể từ thời điểm xảy ra sự kiện bảo hiểm cần gửi thông báo bằng văn bản đến HDI
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="claim-dossier">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-dossier')"
+                    >
+                      HOÀN THIỆN HỒ SƠ YÊU CẦU BỒI THƯỜNG
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-dossier"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Nhân viên bồi thường của HDI sẽ liên hệ ngay với Quý khách hàng để hướng dẫn thu thập hồ sơ và tiến hành giải quyết quyền lợi được bảo hiểm.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Hồ sơ bồi thường bao gồm các chứng từ sau:
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                          <div >1. Giấy yêu cầu trả tiền bảo hiểm có xác nhận của chủ HĐBH (theo mẫu của HDI) (bản gốc)</div>
+                  
+                  
+                          <div >2. Tùy thuộc nguyên nhân sự cố, các chứng từ sau sẽ được yêu cầu:</div>
+                  
+                  
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Đối với tai nạn giao thông
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Cung cấp bản tường trình tai nạn (theo mẫu của HDI) có xác nhận của chủ HĐBH (bản gốc).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Trường hợp có CSGT lập biên bản, cần cung cấp biên bản tai nạn giao thông (bản gốc hoặc bản công chứng).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Giấy phép lái xe hợp lệ (nếu là người trực tiếp lái xe) và các giấy tờ khác liên quan (bản photo).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Đối với tai nạn lao động và tai nạn sinh hoạt
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Cung cấp bản tường trình tai nạn (theo mẫu của HDI) có xác nhận của chủ HĐBH/công ty/chính quyền và các giấy tờ khác có liên quan (bản gốc).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Các giấy tờ khác có liên quan (bản gốc).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                          </ul>
+                  
+                          <div >3. Chứng từ y tế:</div>
+                  
+                  
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Giấy ra viện/ phiếu điều trị (trường hợp điều trị nội trú)
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Phiếu mổ (trường hợp phẫu thuật)
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Tiền viện phí/ toa thuốc/ hóa đơn/ bảng kê
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Các kết quả xét nghiệm lâm sàng
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Và một số giấy tờ liên quan do người có thẩm quyền của cơ sở y tế ký, đóng dấu. (Các chứng từ y tế bản photo, các hóa đơn bản gốc)
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                          <div >4. Trích lục khai tử (trường hợp người được BH tử vong) (bản công chứng)</div>
+                  
+                  
+                          <div >5. Chứng từ chứng minh quyền thừa kế hợp pháp (trường hợp người được Bảo hiểm tử vong).</div>
+                  
+                  
+                          <div >6. Trường hợp người được Bảo hiểm ủy quyền cho người khác nhận tiền Bảo hiểm phải có giấy ủy quyền hợp pháp (bản công chứng).</div>
+                  
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="claim-settlement">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-settlement')"
+                    >
+                      GIẢI QUYẾT BỒI THƯỜNG:
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-settlement"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  HDI cam kết bồi thường đầy đủ cho quý khách hàng theo quy định, quy tắc và điều khoản hợp đồng bảo hiểm.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Trong trường hợp quý khách hàng không phối hợp thực hiện theo hướng dẫn của HDI/ không thực hiện đầy đủ nghĩa vụ theo quy định của HDI. HDI có thể giảm trừ một phần hoặc toàn bộ số tiền bồi thường theo quy định.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Để biết thêm thông tin và được tư vấn cụ thể về bảo hiểm tai nạn con người của HDI, vui lòng liên hệ:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            CÔNG TY TNHH BẢO HIỂM HD
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Hotline: 1900068898
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Email: Giamdinhboithuong@hdinsurance.com.vn
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    <style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-content .article > .accordion-header {
+    font-weight: 700;
+  }
+</style>
+
+    <script>
+      function toggle(id) {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.display = el.style.display === 'none' ? 'block' : 'none'
+      }
+    </script>
+  </body>
+</html>

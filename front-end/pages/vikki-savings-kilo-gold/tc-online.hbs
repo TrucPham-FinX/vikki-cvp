@@ -1,0 +1,210 @@
+{{> static/legal-format-utilities}}
+
+<style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-title {
+    color: #0047ff;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 12px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .legal-title::after {
+    content: "“TIẾT KIỆM Vikki – Trúng VÀNG Nguyên Ký”";
+    display: block;
+    color: #0047ff;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 0 0 20px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  #phu-luc-the-le > .accordion-header::before {
+    content: "PHỤ LỤC";
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .legal-content .accordion-header {
+    font-weight: 700;
+  }
+
+  .legal-content thead th {
+    font-weight: 700;
+  }
+
+  .legal-content .legal-list.decimal {
+    list-style-type: decimal;
+  }
+
+  .legal-content .legal-list.disc,
+  .legal-content .legal-list.decimal,
+  .legal-content .legal-list.roman {
+    padding-left: 28px;
+    margin-left: 0;
+  }
+
+  .legal-content .legal-list.disc .legal-list-item,
+  .legal-content .legal-list.decimal .legal-list-item,
+  .legal-content .legal-list.roman .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item {
+    margin-bottom: 12px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list-text {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 8px;
+    align-items: start;
+  }
+
+  .legal-content .legal-decimal-marker {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman {
+    margin-top: 10px;
+    padding-left: 44px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-item {
+    padding-left: 8px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-text {
+    display: inline;
+  }
+
+  .legal-content .formula-list {
+    margin: 18px 0 20px;
+    overflow-x: auto;
+    padding-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-text {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 78px 10px 76px 10px 62px 10px 40px 8px 22px;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list {
+    margin-left: -52px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list .legal-list-text {
+    display: grid;
+  }
+
+  @media (max-width: 480px) {
+    .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list {
+      justify-content: flex-start;
+      margin-left: -52px;
+      max-width: calc(100% + 52px);
+      width: calc(100% + 52px);
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .legal-content .formula-list .legal-list-text {
+      font-size: 12px;
+      gap: 1px;
+      grid-template-columns: 68px 8px 62px 8px 54px 8px 34px 6px 20px;
+    }
+  }
+
+  @media (max-width: 340px) {
+    .legal-content .formula-list .legal-list-text {
+      font-size: 11px;
+      grid-template-columns: 60px 7px 55px 7px 48px 7px 30px 5px 18px;
+    }
+  }
+
+  .legal-content .sub-decimal-list {
+    padding-left: 0;
+  }
+
+  #hang-hoa-dich-vu .legal-list.alpha > .legal-list-item::marker {
+    font-weight: 700;
+  }
+
+  .legal-content .eligibility-plus-list {
+    list-style: none;
+    padding-left: 28px;
+  }
+
+  .legal-content .eligibility-plus-list > .legal-list-item {
+    position: relative;
+  }
+
+  .legal-content .eligibility-plus-list > .legal-list-item::before {
+    content: "+";
+    left: -20px;
+    position: absolute;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 28px;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list > li {
+    position: relative;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list > li::before {
+    content: "+";
+    left: -20px;
+    position: absolute;
+  }
+
+  .legal-content .check-marker::marker {
+    content: "✓  ";
+  }
+
+  .legal-content .plus-marker::marker {
+    content: "+  ";
+  }
+
+  .legal-content .hyphen-marker::marker {
+    content: "-  ";
+  }
+
+  .legal-content .diamond-marker::marker {
+    content: "❖  ";
+  }
+
+  .legal-content .fee-table {
+    min-width: 760px;
+  }
+
+  .legal-content .fee-table th:first-child,
+  .legal-content .fee-table td:first-child {
+    min-width: 76px;
+    white-space: nowrap;
+  }
+
+  .legal-content .legal-list .fee-table th:first-child,
+  .legal-content .legal-list .fee-table td:first-child {
+    white-space: normal;
+  }
+
+</style>

@@ -1,0 +1,29 @@
+<style>
+  .promo-desc {
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+  .promo-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+</style>
+<article class='promo-detail'>
+  <div class='card-image'>
+    <img style='width: 100%' src='{{item.thumbnail}}' alt='{{item.name}}' />
+  </div>
+
+  <div class='promo-content'>
+    {{!-- <h3 class='promo-title'>
+      {{item.name}}
+    </h3> --}}
+    <p class='promo-expire'>{{item.extraData}}</p>
+
+    <div class='promo-desc'>
+      {{{item.longDesc}}}
+    </div>
+
+  </div>
+
+</article>

@@ -1,0 +1,32 @@
+<div class="accordion" id="{{id}}">
+  <div
+    class="accordion-header"
+    onclick="toggle('body-{{id}}')"
+  >
+    {{title}}
+  </div>
+
+  <div
+    class="accordion-body"
+    id="body-{{id}}"
+    style="display: {{#if defaultExpanded}}block{{else}}none{{/if}}"
+  >
+    {{#each blocks}}
+      {{#if (eq type "paragraph")}}
+        {{> static/blocks/paragraph}}
+      {{/if}}
+
+      {{#if (eq type "subheading")}}
+        {{> static/blocks/subheading}}
+      {{/if}}
+
+      {{#if (eq type "list")}}
+        {{> static/blocks/list}}
+      {{/if}}
+
+      {{#if (eq type "table")}}
+        {{> static/blocks/table}}
+      {{/if}}
+    {{/each}}
+  </div>
+</div>

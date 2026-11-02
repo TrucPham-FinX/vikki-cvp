@@ -1,0 +1,132 @@
+{{> static/legal-format-utilities}}
+
+<style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-title {
+    color: #0047ff;
+    font-size: 17px;
+    line-height: 1.35;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .legal-title::after {
+    content: "“TIẾT KIỆM Vikki – Trúng VÀNG Nguyên Ký”";
+    display: block;
+    color: #0047ff;
+    font-size: 17px;
+    line-height: 1.35;
+    margin: 0 0 18px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: none;
+  }
+
+  #noi-dung > .accordion-header {
+    display: none;
+  }
+
+  .legal-content .accordion-header {
+    font-weight: 700;
+  }
+
+  .legal-content thead th {
+    font-weight: 700;
+  }
+
+  .legal-content .legal-list.disc {
+    padding-left: 28px;
+    margin-left: 0;
+  }
+
+  .legal-content .legal-list.disc .legal-list-item {
+    margin-left: 0;
+  }
+
+  #hang-hoa-dich-vu .legal-list.alpha > .legal-list-item::marker {
+    font-weight: 700;
+  }
+
+  .legal-content .eligibility-plus-list {
+    list-style: none;
+    padding-left: 28px;
+  }
+
+  .legal-content .eligibility-plus-list > .legal-list-item {
+    position: relative;
+  }
+
+  .legal-content .eligibility-plus-list > .legal-list-item::before {
+    content: "+";
+    left: -20px;
+    position: absolute;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 28px;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list > li {
+    position: relative;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-plus-list > li::before {
+    content: "+";
+    left: -20px;
+    position: absolute;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-hyphen-list {
+    list-style: none;
+    margin: 0;
+    padding-left: 28px;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-hyphen-list > li {
+    position: relative;
+  }
+
+  #co-cau-giai-thuong .legal-note .note-hyphen-list > li::before {
+    content: "-";
+    left: -20px;
+    position: absolute;
+  }
+
+  .legal-content .check-marker::marker {
+    content: "✓  ";
+  }
+
+  .legal-content .plus-marker::marker {
+    content: "+  ";
+  }
+
+  .legal-content .hyphen-marker::marker {
+    content: "-  ";
+  }
+
+  .legal-content .diamond-marker::marker {
+    content: "❖  ";
+  }
+
+  .legal-content .fee-table {
+    min-width: 760px;
+  }
+
+  .legal-content .fee-table th:first-child,
+  .legal-content .fee-table td:first-child {
+    min-width: 76px;
+    white-space: nowrap;
+  }
+
+  .legal-content .legal-list .fee-table th:first-child,
+  .legal-content .legal-list .fee-table td:first-child {
+    white-space: normal;
+  }
+
+</style>

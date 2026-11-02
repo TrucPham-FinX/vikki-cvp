@@ -1,0 +1,23 @@
+<style>
+  #interest_cvp {
+    border: none;
+    padding: 0;
+  }
+</style>
+<script>
+  window.addEventListener('message', (event) => {
+    if (event.data?.type === 'setHeight') {
+      const iframe = document.getElementById('interest_cvp');
+      iframe.style.height = event.data.height + 50 + 'px';
+    }
+  });
+</script>
+
+<iframe
+  id="interest_cvp"
+  src="https://vikki-cdn.sit.galaxyfinx.cloud/vikki-cvp/td-interest-cvp/index.html"
+  height="660"
+  width="100%"
+  title="Iframe Example"
+  scrolling="no"
+></iframe>

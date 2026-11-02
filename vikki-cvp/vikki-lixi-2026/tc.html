@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(4, 11, 30, 0.92);
+      }
+      .legal-page {
+        padding: 16px;
+        line-height: 135%;
+        padding-top: 20px;
+      }
+      .legal-content > .accordion {
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        overflow: hidden;
+      }
+      .legal-content > .accordion > .accordion-header {
+        background: rgba(232, 241, 255, 1);
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .accordion-body {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .accordion-header {
+        font-size: 16px;
+        padding: 12px 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color:  rgba(0, 0, 255, 1);
+        line-height: 22px;
+      }
+      .article .accordion-header {
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+      .legal-list {
+        margin: 8px 0 12px 6px;
+        padding: 0;
+      }
+      .legal-list-item {
+        margin-bottom: 6px;
+        margin-left: 15px;
+      }
+      .legal-list-text {
+        display: inline;
+        line-height: 1.6;
+      }
+
+      /* ===== Marker styles ===== */
+      .legal-list.numeric,
+      .legal-list.decimal {
+        list-style-type: decimal;
+      }
+      .legal-list.alpha {
+        list-style-type: lower-alpha;
+      }
+      .legal-list.roman {
+        list-style-type: lower-roman;
+      }
+      .legal-list.disc {
+        list-style-type: disc;
+      }
+      .legal-list.none {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      .legal-title {
+        font-size: 20px;
+        color: rgba(0, 0, 255, 1);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+        padding-top:20px;
+      }
+      .center img {
+        width: 85px;
+      }
+      .legal-small-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      thead {
+        background: rgba(0, 72, 255, 1);
+        color: #fff;
+      }
+      thead th {
+        font-weight: normal;
+        font-size: 12px;
+      }
+      .bg-blue {
+        background: rgba(237, 248, 255, 1);
+      }
+      tbody td {
+        font-size: 14px;
+        color: rgba(1, 5, 15, 1);
+      }
+      tbody td,
+      table {
+        border-collapse: collapse;
+        border: 1px solid #dfdfdf;
+        min-width: 100%;
+        table-layout: fixed;
+      }
+      table th:first-child,
+      table td:first-child {
+        width: 40px;
+      }
+      thead th,
+      tbody td {
+        max-width: 150px;
+        padding: 8px;
+      }
+      .scroll-x {
+        overflow-x: auto;
+      }
+      .auto-table {
+        table-layout: auto;
+        width: auto;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 700px;
+      }
+      thead th {
+        border: 1px solid #fff;
+      }
+      .m-w-100 {
+        min-width: 100px;
+      }
+      .fz-14 {
+        font-size: 14px;
+      }
+      .p-8 {
+        padding: 8px;
+      }
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .fee-table {
+        min-width: 100%;
+        width: max-content;
+        border-collapse: collapse;
+      }
+      .w-150 {
+        width: 150px;
+      }
+      .legal-note {
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .legal-footer {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .legal-content {
+        padding-bottom: 120px;
+      }
+      .w-unset {
+        width: unset !important;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .bold-center{
+        font-weight: bold;
+        text-align: center;
+      }
+      .w-150-f {
+        width: 150px !important;
+      }
+      .no-list-style {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legal-page">
+      <span class="legal-small-title">Điều khoản và Điều kiện</span>
+      <div class="center"><img src="assets/vikki-logo.png" alt="Vikki" /></div>
+      <h1 class="legal-title">ĐIỀU KHOẢN VÀ ĐIỀU KIỆN DỊCH VỤ LÌ XÌ ONLINE TRÊN ỨNG DỤNGVIKKI</h1>
+
+        <p class="legal-intro">Điều Khoản và Điều Kiện này quy định việc Khách hàng sử dụng dịch vụ &#x27;Lì Xì Online&#x27; (sau đây gọi là &#x27;Dịch vụ&#x27;) trên ứng dụng di động của Vikki Bank.</p>
+
+      <div class="legal-layout">
+
+        <main class="legal-content">
+            <div class="accordion" id="phan-a">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-phan-a')"
+              >
+                Phần A. QUY ĐỊNH CHUNG
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-phan-a"
+                style="display: block"
+              >
+                  <div class="accordion" id="dieu-1">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-1')"
+                    >
+                      Điều 1. Giải thích từ ngữ
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-1"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank: là Ngân hàng Trách nhiệm hữu hạn một thành viên SốVikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khách hàng (“KH”): bao gồm Người gửi (Người khởi tạo bao lì xì) và Người nhận(Người thụ hưởng bao lì xì) có tài khoản thanh toán VikkiME.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Lì xì cá nhân: là hình thức người gửi tạo bao lì xì cho một người nhận.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Lì xì nhóm: là hình thức người gửi tạo bao lì xì cho nhiều người nhận với chế độ chia tiền Ngẫu nhiên hoặc Chia đều.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Chia tiền ngẫu nhiên: Hệ thống chia tiền ngẫu nhiên, đảmbảo số tiền mỗi người nhận là khác nhau.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Chia tiền đều: Hệ thống chia đều tổng số tiền để đảm bảo số tiền mỗi người nhận là bằng nhau.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-2">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-2')"
+                    >
+                      Điều 2. ĐIỀU KIỆN GIAO DỊCH
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-2"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Phạm vi áp dụng: Người nhận phải có tài khoản VikkiME để nhận tiền.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Hạn mức tối thiểu: giá trị mỗi bao lì xì tối thiểu là 2.000 VND.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Hạn mức tối đa:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list alpha">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Lì xì cá nhân: giá trị mỗi bao lì xì tối đa là nhỏ hơn 500.000.000VND.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Lì xì nhóm: giá trị mỗi bao lì xì tối đa là không giới hạn nhưng không vượt quá hạn mức giao dịch thanh toán tối đa theo quy định của pháp luật và của Vikki Bank trong từng thời kỳ.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Thời hạn hiệu lực bao lì xì: Mỗi bao lì xì có thời hạn hiệu lực tùy theo thiết lập của khách hàng.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-3">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-3')"
+                    >
+                      Điều 3. QUY ĐỊNH VỀ GIAO DỊCH VÀ CƠ CHẾ TÍNH LÃI
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-3"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list numeric">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Số tiền mừng được trích từ tài khoản thanh toán của khách hàng tại Vikki Bank và được hệ thống quản lý theo từng bao lì xì đã tạo. Số tiền trong baolì xì được tính lãi theo mức lãi suất tiền gửi không kỳ hạn do Vikki Bank công bố theo từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Trường hợp hết thời hạn bao lì xì mà vẫn còn số tiền chưa được nhận, hệ thống sẽ tự động hoàn trả số tiền còn dư về tài khoản của người gửi theo quy định.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Mỗi người nhận chỉ được nhận tối đa 01 (một) lần cho mỗi bao lì xì nhóm từ cùng một Người gửi.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-4">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-4')"
+                    >
+                      Điều 4. QUYỀN LỢI VÀ TRÁCH NHIỆM CỦA KHÁCH HÀNG
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-4"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khách hàng được sử dụng dịch vụ “Lì Xì Online”, bao gồm tạo và theo dõi cácbao tiền mừng đã gửi. Được chia sẻ bao lì xì dưới dạng video và nhận hoàn tiền tự động đối với số tiền chưa được nhận khi bao hết hiệu lực.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khách hàng có quyền hủy hiệu lực bao lì xì tại bất kỳ thời điểm nào trước thời gian hết hạn của bao lì xì đã tạo, số tiền còn lại (nếu có) sẽ được hệ thống hoàn trả về tài khoản thanh toán của khách hàng theo quy định dịch vụ.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-5">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-5')"
+                    >
+                      Điều 5. NGHĨA VỤ VÀ TRÁCH NHIỆM CỦA VIKKI BANK
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-5"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Thực hiện xử lý giao dịch, hoàn tiền và hỗ trợ khách hàng trong quá trình sử dụng dịch vụ theo quy định của Vikki Bank và quy định pháp luật hiện hành.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Đảm bảo an toàn, bảo mật hệ thống và thông tin khách hàng theo quy định của pháp luật.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank có quyền giám sát, tạm dừng, từ chối hoặc xử lý giao dịch theo quy định về phòng, chống rửa tiền và tài trợ khủng bố khi phát hiện dấu hiệu bất thường.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-6">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-6')"
+                    >
+                      Điều 6. MIỄN TRỪ TRÁCH NHIỆM
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-6"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank không chịu trách nhiệm nếu Khách hàng chia sẻ nhầm liên kết/mã QR dẫn đến việc người không mong muốn nhận được tiền.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-7">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-7')"
+                    >
+                      ĐIỀU 7. ĐIỀU KHOẢN CHUNG
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-7"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Việc sử dụng dịch vụ đồng nghĩa với việc Khách hàng đã đọc, hiểu và đồng ý với toàn bộ Điều khoản và điều kiện này. Sự đồng ý của Khách hàng có hiệu lực từ thời điểm Khách hàng xác nhận trên nền tảng điện tử Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                   Điều khoản và điều kiện này có thể được điều chỉnh để phù hợp với chính sách vận hành dịch vụ và quy định pháp luật trong từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    
+    <script>
+      function toggle(id) {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.display = el.style.display === 'none' ? 'block' : 'none'
+      }
+    </script>
+  </body>
+</html>

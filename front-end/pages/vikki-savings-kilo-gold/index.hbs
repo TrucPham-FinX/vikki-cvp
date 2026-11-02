@@ -1,0 +1,588 @@
+<style>
+  html,
+  body.vikki-savings-kilo-gold {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  .vikki-savings-kilo-gold {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
+
+  body.vikki-savings-kilo-gold.hasTopSpace {
+    padding-top: 25vw;
+  }
+
+  .vikki-savings-kilo-gold #promo-detail-popup,
+  .vikki-savings-kilo-gold template {
+    display: none;
+  }
+
+  .vikki-savings-kilo-gold #backToTop {
+    bottom: 24px;
+  }
+
+  .vikki-savings-kilo-gold .golden-image-section {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-image-section .gjs-cell {
+    display: block;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-benefits-cell .golden-image {
+    margin-bottom: -24px;
+  }
+
+  .vikki-savings-kilo-gold .container.pt-1:has(img[src*="cau-hoi-thuong-gap"]) {
+    padding-top: 0;
+  }
+
+  .vikki-savings-kilo-gold .accordion-content ul {
+    padding-left: 28px;
+  }
+
+  .vikki-savings-kilo-gold .container.pt-4:has(.golden-slider) {
+    padding-top: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider {
+    padding: 22px 0 18px;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider > img {
+    display: block;
+    width: 82% !important;
+    max-width: 420px;
+    margin: 0 auto 10px;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider .slider {
+    margin-top: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider .slide-container {
+    padding-top: 14px;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider swiper-container {
+    width: 100%;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider swiper-slide {
+    padding: 0 8px 15px;
+  }
+
+  .vikki-savings-kilo-gold .golden-slider .swiper-slide-next {
+    left: 0;
+    animation-name: none;
+  }
+
+  .vikki-savings-kilo-gold .golden-pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: auto;
+    margin: 0 auto;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #f3f3f3;
+  }
+
+  .vikki-savings-kilo-gold .golden-pagination-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+  }
+
+  .vikki-savings-kilo-gold .golden-pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #d9d9d9;
+    transition: width 0.25s ease, background-color 0.25s ease;
+  }
+
+  .vikki-savings-kilo-gold .golden-pagination-dot.is-active {
+    width: 24px;
+    background: #3158ff;
+  }
+
+  .vikki-savings-kilo-gold .golden-hotspot-cell {
+    position: relative;
+  }
+
+  .vikki-savings-kilo-gold .golden-steps-cell {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .vikki-savings-kilo-gold .two-golden-overlay {
+    position: absolute;
+    top: 75%;
+    right: 0.5%;
+    width: 31%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .vikki-savings-kilo-gold .image-hotspot {
+    position: absolute;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .vikki-savings-kilo-gold .golden-faq-hotspot {
+    left: 51.5%;
+    top: 94.8%;
+    width: 44.5%;
+    height: 3.2%;
+  }
+
+  .vikki-savings-kilo-gold .golden-terms-hotspot {
+    left: 5.5%;
+    top: 94.8%;
+    width: 44.5%;
+    height: 3.2%;
+  }
+
+  .vikki-savings-kilo-gold .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+    overscroll-behavior: contain;
+  }
+
+  .vikki-savings-kilo-gold .popup-body {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vikki-savings-kilo-gold .popup-title {
+    min-height: 80px;
+    background: rgba(246, 247, 248, 1);
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .vikki-savings-kilo-gold .popup-body.popup-body--terms-online .popup-title {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 112px;
+    padding: 14px 64px 18px 16px;
+    line-height: 1.25;
+    text-align: left;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .vikki-savings-kilo-gold .popup-body.pt-50 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .vikki-savings-kilo-gold .popup-body.pt-50 .popup-iframe {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+  }
+
+  .vikki-savings-kilo-gold .popup-body.pt-50 .popup-inner {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vikki-savings-kilo-gold .popup-inner {
+    padding-bottom: 100px;
+  }
+
+  .vikki-savings-kilo-gold .golden-terms-activation {
+    padding-top: 0;
+  }
+
+  .vikki-savings-kilo-gold .golden-terms-activation .flex {
+    gap: 0;
+  }
+
+  .vikki-savings-kilo-gold .container.px-1 > .px-3.pb-5.pt-3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .vikki-savings-kilo-gold .group-item {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .vikki-savings-kilo-gold .group-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .vikki-savings-kilo-gold .group-sub-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+
+  .vikki-savings-kilo-gold .group-sub {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+  }
+
+  .vikki-savings-kilo-gold .group-sub:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .vikki-savings-kilo-gold .group-sub p {
+    margin: 12px 0 0;
+  }
+
+  .vikki-savings-kilo-gold .group-sub p:first-child {
+    margin-top: 0;
+  }
+
+  .vikki-savings-kilo-gold .group-sub p:last-child {
+    margin-bottom: 0;
+  }
+
+  .vikki-savings-kilo-gold .group-sub ul {
+    margin: 12px 0 0;
+    padding-left: 28px;
+  }
+
+  .vikki-savings-kilo-gold .group-sub ul:first-child {
+    margin-top: 0;
+  }
+
+  .vikki-savings-kilo-gold #backToTopQA,
+  body.vikki-savings-kilo-gold:has(#popup.show) #backToTop {
+    display: none !important;
+  }
+
+  .vikki-savings-kilo-gold .accordion-group-heading {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(4, 11, 30, 0.6);
+    padding: 20px 0 8px;
+  }
+
+  .vikki-savings-kilo-gold .accordion-group-heading:first-child {
+    padding-top: 0;
+  }
+
+</style>
+<script>
+  const goldenSwiperOptions = {
+    slidesPerView: 1.24,
+    centeredSlides: true,
+    spaceBetween: 12,
+    pagination: true,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false
+    }
+  };
+
+  const ensureGoldenLoopSlides = (swiper) => {
+    if (swiper.dataset.goldenLoopReady === 'true') return;
+
+    const slides = Array.from(swiper.children).filter((slide) => (
+      slide.tagName.toLowerCase() === 'swiper-slide' && !slide.dataset.goldenClone
+    ));
+
+    if (!slides.length) return;
+
+    slides.forEach((slide, index) => {
+      slide.dataset.goldenSourceIndex = String(index);
+    });
+
+    for (let copy = 0; copy < 2; copy += 1) {
+      slides.forEach((slide, index) => {
+        const clone = slide.cloneNode(true);
+        clone.dataset.goldenClone = 'true';
+        clone.dataset.goldenSourceIndex = String(index);
+        swiper.appendChild(clone);
+      });
+    }
+
+    swiper.dataset.goldenLoopReady = 'true';
+  };
+
+  const configureGoldenSwiperBeforeInit = () => {
+    document.querySelectorAll('.vikki-savings-kilo-gold .golden-slider .center-swiper').forEach((swiper) => {
+      ensureGoldenLoopSlides(swiper);
+      Object.assign(swiper, goldenSwiperOptions);
+    });
+  };
+
+  configureGoldenSwiperBeforeInit();
+
+  const goldenSwiperObserver = new MutationObserver(configureGoldenSwiperBeforeInit);
+
+  if (document.body) {
+    goldenSwiperObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  customElements.whenDefined('swiper-container').then(() => {
+    const SwiperContainer = customElements.get('swiper-container');
+    const prototype = SwiperContainer?.prototype;
+
+    if (!prototype || prototype.goldenSavingsPatched) return;
+
+    const initialize = prototype.initialize;
+
+    prototype.initialize = function (...args) {
+      if (this.closest?.('.vikki-savings-kilo-gold .golden-slider')) {
+        Object.assign(this, goldenSwiperOptions);
+      }
+
+      return initialize.apply(this, args);
+    };
+
+    prototype.goldenSavingsPatched = true;
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    goldenSwiperObserver.disconnect();
+
+    const setupGoldenPagination = (swiper, instance) => {
+      if (swiper.dataset.goldenPaginationReady === 'true') return;
+
+      const shadowStyle = document.createElement('style');
+      shadowStyle.textContent = '.swiper-pagination { display: none !important; }';
+      swiper.shadowRoot?.appendChild(shadowStyle);
+
+      const paginationWrap = document.createElement('div');
+      paginationWrap.className = 'golden-pagination-wrap';
+
+      const pagination = document.createElement('div');
+      pagination.className = 'golden-pagination';
+
+      for (let index = 0; index < 4; index += 1) {
+        const dot = document.createElement('span');
+        dot.className = 'golden-pagination-dot';
+        dot.setAttribute('aria-hidden', 'true');
+        pagination.appendChild(dot);
+      }
+
+      paginationWrap.appendChild(pagination);
+      swiper.insertAdjacentElement('afterend', paginationWrap);
+
+      const updatePagination = () => {
+        const dots = pagination.querySelectorAll('.golden-pagination-dot');
+
+        const activeSlide = swiper.querySelector('swiper-slide.swiper-slide-active');
+        const sourceIndex = Number(activeSlide?.dataset.goldenSourceIndex);
+        const activeIndex = Number.isFinite(sourceIndex) ? sourceIndex : instance.realIndex % 4;
+
+        dots.forEach((dot, index) => {
+          const isActive = index === activeIndex;
+          dot.classList.toggle('is-active', isActive);
+          dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+      };
+
+      const schedulePaginationUpdate = () => {
+        requestAnimationFrame(updatePagination);
+        setTimeout(updatePagination, 50);
+        setTimeout(updatePagination, 300);
+      };
+
+      instance.on('slideChange', schedulePaginationUpdate);
+      instance.on('slideChangeTransitionEnd', schedulePaginationUpdate);
+      updatePagination();
+      requestAnimationFrame(updatePagination);
+      setTimeout(updatePagination, 300);
+      swiper.goldenPaginationTimer = setInterval(updatePagination, 250);
+
+      swiper.dataset.goldenPaginationReady = 'true';
+    };
+
+    const startGoldenSwiperAutoSlide = () => {
+      configureGoldenSwiperBeforeInit();
+
+      document.querySelectorAll('.vikki-savings-kilo-gold .golden-slider .center-swiper').forEach((swiper) => {
+        const instance = swiper.swiper;
+        if (!instance) return;
+
+        Object.assign(instance.params, goldenSwiperOptions);
+        instance.update();
+        instance.autoplay?.start();
+        setupGoldenPagination(swiper, instance);
+      });
+    };
+
+    requestAnimationFrame(startGoldenSwiperAutoSlide);
+    setTimeout(startGoldenSwiperAutoSlide, 300);
+    setTimeout(startGoldenSwiperAutoSlide, 1000);
+
+    const popup = document.getElementById('popup');
+    let lockedScrollY = 0;
+
+    const lockPageScroll = () => {
+      lockedScrollY = window.scrollY || window.pageYOffset;
+      Object.assign(document.body.style, {
+        position: 'fixed',
+        top: `-${lockedScrollY}px`,
+        left: '0',
+        right: '0',
+        width: '100%',
+        overflow: 'hidden'
+      });
+    };
+
+    const unlockPageScroll = () => {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      window.scrollTo(0, lockedScrollY);
+    };
+
+    if (popup) {
+      const applyFaqPopupLayout = () => {
+        const popupBody = document.getElementById('popupBody');
+        if (!popupBody) return;
+
+        const iframe = popupBody.querySelector('.popup-iframe');
+        const isTermsOnline = iframe?.getAttribute('src')?.includes('/vikki-savings-kilo-gold/tc-online.html');
+        popupBody.classList.toggle('popup-body--terms-online', Boolean(isTermsOnline));
+
+        if (!popupBody.querySelector('.popup-inner')) return;
+        const titleEl = popupBody.querySelector('.popup-title');
+        if (titleEl && titleEl.parentElement !== popupBody) {
+          popupBody.insertBefore(titleEl, popupBody.firstChild);
+        }
+        popupBody.classList.add('pt-50');
+      };
+
+      const syncPopupScrollLock = () => {
+        if (popup.classList.contains('show')) {
+          lockPageScroll();
+          applyFaqPopupLayout();
+        } else {
+          unlockPageScroll();
+        }
+      };
+
+      new MutationObserver(syncPopupScrollLock).observe(popup, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+
+      popup.addEventListener('touchmove', (event) => {
+        if (!event.target.closest('.popup-body')) {
+          event.preventDefault();
+        }
+      }, { passive: false });
+    }
+
+    // Use the stable section class so cache-busting asset filename changes do
+    // not disable the Terms and FAQ hotspots.
+    const stepsCell = document.querySelector('.vikki-savings-kilo-gold .golden-steps-cell');
+
+    if (stepsCell && !stepsCell.querySelector('.two-golden-overlay')) {
+      const twoGolden = document.createElement('img');
+      twoGolden.src = './assets/two-golden-20261029-v01.png';
+      twoGolden.alt = '';
+      twoGolden.className = 'two-golden-overlay';
+      stepsCell.appendChild(twoGolden);
+    }
+
+    if (stepsCell && !stepsCell.querySelector('.golden-terms-hotspot')) {
+      stepsCell.classList.add('golden-hotspot-cell');
+
+      const termsHotspot = document.createElement('button');
+      termsHotspot.type = 'button';
+      termsHotspot.className = 'image-hotspot golden-terms-hotspot';
+      termsHotspot.setAttribute('aria-label', 'Thể lệ');
+      termsHotspot.addEventListener('click', () => {
+        openPopup('/vikki-cvp/vikki-savings-kilo-gold/tc.html', 'Thể lệ');
+      });
+
+      stepsCell.appendChild(termsHotspot);
+    }
+
+    if (stepsCell && !stepsCell.querySelector('.golden-faq-hotspot')) {
+      stepsCell.classList.add('golden-hotspot-cell');
+
+      const faqHotspot = document.createElement('button');
+      faqHotspot.type = 'button';
+      faqHotspot.className = 'image-hotspot golden-faq-hotspot';
+      faqHotspot.setAttribute('aria-label', 'Hỏi đáp');
+      faqHotspot.addEventListener('click', () => {
+        const faqSection = document.querySelector('.vikki-savings-kilo-gold img[src*="cau-hoi-thuong-gap"]');
+        if (faqSection) {
+          faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      stepsCell.appendChild(faqHotspot);
+    }
+
+    const qaGroups = {{{json qaGroups}}};
+    if (Array.isArray(qaGroups) && qaGroups.length) {
+      const faqContainer = document.querySelector('.vikki-savings-kilo-gold .container.px-1');
+      const mainAccordion = faqContainer?.querySelector('.js-accordion');
+      if (mainAccordion) {
+        const items = Array.from(mainAccordion.querySelectorAll(':scope > .accordion-item'));
+        let cursor = 0;
+        qaGroups.forEach((group) => {
+          if (cursor < items.length) {
+            const heading = document.createElement('div');
+            heading.className = 'accordion-group-heading';
+            heading.textContent = group.title;
+            items[cursor].before(heading);
+            cursor += group.count;
+          }
+        });
+      }
+    }
+
+  });
+</script>

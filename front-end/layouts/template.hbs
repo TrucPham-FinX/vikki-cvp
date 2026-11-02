@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="{{#if htmlLanguage}}{{htmlLanguage}}{{else}}vi{{/if}}">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{title}}</title>
+  {{> header}}
+</head>
+
+<body class="{{#if hasTopSpace}}hasTopSpace{{/if}} {{#if hasBackground}}hasBackground{{/if}}{{#if className}}{{className}}{{/if}}" id="body">
+  {{{body}}}
+  {{#if components}}
+    {{#each components}}
+      {{#if (eq type "video")}}
+        {{> video}}
+      {{/if}}
+
+      {{#if (eq type "topMenu")}}
+        {{>topMenu this}}
+      {{/if}}
+
+      {{#if (eq type "tooltip")}}
+        {{> tooltip}}
+      {{/if}}
+      {{#if (eq type "imageSection")}}
+        {{>image this}}
+      {{/if}}
+
+      {{#if (eq type "flex")}}
+        {{>partners this}}
+      {{/if}}
+
+      {{#if (eq type "title")}}
+        {{>title this}}
+      {{/if}}
+
+      {{#if (eq type "slider")}}
+        <div class='gjs-row container pt-4' {{#if id}}id="{{id}}"{{/if}}>
+          <div class='gjs-cell text-center{{#if className}} {{className}}{{else}} pt-2{{/if}}'>
+            <img src='{{title.src}}' class='section !w-[70%]' />
+            {{>slider slider=items }}
+          </div>
+        </div>
+      {{/if}}
+
+      {{#if (eq type "qa")}}
+        <div class='gjs-row container pt-1'>
+          <div class='gjs-cell'>
+            <img src='{{title.src}}' class='section' />
+          </div>
+        </div>
+
+        <div class='container px-1'>
+          <div class='pb-1 px-3'>
+            {{>qa qa=items}}
+          </div>
+           {{#if button}}
+            <div class='px-3 pb-5 pt-3'>
+              <span class='bg-transparent button w-full' data-popup="qa" data-title="Hỏi đáp">
+                <img src='{{button.iconSrc}}' />
+                <span>
+                  {{button.text}}
+                </span>
+              </span>
+            </div>
+          {{/if}}
+        </div>
+      {{/if}}
+
+      {{#if (eq type "activation")}}
+        {{>activation this}}
+      {{/if}}
+    {{/each}}
+  {{/if}}
+
+  <span id='backToTop'>
+    <img src='{{assetPath "icon-btt.svg"}}' />
+  </span>
+
+  {{> popup}}
+
+ 
+  <template id='qaTemplate'>
+    <div class='popup-inner'>
+    <h2 class='popup-title' id="popupTitle">
+      {{#if (eq language "en")}} FAQs {{else}} Hỏi đáp {{/if}}
+    </h2>
+      {{#each qaGroup}}
+          <div class='group-item'>
+            <div class="group-heading">
+                {{title}}
+              </div>
+            <div class='group-content'>
+              {{#each children}}
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  {{numOrder}}. {{title}}
+                </div>
+                <div>
+                {{{content}}}
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        {{/each}}
+        <span id='backToTopQA'>
+          <img src='{{assetPath "icon-btt.svg"}}' />
+        </span>
+    </div>
+  </template>
+
+  <div class='popup-overlay' id="promo-detail-popup">
+  <button class='popup-close' id='popupDetail-close'>
+    <img src='{{assetPath "icon-x.svg"}}' />
+  </button>
+
+  <div class='popup-content'>
+    <iframe
+      id="promo-detail-frame"
+      class="popup-iframe"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+  {{> scripts }}
+
+
+</body>
+</html>

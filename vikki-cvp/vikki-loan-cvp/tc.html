@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(4, 11, 30, 0.92);
+      }
+      .legal-page {
+        padding: 16px;
+        line-height: 135%;
+        padding-top: 20px;
+      }
+      .legal-content > .accordion {
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        overflow: hidden;
+      }
+      .legal-content > .accordion > .accordion-header {
+        background: rgba(232, 241, 255, 1);
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .accordion-body {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .accordion-header {
+        font-size: 16px;
+        padding: 12px 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color:  rgba(0, 0, 255, 1);
+        line-height: 22px;
+      }
+      .article .accordion-header {
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+      .legal-list {
+        margin: 8px 0 12px 6px;
+        padding: 0;
+      }
+      .legal-list-item {
+        margin-bottom: 6px;
+        margin-left: 15px;
+      }
+      .legal-list-text {
+        display: inline;
+        line-height: 1.6;
+      }
+
+      /* ===== Marker styles ===== */
+      .legal-list.numeric,
+      .legal-list.decimal {
+        list-style-type: decimal;
+      }
+      .legal-list.alpha {
+        list-style-type: lower-alpha;
+      }
+      .legal-list.roman {
+        list-style-type: lower-roman;
+      }
+      .legal-list.disc {
+        list-style-type: disc;
+      }
+      .legal-list.none {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      .legal-title {
+        font-size: 20px;
+        color: rgba(0, 0, 255, 1);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+        padding-top:20px;
+      }
+      .center img {
+        width: 85px;
+      }
+      .legal-small-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      thead {
+        background: rgba(0, 72, 255, 1);
+        color: #fff;
+      }
+      thead th {
+        font-weight: normal;
+        font-size: 12px;
+      }
+      .bg-blue {
+        background: rgba(237, 248, 255, 1);
+      }
+      tbody td {
+        font-size: 14px;
+        color: rgba(1, 5, 15, 1);
+      }
+      tbody td,
+      table {
+        border-collapse: collapse;
+        border: 1px solid #dfdfdf;
+        min-width: 100%;
+        table-layout: fixed;
+      }
+      table th:first-child,
+      table td:first-child {
+        width: 40px;
+      }
+      thead th,
+      tbody td {
+        max-width: 150px;
+        padding: 8px;
+      }
+      .scroll-x {
+        overflow-x: auto;
+      }
+      .auto-table {
+        table-layout: auto;
+        width: auto;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 700px;
+      }
+      thead th {
+        border: 1px solid #fff;
+      }
+      .m-w-100 {
+        min-width: 100px;
+      }
+      .fz-14 {
+        font-size: 14px;
+      }
+      .p-8 {
+        padding: 8px;
+      }
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .fee-table {
+        min-width: 100%;
+        width: max-content;
+        border-collapse: collapse;
+      }
+      .w-150 {
+        width: 150px;
+      }
+      .legal-note {
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .legal-footer {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .legal-content {
+        padding-bottom: 120px;
+      }
+      .w-unset {
+        width: unset !important;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .bold-center{
+        font-weight: bold;
+        text-align: center;
+      }
+      .w-150-f {
+        width: 150px !important;
+      }
+      .no-list-style {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legal-page">
+      <span class="legal-small-title">Điều khoản và Điều kiện</span>
+      <div class="center"><img src="assets/vikki-logo.png" alt="Vikki" /></div>
+      <h1 class="legal-title">ĐIỀU KHOẢN VÀ ĐIỀU KIỆN THỰC HIỆN VAY ONLINE TẠI ViKKI BANK</h1>
+
+
+      <div class="legal-layout">
+
+        <main class="legal-content">
+            <div class="accordion" id="phan-a">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-phan-a')"
+              >
+                Phần A. QUY ĐỊNH CHUNG
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-phan-a"
+                style="display: block"
+              >
+                  <div class="accordion" id="dieu-1">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-1')"
+                    >
+                      ĐIỀU 1. ĐỐI TƯỢNG VAY VỐN, MỤC ĐÍCH VAY
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-1"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list none">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>1. Đối tượng vay vốn:</strong> Là khách hàng (“KH”) cá nhân có nhu cầu vay vốn trực tuyến (online) trên kênh ngân hàng điện tử (eBanking) của Vikki Bank, thông qua hình thức cầm cố Tiền gửi tiết kiệm thuộc sở hữu hợp pháp của chính KH và đáp ứng đầy đủ điều kiện vay vốn theo Quy định hiện hành của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>2. Mục đích vay:</strong> Phục vụ mục đích tiêu dùng cá nhân phù hợp với quy định Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-2">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-2')"
+                    >
+                      ĐIỀU 2. GIẢI THÍCH TỪ NGỮ
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-2"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list none">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Các từ ngữ sau đây được hiểu như sau:
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank: Ngân hàng TNHH MTV số Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khách hàng (KH): Là KH cá nhân có nhu cầu vay vốn tại Vikki Bank và được Vikki Bank chấp thuận mở sổ tiết kiệm trực tuyến bằng việc giao dịch qua dịch vụ eBanking của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Tiền gửi tiết kiệm trực tuyến (TGTK): Là tiền gửi tiết kiệm (không phải tiết kiệm tích lũy) do chính KH mở bằng hình thức trực tuyến tại Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  TKTT: Tài khoản thanh toán của KH tại Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  eBanking: Là kênh Ngân hàng điện tử của Vikki Bank, bao gồm Mobile Banking/Internet Banking.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  TSBĐ: Tài sản bảo đảm.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  HĐTD: Giấy đề nghị vay kiêm phương án sử dụng vốn kiêm hợp đồng tín dụng kiêm hợp đồng cầm cố tiền gửi tiết kiệm online kiêm khế ước nhận nợ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  ĐVKD: Đơn vị kinh doanh.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Điều khoản và Điều kiện: Điều khoản và Điều kiện thực hiện vay online tại Vikki Bank này và các nội dung được Vikki Bank cập nhật, điều chỉnh, bổ sung trong từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-3">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-3')"
+                    >
+                      ĐIỀU 3. QUY ĐỊNH CHUNG VỀ SẢN PHẨM
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-3"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list none">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>1. Điều kiện KH:</strong>
+                                </span>
+                                
+                          
+                                    <ul class="legal-list alpha">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            KH là công dân Việt Nam từ đủ 18 tuổi trở lên có đầy đủ năng lực hành vi dân sự theo quy định của Pháp luật.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            KH có nhu cầu vay vốn trực tuyến thông qua hình thức cầm cố TGTK online thuộc sở hữu hợp pháp của chính KH.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Sở hữu TGTK trực tuyến trên eBanking.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>2. Phương thức cho vay:</strong> Từng lần
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>3. Số tiền vay:</strong> Tối thiểu 1 triệu đồng/khoản vay.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>4. Thời hạn vay:</strong> Là thời gian còn lại của TGTK.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>5. Lãi suất cho vay, Phí:</strong> Theo Quy định hiện hành của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>6. Phương thức trả nợ gốc và lãi:</strong> Gốc, lãi trả cuối kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>7. Điều kiện TSBĐ:</strong>
+                                </span>
+                                
+                          
+                                    <ul class="legal-list alpha">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            TSBĐ là TGTK online của chính KH mở tại Vikki Bank như quy định tại Khoản 3, Điều 2.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            TGTK online đã được cầm cố cho khoản vay trực tuyến trên eBanking sẽ không được cầm cố/bảo đảm để tiếp tục vay vốn tại Vikki Bank và/hoặc tại tổ chức tín dụng khác.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Tài sản cầm cố là Tiền gửi đang có hiệu lực, không bị phong tỏa, không bị hạn chế giao dịch online và đang không bị cầm cố/thế chấp (kể cả trường hợp đã gửi yêu cầu vay chưa giải ngân xong) để đảm bảo cho bất kỳ khoản vay hoặc nghĩa vụ nào khác của KH tại Vikki Bank (ngoại trừ khoản vay trực tuyến trên eBanking) và/hoặc tổ chức tín dụng khác.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            KH không được phép rút bớt 1 phần giá trị TGTK online khi đang được cầm cố để bảo đảm cho khoản vay.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>8. Thời gian thực hiện giao dịch: </strong> 24/7 (bao gồm cả ngày nghỉ, ngày lễ) trên eBanking.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>9. Trả nợ trước hạn:</strong> Khi phát sinh nhu cầu trả nợ trước hạn, KH sử dụng nguồn tiền tự có từ TKTT của mình để thực hiện tất toán khoản vay trên eBanking và hệ thống tự động giải tỏa TGTK.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>10. Tài khoản nhận lãi TGTK:</strong> Là tài khoản trung gian. Sau khi tất toán TGTK để thu nợ, số tiền còn dư sẽ được chuyển sang tài khoản chỉ định nhận lãi TGTK của KH.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <strong>11. Tài khoản nhận gốc và lãi của TGTK:</strong> Là tài khoản trung gian do Vikki Bank mở nhằm quản lý khoản vay của KH, hoặc tài khoản khác theo quyết định của Vikki Bank. Theo đó, trường hợp Vikki Bank thực hiện xử lý tài sản bảo đảm để thu hồi nợ, thì số dư tiền gốc lãi còn lại (nếu có) sau khi đã được Vikki Bank trích thu từ tài khoản trung gian sẽ được chuyển lại vào tài khoản mà KH đã chỉ định nhận gốc, lãi của TGTK.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-4">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-4')"
+                    >
+                      ĐIỀU 4. QUYỀN VÀ TRÁCH NHIỆM CỦA KH
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-4"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list none">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH chấp nhận vô điều kiện rằng:
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Bất cứ việc truy cập nào vào dịch vụ eBanking bằng chính tên đăng nhập với đúng mật khẩu và kết hợp phương pháp xác thực khác do Vikki Bank cung cấp/chấp thuận cho KH để thực hiện dịch vụ vay vốn online được coi là giao dịch vay vốn và/hoặc trả nợ của chính KH, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Đồng thời, (các) HĐTD được khởi tạo thông qua ký kết khi KH thực hiện trên eBanking được coi là có hiệu lực pháp lý tương đương như KH đã ký kết trực tiếp với Vikki Bank, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch (HĐTD được gửi tới KH qua email của KH ngay khi khoản vay được khởi tạo thành công).
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH thừa nhận rằng việc thực hiện các giao dịch trực tuyến theo phương thức nêu trên luôn tồn tại những rủi ro tiềm tàng và cam kết chấp nhận mọi rủi ro, chậm trễ, mất mát hoặc thiệt hại do những rủi ro tiềm tàng gây ra. Những rủi ro tiềm tàng của các giao dịch trực tuyến bao gồm nhưng không giới hạn các nội dung sau:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list alpha">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Những sự cố liên quan đến đường truyền Internet do nhà cung cấp dịch vụ gây ra như: đứt đường truyền, dung lượng đường truyền bị hạn chế hoặc những sự cố tương tự có thể ảnh hưởng đến việc thực hiện các giao dịch trực tuyến của KH.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Hệ thống của Vikki Bank gặp sự cố do bị mất nguồn điện, bị tấn công, nhiễm virus hoặc bị ảnh hưởng của những sự cố ngoài ý muốn dẫn đến việc không thể xử lý hoặc thực hiện các giao dịch trực tuyến của KH.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Hệ thống, thiết bị điện tử của KH bị hỏng, bị nhiễm virus, bị tấn công dẫn đến việc làm lộ hoặc bị đánh cắp các thông tin về giao dịch của KH hoặc tài khoản của KH bị sử dụng một cách trái phép bởi một bên thứ ba.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Giao dịch trực tuyến do KH thực hiện sẽ được xử lý và thực hiện một cách tự động hoặc khi truyền đến hệ thống của Vikki Bank. Vikki Bank xác nhận mọi giao dịch trực tuyến của KH gửi đến Vikki Bank đều là đúng và do chính KH thực hiện. Vì vậy, mọi ý kiến/khiếu nại/tranh chấp cho rằng đó là nhầm lẫn hoặc sai sót liên quan đến giao dịch của KH đều không được chấp nhận. Mọi thiệt hại phát sinh do KH chịu trách nhiệm.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH phải tự chịu trách nhiệm khi để lộ thông tin và/hoặc chủ động cung cấp thông tin User, mật khẩu đăng nhập eBanking và/hoặc OTP cho người khác;
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH phải chịu trách nhiệm với bất kỳ thiệt hại, tổn thất nào xảy ra do bất kỳ nguyên nhân nào khác mà không do lỗi trực tiếp của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH qua dịch vụ eBanking, có trách nhiệm đối với thông tin cung cấp liên quan tới việc sử dụng sản phẩm cho vay
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH có trách nhiệm chấp hành tất cả các quy định, hướng dẫn của Vikki Bank liên quan đến việc sử dụng sản phẩm cho vay qua dịch vụ eBanking.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Các quyền và trách nhiệm khác của KH được xác định theo quy định Pháp luật, Điều khoản và Điều kiện này, HĐTD.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-5">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-5')"
+                    >
+                      ĐIỀU 5. QUYỀN VÀ TRÁCH NHIỆM CỦA NGÂN HÀNG
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-5"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank có quyền được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin... bị trục trặc hoặc vì bất kỳ lý do nào khác không phải lỗi chủ quan của Vikki Bank dẫn đến các giao dịch liên quan đến sản phẩm cho vay qua dịch vụ eBanking không thực hiện được hoặc chậm trễ trong việc thực hiện.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank có trách nhiệm cung cấp sản phẩm cho vay qua dịch vụ eBanking đúng các quy định tại Điều khoản và Điều kiện, HĐTD và quy định của Vikki Bank trong từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank có trách nhiệm xử lý các yêu cầu kiểm tra của KH liên quan đến các khoản vay thực hiện qua dịch vụ eBanking theo quy định của pháp luật và của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Các quyền và trách nhiệm khác của Vikki Bank được xác định theo quy định Pháp luật và Điều khoản và Điều kiện này.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dieu-6">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dieu-6')"
+                    >
+                      ĐIỀU 6. ĐIỀU KHOẢN THI HÀNH
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dieu-6"
+                      style="display: none"
+                    >
+                  
+                  
+                          <ul class="legal-list decimal">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Sau khi KH thực hiện vay vốn online, Vikki Bank có quyền (nhưng không có nghĩa vụ) gửi thông tin cho KH thông qua tin nhắn, gọi điện thoại di động, điện thoại cố định, gửi thư vào email của KH.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Trường hợp KH có bất cứ thắc mắc nào, KH có trách nhiệm gửi yêu cầu bằng văn bản đến ĐVKD của Vikki Bank trong vòng 01 (một) ngày làm việc kể từ thời điểm nhận được HĐTD qua email nhưng trong mọi trường hợp phải trước thời điểm KH sử dụng sản phẩm vay vốn online. Kể từ thời điểm TKTT của KH nhận được tiền của Vikki Bank đã giải ngân (một phần hoặc toàn bộ), KH đồng ý vô điều kiện nhận nợ và có nghĩa vụ thanh toán nợ theo quy định của HĐTD, quy định của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Các tranh chấp phát sinh nếu có liên quan đến khoản vay của Khách hàng và/hoặc việc thực hiện các nội dung của Điều khoản và Điều kiện này sẽ được xử lý theo quy định tại HĐTD giữa Vikki Bank và KH.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Điều khoản và Điều kiện này là một phần đính kèm của HĐTD.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="legal-note">
+              KH chịu trách nhiệm trước pháp luật về tính trung thực, chính xác, đầy đủ, kịp thời và hợp pháp của các thông tin, tài liệu đã khai báo.
+            </div>
+            <div class="legal-footer">
+              NGÂN HÀNG TNHH MTV SỐ VIKKI
+            </div>
+        </main>
+      </div>
+    </div>
+    
+    <script>
+      function toggle(id) {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.display = el.style.display === 'none' ? 'block' : 'none'
+      }
+    </script>
+  </body>
+</html>

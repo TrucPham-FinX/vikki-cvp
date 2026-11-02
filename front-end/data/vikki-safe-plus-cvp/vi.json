@@ -1,0 +1,580 @@
+{
+  "language": "vi",
+  "title": "Vikki Safe Plus",
+  "layout": "template",
+  "hasTopSpace": true,
+  "className": "vikki-safe-plus-cvp",
+  "assetBase": "../assets/",
+  "heroVideo": true,
+  "videoSrc": "../assets/vi/video.mp4",
+  "videoHlsSrc": "../assets/vi/video/playlist.m3u8",
+  "posterSrc": "../assets/common/hero.png",
+  "iconUnmutedSrc": "../assets/icon-unmuted.svg",
+  "iconMutedSrc": "../assets/icon-muted.svg",
+  "heroImage": "../assets/common/hero.png",
+  "heroAlt": "Vikki Safe Plus và Bảo hiểm HD",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "text": "Hỏi đáp",
+          "iconSrc": "../assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "text": "Điều khoản & Điều kiện",
+          "iconSrc": "../assets/info.svg",
+          "popup": "/vikki-cvp/vikki-safe-plus-cvp/vi/tc.html",
+          "title": "Điều khoản & Điều kiện"
+        }
+      ]
+    }
+  ],
+  "registerTitle": "Đăng ký gọn",
+  "registerSubtitle": "Trọn bảo vệ",
+  "registerSubtitleImage": "../assets/vi/benefits_badge.png",
+  "benefitsImage": "../assets/vi/benefits_content.png",
+  "benefitsAlt": "Quyền lợi bảo hiểm Vikki Safe Plus",
+  "benefits": [
+    {
+      "title": "Quyền lợi",
+      "subtitle": "bảo hiểm lên đến hơn 74 triệu VND",
+      "imageLabel": "Minh họa quyền lợi"
+    },
+    {
+      "title": "Chi trả lên tới 100%",
+      "subtitle": "nếu thương tật/tử vong",
+      "imageLabel": "Minh họa chi trả"
+    },
+    {
+      "title": "Trợ cấp viện phí",
+      "subtitle": "khi điều trị",
+      "imageLabel": "Minh họa viện phí"
+    }
+  ],
+  "plansTitle": "Đa dạng gói",
+  "plansSubtitle": "Bảo vệ theo nhu cầu",
+  "plansSubtitleImage": "../assets/vi/protection_plans_badge.png",
+  "plansSlider": true,
+  "viewDetails": "Xem chi tiết",
+  "plans": [
+    {
+      "title": "Trọn Vẹn",
+      "description": "Quyền lợi bảo vệ toàn diện, để bạn vững tâm chăm lo cho bản thân và những người thương yêu.",
+      "imageLabel": "Minh họa gói bảo hiểm",
+      "src": "../assets/vi/protection_plan_full_coverage.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/vi/full-coverage.html",
+      "popupTitle": "Chi tiết gói Trọn Vẹn"
+    },
+    {
+      "title": "Trọn An Tâm",
+      "description": "Quyền lợi thiết thực, linh hoạt theo nhu cầu bảo vệ của bạn.",
+      "imageLabel": "Minh họa gói bảo hiểm",
+      "src": "../assets/vi/protection_plan_full_care.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/vi/full-care.html",
+      "popupTitle": "Chi tiết gói Trọn Tâm"
+    },
+    {
+      "title": "Trọn Ý",
+      "description": "Bảo vệ đủ đầy theo nhu cầu, để mỗi ngày sống thêm nhẹ lòng và chủ động.",
+      "imageLabel": "Minh họa gói bảo hiểm",
+      "src": "../assets/vi/protection_plan_full_choice.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/vi/full-choice.html",
+      "popupTitle": "Chi tiết gói Trọn Ý"
+    }
+  ],
+  "stepsTitle": "3 bước",
+  "stepsSubtitle": "Đăng ký dễ dàng",
+  "stepsHeaderImage": "../assets/vi/registration_header.png",
+  "stepsSlider": true,
+  "steps": [
+    {
+      "number": 1,
+      "title": "Mở App Vikki",
+      "description": "Tại mục Bảo hiểm chọn Vikki Safe Plus",
+      "imageLabel": "Màn hình bước 1",
+      "src": "../assets/vi/registration_step_1.png"
+    },
+    {
+      "number": 2,
+      "title": "Thiết kế gói bảo hiểm",
+      "description": "Chọn kỳ hạn và quyền lợi phù hợp với nhu cầu.",
+      "imageLabel": "Màn hình bước 2",
+      "src": "../assets/vi/registration_step_2.png"
+    },
+    {
+      "number": 3,
+      "title": "Xác nhận đăng ký",
+      "description": "Kiểm tra thông tin và hoàn tất đăng ký.",
+      "imageLabel": "Màn hình bước 3",
+      "src": "../assets/vi/registration_step_3.png"
+    }
+  ],
+  "faqTitle": "Câu hỏi thường gặp về Vikki Safe Plus",
+  "faqs": [
+    {
+      "title": "Tôi có thể mua bảo hiểm với thời hạn bảo hiểm là bao lâu?",
+      "content": "Quý khách hoàn toàn có thể linh hoạt lựa chọn thời hạn bảo hiểm Vikki Safe Plus từ 1 tháng đến 12 tháng, tùy theo nhu cầu và kế hoạch cá nhân của mình."
+    },
+    {
+      "title": "Khi nào hợp đồng bảo hiểm có hiệu lực?",
+      "content": "Hợp đồng bảo hiểm có hiệu lực ngay sau khi thanh toán thành công."
+    },
+    {
+      "title": "Thời gian chờ của bảo hiểm Vikki Safe Plus là bao lâu?",
+      "content": "Vikki Safe Plus không áp dụng thời gian chờ. Quyền lợi bảo hiểm của Quý khách có hiệu lực ngay sau khi thanh toán thành công."
+    },
+    {
+      "title": "Tôi có phải đóng thêm khoản phí/lệ phí nào ngoài phí bảo hiểm không?",
+      "content": "Ngoài phí bảo hiểm, Quý khách sẽ không cần phải đóng thêm bất kỳ khoản phí hay lệ phí nào khác để được tham gia bảo hiểm."
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Hỏi đáp Vikki Safe Plus",
+      "children": [
+        {
+          "title": "Đối tượng bảo hiểm của bảo hiểm tai nạn con người là ai?",
+          "content": "<p>Người được bảo hiểm là cá nhân phải đáp ứng đầy đủ tất cả các điều kiện dưới đây:</p><ul><li>Là công dân Việt Nam hoặc người nước ngoài cư trú tại Việt Nam tại thời điểm hợp đồng bảo hiểm có hiệu lực.</li><li>Từ đủ 18 tuổi đến 75 tuổi.</li></ul><p>Người tham gia không thuộc các trường hợp sau:</p><ul><li>Người có tiền sử hoặc đang bị bệnh tâm thần, thần kinh, bệnh phong.</li><li>Người bị tàn phế hoặc thương tật vĩnh viễn từ 50% trở lên.</li></ul><p>Trường hợp không thuộc độ tuổi theo quy định trên, Quý khách vui lòng liên hệ Bảo hiểm HD để được tư vấn thêm.</p>"
+        },
+        {
+          "title": "Tôi có cần kiểm tra sức khỏe khi tham gia bảo hiểm không?",
+          "content": "Quý khách không cần kiểm tra sức khỏe."
+        },
+        {
+          "title": "Phí bảo hiểm có bị thay đổi trong thời hạn bảo hiểm không?",
+          "content": "Không, phí bảo hiểm sẽ không thay đổi trong suốt thời hạn bảo hiểm."
+        },
+        {
+          "title": "Sau khi tham gia, tôi có thể thay đổi quyền lợi bảo hiểm không?",
+          "content": "Quý khách không thể thay đổi được quyền lợi bảo hiểm trong suốt thời gian bảo hiểm. Quý khách chỉ có thể thay đổi vào thời điểm tái tục hợp đồng bảo hiểm với điều kiện được Bảo hiểm HD chấp nhận."
+        },
+        {
+          "title": "Trường hợp tai nạn xảy ra trước ngày hiệu lực bảo hiểm nhưng những chi phí y tế phát sinh trong thời hạn bảo hiểm thì có được chi trả không?",
+          "content": "Không, hợp đồng bảo hiểm này chỉ bảo hiểm cho những tai nạn xảy ra trong thời hạn bảo hiểm."
+        },
+        {
+          "title": "Bộ hồ sơ yêu cầu trả tiền bảo hiểm gồm những giấy tờ gì?",
+          "content": "<p>Để biết chi tiết và đầy đủ nhất về các giấy tờ cần thiết trong Bộ hồ sơ yêu cầu trả tiền bảo hiểm, Quý khách vui lòng tham khảo mục “Hướng dẫn yêu cầu bồi thường” tại app Vikki.</p><p>Hoặc, Quý khách có thể liên hệ Đơn vị giải quyết bồi thường được ghi trên Giấy chứng nhận bảo hiểm để được hướng dẫn thu thập hồ sơ yêu cầu trả tiền bảo hiểm theo từng trường hợp cụ thể.</p>"
+        },
+        {
+          "title": "Thời gian để giải quyết khiếu nại bồi thường là bao lâu?",
+          "content": "Bảo hiểm HD có trách nhiệm giải quyết yêu cầu bồi thường bảo hiểm trong thời hạn 15 ngày, kể từ ngày Bảo hiểm HD nhận được đủ Hồ sơ yêu cầu bồi thường bảo hiểm hợp lệ."
+        },
+        {
+          "title": "Ai là người được nhận tiền bảo hiểm?",
+          "content": "<p>Trong trường hợp xảy ra sự kiện bảo hiểm, quyền lợi bảo hiểm được chi trả theo thứ tự ưu tiên như sau:</p><ul><li>Người được bảo hiểm.</li><li>Người thụ hưởng được chỉ định.</li><li>Người thừa kế theo pháp luật của Người được bảo hiểm trong trường hợp không có Người thụ hưởng được chỉ định.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể chấm dứt hợp đồng bảo hiểm trước khi hết hạn được không?",
+          "content": "Nếu trong thời hạn bảo hiểm mà Quý khách muốn chấm dứt hợp đồng bảo hiểm trước hạn thì Quý khách phải thông báo bằng văn bản/email cho Bảo hiểm HD trước 30 ngày kể từ ngày có ý định chấm dứt. Bảo hiểm HD sẽ hoàn lại 80% phí bảo hiểm tương ứng với thời gian bảo hiểm còn lại với điều kiện chưa phát sinh bất kỳ yêu cầu bồi thường nào được chi trả theo hợp đồng bảo hiểm này."
+        },
+        {
+          "title": "Tôi sẽ liên hệ với ai nếu cần yêu cầu hỗ trợ hoặc có thắc mắc liên quan đến hợp đồng bảo hiểm này?",
+          "content": "Quý khách có thể liên hệ với Chuyên viên chăm sóc khách hàng của Bảo hiểm HD để tư vấn hoặc gọi đến số điện thoại hỗ trợ quản lý hợp đồng của Bảo hiểm HD được ghi trên Giấy chứng nhận bảo hiểm nếu có bất cứ thắc mắc nào về hợp đồng bảo hiểm."
+        },
+        {
+          "title": "Trong trường hợp mất Giấy chứng nhận bảo hiểm điện tử, tôi phải làm như thế nào?",
+          "content": "<p>Cách 1: Quý khách có thể tìm lại Giấy chứng nhận bảo hiểm điện tử trong email lúc đăng ký mua bảo hiểm.</p><p>Cách 2: Quý khách có thể vào trang web tra cứu: <a href=\"https://e-certificate.hdinsurance.com.vn/\">https://e-certificate.hdinsurance.com.vn/</a>, sau đó điền thông tin liên quan để tra cứu và tải Giấy chứng nhận bảo hiểm điện tử.</p>"
+        }
+      ]
+    }
+  ],
+  "legalLinks": [
+    {
+      "label": "Xem thêm",
+      "popup": "qa"
+    },
+    {
+      "label": "Điều khoản & Điều kiện",
+      "popup": "/vikki-cvp/vikki-safe-plus-cvp/vi/tc.html",
+      "title": "Điều khoản & Điều kiện"
+    },
+    {
+      "label": "Hướng dẫn bồi thường",
+      "popup": "/vikki-cvp/vikki-safe-plus-cvp/vi/claim.html",
+      "title": "Hướng dẫn bồi thường"
+    }
+  ],
+  "details": [
+    {
+      "language": "vi",
+      "title": "Chi tiết gói Trọn Vẹn",
+      "layout": "safe-plus-detail",
+      "planName": "Gói Trọn Vẹn",
+      "generalTitle": "Quyền lợi chung",
+      "generalBenefits": [
+        {
+          "label": "Tổng số tiền bảo hiểm",
+          "value": "74.400.000 VNĐ",
+          "total": true
+        },
+        {
+          "label": "1. Tai nạn",
+          "value": "60.000.000 VNĐ"
+        },
+        {
+          "label": "2. Chi phí trợ cấp nằm viện",
+          "value": "14.400.000 VNĐ"
+        }
+      ],
+      "detailsTitle": "Quyền lợi chi tiết",
+      "detailedBenefits": [
+        {
+          "label": "1. Tử vong/thương tật vĩnh viễn do tai nạn",
+          "value": "60.000.000 VNĐ"
+        },
+        {
+          "label": "1.1 Tử vong",
+          "value": "60.000.000 VNĐ"
+        },
+        {
+          "label": "1.2 Thương tật toàn bộ vĩnh viễn",
+          "value": "60.000.000 VNĐ"
+        },
+        {
+          "label": "1.3 Thương tật bộ phận vĩnh viễn",
+          "value": "Bảng tỷ lệ thương tật",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Thương tật tạm thời",
+          "value": "Chi phí thực tế × tỷ lệ 0,1% × STBH, tối đa 180 ngày. Tổng chi trả không vượt quá tỷ lệ % thương tật.",
+          "wrapValue": true
+        },
+        {
+          "label": "2. Trợ cấp nằm viện điều trị tai nạn",
+          "value": "14.400.000 VNĐ"
+        },
+        {
+          "label": "Mức trợ cấp cho mỗi ngày nằm viện",
+          "value": "240.000 VNĐ"
+        }
+      ],
+      "insuranceAmountNote": "* Số tiền bảo hiểm hiển thị áp dụng cho thời hạn bảo hiểm 1 năm. Số tiền bảo hiểm giảm dần theo thời hạn bảo hiểm, quy định theo bảng dưới đây.",
+      "allowanceTitle": "Mức trợ cấp theo thời hạn bảo hiểm",
+      "allowanceHeaders": [
+        "Số tháng bảo hiểm",
+        "Tổng số ngày hưởng trợ cấp",
+        "Số tiền trợ cấp tối đa (VNĐ)"
+      ],
+      "allowances": [
+        {
+          "months": "12 tháng",
+          "days": "60 ngày",
+          "amount": "14.400.000 VNĐ"
+        },
+        {
+          "months": "11 tháng",
+          "days": "55 ngày",
+          "amount": "13.200.000 VNĐ"
+        },
+        {
+          "months": "10 tháng",
+          "days": "50 ngày",
+          "amount": "12.000.000 VNĐ"
+        },
+        {
+          "months": "9 tháng",
+          "days": "45 ngày",
+          "amount": "10.800.000 VNĐ"
+        },
+        {
+          "months": "8 tháng",
+          "days": "40 ngày",
+          "amount": "9.600.000 VNĐ"
+        },
+        {
+          "months": "7 tháng",
+          "days": "35 ngày",
+          "amount": "8.400.000 VNĐ"
+        },
+        {
+          "months": "6 tháng",
+          "days": "25 ngày",
+          "amount": "7.200.000 VNĐ"
+        },
+        {
+          "months": "5 tháng",
+          "days": "25 ngày",
+          "amount": "6.000.000 VNĐ"
+        },
+        {
+          "months": "4 tháng",
+          "days": "20 ngày",
+          "amount": "4.800.000 VNĐ"
+        },
+        {
+          "months": "3 tháng",
+          "days": "15 ngày",
+          "amount": "3.600.000 VNĐ"
+        },
+        {
+          "months": "2 tháng",
+          "days": "10 ngày",
+          "amount": "2.400.000 VNĐ"
+        },
+        {
+          "months": "1 tháng",
+          "days": "5 ngày",
+          "amount": "1.200.000 VNĐ"
+        }
+      ],
+      "allowanceNote": "Lưu ý: Mức trợ cấp sẽ thay đổi theo thời hạn tham gia bảo hiểm.",
+      "id": "full-coverage"
+    },
+    {
+      "language": "vi",
+      "title": "Chi tiết gói Trọn Tâm",
+      "layout": "safe-plus-detail",
+      "planName": "Gói Trọn Tâm",
+      "generalTitle": "Quyền lợi chung",
+      "generalBenefits": [
+        {
+          "label": "Tổng số tiền bảo hiểm",
+          "value": "49.600.000 VNĐ",
+          "total": true
+        },
+        {
+          "label": "1. Tai nạn",
+          "value": "40.000.000 VNĐ"
+        },
+        {
+          "label": "2. Chi phí trợ cấp nằm viện",
+          "value": "9.600.000 VNĐ"
+        }
+      ],
+      "detailsTitle": "Quyền lợi chi tiết",
+      "detailedBenefits": [
+        {
+          "label": "1. Tử vong/thương tật vĩnh viễn do tai nạn",
+          "value": "40.000.000 VNĐ"
+        },
+        {
+          "label": "1.1 Tử vong",
+          "value": "40.000.000 VNĐ"
+        },
+        {
+          "label": "1.2 Thương tật toàn bộ vĩnh viễn",
+          "value": "40.000.000 VNĐ"
+        },
+        {
+          "label": "1.3 Thương tật bộ phận vĩnh viễn",
+          "value": "Bảng tỷ lệ thương tật",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Thương tật tạm thời",
+          "value": "Chi phí thực tế × tỷ lệ 0,1% × STBH, tối đa 180 ngày. Tổng chi trả không vượt quá tỷ lệ % thương tật.",
+          "wrapValue": true
+        },
+        {
+          "label": "2. Trợ cấp nằm viện điều trị tai nạn",
+          "value": "9.600.000 VNĐ"
+        },
+        {
+          "label": "Mức trợ cấp cho mỗi ngày nằm viện",
+          "value": "160.000 VNĐ"
+        }
+      ],
+      "insuranceAmountNote": "* Số tiền bảo hiểm hiển thị áp dụng cho thời hạn bảo hiểm 1 năm. Số tiền bảo hiểm giảm dần theo thời hạn bảo hiểm, quy định theo bảng dưới đây.",
+      "allowanceTitle": "Mức trợ cấp theo thời hạn bảo hiểm",
+      "allowanceHeaders": [
+        "Số tháng bảo hiểm",
+        "Tổng số ngày hưởng trợ cấp",
+        "Số tiền trợ cấp tối đa (VNĐ)"
+      ],
+      "allowances": [
+        {
+          "months": "12 tháng",
+          "days": "60 ngày",
+          "amount": "9.600.000 VNĐ"
+        },
+        {
+          "months": "11 tháng",
+          "days": "55 ngày",
+          "amount": "8.800.000 VNĐ"
+        },
+        {
+          "months": "10 tháng",
+          "days": "50 ngày",
+          "amount": "8.000.000 VNĐ"
+        },
+        {
+          "months": "9 tháng",
+          "days": "45 ngày",
+          "amount": "7.200.000 VNĐ"
+        },
+        {
+          "months": "8 tháng",
+          "days": "40 ngày",
+          "amount": "6.400.000 VNĐ"
+        },
+        {
+          "months": "7 tháng",
+          "days": "35 ngày",
+          "amount": "5.600.000 VNĐ"
+        },
+        {
+          "months": "6 tháng",
+          "days": "25 ngày",
+          "amount": "4.800.000 VNĐ"
+        },
+        {
+          "months": "5 tháng",
+          "days": "25 ngày",
+          "amount": "4.000.000 VNĐ"
+        },
+        {
+          "months": "4 tháng",
+          "days": "20 ngày",
+          "amount": "3.200.000 VNĐ"
+        },
+        {
+          "months": "3 tháng",
+          "days": "15 ngày",
+          "amount": "2.400.000 VNĐ"
+        },
+        {
+          "months": "2 tháng",
+          "days": "10 ngày",
+          "amount": "1.600.000 VNĐ"
+        },
+        {
+          "months": "1 tháng",
+          "days": "5 ngày",
+          "amount": "800.000 VNĐ"
+        }
+      ],
+      "allowanceNote": "Lưu ý: Mức trợ cấp sẽ thay đổi theo thời hạn tham gia bảo hiểm.",
+      "id": "full-care"
+    },
+    {
+      "language": "vi",
+      "title": "Chi tiết gói Trọn Ý",
+      "layout": "safe-plus-detail",
+      "planName": "Gói Trọn Ý",
+      "generalTitle": "Quyền lợi chung",
+      "generalBenefits": [
+        {
+          "label": "Tổng số tiền bảo hiểm",
+          "value": "24.800.000 VNĐ",
+          "total": true
+        },
+        {
+          "label": "1. Tai nạn",
+          "value": "20.000.000 VNĐ"
+        },
+        {
+          "label": "2. Chi phí trợ cấp nằm viện",
+          "value": "4.800.000 VNĐ"
+        }
+      ],
+      "detailsTitle": "Quyền lợi chi tiết",
+      "detailedBenefits": [
+        {
+          "label": "1. Tử vong/thương tật vĩnh viễn do tai nạn",
+          "value": "20.000.000 VNĐ"
+        },
+        {
+          "label": "1.1 Tử vong",
+          "value": "20.000.000 VNĐ"
+        },
+        {
+          "label": "1.2 Thương tật toàn bộ vĩnh viễn",
+          "value": "20.000.000 VNĐ"
+        },
+        {
+          "label": "1.3 Thương tật bộ phận vĩnh viễn",
+          "value": "Bảng tỷ lệ thương tật",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Thương tật tạm thời",
+          "value": "% thương tật của Bảng tỉ lệ thương tật",
+          "wrapValue": true
+        },
+        {
+          "label": "2. Trợ cấp nằm viện điều trị tai nạn",
+          "value": "4.800.000 VNĐ"
+        },
+        {
+          "label": "Mức trợ cấp cho mỗi ngày nằm viện",
+          "value": "80.000 VNĐ"
+        }
+      ],
+      "insuranceAmountNote": "* Số tiền bảo hiểm hiển thị áp dụng cho thời hạn bảo hiểm 1 năm. Số tiền bảo hiểm giảm dần theo thời hạn bảo hiểm, quy định theo bảng dưới đây.",
+      "allowanceTitle": "Mức trợ cấp theo thời hạn bảo hiểm",
+      "allowanceHeaders": [
+        "Số tháng bảo hiểm",
+        "Tổng số ngày hưởng trợ cấp",
+        "Số tiền trợ cấp tối đa (VNĐ)"
+      ],
+      "allowances": [
+        {
+          "months": "12 tháng",
+          "days": "60 ngày",
+          "amount": "4.800.000 VNĐ"
+        },
+        {
+          "months": "11 tháng",
+          "days": "55 ngày",
+          "amount": "4.400.000 VNĐ"
+        },
+        {
+          "months": "10 tháng",
+          "days": "50 ngày",
+          "amount": "4.000.000 VNĐ"
+        },
+        {
+          "months": "9 tháng",
+          "days": "45 ngày",
+          "amount": "3.600.000 VNĐ"
+        },
+        {
+          "months": "8 tháng",
+          "days": "40 ngày",
+          "amount": "3.200.000 VNĐ"
+        },
+        {
+          "months": "7 tháng",
+          "days": "35 ngày",
+          "amount": "2.800.000 VNĐ"
+        },
+        {
+          "months": "6 tháng",
+          "days": "30 ngày",
+          "amount": "2.400.000 VNĐ"
+        },
+        {
+          "months": "5 tháng",
+          "days": "25 ngày",
+          "amount": "2.000.000 VNĐ"
+        },
+        {
+          "months": "4 tháng",
+          "days": "20 ngày",
+          "amount": "1.600.000 VNĐ"
+        },
+        {
+          "months": "3 tháng",
+          "days": "15 ngày",
+          "amount": "1.200.000 VNĐ"
+        },
+        {
+          "months": "2 tháng",
+          "days": "10 ngày",
+          "amount": "800.000 VNĐ"
+        },
+        {
+          "months": "1 tháng",
+          "days": "5 ngày",
+          "amount": "400.000 VNĐ"
+        }
+      ],
+      "allowanceNote": "Lưu ý: Mức trợ cấp sẽ thay đổi theo thời hạn tham gia bảo hiểm.",
+      "id": "full-choice"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "home-loan-tnc",
+  "version": "2.0.0",
+  "title": "Điều khoản và Điều kiện Vay mua nhà, đất | Vikki Digital Bank",
+  "layout": "legal-document",
+  "header": {
+    "logo": {
+      "src": "assets/vikki-logo.png",
+      "alt": "Vikki Digital Bank"
+    },
+    "productName": "Vay mua nhà, đất",
+    "taglineLines": [
+      "Tài chính an tâm -",
+      "Mở khoá tổ ấm"
+    ]
+  },
+  "sections": [
+    {
+      "id": "thong-tin-san-pham",
+      "title": "1. Thông tin Sản phẩm",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Với mong muốn đồng hành cùng Quý Khách hàng trong các kế hoạch tài chính quan trọng, Vikki Digital Bank cung cấp gói giải pháp tài chính có tài sản bảo đảm dành riêng cho Khách hàng cá nhân, hỗ trợ Quý Khách hàng chủ động dòng tiền, an tâm kế hoạch tài chính với thủ tục minh bạch và điều kiện linh hoạt."
+        },
+        {
+          "type": "subheading",
+          "text": "Hình thức áp dụng:"
+        },
+        {
+          "type": "list",
+          "style": "disc",
+          "items": [
+            {
+              "text": "Áp dụng trực tiếp tại quầy của Chi nhánh, Phòng giao dịch, Phòng giao dịch đặc thù phát sinh Khách hàng thỏa điều kiện sản phẩm."
+            },
+            {
+              "text": "Đối tượng áp dụng: Khách hàng cá nhân có nhu cầu mua nhà ở hoặc nhận chuyển nhượng Quyền sử dụng đất ở cho chính Khách hàng hoặc cho người thân Khách hàng."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uu-diem-vuot-troi",
+      "title": "2. Ưu điểm vượt trội",
+      "blocks": [
+        {
+          "type": "subheading",
+          "text": "Chính sách mang đến lợi ích đồng hành dài hạn từ Vikki Digital Bank dành cho Khách hàng cá nhân"
+        },
+        {
+          "type": "list",
+          "style": "disc",
+          "className": "legal-list-highlights",
+          "items": [
+            {
+              "text": "Hạn mức vay lên đến <strong>100% theo nhu cầu vay vốn của Khách hàng</strong>, phù hợp với nguồn thu nhập trả nợ, phương án sử dụng vốn và chứng từ chứng minh mục đích sử dụng vốn vay của Khách hàng."
+            },
+            {
+              "text": "Ân hạn gốc lên đến <strong>10 năm</strong> - giảm áp lực trả nợ giai đoạn đầu, tối ưu dòng tiền."
+            },
+            {
+              "text": "Thời hạn vay lên đến <strong>50 năm</strong> - linh hoạt theo kế hoạch sử dụng vốn."
+            },
+            {
+              "text": "Thủ tục đơn giản, nhanh gọn và dễ dàng."
+            },
+            {
+              "text": "Lãi suất cạnh tranh, hấp dẫn."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Vikki Digital Bank chân thành cảm ơn Quý Khách hàng đã quan tâm và sử dụng sản phẩm, dịch vụ."
+        }
+      ]
+    }
+  ],
+  "note": {
+    "label": "Thông tin hỗ trợ",
+    "text": "Để biết thêm chi tiết, Quý Khách hàng vui lòng truy cập website <a href=\"https://vikkibank.vn\" target=\"_blank\" rel=\"noopener noreferrer\">vikkibank.vn</a> hoặc các điểm giao dịch Vikki Digital Bank gần nhất hoặc gọi Tổng đài chăm sóc Khách hàng Vikki Digital Bank: <a href=\"tel:19006608\">1900 6608</a> để được hỗ trợ."
+  }
+}

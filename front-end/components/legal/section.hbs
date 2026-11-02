@@ -1,0 +1,17 @@
+<section class="legal-section" id="{{id}}" aria-labelledby="{{id}}-title">
+  <h2 class="legal-section-title" id="{{id}}-title">{{title}}</h2>
+
+  {{#each blocks}}
+    {{#if (eq type "paragraph")}}
+      {{> legal/blocks/paragraph}}
+    {{/if}}
+
+    {{#if (eq type "subheading")}}
+      {{> legal/blocks/subheading}}
+    {{/if}}
+
+    {{#if (eq type "list")}}
+      {{> legal/blocks/list}}
+    {{/if}}
+  {{/each}}
+</section>

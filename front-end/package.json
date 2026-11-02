@@ -1,0 +1,12 @@
+{
+  "name": "handlebars-static",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "check": "node build.js && git diff --exit-code -- ../vikki-cvp",
+    "dev": "node build.js --watch"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8"
+  }
+}

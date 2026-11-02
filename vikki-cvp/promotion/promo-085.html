@@ -1,0 +1,213 @@
+<html lang='vi'>
+  <head>
+    <meta charset='UTF-8' />
+    <title></title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='description' content='' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      /* overlay */
+      .popup-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(246, 247, 248, 1);
+        z-index: 99999;
+        bottom: 0;
+        display: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .popup-overlay.show {
+        display: block;
+      }
+
+      .popup-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      .popup-body {
+        height: 100%;
+        overflow-y: auto;
+        background: rgba(246, 247, 248, 1);
+      }
+      .promo-detail {
+        padding-bottom: 50px;
+      }
+      .popup-close {
+        position: fixed;
+        right: 0;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2147483647;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .popup-close img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+      .popup-iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        min-height: 70vh;
+        background: #fff;
+      }
+      .popup-inner {
+        padding: 20px 10px;
+      }
+
+      /* IMAGE */
+      .promo-image {
+        position: relative;
+        padding-bottom: 67%;
+        height: 0;
+      }
+
+      .promo-image img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        height: 100%;
+      }
+
+      /* AVATAR / BADGE */
+      .promo-avatar {
+        position: absolute;
+        right: 16px;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+        background: #0f766e; /* xanh kiểu Mantine */
+        color: #fff;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        border: 3px solid #fff;
+      }
+
+      /* CONTENT */
+      .promo-content {
+        padding: 28px 10px 20px;
+      }
+
+      .promo-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #111827;
+        line-height: 1.3;
+        margin: 0 0 10px;
+      }
+
+      .promo-desc {
+        font-size: 13px;
+
+        color: rgba(15, 21, 36, 0.6);
+        line-height: 1.6;
+        margin: 0 0 12px;
+      }
+
+      .promo-expire {
+        font-size: 13px;
+        color: rgba(15, 21, 36, 0.36);
+        margin: 0;
+        position: absolute;
+        bottom: 16px;
+      }
+
+      #promo-list {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 0;
+        margin: 0;
+        margin-bottom: 120px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .promo-card {
+        background: #fff;
+        overflow: hidden;
+        margin-bottom: 10px;
+        width: 50%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        position: relative;
+        padding-bottom: 40px;
+      }
+      .promo-card:nth-child(2n) {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .popup-title {
+        background: none;
+        font-size: 36px;
+        padding: 0px 16px;
+        margin-top: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body class='hasTopSpace' id='body'>
+
+    <style>
+  .promo-desc {
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+  .promo-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .promo-expire {
+    position: static;
+  }
+</style>
+<article class='promo-detail'>
+  <div class='promo-image'>
+      <img src='./assets/promo-085.png' alt='iPhone 18' />
+
+  </div>
+
+  <div class='promo-content'>
+    <h3 class='promo-title'>
+      iPhone 18
+    </h3>
+    <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+
+    <div class='promo-desc'>
+      <p><strong>Vikki x Mastercard | iPhone 18 | Giảm ngay 2 triệu đồng</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 2.000.000 đồng khi mua trực tiếp sản phẩm điện thoại mới của Apple ra mắt từ Tháng 9/2026 &amp; thanh toán bằng thẻ Mastercard Vikki Digital Bank.</li><li>Tại CellphoneS: Giảm 2 triệu đồng khi thanh toán đơn hàng từ 30 triệu đồng tại cửa hàng CellphoneS qua Payoo POS. Số lượng ưu đãi: 71 lượt.</li><li>Thời gian áp dụng: từ ngày 18/09/2026 đến ngày 31/12/2026 hoặc có thể kết thúc khi hết ngân sách của chương trình.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho Khách hàng cá nhân sử dụng thẻ tín dụng quốc tế Vikki Digital Bank: Thẻ Kép VikkiGO+, Thẻ Vạn năng VikkiONE Connect (đầu BIN tính năng thẻ tín dụng: 5262 6387).</li><li>Mỗi thẻ được hưởng ưu đãi tối đa 01 lần xuyên suốt chương trình.</li><li>Chương trình bắt đầu từ 00h00 - 23h59 mỗi ngày.</li><li>Số lượng ưu đãi có giới hạn. Chương trình sẽ kết thúc trước thời hạn nếu sử dụng hết ngân sách khuyến mại.</li><li>Việc xác định giao dịch có phát sinh gian lận sẽ xử lý theo quy định pháp luật.</li><li>Chương trình này không áp dụng đồng thời với các ưu đãi khác của Vikki Digital Bank tại CellphoneS.</li><li>Tại CellphoneS, ưu đãi chỉ áp dụng khi thanh toán bằng thẻ vật lý trên Payoo POS tại cửa hàng.</li><li>Không áp dụng ưu đãi cho thẻ ảo trên các ứng dụng thanh toán (như Samsung Pay, Google Wallet, Apple Pay, Garmin Pay v.v...).</li><li>Ưu đãi không có giá trị đổi thành tiền mặt hay hoàn trả.</li><li>Không áp dụng đối với các giao dịch hủy và giao dịch hoàn 100% giá trị giao dịch mua bán, sử dụng hàng hóa/dịch vụ/sản phẩm.</li><li>Khách hàng chỉ tiến hành thanh toán khi hệ thống đã hiển thị số tiền giảm giá. Vikki Digital Bank và Đối tác không chịu trách nhiệm về việc hệ thống không hiển thị số tiền giảm giá mà Khách hàng vẫn tiến hành thanh toán.</li><li>Khách hàng sử dụng mã ưu đãi sai mục đích hoặc vi phạm các điều khoản và điều kiện khuyến mại sẽ bị từ chối việc sử dụng mã ưu đãi của Đối tác trong tương lai.</li><li>Chương trình ưu đãi chỉ áp dụng cho Khách hàng cá nhân. Các đối tác bảo lưu quyền từ chối áp dụng Chương trình ưu đãi cho các đơn hàng có dấu hiệu hoặc có cơ sở chứng minh được Khách hàng mua đi bán lại hoặc mua với số lượng nhiều hơn hai (02) sản phẩm cùng loại trong thời gian diễn ra Chương trình ưu đãi.</li><li>Khi có phát sinh trường hợp nghi ngờ gian lận hoặc tranh chấp, quyền quyết định cuối cùng thuộc về đơn vị tổ chức chương trình.</li><li>Mọi thắc mắc vui lòng liên hệ Trung tâm dịch vụ khách hàng Hotline (24/7) 1900 6608 (1.000đ/phút). Chi tiết chương trình tại <a href="https://vikkibank.vn/" target="_blank" rel="noopener noreferrer">https://vikkibank.vn/</a>.</li></ul>
+    </div>
+
+  </div>
+
+</article>
+
+  </body>
+</html>

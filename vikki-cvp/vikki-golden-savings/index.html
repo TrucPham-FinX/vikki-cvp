@@ -1,0 +1,2124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vikki Golden Savings | VikkiBank</title>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>
+    Vikki Golden Savings | VikkiBank
+  </title>
+  <meta name='description' content='' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  
+  <link
+    href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'
+    rel='stylesheet'
+  />
+  <style>
+    :root,
+    :host {
+      --spacing: 0.25rem;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    html,
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      padding-bottom:50px;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .block {
+      display: block;
+    }
+    .flex {
+      display: flex;
+    }
+    .\!w-\[70\%\] {
+      width: 70% !important;
+    }
+    .\!w-\[80\%\] {
+      width: 80% !important;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .list-inside {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    .list-disc {
+      list-style-type: disc;
+    }
+    .p-1 {
+      padding: calc(var(--spacing) * 1);
+    }
+    .px-1 {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+    .px-3 {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+    .px-2{
+      padding-inline: calc(var(--spacing) * 2);
+    }
+    .py-3 {
+      padding-top: calc(var(--spacing) * 3);
+      padding-bottom: calc(var(--spacing) * 3);
+    }
+    .pt-1 {
+      padding-top: calc(var(--spacing) * 1);
+    }
+    .pt-2 {
+      padding-top: calc(var(--spacing) * 2);
+    }
+    .pt-3 {
+      padding-top: calc(var(--spacing) * 3);
+    }
+    .pt-4{
+       padding-top: calc(var(--spacing) * 4);
+    }
+    .pb-1 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    .pb-5 {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
+    .pb-3 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+  
+    .hasTopSpace {
+      padding-top: 25vw;
+    }
+    .hasBackground {
+      background: linear-gradient(
+        #FFFFFF,
+        #F2EBFF,
+        #FFFFFF
+      );
+    }
+  
+    #qa {
+      height: 40px;
+    }
+    .menu-top {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      height: 40px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background: #fff;
+    }
+    .hasTopSpace .menu-top {
+      top: 25vw;
+    }
+    .menu-top a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: rgba(14, 14, 15, 1);
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .gjs-cell {
+      width: 100%;
+    }
+  
+    .gjs-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 0px;
+    }
+  
+    .section {
+      margin: 0px auto 0px auto;
+      width: 100%;
+    }
+  
+    .container {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    button {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      border: none;
+    }
+  
+    .solution-background {
+      background: linear-gradient(
+        180.02deg,
+        rgba(255, 183, 0, 0.2) -0.02%,
+        rgba(255, 149, 27, 0.2) 17.31%,
+        rgba(222, 0, 148, 0.2) 35.72%,
+        rgba(0, 0, 255, 0.2) 93.21%
+      );
+      padding-bottom: 5vh;
+    }
+  
+    .loan-gift-container {
+      /* margin-top: 3vh; */
+    }
+  
+    .register-container {
+      padding-bottom: 5vh;
+    }
+  
+    .loan-now-container {
+      padding-bottom: 5vh;
+      width: 100%;
+    }
+  
+    .disbursement-container {
+      margin-top: 5vh;
+    }
+  
+    .finance-container {
+      width: 100%;
+    }
+  
+    .absolute-row {
+      position: relative;
+      top: -20px;
+    }
+    .relative-row {
+      position: relative;
+    }
+    .show-detail-text {
+      position: relative;
+      cursor: pointer;
+      bottom: 20vw;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      left: 7vw;
+      font-weight: 400;
+      font-size: 6vw;
+      line-height: 8vw;
+      letter-spacing: -0.26px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: #fff;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+    }
+  
+    /* video */
+    #video-container {
+      display: flex;
+    }
+    #banner-container {
+      overflow: hidden;
+    }
+  
+    #video-container,
+    #section-1-cell,
+    #section-3-cell {
+      position: relative;
+    }
+  
+    #banner-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    #volume-icon {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 1vw;
+      left: 1vw;
+    }
+  
+    .fa-icon {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  
+    .muted .fa-icon.fa-volume-high {
+      display: none;
+    }
+  
+    .unmuted .fa-icon.fa-volume-xmark {
+      display: none;
+    }
+  
+    /* Real height instead of the old padding-bottom:177% hack — that hack's
+       size is capped by nothing, so on wide viewports (e.g. a Galaxy Fold
+       unfolded) it made the banner taller than the screen. --video-ar is set
+       from each video's own real dimensions once it loads (see scripts.hbs),
+       so this stays correct regardless of which video a page uses; 16/9 (the
+       current videos' real height:width, 9:16 portrait) is only the fallback
+       for the instant before that script runs. */
+    #video-container {
+      position: relative;
+      padding-bottom: 0;
+      height: calc(100vw * var(--video-ar, calc(16 / 9)));
+    }
+  
+    /* Accodion */
+    .accordion {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 0;
+      line-height: 1.5;
+    }
+    .accordion * {
+      line-height: 22px;
+    }
+    .accordion ul {
+      padding-left: 10px;
+    }
+    .accordion-section {
+      background: rgb(240, 248, 233);
+      padding: 1rem;
+    }
+  
+    .accordion-item {
+      background: #fff;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .accordion-item:first-child {
+      margin-top: 0;
+    }
+  
+    .accordion-header {
+      width: 100%;
+      padding: 16px 20px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header span {
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header .icon {
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+    }
+  
+    .accordion-item.active .icon {
+      transform: rotate(0deg);
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding: 0 20px;
+    }
+  
+    .accordion-item.active .accordion-content {
+      padding-bottom: 16px;
+    }
+  
+    .accordion-content p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+  
+    /* tooltip */
+    .tooltip-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .tooltip-title {
+      width: 90%;
+    }
+    .tooltip-box {
+      background: #000;
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      width: 100%;
+      display: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+      /* arrow */
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid black;
+      display: none;
+      margin: 0 auto;
+    }
+    .tooltip-box::after {
+      content: "";
+      display: block;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #000 transparent;
+    }
+    .vikki_flexi_button {
+      width: 25vw;
+    }
+    /* show tooltip */
+    .tooltip-wrapper.active .tooltip-box {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .tooltip-wrapper.active .arrow-up {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .spinnerKichHoatNgay {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #ccc;
+      border-top: 2px solid #0000FF;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-position {
+      position: absolute;
+      top: 53vw;
+      right: 8vw;
+    }
+    /* overlay */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: top 0.3s;
+      z-index: 9999;
+      top: 150%;
+    }
+    .hasTopSpace .popup-overlay.show {
+      top: 25vw;
+    }
+  
+    .popup-overlay.show {
+      top:0;
+    }
+    .popup-overlay .popup-close{
+      display: none;
+    }
+    .popup-overlay.show .popup-close{
+      display: block;
+    }
+  
+    .popup-content {
+      background: rgba(246, 247, 248, 1);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    #promo-detail-popup  .popup-content{
+      height: 100%;
+    }
+  
+    .popup-body {
+      height: 100%;
+      overflow-y: auto;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    .popup-close {
+      position: fixed;
+      right: 0;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 99;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hasTopSpace .popup-close {
+      top: 25vw;
+    }
+    .popup-close img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    .popup-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      min-height: 70vh;
+      background: #FFF
+    }
+    .popup-inner {
+      padding: 0px 10px 50px;
+    }
+  
+    /* slider */
+    swiper-container {
+      width: 100vw;
+    }
+  
+    swiper-slide {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .slide-img {
+      width: 100%;
+    }
+    .slide-img > span{
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 10%;
+      overflow: hidden;
+    }
+  
+    .slide-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  
+    .swiper-slide-next {
+      left: -5vw;
+      z-index: 1;
+      animation-name: showNextSlide;
+      animation-duration: 0.5s;
+    }
+    .swiper-pagination {
+      background-color: red;
+    }
+    @keyframes showNextSlide {
+      0% {
+        left: 0%;
+      }
+  
+      100% {
+        left: -5vw;
+      }
+    }
+  
+    .swiper-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .bg-transparent {
+      background: rgba(76, 39, 39, 0.05);
+      border-radius: 50px;
+    }
+    .bg-transparent .menu-top {
+      height: 48px;
+    }
+    .button {
+      height: 48px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+  
+    /* background */
+  
+    .p-1 {
+      padding: 1rem;
+    }
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+    .pt-1 {
+      padding-top: 1rem;
+    }
+    .pt-2{
+      padding-top: 2rem;
+    }
+    .g-1 {
+      gap: 1rem;
+    }
+    .g-2 {
+      gap: 1.5rem;
+    }
+    .bg-gray {
+      padding-top: 2rem;
+    }
+    .bg-green {
+      background: linear-gradient(180deg, #f0f8e9 70.24%, #ffffff 100%);
+      border-radius: 50px 50px 0 0;
+      padding-top: 2rem;
+    }
+    .bg-gray-gradient {
+      background: linear-gradient(180deg, #f6f7f8 0%, #ffffff 100%);
+    }
+    [data-popup],
+    [data-scroll] {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .button-wrap {
+      display: flex;
+      gap: 10px;
+    }
+    .button-wrap > * {
+      width: calc(50% - 5px);
+    }
+  
+    /* Pagination wrapper */
+    swiper-container::part(pagination) {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #f3f3f3;
+      padding: 8px 9px;
+      border-radius: 999px;
+      width: fit-content;
+      margin: 40px auto 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+    }
+  
+    .hide-pagination::part(pagination) {
+      display: none;
+    }
+    .slide-container {
+      padding-top: 3rem;
+    }
+    swiper-container::part(bullet) {
+      width: 8px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  
+    swiper-container::part(bullet-active) {
+      width: 20px;
+      height: 8px;
+      background: #0a46ff;
+      border-radius: 999px;
+    }
+  
+    .popup-title {
+      top: 0;
+      font-weight: bold;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+      font-size: 17px;
+      color: rgba(1, 5, 15, 1);
+      margin: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    #backToTop {
+      opacity: 0;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      transform: translateY(10px);
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      display: none;
+      z-index: 999;
+  
+      border-radius: 9999px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    #backToTop.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .popup-close {
+      color: #333;
+    }
+  
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 100;
+  
+      display: none;
+    }
+    .loading-overlay.show{
+      display: flex;
+    }
+  
+    .spinner {
+      width: 39px;
+      height: 39px;
+      border: 3px solid #e5e7eb;
+      border-top-color: #111827;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .section-title{
+      text-align: center;
+    }
+  
+    .bg-blue{
+      background: rgba(237, 248, 255, 1);
+      border-radius: 50px 50px 0 0;
+    }
+  
+  </style></head>
+
+<body class="hasTopSpace vikki-golden-savings" id="body">
+  <style>
+  html,
+  body.vikki-golden-savings {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow-x: hidden;
+  }
+
+  .vikki-golden-savings {
+    padding-bottom: 0;
+    overflow-x: hidden;
+  }
+
+  body.vikki-golden-savings.hasTopSpace {
+    padding-top: 25vw;
+  }
+
+  .vikki-golden-savings #promo-detail-popup,
+  .vikki-golden-savings template {
+    display: none;
+  }
+
+  .vikki-golden-savings #backToTop {
+    bottom: 24px;
+  }
+
+  .vikki-golden-savings .golden-image-section {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-golden-savings .golden-image-section .gjs-cell {
+    display: block;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .vikki-golden-savings .golden-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-golden-savings img[src$="p-7.png"] {
+    margin-bottom: -24px;
+  }
+
+  .vikki-golden-savings .container.pt-1:has(img[src*="cau-hoi-thuong-gap"]) {
+    padding-top: 0;
+  }
+
+  .vikki-golden-savings .accordion-content ul {
+    padding-left: 28px;
+  }
+
+  .vikki-golden-savings .container.pt-4:has(.golden-slider) {
+    padding-top: 0;
+  }
+
+  .vikki-golden-savings .golden-slider {
+    padding: 22px 0 18px;
+  }
+
+  .vikki-golden-savings .golden-slider > img {
+    display: block;
+    width: 82% !important;
+    max-width: 420px;
+    margin: 0 auto 10px;
+  }
+
+  .vikki-golden-savings .golden-slider .slider {
+    margin-top: 0;
+  }
+
+  .vikki-golden-savings .golden-slider .slide-container {
+    padding-top: 14px;
+  }
+
+  .vikki-golden-savings .golden-slider swiper-container {
+    width: 100%;
+  }
+
+  .vikki-golden-savings .golden-slider swiper-slide {
+    padding: 0 8px 15px;
+  }
+
+  .vikki-golden-savings .golden-slider .swiper-slide-next {
+    left: 0;
+    animation-name: none;
+  }
+
+  .vikki-golden-savings .golden-pagination {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: auto;
+    margin: 0 auto;
+    padding: 7px 14px;
+    border-radius: 999px;
+    background: #f3f3f3;
+  }
+
+  .vikki-golden-savings .golden-pagination-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: -2px;
+  }
+
+  .vikki-golden-savings .golden-pagination-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background: #d9d9d9;
+    transition: width 0.25s ease, background-color 0.25s ease;
+  }
+
+  .vikki-golden-savings .golden-pagination-dot.is-active {
+    width: 24px;
+    background: #3158ff;
+  }
+
+  .vikki-golden-savings .golden-hotspot-cell {
+    position: relative;
+  }
+
+  .vikki-golden-savings .golden-steps-cell {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .vikki-golden-savings .two-golden-overlay {
+    position: absolute;
+    top: 80%;
+    right: 0.5%;
+    width: 31%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .vikki-golden-savings .image-hotspot {
+    position: absolute;
+    display: block;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .vikki-golden-savings .golden-faq-hotspot {
+    left: 51.5%;
+    top: 94.8%;
+    width: 44.5%;
+    height: 3.2%;
+  }
+
+  .vikki-golden-savings .golden-terms-hotspot {
+    left: 5.5%;
+    top: 94.8%;
+    width: 44.5%;
+    height: 3.2%;
+  }
+
+  .vikki-golden-savings .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+    overscroll-behavior: contain;
+  }
+
+  .vikki-golden-savings .popup-body {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vikki-golden-savings .popup-title {
+    min-height: 80px;
+    background: rgba(246, 247, 248, 1);
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+
+  .vikki-golden-savings .popup-body.popup-body--terms-online .popup-title {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    min-height: 112px;
+    padding: 14px 64px 18px 16px;
+    line-height: 1.25;
+    text-align: left;
+    white-space: normal;
+    overflow: visible;
+  }
+
+  .vikki-golden-savings .popup-body.pt-50 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .vikki-golden-savings .popup-body.pt-50 .popup-iframe {
+    flex: 1;
+    height: auto;
+    min-height: 0;
+  }
+
+  .vikki-golden-savings .popup-body.pt-50 .popup-inner {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vikki-golden-savings .popup-inner {
+    padding-bottom: 100px;
+  }
+
+  .vikki-golden-savings .golden-terms-activation {
+    padding-top: 0;
+  }
+
+  .vikki-golden-savings .golden-terms-activation .flex {
+    gap: 0;
+  }
+
+  .vikki-golden-savings .container.px-1 > .px-3.pb-5.pt-3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .vikki-golden-savings .group-item {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+
+  .vikki-golden-savings .group-heading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .vikki-golden-savings .group-sub-title {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+
+  .vikki-golden-savings .group-sub {
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+  }
+
+  .vikki-golden-savings .group-sub:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .vikki-golden-savings .group-sub p {
+    margin: 12px 0 0;
+  }
+
+  .vikki-golden-savings .group-sub p:first-child {
+    margin-top: 0;
+  }
+
+  .vikki-golden-savings .group-sub p:last-child {
+    margin-bottom: 0;
+  }
+
+  .vikki-golden-savings .group-sub ul {
+    margin: 12px 0 0;
+    padding-left: 28px;
+  }
+
+  .vikki-golden-savings .group-sub ul:first-child {
+    margin-top: 0;
+  }
+
+  .vikki-golden-savings #backToTopQA,
+  body.vikki-golden-savings:has(#popup.show) #backToTop {
+    display: none !important;
+  }
+
+  .vikki-golden-savings .accordion-group-heading {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(4, 11, 30, 0.6);
+    padding: 20px 0 8px;
+  }
+
+  .vikki-golden-savings .accordion-group-heading:first-child {
+    padding-top: 0;
+  }
+
+</style>
+<script>
+  const goldenSwiperOptions = {
+    slidesPerView: 1.24,
+    centeredSlides: true,
+    spaceBetween: 12,
+    pagination: true,
+    loop: true,
+    autoplay: {
+      delay: 8000,
+      disableOnInteraction: false
+    }
+  };
+
+  const ensureGoldenLoopSlides = (swiper) => {
+    if (swiper.dataset.goldenLoopReady === 'true') return;
+
+    const slides = Array.from(swiper.children).filter((slide) => (
+      slide.tagName.toLowerCase() === 'swiper-slide' && !slide.dataset.goldenClone
+    ));
+
+    if (!slides.length) return;
+
+    slides.forEach((slide, index) => {
+      slide.dataset.goldenSourceIndex = String(index);
+    });
+
+    for (let copy = 0; copy < 2; copy += 1) {
+      slides.forEach((slide, index) => {
+        const clone = slide.cloneNode(true);
+        clone.dataset.goldenClone = 'true';
+        clone.dataset.goldenSourceIndex = String(index);
+        swiper.appendChild(clone);
+      });
+    }
+
+    swiper.dataset.goldenLoopReady = 'true';
+  };
+
+  const configureGoldenSwiperBeforeInit = () => {
+    document.querySelectorAll('.vikki-golden-savings .golden-slider .center-swiper').forEach((swiper) => {
+      ensureGoldenLoopSlides(swiper);
+      Object.assign(swiper, goldenSwiperOptions);
+    });
+  };
+
+  configureGoldenSwiperBeforeInit();
+
+  const goldenSwiperObserver = new MutationObserver(configureGoldenSwiperBeforeInit);
+
+  if (document.body) {
+    goldenSwiperObserver.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+  }
+
+  customElements.whenDefined('swiper-container').then(() => {
+    const SwiperContainer = customElements.get('swiper-container');
+    const prototype = SwiperContainer?.prototype;
+
+    if (!prototype || prototype.goldenSavingsPatched) return;
+
+    const initialize = prototype.initialize;
+
+    prototype.initialize = function (...args) {
+      if (this.closest?.('.vikki-golden-savings .golden-slider')) {
+        Object.assign(this, goldenSwiperOptions);
+      }
+
+      return initialize.apply(this, args);
+    };
+
+    prototype.goldenSavingsPatched = true;
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    goldenSwiperObserver.disconnect();
+
+    const setupGoldenPagination = (swiper, instance) => {
+      if (swiper.dataset.goldenPaginationReady === 'true') return;
+
+      const shadowStyle = document.createElement('style');
+      shadowStyle.textContent = '.swiper-pagination { display: none !important; }';
+      swiper.shadowRoot?.appendChild(shadowStyle);
+
+      const paginationWrap = document.createElement('div');
+      paginationWrap.className = 'golden-pagination-wrap';
+
+      const pagination = document.createElement('div');
+      pagination.className = 'golden-pagination';
+
+      for (let index = 0; index < 4; index += 1) {
+        const dot = document.createElement('span');
+        dot.className = 'golden-pagination-dot';
+        dot.setAttribute('aria-hidden', 'true');
+        pagination.appendChild(dot);
+      }
+
+      paginationWrap.appendChild(pagination);
+      swiper.insertAdjacentElement('afterend', paginationWrap);
+
+      const updatePagination = () => {
+        const dots = pagination.querySelectorAll('.golden-pagination-dot');
+
+        const activeSlide = swiper.querySelector('swiper-slide.swiper-slide-active');
+        const sourceIndex = Number(activeSlide?.dataset.goldenSourceIndex);
+        const activeIndex = Number.isFinite(sourceIndex) ? sourceIndex : instance.realIndex % 4;
+
+        dots.forEach((dot, index) => {
+          const isActive = index === activeIndex;
+          dot.classList.toggle('is-active', isActive);
+          dot.setAttribute('aria-current', isActive ? 'true' : 'false');
+        });
+      };
+
+      const schedulePaginationUpdate = () => {
+        requestAnimationFrame(updatePagination);
+        setTimeout(updatePagination, 50);
+        setTimeout(updatePagination, 300);
+      };
+
+      instance.on('slideChange', schedulePaginationUpdate);
+      instance.on('slideChangeTransitionEnd', schedulePaginationUpdate);
+      updatePagination();
+      requestAnimationFrame(updatePagination);
+      setTimeout(updatePagination, 300);
+      swiper.goldenPaginationTimer = setInterval(updatePagination, 250);
+
+      swiper.dataset.goldenPaginationReady = 'true';
+    };
+
+    const startGoldenSwiperAutoSlide = () => {
+      configureGoldenSwiperBeforeInit();
+
+      document.querySelectorAll('.vikki-golden-savings .golden-slider .center-swiper').forEach((swiper) => {
+        const instance = swiper.swiper;
+        if (!instance) return;
+
+        Object.assign(instance.params, goldenSwiperOptions);
+        instance.update();
+        instance.autoplay?.start();
+        setupGoldenPagination(swiper, instance);
+      });
+    };
+
+    requestAnimationFrame(startGoldenSwiperAutoSlide);
+    setTimeout(startGoldenSwiperAutoSlide, 300);
+    setTimeout(startGoldenSwiperAutoSlide, 1000);
+
+    const popup = document.getElementById('popup');
+    let lockedScrollY = 0;
+
+    const lockPageScroll = () => {
+      lockedScrollY = window.scrollY || window.pageYOffset;
+      Object.assign(document.body.style, {
+        position: 'fixed',
+        top: `-${lockedScrollY}px`,
+        left: '0',
+        right: '0',
+        width: '100%',
+        overflow: 'hidden'
+      });
+    };
+
+    const unlockPageScroll = () => {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      window.scrollTo(0, lockedScrollY);
+    };
+
+    if (popup) {
+      const applyFaqPopupLayout = () => {
+        const popupBody = document.getElementById('popupBody');
+        if (!popupBody) return;
+
+        const iframe = popupBody.querySelector('.popup-iframe');
+        const isTermsOnline = iframe?.getAttribute('src')?.includes('/vikki-golden-savings/tc-online-2.html');
+        popupBody.classList.toggle('popup-body--terms-online', Boolean(isTermsOnline));
+
+        if (!popupBody.querySelector('.popup-inner')) return;
+        const titleEl = popupBody.querySelector('.popup-title');
+        if (titleEl && titleEl.parentElement !== popupBody) {
+          popupBody.insertBefore(titleEl, popupBody.firstChild);
+        }
+        popupBody.classList.add('pt-50');
+      };
+
+      const syncPopupScrollLock = () => {
+        if (popup.classList.contains('show')) {
+          lockPageScroll();
+          applyFaqPopupLayout();
+        } else {
+          unlockPageScroll();
+        }
+      };
+
+      new MutationObserver(syncPopupScrollLock).observe(popup, {
+        attributes: true,
+        attributeFilter: ['class']
+      });
+
+      popup.addEventListener('touchmove', (event) => {
+        if (!event.target.closest('.popup-body')) {
+          event.preventDefault();
+        }
+      }, { passive: false });
+    }
+
+    // Use the stable section class so cache-busting asset filename changes do
+    // not disable the Terms and FAQ hotspots.
+    const stepsCell = document.querySelector('.vikki-golden-savings .golden-steps-cell')
+      || document.querySelector('.vikki-golden-savings img[src$="p-2.png"]')?.parentElement;
+
+    if (stepsCell && !stepsCell.querySelector('.two-golden-overlay')) {
+      const twoGolden = document.createElement('img');
+      twoGolden.src = './assets/two-golden.png';
+      twoGolden.alt = '';
+      twoGolden.className = 'two-golden-overlay';
+
+      stepsCell.appendChild(twoGolden);
+    }
+
+    if (stepsCell && !stepsCell.querySelector('.golden-terms-hotspot')) {
+      stepsCell.classList.add('golden-hotspot-cell');
+
+      const termsHotspot = document.createElement('button');
+      termsHotspot.type = 'button';
+      termsHotspot.className = 'image-hotspot golden-terms-hotspot';
+      termsHotspot.setAttribute('aria-label', 'Thể lệ');
+      termsHotspot.addEventListener('click', () => {
+        openPopup('/vikki-cvp/vikki-golden-savings/tc-2.html', 'Thể lệ');
+      });
+
+      stepsCell.appendChild(termsHotspot);
+    }
+
+    if (stepsCell && !stepsCell.querySelector('.golden-faq-hotspot')) {
+      stepsCell.classList.add('golden-hotspot-cell');
+
+      const faqHotspot = document.createElement('button');
+      faqHotspot.type = 'button';
+      faqHotspot.className = 'image-hotspot golden-faq-hotspot';
+      faqHotspot.setAttribute('aria-label', 'Hỏi đáp');
+      faqHotspot.addEventListener('click', () => {
+        const faqSection = document.querySelector('.vikki-golden-savings img[src*="cau-hoi-thuong-gap"]');
+        if (faqSection) {
+          faqSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+
+      stepsCell.appendChild(faqHotspot);
+    }
+
+    const qaGroups = [{"title":"Sản phẩm Tiết kiệm trả lãi cuối kỳ","count":3},{"title":"Sản phẩm Tiết kiệm trả lãi đầu kỳ","count":3},{"title":"Sản phẩm Tiết kiệm trả lãi định kỳ","count":3}];
+    if (Array.isArray(qaGroups) && qaGroups.length) {
+      const faqContainer = document.querySelector('.vikki-golden-savings .container.px-1');
+      const mainAccordion = faqContainer?.querySelector('.js-accordion');
+      if (mainAccordion) {
+        const items = Array.from(mainAccordion.querySelectorAll(':scope > .accordion-item'));
+        let cursor = 0;
+        qaGroups.forEach((group) => {
+          if (cursor < items.length) {
+            const heading = document.createElement('div');
+            heading.className = 'accordion-group-heading';
+            heading.textContent = group.title;
+            items[cursor].before(heading);
+            cursor += group.count;
+          }
+        });
+      }
+    }
+
+  });
+</script>
+
+        <div id='banner-container'>
+          <div id='video-container'>
+            <video
+              id='banner-video'
+              src='./assets/video.mp4'
+              poster='./assets/poster.jpg'
+              autoplay
+              playsinline
+              preload='auto'
+              muted
+              loop
+              webkit-playsinline
+              class='banner-video'
+            ></video>
+            <button id='volume-icon' class='volume-icon muted'>
+              <img src='./assets/icon-unmuted.svg' class='fa-icon fa-volume-high' />
+              <img src='./assets/icon-muted.svg' class='fa-icon fa-volume-xmark' />
+            </button>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class='gjs-row container golden-image-section' id='intro'>
+            <div class='gjs-cell golden-steps-cell'>
+                <img src='./assets/p-2.png' class='section golden-image' />
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class='gjs-row container golden-image-section' id='intro'>
+            <div class='gjs-cell '>
+                <img src='./assets/p-3.png' class='section golden-image' />
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class='gjs-row container pt-4' >
+          <div class='gjs-cell text-center golden-slider'>
+            <img src='assets/p-4.png' class='section !w-[70%]' />
+            <div class='slide-container' style=''>
+            <swiper-container class='center-swiper ' >
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/slide-1.png' />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/slide-2.png' />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/slide-3.png' />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/slide-4.png' />
+                </div>
+              </swiper-slide>
+            </swiper-container>
+            </div>          </div>
+        </div>
+
+
+
+
+        <div class='gjs-row container golden-image-section' id='intro'>
+            <div class='gjs-cell '>
+                <img src='./assets/p-5.png' class='section golden-image' />
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class='gjs-row container golden-image-section' id='intro'>
+            <div class='gjs-cell '>
+                <img src='./assets/p-6.png' class='section golden-image' />
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class='gjs-row container golden-image-section' id='intro'>
+            <div class='gjs-cell '>
+                <img src='./assets/p-7.png' class='section golden-image' />
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class='gjs-row container pt-1'>
+          <div class='gjs-cell'>
+            <img src='./assets/cau-hoi-thuong-gap.png' class='section' />
+          </div>
+        </div>
+
+        <div class='container px-1'>
+          <div class='pb-1 px-3'>
+            <div class='accordion js-accordion'>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Sản phẩm tiết kiệm trả lãi cuối kỳ là gì?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    Tiết kiệm trả lãi cuối kỳ là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn sẽ nhận toàn bộ tiền lãi một lần vào ngày đáo hạn, cùng với số tiền gốc đã gửi.
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi cuối kỳ?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <p>Để mở tiết kiệm trả lãi cuối kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Tôi có thể chọn kỳ hạn nào khi gửi tiết kiệm trả lãi cuối kỳ?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    Bạn có thể lựa chọn kỳ hạn gửi linh hoạt tùy theo quy định từng thời kỳ của Vikki, từ 01 đến 13 tháng, và các kỳ hạn 15, 18, 24, 36 tháng.
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Sản phẩm tiết kiệm trả lãi đầu kỳ là gì?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    Đây là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn nhận toàn bộ tiền lãi ngay tại thời điểm gửi, còn tiền gốc vẫn được giữ nguyên đến ngày đáo hạn.
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi đầu kỳ?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <p>Để mở tiết kiệm trả lãi đầu kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Tôi đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki như thế nào?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <p>Bạn có thể đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki theo các bước sau:</p><ul><li><strong>Bước 1:</strong> Đăng nhập ứng dụng Vikki, chọn mục &ldquo;Tiết kiệm&rdquo;</li><li><strong>Bước 2:</strong> Chọn &ldquo;Bắt đầu tiết kiệm&rdquo; và chọn phương thức trả lãi &ldquo;đầu kỳ&rdquo;</li><li><strong>Bước 3:</strong> Nhập số tiền gửi, chọn kỳ hạn và phương thức tái tục</li><li><strong>Bước 4:</strong> Kiểm tra thông tin, nhập mã khuyến mãi (nếu có)</li><li><strong>Bước 5:</strong> Đồng ý Điều khoản &amp; Điều kiện và xác nhận mở sổ</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Sản phẩm tiết kiệm trả lãi định kỳ là gì?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    Tiết kiệm trả lãi định kỳ là sản phẩm gửi tiết kiệm có kỳ hạn trên ứng dụng Vikki, cho phép bạn nhận lãi định kỳ hàng tháng hoặc hàng quý vào tài khoản thanh toán.
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Điều kiện để đăng ký gửi tiết kiệm trả lãi định kỳ là gì?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <p>Để mở tiết kiệm trả lãi định kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      Đối với tiết kiệm trả lãi định kỳ, tôi có những lựa chọn tái tục nào?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li></ul>
+                  </div>
+                </div>
+            </div>          </div>
+            <div class='px-3 pb-5 pt-3'>
+              <span class='bg-transparent button w-full' data-popup="qa" data-title="Hỏi đáp">
+                <img src='' />
+                <span>
+                  Xem thêm
+                </span>
+              </span>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class='gjs-row container p-1 bg-white golden-terms-activation'>
+            <div class='gjs-cell'>
+            <div class='flex g-2'>
+        
+        
+                <div class="g-1 full-w">
+                    <span
+                    class='bg-transparent button'
+                    data-title="Điều khoản và Điều kiện"
+                    data-popup='/vikki-cvp/vikki-golden-savings/tc-online-2.html'
+                    >
+                    Điều khoản &amp; điều kiện
+                    </span>
+                </div>
+        
+                <div class='button-wrap g-1'>
+                </div>
+            </div>
+            </div>
+        </div>
+  <span id='backToTop'>
+    <img src='./assets/icon-btt.svg' />
+  </span>
+
+  <div class='popup-overlay' id='popup'>
+    <button class='popup-close' id='popupClose'>
+      <img src='./assets/icon-x.svg' />
+    </button>
+    <div class='popup-content'>
+      <div class='popup-body' id='popupBody'></div>
+      <div class='loading-overlay show' id='loading'>
+        <span class='spinner'></span>
+      </div>
+    </div>
+  </div>
+ 
+  <template id='qaTemplate'>
+    <div class='popup-inner'>
+    <h2 class='popup-title' id="popupTitle">
+       Hỏi đáp 
+    </h2>
+          <div class='group-item'>
+            <div class="group-heading">
+                Sản phẩm Tiết kiệm trả lãi cuối kỳ Online
+              </div>
+            <div class='group-content'>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  1. Sản phẩm tiết kiệm trả lãi cuối kỳ là gì?
+                </div>
+                <div>
+                Tiết kiệm trả lãi cuối kỳ là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn sẽ nhận toàn bộ tiền lãi một lần vào ngày đáo hạn, cùng với số tiền gốc đã gửi.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  2. Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi cuối kỳ?
+                </div>
+                <div>
+                <p>Để mở tiết kiệm trả lãi cuối kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank.</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  3. Tôi có thể chọn kỳ hạn nào khi gửi tiết kiệm trả lãi cuối kỳ?
+                </div>
+                <div>
+                Bạn có thể lựa chọn kỳ hạn gửi linh hoạt tùy theo quy định từng thời kỳ của Vikki, từ 01 đến 13 tháng, và các kỳ hạn 15, 18, 24, 36 tháng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  4. Đối với tiết kiệm trả lãi cuối kỳ, tôi có những lựa chọn tái tục nào?
+                </div>
+                <div>
+                <p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li><li>Tái tục gốc và lãi: Vào ngày đến hạn, lãi nhập vốn và đáo hạn một kỳ hạn mới bằng với kỳ hạn khách hàng đã chọn trước đó.</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  5. Lãi suất tiết kiệm có thay đổi trong suốt kỳ hạn không?
+                </div>
+                <div>
+                Lãi suất được cố định trong suốt kỳ hạn. Khi đến ngày đáo hạn, nếu bạn chọn tái tục, lãi suất sẽ áp dụng theo mức tại thời điểm tái tục.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  6. Khi tôi rút một phần hoặc toàn bộ tiền gửi trước hạn, lãi suất sẽ được tính như thế nào?
+                </div>
+                <div>
+                <p>Trong trường hợp bạn rút một phần vốn trước hạn, lãi sẽ được tính:</p><ul><li>Phần tiền rút trước hạn: Áp dụng lãi suất không kỳ hạn theo quy định tại thời điểm rút.</li><li>Phần tiền còn lại: Vẫn được giữ nguyên lãi suất theo kỳ hạn ban đầu nếu tiếp tục duy trì đến ngày đáo hạn.</li></ul><p>Ngoài ra quy định số tiền rút trước hạn tối thiểu: 1.000.000 VNĐ. Số tiền còn lại trong sổ tối thiểu: 1.000.000 VNĐ.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='group-item'>
+            <div class="group-heading">
+                Sản phẩm Tiết kiệm trả lãi đầu kỳ
+              </div>
+            <div class='group-content'>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  7. Sản phẩm tiết kiệm trả lãi đầu kỳ là gì?
+                </div>
+                <div>
+                Đây là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn nhận toàn bộ tiền lãi ngay tại thời điểm gửi, còn tiền gốc vẫn được giữ nguyên đến ngày đáo hạn.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  8. Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi đầu kỳ?
+                </div>
+                <div>
+                <p>Để mở tiết kiệm trả lãi đầu kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  9. Tôi đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki như thế nào?
+                </div>
+                <div>
+                <p>Bạn có thể đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki theo các bước sau:</p><ul><li><strong>Bước 1:</strong> Đăng nhập ứng dụng Vikki, chọn mục &ldquo;Tiết kiệm&rdquo;</li><li><strong>Bước 2:</strong> Chọn &ldquo;Bắt đầu tiết kiệm&rdquo; và chọn phương thức trả lãi &ldquo;đầu kỳ&rdquo;</li><li><strong>Bước 3:</strong> Nhập số tiền gửi, chọn kỳ hạn và phương thức tái tục</li><li><strong>Bước 4:</strong> Kiểm tra thông tin, nhập mã khuyến mãi (nếu có)</li><li><strong>Bước 5:</strong> Đồng ý Điều khoản &amp; Điều kiện và xác nhận mở sổ</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  10. Lãi suất tiết kiệm có thay đổi trong suốt kỳ hạn không?
+                </div>
+                <div>
+                Lãi suất được cố định trong suốt kỳ hạn. Khi đến ngày đáo hạn, nếu bạn chọn tái tục, lãi suất sẽ áp dụng theo mức tại thời điểm tái tục.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  11. Nếu tôi mở tiết kiệm đầu kỳ vào ngày cuối tháng (ví dụ 31/01), ngày đáo hạn sẽ được xác định như thế nào?
+                </div>
+                <div>
+                <p>Trong trường hợp bạn gửi vào ngày cuối tháng, ngày đáo hạn sẽ là ngày cuối cùng của tháng đến hạn, kể cả các tháng không có ngày tương ứng.</p><p>Ví dụ: Tiết kiệm kỳ hạn 1 tháng, mở ngày 31/01/2026 – đáo hạn ngày 28/02/2026.</p>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  12. Tôi gửi tiết kiệm online trên ứng dụng Vikki, tôi muốn in thành sổ tiết kiệm như gửi tại Chi nhánh thì có được không?
+                </div>
+                <div>
+                <p>Hiện tại bạn có thể yêu cầu in sổ tiết kiệm cho khoản tiết kiệm trực tuyến tại Chi nhánh/Phòng giao dịch Vikki.</p><p>Bạn cần mang theo giấy tờ tùy thân đăng ký với Vikki và thiết bị cài đặt ứng dụng Vikki có thông tin khoản tiết kiệm trực tuyến cần in để làm thủ tục tại quầy. Giao dịch viên Vikki sẽ hỗ trợ bạn.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='group-item'>
+            <div class="group-heading">
+                Sản phẩm Tiết kiệm trả lãi định kỳ
+              </div>
+            <div class='group-content'>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  13. Sản phẩm tiết kiệm trả lãi định kỳ là gì?
+                </div>
+                <div>
+                Tiết kiệm trả lãi định kỳ là sản phẩm gửi tiết kiệm có kỳ hạn trên ứng dụng Vikki, cho phép bạn nhận lãi định kỳ hàng tháng hoặc hàng quý vào tài khoản thanh toán.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  14. Điều kiện để đăng ký gửi tiết kiệm trả lãi định kỳ là gì?
+                </div>
+                <div>
+                <p>Để mở tiết kiệm trả lãi định kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  15. Đối với tiết kiệm trả lãi định kỳ, tôi có những lựa chọn tái tục nào?
+                </div>
+                <div>
+                <p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  16. Tôi có được rút một phần hoặc toàn bộ tiền gửi trước hạn khi gửi tiết kiệm trả lãi định kỳ không?
+                </div>
+                <div>
+                <p>Bạn có thể rút một phần hoặc toàn bộ tiền gửi trước hạn với các điều kiện sau:</p><ul><li>Số tiền rút tối thiểu: 1.000.000 VNĐ/lần.</li><li>Số dư còn lại sau khi rút phải tối thiểu: 1.000.000 VNĐ.</li></ul><p>Bạn có thể thực hiện rút tiền ngay cả trong cùng ngày gửi.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <span id='backToTopQA'>
+          <img src='./assets/icon-btt.svg' />
+        </span>
+    </div>
+  </template>
+
+  <div class='popup-overlay' id="promo-detail-popup">
+  <button class='popup-close' id='popupDetail-close'>
+    <img src='./assets/icon-x.svg' />
+  </button>
+
+  <div class='popup-content'>
+    <iframe
+      id="promo-detail-frame"
+      class="popup-iframe"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+  <script>
+      function initAccordion(root, options = {}) {
+        const { multiple = false, defaultOpenIndex = null } = options;
+  
+        const items = root.querySelectorAll('.accordion-item');
+  
+        items.forEach((item, index) => {
+          const header = item.querySelector('.accordion-header');
+          const content = item.querySelector('.accordion-content');
+  
+          header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+  
+            if (!multiple) {
+              items.forEach((i) => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = null;
+              });
+            }
+  
+            if (!isActive) {
+              item.classList.add('active');
+              content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+              item.classList.remove('active');
+              content.style.maxHeight = null;
+            }
+          });
+  
+          if (defaultOpenIndex === index) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      }
+  
+      function initAccordionsIn(root) {
+        root.querySelectorAll('.js-accordion').forEach((acc) => {
+          initAccordion(acc);
+        });
+      }
+  
+      initAccordionsIn(document);
+    </script>
+  
+  <script>
+      const popup = document.getElementById('popup');
+      const popupBody = document.getElementById('popupBody');
+      const closeBtn = document.getElementById('popupClose');
+      const qaTemplate = document.getElementById('qaTemplate');
+      const loading = document.getElementById('loading')
+      const popupTitle = document.getElementById('popupTitle')
+  
+      document.querySelectorAll('[data-popup]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.popup;
+          const title = btn.dataset.title;
+         
+          openPopup(type, title);
+        });
+      });
+  
+      if(closeBtn){
+        closeBtn.addEventListener('click', closePopup);
+      }
+      
+  
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+      });
+  
+       function retryContent (type, iframe) {
+          iframe.src = type;
+          popupBody.appendChild(iframe);
+         
+          let timeout = setTimeout(() => {
+            retryContent(type, iframe)
+          }, 5000);
+  
+          iframe.onload = () => {
+            loading.classList.remove('show');
+            clearTimeout(timeout);
+          };
+      }
+  
+      function looksLikePdf(url) {
+        return /\.pdf($|\?)/i.test(url);
+      }
+     
+      function openPopup(type, title) {
+        popupBody.innerHTML = '';
+        const isLink = type.startsWith('https://') || type.startsWith('/')
+        const isPdfLink = looksLikePdf(type)
+  
+       // if(title){
+           // popupTitle.textContent = title;
+       // }
+  
+        if (!isLink) {
+          popupBody.appendChild(qaTemplate.content.cloneNode(true));
+          initAccordionsIn(popupBody);
+          loading.classList.remove('show');
+        } else {
+          if(title){
+            const titleEl = document.createElement('h2');
+            titleEl.className = 'popup-title';
+            titleEl.textContent = title;
+            popupBody.appendChild(titleEl);
+            popupBody.classList.add('pt-50')
+          }
+  
+          const iframe = document.createElement('iframe');
+          iframe.className = 'popup-iframe';
+          if(isPdfLink){
+            retryContent(type, iframe)
+          } else {
+            iframe.src = type;
+            popupBody.appendChild(iframe);
+           loading.classList.remove('show');
+          }
+          
+        }
+       
+        popup.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+  
+      function closePopup() {
+        loading.classList.add('show')
+        popup.classList.remove('show');
+        popupBody.innerHTML = '';
+        document.body.style.overflow = '';
+      }
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.4"></script>
+  
+  <script type="text/javascript">
+      const body = document.getElementById('body');
+      const videoContainer = document.getElementById('banner-container');
+      const video = document.getElementById('banner-video');
+      const volumeIcon = document.getElementById('volume-icon');
+      const params = new URLSearchParams(window.location.search);
+      const hasTopSpace = params.get('hasTopSpace');
+  
+      if (hasTopSpace === 'false') {
+        // body.style.paddingTop = '0';
+        body.classList.remove('hasTopSpace');
+      }
+      
+      if(videoContainer){
+        const videoSrc = './assets/video/playlist.m3u8';
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoSrc);
+          hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoSrc;
+        } else {
+          video.src = './assets/video.mp4';
+        }
+  
+        video.addEventListener('loadedmetadata', () => {
+          video.play().catch(() => {
+            console.log('Autoplay blocked');
+          });
+        });
+  
+        // #video-container's height (see styles.hbs) is driven by --video-ar
+        // instead of a hardcoded ratio, so it stays correct no matter which
+        // video a given page loads.
+        const videoBox = document.getElementById('video-container');
+        const applyVideoRatio = () => {
+          if (videoBox && video.videoWidth && video.videoHeight) {
+            videoBox.style.setProperty('--video-ar', video.videoHeight / video.videoWidth);
+          }
+        };
+        video.addEventListener('loadedmetadata', applyVideoRatio);
+        applyVideoRatio();
+  
+  
+        videoContainer.addEventListener('click', () => {
+          video.muted = !video.muted;
+          volumeIcon.classList.toggle('muted', video.muted);
+          volumeIcon.classList.toggle('unmuted', !video.muted);
+  
+          if (!video.paused) return;
+          video.play().catch(() => {});
+        });
+  
+        const tryPlay = () => {
+          video.play().catch((err) => console.warn('Replay blocked:', err));
+          document.removeEventListener('touchstart', tryPlay);
+        };
+  
+        tryPlay();
+        document.addEventListener('touchstart', tryPlay);
+      }
+  
+  </script>
+  
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-element-bundle.min.js'
+  ></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js'
+  ></script>
+  
+  <script>
+    document.querySelectorAll('.center-swiper').forEach((swiper) => {
+    Object.assign(swiper, {
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 12,
+      pagination: true
+    });
+  
+    swiper.initialize();
+  });
+  
+  </script>
+  
+  <script>
+      function scrollToSection(target, options = {}) {
+        const { offset = 0, behavior = 'smooth' } = options;
+  
+        const el =
+          typeof target === 'string' ? document.querySelector(target) : target;
+  
+        if (!el) return;
+  
+        let finalOffset = offset;
+  
+        // ✅ check hasTopSpace → +25vw
+        if (document.body.classList.contains('hasTopSpace')) {
+          const vw25 = window.innerWidth * 0.25;
+          finalOffset += vw25;
+        }
+  
+        const top =
+          el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+  
+        window.scrollTo({
+          top,
+          behavior,
+        });
+      }
+  
+      function initScrollToSection({ offset = 0 } = {}) {
+        document.querySelectorAll('[data-scroll]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            scrollToSection(btn.dataset.scroll, { offset });
+          });
+        });
+      }
+  
+      initScrollToSection({ offset: 48 });
+    </script>
+  
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+  
+  <script>
+    const popupDetail = document.getElementById('promo-detail-popup');
+    const iframeDetail = document.getElementById('promo-detail-frame');
+    const popupDetailClose = document.getElementById('popupDetail-close');
+  
+    window.addEventListener('message', (e) => {
+      if (e.data?.type !== 'OPEN_PROMO_DETAIL') return;
+      openPromoDetail(e.data.id);
+    });
+  
+    function openPromoDetail(id) {
+      iframeDetail.src = `/vikki-cvp/promotion/${id}.html`;
+      popupDetail.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  
+    if (popupDetailClose) {
+      popupDetailClose.addEventListener('click', closePromoDetail);
+    }
+  
+    function closePromoDetail() {
+      iframeDetail.src = '';
+      popupDetail.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  </script>
+
+</body>
+</html>

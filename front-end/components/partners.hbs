@@ -1,0 +1,17 @@
+<div style="padding: 16px;">
+  <div class="partner-grid {{#if className}}{{className}}{{/if}}">
+    {{#each partners}}
+      <div
+        class="partner-item {{#if primary}}is-primary{{/if}}"
+        data-id="{{id}}"
+        data-link="{{link}}"
+      >
+        <div class="partner-logo">
+          <img class="normalLogo" src="{{logo}}" alt="{{name}}" />
+          {{#if logoActive}}<img class="activeLogo" src="{{logoActive}}" alt="{{name}}" />{{/if}}
+          {{#if logoInactive}}<img class="inactiveLogo" src="{{logoInactive}}" alt="{{name}}" />{{/if}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

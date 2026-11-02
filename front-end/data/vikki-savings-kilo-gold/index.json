@@ -1,0 +1,208 @@
+{
+  "title": "Vikki Savings Kilo Gold | VikkiBank",
+  "layout": "template",
+  "hasTopSpace": true,
+  "className": "vikki-savings-kilo-gold",
+  "components": [
+    {
+      "type": "imageSection",
+      "id": "hero",
+      "className": "golden-image-section",
+      "imgClassName": "golden-image",
+      "src": "./assets/hero-20261030-v03.jpg"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "golden-image-section",
+      "cellClassName": "golden-steps-cell",
+      "imgClassName": "golden-image",
+      "src": "./assets/campaign-mechanics-20261029-v01.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "golden-image-section",
+      "imgClassName": "golden-image",
+      "src": "./assets/flying-people-20261029-v01.png"
+    },
+    {
+      "type": "slider",
+      "className": "golden-slider",
+      "title": {
+        "src": "assets/product-collection-title-20261029-v01.png"
+      },
+      "items": [
+        { "src": "assets/product-phat-loc-20261029-v01.png" },
+        { "src": "assets/product-phu-quy-20261029-v01.png" },
+        { "src": "assets/product-an-tam-20261029-v01.png" },
+        { "src": "assets/product-an-nhan-20261029-v01.png" }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "golden-image-section",
+      "imgClassName": "golden-image",
+      "src": "./assets/interest-rate-20261029-v01.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "golden-image-section",
+      "imgClassName": "golden-image",
+      "src": "./assets/flexible-saving-plan-20261029-v01.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "golden-image-section",
+      "cellClassName": "golden-benefits-cell",
+      "imgClassName": "golden-image",
+      "src": "./assets/vikki-benefits-20261029-v01.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/cau-hoi-thuong-gap.png"
+      },
+      "button": {
+        "text": "Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi cuối kỳ là gì?",
+          "content": "Tiết kiệm trả lãi cuối kỳ là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn sẽ nhận toàn bộ tiền lãi một lần vào ngày đáo hạn, cùng với số tiền gốc đã gửi."
+        },
+        {
+          "title": "Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi cuối kỳ?",
+          "content": "<p>Để mở tiết kiệm trả lãi cuối kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>"
+        },
+        {
+          "title": "Tôi có thể chọn kỳ hạn nào khi gửi tiết kiệm trả lãi cuối kỳ?",
+          "content": "Bạn có thể lựa chọn kỳ hạn gửi linh hoạt tùy theo quy định từng thời kỳ của Vikki, từ 01 đến 13 tháng, và các kỳ hạn 15, 18, 24, 36 tháng."
+        },
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi đầu kỳ là gì?",
+          "content": "Đây là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn nhận toàn bộ tiền lãi ngay tại thời điểm gửi, còn tiền gốc vẫn được giữ nguyên đến ngày đáo hạn."
+        },
+        {
+          "title": "Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi đầu kỳ?",
+          "content": "<p>Để mở tiết kiệm trả lãi đầu kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>"
+        },
+        {
+          "title": "Tôi đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki như thế nào?",
+          "content": "<p>Bạn có thể đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki theo các bước sau:</p><ul><li><strong>Bước 1:</strong> Đăng nhập ứng dụng Vikki, chọn mục &ldquo;Tiết kiệm&rdquo;</li><li><strong>Bước 2:</strong> Chọn &ldquo;Bắt đầu tiết kiệm&rdquo; và chọn phương thức trả lãi &ldquo;đầu kỳ&rdquo;</li><li><strong>Bước 3:</strong> Nhập số tiền gửi, chọn kỳ hạn và phương thức tái tục</li><li><strong>Bước 4:</strong> Kiểm tra thông tin, nhập mã khuyến mãi (nếu có)</li><li><strong>Bước 5:</strong> Đồng ý Điều khoản &amp; Điều kiện và xác nhận mở sổ</li></ul>"
+        },
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi định kỳ là gì?",
+          "content": "Tiết kiệm trả lãi định kỳ là sản phẩm gửi tiết kiệm có kỳ hạn trên ứng dụng Vikki, cho phép bạn nhận lãi định kỳ hàng tháng hoặc hàng quý vào tài khoản thanh toán."
+        },
+        {
+          "title": "Điều kiện để đăng ký gửi tiết kiệm trả lãi định kỳ là gì?",
+          "content": "<p>Để mở tiết kiệm trả lãi định kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>"
+        },
+        {
+          "title": "Đối với tiết kiệm trả lãi định kỳ, tôi có những lựa chọn tái tục nào?",
+          "content": "<p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "className": "golden-terms-activation",
+      "bgClass": "bg-white",
+      "termsButtonFullW": {
+        "title": "Điều khoản và Điều kiện",
+        "popup": "/vikki-cvp/vikki-savings-kilo-gold/tc-online.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroups": [
+    { "title": "Sản phẩm Tiết kiệm trả lãi cuối kỳ", "count": 3 },
+    { "title": "Sản phẩm Tiết kiệm trả lãi đầu kỳ", "count": 3 },
+    { "title": "Sản phẩm Tiết kiệm trả lãi định kỳ", "count": 3 }
+  ],
+  "qaGroup": [
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi cuối kỳ Online",
+      "children": [
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi cuối kỳ là gì?",
+          "content": "Tiết kiệm trả lãi cuối kỳ là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn sẽ nhận toàn bộ tiền lãi một lần vào ngày đáo hạn, cùng với số tiền gốc đã gửi."
+        },
+        {
+          "title": "Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi cuối kỳ?",
+          "content": "<p>Để mở tiết kiệm trả lãi cuối kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể chọn kỳ hạn nào khi gửi tiết kiệm trả lãi cuối kỳ?",
+          "content": "Bạn có thể lựa chọn kỳ hạn gửi linh hoạt tùy theo quy định từng thời kỳ của Vikki, từ 01 đến 13 tháng, và các kỳ hạn 15, 18, 24, 36 tháng."
+        },
+        {
+          "title": "Đối với tiết kiệm trả lãi cuối kỳ, tôi có những lựa chọn tái tục nào?",
+          "content": "<p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li><li>Tái tục gốc và lãi: Vào ngày đến hạn, lãi nhập vốn và đáo hạn một kỳ hạn mới bằng với kỳ hạn khách hàng đã chọn trước đó.</li></ul>"
+        },
+        {
+          "title": "Lãi suất tiết kiệm có thay đổi trong suốt kỳ hạn không?",
+          "content": "Lãi suất được cố định trong suốt kỳ hạn. Khi đến ngày đáo hạn, nếu bạn chọn tái tục, lãi suất sẽ áp dụng theo mức tại thời điểm tái tục."
+        },
+        {
+          "title": "Khi tôi rút một phần hoặc toàn bộ tiền gửi trước hạn, lãi suất sẽ được tính như thế nào?",
+          "content": "<p>Trong trường hợp bạn rút một phần vốn trước hạn, lãi sẽ được tính:</p><ul><li>Phần tiền rút trước hạn: Áp dụng lãi suất không kỳ hạn theo quy định tại thời điểm rút.</li><li>Phần tiền còn lại: Vẫn được giữ nguyên lãi suất theo kỳ hạn ban đầu nếu tiếp tục duy trì đến ngày đáo hạn.</li></ul><p>Ngoài ra quy định số tiền rút trước hạn tối thiểu: 1.000.000 VNĐ. Số tiền còn lại trong sổ tối thiểu: 1.000.000 VNĐ.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi đầu kỳ",
+      "children": [
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi đầu kỳ là gì?",
+          "content": "Đây là hình thức gửi tiết kiệm có kỳ hạn, trong đó bạn nhận toàn bộ tiền lãi ngay tại thời điểm gửi, còn tiền gốc vẫn được giữ nguyên đến ngày đáo hạn."
+        },
+        {
+          "title": "Tôi cần đáp ứng điều kiện gì để mở tiết kiệm trả lãi đầu kỳ?",
+          "content": "<p>Để mở tiết kiệm trả lãi đầu kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>"
+        },
+        {
+          "title": "Tôi đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki như thế nào?",
+          "content": "<p>Bạn có thể đăng ký tiết kiệm trả lãi đầu kỳ trên ứng dụng Vikki theo các bước sau:</p><ul><li><strong>Bước 1:</strong> Đăng nhập ứng dụng Vikki, chọn mục &ldquo;Tiết kiệm&rdquo;</li><li><strong>Bước 2:</strong> Chọn &ldquo;Bắt đầu tiết kiệm&rdquo; và chọn phương thức trả lãi &ldquo;đầu kỳ&rdquo;</li><li><strong>Bước 3:</strong> Nhập số tiền gửi, chọn kỳ hạn và phương thức tái tục</li><li><strong>Bước 4:</strong> Kiểm tra thông tin, nhập mã khuyến mãi (nếu có)</li><li><strong>Bước 5:</strong> Đồng ý Điều khoản &amp; Điều kiện và xác nhận mở sổ</li></ul>"
+        },
+        {
+          "title": "Lãi suất tiết kiệm có thay đổi trong suốt kỳ hạn không?",
+          "content": "Lãi suất được cố định trong suốt kỳ hạn. Khi đến ngày đáo hạn, nếu bạn chọn tái tục, lãi suất sẽ áp dụng theo mức tại thời điểm tái tục."
+        },
+        {
+          "title": "Nếu tôi mở tiết kiệm đầu kỳ vào ngày cuối tháng (ví dụ 31/01), ngày đáo hạn sẽ được xác định như thế nào?",
+          "content": "<p>Trong trường hợp bạn gửi vào ngày cuối tháng, ngày đáo hạn sẽ là ngày cuối cùng của tháng đến hạn, kể cả các tháng không có ngày tương ứng.</p><p>Ví dụ: Tiết kiệm kỳ hạn 1 tháng, mở ngày 31/01/2026 – đáo hạn ngày 28/02/2026.</p>"
+        },
+        {
+          "title": "Tôi gửi tiết kiệm online trên ứng dụng Vikki, tôi muốn in thành sổ tiết kiệm như gửi tại Chi nhánh thì có được không?",
+          "content": "<p>Hiện tại bạn có thể yêu cầu in sổ tiết kiệm cho khoản tiết kiệm trực tuyến tại Chi nhánh/Phòng giao dịch Vikki.</p><p>Bạn cần mang theo giấy tờ tùy thân đăng ký với Vikki và thiết bị cài đặt ứng dụng Vikki có thông tin khoản tiết kiệm trực tuyến cần in để làm thủ tục tại quầy. Giao dịch viên Vikki sẽ hỗ trợ bạn.</p>"
+        }
+      ]
+    },
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi định kỳ",
+      "children": [
+        {
+          "title": "Sản phẩm tiết kiệm trả lãi định kỳ là gì?",
+          "content": "Tiết kiệm trả lãi định kỳ là sản phẩm gửi tiết kiệm có kỳ hạn trên ứng dụng Vikki, cho phép bạn nhận lãi định kỳ hàng tháng hoặc hàng quý vào tài khoản thanh toán."
+        },
+        {
+          "title": "Điều kiện để đăng ký gửi tiết kiệm trả lãi định kỳ là gì?",
+          "content": "<p>Để mở tiết kiệm trả lãi định kỳ, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Là công dân Việt Nam từ đủ 15 tuổi trở lên, có đầy đủ năng lực hành vi dân sự</li><li>Có CCCD/thẻ căn cước hợp lệ</li><li>Có tài khoản thanh toán tại Vikki Bank</li></ul>"
+        },
+        {
+          "title": "Đối với tiết kiệm trả lãi định kỳ, tôi có những lựa chọn tái tục nào?",
+          "content": "<p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li></ul>"
+        },
+        {
+          "title": "Tôi có được rút một phần hoặc toàn bộ tiền gửi trước hạn khi gửi tiết kiệm trả lãi định kỳ không?",
+          "content": "<p>Bạn có thể rút một phần hoặc toàn bộ tiền gửi trước hạn với các điều kiện sau:</p><ul><li>Số tiền rút tối thiểu: 1.000.000 VNĐ/lần.</li><li>Số dư còn lại sau khi rút phải tối thiểu: 1.000.000 VNĐ.</li></ul><p>Bạn có thể thực hiện rút tiền ngay cả trong cùng ngày gửi.</p>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<main>
+  {{#if heroVideo}}
+    <section class="safe-video-section" id="hero">
+      <video
+        id="safe-plus-hero-video"
+        src="{{videoSrc}}"
+        poster="{{posterSrc}}"
+        autoplay
+        playsinline
+        webkit-playsinline
+        preload="auto"
+        muted
+        loop
+      ></video>
+      <button id="safe-plus-volume-icon" class="volume-icon muted" type="button" aria-label="Toggle sound">
+        <img src="{{iconUnmutedSrc}}" class="fa-icon fa-volume-high" alt="" />
+        <img src="{{iconMutedSrc}}" class="fa-icon fa-volume-xmark" alt="" />
+      </button>
+    </section>
+  {{else}}
+    <section class="gjs-row container safe-hero-section" id="hero">
+      <div class="gjs-cell">
+        <img class="section safe-hero-image" src="{{heroImage}}" alt="{{heroAlt}}" />
+      </div>
+    </section>
+  {{/if}}
+
+  <section class="safe-section">
+    <h1 class="safe-heading">{{registerTitle}}</h1>
+    {{#if registerSubtitleImage}}
+      <div
+        class="safe-highlight-image"
+        role="img"
+        aria-label="{{registerSubtitle}}"
+        style="background-image: url('{{registerSubtitleImage}}')"
+      ></div>
+    {{else}}
+      <p class="safe-highlight">{{registerSubtitle}}</p>
+    {{/if}}
+    {{#if benefitsImage}}
+      <img class="section safe-benefits-image" src="{{benefitsImage}}" alt="{{benefitsAlt}}" />
+    {{else}}
+      <div class="benefit-list">
+        {{#each benefits}}
+          <article class="benefit-card">
+            <h3><strong>{{title}}</strong>{{subtitle}}</h3>
+            <div class="art-placeholder">{{imageLabel}}</div>
+          </article>
+        {{/each}}
+      </div>
+    {{/if}}
+  </section>
+
+  <section class="safe-section">
+    <h2 class="safe-heading">{{plansTitle}}</h2>
+    {{#if plansSubtitleImage}}
+      <div
+        class="safe-highlight-image"
+        role="img"
+        aria-label="{{plansSubtitle}}"
+        style="background-image: url('{{plansSubtitleImage}}')"
+      ></div>
+    {{else}}
+      <p class="safe-highlight">{{plansSubtitle}}</p>
+    {{/if}}
+    {{#if plansSlider}}
+      <div class="safe-plans-slider">{{> slider slider=plans}}</div>
+    {{else}}
+      <div class="horizontal-cards">
+        {{#each plans}}
+          <article class="plan-card">
+            <div class="art-placeholder">{{imageLabel}}</div>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <button class="plan-detail" type="button">{{../viewDetails}}</button>
+          </article>
+        {{/each}}
+      </div>
+    {{/if}}
+  </section>
+
+  <section class="safe-section steps-section">
+    {{#if stepsHeaderImage}}
+      <img class="section safe-steps-header" src="{{stepsHeaderImage}}" alt="{{stepsTitle}} — {{stepsSubtitle}}" />
+    {{else}}
+      <h2 class="safe-heading">{{stepsTitle}}</h2>
+      <p class="safe-highlight">{{stepsSubtitle}}</p>
+    {{/if}}
+    {{#if stepsSlider}}
+      <div class="safe-steps-slider">{{> slider slider=steps}}</div>
+    {{else}}
+      <div class="horizontal-cards">
+        {{#each steps}}
+          <article class="plan-card step-card">
+            <span class="step-number">{{number}}</span>
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <div class="art-placeholder">{{imageLabel}}</div>
+          </article>
+        {{/each}}
+      </div>
+    {{/if}}
+  </section>
+
+  <section class="safe-section safe-faq" id="safe-plus-faq">
+    <h2 class="safe-heading">{{faqTitle}}</h2>
+    <div class="pt-4">{{> qa qa=faqs}}</div>
+  </section>
+
+  <nav class="legal-links" id="supporting-information" aria-label="Supporting information">
+    {{#each legalLinks}}
+      {{#if popup}}
+        <button class="legal-link" type="button" data-popup="{{popup}}" {{#if title}}data-title="{{title}}"{{/if}}>{{label}}</button>
+      {{else}}
+        <a class="legal-link" href="{{href}}">{{label}}</a>
+      {{/if}}
+    {{/each}}
+  </nav>
+</main>

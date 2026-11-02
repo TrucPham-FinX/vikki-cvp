@@ -1,0 +1,603 @@
+<style>
+  html,
+  body.vikki-safe-plus-cvp {
+    margin: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background: #fff;
+    color: #11131a;
+    overflow-x: hidden;
+  }
+
+  body.vikki-safe-plus-cvp {
+    padding-top: 40px;
+  }
+
+  body.vikki-safe-plus-cvp.hasTopSpace {
+    padding-top: calc(25vw + 40px);
+  }
+
+  .vikki-safe-plus-cvp .safe-section {
+    padding: 28px 16px;
+  }
+
+  .vikki-safe-plus-cvp .safe-heading {
+    margin: 0;
+    font-size: clamp(24px, 7vw, 34px);
+    line-height: 1.15;
+    text-align: center;
+  }
+
+  .vikki-safe-plus-cvp .safe-highlight {
+    display: table;
+    margin: 8px auto 24px;
+    padding: 5px 14px 7px;
+    border-radius: 8px;
+    color: #fff;
+    background: linear-gradient(100deg, #4d00ff, #ed009b);
+    font-size: clamp(20px, 6vw, 28px);
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  .vikki-safe-plus-cvp .safe-highlight-image {
+    display: block;
+    width: min(92%, 420px);
+    aspect-ratio: 1206 / 250;
+    margin: 8px auto 24px;
+    background-repeat: no-repeat;
+    background-position: center 75%;
+    background-size: 100% auto;
+  }
+
+  .vikki-safe-plus-cvp .safe-hero-section {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-safe-plus-cvp .safe-hero-section .gjs-cell {
+    display: block;
+    width: 100%;
+    line-height: 0;
+  }
+
+  .vikki-safe-plus-cvp .safe-hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .vikki-safe-plus-cvp .safe-video-section {
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    padding-bottom: 177.7778%;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .vikki-safe-plus-cvp #safe-plus-hero-video {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .vikki-safe-plus-cvp #safe-plus-volume-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+  }
+
+  .vikki-safe-plus-cvp .benefit-list {
+    display: grid;
+    gap: 18px;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .vikki-safe-plus-cvp .safe-benefits-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .vikki-safe-plus-cvp .benefit-card {
+    min-height: 310px;
+    padding: 30px 18px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .vikki-safe-plus-cvp .benefit-card:nth-child(odd) {
+    background: linear-gradient(180deg, #fff 0%, #ffe2de 100%);
+  }
+
+  .vikki-safe-plus-cvp .benefit-card:nth-child(even) {
+    background: linear-gradient(180deg, #fff 0%, #e8f1ff 100%);
+  }
+
+  .vikki-safe-plus-cvp .benefit-card h3 {
+    margin: 0;
+    font-size: 19px;
+    line-height: 1.35;
+  }
+
+  .vikki-safe-plus-cvp .benefit-card h3 strong {
+    display: block;
+    color: #ff4b42;
+  }
+
+  .vikki-safe-plus-cvp .benefit-card:nth-child(even) h3 strong {
+    color: #145cff;
+  }
+
+  .vikki-safe-plus-cvp .art-placeholder {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed rgba(54, 72, 120, .25);
+    border-radius: 28px;
+    display: grid;
+    place-items: center;
+    color: #69728a;
+    font-size: 13px;
+  }
+
+  .vikki-safe-plus-cvp .horizontal-cards {
+    display: flex;
+    gap: 12px;
+    padding: 6px 16px 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .vikki-safe-plus-cvp .plan-card {
+    min-width: min(78vw, 330px);
+    padding: 22px 18px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #fff7f5, #fff);
+    box-shadow: 0 3px 16px rgba(37, 42, 56, .08);
+    scroll-snap-align: center;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider,
+  .vikki-safe-plus-cvp .safe-steps-slider {
+    width: calc(100% + 32px);
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider swiper-container,
+  .vikki-safe-plus-cvp .safe-steps-slider swiper-container {
+    width: 100%;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider .slide-container {
+    padding-top: 0;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider swiper-slide {
+    padding: 0 6px 15px;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider .swiper-slide-next {
+    left: 0;
+    animation-name: none;
+  }
+
+  .vikki-safe-plus-cvp .safe-plans-slider .swiper-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .vikki-safe-plus-cvp .plan-card .art-placeholder {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 16px;
+  }
+
+  .vikki-safe-plus-cvp .plan-card h3 {
+    margin: 0 0 6px;
+  }
+
+  .vikki-safe-plus-cvp .plan-detail {
+    width: 100%;
+    margin-top: 16px;
+    padding: 9px;
+    border: 1px solid #e8e9ee;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .vikki-safe-plus-cvp .steps-section {
+    background: #e9f2ff;
+  }
+
+  .vikki-safe-plus-cvp .safe-steps-header {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .vikki-safe-plus-cvp .safe-steps-slider .slide-container {
+    padding-top: 0;
+  }
+
+  .vikki-safe-plus-cvp .safe-steps-slider swiper-slide {
+    padding: 0 6px 15px;
+  }
+
+  .vikki-safe-plus-cvp .safe-steps-slider .swiper-slide-next {
+    left: 0;
+    animation-name: none;
+  }
+
+  .vikki-safe-plus-cvp .safe-steps-slider .swiper-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .vikki-safe-plus-cvp .step-card {
+    min-width: min(82vw, 350px);
+    min-height: 330px;
+    background: #fff;
+  }
+
+  .vikki-safe-plus-cvp .step-number {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: #155cff;
+    font-weight: 700;
+  }
+
+  .vikki-safe-plus-cvp .safe-faq {
+    padding-bottom: 16px;
+    background: #f6f7f9;
+  }
+
+  .vikki-safe-plus-cvp .safe-faq .accordion-item {
+    border-radius: 14px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .08);
+  }
+
+  .vikki-safe-plus-cvp .safe-faq .accordion-header {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .vikki-safe-plus-cvp .safe-faq .accordion-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(4, 11, 30, 0.92);
+  }
+
+  .vikki-safe-plus-cvp .safe-faq .accordion-content p,
+  .vikki-safe-plus-cvp .safe-faq .accordion-content li {
+    font-weight: 400;
+  }
+
+  .vikki-safe-plus-cvp .legal-links {
+    padding: 0 16px 18px;
+    background: #f6f7f9;
+  }
+
+  .vikki-safe-plus-cvp .legal-link {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 12px;
+    border-radius: 999px;
+    background: #e8e8e8;
+    color: #14151a;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .vikki-safe-plus-cvp .popup-overlay {
+    background: #f6f7f8;
+    overscroll-behavior: contain;
+  }
+
+  .vikki-safe-plus-cvp .popup-content,
+  .vikki-safe-plus-cvp .popup-body {
+    background: #f6f7f8;
+  }
+
+  .vikki-safe-plus-cvp .popup-inner {
+    box-sizing: border-box;
+    min-height: 100%;
+    padding: 0 16px 40px;
+  }
+
+  .vikki-safe-plus-cvp .popup-inner .popup-title {
+    min-height: 80px;
+    margin: 0 -16px 16px;
+    padding: 20px 56px 0 16px;
+    box-sizing: border-box;
+    background: #f6f7f8;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .vikki-safe-plus-cvp .group-item {
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .08);
+  }
+
+  .vikki-safe-plus-cvp .group-heading {
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, .92);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    text-transform: none;
+  }
+
+  .vikki-safe-plus-cvp .group-sub {
+    padding: 14px 0;
+    border-bottom: 1px solid #ededee;
+    color: rgba(4, 11, 30, .92);
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .vikki-safe-plus-cvp .group-sub:first-child {
+    padding-top: 0;
+  }
+
+  .vikki-safe-plus-cvp .group-sub:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+
+  .vikki-safe-plus-cvp .group-sub-title {
+    margin-bottom: 10px;
+    color: rgba(4, 11, 30, .92);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .vikki-safe-plus-cvp .group-sub p {
+    margin: 10px 0 0;
+  }
+
+  .vikki-safe-plus-cvp .group-sub p:first-child {
+    margin-top: 0;
+  }
+
+  .vikki-safe-plus-cvp .group-sub p:last-child {
+    margin-bottom: 0;
+  }
+
+  .vikki-safe-plus-cvp .group-sub ul {
+    margin: 10px 0 0;
+    padding-left: 22px;
+  }
+
+  .vikki-safe-plus-cvp .group-sub a {
+    display: inline-block;
+    max-width: 100%;
+    color: #0a46ff;
+    font-size: clamp(12px, 3.5vw, 14px);
+    white-space: nowrap;
+  }
+
+  .vikki-safe-plus-cvp #backToTopQA,
+  body.vikki-safe-plus-cvp.safe-popup-open #backToTop {
+    display: none !important;
+  }
+
+  .vikki-safe-plus-cvp .popup-body {
+    overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .vikki-safe-plus-cvp .popup-body.safe-popup-body--iframe {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overscroll-behavior: none;
+  }
+
+  .vikki-safe-plus-cvp .safe-popup-body--iframe .popup-title {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 80px;
+    margin: 0;
+    padding: 16px 64px 16px 16px;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  .vikki-safe-plus-cvp .popup-overlay.safe-popup--iframe .popup-close {
+    top: 15px;
+  }
+
+  .vikki-safe-plus-cvp.hasTopSpace .popup-overlay.safe-popup--iframe .popup-close {
+    top: calc(25vw + 15px);
+  }
+
+  .vikki-safe-plus-cvp .safe-popup-body--iframe .popup-iframe {
+    flex: 1 1 auto;
+    width: 100%;
+    height: 0;
+    min-height: 0;
+  }
+
+  @media (min-width: 768px) {
+    .vikki-safe-plus-cvp .benefit-list { grid-template-columns: repeat(3, 1fr); max-width: 1080px; }
+  }
+</style>
+
+{{> safePlusOverview}}
+
+{{!-- Configure only Safe Plus sliders before the shared Swiper initializer runs. --}}
+<script>
+  window.addEventListener('load', () => {
+    const heroVideo = document.getElementById('safe-plus-hero-video');
+    const volumeButton = document.getElementById('safe-plus-volume-icon');
+
+    if (!heroVideo) return;
+
+    const hlsSrc = '{{videoHlsSrc}}';
+    const mp4Src = '{{videoSrc}}';
+
+    if (heroVideo.canPlayType('application/vnd.apple.mpegurl')) {
+      heroVideo.src = hlsSrc;
+    } else if (window.Hls && Hls.isSupported()) {
+      const safePlusHls = new Hls();
+      safePlusHls.loadSource(hlsSrc);
+      safePlusHls.attachMedia(heroVideo);
+      safePlusHls.on(Hls.Events.ERROR, (_event, data) => {
+        if (!data.fatal) return;
+        safePlusHls.destroy();
+        heroVideo.src = mp4Src;
+        heroVideo.play().catch(() => {});
+      });
+    }
+
+    heroVideo.play().catch(() => {});
+
+    if (volumeButton) {
+      volumeButton.addEventListener('click', () => {
+        heroVideo.muted = !heroVideo.muted;
+        volumeButton.classList.toggle('muted', heroVideo.muted);
+        volumeButton.classList.toggle('unmuted', !heroVideo.muted);
+        heroVideo.play().catch(() => {});
+      });
+    }
+  });
+
+  const safePlusAutoplay = {
+    delay: 5000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true
+  };
+
+  document
+    .querySelectorAll('.safe-plans-slider .center-swiper, .safe-steps-slider .center-swiper')
+    .forEach((swiper) => {
+      Object.assign(swiper, {
+        loop: false,
+        rewind: true,
+        autoplay: safePlusAutoplay
+      });
+    });
+
+  window.addEventListener('load', () => {
+    const registrationSlider = document.querySelector(
+      '.safe-steps-slider .center-swiper'
+    );
+
+    if (!registrationSlider || !registrationSlider.swiper) return;
+
+    registrationSlider.swiper.autoplay.stop();
+    window.setTimeout(() => {
+      registrationSlider.swiper.autoplay.start();
+    }, 2500);
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const safePopup = document.getElementById('popup');
+    const safePopupBody = document.getElementById('popupBody');
+    let lockedScrollY = 0;
+    let isPageScrollLocked = false;
+
+    if (!safePopup || !safePopupBody) return;
+
+    const lockPageScroll = () => {
+      if (isPageScrollLocked) return;
+
+      lockedScrollY = window.scrollY || window.pageYOffset;
+      Object.assign(document.body.style, {
+        position: 'fixed',
+        top: `-${lockedScrollY}px`,
+        left: '0',
+        right: '0',
+        width: '100%',
+        overflow: 'hidden'
+      });
+      isPageScrollLocked = true;
+    };
+
+    const unlockPageScroll = () => {
+      if (!isPageScrollLocked) return;
+
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
+      document.body.style.overflow = '';
+      window.scrollTo(0, lockedScrollY);
+      isPageScrollLocked = false;
+    };
+
+    const syncPopupScroll = () => {
+      const isOpen = safePopup.classList.contains('show');
+      const hasIframe = Boolean(safePopupBody.querySelector('.popup-iframe'));
+
+      document.body.classList.toggle('safe-popup-open', isOpen);
+
+      safePopupBody.classList.toggle(
+        'safe-popup-body--iframe',
+        isOpen && hasIframe
+      );
+      safePopup.classList.toggle(
+        'safe-popup--iframe',
+        isOpen && hasIframe
+      );
+
+      if (isOpen) {
+        lockPageScroll();
+      } else {
+        unlockPageScroll();
+      }
+    };
+
+    new MutationObserver(syncPopupScroll).observe(safePopup, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+
+    safePopup.addEventListener('touchmove', (event) => {
+      if (!event.target.closest('.popup-body')) {
+        event.preventDefault();
+      }
+    }, { passive: false });
+  });
+</script>

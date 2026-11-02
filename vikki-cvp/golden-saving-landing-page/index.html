@@ -1,0 +1,1294 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TD Campaign CVP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        overflow-x: hidden;
+      }
+
+      body {
+        font-family: "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+        background: linear-gradient(
+          215deg,
+          #0000ff 10%,
+          #2929e4fe 19%,
+          #1c00bb 24%,
+          #5400bbf8 27%,
+          #de0094 40%,
+          #ff4488 45%,
+          #a00d6fbc 50%,
+          #3235d4d7 60%,
+          #0c0ce2 80%,
+          #3d3da5bd 90%,
+          #ffb700e4 100%
+        );
+      }
+
+      .section {
+        max-width: 1176px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hinhNen::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: url("assets/sanbonggray1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.45;
+        z-index: 0;
+      }
+
+      .hinhNen > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .banner {
+        width: 100%;
+      }
+      .banner-btn {
+        outline: none;
+      }
+
+      .banner-btn img.cta-img {
+        width: 100%;
+        height: auto;
+      }
+
+      .banner-btn-mobile {
+        padding: 0;
+        cursor: pointer;
+        transition: transform 0.2s;
+        z-index: 2;
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        margin-top: 14px;
+        margin-left: -12px;
+        display: none;
+      }
+
+      .banner-btn-mobile img.cta-img {
+        width: 180px;
+        height: auto;
+      }
+
+      .content-over-bg {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+      }
+
+      .wrapper {
+        margin: 0 auto;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .condition-title {
+        text-align: center;
+        color: #fff;
+        padding: 16px 32px 8px;
+        margin-top: 30px;
+        font-weight: 100;
+      }
+
+      .condition-title h2 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #fff;
+        text-shadow:
+          0 2px 0 #2336d9,
+          0 0 10px rgba(255, 255, 255, 0.5);
+      }
+
+      .condition-title p {
+        max-width: 1136px;
+        margin: 16px auto 0;
+        font-size: 17px;
+        line-height: 1.3;
+        color: #fff;
+        text-align: left;
+      }
+
+      .condition-title p strong {
+        font-weight: 700;
+        color: #fff;
+      }
+
+      .info-section {
+        margin: 40px auto 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .schedule-box {
+        overflow: hidden;
+        background: linear-gradient(180deg, #ffee96 0%, #ffdc44 100%);
+        box-shadow:
+          0 12px 40px rgba(248, 248, 248, 0.162),
+          0 4px 12px rgba(187, 184, 184, 0.676);
+        display: flex;
+        flex-direction: column;
+        border: 2px solid white;
+      }
+
+      .schedule-box p {
+        margin: 0;
+        padding: 9px 40px;
+        color: #3030d8;
+        font-size: 17px;
+        line-height: 1.4;
+        border-bottom: 1px solid white;
+        background: rgba(255, 255, 255, 0.35);
+        font-weight: normal;
+      }
+
+      .schedule-box p span {
+        display: block;
+        max-width: 90%;
+      }
+
+      .schedule-box p:nth-child(even) {
+        background: transparent;
+      }
+
+      .schedule-box p strong {
+        color: #3030d8;
+      }
+
+      .faq {
+        display: flex;
+        flex-direction: column;
+        border: 0px solid rgba(255, 255, 255, 0.96);
+        overflow: hidden;
+        box-shadow:
+          0 12px 40px rgba(255, 255, 255, 0.078),
+          0 4px 12px rgba(246, 242, 242, 0.24);
+      }
+
+      .faq-item {
+        overflow: hidden;
+        background: linear-gradient(90deg, #0100fe, #c32296);
+        border: 1px solid white;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: inset 0px 2px 32px 0px #ffffff;
+      }
+
+      .faq-item:last-child {
+        border-bottom: none;
+      }
+
+      .faq-item summary {
+        list-style: none;
+        cursor: pointer;
+        padding: 16px 20px;
+        color: #fff;
+        font-weight: bold;
+        position: relative;
+        user-select: none;
+      }
+
+      .faq-item summary::-webkit-details-marker {
+        display: none;
+      }
+
+      .faq-item summary::after {
+        content: "";
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 28px;
+        height: 28px;
+        background-image: url("./assets/Subtract.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.3s ease;
+      }
+
+      .faq-item[open] summary::after {
+        background-image: url("./assets/down.png");
+        transform: translateY(-50%);
+      }
+
+      .faq-content {
+        background: #f9f9f9d3;
+        color: #2336d9;
+        padding: 10px 20px;
+        line-height: 1.4;
+        font-size: 15px;
+        font-weight: normal;
+        animation: faqSlideDown 0.3s ease-out;
+      }
+      .faq-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 8px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .faq-table th,
+      .faq-table td {
+        border: 1px solid #2336d9;
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .faq-table th {
+        background: rgba(35, 54, 217, 0.15);
+        color: #2336d9;
+        font-weight: 700;
+        font-size: 12px;
+      }
+
+      .faq-table td {
+        background: rgba(255, 255, 255, 0.6);
+      }
+      .desktop-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+      }
+
+      .desktop-img {
+        /* max-width: 1100px; */
+        margin: 0 auto;
+      }
+
+      .mobile-img {
+        display: none;
+        width: 100%;
+        height: auto;
+      }
+
+      .banner .desktop-img,
+      .banner .mobile-img {
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      .full-bleed {
+        margin: 0 -20px;
+        width: calc(100% + 40px);
+      }
+
+      .full-bleed .desktop-img,
+      .full-bleed .mobile-img {
+        border-radius: 0;
+        max-width: 100%;
+      }
+
+      /* Utility */
+      .pos-relative {
+        position: relative;
+      }
+      .mt-20 {
+        margin-top: 20px;
+      }
+      .mt-1rem {
+        margin-top: 1rem;
+      }
+      .mt-2rem {
+        margin-top: 2rem;
+      }
+      .img-center-200 {
+        max-width: 200px;
+        align-items: center;
+        margin: 0 auto;
+      }
+      .text-justify {
+        text-align: justify;
+      }
+      .btn-bottom-left {
+        position: absolute;
+        left: 20px;
+        bottom: -37px;
+        width: 24%;
+      }
+
+      /* Image-specific */
+      .mb3-img {
+        padding-top: 16px;
+        padding-left: 16px;
+      }
+
+      .mb12-img {
+        max-width: 350px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 8px 12px;
+      }
+      .the-le-mobile-img {
+        max-width: 350px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 8px 12px;
+      }
+      .faq-mobile-img {
+        max-width: 500px;
+        align-items: center;
+        margin: 0 auto;
+        padding: 8px 12px;
+      }
+      .hinh15-positioned {
+        padding: 0 40px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: none;
+        max-height: 100%;
+      }
+      .hinh6-img {
+        margin-top: -10px;
+        margin-bottom: 20px;
+      }
+      .hinh7-img {
+        padding: 20px 0;
+      }
+      .hinh9-img {
+        max-width: 700px;
+        margin: 30px auto;
+      }
+      .hinh10-img {
+        max-width: 300px;
+        margin: -25px auto auto;
+      }
+      .hinh11-img {
+        max-width: 300px;
+        margin: -25px auto;
+      }
+      .hinh12-img {
+        max-width: 600px;
+        margin: auto;
+      }
+      .intro-images {
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      .intro-images img {
+        width: 50%;
+        height: auto;
+        display: block;
+      }
+
+      @keyframes faqSlideDown {
+        from {
+          opacity: 0;
+          max-height: 0;
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        to {
+          opacity: 1;
+          max-height: 500px;
+          padding-top: 18px;
+          padding-bottom: 18px;
+        }
+      }
+
+      .desktop-only {
+        display: flex;
+      }
+      .mobile-only {
+        display: none;
+      }
+      @media (min-width: 768px) {
+        .hinhNen {
+          padding-top: 50px;
+        }
+        .mt-30 {
+          margin-top: 30px;
+        }
+      }
+
+      /* Mobile */
+      @media (max-width: 767px) {
+        body {
+          background: linear-gradient(
+            180deg,
+            #0a33d6 3%,
+            #aa00ff 10%,
+            #cc00ff 11%,
+            #ff00a0 15%,
+            #cc00ff 16%,
+            #0a33d6 28%,
+            #ffa202 30%,
+            #ff00a0 32%,
+            #aa00ff 33%,
+            #0a33d6 38%,
+            #aa00ff 48%,
+            #de0094 52%,
+            #aa00ff 53%,
+            #0a33d6 88%,
+            #ffae23 95%,
+            #ff00a0 95.5%,
+            #0a33d6 100%
+          );
+          background-attachment: scroll;
+        }
+
+        .banner {
+          margin: 0 -12px;
+          width: calc(100% + 24px);
+        }
+
+        .full-bleed {
+          margin: 0 -12px;
+          width: calc(100% + 24px);
+        }
+
+        .hinhNen::before {
+          background-position: top;
+          background-size: contain;
+        }
+
+        .hinhNen .section {
+          padding: 0;
+        }
+
+        .content-over-bg {
+          padding: 0 !important;
+          gap: 16px;
+        }
+
+        .desktop-img {
+          display: none;
+        }
+
+        .mobile-img {
+          display: block;
+        }
+
+        .wrapper {
+          gap: 12px;
+        }
+
+        .section {
+          gap: 8px;
+          padding: 0;
+        }
+
+        .banner {
+          line-height: 0;
+        }
+
+        .condition-title {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+        .info-section {
+          padding-left: 16px;
+          padding-right: 16px;
+          max-width: 100%;
+          gap: 16px;
+        }
+
+        .schedule-box {
+          gap: 1px;
+        }
+
+        .schedule-box p {
+          padding: 12px 20px;
+          font-size: 15px;
+        }
+
+        /* .faq {
+          gap: 8px;
+        } */
+
+        .faq-item summary {
+          padding: 14px 16px;
+          padding-right: 50px;
+          font-size: 14px;
+        }
+
+        .faq-item summary::after {
+          right: 14px;
+          width: 24px;
+          height: 24px;
+        }
+
+        .faq-content {
+          padding: 14px 16px;
+          font-size: 13px;
+        }
+        .mb14-full {
+          padding-right: 16px;
+        }
+
+        .mobile-only {
+          display: flex;
+          max-width: 240px;
+        }
+
+        .desktop-only {
+          display: none !important;
+        }
+      }
+      .p-16 {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section class="banner">
+      <img
+        class="desktop-img"
+        src="./assets/hinh1.png"
+        alt="Banner Tiết kiệm Vikki - Trúng bóng vàng ký"
+      />
+      <img
+        class="mobile-img"
+        src="./assets/mb1.jpg"
+        alt="Banner Tiet kiem Vikki - Trung bong vang ky"
+      />
+    </section>
+    <div class="wrapper">
+      <div class="content-over-bg">
+        <div class="">
+          <div class="pos-relative">
+            <div class="pos-relative">
+              <img
+                class="desktop-img hinh15-positioned"
+                src="./assets/hinh15.png"
+                alt="Background nền giới thiệu"
+              />
+              <section class="section pos-relative mt-30">
+                <div class="intro-images desktop-img">
+                  <img
+                    class="desktop-img"
+                    src="./assets/text-gioi-thieu.png"
+                    alt="Gioi thieu - Tiet kiem trung bong vang"
+                  />
+                  <img
+                    class="desktop-img"
+                    src="./assets/cac-buoc-tham-gia.gif"
+                    alt="Cac buoc tham gia"
+                  />
+                </div>
+
+                <a href="#" class="banner-btn desktop-only btn-bottom-left">
+                  <img
+                    class="cta-img"
+                    src="./assets/cta-website.png"
+                    alt="Tham gia ngay"
+                  />
+                </a>
+
+                <div style="position: relative">
+                  <img
+                    class="mobile-img mb33-img"
+                    src="./assets/gioi-thieu-mobile.png"
+                    alt="Giới thiệu - Tiết kiệm trúng bóng vàng"
+                  />
+                  <a
+                    href="#"
+                    class="mobile-img"
+                    style="
+                      position: absolute;
+                      bottom: 30px;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      width: 45%;
+                    "
+                  >
+                    <img
+                      class="mobile-img mb33-img"
+                      src="./assets/cta-mobile.png"
+                      alt="Giới thiệu - Tiết kiệm trúng bóng vàng"
+                    />
+                  </a>
+                </div>
+
+                <img
+                  class="mobile-img mb3-img"
+                  src="./assets/cac-buoc-tham-gia.gif"
+                  alt="Các bước tham gia"
+                />
+              </section>
+            </div>
+
+            <div class="pos-relative hinhNen">
+              <section class="section">
+                <img class="desktop-img" src="./assets/hinh3.png" alt="" />
+                <div class="p-16">
+                  <img
+                    class="mobile-img mb30-img"
+                    src="./assets/mb-doi-tuong.png"
+                    alt="Đối tượng"
+                  />
+                  <img
+                    class="mobile-img mb7-img"
+                    src="./assets/mb-dieu-kien.png"
+                    alt="Điều kiện"
+                  />
+                  <img
+                    class="mobile-img mb29-img"
+                    src="./assets/mb-thoi-gian.png"
+                    alt="Thời gian"
+                  />
+                </div>
+                <img
+                  class="desktop-img mt-2rem"
+                  src="./assets/hinh4.png"
+                  alt="Hình thức kỳ gửi và lãi suất linh hoạt"
+                />
+                <img
+                  class="mobile-img mb12-img"
+                  src="./assets/mb12.png"
+                  alt="Tiết kiệm online trên app Vikki"
+                />
+
+                <img
+                  class="mobile-img mb14-full"
+                  src="./assets/mb14.png"
+                  alt="Lãi suất hấp dẫn và voucher"
+                />
+                <div class="p-16">
+                  <img
+                    class="mobile-img"
+                    src="./assets/mb-ls-linh-hoat.png"
+                    alt="Lãi suất linh hoạt"
+                  />
+                  <img
+                    class="mobile-img mb27-full"
+                    src="./assets/mb-ki-gui.png"
+                    alt="Linh hoạt kì gửi"
+                  />
+                  <img
+                    class="mobile-img mb27-full"
+                    src="./assets/mb-hinh-thuc-nhan.png"
+                    alt="Hình thức nhận lãi"
+                  />
+                </div>
+              </section>
+            </div>
+
+            <section class="section">
+              <img
+                class="desktop-img mt-2rem"
+                src="./assets/hinh5.png"
+                alt="Tiết kiệm tại điểm giao dịch - Nhận quà tận 1 triệu đồng"
+              />
+              <img
+                class="mobile-img mb12-img"
+                src="./assets/tiet-kiem-quay-title.png"
+                alt="Tiết kiệm tại điểm giao dịch"
+              />
+              <div class="p-16">
+                <img
+                  class="mobile-img mb13-img"
+                  src="./assets/tiet-kiem-quay-content.png"
+                  alt="Quà thật trị giá tận 1 triệu đồng"
+                />
+              </div>
+            </section>
+
+            <section class="section">
+              <img
+                class="desktop-img hinh6-img"
+                src="./assets/hinh6.png"
+                alt="Quay số trúng vàng"
+              />
+              <img
+                class="mobile-img mb13-img"
+                src="./assets/mb-quay-so.png"
+                alt="Quay so"
+              />
+              <img
+                class="mobile-img mb13-img"
+                src="./assets/mb-quay-so-gt.png"
+                alt="Quay so giai thuong"
+              />
+            </section>
+          </div>
+        </div>
+
+        <section class="section">
+          <img
+            class="desktop-img hinh7-img"
+            src="./assets/co-cau-giai-thuong.png"
+            alt="Cơ cấu giải thưởng"
+          />
+        </section>
+      </div>
+    </div>
+
+    <section class="banner full-bleed">
+      <img
+        class="desktop-img"
+        src="./assets/giai-thuong-cuoi-ki.png"
+        alt="Giải thưởng cuối kì"
+      />
+      <img
+        class="mobile-img"
+        src="./assets/mb-gt-cuoi-ky.png"
+        alt="Giai thuong cuoi ky"
+      />
+    </section>
+
+    <section class="condition-title section">
+      <img
+        class="mobile-img img-center-200"
+        src="./assets/dieu-kien-title.png"
+        alt="Điều kiện"
+      />
+      <img
+        class="desktop-img hinh11-img"
+        src="./assets/hinh11.png"
+        alt="Điều kiện"
+      />
+      <p class="text-justify">
+        Khách hàng gửi
+        <strong>Tiết kiệm VND</strong> trên
+        <strong>kênh Online (App Vikki)</strong> &
+        <strong>Điểm giao dịch</strong> đáp ứng được điều kiện về kỳ hạn và mức
+        gửi tối thiểu (xem bên dưới) để được cấp
+        <strong>Mã số dự thưởng (MSDT)</strong> theo từng
+        <strong>Sổ tiết kiệm</strong> là số nguyên làm tròn xuống để tham gia
+        quay số may mắn.
+      </p>
+      <img
+        class="desktop-img hinh9-img"
+        src="./assets/hinh9.png"
+        alt="Số lượng mã dự thưởng"
+      />
+      <img
+        class="mobile-img mb24-img"
+        src="./assets/mb-cong-thuc.png"
+        alt="So luong ma du thuong"
+      />
+    </section>
+
+    <section class="section info-section">
+      <img
+        class="desktop-img hinh10-img"
+        src="./assets/lich-quay-so.png"
+        alt="Lich quay so"
+      />
+      <img
+        class="mobile-img img-center-200"
+        src="./assets/lich-quay-so-mobile.png"
+        alt="Lịch quay số"
+      />
+      <div class="faq" id="schedule-accordion"></div>
+      <a
+        href="#"
+        class="mobile-img"
+        style="
+          bottom: 30px;
+          left: 50%;
+          transform: translateX(50%);
+          width: 50%;
+          margin-top: 20px;
+        "
+      >
+        <img
+          class="mobile-img mb33-img"
+          src="./assets/cta-mobile.png"
+          alt="Giới thiệu - Tiết kiệm trúng bóng vàng"
+        />
+      </a>
+
+      <a
+        href="#"
+        class="desktop-only"
+        style="
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        "
+      >
+        <img
+          class="cta-img"
+          src="./assets/cta-website.png"
+          alt="Tham gia ngay"
+        />
+      </a>
+      <a id="the-le-link" href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          class="desktop-img hinh12-img"
+          src="./assets/the-le-chuong-trinh.png"
+          alt="Thể lệ chương trình"
+        />
+      </a>
+      <img
+        class="desktop-img hinh12-img"
+        src="./assets/cau-hoi-thuong-gap.png"
+        alt="Câu hỏi thường gặp"
+      />
+      <img
+        class="mobile-img the-le-mobile-img"
+        src="./assets/the-le-mobile.png"
+        alt="Thể lệ chương trình"
+      />
+
+      <img
+        class="mobile-img faq-mobile-img"
+        src="./assets/cau-hoi-thuong-gap-mobile.png"
+        alt="Câu hỏi thường gặp"
+      />
+
+      <div class="faq" id="faq-container"></div>
+    </section>
+
+    <script>
+      const CONFIG = {
+        theLeChuongTrinhLink:
+          "https://drive.google.com/file/d/1RwBKGnmunw-xXM-u5q_zSIMqd9uG-xcz/view?usp=sharing",
+      };
+
+      const scheduleData = [
+        {
+          week: 1,
+          date: "14/07/2026",
+          from: "00:00:00 ngày 08/07/2026",
+          to: "23:59:59 ngày 12/07/2026",
+          prizes: 12,
+        },
+        {
+          week: 2,
+          date: "21/07/2026",
+          from: "00:00:00 ngày 13/07/2026",
+          to: "23:59:59 ngày 19/07/2026",
+          prizes: 12,
+        },
+        {
+          week: 3,
+          date: "28/07/2026",
+          from: "00:00:00 ngày 20/07/2026",
+          to: "23:59:59 ngày 26/07/2026",
+          prizes: 12,
+        },
+        {
+          week: 4,
+          date: "04/08/2026",
+          from: "00:00:00 ngày 27/07/2026",
+          to: "23:59:59 ngày 02/08/2026",
+          prizes: 12,
+        },
+        {
+          week: 5,
+          date: "11/08/2026",
+          from: "00:00:00 ngày 03/08/2026",
+          to: "23:59:59 ngày 09/08/2026",
+          prizes: 12,
+        },
+        {
+          week: 6,
+          date: "18/08/2026",
+          from: "00:00:00 ngày 10/08/2026",
+          to: "23:59:59 ngày 16/08/2026",
+          prizes: 12,
+        },
+        {
+          week: 7,
+          date: "25/08/2026",
+          from: "00:00:00 ngày 17/08/2026",
+          to: "23:59:59 ngày 23/08/2026",
+          prizes: 12,
+        },
+        {
+          week: 8,
+          date: "08/09/2026",
+          from: "00:00:00 ngày 24/08/2026 ",
+          to: "23:59:59 ngày 30/08/2026",
+          prizes: 12,
+        },
+        {
+          week: 9,
+          date: "08/09/2026",
+          from: "00:00:00 ngày 31/08/2026",
+          to: "23:59:59 ngày 06/09/2026",
+          prizes: 12,
+        },
+        {
+          week: 10,
+          date: "15/09/2026",
+          from: "00:00:00 ngày 07/09/2026",
+          to: "23:59:59 ngày 13/09/2026",
+          prizes: 12,
+        },
+        {
+          week: 11,
+          date: "22/09/2026",
+          from: "00:00:00 ngày 14/09/2026",
+          to: "23:59:59 ngày 20/09/2026",
+          prizes: 12,
+        },
+        {
+          week: 12,
+          date: "29/09/2026",
+          from: "00:00:00 ngày 21/09/2026",
+          to: "23:59:59 ngày 27/09/2026",
+          prizes: 12,
+        },
+        {
+          week: 13,
+          date: "06/10/2026",
+          from: "00:00:00 ngày 28/09/2026",
+          to: "23:59:59 ngày 04/10/2026",
+          prizes: 12,
+        },
+        {
+          week: 14,
+          date: "13/10/2026",
+          from: "00:00:00 ngày 05/10/2026",
+          to: "23:59:59 ngày 11/10/2026",
+          prizes: 12,
+        },
+        {
+          week: 15,
+          date: "20/10/2026",
+          from: "00:00:00 ngày 12/10/2026",
+          to: "23:59:59 ngày 18/10/2026",
+          prizes: 12,
+        },
+        {
+          week: 16,
+          date: "27/10/2026",
+          from: "00:00:00 ngày 19/10/2026",
+          to: "23:59:59 ngày 25/10/2026",
+          prizes: 12,
+        },
+        {
+          week: 17,
+          date: "11/11/2026",
+          from: "00:00:00 ngày 26/10/2026",
+          to: "23:59:59 ngày 01/11/2026",
+          prizes: 12,
+        },
+      ];
+
+      const faqData = [
+        {
+          question:
+            "Chương trình khuyến mại lần này của Vikki Digital Bank có gì đặc biệt?",
+          answer: `Chương trình "TIẾT KIỆM Vikki - Trúng Bóng VÀNG Ký" là chương trình khuyến mại lớn với tổng giá trị giải thưởng lên đến hơn 13,2 tỷ đồng, bao gồm 2 cơ hội trúng thưởng cho mỗi giao dịch gửi tiết kiệm:
+            - Cơ hội 1 (Ưu đãi NGÀY): 10 khách hàng được cấp Mã số dự thưởng (MSDT) hợp lệ và sớm nhất trong Ngày theo từng Vùng được xác định là trúng thưởng khi thỏa mãn điều kiện chương trình để nhận ngay 01 ly vàng.
+            - Cơ hội 2 (Quay số may mắn): Nhận Mã Số Dự Thưởng (MSDT) để tham gia quay số trúng thưởng hàng Tuần, hàng Tháng và Cuối kỳ với giải thưởng lên tới 10 lượng vàng.`,
+          open: false,
+        },
+        {
+          question: "Thời gian diễn ra chương trình là khi nào?",
+          answer: `Từ 00:00:00 ngày 08/07/2026 đến 23:59:59 ngày 31/10/2026.`,
+          open: false,
+        },
+        {
+          question: "Ai có thể tham gia chương trình?",
+          answer: `Tất cả khách hàng cá nhân thực hiện gửi tiết kiệm có kỳ hạn bằng VND tại:
+
+            - Tất cả các điểm giao dịch Vikki Digital Bank trên toàn quốc.
+            - Kênh Online (App Vikki).`,
+          open: false,
+        },
+        {
+          question: "Sản phẩm tiết kiệm nào có thể tham gia chương trình?",
+          answer: `
+            - Nhóm sản phẩm thông thường: Tiết kiệm có kỳ hạn VND, Tiết kiệm Tài Sắc, Tiết kiệm Trường An, Tiết kiệm Ưu Việt, Tiết kiệm Phú Quý, Tiết kiệm Phát Lộc, Tiết kiệm An Tâm, Tiết kiệm An Nhàn.
+            - Nhóm sản phẩm tích lũy: Tiết kiệm Kế Thừa, Tiết kiệm [GenV] Future.
+          `,
+          open: false,
+        },
+        {
+          question:
+            "Ưu đãi NGÀY là gì? Làm thế nào để tôi trúng thưởng hạng mục này?",
+          answer: `Đây là giải thưởng dành có 03 số cuối cho 10 Khách hàng (KH) được cấp Mã số dự thưởng (MSDT) hợp lệ và sớm nhất trong Ngày theo từng Vùng được xác định là trúng thưởng khi thỏa mãn đồng thời các điều kiện sau:
+            - Điều kiện: MSDT của KH có 03 số cuối (đuôi số) là “999”.
+            - Giải thưởng: Mỗi ngày sẽ có 30 giải (mỗi Vùng 10 giải), mỗi giải là 01 ly Vàng SJC 999.9 với giá trị tiền mặt tương đương là 1,462,300 đồng.`,
+          open: false,
+        },
+        {
+          question:
+            "Nếu có nhiều hơn một người thỏa điều kiện nhận thưởng thì ai sẽ thắng?",
+          answer: `Trường hợp có từ hai KH trở lên thỏa điều kiện nhận thưởng sẽ ưu tiên xét thưởng cho KH thỏa tiêu chí bổ sung như sau:
+            - Tiêu chí 1: KH có tổng số dư tiền gửi tiết kiệm trong ngày T cao hơn (tính trên tổng tất cả các Thẻ tiết kiệm (TTK) có kỳ hạn từ 06 tháng trở lên).
+            - Tiêu chí 2: Trường hợp tiêu chí 1 vẫn bằng nhau, KH có kỳ hạn gửi tiền bình quân của tất cả các Thẻ tiết kiệm trong ngày dài hơn.`,
+          open: false,
+        },
+        {
+          question: "Kết quả Ưu đãi NGÀY được công bố khi nào và ở đâu?",
+          answer: `Kết quả sẽ được tổng hợp và công bố định kỳ vào thứ Năm hàng tuần (hoặc ngày làm việc kế tiếp nếu trùng ngày Nghỉ Lễ) trên website chính thức www.vikkibank.vn.`,
+          open: false,
+        },
+        {
+          question: "Nếu tôi trúng Ưu đãi NGÀY, tôi cần làm gì để nhận thưởng?",
+          answer: `Bạn chỉ cần chờ thông báo từ Vikki Digital Bank. Trong vòng 07 ngày làm việc kể từ ngày xác nhận trúng thưởng, Vikki Digital Bank sẽ thực hiện trao thưởng cho bạn.`,
+          open: false,
+        },
+        {
+          question:
+            "Làm thế nào để tôi nhận được Mã Số Dự Thưởng (MSDT) cho chương trình quay số?",
+          answer: `- Bạn chỉ cần gửi tiết kiệm VND tại quầy hoặc Online trên App Vikki với số tiền từ 20 triệu đồng, kỳ hạn từ 01 tháng trong thời gian triển khai chương trình.
+                - Đối với tại quầy: Bạn sẽ được nhân viên giao Phiếu dự thưởng có in MSDT ngay sau khi hoàn tất thủ tục mở sổ.
+                - Đối với App Vikki: Trong vòng 60 phút sau khi gửi thành công, bạn sẽ nhận được tin nhắn OTT trên App thông báo MSDT.`,
+          open: false,
+        },
+        {
+          question: "Công thức tính số lượng MSDT?",
+          answer: `Số lượng MSDT được tính bằng công thức và chỉ lấy phần nguyên (làm tròn xuống):
+      Số lượng MSDT = (Số tiền gửi x Kỳ hạn gửi (tháng)) / 20.000.000 đồng
+      Ví dụ: Gửi 51 triệu, kỳ hạn 6 tháng: (51.000.000 x 6) / 20.000.000 = 15 MSDT.
+      `,
+          open: false,
+        },
+        {
+          question: "MSDT có cấu trúc như thế nào?",
+          answer: `- Gửi tại quầy: Dãy 9 chữ số xxxxxxxxx (ví dụ: 123456789).
+                 - Gửi online: Chữ V + 9 chữ số Vxxxxxxxxx (ví dụ: V123456789).`,
+          open: false,
+        },
+        {
+          question: "Một MSDT có thể tham gia tất cả các kỳ quay số không?",
+          answer: `Có. Mỗi MSDT hợp lệ sẽ có cơ hội trúng thưởng ở cả 3 loại hình quay số: hàng Tuần, hàng Tháng và Cuối kỳ. Một MSDT có thể trúng tối đa 01 giải Tuần, 01 giải Tháng và 01 giải Cuối kỳ.`,
+          open: false,
+        },
+        {
+          question: "Trường hợp nào tôi sẽ được tặng thêm MSDT?",
+          answer: `Bạn được tặng thêm MSDT khi thỏa một hoặc nhiều điều kiện sau:
+            Stt: 1, Hạng mục: KH mới, Số lượng MSDT tặng thêm: 05 MSDT/ KH, Điều kiện áp dụng: - Ngày mở thông tin lần đầu tại Vikki Digital Bank trùng với ngày mở TTK tham gia chương trình. - Tặng 1 lần duy nhất/ KH. ;
+            Stt: 2, Hạng mục: KH mới, Số lượng MSDT tặng thêm: 05 MSDT/ KH, Điều kiện áp dụng: - Ngày mở thông tin lần đầu tại Vikki Digital Bank trùng với ngày mở TTK tham gia chương trình. - Tặng 1 lần duy nhất/ KH. ;
+            Stt: 3, Hạng mục: KH mới, Số lượng MSDT tặng thêm: 05 MSDT/ KH, Điều kiện áp dụng: - Ngày mở thông tin lần đầu tại Vikki Digital Bank trùng với ngày mở TTK tham gia chương trình. - Tặng 1 lần duy nhất/ KH. ;
+            `,
+          open: false,
+        },
+        {
+          question: "Tôi sẽ có cơ hội trúng thưởng các giải thưởng nào?",
+          answer: `Bạn sẽ có cơ hội nhận thưởng các giải thưởng quay số định kỳ:
+
+            - Giải Tuần: 01 chỉ Vàng SJC 999.9, 03 ly Vàng SJC 999.9
+            - Giải Tháng: 05 chỉ Vàng SJC 999.9, 02 chỉ Vàng SJC 999.9, 0,5 chỉ Vàng SJC 999.9
+            - Giải Cuối kỳ: 10 lượng Vàng SJC 999.9, 02 lượng Vàng SJC 999.9, 01 lượng Vàng SJC 999.9, 05 chỉ Vàng SJC 999.9`,
+          open: false,
+        },
+        {
+          question:
+            "Tôi có được rút một phần gốc/rút trước hạn thẻ tiết kiệm đã tham gia chương trình không?",
+          answer: `Không. KH tham gia chương trình khuyến mại không được rút 1 phần vốn hoặc tất toán trước hạn TTK tham dự.`,
+          open: false,
+        },
+        {
+          question:
+            "Nếu tôi cần tiền gấp mà không muốn mất quyền lợi dự thưởng thì phải làm sao?",
+          answer: `Bạn có thể dùng chính Thẻ tiết kiệm đó để cầm cố vay vốn tại các Chi nhánh/PGD Vikki Digital Bank. Việc này giúp bạn có tiền mà vẫn bảo toàn được MSDT tham gia dự thưởng.`,
+          open: false,
+        },
+        {
+          question:
+            "Trường hợp thẻ tiết kiệm của tôi tái tục tự động thì có được cấp thêm MSDT không?",
+          answer: `Không. Để tiếp tục tham gia chương trình, bạn thực hiện mở mới TTK để nhận MSDT`,
+          open: false,
+        },
+        {
+          question: "Làm sao để biết tôi có trúng thưởng quay số hay không?",
+          answer: `Vikki Digital Bank sẽ thông báo cho bạn qua 2 kênh:
+            - Gọi điện thoại trực tiếp: Từ các số Hotline chính thức của Vikki Digital Bank (19006608, 0383.338.253, 0368.939.309) trong vòng 10 ngày làm việc.
+            - Website: Danh sách trúng thưởng được đăng tải công khai trên https://www.vikkibank.vn trong vòng 15 ngày làm việc kể từ ngày xác định nhận thưởng.`,
+          open: false,
+        },
+        {
+          question: "Tôi cần mang theo giấy tờ gì khi đi nhận thưởng?",
+          answer: `- Đối với trường hợp bạn nhận giải thưởng bằng tiền mặt: Vikki Digital Bank thực hiện chuyển khoản vào tài khoản của KH mở tại Vikki Digital Bank.
+                - Đối với trường hợp bạn nhận giải thưởng bằng hiện vật: Vui lòng mang theo:
+                    +  CCCD/CC còn hiệu lực.
+                    + Bằng chứng dự thưởng: (TTK và Phiếu dự thưởng có in MSDT hoặc MSDT được cấp trên App Vikki).
+      `,
+          open: false,
+        },
+        {
+          question:
+            "Thời hạn tối đa tôi được nhận thưởng cho giải quay số là bao lâu?",
+          answer: `Bạn có thể đến nhận thưởng tối đa 45 ngày kể từ ngày kết thúc chương trình khuyến mại (ngày 31/10/2026). Quá  thời hạn này, quyền nhận thưởng của bạn sẽ bị hủy.`,
+          open: false,
+        },
+        {
+          question: "Tôi có phải đóng thuế, phí khi nhận thưởng không?",
+          answer: `Có. Các loại thuế, phí (bao gồm thuế TNCN) liên quan đến giải thưởng sẽ được Vikki Digital Bank khấu trừ trực tiếp từ giá trị giải thưởng và thay bạn nộp cho cơ quan thuế theo quy định pháp luật.`,
+          open: false,
+        },
+        {
+          question: "Tôi có thắc mắc cần giải đáp thì liên hệ ở đâu?",
+          answer: `Bạn có thể liên hệ với chúng tôi qua:
+
+            -   Hotline: 19006608.
+            - Bất kỳ Chi nhánh/Phòng giao dịch Vikki Digital Bank trên toàn quốc.
+            - Website: https://www.vikkibank.vn.
+            - Địa chỉ: 72 Lý Thường Kiệt, Phường Cửa Nam, Thành phố Hà Nội.
+            - Điện thoại: 024 33986060.`,
+          open: false,
+        },
+      ];
+      const scheduleQuarData = [
+        {
+          week: 1,
+          date: "04/08/2026",
+          from: "00:00:00 ngày 08/07/2026",
+          to: "23:59:59 ngày 31/07/2026",
+          prizes: 27,
+        },
+        {
+          week: 2,
+          date: "08/09/2026",
+          from: "00:00:00 ngày 01/08/2026",
+          to: "23:59:59 ngày 31/08/2026",
+          prizes: 27,
+        },
+        {
+          week: 3,
+          date: "06/10/2026",
+          from: "00:00:00 ngày 01/09/2026",
+          to: "23:59:59 ngày 30/09/2026",
+          prizes: 27,
+        },
+        {
+          week: 4,
+          date: "11/11/2026",
+          from: "00:00:00 ngày 01/10/2026",
+          to: "23:59:59 ngày 01/11/2026",
+          prizes: 27,
+        },
+        {
+          isSpecial: true,
+          week: "<b>Quay số may mắn Cuối kỳ (Kỳ đặc biệt kết thúc chương trình):</b> 11/11/2026 xác định các giải thưởng cuối kỳ cho tất cả các MSDT hợp lệ được cấp từ 00:00:00 ngày 08/07/2026 đến 00:59:59 ngày 01/11/2026.",
+        },
+      ];
+
+      document.getElementById("the-le-link").href = CONFIG.theLeChuongTrinhLink;
+
+      function renderScheduleBox(data, labelPrefix, prizeType) {
+        return `<div class="schedule-box">${data
+          .map((item) =>
+            item.isSpecial
+              ? `<p><span>${item.week}</span></p>`
+              : `<p><span><strong>${labelPrefix} ${item.week}: ${item.date}</strong> xác định ${item.prizes} giải thưởng ${prizeType} cho các MSDT hợp lệ được cấp từ ${item.from} đến ${item.to}.</span></p>`,
+          )
+          .join("")}</div>`;
+      }
+
+      const scheduleAccordion = document.getElementById("schedule-accordion");
+      scheduleAccordion.innerHTML = `
+                          <details class="faq-item" open>
+                            <summary>Lịch tuần</summary>
+                            <div class="faq-content" style="padding:0;background:transparent;">${renderScheduleBox(scheduleData, "Tuần", "tuần")}</div>
+                          </details>
+                          <details class="faq-item">
+                            <summary>Lịch kỳ</summary>
+                            <div class="faq-content" style="padding:0;background:transparent;">${renderScheduleBox(scheduleQuarData, "Lần", "quý")}</div>
+                          </details>`;
+
+      const faqContainer = document.getElementById("faq-container");
+      faqContainer.innerHTML = faqData
+        .map((item) => {
+          let finalAnswer;
+          if (item.answer.includes("Stt:") && item.answer.includes(";")) {
+            const intro = item.answer.split(/\n/)[0].trim();
+            const rowsRaw = item.answer.match(/Stt:[^;]+/g) || [];
+            const cols = [
+              "Stt",
+              "Hạng mục",
+              "Số lượng MSDT tặng thêm",
+              "Điều kiện áp dụng",
+            ];
+            let table = '<table class="faq-table"><thead><tr>';
+            cols.forEach((col) => {
+              table += `<th>${col}</th>`;
+            });
+            table += "</tr></thead><tbody>";
+            rowsRaw.forEach((row) => {
+              table += "<tr>";
+              cols.forEach((col) => {
+                const regex = new RegExp(
+                  col + ":\\s*([^,;]+(?:(?:- [^,;-]+)*))",
+                  "",
+                );
+                const match = row.match(
+                  new RegExp(
+                    col +
+                      ":\\s*(.+?)(?=,\\s*(?:Stt|Hạng mục|Số lượng|Điều kiện)|$)",
+                  ),
+                );
+                const val = match
+                  ? match[1]
+                      .replace(/- /g, "<br>- ")
+                      .replace(/^<br>/, "")
+                      .trim()
+                  : "";
+                table += `<td>${val}</td>`;
+              });
+              table += "</tr>";
+            });
+            table += "</tbody></table>";
+            finalAnswer = intro + "<br>" + table;
+          } else {
+            finalAnswer = item.answer
+              .replace(/^\s*\+ /gm, "&nbsp;&nbsp;&nbsp;&nbsp;✓ ")
+              .replace(/^\s*- /gm, "&nbsp;&nbsp;• ")
+              .replace(/\n/g, "<br>");
+          }
+          return `<details class="faq-item"${item.open ? " open" : ""}>
+                                <summary>${item.question}</summary>
+                                <div class="faq-content">${finalAnswer}</div>
+                              </details>`;
+        })
+        .join("");
+    </script>
+    <script>
+      function sendHeightToParent() {
+        const height = document.body.scrollHeight;
+        window.parent.postMessage({ type: "setHeight", height }, "*");
+      }
+
+      window.addEventListener("load", sendHeightToParent);
+
+      const resizeObserver = new ResizeObserver(sendHeightToParent);
+      resizeObserver.observe(document.body);
+    </script>
+  </body>
+</html>

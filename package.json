@@ -1,0 +1,12 @@
+{
+  "name": "vikki-cvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vikki CVP landing pages generator and content repository",
+  "scripts": {
+    "build": "npm run --prefix front-end build",
+    "check": "npm run --prefix front-end check",
+    "dev": "npm run --prefix front-end dev",
+    "install:all": "npm install --prefix front-end"
+  }
+}

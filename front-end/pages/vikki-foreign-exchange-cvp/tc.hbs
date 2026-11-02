@@ -1,0 +1,13 @@
+<script>
+  // layouts/static.hbs always renders a "Terms and Conditions" /
+  // "Điều khoản và Điều kiện" label at the top of the page. When this page
+  // is opened standalone that label is needed, but when it's shown inside
+  // the popup iframe (topMenu / bottom button), the popup already renders
+  // its own title above it, so hide the duplicate here.
+  if (window.self !== window.top) {
+    document.addEventListener('DOMContentLoaded', function () {
+      var label = document.querySelector('.legal-small-title');
+      if (label) label.style.display = 'none';
+    });
+  }
+</script>

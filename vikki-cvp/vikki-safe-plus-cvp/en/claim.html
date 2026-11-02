@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CLAIMS FILING GUIDELINES</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(4, 11, 30, 0.92);
+      }
+      .legal-page {
+        padding: 16px;
+        line-height: 135%;
+        padding-top: 20px;
+      }
+      .legal-content > .accordion {
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        overflow: hidden;
+      }
+      .legal-content > .accordion > .accordion-header {
+        background: rgba(232, 241, 255, 1);
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .accordion-body {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .accordion-header {
+        font-size: 16px;
+        padding: 12px 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color:  rgba(0, 0, 255, 1);
+        line-height: 22px;
+      }
+      .article .accordion-header {
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+      .legal-list {
+        margin: 8px 0 12px 6px;
+        padding: 0;
+      }
+      .legal-list-item {
+        margin-bottom: 6px;
+        margin-left: 15px;
+      }
+      .legal-list-text {
+        display: inline;
+        line-height: 1.6;
+      }
+
+      /* ===== Marker styles ===== */
+      .legal-list.numeric,
+      .legal-list.decimal {
+        list-style-type: decimal;
+      }
+      .legal-list.alpha {
+        list-style-type: lower-alpha;
+      }
+      .legal-list.roman {
+        list-style-type: lower-roman;
+      }
+      .legal-list.disc {
+        list-style-type: disc;
+      }
+      .legal-list.none {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      .legal-title {
+        font-size: 20px;
+        color: rgba(0, 0, 255, 1);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+        padding-top:20px;
+      }
+      .center img {
+        width: 85px;
+      }
+      .legal-small-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      thead {
+        background: rgba(0, 72, 255, 1);
+        color: #fff;
+      }
+      thead th {
+        font-weight: normal;
+        font-size: 12px;
+      }
+      .bg-blue {
+        background: rgba(237, 248, 255, 1);
+      }
+      tbody td {
+        font-size: 14px;
+        color: rgba(1, 5, 15, 1);
+      }
+      tbody td,
+      table {
+        border-collapse: collapse;
+        border: 1px solid #dfdfdf;
+        min-width: 100%;
+        table-layout: fixed;
+      }
+      table th:first-child,
+      table td:first-child {
+        width: 40px;
+      }
+      thead th,
+      tbody td {
+        max-width: 150px;
+        padding: 8px;
+      }
+      .scroll-x {
+        overflow-x: auto;
+      }
+      .auto-table {
+        table-layout: auto;
+        width: auto;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 700px;
+      }
+      thead th {
+        border: 1px solid #fff;
+      }
+      .m-w-100 {
+        min-width: 100px;
+      }
+      .fz-14 {
+        font-size: 14px;
+      }
+      .p-8 {
+        padding: 8px;
+      }
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .fee-table {
+        min-width: 100%;
+        width: max-content;
+        border-collapse: collapse;
+      }
+      .w-150 {
+        width: 150px;
+      }
+      .legal-note {
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .legal-footer {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .legal-content {
+        padding-bottom: 120px;
+      }
+      .w-unset {
+        width: unset !important;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .bold-center{
+        font-weight: bold;
+        text-align: center;
+      }
+      .w-150-f {
+        width: 150px !important;
+      }
+      .no-list-style {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legal-page">
+      <span class="legal-small-title">Terms and Conditions</span>
+      <div class="center"><img src="../assets/vikki-logo.png" alt="Vikki" /></div>
+      <h1 class="legal-title">CLAIMS FILING GUIDELINES</h1>
+
+
+      <div class="legal-layout">
+
+        <main class="legal-content">
+            <div class="accordion" id="claim-content">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-claim-content')"
+              >
+                CONTENT
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-claim-content"
+                style="display: block"
+              >
+                  <div class="accordion" id="claim-notice">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-notice')"
+                    >
+                      CLAIM NOTICE
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-notice"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Should there be an insured risk, the Insured or the Insured's relatives must take necessary measures to provide aid to themselves or save the victim.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  If necessary, notify the police or local authorities at the place of the accident to assist the victim in accordance with regulations.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Promptly contact HDI via the hotline 1900068898 to report the insured event and provide initial declaration for instructions. Initial declaration shall include:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Information of the person requesting insurance payment.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Insurance contract detail: Insured; ID No./citizen No., policy or insurance certificate No., insurance buyer.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Insurance event briefing: time, place and cause of the event, development of event.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Within 30 days from the time of the event, claimant needs to confirm their claim by written notice to HDI.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="claim-dossier">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-dossier')"
+                    >
+                      COMPLETION OF THE CLAIM DOSSIER
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-dossier"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  HDI’s claims officer will promptly contact you to provide guidance on collecting the required documents and proceed with the settlement of the insured benefits.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Claim file usually includes the following documents:
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                          <div >1. Insurance claim request form, signed by the Policyholder (using HDI’s template), in original.</div>
+                  
+                  
+                          <div >2. Depending on the cause of the incident, the following documents will be required:</div>
+                  
+                  
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  For traffic accidents
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            accident report (HDI's form) signed by policyholder in original.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            traffic accident record, if any (original or notarized).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            A valid driver's license (if the person is directly driving) and other relevant documents (photocopy).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  occupational accidents and domestic accidents
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            accident report (HDI's form) signed by policyholder and confirmed by their company and/or authority in original.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            other relevant documents in original.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                          </ul>
+                  
+                          <div >3. Medical documents:</div>
+                  
+                  
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Hospital discharge papers/treatment record (in case of inpatient treatment).
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Surgery paper (in case of surgery)
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Hospital invoices/ prescriptions/ bills/ statements
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Clinical test results
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  And other relevant documents in copy
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                          <div >4. Extract of death declaration (in case of death of the insured) (notarized copy)</div>
+                  
+                  
+                          <div >5. Documents proving lawful inheritance (in case the Insured passes away).</div>
+                  
+                  
+                          <div >6. In case the Insured authorizes another person to receive the insurance payment, a legally valid power of attorney (notarized copy) must be provided..</div>
+                  
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="claim-settlement">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-claim-settlement')"
+                    >
+                      CLAIM SETTLEMENT:
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-claim-settlement"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list disc">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  HDI is committed to fully compensate customers subject to wordings of the insurance contract.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  In the event that the customer fails to cooperate in following HDI’s instructions or does not fully perform their obligations, HDI may reduce part or all compensation amount in accordance with the law.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  For further information please contact:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list disc">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            HD INSURANCE CO., LTD
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Hotline: 1900068898
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Email: Giamdinhboithuong@hdinsurance.com.vn
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    <style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-content .article > .accordion-header {
+    font-weight: 700;
+  }
+</style>
+
+    <script>
+      function toggle(id) {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.display = el.style.display === 'none' ? 'block' : 'none'
+      }
+    </script>
+  </body>
+</html>

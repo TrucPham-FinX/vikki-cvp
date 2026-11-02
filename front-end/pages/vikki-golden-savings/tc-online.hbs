@@ -1,0 +1,92 @@
+<style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-title {
+    color: #0047ff;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 12px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .legal-content .legal-list.decimal {
+    list-style-type: decimal;
+  }
+
+  .legal-content .legal-list.disc,
+  .legal-content .legal-list.decimal,
+  .legal-content .legal-list.roman {
+    padding-left: 28px;
+    margin-left: 0;
+  }
+
+  .legal-content .legal-list.disc .legal-list-item,
+  .legal-content .legal-list.decimal .legal-list-item,
+  .legal-content .legal-list.roman .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item {
+    margin-bottom: 12px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list-text {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 8px;
+    align-items: start;
+  }
+
+  .legal-content .legal-decimal-marker {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman {
+    margin-top: 10px;
+    padding-left: 44px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-item {
+    padding-left: 8px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-text {
+    display: inline;
+  }
+
+  .legal-content .formula-list {
+    margin: 18px 0 20px;
+    overflow-x: auto;
+    padding-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-text {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 78px 10px 76px 10px 62px 10px 40px 8px 22px;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list {
+    margin-left: -52px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list .legal-list-text {
+    display: grid;
+  }
+
+  .legal-content .sub-decimal-list {
+    padding-left: 0;
+  }
+</style>

@@ -1,0 +1,37 @@
+<style>
+  .promo-desc {
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+  .promo-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .promo-expire {
+    position: static;
+  }
+</style>
+<article class='promo-detail'>
+  <div class='promo-image'>
+    {{#if item.mainImg}}
+      <img src='{{item.mainImg}}' alt='{{item.name}}' />
+    {{else}}
+      <img src='{{item.thumbnail}}' alt='{{item.name}}' />
+    {{/if}}
+
+  </div>
+
+  <div class='promo-content'>
+    <h3 class='promo-title'>
+      {{item.name}}
+    </h3>
+    <p class='promo-expire'>{{item.extraData}}</p>
+
+    <div class='promo-desc'>
+      {{{item.longDesc}}}
+    </div>
+
+  </div>
+
+</article>

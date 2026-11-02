@@ -1,0 +1,557 @@
+{
+  "title": "Vikki Cobadge | VikkiBank",
+  "layout": "template",
+  "hasTopSpace": true,
+  "className": "vikki-cobadge",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "popup": "/vikki-cvp/card-intro/vikki-go-cobage.html"
+        },
+        {
+          "text": "Ưu đãi",
+          "iconSrc": "./assets/offer.svg",
+          "popup": "/vikki-cvp/promotion/list.html?category=VIKKIGO_COBAGE"
+        }
+      ]
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "",
+      "children": [
+        {
+          "title": "Làm sao để sở hữu Thẻ thanh toán tích hợp VikkiGO?",
+          "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay.</li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO.</li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <strong>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</strong> "
+        },
+        {
+          "title": "Chủ thẻ có thể quản lý Thẻ thanh toán tích hợp VikkiGO như thế nào?",
+          "content": "Chủ thẻ có thể dễ dàng quản lý Thẻ thanh toán tích hợp VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki: <ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+        },
+        {
+          "title": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ?",
+          "content": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời. "
+        },
+        {
+          "title": "Thẻ Co-badge được sử dụng như thế nào? Các loại giao dịch nào có thể thực hiện với thẻ này?",
+          "content": "Thẻ Co-badge có đầy đủ các tính năng thanh toán như một loại thẻ nội địa/quốc tế thông thường, bao gồm: ECOM (thanh toán trực tuyến), POS (thanh toán tại cửa hàng), ATM (Rút tiền mặt, truy vấn số dư tài khoản tại ATM, chuyển khoản). Phạm vi sử dụng: trong nước và quốc tế. Tuy nhiên, sẽ có một số điểm khác biệt: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas, và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard, do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>"
+        },
+        {
+          "title": "Điều kiện để được phát hành thẻ Co-badge là gì?",
+          "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay. </li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO. </li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/ tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. "
+        },
+        {
+          "title": "Thẻ Co-badge có hai số thẻ, làm thế nào để biết giao dịch sử dụng số thẻ nào?",
+          "content": "Lịch sử giao dịch sẽ ghi nhận theo loại thẻ được sử dụng. Chủ thẻ có thể truy vấn tại lịch sử của giao dịch trên ứng dụng Vikki. "
+        },
+        {
+          "title": "Tôi có được quyền lựa chọn số thẻ tôi muốn cho giao dịch cụ thể được không?",
+          "content": "Tùy theo loại hình giao dịch và tính sẵn sàng của kênh giao dịch, chủ thẻ có thể chủ động lựa chọn loại thẻ để giao dịch. Tuy nhiên, xem thêm thông tin dưới đây để có thể lựa chọn giao dịch phù hợp: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce. </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard. Do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>"
+        },
+        {
+          "title": "Thẻ cứng cần thiết không?",
+          "content": "Bên cạnh việc sở hữu thẻ ảo ngay sau khi mở thẻ thành công, thẻ cứng sẽ giúp bạn tiện lợi hơn khi sử dụng thẻ. Cụ thể, với thẻ cứng, chủ thẻ có thể thao tác rút tiền tại cây ATM trong và ngoài nước với biểu tượng NAPAS hoặc Mastercard. Đặc biệt, khi rút tiền miễn phí tại hơn 700 cây ATM của Vikki Digital Bank. Với việc sở hữu thẻ cứng, khách hàng còn có thể quẹt thẻ tại máy quẹt thẻ (POS) hoặc thanh toán không tiếp xúc (Tap to pay) tại hệ thống cửa hàng, siêu thị, nhà hàng hoặc giao thông công cộng trên toàn thế giới. Thông qua ứng dụng Vikki, chủ thẻ có thể yêu cầu phát hành thẻ cứng giao miễn phí lần đầu đến các điểm giao dịch VikkiBank gần bạn nhất (xem thêm điều kiện và điều khoản cùng phí và biểu phí cho các trường hợp phát hành lần 2 hoặc phát hành khác). "
+        },
+        {
+          "title": "Các tính năng thanh toán của thẻ là gì? Quản lý như thế nào?",
+          "content": "Thẻ cứng cũng như thẻ ảo của thẻ thanh toán tích hợp NAPAS Mastercard VikkiGO đều có thể có nhiều tính năng thanh toán như: <ul><li>Thanh toán trực tuyến qua các sàn thương mại điện tử, website trong và ngoài nước chấp nhận thẻ NAPAS/Mastercard.</li><li>Thanh toán tại máy quẹt thẻ tại siêu thị, cửa hàng tiện lợi, nhà hàng, trung tâm mua sắm. Có đến hơn 5 Triệu điểm chấp nhận thanh toán thẻ thanh toán tích hợp VikkiGO trên toàn cầu.</li><li>Rút tiền tại các máy ATM với biểu tượng NAPAS hoặc Mastercard.</li><li>Thanh toán quốc tế (bao gồm rút tiền và quẹt thẻ) ngoài phạm vi lãnh thổ Việt Nam.</li></ul>Toàn bộ các tính năng thanh toán trên đều có thể tắt (khóa) và mở (mở khóa), hoặc giới hạn hạn mức giao dịch cho từng loại theo ngày, số lần giao dịch theo nhu cầu thông qua ứng dụng Vikki. Chủ thẻ có thể khám phá tại mục quản lý thẻ trong ứng dụng. Việc quản lý thẻ này giúp bảo vệ tiền trong thẻ, trong tài khoản khỏi kẻ gian. "
+        },
+        {
+          "title": "Những việc cần làm khi thất lạc thẻ",
+          "content": "Nguồn tiền của thẻ lấy từ tài khoản VikkiME. Việc thất lạc thẻ hoặc lộ thông tin thẻ đều có thể dẫn đến việc bị mất tiền trong tài khoản. Do đó, khi thất lạc thẻ hay phát hiện giao dịch khả nghi cần liên hệ ngay với Vikki Care và khóa thẻ khẩn cấp trên ứng dụng Vikki. Đừng lo! Sau khi khóa thẻ, chủ thẻ có thể chủ động mở khóa trên ứng dụng khi tìm được thẻ hoặc xác định thông tin thẻ vẫn an toàn. "
+        },
+    
+        {
+          "title": "Bao lâu sau khi đăng ký thì nhận được thẻ VikkiGO?",
+          "content": "Thời gian nhận thẻ VikkiGO thông thường 05 ngày làm việc sau khi hoàn tất đăng ký, tùy theo phương thức nhận thẻ mà khách hàng đăng ký."
+        },
+        {
+          "title": "Biểu tượng cột sóng trên thẻ có ý nghĩa gì?",
+          "content": "Đây là biểu tượng cho biết thẻ hỗ trợ tính năng thanh toán không tiếp xúc (Contactless), cho phép thực hiện giao dịch bằng cách đưa thẻ lại gần thiết bị thanh toán tương thích."
+        },
+        {
+          "title": "CCCD của tôi sắp hết hạn (còn 10 ngày) thì tôi có thể tải app Vikki và mở Thẻ VikkiGO được không?",
+          "content": "Không được. Bạn cần làm lại CCCD (đổi CCCD) để tải app Vikki và mở thẻ VikkiGO."
+        },
+        {
+          "title": "Có thể đăng ký thẻ VikkiGO online 100% không?",
+          "content": "Có. Bạn có thể đăng ký thẻ VikkiGO hoàn toàn trực tuyến trên ứng dụng Vikki."
+        },
+        {
+          "title": "Có thể yêu cầu cấp lại thẻ VikkiGO khi còn hạn không?",
+          "content": "Có. Bạn có thể yêu cầu cấp lại thẻ VikkiGO khi thẻ bị mất, hỏng hoặc khi cần thay đổi thông tin theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Để mở thẻ VikkiGO online tôi cần làm gì?",
+          "content": "Để mở thẻ VikkiGO online bằng cần chuẩn bị: Điện thoại thông minh có NFC; Điện thoại có kết nối internet; CCCD gắn chip (còn thời hạn sử dụng trên 30 ngày)."
+        },
+        {
+          "title": "Điểm SkyJoy dùng để đổi quà gì?",
+          "content": "Bạn có thể sử dụng điểm SkyJoy để đổi vé máy bay Vietjet, voucher mua sắm, ẩm thực và nhiều ưu đãi, dịch vụ khác theo chương trình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Điểm tích lũy có hết hạn không?",
+          "content": "Điểm tích lũy từ các giao dịch chi tiêu bằng thẻ được áp dụng thời hạn sử dụng theo chính sách của từng chương trình trong từng thời kỳ."
+        },
+        {
+          "title": "Hệ thống của Vikki có kết nối được với phần mềm nhân sự hiện tại của công ty không?",
+          "content": "Có. Vikki Bank có thể hỗ trợ tích hợp dữ liệu chấm công và các dữ liệu liên quan vào phần mềm quản lý nhân sự của Tổ chức/Doanh nghiệp theo phương án tích hợp được thống nhất trong quá trình triển khai."
+        },
+        {
+          "title": "Khi bị mất thẻ, tôi có thể liên hệ ai để được hỗ trợ?",
+          "content": "Bạn nên liên hệ Tổng đài chăm sóc khách hàng Vikki Care <strong>19006608</strong> khi bị mất thẻ, nghi ngờ gian lận hoặc gặp lỗi giao dịch cần được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Khoảng cách tối đa để máy nhận tín hiệu Contactless là bao nhiêu?",
+          "content": "Khoảng cách nhận tín hiệu thanh toán không tiếp xúc (Contactless) thông thường dưới 4 cm để đảm bảo an toàn và hạn chế phát sinh giao dịch ngoài ý muốn."
+        },
+        {
+          "title": "Làm sao để biết thẻ của mình sắp hết hạn?",
+          "content": "Ngày hết hạn (Expiry Date) được in trên thẻ theo định dạng tháng/năm. Ngoài ra, ứng dụng Vikki có thể gửi thông báo nhắc trước thời điểm thẻ hết hạn để bạn chủ động theo dõi và thực hiện gia hạn khi cần."
+        },
+        {
+          "title": "Làm sao để biết thẻ VikkiGO của mình là thẻ chính chủ?",
+          "content": "Tên của bạn được in trên mặt trước của thẻ vật lý theo thông tin đăng ký. Ngoài ra, bạn có thể kiểm tra thông tin chủ thẻ VikkiGO trên ứng dụng Vikki để đối chiếu."
+        },
+        {
+          "title": "Làm sao để đóng góp ý kiến về chất lượng thẻ?",
+          "content": "Bạn có thể gửi email đến <strong>hotro@vikki.vn</strong>, phản hồi trực tiếp trên ứng dụng Vikki hoặc liên hệ Vikki Care <strong>19006608</strong> để đóng góp ý kiến về chất lượng thẻ VikkiGO."
+        },
+        {
+          "title": "Làm sao để liên kết tài khoản SkyJoy với thẻ Vikki?",
+          "content": "Việc liên kết tài khoản SkyJoy với thẻ VikkiGO thường được thực hiện tự động khi bạn đăng ký thẻ trên ứng dụng Vikki theo quy trình áp dụng."
+        },
+        {
+          "title": "Làm sao để xuất file sao kê dạng PDF?",
+          "content": "Bạn vào mục <strong>“Sao kê”</strong> trên ứng dụng Vikki và chọn chức năng <strong>“Tải về”</strong> để xuất file sao kê dạng PDF."
+        },
+        {
+          "title": "Mã CVV trên thẻ VikkiGO là gì?",
+          "content": "Mã CVV là 3 chữ số bảo mật được in ở mặt sau thẻ, sử dụng để xác thực các giao dịch thanh toán trực tuyến. Bạn không nên chia sẻ mã này với bất kỳ ai để đảm bảo an toàn thông tin thẻ."
+        },
+        {
+          "title": "Nếu CCCD của tôi hết hạn sử dụng thì tôi có giao dịch tại app Vikki được không?",
+          "content": "Không được. Bạn cần làm lại CCCD và cập nhật thông tin tại Vikki Bank để không gián đoạn giao dịch."
+        },
+        {
+          "title": "Nếu điện thoại thông minh của tôi không có NFC thì có thể mở thẻ VikkiGO online được không?",
+          "content": "Để mở thẻ VikkiGO online bằng cần chuẩn bị: Điện thoại thông minh có kết nối internet; CCCD gắn chip (còn thời hạn sử dụng trên 30 ngày). Trường hợp điện thoại của bạn không có NFC thì bạn hãy đến bất kỳ CN/PGD Vikki Bank để được hỗ trợ tải ứng dụng Vikki và hướng dẫn mở và sử dụng thẻ VikkiGO"
+        },
+        {
+          "title": "Nếu tôi bị mất điện thoại và mất thẻ cùng lúc thì phải làm sao?",
+          "content": "Bạn vui lòng gọi ngay Vikki Care <strong>19006608</strong> từ một điện thoại khác để yêu cầu khóa thẻ và tài khoản khẩn cấp nhằm đảm bảo an toàn giao dịch."
+        },
+        {
+          "title": "Nếu tôi đổi số điện thoại đăng ký thì thẻ có dùng được tiếp không?",
+          "content": "Bạn vẫn có thể sử dụng thẻ VikkiGO. Tuy nhiên, bạn cần cập nhật số điện thoại mới trên ứng dụng Vikki hoặc tại Chi nhánh/Phòng Giao dịch Vikki Bank nhằm đảm bảo nhận được mã OTP và sử dụng đầy đủ các tính năng của thẻ."
+        },
+        {
+          "title": "PIN thẻ và mật khẩu đăng nhập ứng dụng Vikki có giống nhau không?",
+          "content": "Không. PIN thẻ và mật khẩu đăng nhập ứng dụng là hai loại mã khác nhau, được sử dụng cho các mục đích xác thực khác nhau nhằm tăng cường bảo mật."
+        },
+        {
+          "title": "Phí cấp lại thẻ do làm mất là bao nhiêu?",
+          "content": "Phí cấp lại thẻ được áp dụng theo Biểu phí thẻ VikkiGO và được cập nhật theo quy định từng thời kỳ. Bạn có thể tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank."
+        },
+        {
+          "title": "Phí rút tiền mặt tại ATM là bao nhiêu?",
+          "content": "Phí rút tiền mặt tại ATM được áp dụng theo Biểu phí thẻ VikkiGO và được cập nhật theo quy định từng thời kỳ. Bạn vui lòng tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank (Hiện tại đang được Miễn phí)"
+        },
+        {
+          "title": "Tại sao tôi nhận được OTP dù không thực hiện giao dịch?",
+          "content": "Có thể có giao dịch đang được thực hiện bằng thông tin thẻ của bạn. Bạn vui lòng khóa thẻ ngay trên ứng dụng Vikki và liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra kịp thời."
+        },
+        {
+          "title": "Tính năng thanh toán không tiếp xúc (Contactless) có an toàn không?",
+          "content": "Tính năng thanh toán không tiếp xúc (Contactless) được áp dụng các tiêu chuẩn bảo mật theo quy định của Ngân hàng Nhà nước Việt Nam và các tiêu chuẩn thanh toán quốc tế. Đối với các giao dịch có giá trị lớn, hệ thống có thể yêu cầu xác thực bổ sung như nhập PIN hoặc ký xác nhận để tăng cường an toàn."
+        },
+        {
+          "title": "Tôi cần hỗ trợ về ưu đãi thì liên hệ ai?",
+          "content": "Bạn vui lòng liên hệ bất kỳ điểm giao dịch Vikki Bank hoặc Vikki Care <strong>19006608</strong> để được hỗ trợ bất kỳ lúc nào."
+        },
+        {
+          "title": "Tôi cần mang giấy tờ gì khi đi nhận thẻ VikkiGO tại CN/PGD Vikki Bank?",
+          "content": "Bạn chỉ cần xuất trình GTTT (bản gốc) hoặc thông tin định danh điện tử hợp lệ (VNeID) để đối chiếu khi nhận thẻ theo quy định."
+        },
+        {
+          "title": "Tôi có được tính lãi với số tiền trong thẻ không?",
+          "content": "Có. Số dư trong tài khoản thanh toán gắn với Thẻ VikkiGO sẽ được tính lãi không kỳ hạn theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi có thể chat trực tiếp với nhân viên hỗ trợ trên ứng dụng Vikki không?",
+          "content": "Có. Bạn có thể sử dụng tính năng Live Chat trên ứng dụng Vikki để được hỗ trợ trực tiếp với nhân viên của Vikki Bank."
+        },
+        {
+          "title": "Tôi có thể chọn địa chỉ nhận thẻ VikkiGO không?",
+          "content": "Có. Bạn có thể lựa chọn nhận thẻ tại địa chỉ nhà riêng, nơi làm việc hoặc tại bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất theo phương thức nhận thẻ đã đăng ký."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để nạp tiền điện thoại cho người thân được không?",
+          "content": "Có. Bạn có thể nạp tiền điện thoại cho người thân trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để thanh toán cước thuê bao điện thoại Viettel, Vinaphone trả sau tự động hàng tháng không?",
+          "content": "Có. Bạn có thể thiết lập tính năng <strong>“Thanh toán hóa đơn tự động”</strong> trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO"
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để thanh toán tại các trang web nước ngoài không uy tín không?",
+          "content": "Bạn không nên sử dụng thẻ VikkiGO để thanh toán tại các website không uy tín. Để đảm bảo an toàn thông tin thẻ, bạn nên thực hiện giao dịch tại các website đáng tin cậy và có cơ chế bảo mật thanh toán phù hợp."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để thanh toán tại nước ngoài không?",
+          "content": "Có. Bạn có thể sử dụng thẻ VikkiGO để thanh toán tại các điểm chấp nhận thẻ Mastercard trên toàn cầu theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để thanh toán tiền điện, nước tự động hàng tháng không?",
+          "content": "Có. Bạn có thể thiết lập tính năng <strong>“Thanh toán hóa đơn tự động”</strong> trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO"
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO để trả phí gửi xe tại các trung tâm thương mại không?",
+          "content": "Có. Bạn có thể sử dụng thẻ VikkiGO để thanh toán phí gửi xe tại các địa điểm chấp nhận thẻ Mastercard hoặc tại các địa điểm có hỗ trợ thiết bị thanh toán không tiếp xúc (Contactless) tương thích."
+        },
+        {
+          "title": "Tôi có thể điều chỉnh hạn mức giao dịch tại POS không?",
+          "content": "Có. Bạn có thể điều chỉnh hạn mức giao dịch thanh toán tại POS của thẻ VikkiGO trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> --> <strong>chức năng Quản lý Thẻ</strong> --> <strong>“Hạn mức GD POS”</strong>."
+        },
+        {
+          "title": "Tôi có thể điều chỉnh hạn mức rút tiền mặt tại ATM không?",
+          "content": "Có. Bạn có thể điều chỉnh hạn mức rút tiền mặt tại ATM của thẻ VikkiGO trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> --> <strong>Quản lý Thẻ</strong> --> <strong>“Hạn mức rút tiền ATM”.</strong>"
+        },
+        {
+          "title": "Tôi có thể kích hoạt thẻ VikkiGO mà không cần ra ngân hàng không?",
+          "content": "Có. Bạn có thể kích hoạt thẻ VikkiGO hoàn toàn trên ứng dụng Vikki theo các hướng dẫn hiển thị trên ứng dụng."
+        },
+        {
+          "title": "Tôi có thể khóa thẻ VikkiGO tạm thời không?",
+          "content": "Có. Bạn có thể khóa thẻ VikkiGO tạm thời trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> và truy cập chức năng <strong>“Khóa thẻ”</strong>."
+        },
+        {
+          "title": "Tôi có thể mua vé máy bay Vietjet bằng thẻ VikkiGO với các chương trình giảm giá của Vietjet?",
+          "content": "Có. Bạn có thể mua vé máy bay Vietjet trên ứng dụng Vikki thông qua tài khoản thanh toán gắn với Thẻ VikkiGO và tham gia các chương trình giảm giá của Vietjet tại từng thời điểm và quy định của hãng."
+        },
+        {
+          "title": "Tôi có thể nhận thông báo ưu đãi mới không?",
+          "content": "Có. Bạn có thể nhận thông báo ưu đãi mới thông qua ứng dụng Vikki hoặc website của Vikki Bank."
+        },
+        {
+          "title": "Tôi có thể quản lý nhiều thẻ trên Ứng dụng Vikki không?",
+          "content": "Có. Bạn có thể quản lý nhiều thẻ trên ứng dụng Vikki trong cùng một tài khoản đăng nhập."
+        },
+        {
+          "title": "Tôi có thể sử dụng Thẻ để thanh toán dư nợ thẻ tín dụng được không?",
+          "content": "Có. Bạn có thể thanh toán dự nợ thẻ tín dụng thông qua tài khoản thanh toán gắn vói thẻ VikkiGO trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi có thể tự thay đổi hạn mức thanh toán online không?",
+          "content": "Có. Bạn có thể chủ động điều chỉnh hạn mức thanh toán online trên ứng dụng Vikki theo các mức hệ thống cho phép nhằm tăng cường kiểm soát và đảm bảo an toàn giao dịch."
+        },
+        {
+          "title": "Tôi có thể xem lịch sử giao dịch bao lâu?",
+          "content": "Bạn có thể xem toàn bộ lịch sử giao dịch thẻ VikkiGO của bạn trên ứng dụng Vikki"
+        },
+        {
+          "title": "Tôi chưa tải ứng dụng Vikki thì quản lý thẻ được không?",
+          "content": "Bạn cần tải và đăng nhập ứng dụng Vikki để kích hoạt và quản lý thẻ VikkiGO, đồng thời sử dụng đầy đủ các tiện ích liên quan đến thẻ."
+        },
+        {
+          "title": "Tôi đã mở 2 tài khoản thanh toán (VikkiMe) tại ứng dụng Vikki. Tôi có thể chọn tài khoản để mở thẻ VikkiGO không?",
+          "content": "Có. Bạn có thể chọn 1 tài khoản thanh toán mong muốn để liên kết mở thẻ VikkiGO."
+        },
+        {
+          "title": "Tôi đi công tác nước ngoài, có cần gọi điện thông báo cho ngân hàng không?",
+          "content": "Không bắt buộc, tuy nhiên để việc thanh toán được thuận tiện hơn, bạn có thể chủ động thông báo trước cho Vikki Bank qua ứng dụng hoặc Vikki Care <strong>19006608</strong>."
+        },
+        {
+          "title": "Tôi làm mất thẻ VikkiGO trước khi kích hoạt thì sao?",
+          "content": "Bạn vui lòng liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ khóa thẻ và thực hiện thủ tục cấp lại thẻ mới theo quy định."
+        },
+        {
+          "title": "Tôi muốn đổi PIN thì làm sao?",
+          "content": "Bạn có thể đổi PIN thẻ VikkiGO trên ứng dụng Vikki hoặc tại các máy ATM theo hướng dẫn hiển thị trên màn hình."
+        },
+        {
+          "title": "Tôi muốn nhận thông báo biến động số dư thì làm sao?",
+          "content": "Bạn có thể bật tính năng <strong>“Thông báo qua ứng dụng”</strong> trong phần Cài đặt trên ứng dụng Vikki để nhận thông báo chi tiêu và giao dịch."
+        },
+        {
+          "title": "Tôi nên làm gì nếu thẻ VikkiGO bị kẹt trong máy ATM?",
+          "content": "Bạn vui lòng khóa thẻ VikkiGO ngay trên ứng dụng Vikki và liên hệ ngân hàng sở hữu máy ATM nơi bạn thực hiện giao dịch hoặc Vikki Care <strong>19006608</strong> để được hỗ trợ xử lý."
+        },
+        {
+          "title": "Tôi nhận thẻ VikkiGO rồi nhưng chưa dùng được, vì sao?",
+          "content": "Thẻ VikkiGO cần được kích hoạt trên ứng dụng Vikki trước khi sử dụng và trải nghiệm đầy đủ các tiện ích của thẻ."
+        },
+        {
+          "title": "Tôi tích điểm SkyJoy như thế nào?",
+          "content": "Bạn có thể tích điểm SkyJoy thông qua các giao dịch thanh toán bằng thẻ VikkiGO theo chương trình tích điểm áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi thanh toán nhưng bị trừ tiền hai lần?",
+          "content": "Giao dịch của bạn có thể đang trong trạng thái chờ xử lý (giao dịch treo). Tuy nhiên, bạn vui lòng liên hệ ngay Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra và xử lý kịp thời."
+        },
+        {
+          "title": "Tôi xem thông tin thẻ VikkiGO của Tôi ở đâu?",
+          "content": "Bạn có thể xem thông tin thẻ tại mục <strong>“THẺ”</strong> trên ứng dụng Vikki."
+        },
+        {
+          "title": "Thanh toán QR có dùng được không?",
+          "content": "Thẻ VikkiGO có thể sử dụng thanh toán QR tại các điểm chấp nhận phù hợp theo quy định và cấu hình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thanh toán quốc tế bằng thẻ VikkiGO có phí chuyển đổi ngoại tệ không?",
+          "content": "Có. Giao dịch thanh toán quốc tế có thể phát sinh phí chuyển đổi ngoại tệ theo quy định của Vikki Bank và Mastercard. Bạn vui lòng tham khảo Biểu phí thẻ VikkiGO tại website hoặc trên ứng dụng Vikki để biết chi tiết."
+        },
+        {
+          "title": "Thẻ bị cong, vênh có dùng được nữa không?",
+          "content": "Trường hợp thẻ bị cong, vênh nhưng chip và anten NFC vẫn hoạt động bình thường, thẻ vẫn có thể sử dụng. Nếu chip hoặc anten NFC bên trong bị hỏng, bạn nên yêu cầu cấp lại thẻ mới."
+        },
+        {
+          "title": "Thẻ có chương trình hoàn tiền không ?",
+          "content": "Có. Chương trình hoàn tiền được áp dụng theo từng chương trình ưu đãi trong từng thời kỳ. Bạn có thể tham khảo tại mục <strong>“Ưu đãi Vikki”</strong> hoặc <strong>“Ưu đãi”</strong> trong tab <strong>“THẺ”</strong> trên ứng dụng Vikki."
+        },
+        {
+          "title": "Thẻ có hỗ trợ thanh toán không tiếp xúc không?",
+          "content": "Có. Thẻ VikkiGO hỗ trợ thanh toán không tiếp xúc (Contactless) tại các thiết bị thanh toán (POS) có hỗ trợ công nghệ tương thích."
+        },
+        {
+          "title": "Thẻ có thể dùng để trả học phí, vé máy bay, hóa đơn dịch vụ không?",
+          "content": "Có. Thẻ VikkiGO có thể được sử dụng để thanh toán học phí, vé máy bay, hóa đơn dịch vụ và các giao dịch thanh toán khác tại các điểm chấp nhận thẻ trong nước và quốc tế theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thẻ cobadge VikkiGO là thẻ gì?",
+          "content": "Thẻ thanh toán tích hợp VikkiGO của Ngân hàng số Vikki là dòng thẻ đồng thương hiệu kết hợp mạng lưới NAPAS nội địa và Mastercard quốc tế. Thẻ cho phép thanh toán và rút tiền mượt mà trên toàn cầu chỉ với một chip duy nhất, đi kèm nhiều ưu đãi hoàn tiền và tích điểm hấp dẫn."
+        },
+        {
+          "title": "Thẻ vật lý và thẻ ảo trên ứng dụng Vikki có số giống nhau không?",
+          "content": "Thẻ vật lý và thẻ ảo trên ứng dụng Vikki sẽ có cùng số thẻ để thuận tiện cho việc quản lý và giao dịch."
+        },
+        {
+          "title": "Thẻ VikkiGO bị kích hoạt sai thông tin thì sao?",
+          "content": "Bạn vui lòng liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra và xác minh lại thông tin."
+        },
+        {
+          "title": "Thẻ VikkiGO bị từ chối tại cửa hàng?",
+          "content": "Bạn vui lòng kiểm tra số dư tài khoản và trạng thái thẻ trên ứng dụng Vikki. Nếu vẫn không thực hiện được giao dịch, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Thẻ VikkiGO bị trầy xước có ảnh hưởng không?",
+          "content": "Thẻ VikkiGO bị trầy xước nhẹ thường không ảnh hưởng đến việc sử dụng. Trường hợp chip trên thẻ bị hỏng, bạn cần yêu cầu cấp lại thẻ theo quy định."
+        },
+        {
+          "title": "Thẻ VikkiGO có hỗ trợ rút tiền mặt tại nước ngoài không?",
+          "content": "Có. Bạn có thể rút tiền mặt tại các máy ATM có biểu tượng Mastercard trên toàn cầu theo quy định áp dụng của Mastercard từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiGO có phải là thẻ Thanh toán kết hợp Tín dụng không?",
+          "content": "Không đúng. Thẻ VikkiGO là loại thẻ thanh toán (thẻ ghi nợ) quốc tế."
+        },
+        {
+          "title": "Thẻ VikkiGO có tự động kích hoạt khi nhận không?",
+          "content": "Không. Bạn cần chủ động kích hoạt thẻ VikkiGO trên ứng dụng Vikki trước khi sử dụng."
+        },
+        {
+          "title": "Thẻ VikkiGO có thể dùng tại máy ATM không?",
+          "content": "Có. Thẻ VikkiGO có thể sử dụng tại máy ATM để rút tiền mặt, đổi PIN và thực hiện các giao dịch khác theo chức năng ATM hỗ trợ."
+        },
+        {
+          "title": "Thẻ VikkiGO khác gì thẻ VikkiGO+ ?",
+          "content": "Thẻ VikkiGO khác biệt chính so với thẻ VikkiGO+ là Thẻ VikkiGO là thẻ ghi nợ, còn thẻ VikkiGO+ là thẻ kép bao gồm thẻ Tín dụng và thẻ thanh toán"
+        },
+        {
+          "title": "Thẻ VikkiGO là loại thẻ tín dụng hay thẻ ghi nợ?",
+          "content": "Thẻ VikkiGO là thẻ ghi nợ do Vikki Bank phát hành"
+        },
+        {
+          "title": "Thẻ VikkiGO là thẻ nào?",
+          "content": "Thẻ VikkiGO có tên gọi đầy đủ là Thẻ thanh toán tích hợp VikkiGO, do Vikki Bank phát hành"
+        },
+        {
+          "title": "Ứng dụng Vikki bị treo khi vào mục thẻ?",
+          "content": "Bạn vui lòng cập nhật ứng dụng Vikki lên phiên bản mới nhất và thử đăng nhập lại. Nếu vẫn gặp lỗi, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Ứng dụng Vikki không hiển thị thẻ thì sao?",
+          "content": "Bạn vui lòng đăng xuất và đăng nhập lại ứng dụng Vikki để kiểm tra. Nếu vẫn chưa hiển thị thẻ VikkiGO, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ."
+        },
+        {
+          "title": "Ưu đãi tại các cửa hàng có thể áp dụng đồng thời với thẻ VikkiGO không?",
+          "content": "Tùy theo điều kiện của từng chương trình, bạn có thể đồng thời nhận ưu đãi từ hệ thống Mastercard và các đối tác của Vikki Bank theo chính sách áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi có thể mở thẻ phụ thẻ VikkiGO cho người thân không?",
+          "content": "Thẻ thanh toán tích hợp VikkiGO không có phát hành thẻ phụ"
+        },
+        {
+          "title": "Thẻ VikkiGO có phải là thẻ tích hợp giữa Napas và Visa không?",
+          "content": "Không. Thẻ thanh toán tích hợp VikkiGO của Ngân hàng số Vikki là dòng thẻ đồng thương hiệu kết hợp mạng lưới NAPAS nội địa và Mastercard quốc tế."
+        },
+        {
+          "title": "Thời hạn sử dụng của thẻ VikkiGO là bao lâu?",
+          "content": "Thẻ có thời hạn hiệu lực là 05 năm kể từ ngày phát hành (đối với người nước ngoài thì thời hạn sử dụng thẻ không quá thời hạn được cư trú tại Việt Nam)."
+        },
+        {
+          "title": "Làm sao để đặt lại mã PIN nếu tôi lỡ quên?",
+          "content": "Bạn vào mục <strong>\"THẺ\"</strong> -> <strong>\"Quản lý thẻ\"</strong> -> <strong>\"Đổi mã PIN\"</strong> trên app Vikki để tạo PIN mới."
+        },
+        {
+          "title": "Tôi có thể chủ động khóa và mở khóa giao dịch rút tiền mặt tại ATM mà không cần liên hệ với Ngân hàng không?",
+          "content": "Có. Bạn có thể chủ động khóa và mở khóa giao dịch online, tại máy quẹt thẻ (POS) trên ứng dụng Vikki, bằng cách vào Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> <strong>\"Quản lý thẻ\"</strong> và thao tác bật/tắt tại giao dịch <strong>\"Rút tiền ATM\".</strong>"
+        },
+        {
+          "title": "Thẻ VikkiGO sử dụng công nghệ chip gì để thanh toán?",
+          "content": "Thẻ sử dụng chip Dual-interface, hỗ trợ cả giao dịch chạm (contactless) và giao dịch tiếp xúc (cắm chip)."
+        },
+        {
+          "title": "Tôi đã có thể sử dụng thẻ VikkiGO trên Apple Pay chưa?",
+          "content": "Hiện tại Vikki Bank đang phát triển tính năng này và sẽ thông báo đến khách hàng sau."
+        },
+        {
+          "title": "Thẻ ảo VikkiGO có được phát hành tự động không?",
+          "content": "Có, thẻ ảo được phát hành tự động ngay khi đăng ký thành công để bạn thanh toán trực tuyến ngay lập tức."
+        },
+        {
+          "title": "Tôi có thể xem thông tin số thẻ và mã CVC trên ứng dụng Vikki được không?",
+          "content": "Có. Bạn xem thông tin số thẻ và mã CVC trên ứng dụng Vikki, bằng cách vào Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> <strong>\"Thông tin thẻ\"</strong>."
+        },
+        {
+          "title": "Hủy thẻ trong vòng 12 tháng đầu tiên có mất phí không?",
+          "content": "Có. Ngân hàng có thu phí thanh lý thẻ nếu yêu cầu đóng thẻ trong vòng 12 tháng kể từ ngày phát hành."
+        },
+        {
+          "title": "Tôi có thể chủ động khóa và mở khóa giao dịch online và tại máy quẹt thẻ (POS) mà không cần liên hệ với Ngân hàng không?",
+          "content": "Có. Bạn có thể chủ động khóa và mở khóa giao dịch online, tại máy quẹt thẻ (POS) trên ứng dụng Vikki, bằng cách vào Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> <strong>\"Quản lý thẻ\"</strong> và thao tác bật/tắt tại giao dịch mong muốn."
+        },
+        {
+          "title": "Thẻ bị khóa do nhập sai PIN 3 lần thì xử lý thế nào?",
+          "content": "Bạn chỉ cần vào ứng dụng Vikki, chọn Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> <strong>\"Quản lý thẻ\"</strong> --> <strong>\"Đổi mã PIN ATM\"</strong> để tạo lại mã PIN mới."
+        },
+        {
+          "title": "Việc thay đổi mã PIN trên ứng dụng có tốn phí không?",
+          "content": "Vikki Bank không thu phí và không giới hạn số lần đổi mã PIN trên ứng dụng."
+        },
+        {
+          "title": "Tôi có thể nhận thẻ vật lý tận nhà được không?",
+          "content": "Được. Bạn có thể chọn nhận thẻ VikkiGO tại nhà. Việc này sẽ phát sinh phí theo Biểu phí của Vikki Bank được quy định tại từng thời điểm."
+        },
+        {
+          "title": "Tôi có thể xem các chương trình ưu đãi dành cho thẻ ở đâu?",
+          "content": "Thông tin ưu đãi được niêm yết tại mục <strong>\"Ưu đãi\"</strong> trên website vikkibank.vn hoặc trên ứng dụng Vikki."
+        },
+        {
+          "title": "Nếu rút tiền tại ATM máy báo \"Thẻ không hợp lệ\" thì phải làm gì?",
+          "content": "Bạn hãy liên hệ tổng đài <strong>19006608</strong> hoặc đến Chi nhánh/PGD gần nhất để được hỗ trợ."
+        },
+        {
+          "title": "Sau khi đã hủy thẻ, tôi có phải trả phí thường niên không?",
+          "content": "Không. Sau hoàn tất việc thanh toán các phí đã phát sinh trước đó (nếu có) và việc hủy thẻ thành công, bạn sẽ không trả phí thường niên hoặc phí nào khác liên quan đến thẻ nữa."
+        },
+        {
+          "title": "Tôi có thể thực hiện thay thế thẻ VikkiGO tại ứng dụng Vikki mà không cần đến CN/PGD của Vikki Bank không?",
+          "content": "Được. Bạn có thể thực hiện thay thế thẻ VikkiGO tại trên ứng dụng Vikki, bằng cách: vào ứng dụng Vikki, chọn Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> <strong>\"Quản lý thẻ\"</strong> --> <strong>\"Yêu cầu thay thế thẻ\"</strong> và thực hiện theo yêu cầu của từng màn hình."
+        },
+        {
+          "title": "Sau khi nhận được thẻ VikkiGO (thẻ vật lý), tôi cần phải làm gì để sử dụng thẻ tại ATM?",
+          "content": "Sau khi nhận được thẻ, bạn cần kích hoạt và tạo mã PIN ATM cho thẻ. Bạn vào ứng dụng Vikki, chọn Menu <strong>\"THẺ\"</strong>, chọn <strong>\"Thẻ thanh toán\"</strong> --> tại đây, sẽ hiển thị thông báo gợi ý việc kích hoạt thẻ <strong>\"Bạn đã nhận được thẻ?\"</strong>. Hãy chọn vào thông báo này và thao tác theo hướng dẫn của từng màn hình."
+        },
+        {
+          "title": "Tính năng nhận thông báo biến động số dư trên ứng dụng Vikki có bị tính phí không?",
+          "content": "Tính năng <strong>“Thông báo qua ứng dụng”</strong> trên ứng dụng Vikki hoàn toàn miễn phí."
+        },
+        {
+          "title": "Trước đây tôi nhận lương hưu qua thẻ đa năng Đông Á, giờ thẻ của tôi không còn sử dụng được thì tôi phải làm gì để tiếp tục nhận lương qua Vikki Bank",
+          "content": "Để tiếp tục nhận lương hưu tại Vikki Bank, Bạn thực hiện tải ứng dụng Vikki để mở tài khoản thanh toán (TK VikkiMe hoặc TK số đẹp) và thực hiện mở thẻ VikkiGO. Tiếp theo, Bạn cung cấp số tài khoản gắn với thẻ VikkiGO cho BHXH đang cung cấp lương hưu để nhận lương hưu hàng tháng qua Vikki Bank."
+        }
+        ]
+    }
+  ],
+  "qa": [
+    {
+      "title": "Làm sao để sở hữu Thẻ thanh toán tích hợp VikkiGO?",
+      "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay.</li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO.</li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/ "
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ thanh toán tích hợp VikkiGO như thế nào?",
+      "content": "Chủ thẻ có thể dễ dàng quản lý Thẻ thanh toán tích hợp VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki: <ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời. "
+    },
+    {
+      "title": "Thẻ Co-badge được sử dụng như thế nào? Các loại giao dịch nào có thể thực hiện với thẻ này?",
+      "content": "Thẻ Co-badge có đầy đủ các tính năng thanh toán như một loại thẻ nội địa/quốc tế thông thường, bao gồm: ECOM (thanh toán trực tuyến), POS (thanh toán tại cửa hàng), ATM (Rút tiền mặt, truy vấn số dư tài khoản tại ATM, chuyển khoản). Phạm vi sử dụng: trong nước và quốc tế. Tuy nhiên, sẽ có một số điểm khác biệt: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas, và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard, do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>"
+    },
+    {
+      "title": "Điều kiện để được phát hành thẻ Co-badge là gì?",
+      "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay. </li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO. </li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/ tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. "
+    }
+  ],
+  "slider": [
+    {
+      "src": "assets/slide-4.png",
+      "popupLink": "/vikki-cvp/promotion/promo-075.html"
+    },
+    {
+      "src": "assets/slide-2.png",
+      "popupLink": "https://vikkibank.vn/the-dong-thuong-hieu-vikkigo-duoc-vinh-danh-la-trai-nghiem-san-pham-ngan-hang-cua-nam-tai-asian-experience-awards-2025/",
+      "popupTitle": "Sự kiện & Khuyến mãi"
+    },
+    {
+      "src": "assets/slide-3.png",
+      "popupLink": "https://vikkibank.vn/vikki-ra-mat-the-dong-thuong-hieu-dau-tien-giua-napas-va-mastercard/",
+      "popupTitle": "Sự kiện & Khuyến mãi"
+    }
+  ],
+  "qaItems": [
+    {
+      "title": "Làm sao để sở hữu Thẻ thanh toán tích hợp VikkiGO?",
+      "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay.</li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO.</li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/ "
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ thanh toán tích hợp VikkiGO như thế nào?",
+      "content": "Chủ thẻ có thể dễ dàng quản lý Thẻ thanh toán tích hợp VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki: <ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời. "
+    },
+    {
+      "title": "Thẻ Co-badge được sử dụng như thế nào? Các loại giao dịch nào có thể thực hiện với thẻ này?",
+      "content": "Thẻ Co-badge có đầy đủ các tính năng thanh toán như một loại thẻ nội địa/quốc tế thông thường, bao gồm: ECOM (thanh toán trực tuyến), POS (thanh toán tại cửa hàng), ATM (Rút tiền mặt, truy vấn số dư tài khoản tại ATM, chuyển khoản). Phạm vi sử dụng: trong nước và quốc tế. Tuy nhiên, sẽ có một số điểm khác biệt: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas, và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard, do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>"
+    },
+    {
+      "title": "Điều kiện để được phát hành thẻ Co-badge là gì?",
+      "content": "Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay. </li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO. </li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/ tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. "
+    },
+    {
+      "title": "Thẻ Co-badge có hai số thẻ, làm thế nào để biết giao dịch sử dụng số thẻ nào?",
+      "content": "Lịch sử giao dịch sẽ ghi nhận theo loại thẻ được sử dụng. Chủ thẻ có thể truy vấn tại lịch sử của giao dịch trên ứng dụng Vikki. "
+    },
+    {
+      "title": "Tôi có được quyền lựa chọn số thẻ tôi muốn cho giao dịch cụ thể được không?",
+      "content": "Tùy theo loại hình giao dịch và tính sẵn sàng của kênh giao dịch, chủ thẻ có thể chủ động lựa chọn loại thẻ để giao dịch. Tuy nhiên, xem thêm thông tin dưới đây để có thể lựa chọn giao dịch phù hợp: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce. </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard. Do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>"
+    },
+    {
+      "title": "Thẻ cứng cần thiết không?",
+      "content": "Bên cạnh việc sở hữu thẻ ảo ngay sau khi mở thẻ thành công, thẻ cứng sẽ giúp bạn tiện lợi hơn khi sử dụng thẻ. Cụ thể, với thẻ cứng, chủ thẻ có thể thao tác rút tiền tại cây ATM trong và ngoài nước với biểu tượng NAPAS hoặc Mastercard. Đặc biệt, khi rút tiền miễn phí tại hơn 700 cây ATM của Vikki Digital Bank. Với việc sở hữu thẻ cứng, khách hàng còn có thể quẹt thẻ tại máy quẹt thẻ (POS) hoặc thanh toán không tiếp xúc (Tap to pay) tại hệ thống cửa hàng, siêu thị, nhà hàng hoặc giao thông công cộng trên toàn thế giới. Thông qua ứng dụng Vikki, chủ thẻ có thể yêu cầu phát hành thẻ cứng giao miễn phí lần đầu đến các điểm giao dịch VikkiBank gần bạn nhất (xem thêm điều kiện và điều khoản cùng phí và biểu phí cho các trường hợp phát hành lần 2 hoặc phát hành khác). "
+    },
+    {
+      "title": "Các tính năng thanh toán của thẻ là gì? Quản lý như thế nào?",
+      "content": "Thẻ cứng cũng như thẻ ảo của thẻ thanh toán tích hợp NAPAS Mastercard VikkiGO đều có thể có nhiều tính năng thanh toán như: <ul><li>Thanh toán trực tuyến qua các sàn thương mại điện tử, website trong và ngoài nước chấp nhận thẻ NAPAS/Mastercard.</li><li>Thanh toán tại máy quẹt thẻ tại siêu thị, cửa hàng tiện lợi, nhà hàng, trung tâm mua sắm. Có đến hơn 5 Triệu điểm chấp nhận thanh toán thẻ thanh toán tích hợp VikkiGO trên toàn cầu.</li><li>Rút tiền tại các máy ATM với biểu tượng NAPAS hoặc Mastercard.</li><li>Thanh toán quốc tế (bao gồm rút tiền và quẹt thẻ) ngoài phạm vi lãnh thổ Việt Nam.</li></ul>Toàn bộ các tính năng thanh toán trên đều có thể tắt (khóa) và mở (mở khóa), hoặc giới hạn hạn mức giao dịch cho từng loại theo ngày, số lần giao dịch theo nhu cầu thông qua ứng dụng Vikki. Chủ thẻ có thể khám phá tại mục quản lý thẻ trong ứng dụng. Việc quản lý thẻ này giúp bảo vệ tiền trong thẻ, trong tài khoản khỏi kẻ gian. "
+    },
+    {
+      "title": "Những việc cần làm khi thất lạc thẻ",
+      "content": "Nguồn tiền của thẻ lấy từ tài khoản VikkiME. Việc thất lạc thẻ hoặc lộ thông tin thẻ đều có thể dẫn đến việc bị mất tiền trong tài khoản. Do đó, khi thất lạc thẻ hay phát hiện giao dịch khả nghi cần liên hệ ngay với Vikki Care và khóa thẻ khẩn cấp trên ứng dụng Vikki. Đừng lo! Sau khi khóa thẻ, chủ thẻ có thể chủ động mở khóa trên ứng dụng khi tìm được thẻ hoặc xác định thông tin thẻ vẫn an toàn. "
+    }
+  ]
+}

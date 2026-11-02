@@ -1,0 +1,40 @@
+<div class="table-scroll">
+  <table class="fee-table">
+    <thead>
+      {{#each headerRows}}
+        <tr>
+          {{#each cells}}
+            <th
+            {{#if className}}class="{{className}}"{{/if}}
+              {{#if colspan}}colspan="{{colspan}}"{{/if}}
+              {{#if rowspan}}rowspan="{{rowspan}}"{{/if}}
+            >
+              {{{value}}}
+            </th>
+          {{/each}}
+        </tr>
+      {{/each}}
+    </thead>
+
+    <tbody>
+      {{#each rows}}
+        <tr >
+          {{#each cells}}
+            <td
+              {{#if className}}class="{{className}}"{{/if}}
+              {{#if colspan}}colspan="{{colspan}}"{{/if}}
+              {{#if rowspan}}rowspan="{{rowspan}}"{{/if}}
+            >
+              {{{value}}}
+            </td>
+          {{/each}}
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{#if note}}
+    <div class="legal-note">
+      {{{note}}}
+    </div>
+  {{/if}}
+</div>

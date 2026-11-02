@@ -1,0 +1,301 @@
+<style>
+  .vikki-one-connect .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+  }
+  .vikki-one-connect .popup-title {
+    min-height: 80px;
+    background: none;
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .vikki-one-connect .accordion {
+    max-width: none;
+  }
+  
+  .vikki-one-connect #backToTop {
+    bottom: 60px;
+  }
+  body.vikki-one-connect {
+    padding-bottom: 0;
+  }
+  .popup-inner,
+  .vikki-one-connect .bg-bottom {
+    padding-bottom: 120px;
+  }
+  html,
+  body {
+    padding-bottom: 0;
+  }
+
+  .btn-register {
+    background: linear-gradient(
+      88.03deg,
+      #0000ff 0%,
+      #6100ff 55.85%,
+      #da0191 77.92%,
+      #ff8a00 90.71%,
+      #ffb907 100%
+    );
+    box-shadow:
+      0px 0px 8px 0px rgba(0, 0, 0, 0.1),
+      0px 2px 5px 0px rgba(255, 255, 255, 0.18) inset,
+      0px 0px 8px 0px rgba(255, 255, 255, 0.3) inset,
+      0px 0px 12px 6px rgba(255, 255, 255, 0.16) inset,
+      0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset 0px 6px 6px 0px
+        rgba(255, 255, 255, 0.12) inset;
+
+    height: 48px;
+    left: 16px;
+    right: 16px;
+    line-height: 48px;
+    position: fixed;
+    bottom: 16px;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    z-index: 99999999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .hasCard .btn-register{
+    display: none;
+  }
+  .group-item{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .group-heading{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  .group-sub-title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+  .group-sub{
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+
+  }
+  .group-sub:last-child{
+    border:none
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    }
+
+    .partner-item {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .partner-item.is-primary {
+    grid-row: span 2;
+    background: #ffffff;
+    }
+
+    .partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    }
+
+    .partner-logo img.activeLogo, .partner-logo img.inactiveLogo{
+      display: none;
+    }
+
+    .partner-item.is-primary .partner-logo{
+      padding-bottom: 91%;
+    }
+
+    .partner-item.is-primary img.normalLogo{
+        display: none;
+    }
+
+    .partner-item.is-primary .activeLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    .hasCard .partner-item.is-primary .activeLogo{
+      display: none;
+    }
+
+    .hasCard .partner-item.is-primary .inactiveLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    [data-id='sovico'] img,
+    [data-id='hdbank'] img{
+      border: 1px solid #d1d1d1;
+    }
+
+    
+
+    .partner-logo{
+      padding-bottom: 44%;
+      position: relative;
+      height: 0;
+    }
+
+    .partner-logo img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .partner-sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+    }
+
+    .partner-btn {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b4bff, #ff9f2f);
+    }
+    .btn-full .button-wrap{
+        flex-direction: column;
+    }
+    .btn-full .button{
+        width: 100%;
+    }
+  #backToTopQA  {
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    transform: translateY(10px);
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    display: none;
+    z-index: 999;
+
+    border-radius: 9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #backToTopQA.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .popup {
+    overflow: hidden;
+  }
+
+.popup-body {
+  height: 100%;
+}
+
+.popup-body iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+</style>
+<button class='btn-register' id="btnRegister">Mở thẻ ngay</button>
+
+<script>
+    const paramCards = new URLSearchParams(window.location.search);
+    const hasCard = paramCards.get('hasCard');
+
+    if (hasCard && hasCard === 'true') {
+      body.classList.add('hasCard');
+    }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const productSchemeParam = params.get("productScheme");
+    let orgSchema = productSchemeParam ? productSchemeParam.toUpperCase() : 'HDBANK';
+
+    function mapOrg(orgSchema) {
+      if (!orgSchema) return null;
+      if (orgSchema.includes("HDBANK")) return "hdbank";
+      if (orgSchema.includes("VIKKI_BANK") || orgSchema.includes("VIKKI")) return "vikki";
+      if (orgSchema.includes("SOVICO")) return "sovico";
+      if (orgSchema.includes("DAMTC")) return "damtc";
+      return null;
+    }
+
+    if (orgSchema) {
+      document.querySelectorAll(".partner-item").forEach(item => {
+        const id = item.getAttribute("data-id");
+       
+        if (id === mapOrg(orgSchema)) {
+          
+          item.classList.add("is-primary");
+        } else {
+          item.classList.remove("is-primary");
+        }
+      });
+    }
+  });
+
+</script>
+
+<script>
+    document.getElementById('btnRegister').addEventListener('click', function () {
+    const payload = {
+      action: 'OPEN_CARD'
+    };
+
+    if (window.ReactNativeWebView) {
+      window.ReactNativeWebView.postMessage(JSON.stringify(payload));
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    const item = e.target.closest('.partner-item');
+    if (!item) return;
+
+    const paramCards = new URLSearchParams(window.location.search);
+    const hasCard = paramCards.get('hasCard');
+    const link = item.dataset.link;
+    const id = item.dataset.id;
+    
+    if (window.ReactNativeWebView && (!hasCard || hasCard === 'false' ) && (id === 'hdbank' || id === 'sovico' || id === 'vikki' || id === 'vikkibank')) {
+        window.ReactNativeWebView.postMessage(
+        JSON.stringify({
+            action: 'OPEN_CARD'
+        })
+        );
+        return;
+    }
+  })
+ 
+</script>

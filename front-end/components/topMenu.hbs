@@ -1,0 +1,14 @@
+<div id='qa'>
+  <div class='menu-top'>
+    {{#each items}}
+      <div>
+        <span {{#if popup}}data-popup='{{popup}}'{{/if}} {{#if scroll}}data-scroll='{{scroll}}'{{/if}} data-title="{{title}}">
+          <img src='{{iconSrc}}' />
+          <span>
+            {{text}}
+          </span>
+        </span>
+      </div>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,126 @@
+{
+  "title": "Vay tiêu dùng thế chấp | VikkiBank",
+  "hasTopSpace": true,
+  "layout": "template",
+  "className": "consumer-secured-loan-cvp",
+  "bannerVideoHlsSrc": "./assets/video/playlist-20261012-223920.m3u8",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Giới thiệu",
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#intro"
+        }
+      ]
+    },
+    {
+      "type": "video"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "section",
+      "src": "./assets/title-section.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "features",
+      "className": "section",
+      "src": "./assets/feature-han-muc-100.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-lai-suat.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-tra-dan-30-nam.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-nhu-cau-chi-tieu.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/cau-hoi-thuong-gap.png"
+      },
+      "button": {
+        "text": "Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Cho vay tiêu dùng thế chấp là gì?",
+          "content": "Bạn có thể vay vốn theo sản phẩm Cho vay tiêu dùng có tài sản bảo đảm để thanh toán các chi phí hợp pháp cho nhu cầu tiêu dùng, sinh hoạt phục vụ nhu cầu đời sống như mua sắm thiết bị nội thất, học tập, du lịch, …"
+        },
+        {
+          "title": "Thời hạn vay tiêu dùng là bao lâu?",
+          "content": "Bạn có thể vay vốn theo sản phẩm Cho vay tiêu dùng có tài sản bảo đảm với thời hạn vay lên đến 30 năm."
+        },
+        {
+          "title": "Tôi có thể vay tối đa bao nhiêu tiền?",
+          "content": "<p>Hạn mức vay lên đến 100% nhu cầu của Bạn, tùy thuộc vào:</p><ul><li>Giá trị tài sản bảo đảm.</li><li>Thu nhập và khả năng trả nợ của Bạn.</li><li>Chính sách tín dụng của Vikki Digital Bank từng thời kỳ.</li></ul>"
+        },
+        {
+          "title": "Tôi có cần chứng minh thu nhập không?",
+          "content": "Có. Bạn cần cung cấp hồ sơ chứng minh nguồn thu nhập và khả năng trả nợ. Nguồn thu nhập có thể đến từ lương, hoạt động kinh doanh, cho thuê tài sản hoặc các nguồn thu nhập hợp pháp khác."
+        },
+        {
+          "title": "Lịch sử tín dụng ảnh hưởng như thế nào đến việc xét duyệt khoản vay?",
+          "content": "<p>Lịch sử tín dụng là một trong những yếu tố quan trọng trong quá trình xét duyệt hồ sơ vay.</p><p>Nếu bạn có lịch sử tín dụng tốt sẽ có lợi thế hơn khi đánh giá cấp tín dụng.</p>"
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-white",
+      "termsButtonFullW": {
+        "title": "Điều khoản và Điều kiện",
+        "popup": "/vikki-cvp/consumer-secured-loan-cvp/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "children": [
+        {
+          "title": "Cho vay tiêu dùng thế chấp là gì?",
+          "content": "Bạn có thể vay vốn theo sản phẩm Cho vay tiêu dùng có tài sản bảo đảm để thanh toán các chi phí hợp pháp cho nhu cầu tiêu dùng, sinh hoạt phục vụ nhu cầu đời sống như mua sắm thiết bị nội thất, học tập, du lịch, …"
+        },
+        {
+          "title": "Thời hạn vay tiêu dùng là bao lâu?",
+          "content": "Bạn có thể vay vốn theo sản phẩm Cho vay tiêu dùng có tài sản bảo đảm với thời hạn vay lên đến 30 năm."
+        },
+        {
+          "title": "Tôi có thể vay tối đa bao nhiêu tiền?",
+          "content": "<p>Hạn mức vay lên đến 100% nhu cầu của Bạn, tùy thuộc vào:</p><ul><li>Giá trị tài sản bảo đảm.</li><li>Thu nhập và khả năng trả nợ của Bạn.</li><li>Chính sách tín dụng của Vikki Digital Bank từng thời kỳ.</li></ul>"
+        },
+        {
+          "title": "Tôi có cần chứng minh thu nhập không?",
+          "content": "Có. Bạn cần cung cấp hồ sơ chứng minh nguồn thu nhập và khả năng trả nợ. Nguồn thu nhập có thể đến từ lương, hoạt động kinh doanh, cho thuê tài sản hoặc các nguồn thu nhập hợp pháp khác."
+        },
+        {
+          "title": "Lịch sử tín dụng ảnh hưởng như thế nào đến việc xét duyệt khoản vay?",
+          "content": "<p>Lịch sử tín dụng là một trong những yếu tố quan trọng trong quá trình xét duyệt hồ sơ vay.</p><p>Nếu bạn có lịch sử tín dụng tốt sẽ có lợi thế hơn khi đánh giá cấp tín dụng.</p>"
+        },
+        {
+          "title": "Vay tiêu dùng có cần chứng minh mục đích vay không?",
+          "content": "Có và Vikki Digital Bank hỗ trợ linh hoạt với các chứng từ chứng minh như hóa đơn, hợp đồng mua sắm thiết bị nội thất, học tập, du lịch, …"
+        }
+      ]
+    }
+  ]
+}

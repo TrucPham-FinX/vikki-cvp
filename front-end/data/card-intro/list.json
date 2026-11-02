@@ -1,0 +1,40 @@
+{
+  "layout": "promotion",
+  "items": [
+    {
+      "id": "vikki-pro",
+      "cardGroup": "DEBIT_CARD",
+      "thumbnail": "./assets/vikki-pro.png",
+      "name": "Thẻ Doanh nghiệp VikkiPRO",
+      "longDesc": "<p><b>VikkiPRO</b> là <b>bộ đôi thẻ doanh nghiệp Credit & Debit</b> của <b>Vikki Digital Bank</b>, mang đến <b>giải pháp thanh toán tối ưu trong nước và quốc tế</b> cho doanh nghiệp bước vào <b>kỷ nguyên vươn mình.</b></p><p>VikkiPRO giúp doanh nghiệp <b>tối ưu chi phí – tăng hiệu quả dòng tiền</b> với <b>phí ngoại tệ chỉ 0,99%, hoàn tiền đến 120 triệu đồng/năm, miễn lãi đến 55 ngày</b> và <b>đặc quyền toàn cầu</b> như phòng chờ thương gia sân bay, ưu tiên sân golf và nhà hàng Michelin.</p><p>Không chỉ là phương tiện thanh toán, <b>VikkiPRO</b> còn là <b>biểu tượng chuyên nghiệp</b>, góp phần <b>nâng tầm hình ảnh thương hiệu</b> và mở rộng kết nối với khách hàng, đối tác trên toàn cầu.</p>"
+    },
+    {
+      "id": "vikki-go-plus",
+      "cardGroup": "DEBIT_CARD",
+      "thumbnail": "./assets/vikki-go-plus.png",
+      "name": "Thẻ Kép VikkiGO+",
+      "longDesc": "<p><b>Thẻ Kép VikkiGO+</b> tích hợp 2 trong 1: <b>Thẻ Thanh toán (Debit) và Thẻ Tín dụng (Credit)</b> trên cùng một thẻ, mang đến <b>giải pháp tài chính toàn diện</b> cho chi tiêu, dự phòng và quản lý tài chính cá nhân linh hoạt.</p><p>Thẻ mở <b>100% online chỉ với Căn cước, cấp hạn mức ngay, chi tiêu trước – trả sau, miễn lãi đến 55 ngày, miễn phí thường niên trọn đời.</b> Chủ thẻ hưởng <b>ưu đãi cao cấp từ Mastercard, miễn phí Metro cả năm</b>, cùng <b>chuỗi ưu đãi ăn uống – mua sắm</b> và <b>xét duyệt nâng hạn mức hàng tháng</b>.</p><p><b>VikkiGO+ –</b> chiếc thẻ dành cho phong cách người dẫn đầu, an toàn, tiện lợi và đồng hành trọn vẹn trong công việc lẫn cuộc sống.</p>"
+    },
+    {
+      "id": "vikki-go-cobage",
+      "cardGroup": "DEBIT_CARD",
+      "thumbnail": "./assets/vikki-go-cobage.png",
+      "name": "Thẻ Thanh toán tích hợp VikkiGO",
+      "longDesc": "<p><b>VikkiGO</b> là <b>Thẻ Thanh toán tích hợp đầu tiên tại Việt Nam</b> kết hợp <b>NAPAS & Mastercard</b> trong một thẻ duy nhất, cho phép <b>thanh toán và rút tiền linh hoạt trong nước – quốc tế</b> mà không cần nhiều loại thẻ.</p><p>Chủ thẻ giao dịch dễ dàng trên <b>hệ thống NAPAS tại Việt Nam và mạng lưới Mastercard toàn cầu</b>, đồng thời hưởng miễn phí chuyển tiền, <b>miễn phí rút ATM Vikki Bank trọn đời</b> cùng <b>nhiều ưu đãi từ hai mạng thanh toán</b>.</p>"
+    },
+    {
+      "id": "vikki-one-connect",
+      "cardGroup": "DEBIT_CARD",
+      "thumbnail": "./assets/vikki-one-connect.png",
+      "name": "Thẻ Thanh toán tích hợp VikkiGO",
+      "longDesc": "<p><b>VikkiGO</b> là <b>Thẻ Thanh toán tích hợp đầu tiên tại Việt Nam</b> kết hợp <b>NAPAS & Mastercard</b> trong một thẻ duy nhất, cho phép thanh toán và rút tiền linh hoạt trong nước – quốc tế mà không cần nhiều loại thẻ.</p><p>Chủ thẻ giao dịch dễ dàng trên hệ thống NAPAS tại Việt Nam và mạng lưới Mastercard toàn cầu, đồng thời hưởng miễn phí chuyển tiền, <b>miễn phí rút ATM Vikki Bank trọn đời cùng nhiều ưu đãi từ hai mạng thanh toán</b>.</p>"
+    },
+    {
+      "id": "vikki-go",
+      "cardGroup": "DEBIT_CARD",
+      "thumbnail": "./assets/vikki-go.png",
+      "name": "Thẻ tín dụng VikkiGO",
+      "longDesc": "<p><b>Thẻ tín dụng VikkiGO</b> mang đến giải pháp chi tiêu linh hoạt cho mọi nhu cầu hằng ngày. <b>Mở thẻ 100% online chỉ với Căn cước</b>, thao tác đơn giản trên ứng dụng, <b>phê duyệt tức thì – có thẻ dùng ngay</b>. Chủ thẻ <b>mua trước, trả sau, miễn lãi đến 45 ngày, miễn phí thường niên trọn đời.</b></p><p>Thanh toán an toàn tại <b>hàng triệu điểm chấp nhận Mastercard</b> trong nước và quốc tế, đồng thời tận hưởng <b>kho ưu đãi đa dạng</b> từ hệ sinh thái Vikki và Mastercard.</p>"
+    }
+  ]
+}

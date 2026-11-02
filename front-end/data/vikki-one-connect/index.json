@@ -1,0 +1,1401 @@
+{
+  "title": "Vikki One Connect | VikkiBank",
+  "hasTopSpace": true,
+  "layout": "template",
+  "className": "vikki-one-connect",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "popup": "/vikki-cvp/vikki-one-connect/intro.html"
+        },
+        {
+          "text": "Ưu đãi",
+          "iconSrc": "./assets/offer.svg",
+          "popup": "/vikki-cvp/promotion/list.html?category=VIKKI_ONE"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "id": "intro",
+      "className": "pt-4 section",
+      "src": "./assets/poster.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "pt-4 section",
+      "src": "./assets/p-5.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "pt-4 section",
+      "src": "./assets/p-4.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "pt-4 section",
+      "src": "./assets/p-1.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "pt-4 section",
+      "src": "./assets/p-2.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro section",
+      "className": "pt-4",
+      "src": "./assets/p-3.png"
+    },
+    {
+      "type": "title",
+      "title": "Doanh nghiệp",
+      "className": "section pt-4"
+    },
+    {
+      "type": "flex",
+      "className": "section",
+      "partners": [
+        {
+          "id": "hdbank",
+          "name": "HDBank",
+          "sub": "2534 nhân sự đã mở thẻ",
+          "logo": "assets/d-1.png",
+          "logoActive": "assets/d-1-active.png",
+          "logoInactive": "assets/d-1-inactive.png",
+          "actionText": "Mở thẻ ngay",
+          "link": "/open-card/hdbank"
+        },
+        {
+          "id": "vikki",
+          "name": "Vikki Digital Bank",
+          "logo": "assets/d-7.png",
+          "logoActive": "assets/d-7-active.png",
+          "logoInactive": "assets/d-7-inactive.png",
+          "link": "/partner/vikki"
+        },
+        {
+          "id": "sovico",
+          "name": "Sovico",
+          "logo": "assets/d-11.png",
+          "logoActive": "assets/d-11-active.png",
+          "logoInactive": "assets/d-11-inactive.png",
+          "link": "/partner/sovico"
+        },
+        {
+          "id": "phu-long",
+          "name": "Phú Long",
+          "logo": "assets/d-3.png",
+          "link": "/partner/phulong"
+        },
+        {
+          "id": "vietjet",
+          "name": "Vietjet Air",
+          "logo": "assets/d-2.png",
+          "link": "/partner/vietjet"
+        },
+        {
+          "id": "hd-saigon",
+          "name": "HD SAISON",
+          "logo": "assets/d-4.png",
+          "link": "/partner/hdsaison"
+        },
+        {
+          "id": "tbd",
+          "name": "ĐH Thái Bình Dương",
+          "logo": "assets/d-6.png",
+          "link": "/partner/tbd"
+        },
+        {
+          "id": "victoria",
+          "name": "Victoria School",
+          "logo": "assets/d-5.png",
+          "link": "/partner/victoria"
+        },
+        {
+          "id": "hoabinh",
+          "name": "ĐH Hòa Bình",
+          "logo": "assets/d-10.png",
+          "link": "/partner/hoabinh"
+        },
+        {
+          "id": "damtc",
+          "name": "Kiều Hối Đông Á",
+          "logo": "assets/d-damtc.png",
+          "logoActive": "assets/d-damtc-active.png",
+          "logoInactive": "assets/d-damtc-inactive.png",
+          "link": "/partner/damtc"
+        }
+      ]
+    },
+    {
+      "type": "slider",
+      "className": "section",
+      "title": {
+        "src": "assets/title-su-kien.png"
+      },
+      "items": [
+        {
+          "src": "assets/slide-5.png",
+          "popupLink": "/vikki-cvp/promotion/promo-075.html"
+        },
+        {
+          "src": "assets/s-6.png"
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-bottom section",
+      "className": "btn-full",
+      "feeButton": {
+        "popup": "/vikki-cvp/vikki-one-connect/fee.html",
+        "text": "Xem biểu phí"
+      },
+      "termsButton": {
+        "popup": "/vikki-cvp/vikki-one-connect/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Tổ chức và trường học",
+      "children": [
+        {
+          "title": " Làm sao Tổ chức/Doanh nghiệp của tôi đăng ký Thẻ VikkiONE Connect?",
+          "content": "Tổ chức/Doanh nghiệp của bạn có thể liên hệ Vikki Care 19006608, bất kỳ chi nhánh/Phòng Giao dịch Vikki Bank gần nhất hoặc đăng ký trực tuyến trên Website, ứng dụng Vikki. Đội ngũ chuyên trách của Vikki Bank sẽ chủ động liên hệ tư vấn để triển khai Thẻ VikkiONE Connect trong thời gian sớm nhất."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có tích hợp hệ thống chấm công, điểm danh của Tổ chức/Doanh nghiệp không?",
+          "content": "Có. Thẻ VikkiONE Connect hỗ trợ tích hợp với hệ thống chấm công, điểm danh nhằm đáp ứng nhu cầu quản lý nội bộ của Tổ chức/Doanh nghiệp theo phương án tích hợp được thống nhất trong quá trình triển khai. "
+        },
+        {
+          "title": "Thẻ có dùng thay thẻ gửi xe không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể hỗ trợ tích hợp với các hệ thống quản lý nội bộ của Tổ chức/Doanh nghiệp theo phương án tích hợp được thống nhất trong quá trình triển khai."
+        },
+        {
+          "title": "Thẻ có thể dùng trong căn tin/Thư viện được không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể sử dụng tại căn tin, thư viện hoặc các dịch vụ nội bộ khác khi Tổ chức/Doanh nghiệp triển khai tích hợp hệ thống thanh toán nội bộ tương thích. "
+        },
+        {
+          "title": " Doanh nghiệp có thể in logo riêng lên thẻ VikkiONE Connect không?",
+          "content": "Có. Vikki Bank hỗ trợ tùy chỉnh thiết kế mặt thẻ (Co-branding) để thể hiện nhận diện thương hiệu của Tổ chức/Doanh nghiệp theo quy định phát hành thẻ và tiêu chuẩn thiết kế áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tổ chức có thể giới hạn khung giờ chấm công của nhân viên trên thẻ không?",
+          "content": "Có. Tính năng chấm công có thể được cấu hình theo nhu cầu quản lý của từng Tổ chức/Doanh nghiệp trong phạm vi chức năng hệ thống hỗ trợ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có thể dùng để mở cửa ra vào (Access Control) văn phòng không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể sử dụng cho hệ thống kiểm soát ra vào (Access Control) khi hệ thống cửa của Tổ chức/Doanh nghiệp được tích hợp và hỗ trợ công nghệ tương thích."
+        },
+        {
+          "title": "Vikki Bank cấp hạn mức tín dụng cho nhân viên của Tổ chức không?",
+          "content": "Có. Vikki Bank cấp hạn mức tín dụng cho từng khách hàng là cán bộ nhân viên của Tổ chức/Doanh nghiệp. Việc xét duyệt cấp hạn mức dựa trên hồ sơ cá nhân và các tiêu chí đánh giá tín dụng theo quy định của Vikki Bank áp dụng trong từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect phù hợp với những mô hình tổ chức nào?",
+          "content": "Thẻ VikkiONE Connect phù hợp với doanh nghiệp, trường học, tập đoàn, khu công nghiệp và các tổ chức có nhu cầu quản lý nhân sự/sinh viên kết hợp thanh toán không tiền mặt."
+        },
+        {
+          "title": "Doanh nghiệp triển khai VikkiONE Connect có cần thay đổi toàn bộ hệ thống hiện tại không?",
+          "content": "Không. Vikki Bank hỗ trợ tích hợp linh hoạt với hệ thống hiện hữu theo phương án thống nhất, giúp doanh nghiệp triển khai từng bước, không gián đoạn vận hành."
+        },
+        {
+          "title": "Doanh nghiệp có thể kiểm soát phạm vi sử dụng thẻ của nhân viên không?",
+          "content": "Có. Doanh nghiệp có thể cấu hình quyền sử dụng liên quan đến chấm công, ra vào, dịch vụ nội bộ theo chính sách quản lý của đơn vị."
+        },
+        {
+          "title": "Doanh nghiệp có thể theo dõi báo cáo chấm công tập trung không?",
+          "content": "Có. Dữ liệu chấm công được tổng hợp và xuất báo cáo theo phương án tích hợp đã triển khai với Vikki Bank."
+        },
+        {
+          "title": "Doanh nghiệp có thể triển khai thẻ theo từng phòng ban không?",
+          "content": "Có. Việc triển khai có thể thực hiện theo từng giai đoạn, phòng ban hoặc chi nhánh tùy nhu cầu thực tế."
+        },
+        {
+          "title": "Khi có sự cố toàn hệ thống, Doanh nghiệp có thể liên hệ đầu mối hỗ trợ nào?",
+          "content": "Doanh nghiệp có thể liên hệ trực tiếp Vikki Care 19006608 để được hỗ trợ kỹ thuật và nghiệp vụ kịp thời."
+        },
+        {
+          "title": "Vai trò của tổ chức trong việc cấp/thu hồi thẻ?",
+          "content": "Tổ chức có vai trò quản lý chính trong việc cấp và thu hồi thẻ (cán bộ, công chức, viên chức, hoặc thẻ ra vào) nhằm đảm bảo an ninh, trật tự và quy định. Tổ chức chịu trách nhiệm phê duyệt, cấp mới, đổi thẻ khi có thay đổi thông tin, thu hồi thẻ khi nhân sự chuyển công tác, nghỉ hưu, hoặc làm mất, đồng thời quản lý, giám sát việc sử dụng thẻ đúng mục đích."
+        },
+        {
+          "title": "Khi xảy ra tranh chấp chấm công/điểm danh, Vikki Bank có chịu trách nhiệm không?",
+          "content": "Vikki Bank không chịu trách nhiệm đối với tranh chấp chấm công/điểm danh nội bộ giữa tổ chức và nhân viên. Vikki Bank chỉ cung ứng dịch vụ tiện ích nội bộ, không quản lý dữ liệu nhân sự của tổ chức."
+        },
+        {
+          "title": "Nếu nhân viên/sinh viên phát sinh giao dịch bất thường trên thẻ VikkiONE Connect thì tổ chức/doanh nghiệp có bị ảnh hưởng không?",
+          "content": "Tổ chức/doanh nghiệp không bị ảnh hưởng. Vikki Bank có trách nhiệm thực hiện các tác nghiệp của ngân hàng theo quy định."
+        },
+        {
+          "title": "Nhân viên đã nghỉ việc và đang nợ thẻ tín dụng. Vậy Tổ chức có phải chịu trách nhiệm thu hồi nợ không?",
+          "content": "Khi nhân viên đã nghỉ việc và đang nợ thẻ tín dụng, Tổ chức không phải chịu trách nhiệm thu hồi nợ."
+        }
+      ]
+    },
+    {
+      "title": "Cá nhân",
+      "children": [
+        {
+          "title": "Tôi nhận thẻ VikkiONE Connect rồi nhưng chưa dùng được, vì sao?",
+          "content": "Thẻ VikkiONE Connect cần được kích hoạt trên ứng dụng Vikki trước khi sử dụng và trải nghiệm đầy đủ các tiện ích của thẻ."
+        },
+        {
+          "title": "Bao lâu sau khi đăng ký thì nhận được thẻ VikkiONE Connect?",
+          "content": "Thời gian nhận thẻ VikkiONE Connect thông thường vài ngày làm việc sau khi hoàn tất đăng ký, tùy theo phương thức nhận thẻ mà khách hàng đăng ký."
+        },
+        {
+          "title": "Tôi có thể kích hoạt thẻ VikkiONE Connect mà không cần ra ngân hàng không?",
+          "content": "Có. Bạn có thể kích hoạt thẻ VikkiONE Connect hoàn toàn trên ứng dụng Vikki theo các hướng dẫn hiển thị trên ứng dụng."
+        },
+        {
+          "title": "Tôi chưa tải ứng dụng Vikki thì quản lý thẻ được không?",
+          "content": "Bạn cần tải và đăng nhập ứng dụng Vikki để kích hoạt và quản lý thẻ VikkiONE Connect, đồng thời sử dụng đầy đủ các tiện ích liên quan đến thẻ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có tự động kích hoạt khi nhận không?",
+          "content": "Không. Bạn cần chủ động kích hoạt thẻ VikkiONE Connect trên ứng dụng Vikki trước khi sử dụng."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect bị kích hoạt sai thông tin thì sao?",
+          "content": "Bạn vui lòng liên hệ Vikki Care 19006608 để được hỗ trợ kiểm tra và xác minh lại thông tin."
+        },
+        {
+          "title": "Tôi làm mất thẻ VikkiONE Connect trước khi kích hoạt thì sao?",
+          "content": "Bạn vui lòng liên hệ Vikki Care 19006608 để được hỗ trợ khóa thẻ và thực hiện thủ tục cấp lại thẻ mới theo quy định."
+        },
+        {
+          "title": "Có thể yêu cầu cấp lại thẻ VikkiONE Connect khi còn hạn không?",
+          "content": "Có. Bạn có thể yêu cầu cấp lại thẻ VikkiONE Connect khi thẻ bị mất, hỏng hoặc khi cần thay đổi thông tin theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi xem thông tin thẻ VikkiONE Connect của Tôi ở đâu?",
+          "content": "Bạn có thể xem thông tin thẻ tại mục “THẺ” trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi có thể khóa thẻ VikkiONE Connect  tạm thời không?",
+          "content": "Có. Bạn có thể khóa thẻ VikkiONE Connect tạm thời trên ứng dụng Vikki tại mục “THẺ” và truy cập chức năng “Khóa thẻ”."
+        },
+        {
+          "title": "Tôi có thể bật/tắt thanh toán online không?",
+          "content": "Có, trong phần cài đặt thẻ."
+        },
+        {
+          "title": "Có thể giới hạn chi tiêu hàng ngày không?",
+          "content": "Có. Bạn có thể thiết lập giới hạn chi tiêu hàng ngày trong phần cài đặt thẻ trên ứng dụng Vikki theo chính sách áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi muốn đổi PIN thì làm sao?",
+          "content": "Bạn có thể đổi PIN thẻ VikkiONE Connect trên ứng dụng Vikki hoặc tại các máy ATM theo hướng dẫn hiển thị trên màn hình."
+        },
+        {
+          "title": "Ứng dụng Vikki không hiển thị thẻ thì sao?",
+          "content": "Bạn vui lòng đăng xuất và đăng nhập lại ứng dụng Vikki để kiểm tra. Nếu vẫn chưa hiển thị thẻ VikkiONE Connect, bạn có thể liên hệ Vikki Care 19006608 để được hỗ trợ."
+        },
+        {
+          "title": "Tôi có thể xem lịch sử giao dịch bao lâu?",
+          "content": "Bạn có thể xem toàn bộ lịch sử giao dịch thẻ VikkiONE Connect của bạn trên ứng dụng Vikki."
+        },
+        {
+          "title": "Ứng dụng Vikki bị treo khi vào mục thẻ?",
+          "content": "Bạn vui lòng cập nhật ứng dụng Vikki lên phiên bản mới nhất và thử đăng nhập lại. Nếu vẫn gặp lỗi, bạn có thể liên hệ Vikki Care 19006608 để được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Tôi có thể quản lý nhiều thẻ trên Ứng dụng Vikki không?",
+          "content": "Có. Bạn có thể quản lý nhiều thẻ trên ứng dụng Vikki trong cùng một tài khoản đăng nhập."
+        },
+        {
+          "title": "Tôi muốn nhận thông báo chi tiêu thì làm sao?",
+          "content": "Bạn có thể bật tính năng “Thông báo qua ứng dụng” trong phần Cài đặt trên ứng dụng Vikki để nhận thông báo chi tiêu và giao dịch."
+        },
+        {
+          "title": "Tôi chấm công nhưng hệ thống không ghi nhận?",
+          "content": "Bạn vui lòng liên hệ bộ phận quản lý/nhân sự của Tổ chức/Doanh nghiệp để được kiểm tra và hỗ trợ xử lý."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect bị trầy xước có ảnh hưởng không?",
+          "content": "Thẻ VikkiONE Connect bị trầy xước nhẹ thường không ảnh hưởng đến việc sử dụng. Trường hợp chip trên thẻ bị hỏng, bạn cần yêu cầu cấp lại thẻ theo quy định."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có thể dùng ở nhiều chi nhánh không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể sử dụng tại nhiều chi nhánh/địa điểm trong phạm vi được Tổ chức/Doanh nghiệp cấp quyền sử dụng."
+        },
+        {
+          "title": "Khi nhân viên nghỉ việc, thẻ có cần đổi không?",
+          "content": "Không bắt buộc. Khi nhân viên nghỉ việc, Tổ chức/Doanh nghiệp có thể phối hợp với Vikki Bank để điều chỉnh hoặc tắt các chức năng chấm công, kiểm soát ra vào theo thỏa thuận triển khai; các chức năng ngân hàng của thẻ vẫn được duy trì theo quy định và thỏa thuận liên quan. "
+        },
+        {
+          "title": "Thẻ có thể dùng để trả học phí, vé máy bay, hóa đơn dịch vụ không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể được sử dụng để thanh toán học phí, vé máy bay, hóa đơn dịch vụ và các giao dịch thanh toán khác tại các điểm chấp nhận thẻ trong nước và quốc tế theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi thanh toán nhưng bị trừ tiền hai lần?",
+          "content": "Giao dịch của bạn có thể đang trong trạng thái chờ xử lý (giao dịch treo). Tuy nhiên, bạn vui lòng liên hệ ngay Vikki Care 19006608 để được hỗ trợ kiểm tra và xử lý kịp thời."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect bị từ chối tại cửa hàng?",
+          "content": "Bạn vui lòng kiểm tra số dư tài khoản hoặc hạn mức tín dụng còn lại và trạng thái thẻ trên ứng dụng Vikki. Nếu vẫn không thực hiện được giao dịch, bạn có thể liên hệ Vikki Care 19006608 để được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Thẻ có hỗ trợ thanh toán không tiếp xúc không?",
+          "content": "Có. Thẻ VikkiONE Connect hỗ trợ thanh toán không tiếp xúc (Contactless) tại các thiết bị thanh toán (POS) có hỗ trợ công nghệ tương thích."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có thể dùng tại máy ATM không?",
+          "content": "Có. Thẻ VikkiONE Connect có thể sử dụng tại máy ATM để rút tiền mặt, đổi PIN và thực hiện các giao dịch khác theo chức năng ATM hỗ trợ."
+        },
+        {
+          "title": "Thanh toán QR có dùng được không?",
+          "content": "Thẻ VikkiONE Connect có thể sử dụng thanh toán QR tại các điểm chấp nhận phù hợp theo quy định và cấu hình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Sao kê chưa chốt nhưng đã thấy dư nợ?",
+          "content": "Ứng dụng Vikki sẽ cập nhật dư nợ theo thời gian thực ngay khi giao dịch phát sinh để giúp bạn theo dõi và quản lý chi tiêu hiệu quả. Dư nợ hiện tại: Tổng số tiền bạn đã chi tiêu tính đến thời điểm kiểm tra. Dư nợ cuối kỳ (Sao kê): Tổng số tiền được chốt vào ngày sao kê hàng tháng để thanh toán."
+        },
+        {
+          "title": "Làm thế nào để nâng hạn mức tín dụng?",
+          "content": "Bạn nên duy trì lịch sử tín dụng tốt thông qua việc sử dụng thẻ hợp lý và thanh toán dư nợ đúng hạn. Vikki Bank sẽ xem xét điều chỉnh hạn mức tín dụng định kỳ theo các tiêu chí đánh giá tín dụng áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi tích điểm SkyJoy như thế nào?",
+          "content": "Bạn có thể tích điểm SkyJoy thông qua các giao dịch thanh toán bằng thẻ VikkiONE Connect theo chương trình tích điểm áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Điểm tích lũy có hết hạn không?",
+          "content": "Điểm tích lũy từ các giao dịch chi tiêu bằng thẻ được áp dụng thời hạn sử dụng theo chính sách của từng chương trình trong từng thời kỳ."
+        },
+        {
+          "title": "Tôi có thể nhận thông báo ưu đãi mới không?",
+          "content": "Có. Bạn có thể nhận thông báo ưu đãi mới thông qua ứng dụng Vikki hoặc website của Vikki Bank."
+        },
+        {
+          "title": "Thẻ có chương trình hoàn tiền không ?",
+          "content": "Có. Chương trình hoàn tiền được áp dụng theo từng chương trình ưu đãi trong từng thời kỳ. Bạn có thể tham khảo tại mục “Ưu đãi Vikki” hoặc “Ưu đãi” trong tab “THẺ” trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi cần hỗ trợ về ưu đãi thì liên hệ ai?",
+          "content": "Bạn vui lòng liên hệ Vikki Care 19006608 để được hỗ trợ bất kỳ lúc nào."
+        },
+        {
+          "title": "Khi nào nên gọi đến Tổng đài Chăm sóc khách hàng thay vì tự xử lý ứng dụng Vikki?",
+          "content": "Bạn nên liên hệ Tổng đài chăm sóc khách hàng Vikki Care 19006608 khi bị mất thẻ, nghi ngờ gian lận hoặc gặp lỗi giao dịch cần được hỗ trợ kiểm tra."
+        },
+        {
+          "title": "Hệ thống của Vikki có kết nối được với phần mềm nhân sự hiện tại của công ty không?",
+          "content": "Có. Vikki Bank có thể hỗ trợ tích hợp dữ liệu chấm công và các dữ liệu liên quan vào phần mềm quản lý nhân sự của Tổ chức/Doanh nghiệp theo phương án tích hợp được thống nhất trong quá trình triển khai. <br><strong>Dữ liệu chấm công được bảo mật như thế nào?</strong><br>Dữ liệu chấm công sẽ được mã hóa, lưu trữ và bảo vệ theo các tiêu chuẩn an toàn thông tin và quy định pháp luật về bảo vệ dữ liệu cá nhân áp dụng từng thời kỳ.<br><strong>Thẻ VikkiONE Connect có hỗ trợ thẻ ảo (Virtual Card) cho doanh nghiệp không?</strong><br>Có. Thẻ VikkiONE Connect hỗ trợ thẻ ảo trên ứng dụng Vikki để thực hiện các giao dịch thanh toán trực tuyến và thẻ vật lý được sử dụng cho các chức năng chấm công và quản lý nhân sự nội bộ của Tổ chức/Doanh nghiệp theo phương án triển khai."
+        },
+        {
+          "title": "Tôi dưới 18 tuổi (sinh viên) có đăng ký thẻ VikkiONE Connect được không?",
+          "content": "Hiện tại, chính sách phát hành thẻ VikkiONE Connect chưa áp dụng đối với khách hàng dưới 18 tuổi. Thẻ được thiết kế dành riêng cho sinh viên từ đủ 18 tuổi trở lên và cán bộ nhân viên của các Tổ chức/Doanh nghiệp tham gia chương trình triển khai."
+        },
+        {
+          "title": "Tôi cần mang giấy tờ gì khi đi nhận thẻ VikkiONE Connect tại trường/công ty?",
+          "content": "Bạn có thể sử dụng CCCD/Hộ chiếu bản gốc hoặc thông tin định danh điện tử hợp lệ (VNeID) để đối chiếu khi nhận thẻ theo quy định của Trường/Công ty."
+        },
+        {
+          "title": "Có thể đăng ký thẻ VikkiONE Connect online 100% không?",
+          "content": "Có. Bạn có thể đăng ký thẻ VikkiONE Connect hoàn toàn trực tuyến trên ứng dụng Vikki. "
+        },
+        {
+          "title": "Tôi có thể chọn địa chỉ nhận thẻ VikkiONE Connect không?",
+          "content": "Có. Bạn có thể lựa chọn nhận thẻ tại địa chỉ nhà riêng, địa điểm của Tổ chức/Doanh nghiệp hoặc tại bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất theo phương thức nhận thẻ đã đăng ký."
+        },
+        {
+          "title": "Hạn mức tín dụng tối đa tôi có thể nhận được là bao nhiêu?",
+          "content": "Hạn mức tín dụng được Vikki Bank xét duyệt cho từng khách hàng dựa trên lịch sử tín dụng và các tiêu chí đánh giá theo quy định áp dụng từng thời kỳ. Khách hàng duy trì lịch sử tín dụng tốt và sử dụng thẻ hiệu quả có thể được xem xét điều chỉnh tăng hạn mức trong các kỳ đánh giá tiếp theo."
+        },
+        {
+          "title": "Tôi có được miễn lãi khi tiêu dùng bằng thẻ tín dụng không?",
+          "content": "Có. Thẻ VikkiONE Connect được áp dụng thời gian miễn lãi tối đa đến 55 ngày, tùy theo dòng thẻ và điều kiện áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thanh toán quốc tế bằng thẻ VikkiONE Connect có phí chuyển đổi ngoại tệ không?",
+          "content": "Có. Giao dịch thanh toán quốc tế có thể phát sinh phí chuyển đổi ngoại tệ theo quy định của Vikki Bank và Mastercard. Bạn vui lòng tham khảo Biểu phí thẻ VikkiONE Connect tại website hoặc trên ứng dụng Vikki để biết chi tiết."
+        },
+        {
+          "title": "Tôi có thể rút tiền mặt từ hạn mức tín dụng không?",
+          "content": "Có. Bạn có thể rút tiền mặt từ hạn mức tín dụng tại các máy ATM có biểu tượng Mastercard theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Làm sao để thanh toán dư nợ thẻ tín dụng hàng tháng?",
+          "content": "Bạn có thể nộp tiền vào tài khoản Vikki để hệ thống tự động trích thu nợ hoặc chủ động thực hiện thanh toán trên ứng dụng Vikki theo hướng dẫn hiển thị."
+        },
+        {
+          "title": "Nếu tôi thanh toán trễ hạn thì sao?",
+          "content": "Trường hợp thanh toán trễ hạn, bạn có thể phát sinh phí chậm thanh toán và lãi suất theo quy định áp dụng từng thời kỳ"
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiONE Connect để thanh toán tại nước ngoài không?",
+          "content": "Có. Bạn có thể sử dụng thẻ VikkiONE Connect để thanh toán tại các điểm chấp nhận thẻ Mastercard trên toàn cầu theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có cần chạm sát vào máy chấm công không?",
+          "content": "Thẻ sử dụng công nghệ không tiếp xúc (contactless); bạn chỉ cần đưa thẻ lại gần đầu đọc (khoảng 1–3 cm) để thực hiện chấm công. Tùy theo phương thức triển khai của Tổ chức/Doanh nghiệp, việc chấm công cũng có thể được thực hiện bằng nhận diện khuôn mặt hoặc các phương thức xác thực khác theo hệ thống hỗ trợ."
+        },
+        {
+          "title": "Nếu tôi quên thẻ vật lý ở nhà thì có cách nào chấm công không?",
+          "content": "Bạn vui lòng liên hệ bộ phận nhân sự của Tổ chức/Doanh nghiệp để được hỗ trợ. Tùy theo phương thức triển khai, một số hệ thống có thể hỗ trợ chấm công bằng nhận diện khuôn mặt (FaceID), NFC hoặc các phương thức xác thực khác theo hệ thống áp dụng."
+        },
+        {
+          "title": "Dữ liệu chấm công trên ứng dụng Vikki và tại thiết bị có khớp nhau không?",
+          "content": "Dữ liệu chấm công trên ứng dụng và tại thiết bị được đồng bộ trên cùng hệ thống dữ liệu tập trung, do đó thông tin sẽ được cập nhật thống nhất theo thời gian xử lý của hệ thống."
+        },
+        {
+          "title": "Tôi nên làm gì nếu thẻ VikkiONE Connect bị kẹt trong máy ATM?",
+          "content": "Bạn vui lòng khóa thẻ VikkiONE Connect ngay trên ứng dụng Vikki và liên hệ ngân hàng sở hữu máy ATM nơi bạn thực hiện giao dịch hoặc Vikki Care 19006608 để được hỗ trợ xử lý."
+        },
+        {
+          "title": "Mã CVV trên thẻ VikkiONE Connect là gì?",
+          "content": "Mã CVV là 3 chữ số bảo mật được in ở mặt sau thẻ, sử dụng để xác thực các giao dịch thanh toán trực tuyến. Bạn không nên chia sẻ mã này với bất kỳ ai để đảm bảo an toàn thông tin thẻ."
+        },
+        {
+          "title": "Tôi có thể tự thay đổi hạn mức thanh toán online không?",
+          "content": "Có. Bạn có thể chủ động điều chỉnh hạn mức thanh toán online trên ứng dụng Vikki theo các mức hệ thống cho phép nhằm tăng cường kiểm soát và đảm bảo an toàn giao dịch."
+        },
+        {
+          "title": "Nếu tôi bị mất điện thoại và mất thẻ cùng lúc thì phải làm sao?",
+          "content": "Bạn vui lòng gọi ngay Vikki Care 19006608 từ một điện thoại khác để yêu cầu khóa thẻ và tài khoản khẩn cấp nhằm đảm bảo an toàn giao dịch."
+        },
+        {
+          "title": "Thẻ bị cong, vênh có dùng được nữa không?",
+          "content": "Trường hợp thẻ bị cong, vênh nhưng chip và anten NFC vẫn hoạt động bình thường, thẻ vẫn có thể sử dụng. Nếu chip hoặc anten NFC bên trong bị hỏng, bạn nên yêu cầu cấp lại thẻ mới."
+        },
+        {
+          "title": "Tính năng thanh toán không tiếp xúc (Contactless) có an toàn không?",
+          "content": "Tính năng thanh toán không tiếp xúc (Contactless) được áp dụng các tiêu chuẩn bảo mật theo quy định của Ngân hàng Nhà nước Việt Nam và các tiêu chuẩn thanh toán quốc tế. Đối với các giao dịch có giá trị lớn, hệ thống có thể yêu cầu xác thực bổ sung như nhập PIN hoặc ký xác nhận để tăng cường an toàn."
+        },
+        {
+          "title": "Tại sao tôi nhận được OTP dù không thực hiện giao dịch?",
+          "content": "Có thể có giao dịch đang được thực hiện bằng thông tin thẻ của bạn. Bạn vui lòng khóa thẻ ngay trên ứng dụng Vikki và liên hệ Vikki Care 19006608 để được hỗ trợ kiểm tra kịp thời."
+        },
+        {
+          "title": "Làm sao để biết thẻ VikkiONE Connect của mình là thẻ chính chủ?",
+          "content": "Tên của bạn được in trên mặt trước của thẻ vật lý theo thông tin đăng ký. Ngoài ra, bạn có thể kiểm tra thông tin chủ thẻ VikkiONE Connect trên ứng dụng Vikki để đối chiếu."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiONE Connect để thanh toán tại các trang web nước ngoài không uy tín không?",
+          "content": "Bạn không nên sử dụng thẻ VikkiONE Connect để thanh toán tại các website không uy tín. Để đảm bảo an toàn thông tin thẻ, bạn nên thực hiện giao dịch tại các website đáng tin cậy và có cơ chế bảo mật thanh toán phù hợp."
+        },
+        {
+          "title": "PIN thẻ và mật khẩu đăng nhập ứng dụng Vikki có giống nhau không?",
+          "content": "Không. PIN thẻ và mật khẩu đăng nhập ứng dụng là hai loại mã khác nhau, được sử dụng cho các mục đích xác thực khác nhau nhằm tăng cường bảo mật."
+        },
+        {
+          "title": "Điểm SkyJoy dùng để đổi quà gì?",
+          "content": "Bạn có thể sử dụng điểm SkyJoy để đổi vé máy bay Vietjet, voucher mua sắm, ẩm thực và nhiều ưu đãi, dịch vụ khác theo chương trình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Làm sao để liên kết tài khoản SkyJoy với thẻ Vikki?",
+          "content": "Việc liên kết tài khoản SkyJoy với thẻ VikkiONE Connect thường được thực hiện tự động khi bạn đăng ký thẻ trên ứng dụng Vikki theo quy trình áp dụng."
+        },
+        {
+          "title": "Mức hoàn tiền tối đa mỗi tháng là bao nhiêu?",
+          "content": "Mức hoàn tiền tối đa mỗi tháng phụ thuộc vào từng chương trình ưu đãi cụ thể và được công bố trên ứng dụng Vikki theo từng thời kỳ."
+        },
+        {
+          "title": "Làm sao để biết mình đã nhận được bao nhiêu tiền hoàn (Cashback)?",
+          "content": "Bạn có thể kiểm tra số tiền hoàn (Cashback) trong sao kê thẻ hoặc mục thông tin giao dịch trên ứng dụng Vikki để biết chi tiết."
+        },
+        {
+          "title": "Ưu đãi tại các cửa hàng có thể áp dụng đồng thời với thẻ VikkiONE Connect không?",
+          "content": "Tùy theo điều kiện của từng chương trình, bạn có thể đồng thời nhận ưu đãi từ hệ thống Mastercard và các đối tác của Vikki Bank theo chính sách áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có ưu đãi phòng chờ sân bay không?",
+          "content": "Có. Thông tin chi tiết về ưu đãi phòng chờ sân bay được công bố tại mục “Ưu đãi thẻ” trên ứng dụng Vikki theo các chương trình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Làm sao để xuất file sao kê dạng PDF?",
+          "content": "Bạn vào mục “Sao kê” trên ứng dụng Vikki và chọn chức năng “Tải về” để xuất file sao kê dạng PDF."
+        },
+        {
+          "title": "Tôi đi công tác nước ngoài, có cần gọi điện thông báo cho ngân hàng không?",
+          "content": "Không bắt buộc, tuy nhiên để việc thanh toán được thuận tiện hơn, bạn có thể chủ động thông báo trước cho Vikki Bank qua ứng dụng hoặc Vikki Care 19006608."
+        },
+        {
+          "title": "Nếu tôi trả lại hàng đã mua bằng thẻ VikkiONE Connect, tiền hoàn về đâu?",
+          "content": "Số tiền hoàn sẽ được chuyển trả trực tiếp vào tài khoản thẻ tín dụng/thanh toán của bạn sau khi bên bán hoàn tất xử lý giao dịch theo quy định."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiONE Connect để thanh toán tiền điện, nước tự động hàng tháng không?",
+          "content": "Có. Bạn có thể thiết lập tính năng “Thanh toán hóa đơn tự động” trên ứng dụng Vikki khi tính năng được triển khai và thông báo áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi muốn đóng thẻ VikkiONE Connect thì làm thế nào?",
+          "content": "Bạn cần tất toán toàn bộ dư nợ (nếu có) và liên hệ Vikki Care 19006608 để được hướng dẫn thực hiện thủ tục chấm dứt sử dụng thẻ VikkiONE Connect theo quy định."
+        },
+        {
+          "title": "Tại sao thẻ VikkiONE Connect của tôi bị từ chối khi thanh toán tại website nước ngoài?",
+          "content": "Giao dịch thanh toán thẻ có thể bị từ chối do một số nguyên nhân như website yêu cầu xác thực 3D Secure nhưng kết nối bị gián đoạn, thẻ chưa bật tính năng thanh toán quốc tế hoặc các yếu tố kiểm soát an toàn giao dịch. Bạn vui lòng kiểm tra lại cài đặt thẻ VikkiONE Connect trên ứng dụng Vikki hoặc liên hệ Vikki Care 19006608 để được hỗ trợ."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiONE Connect để trả phí gửi xe tại các trung tâm thương mại không?",
+          "content": "Có. Bạn có thể sử dụng thẻ VikkiONE Connect để thanh toán phí gửi xe tại các địa điểm chấp nhận thẻ Mastercard hoặc tại các địa điểm có hỗ trợ thiết bị thanh toán không tiếp xúc (Contactless) tương thích."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect khác gì thẻ VikkiGO+?",
+          "content": "Thẻ VikkiONE Connect khác biệt chính so với thẻ VikkiGO+ ở khả năng tích hợp chức năng định danh phục vụ chấm công, điểm danh và quản lý nội bộ của Tổ chức/Doanh nghiệp. Ngoài ra, dòng thẻ này còn được thiết kế với các chương trình ưu đãi dành riêng cho sinh viên và cán bộ nhân viên tại các trường học, tổ chức có liên kết với Vikki Bank theo chương trình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có phải là thẻ Thanh toán kết hợp Tín dụng không?",
+          "content": "Đúng. Thẻ VikkiONE Connect là loại thẻ tích hợp cả tài khoản thanh toán và hạn mức tín dụng trên cùng một chiếc thẻ."
+        },
+        {
+          "title": "Thẻ vật lý và thẻ ảo trên ứng dụng Vikki có số giống nhau không?",
+          "content": "Thẻ vật lý và thẻ ảo trên ứng dụng Vikki sẽ có cùng số thẻ để thuận tiện cho việc quản lý và giao dịch."
+        },
+        {
+          "title": "Phí cấp lại thẻ do làm mất là bao nhiêu?",
+          "content": "Phí cấp lại thẻ được áp dụng theo Biểu phí thẻ VikkiONE Connect và được cập nhật theo quy định từng thời kỳ. Bạn có thể tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank."
+        },
+        {
+          "title": "Tôi có bị tính lãi nếu chỉ thanh toán số tiền tối thiểu?",
+          "content": "Có. Trường hợp bạn chỉ thanh toán số tiền tối thiểu, phần dư nợ còn lại sẽ được tính lãi theo quy định của thẻ tín dụng áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Làm sao để được miễn phí thường niên trọn đời?",
+          "content": "Bạn có thể được miễn phí thường niên theo các chương trình ưu đãi hoặc khi đáp ứng điều kiện chi tiêu theo chính sách áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Phí rút tiền mặt tại ATM là bao nhiêu?",
+          "content": "Phí rút tiền mặt tại ATM được áp dụng theo Biểu phí thẻ VikkiONE Connect và được cập nhật theo quy định từng thời kỳ. Bạn vui lòng tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank."
+        },
+        {
+          "title": "Cách tính lãi suất của thẻ tín dụng Vikki như thế nào?",
+          "content": "Lãi suất thẻ tín dụng được tính trên dư nợ thực tế. Thông tin chi tiết về lãi suất và cách tính lãi được công bố trong Biểu phí thẻ VikkiONE Connect trên ứng dụng Vikki hoặc website của Vikki Bank trong từng thời kỳ."
+        },
+        {
+          "title": "Biểu tượng cột sóng trên thẻ có ý nghĩa gì?",
+          "content": "Đây là biểu tượng cho biết thẻ hỗ trợ tính năng thanh toán không tiếp xúc (Contactless), cho phép thực hiện giao dịch bằng cách đưa thẻ lại gần thiết bị thanh toán tương thích."
+        },
+        {
+          "title": "Khoảng cách tối đa để máy nhận tín hiệu Contactless là bao nhiêu?",
+          "content": "Khoảng cách nhận tín hiệu thanh toán không tiếp xúc (Contactless) thông thường dưới 4 cm để đảm bảo an toàn và hạn chế phát sinh giao dịch ngoài ý muốn."
+        },
+        {
+          "title": "Vikki Care có làm việc vào ngày lễ không?",
+          "content": "Có. Vikki Care 19006608 sẽ hỗ trợ khách hàng 24/7, bao gồm cả ngày lễ và cuối tuần."
+        },
+        {
+          "title": "Tôi có thể chat trực tiếp với nhân viên hỗ trợ trên ứng dụng Vikki không?",
+          "content": "Có. Bạn có thể sử dụng tính năng Live Chat trên ứng dụng Vikki để được hỗ trợ trực tiếp với nhân viên của Vikki Bank."
+        },
+        {
+          "title": "Làm sao để đóng góp ý kiến về chất lượng thẻ?",
+          "content": "Bạn có thể gửi email đến 19006608@vikkibank.vn, phản hồi trực tiếp trên ứng dụng Vikki hoặc liên hệ Vikki Care 19006608 để đóng góp ý kiến về chất lượng thẻ VikkiONE Connect."
+        },
+        {
+          "title": "Nếu tôi đổi số điện thoại đăng ký thì thẻ có dùng được tiếp không?",
+          "content": "Bạn vẫn có thể sử dụng thẻ VikkiONE Connect. Tuy nhiên, bạn cần cập nhật số điện thoại mới trên ứng dụng Vikki hoặc tại Chi nhánh/Phòng Giao dịch Vikki Bank nhằm đảm bảo nhận được mã OTP và sử dụng đầy đủ các tính năng của thẻ."
+        },
+        {
+          "title": "Làm sao để biết thẻ của mình sắp hết hạn?",
+          "content": "Ngày hết hạn (Expiry Date) được in trên thẻ theo định dạng tháng/năm. Ngoài ra, ứng dụng Vikki có thể gửi thông báo nhắc trước thời điểm thẻ hết hạn để bạn chủ động theo dõi và thực hiện gia hạn khi cần."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có hỗ trợ rút tiền mặt tại nước ngoài không?",
+          "content": "Có. Bạn có thể rút tiền mặt tại các máy ATM có biểu tượng Mastercard trên toàn cầu theo quy định áp dụng của Mastercard từng thời kỳ."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect gồm những tính năng chính  nào?",
+          "content": "Thẻ VikkiONE Connect ngoài tính năng tài chính của loại thẻ debit hay credit  còn là thẻ dùng để quản lý nhân sự"
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có đăng ký được thẻ phụ không? Số lượng tối đa của thẻ phụ là bao nhiêu?",
+          "content": "Thẻ VikkiONE Connect không phát hành thẻ phụ."
+        },
+        {
+          "title": "Doanh nghiệp/Tổ chức có quyền trực tiếp yêu cầu ngân hàng cung cấp sao kê tài khoản cá nhân của nhân viên không? [v2]",
+          "content": "Không. Ngân hàng chỉ cung cấp sao kê cho chính chủ tài khoản hoặc cơ quan nhà nước có thẩm quyền."
+        },
+        
+        {
+          "title": "Trường hợp nhân viên sử dụng điện thoại thông minh không có NFC thì có mở thẻ VikkiONE Connect được không?",
+          "content": "Nhân viên có thể đến trực tiếp Chi nhánh/Phòng Giao dịch gần nhất của Vikki Bank để được hỗ trợ mở thẻ."
+        },
+        {
+          "title": "Điều kiện mở thẻ",
+          "content": "<p>Để mở thẻ Vạn năng VikkiONE Connect, bạn cần đáp ứng các điều kiện sau:</p><ul><li>(1) Có tài khoản VikkiME đang hoạt động trên ứng dụng Vikki. </li><li>(2) Thuộc danh sách khách hàng do nhân sự của tổ chức/doanh nghiệp có liên kết với Vikki Bank triển khai thẻ theo từng chương trình.</li><li>(3) Đáp ứng các điều kiện phát hành thẻ theo quy định hiện hành của Vikki Bank và quy định pháp luật.</li></ul>"
+        },
+        {
+          "title": "Tổ chức có quyền can thiệp vào hạn mức tín dụng cá nhân của nhân viên không?",
+          "content": "Không. Hạn mức tín dụng được Vikki Bank xét duyệt riêng dựa trên nhu cầu và điều kiện của từng cá nhân."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect được in hình ảnh của chủ thẻ ở mặt trước của Thẻ. Xin cho biết hình ảnh này là hình ảnh do đối tác cung cấp hay hình ảnh sinh trắc học do app Vikki Bank lưu trữ khi mở thẻ?",
+          "content": "Hình ảnh do HDBank cung cấp theo tiêu chuẩn ảnh do hai bên thống nhất."
+        },
+        {
+          "title": "Tôi có thể cung cấp hình ảnh mới nhất và chất lượng (đẹp) của tôi cho Vikki Bank để được in lên thẻ VikkiONE Connect không?",
+          "content": "Bạn không được cung cấp hình trực tiếp cho Vikki Bank mà cung cấp cho nhân sự phụ trách của công ty bạn đang làm việc, tại thời điểm phù hợp (trước khi phát hành thẻ)."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect được liên kết với tài khoản nào?",
+          "content": "Thẻ VikkiONE Connect được liên kết với tài khoản VikkiMe của Vikki Bank."
+        },
+        {
+          "title": "Hiện tại, tôi đang nhận lương qua tài khoản mở tại ngân hàng khác. Vậy tôi có thể sử dụng Thẻ VikkiONE Connect để nhận lương không?",
+          "content": "Việc chi lương qua ngân hàng nào là do Tổ chức/Doanh nghiệp quyết định."
+        },
+        {
+          "title": "Tôi có biên chế làm việc tại địa điểm A nhưng hiện tôi đang công tác bên ngoài dài hạn, vậy tôi có thể mở thẻ được không?",
+          "content": "Được, bạn thuộc danh sách được xét duyệt cấp thẻ VikkiONE Connect."
+        },
+        {
+          "title": "Bạn bè, người thân (không phải nhân viên của tổ chức tôi đang làm việc) có thể mở thẻ VikkiONE Connect không?",
+          "content": "Không. Thẻ VikkiONE Connect được phát hành dành riêng cho CBNV có hợp tác triển khai với Vikki Bank và đối tượng khách hàng được cập nhật theo quy định của Vikki Bank tại từng thời kỳ."
+        },
+        {
+          "title": "Tôi đã có tài khoản ngân hàng khác thì tôi có thể liên kết tài khoản này với thẻ VikkiONE Connect không?",
+          "content": "Không. Thẻ VikkiONE Connect được gắn kết với tài khoản VikkiMe của Vikki Bank."
+        },
+        {
+          "title": "Hiệu lực thẻ?",
+          "content": "Thẻ VikkiONE Connect có hiệu lực 5 năm."
+        },
+        {
+          "title": "Tôi có thể thay đổi địa chỉ nhận thẻ VikkiONE Connect không?",
+          "content": "Có. Bạn vui lòng liên hệ Vikki Care 19006608 hoặc bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để được hỗ trợ."
+        },
+        {
+          "title": "Sau khi nhận Thẻ VikkiONE Connect, tôi cần lưu ý gì khi sử dụng thẻ?",
+          "content": "Sau khi nhận thẻ, khách hàng cần thực hiện kích hoạt thẻ trên app (lưu ý chỉ kích hoạt thẻ khi đã nhận thẻ vật lý), cài đặt mã PIN giao dịch. Chủ động khóa/mở thẻ khi cần và bảo quản thẻ an toàn, bảo mật thông tin thẻ. Không cung cấp thông tin thẻ, mã PIN, mã OTP cho bất kỳ ai."
+        },
+        {
+          "title": "Tôi không thể kích hoạt được thẻ thì cần phải làm gì?",
+          "content": "<p>Bạn vui lòng thực hiện một trong các bước sau:</p><ul><li> (1) Đăng xuất và đăng nhập lại để thực hiện.</li><li> (2) Cập nhật phiên bản ứng dụng Vikki mới nhất.</li><li> (3) Liên hệ Vikki Care 19006608 hoặc bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để được hỗ trợ.</li><ul>"
+        },
+        {
+          "title": "Tôi có thể thay đổi số tài khoản liên kết với thẻ VikkiONE Connect không?",
+          "content": "Có. Bạn có thể đến Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để yêu cầu thay đổi."
+        },
+        {
+          "title": "Tôi có thể cập nhật số giấy tờ tuỳ thân mà không phải đến ngân hàng không?",
+          "content": "Có. Bạn có thể đăng nhập vào ứng dụng Vikki để cập nhật số giấy tờ tuỳ thân. Tuy nhiên, nếu bạn muốn cập nhật các thông tin số điện thoại, địa chỉ thì phải đến Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để được hỗ trợ."
+        },
+        {
+          "title": "Nhân viên có bắt buộc phải mở tài khoản tín dụng khi dùng thẻ không?",
+          "content": "Không. Hạn mức tín dụng được cấp riêng theo nhu cầu và điều kiện xét duyệt của từng cá nhân."
+        },
+        {
+          "title": "Chủ thẻ có thể quản lý Thẻ VikkiONE Connect như thế nào?",
+          "content": "Chủ thẻ quản lý thẻ VikkiONE Connect trên app Vikki như xem kích hoạt thẻ, tạo PIN, xem thông tin thẻ, khóa/mở thẻ, cài đặt hạn mức giao dịch thẻ và tra soát giao dịch."
+        },
+        {
+          "title": "Nếu bị mất cả điện thoại và thẻ vật lý cùng lúc, tôi phải làm gì?",
+          "content": "Bạn cần gọi ngay đến hotline Vikki Care 19006608 để yêu cầu khóa thẻ và tài khoản ứng dụng."
+        },
+        {
+          "title": "Khi thay thế thẻ, tôi có được thay đổi hoặc cập nhật hình ảnh mới không?",
+          "content": "Khi thay thế thẻ, bạn có thể cập nhật hình ảnh mới với bộ phận nhân sự của tổ chức bạn đang làm việc. Tuy nhiên, thủ tục thay thế thẻ sẽ theo quy định của Vikki Bank tại từng thời điểm."
+        },
+        {
+          "title": "Nếu thẻ VikkiONE Connect bị mất (thất lạc) thì chủ thẻ nên làm gì?",
+          "content": "<p>Thẻ VikkiONE Connect ngoài là thẻ tài chính còn là thẻ nhân viên nên chủ thẻ cần:</p><ul><li> (1) Thông báo cho Vikki Bank để khóa thẻ.</li><li> (2) Thông báo cho phòng nhân sự của công ty bạn đang làm việc để được hỗ trợ trong thời gian chờ có thẻ mới.</li></ul>"
+        },
+        {
+          "title": "Tôi làm mất thẻ sinh viên, khi thay thế thẻ tôi có phải cung cấp giấy xác nhận sinh viên hay không?",
+          "content": "Có. Bạn cần cung cấp giấy xác nhận của Trường khi thực hiện thay thế thẻ."
+        },
+        {
+          "title": "Trường hợp tôi đã có thẻ nhân viên công ty A, sau đó nghỉ việc và chuyển sang công ty B thì có phải đăng ký cấp lại thẻ hay chỉ thực hiện điều chỉnh thông tin?",
+          "content": "Bạn phải đăng ký cấp lại thẻ nếu tổ chức/doanh nghiệp mới của bạn có liên kết triển khai thẻ VikkiONE Connect với Vikki Bank."
+        },
+        {
+          "title": "Tôi cần làm gì khi thẻ hết hạn sử dụng?",
+          "content": "Trước khi thẻ hết hạn, Vikki sẽ gửi thông báo hướng dẫn gia hạn trực tiếp trên ứng dụng. Vikki Bank sẽ thực hiện cấp thẻ mới theo quy trình hiện hành. Bạn vui lòng theo dõi thông báo trên ứng dụng Vikki hoặc liên hệ Vikki Care nếu cần hỗ trợ thêm."
+        },
+        {
+          "title": "Tôi bị mất thẻ và khóa thẻ ngay sau đó. Sau 1 tháng tôi tìm lại được thẻ, tôi có nên mở khóa thẻ và sử dụng tiếp thẻ?",
+          "content": "Không. Bạn nên cấp lại thẻ mới để đảm bảo an toàn."
+        },
+        {
+          "title": "Tôi đã khóa thẻ thì có phát sinh phí thường niên nữa hay không?",
+          "content": "Khi bạn yêu cầu khóa thẻ, đã hoàn tất các nghĩa vụ nợ liên quan đến thẻ và ngân hàng đã thực hiện khóa và hủy thẻ thì sẽ không phát sinh thêm bất kỳ phí nào liên quan đến thẻ này."
+        },
+        {
+          "title": "Tôi chỉ muốn sử dụng thẻ ghi nợ và muốn khóa thẻ tín dụng được hay không?",
+          "content": "Không. Thẻ VikkiONE Connect là thẻ tích hợp cả tài khoản thanh toán và hạn mức tín dụng trên cùng một thẻ. Nếu bạn khóa thẻ tín dụng thì đồng thời thẻ ghi nợ cũng sẽ bị khóa."
+        },
+        {
+          "title": "Tôi tự khóa thẻ và làm cách nào mở khóa thẻ trên app?",
+          "content": "<p>Bạn có thể mở khóa thẻ ngay lập tức trên ứng dụng Vikki theo các bước sau: </p><ul><li>(1) Tại màn hình chính, chọn mục \"Thẻ\". </li><li>(2) Chọn thẻ Vạn năng VikkiONE Connect đang ở trạng thái khóa.</li><li> (3) Chọn \"Mở khóa thẻ\".</li><ul>"
+        },
+        {
+          "title": "Tôi nghi ngờ lộ thông tin thẻ?",
+          "content": "<p>Để đảm bảo an toàn, bạn vui lòng khóa thẻ ngay lập tức theo một trong hai cách sau: </p><ul><li>(1) Cách 1: Khóa thẻ trực tiếp trên ứng dụng Vikki: <br>Đăng nhập ứng dụng Vikki, chọn mục \"Thẻ\"; <br>Chọn thẻ Vạn năng VikkiONE Connect đang sử dụng; <br>Chọn \"Khóa thẻ tạm thời\". </li><li>(2) Cách 2: <br>Liên hệ ngay với Vikki Care qua tính năng \"Hỗ trợ\" trên ứng dụng <br>Gọi Hotline 1900 6608 để được hỗ trợ khóa thẻ ngay trong trường hợp không thể thao tác trên ứng dụng. <p><strong>Sau khi khóa thẻ, bạn có thể: </strong> </p> Yêu cầu phát hành thẻ thay thế trực tiếp trên ứng dụng Vikki hoặc <br>Liên hệ Vikki Care để được tư vấn hủy thẻ cũ và hỗ trợ phát hành thẻ mới.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể bật/tắt chức năng rút tiền tại ATM không?",
+          "content": "Có. Bạn vào ứng dụng Vikki, chọn mục \"Thẻ\" và truy cập chức năng \"Quản lý thẻ\" để thực hiện."
+        },
+        {
+          "title": "Ngoài ATM VikkiBank, ATM của HDBank thì Thẻ VikkiONE Connect có thể giao dịch tại ATM nào?",
+          "content": "Được. Thẻ VikkiONE Connect có thể giao dịch tại hệ thống ATM có logo Mastercard."
+        },
+        {
+          "title": "Tôi phải làm gì khi gặp sự cố đang rút tiền ATM bị thông báo thẻ không hợp lệ?",
+          "content": "Trong trường hợp bạn gặp sự cố rút tiền không thành công tại máy ATM, bạn vui lòng liên hệ tổng đài 1900 6608 hoặc Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để được hỗ trợ."
+        },
+        {
+          "title": "Tôi có được miễn phí khi sử dụng thẻ VikkiONE Connect để đi Metro/xe Bus hay không?",
+          "content": "Tùy vào từng chương trình ưu đãi cụ thể và được công bố trên ứng dụng Vikki theo từng thời kỳ. Các chương trình ưu đãi được cập nhật thường xuyên trên website chính thức của Vikki Bank hoặc bạn có thể liên hệ Vikki Care để được tư vấn."
+        },
+        {
+          "title": "Tôi phải chọn “VikkiGO Plus (C)” hay “VikkiGO Plus (D)” khi thanh toán giao dịch bằng máy POS tại siêu thị?",
+          "content": "Bạn có thể chọn “VikkiGO Plus (C)” để thanh toán bằng thẻ tín dụng hoặc chọn “VikkiGO Plus (D)” để thanh toán bằng thẻ ghi nợ."
+        },
+        {
+          "title": "Khi rút tiền tại ATM Vikki, tôi phải chọn chức năng “VikkiGO Plus (C)” hay “VikkiGO Plus (D)”?",
+          "content": "Bạn có thể chọn “VikkiGO Plus (C)” để rút tiền bằng thẻ tín dụng hoặc chọn “VikkiGO Plus (D)” để rút tiền bằng thẻ ghi nợ của mình."
+        },
+        {
+          "title": "Một nhân viên có thể vừa dùng thẻ để chấm công vừa thanh toán cá nhân không?",
+          "content": "Có. Các chức năng quản lý nội bộ và chức năng ngân hàng được tách biệt rõ ràng nhưng được tích hợp trên cùng một thẻ."
+        },
+        {
+          "title": "Nhân viên có bắt buộc phải mở tài khoản tín dụng khi dùng thẻ không?",
+          "content": "Không. Hạn mức tín dụng được cấp riêng theo nhu cầu và điều kiện xét duyệt của từng cá nhân."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ để thanh toán bên ngoài công ty không?",
+          "content": "Có. Thẻ VikkiONE Connect hoạt động như thẻ ngân hàng thông thường khi thanh toán tại các đơn vị chấp nhận."
+        },
+        {
+          "title": "Tôi muốn hủy giao dịch vừa quẹt?",
+          "content": "<p>Vikki Bank không thể đơn phương hủy giao dịch đã được thực hiện thành công.</p><p>Để hủy giao dịch, bạn vui lòng làm theo hướng dẫn:</p><ul><li>Liên hệ trực tiếp với đơn vị chấp nhận thẻ (cửa hàng, trang web mua sắm...) để yêu cầu hủy đơn hoặc hoàn tiền.</li><li>Nếu đơn vị chấp nhận thẻ đồng ý, họ sẽ thực hiện lệnh hoàn tiền về thẻ của bạn (thời gian nhận tiền hoàn có thể mất từ 7–15 ngày làm việc). Thời gian hoàn tiền phụ thuộc vào đơn vị chấp nhận thẻ.</li></ul>"
+        },
+        {
+          "title": "Giao dịch bị giữ tiền (pending) là gì?",
+          "content": "Đây là trạng thái giao dịch đã được ghi nhận nhưng đơn vị chấp nhận thẻ chưa hoàn tất thực hiện quyết toán."
+        },
+        {
+          "title": "Tôi có thể chuyển khoản (tại POS) từ Thẻ VikkiONE Connect sang ví điện tử của tôi không?",
+          "content": "Không được. Hiện tại, giao dịch Thẻ VikkiONE Connect tại POS được mặc định giao dịch thẻ tín dụng. (Theo quy định của NHNN, thẻ tín dụng không được chuyển vào tài khoản thanh toán, tài khoản ghi nợ và ví điện tử)"
+        },
+        {
+          "title": "Tôi thanh toán trên POS nhưng POS không hiển thị nguồn tiền để thanh toán thì có thanh toán được không?",
+          "content": "Có. Hệ thống sẽ mặc định thanh toán bằng nguồn tiền từ thẻ tín dụng."
+        },
+        {
+          "title": "Hạn mức rút tiền mặt của thẻ VikkiONE Connect được quy định theo thẻ tín dụng hay theo thẻ thanh toán?",
+          "content": "Hiện tại, hạn mức rút tiền mặt của thẻ VikkiONE Connect được quy định theo thẻ tín dụng (tổng hạn mức rút tiền mặt tối đa 100 triệu/tháng)"
+        },
+        {
+          "title": "Tôi có thể rút tiền mặt toàn bộ hạn mức tín dụng thẻ đã được cấp không?",
+          "content": "Có. Tuy nhiên, số tiền mặt tối đa có thể rút là 100.000.000 VNĐ mỗi tháng và sẽ bị tính lãi ngay tại thời điểm rút tiền."
+        },
+        {
+          "title": "Tôi quên PIN thẻ thì làm sao?",
+          "content": "<p>Bạn có thể đặt lại mã PIN mới trực tiếp trên ứng dụng Vikki theo các bước sau:<p/><ul><li>(1) Đăng nhập ứng dụng Vikki, chọn mục \"Thẻ\". </li><li>(2) Chọn thẻ Vạn năng VikkiONE Connect. </li><li>(3) Chọn \"Quản lý thẻ\".</li><li>(4) Chọn \"Đổi mã PIN\". </li><li>(5) Nhập mã PIN mới và xác thực để hoàn tất.</li><li> Lưu ý: Mã PIN mới sẽ có hiệu lực ngay sau khi thay đổi thành công.</li><ul>"
+        },
+        {
+          "title": "Tôi nhập sai PIN quá 3 lần và bị khóa thẻ thì phải làm sao?",
+          "content": "Bạn vào ứng dụng Vikki, chọn mục \"Thẻ\" và truy cập chức năng \"Quản lý thẻ\" để tạo lại mã PIN giao dịch."
+        },
+        {
+          "title": "Đổi PIN nhưng ATM không nhận?",
+          "content": "Nếu bạn đổi PIN tại ATM không được thì bạn có thể đổi PIN trên ứng dụng Vikki Bank."
+        },
+        {
+          "title": "Tôi có cần ghi nhớ nhiều mã PIN khác nhau không?",
+          "content": "Không. Người dùng quản lý mã PIN và các cài đặt bảo mật tập trung trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi có thể đổi PIN trên ứng dụng Vikki tối đa bao nhiêu lần mỗi ngày? Và có thu phí đổi PIN không?",
+          "content": "Vikki Bank không giới hạn số lần đổi PIN trong ngày và không thu phí đổi PIN."
+        },
+        {
+          "title": "Tôi có thể đăng ký thêm số điện thoại nhận thông báo biến động số dư hay không?",
+          "content": "Có. Bạn có thể vào ứng dụng Vikki, chọn mục \"Cài đặt thông báo qua SMS\" để thực hiện hoặc đến bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để yêu cầu hỗ trợ."
+        },
+        {
+          "title": "Tôi chưa tải ứng dụng và chưa đăng ký Vikki thì làm thế nào?",
+          "content": "<p>Bạn cần cài đặt ứng dụng Vikki – Ngân hàng số bằng cách quét mã QR hoặc bấm vào đường dẫn trong email mời trải nghiệm thẻ để tải ứng dụng. Ngoài ra, bạn cũng có thể tải trực tiếp từ App Store hoặc Google Play. Sau khi tải thành công, bạn thực hiện các bước sau: </p><ul><li>(1) Chọn \"Đăng nhập/Đăng ký\", nhập số điện thoại và xác thực OTP. </li><li>(2) Chọn quốc tịch và hình thức xác thực qua CCCD gắn chip hoặc VNeID. </li><li>(3) Chụp ảnh giấy tờ tùy thân, ảnh khuôn mặt, quét NFC hoặc đồng ý chia sẻ thông tin VNeID. </li><li>(4) Đặt mật khẩu ứng dụng, mã PIN đăng nhập và xác nhận hợp đồng mở tài khoản.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể xem CVC ở đâu?",
+          "content": "Bạn đăng nhập ứng dụng Vikki, chọn tab \"Thẻ\", chọn thẻ VikkiONE Connect và chọn mục \"Thông tin thẻ\"."
+        },
+        {
+          "title": "Tôi có thể sử dụng thẻ ảo trên app Vikki để thực hiện chấm công được không?",
+          "content": "Không. Thẻ VikkiONE Connect hỗ trợ thẻ ảo trên ứng dụng Vikki để thực hiện các giao dịch thanh toán trực tuyến. Thẻ vật lý được sử dụng cho các chức năng chấm công và quản lý nhân sự nội bộ của tổ chức/doanh nghiệp theo phương án triển khai."
+        },
+        {
+          "title": "Nếu khi tôi quẹt thẻ chấm công, hệ thống có ghi nhận ngay không?",
+          "content": "Có. Thông tin được ghi nhận theo thời gian thực hoặc được đồng bộ theo cấu hình hệ thống đã triển khai."
+        },
+        {
+          "title": "Thẻ có bị ảnh hưởng nếu nhân viên nghỉ thai sản hoặc nghỉ dài hạn không?",
+          "content": "Không. Trạng thái chấm công có thể được tạm ngưng, còn các chức năng ngân hàng vẫn hoạt động bình thường."
+        },
+        {
+          "title": "Khi đổi nơi làm việc trong cùng hệ thống của doanh nghiệp/tổ chức, thẻ VikkiONE Connect có phải đổi không?",
+          "content": "Không bắt buộc. Các chức năng nội bộ sẽ được điều chỉnh theo đơn vị mới, còn các chức năng ngân hàng vẫn sử dụng bình thường."
+        },
+        {
+          "title": "Thẻ có thể dùng cho khách ra vào tạm thời không?",
+          "content": "Có thể, tùy theo chính sách quản lý của tổ chức/doanh nghiệp và phương án triển khai hệ thống kiểm soát ra vào."
+        },
+        {
+          "title": "Nhân viên có thể theo dõi lương và phụ cấp qua thẻ không?",
+          "content": "Có. Lương, phụ cấp và các khoản hỗ trợ được ghi nhận và theo dõi thuận tiện trên ứng dụng Vikki."
+        },
+        {
+          "title": "Nếu tôi vào trễ hoặc ra sớm, thẻ có ghi nhận đúng không?",
+          "content": "Có. Hệ thống ghi nhận đúng thời điểm quẹt thẻ, việc chấm công được thực hiện theo quy định."
+        },
+        {
+          "title": "Máy chấm công/điểm danh có mất dữ liệu khi mất điện không?",
+          "content": "Không. Máy chấm công/điểm danh có bộ nhớ lưu trữ dữ liệu kể cả khi mất điện."
+        },
+        {
+          "title": "Thẻ có dùng offline (mất mạng) để chấm công/điểm danh được không?",
+          "content": "Việc mất/không có kết nối Internet, thẻ VikkiONE Connect vẫn có thể chấm công/điểm danh tại công ty/nhà trường."
+        },
+        {
+          "title": "Vì sao tôi thanh toán số tiền mua sắm trên các ứng dụng mua sắm trực tuyến bằng thẻ VikkiONE Connect không được?",
+          "content": "Bạn cần kiểm tra lại trạng thái thẻ, số dư tài khoản thanh toán, hạn mức khả dụng của thẻ tín dụng và hạn mức giao dịch thẻ được niêm yết trên trang chủ vikkibank.vn."
+        },
+        {
+          "title": "Thanh toán tối thiểu là gì?",
+          "content": "Đây là số tiền nhỏ nhất bạn phải thanh toán trước ngày đến hạn sao kê để duy trì lịch sử tín dụng tốt. <br>Khi thanh toán đủ số tiền tối thiểu <ul><li>Bạn sẽ không bị phạt phí trả chậm và không bị ghi nhận trễ hạn;</li><li>Tuy nhiên, phần dư nợ còn lại vẫn sẽ được tính lãi suất theo quy định của ngân hàng. </li></ul>Số tiền này được hiển thị chi tiết trong thông báo sao kê hàng tháng trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi trả thiếu vài nghìn so với sao kê tôi nhận được có sao không?",
+          "content": "<p>Có. Hệ thống ghi nhận chính xác theo số tiền thực tế bạn thanh toán. Việc thanh toán thiếu dù là số tiền nhỏ cũng sẽ ảnh hưởng như sau:</p><ul><li> (1) Nếu số tiền đóng nhỏ hơn khoản tối thiểu, bạn sẽ bị tính phí phạt trả chậm và ảnh hưởng đến lịch sử tín dụng.</li><li> (2) Nếu số tiền đóng lớn hơn tổng dư nợ sao kê, toàn bộ phần dư nợ còn lại sẽ bị tính lãi suất theo quy định. Để tránh sai sót số lẻ, bạn nên sử dụng tính năng \"Sao chép số tiền\" (Copy) trên ứng dụng Vikki khi thực hiện thanh toán.</li><ul>"
+        },
+        {
+          "title": "Tổ chức có xem được lịch sử chi tiêu cá nhân của tôi không?",
+          "content": "Tổ chức không có quyền truy cập, tra cứu lịch sử chi tiêu cá nhân trên thẻ của bạn"
+        },
+        {
+          "title": "Tôi không nhận được sao kê hàng tháng?",
+          "content": "Sao kê được gửi tự động qua email và thông báo trên ứng dụng vào ngày chốt sao kê hàng tháng. <br>Nếu bạn không nhận được, vui lòng kiểm tra theo các bước sau: <ul><li>Kiểm tra hộp thư rác (Spam/Junk) trong email</li><li>Kiểm tra mục \"Thông báo\" (biểu tượng chuông) trên ứng dụng Vikki.</li></ul>Ngoài ra, bạn có thể chủ động xem sao kê bất cứ lúc nào bằng cách: <ul><li>Đăng nhập ứng dụng Vikki, chọn mục \"Thẻ\" </li><li> chọn \"Sao kê thẻ\" (hoặc \"Lịch sử sao kê\") để xem và tải về.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể xem số tiền cần phải thanh toán và ngày đến hạn thanh toán ở đâu?",
+          "content": "Bạn có thể xem thông tin số tiền cần phải thanh toán và ngày đến hạn thanh toán trên ứng dụng Vikki hoặc qua sao kê được gửi đến email của bạn."
+        },
+        {
+          "title": "Tôi rút tiền mặt bằng tính năng thẻ tín dụng có bị tính lãi không?",
+          "content": "Có. Giao dịch rút tiền mặt sẽ bị tính lãi ngay khi giao dịch thực hiện thành công."
+        },
+        {
+          "title": "Khi thay thế thẻ tại app Vikki Digital Bank thì có được miễn phí không?",
+          "content": "Việc thu phí có thể thay đổi theo từng thời kỳ. Bạn có thể tham khảo biểu phí thẻ VikkiONE Connect được công khai trên website của Vikki Bank hoặc trên ứng dụng Vikki, hoặc liên hệ tổng đài của ngân hàng.<br> Phí thay thế thẻ được tính tùy theo việc bạn thực hiện thay thế trên app Vikki Digital Bank hay tại quầy giao dịch Vikki Bank (theo biểu phí hiện hành)."
+        },
+        {
+          "title": "Tôi đã thanh toán hết dư nợ của thẻ. Vậy khi đóng thẻ thì có phát sinh thêm khoản phí nào hay không?",
+          "content": "Không. Nếu bạn đã sử dụng thẻ đủ 12 tháng trở lên và đã thanh toán hết dư nợ (nếu có), bạn có thể liên hệ Vikki Care 19006608 để được hướng dẫn thực hiện thủ tục chấm dứt sử dụng thẻ VikkiONE Connect theo quy định."
+        },
+        {
+          "title": "Sử dụng thẻ VikkiONE Connect có bị thu phí thường niên không?",
+          "content": "Năm đầu được miễn phí. <br>Từ năm thứ hai trở đi, thu phí theo biểu phí hiện hành của Vikki Bank."
+        },
+        {
+          "title": "Phí thông báo biến động giao dịch (SMS) được thu như thế nào?",
+          "content": "Theo biểu phí đang áp dụng thì phí thông báo biến động giao dịch (SMS) là 9.900/tháng. Khách hàng có thể chủ động trong việc bật/tắt tính năng thông báo biến động giao dịch (SMS) này."
+        },
+        {
+          "title": "Nếu tôi chỉ thanh toán đúng \"Số tiền tối thiểu\" trên sao kê, tôi có bị tính phí chậm thanh toán không?",
+          "content": "Nếu bạn thanh toán đúng số tiền tối thiểu và đúng thời hạn thanh toán, bạn sẽ không bị tính phí chậm thanh toán."
+        },
+        {
+          "title": "Khi yêu cầu giao thẻ tại nhà, tôi có bị thu bất kỳ khoản phí nào không?",
+          "content": "Không. Bạn hoàn toàn không bị thu bất kỳ khoản phí nào."
+        },
+        {
+          "title": "Sao tôi hủy thẻ, ngân hàng lại thu phí của tôi?",
+          "content": "Vikki Bank thực hiện thu phí thanh lý thẻ trong vòng 12 tháng kể từ ngày phát hành thẻ."
+        },
+        {
+          "title": "Tôi có thể sử dụng điểm tích lũy để thanh toán dư nợ được không?",
+          "content": "Không. Bạn chỉ có thể sử dụng điểm tích lũy để đổi vé máy bay Vietjet, voucher mua sắm, ẩm thực và nhiều ưu đãi, dịch vụ khác theo chương trình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi không thấy lịch sử cho các chương trình ưu đãi đã dùng?",
+          "content": "Bạn vui lòng kiểm tra mục lịch sử giao dịch chi tiết trên ứng dụng Vikki."
+        },
+        {
+          "title": "Tôi có thể dùng điểm SkyPoint tích lũy được để đổi lấy vé máy bay của Vietjet không?",
+          "content": "Có. Bạn có thể dùng điểm SkyPoint được tặng để đổi vé máy bay Vietjet."
+        },
+        {
+          "title": "Tôi thấy trên trang chủ Mastercard có ưu đãi dành cho sản phẩm thẻ tín dụng Mastercard hạng Platinum, vậy thẻ VikkiONE Connect của tôi có được hưởng ưu đãi đó không?",
+          "content": "Được. Tính năng thẻ tín dụng của VikkiONE Connect thuộc hạng thẻ Platinum."
+        },
+        {
+          "title": "Khi nhân viên nghỉ việc hoặc sinh viên tốt nghiệp thì có thể tiếp tục sử dụng và hưởng ưu đãi của thẻ VikkiONE Connect không?",
+          "content": "Có. Chủ thẻ vẫn được hưởng các ưu đãi trong suốt vòng đời của sản phẩm."
+        },
+        {
+          "title": "Tôi có thể chuyển khoản từ ngân hàng khác để thanh toán dư nợ thẻ tín dụng không?",
+          "content": "Có. Tính năng này sẽ được triển khai trong thời gian tới."
+        },
+        {
+          "title": "Số tiền thanh toán cho dư nợ hàng tháng tôi có thể xem ở đâu?",
+          "content": "Bạn có thể xem trực tiếp trên ứng dụng Vikki, tin nhắn SMS hoặc sao kê được gửi qua email đã đăng ký với Vikki Bank."
+        },
+        {
+          "title": "Khi tôi thanh toán dư nợ xong thì hạn mức khả dụng của thẻ tín dụng của tôi có khôi phục lên ngay không?",
+          "content": "Có. Sau khi thanh toán, hạn mức khả dụng của thẻ tín dụng sẽ được khôi phục ngay."
+        },
+        {
+          "title": "Tôi cần hướng dẫn thao tác mở thẻ vạn năng?",
+          "content": "Các bước thao tác mở thẻ VikkiONE Connect: <ul><li>Bước 1: Mở ứng dụng Vikki và đăng nhập.</li><li>Bước 2: Tại màn hình chính, chọn thông báo mở thẻ vạn năng và bấm “Mở thẻ ngay”. Trường hợp đã đóng thông báo, bạn vẫn có thể vào mục Thẻ, mục Thông báo trên ứng dụng hoặc trang chủ mục giới thiệu sản phẩm, tìm và chọn “Thẻ vạn năng VikkiONE Connect”.</li><ul>"
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có hỗ trợ trả góp không?",
+          "content": "Dịch vụ trả góp sẽ được triển khai trong thời gian tới."
+        },
+        {
+          "title": "Tôi có thể theo dõi lịch sử trả góp thẻ tín dụng trên App Vikki hay không?",
+          "content": "Không. Chức năng này hiện tại Vikki Bank chưa triển khai."
+        },
+        {
+          "title": "Tôi muốn hủy trả góp?",
+          "content": "Dịch vụ trả góp của Vikki Bank được triển khai theo từng thời kỳ. Nếu có thắc mắc, bạn có thể liên hệ Vikki Care qua các kênh sau:<br></br>- Tính năng chat trên ứng dụng Vikki, Zalo hoặc Facebook<br></br>- Hotline 1900 6608 (1.000đ/phút)<br></br>- Email: 19006608@vikkibank.vn"
+        },
+        {
+          "title": "Tôi có thể sử dụng thẻ VikkiONE Connect khi đi công tác hoặc du lịch nước ngoài không?",
+          "content": "Có. Thẻ VikkiONE Connect được phát hành dưới thương hiệu thẻ quốc tế Mastercard, do đó bạn hoàn toàn có thể sử dụng để thanh toán qua máy POS hoặc rút tiền mặt tại bất kỳ hệ thống ATM nào có biểu tượng Mastercard trên toàn cầu."
+        },
+        {
+          "title": "Thẻ VikkiONE Connect có hỗ trợ thanh toán chạm (Contactless) không, hay bắt buộc phải cắm/quẹt thẻ vào máy POS?",
+          "content": "Có. Thẻ VikkiONE Connect được tích hợp sẵn vi mạch thanh toán không tiếp xúc (Contactless) chuẩn EMV."
+        }
+      ]
+    }
+  ],
+  "qaItems": [
+    {
+      "title": "Thẻ vạn năng VikkiONE Connect là thẻ gì?",
+      "content": "<p>Thẻ Vạn Năng VikkiONE Connect là thẻ quốc tế Mastercard tiên phong với mô hình “nhiều tính năng trong một thẻ”, tích hợp đồng thời:</p><ul><li>Thẻ Thanh toán &amp; tín dụng (Debit &amp; Credit)</li><li>Định danh cá nhân của tổ chức (thẻ nhân viên/thẻ sinh viên)</li></ul><p>Chỉ với một phôi thẻ duy nhất, bạn có thể thanh toán không tiền mặt trong và ngoài nước, sử dụng hạn mức tín dụng linh hoạt, đồng thời dùng thẻ để nhận lương, chấm công, điểm danh và check-in ra/vào tại nơi làm việc hoặc trường học một cách an toàn, tiện lợi và đồng bộ.</p>"
+    },
+    {
+      "title": "Đối tượng phát hành thẻ?",
+      "content": "Sản phẩm thẻ Vạn năng VikkiONE Connect được thiết kế dành riêng cho các cá nhân thuộc các tổ chức, doanh nghiệp, trường học, bệnh viện hoặc đơn vị công có liên kết hợp tác với Vikki Bank."
+    },
+    {
+      "title": "Điều kiện mở thẻ?",
+      "content": "<p>Để mở thẻ Vạn năng VikkiONE Connect, bạn cần đáp ứng các điều kiện sau:</p><ul><li>Có tài khoản VikkiME đang hoạt động trên ứng dụng Vikki.</li><li>Thuộc danh sách khách hàng được nhân sự của tổ chức/doanh nghiệp có liên kết với Vikki Bank triển khai thẻ theo từng chương trình.</li><li>Đáp ứng các điều kiện phát hành thẻ theo quy định hiện hành của Vikki Bank.</li></ul>"
+    },
+    {
+      "title": "Chức năng của thẻ VikkiONE Connect là gì?",
+      "content": "<p>Thẻ Vạn năng VikkiONE Connect giúp bạn:</p><ul><li>Thanh toán và chi tiêu tiện lợi như thẻ Mastercard quốc tế, sử dụng để mua sắm tại cửa hàng (POS), thanh toán online và các giao dịch không tiền mặt khác.</li><li>Chi tiêu từ tài khoản hoặc hạn mức tín dụng, đáp ứng nhu cầu tài chính linh hoạt.</li><li>Nhận lương, phụ cấp hoặc các khoản chi trả từ doanh nghiệp tham gia chương trình.</li><li>Sử dụng như thẻ định danh cá nhân của tổ chức, chẳng hạn thẻ nhân viên, thẻ sinh viên hoặc thẻ thành viên.</li><li>Hỗ trợ các tiện ích nội bộ như chấm công, điểm danh, kiểm soát ra/vào hoặc các dịch vụ khác, tùy theo hệ thống và phạm vi triển khai của từng tổ chức.</li></ul>"
+    },
+    {
+      "title": "Phương thức đăng ký Thẻ VikkiONE Connect ở đâu?",
+      "content": "Dựa vào hợp đồng hợp tác với tổ chức/doanh nghiệp cung cấp cho Vikki Bank. Từng cá nhân trong tổ chức/doanh nghiệp đăng ký trên app Vikki."
+    },
+    {
+      "title": "Sử dụng thẻ VikkiONE có những ưu đãi nào?",
+      "content": "Thẻ VikkiONE Connect đang triển khai nhiều chương trình ưu đãi như Miễn phí đi Metro đến hết 31/12/2026, chính sách hoàn tiền lên đến 10% doanh số thanh toán cho cho giao dịch thanh toán bằng thẻ, tối đa lên đến 500.000 đ/tháng và rất nhiều chương trình ưu đãi của Vikki Bank, Mastercard dành cho chủ thẻ trong nhiều lĩnh vực: ăn uống, du lịch, mua sắm … "
+    },
+    {
+      "title": "Thẻ VikkiONE Connect khác gì so với Thẻ kép VikkiGO+?",
+      "content": "<p>Khách hàng vẫn có thể đăng ký mở thẻ VikkiONE Connect nếu đáp ứng được các điều kiện:</p><ul><li>Có tài khoản VikkiME đang hoạt động trên ứng dụng Vikki.</li><li>Thuộc danh sách khách hàng được nhân sự của tổ chức/doanh nghiệp có liên kết với Vikki Bank triển khai thẻ theo từng chương trình.</li><li>Đáp ứng các điều kiện phát hành thẻ theo quy định hiện hành của Vikki Bank.</li></ul>"
+    },
+    {
+      "title": "Vì sao tôi nhận được thẻ nhưng chưa dùng được?",
+      "content": "<p>Để đảm bảo an toàn, thẻ (thẻ ảo và thẻ vật lý) được cấp ở trạng thái chưa kích hoạt và cần được kích hoạt trên ứng dụng Vikki trước khi sử dụng.</p><p>Cách kích hoạt thẻ trên ứng dụng Vikki:</p><p><strong>Hướng dẫn kích hoạt thẻ ảo</strong></p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục Thẻ.</li><li>Chọn thẻ Vạn năng VikkiONE Connect (thẻ ảo).</li><li>Thực hiện kích hoạt thẻ theo hướng dẫn trên màn hình để sử dụng ngay cho các giao dịch thanh toán trực tuyến.</li></ul><p><strong>Kích hoạt thẻ vật lý (thẻ cứng)</strong></p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục Thẻ.</li><li>Chọn thẻ Vạn năng VikkiONE Connect (thẻ vật lý).</li><li>Chọn Kích hoạt thẻ và làm theo hướng dẫn trên màn hình để hoàn tất kích hoạt trước khi sử dụng.</li></ul>"
+    },
+    {
+      "title": "Tôi chưa nhận được thẻ cứng, liệu có thể sử dụng thông tin thẻ ảo trên ứng dụng Vikki để thanh toán không?",
+      "content": "<p>Trong thời gian chờ thẻ cứng được giao, bạn có thể sử dụng thẻ ảo trên ứng dụng Vikki để thanh toán trực tuyến hoặc liên kết ví điện tử.</p><p>Để xem thông tin thẻ (Số thẻ, Ngày hết hạn, Mã CVC), bạn vui lòng làm theo các bước:</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục \"Thẻ\".</li><li>Chọn thẻ Vạn năng VikkiONE Connect.</li><li>Chọn tính năng \"Xem thông tin thẻ\" để hiển thị chi tiết.</li></ul><p><strong>Lưu ý:</strong> Tuyệt đối không chia sẻ mã CVC và mã OTP cho bất kỳ ai để đảm bảo an toàn tài khoản.</p>"
+    },
+    {
+      "title": "Tôi cần làm gì khi gặp lỗi kích hoạt thẻ Vạn năng VikkiONE Connect trên ứng dụng Vikki?",
+      "content": "<p>Nếu hệ thống báo lỗi khi kích hoạt, bạn vui lòng thực hiện các bước kiểm tra sau:</p><ul><li>Đảm bảo thiết bị có kết nối internet ổn định.</li><li>Kiểm tra và cập nhật ứng dụng Vikki lên phiên bản mới nhất.</li></ul><p>Trong trường hợp vẫn không thể kích hoạt, bạn hãy liên hệ ngay với Vikki Care qua tính năng \"Hỗ trợ\" trên ứng dụng hoặc hotline 19006608 để được kiểm tra và xử lý kịp thời.</p>"
+    },
+    {
+      "title": "Tôi cần làm gì khi thẻ hết hạn sử dụng?",
+      "content": "<p>Trước khi thẻ hết hạn, Vikki sẽ gửi thông báo hướng dẫn gia hạn trực tiếp trên ứng dụng.</p><p>Vikki Bank sẽ thực hiện cấp thẻ mới theo quy trình hiện hành. Bạn vui lòng theo dõi thông báo trên ứng dụng Vikki hoặc liên hệ Vikki Care nếu cần hỗ trợ thêm.</p>"
+    },
+    {
+      "title": "Kích hoạt xong nhưng quẹt không được?",
+      "content": "<p>Việc thanh toán không thành công thường do tính năng thanh toán chưa được bật hoặc Số dư/Hạn mức khả dụng không đủ.</p><p>Bạn vui lòng kiểm tra lại cài đặt thẻ trên ứng dụng Vikki theo các bước sau:</p><ul><li>Tại màn hình chính, chọn mục \"Thẻ\" và chọn thẻ Vạn năng VikkiONE Connect.</li><li>Chọn mục \"Quản lý thẻ\".</li><li>Kiểm tra và BẬT các tính năng \"Thanh toán trực tuyến\" hoặc \"Thanh toán tại POS\" tùy theo nhu cầu sử dụng.</li></ul><p>Ngoài ra, bạn hãy đảm bảo nhập đúng Số thẻ, Ngày hết hạn, Mã CVC tại trang thanh toán và số dư tài khoản (đối với giao dịch Debit) hoặc hạn mức tín dụng còn lại (đối với giao dịch Credit) đủ để thực hiện thanh toán.</p>"
+    },
+    {
+      "title": "Thẻ hiển thị “inactive” dù đã kích hoạt?",
+      "content": "<p>Tình trạng này có thể do hệ thống đang trong quá trình cập nhật dữ liệu.</p><p>Bạn vui lòng đợi trong giây lát, sau đó đăng xuất và đăng nhập lại ứng dụng Vikki để làm mới trạng thái thẻ.</p><p>Nếu sau khi đăng nhập lại mà trạng thái thẻ vẫn chưa thay đổi, bạn hãy liên hệ ngay với Vikki Care qua tính năng \"Hỗ trợ\" trên ứng dụng hoặc hotline 19006608 để được kiểm tra kỹ thuật.</p>"
+    },
+    {
+      "title": "Tôi quên PIN thẻ thì làm sao?",
+      "content": "<p>Bạn có thể đặt lại mã PIN mới trực tiếp trên ứng dụng Vikki. Cách thực hiện:</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục “Thẻ”.</li><li>Chọn thẻ Vạn năng VikkiONE Connect.</li><li>Chọn “Quản lý thẻ”.</li><li>Chọn “Đổi mã PIN”.</li><li>Nhập mã PIN mới và xác thực để hoàn tất.</li></ul><p><strong>Lưu ý:</strong> Mã PIN mới sẽ có hiệu lực ngay sau khi thay đổi thành công.</p>"
+    },
+    {
+      "title": "Đổi PIN nhưng ATM không nhận?",
+      "content": "<p>Trường hợp này có thể do hệ thống ATM chưa kịp cập nhật dữ liệu từ ứng dụng. Bạn vui lòng xử lý theo hướng dẫn sau:</p><ul><li>Đợi khoảng vài phút sau khi đổi PIN để hệ thống đồng bộ hoàn tất, sau đó thử giao dịch lại.</li><li>Nếu vẫn không thành công, hãy truy cập ứng dụng Vikki và thực hiện thao tác \"Đổi mã PIN\" một lần nữa để hệ thống ghi nhận lại mã PIN mới nhất.</li></ul>"
+    },
+    {
+      "title": "Thẻ bị khóa tạm thời là do đâu?",
+      "content": "<p>Để đảm bảo an toàn cho bạn, thẻ sẽ tự động khóa tạm thời trong các trường hợp sau:</p><ul><li>Nhập sai mã PIN quá số lần quy định.</li><li>Hệ thống phát hiện giao dịch có dấu hiệu bất thường.</li></ul><p>Để mở lại thẻ, bạn vui lòng thực hiện:</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục \"Thẻ\".</li><li>Chọn thẻ Vạn năng VikkiONE Connect đang ở trạng thái khóa.</li><li>Chọn \"Mở khóa thẻ\".</li></ul><p>Nếu không thể tự mở khóa, bạn hãy liên hệ ngay Vikki Care qua hotline 19006608 để được hỗ trợ xác thực và xử lý.</p>"
+    },
+    {
+      "title": "Tôi tự khóa thẻ rồi quên mở lại?",
+      "content": "<p>Bạn có thể mở khóa thẻ ngay lập tức trên ứng dụng Vikki theo các bước sau:</p><ul><li>Tại màn hình chính, chọn mục \"Thẻ\".</li><li>Chọn thẻ Vạn năng VikkiONE Connect đang ở trạng thái khóa.</li><li>Chọn \"Mở khóa thẻ\".</li></ul><p>Thẻ sẽ có hiệu lực sử dụng ngay sau khi bạn mở khóa thành công.</p>"
+    },
+    {
+      "title": "Thẻ vật lý chưa về nhưng app đã có thẻ số?",
+      "content": "Có thể dùng thẻ số để thanh toán online trước."
+    },
+    {
+      "title": "Giao dịch bị từ chối dù còn hạn mức?",
+      "content": "<p>Ngoài hạn mức tín dụng (hoặc số dư tài khoản), bạn vui lòng kiểm tra và điều chỉnh hạn mức giao dịch cài đặt (theo ngày/giao dịch) trên ứng dụng Vikki theo các bước sau:</p><ul><li>Tại màn hình chính, chọn mục \"Thẻ\".</li><li>Chọn thẻ Vạn năng VikkiONE Connect.</li><li>Chọn tính năng \"Cài đặt hạn mức\".</li><li>Điều chỉnh tăng hạn mức chi tiêu ngày hoặc hạn mức thanh toán trực tuyến tùy theo nhu cầu sử dụng của bạn.</li></ul>"
+    },
+    {
+      "title": "Quẹt POS trong nước ok, ra nước ngoài không được?",
+      "content": "<p>Có thể do tính năng thanh toán Quốc tế chưa được bật hoặc thông tin thanh toán chưa được nhập chính xác.</p><p>Bạn vui lòng kiểm tra và thực hiện theo các bước sau:</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục “Thẻ”.</li><li>Chọn thẻ Vạn năng VikkiONE Connect.</li><li>Chọn “Cài đặt thẻ”, đảm bảo tính năng \"Thanh toán trực tuyến\" đang ở trạng thái bật.</li></ul>"
+    },
+    {
+      "title": "Giao dịch thành công nhưng app chưa hiển thị?",
+      "content": "<p>Trong một số trường hợp, hệ thống có thể ghi nhận giao dịch chậm hơn so với thời điểm thanh toán thực tế. Giao dịch của bạn sẽ được cập nhật lại sau ít phút trên ứng dụng Vikki.</p><p>Trong trường hợp này, bạn có thể kiểm tra nhanh bằng cách:</p><ul><li>Tại màn hình \"Lịch sử giao dịch\", vuốt nhẹ màn hình từ trên xuống để làm mới dữ liệu.</li><li>Kiểm tra thông báo biến động số dư (hoặc hạn mức) để xác nhận giao dịch đã được ghi nhận.</li></ul>"
+    },
+    {
+      "title": "Bị trừ tiền 2 lần thì sao?",
+      "content": "<p>Trường hợp này thường xảy ra do lỗi đường truyền hoặc hệ thống ghi nhận giao dịch treo.</p><p>Bạn vui lòng xử lý theo các bước sau:</p><ul><li>Kiểm tra lại Lịch sử giao dịch trên ứng dụng Vikki để xác định trạng thái của 2 khoản trừ.</li><li>Nếu một giao dịch ở trạng thái \"Chờ xử lý\" (Pending), số tiền sẽ tự động được hoàn lại trong 24 giờ.</li><li>Nếu cả 2 giao dịch đều hiển thị \"Thành công\", bạn hãy chọn giao dịch bị trùng và lập \"Yêu cầu tra soát\" trên ứng dụng Vikki; hoặc liên hệ Vikki Care qua hotline 19006608 để được hỗ trợ tra soát.</li></ul>"
+    },
+    {
+      "title": "Giao dịch bị giữ tiền (pending) là gì?",
+      "content": "<p>Đây là trạng thái giao dịch đã được ghi nhận nhưng đơn vị chấp nhận thẻ chưa hoàn tất thực hiện quyết toán.</p><p>Trong thời gian này, số tiền giao dịch sẽ bị tạm giữ và trừ vào hạn mức khả dụng hoặc số dư tài khoản của bạn.</p><p>Số tiền này sẽ:</p><ul><li>Chuyển thành \"Thành công\" khi đơn vị chấp nhận thẻ gửi yêu cầu thanh toán.</li><li>Hoặc được hoàn lại vào tài khoản nếu giao dịch bị hủy.</li></ul>"
+    },
+    {
+      "title": "Thanh toán không chạm không hoạt động?",
+      "content": "<p>Tính năng thanh toán chạm có thể thao tác chưa đúng cách.</p><p>Khi thanh toán, bạn lưu ý đặt thẻ cách đầu đọc khoảng 1–2 cm và giữ nguyên trong vài giây cho đến khi nghe tiếng \"bíp\" xác nhận hoặc đèn tín hiệu trên máy POS sáng lên.</p>"
+    },
+    {
+      "title": "Thanh toán QR có dùng được không?",
+      "content": "Tùy điểm chấp nhận và cấu hình từng thời kỳ."
+    },
+    {
+      "title": "Giao dịch bị nghi ngờ gian lận thì sao?",
+      "content": "<p>Để bảo vệ an toàn tài chính cho bạn, hệ thống sẽ tự động chặn giao dịch và tạm khóa thẻ ngay khi phát hiện dấu hiệu bất thường.</p><p>Trong trường hợp này, bạn vui lòng kiểm tra thông báo từ Vikki Bank và thực hiện:</p><ul><li>Nếu giao dịch do bạn thực hiện: Liên hệ ngay Vikki Care (19006608) để xác thực danh tính và yêu cầu mở lại thẻ.</li><li>Nếu không phải bạn thực hiện: Truy cập ứng dụng Vikki, kiểm tra đảm bảo tính năng \"Khóa thẻ tạm thời\" đang bật và báo ngay cho Vikki Care để ghi nhận tra soát giao dịch.</li></ul>"
+    },
+    {
+      "title": "Tôi muốn hủy giao dịch vừa quẹt?",
+      "content": "<p>Vikki Bank không thể đơn phương hủy giao dịch đã được thực hiện thành công.</p><p>Để hủy giao dịch, bạn vui lòng làm theo hướng dẫn:</p><ul><li>Liên hệ trực tiếp với đơn vị chấp nhận thẻ (cửa hàng, trang web mua sắm...) để yêu cầu hủy đơn hoặc hoàn tiền.</li><li>Nếu đơn vị chấp nhận thẻ đồng ý, họ sẽ thực hiện lệnh hoàn tiền về thẻ của bạn (thời gian nhận tiền hoàn có thể mất từ 7–15 ngày làm việc). Thời gian hoàn tiền phụ thuộc vào đơn vị chấp nhận thẻ.</li></ul>"
+    },
+    {
+      "title": "Hạn mức khả dụng khác hạn mức tổng là gì?",
+      "content": "<p><strong>Hạn mức tín dụng (Hạn mức thẻ):</strong> Là tổng số tiền tối đa mà Vikki Bank cấp cho bạn để chi tiêu.</p><p><strong>Hạn mức khả dụng:</strong> Là số tiền còn lại mà bạn có thể tiếp tục sử dụng ở thời điểm hiện tại.</p><p>Khi bạn thanh toán dư nợ thẻ, hạn mức khả dụng sẽ được hoàn tương ứng để bạn tiếp tục chi tiêu.</p>"
+    },
+    {
+      "title": "Tôi thanh toán rồi nhưng hạn mức chưa tăng lại?",
+      "content": "<p>Thời gian cập nhật hạn mức phụ thuộc vào kênh thanh toán bạn sử dụng:</p><ul><li>Thanh toán từ tài khoản VikkiME: Hạn mức sẽ được cập nhật và hồi phục ngay lập tức.</li><li>Chuyển khoản từ ngân hàng khác: Có thể mất từ 5–30 phút để hệ thống ghi nhận giao dịch.</li></ul>"
+    },
+    {
+      "title": "Sao kê chưa chốt nhưng đã thấy dư nợ?",
+      "content": "<p>Ứng dụng Vikki sẽ cập nhật dư nợ theo thời gian thực ngay khi giao dịch phát sinh để giúp bạn quản lý chi tiêu hiệu quả.</p><ul><li><strong>Dư nợ hiện tại:</strong> Tổng số tiền bạn đã chi tiêu tính đến thời điểm kiểm tra.</li><li><strong>Dư nợ cuối kỳ (Sao kê):</strong> Tổng số tiền được chốt vào ngày sao kê hàng tháng để thanh toán.</li></ul>"
+    },
+    {
+      "title": "Sao kê sai số tiền thì làm sao?",
+      "content": "<p>Bạn hãy mở ứng dụng Vikki và vào mục “Lịch sử giao dịch”. Sau đó, bạn so sánh danh sách các giao dịch tại đây với các khoản mục trên Sao kê. Việc này giúp bạn xác định chính xác giao dịch nào đang bị sai lệch (ví dụ: số tiền bị trừ gấp đôi, số tiền hiển thị khác với hóa đơn thực tế, hoặc một giao dịch lạ mà bạn không thực hiện).</p><p>Nếu sau khi kiểm tra, bạn xác nhận có sai sót xảy ra, hãy gửi thông tin ngay cho Vikki qua một trong hai cách sau:</p><ul><li>Gọi Hotline: Liên hệ số 19006608 để gặp trực tiếp tổng đài viên Vikki Care.</li><li>Gửi yêu cầu qua tính năng \"Hỗ trợ\" trên ứng dụng để gửi yêu cầu kiểm tra.</li></ul>"
+    },
+    {
+      "title": "Tôi không nhận được sao kê hàng tháng?",
+      "content": "<p>Sao kê được gửi tự động qua Email và thông báo trên ứng dụng vào ngày chốt sao kê hàng tháng.</p><p>Nếu bạn không nhận được, vui lòng kiểm tra theo các bước sau:</p><ul><li>Kiểm tra Hộp thư Rác (Spam/Junk) trong Email của bạn.</li><li>Kiểm tra mục \"Thông báo\" (biểu tượng chuông) trên ứng dụng Vikki.</li></ul><p>Ngoài ra, bạn hoàn toàn có thể chủ động xem sao kê bất cứ lúc nào bằng cách:</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục “Thẻ”.</li><li>Chọn \"Sao kê thẻ\" (hoặc \"Lịch sử sao kê\") để xem và tải về.</li></ul>"
+    },
+    {
+      "title": "Thanh toán tối thiểu là gì?",
+      "content": "<p>Đây là số tiền nhỏ nhất bạn phải thanh toán trước ngày đến hạn sao kê để duy trì lịch sử tín dụng tốt.</p><p>Khi thanh toán đủ số tiền tối thiểu:</p><ul><li>Bạn sẽ không bị phạt phí trả chậm và không bị ghi nhận trễ hạn.</li><li>Tuy nhiên, phần dư nợ còn lại vẫn sẽ được tính lãi suất theo quy định của ngân hàng.</li></ul><p>Số tiền này được hiển thị chi tiết trong thông báo Sao kê hàng tháng trên ứng dụng Vikki.</p>"
+    },
+    {
+      "title": "Tôi trả thiếu vài nghìn có sao không?",
+      "content": "<p>Có. Hệ thống ghi nhận chính xác theo số tiền thực tế bạn thanh toán. Việc thanh toán thiếu dù là số tiền nhỏ cũng sẽ dẫn đến các hệ quả sau:</p><ul><li>Nếu số tiền thanh toán nhỏ hơn Khoản tối thiểu: Bạn sẽ bị tính phí phạt trả chậm và ảnh hưởng đến lịch sử tín dụng.</li><li>Nếu số tiền thanh toán lớn hơn Tổng dư nợ sao kê: Toàn bộ phần dư nợ còn lại sẽ bị tính lãi suất theo quy định.</li></ul><p>Để tránh sai sót số lẻ, bạn nên sử dụng tính năng \"Sao chép số tiền\" (Copy) trên ứng dụng Vikki khi thực hiện thanh toán.</p>"
+    },
+    {
+      "title": "Trả dư nợ nhiều lần trong tháng được không?",
+      "content": "<p>Có. Vikki không giới hạn số lần thanh toán dư nợ trong tháng.</p><p>Bạn có thể chủ động thanh toán bất cứ lúc nào để:</p><ul><li>Giảm bớt áp lực tài chính vào cuối kỳ.</li><li>Khôi phục ngay lập tức hạn mức khả dụng để tiếp tục chi tiêu.</li></ul><p>Thao tác thanh toán được thực hiện dễ dàng ngay trên ứng dụng Vikki.</p>"
+    },
+    {
+      "title": "Tôi muốn trả toàn bộ dư nợ ngay?",
+      "content": "<p>Bạn có thể thanh toán toàn bộ dư nợ thẻ bất cứ lúc nào thông qua ứng dụng Vikki. Các bước thực hiện:</p><ul><li>Tại màn hình chi tiết thẻ, chọn \"Thanh toán thẻ\".</li><li>Chọn tùy chọn \"Thanh toán toàn bộ dư nợ\" (hoặc nhập số tiền bằng tổng dư nợ hiện tại).</li><li>Kiểm tra thông tin và xác nhận thanh toán.</li></ul>"
+    },
+    {
+      "title": "Trả dư nợ nhưng app báo chưa ghi nhận?",
+      "content": "Kiểm tra nguồn tiền và thời gian xử lý liên ngân hàng."
+    },
+    {
+      "title": "Giao dịch nào được chuyển trả góp?",
+      "content": "Dịch vụ trả góp sẽ triển khai trong thời gian tới. Vikki Bank sẽ bổ sung FAQ khi triển khai dịch vụ."
+    },
+    {
+      "title": "Tôi không thấy nút trả góp?",
+      "content": "Giao dịch không đủ điều kiện hoặc chưa được cập nhật."
+    },
+    {
+      "title": "Trả góp có tính lãi không?",
+      "content": "Có loại 0% và có loại tính lãi, hiển thị rõ trước khi xác nhận."
+    },
+    {
+      "title": "Tôi muốn hủy trả góp?",
+      "content": "<p>Bạn có thể liên hệ VikkiCare qua các cách sau:</p><ul><li>Tính năng chat trên ứng dụng Vikki, Zalo hoặc Facebook.</li><li>Hotline 1900.6608 (1.000đ/phút).</li><li>Email: 19006608@vikkibank.vn.</li></ul>"
+    },
+    {
+      "title": "Hoàn tiền chậm là do đâu?",
+      "content": "Phụ thuộc đối tác và chu kỳ quyết toán."
+    },
+    {
+      "title": "Ưu đãi không áp dụng dù đúng điều kiện?",
+      "content": "Có thể chưa nhập đúng mã hoặc hết lượt ưu đãi."
+    },
+    {
+      "title": "Tôi dùng thẻ nhưng không được tích điểm?",
+      "content": "Một số giao dịch không áp dụng tích điểm."
+    },
+    {
+      "title": "Ưu đãi hiển thị khác thực tế?",
+      "content": "Ưu đãi có thể thay đổi theo thời gian."
+    },
+
+    {
+      "title": "Tôi không thấy lịch sử ưu đãi đã dùng?",
+      "content": "Kiểm tra mục lịch sử giao dịch chi tiết."
+    },
+    {
+      "title": "Ưu đãi có cộng dồn không?",
+      "content": "Không, mỗi giao dịch áp dụng một ưu điểm"
+    },
+    {
+      "title": "Tôi đổi điện thoại, thẻ có bị ảnh hưởng không?",
+      "content": "Không, chỉ cần đăng nhập lại app."
+    },
+    {
+      "title": "App bị treo khi thao tác thẻ?",
+      "content": "Thoát app, cập nhật phiên bản mới nhất."
+    },
+    {
+      "title": "Không nhận được OTP?",
+      "content": "Kiểm tra sóng, số điện thoại đăng ký."
+    },
+    {
+      "title": "OTP đến chậm thì xử lý sao?",
+      "content": "Không nhập OTP cũ, chờ mã mới."
+    },
+
+    {
+      "title": "Tôi nghi ngờ lộ thông tin thẻ?",
+      "content": "<p>Để đảm bảo an toàn, bạn vui lòng khóa thẻ ngay lập tức theo một trong hai cách sau:</p><p>Cách 1: Khóa thẻ trực tiếp trên ứng dụng Vikki</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục “Thẻ”.</li><li>Chọn thẻ Vạn năng VikkiONE Connect đang sử dụng.</li><li>Chọn “Khóa thẻ tạm thời”.</li></ul><p>Cách 2:</p><ul><li>Liên hệ ngay với Vikki Care qua tính năng \"Hỗ trợ\" trên ứng dụng.</li><li>Gọi Hotline 1900 6608 để được hỗ trợ khóa thẻ ngay trong trường hợp không thể thao tác trên ứng dụng.</li></ul><p>Sau khi khóa thẻ, bạn có thể:</p><ul><li>Yêu cầu phát hành thẻ thay thế trực tiếp trên ứng dụng Vikki, hoặc</li><li>Liên hệ Vikki Care để được tư vấn hủy thẻ cũ và hỗ trợ phát hành thẻ mới, giúp bạn tiếp tục sử dụng dịch vụ an toàn.</li></ul>"
+    },
+    {
+      "title": "Giao dịch lạ xuất hiện ban đêm?",
+      "content": "<p>Có thể là thanh toán quốc tế theo múi giờ khác.</p>"
+    },
+    {
+      "title": "Tôi muốn tắt thanh toán online tạm thời?",
+      "content": "<p>Tắt ngay trong cài đặt thẻ trên app.</p>"
+    },
+    {
+      "title": "App báo lỗi hệ thống khi thao tác thẻ?",
+      "content": "<p>Có thể đang bảo trì, thử lại sau.</p>"
+    },
+    {
+      "title": "Tôi cần hỗ trợ gấp ngoài giờ?",
+      "content": "<p>Tổng đài hoạt động 24/7. Bạn có thể tham khảo các cách sau:</p><ul><li>Tính năng chat trên ứng dụng Vikki/Zalo/Facebook</li><li>Hotline 1900.6608 (1000đ/phút)</li><li>Email: 19006608@vikkibank.vn</li></ul>"
+    },
+    {
+      "title": "Làm sao để sở hữu Thẻ VikkiONE Connect?",
+      "content": "<p>Sản phẩm thẻ Vạn năng VikkiONE Connect được thiết kế dành riêng cho các cá nhân thuộc các tổ chức, doanh nghiệp, trường học, bệnh viện hoặc đơn vị công có liên kết hợp tác với Vikki Bank. Để sở hữu Thẻ VikkiONE Connect, khách hàng là CBNV/khách hàng của đối tác liên kết phát hành thẻ với Vikki Bank.</p>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ VikkiONE Connect như thế nào?",
+      "content": "<p>Chủ thẻ quản lý thẻ VikkiONE Connect trên app Vikki như xem kích hoạt thẻ, tạo PIN, xem thông thẻ, khóa/mở thẻ, cài dặt hạn mức giao dịch thẻ và tra soát giao dịch …</p>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ VikkiONE Connect, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "<p>Sau khi nhận thẻ, khách hàng cần thực hiện kích hoạt thẻ trên app (lưu ý chỉ kích hoat thẻ khi đã nhận thẻ vật lý), cài đặt mã PIN giao dịch. Chủ động khóa/mở thẻ khi cần và bảo quản thẻ an toàn, bảo mật thông tin thẻ. Không cung cấp thông tin thẻ, mã PIN, mã OTP cho bất kỳ ai.</p>"
+    },
+
+    {
+      "title": "Khi xảy ra tranh chấp chấm công/điểm danh, Vikki Bank có chịu trách nhiệm không?",
+      "content": "<p>Vikki Bank không chịu trách nhiệm đối với tranh chấp chấm công/điểm danh nội bộ giữa tổ chức và nhân viên. Vikki Bank chỉ cung ứng dịch vụ tiện ích nội bộ, không quản lý dữ liệu nhân sự của tổ chức.</p>"
+    },
+    {
+      "title": "Mất thẻ định danh nhưng không mất tiền thì xử lý ra sao?",
+      "content": "<p>Khi bạn phát hiện đã mất thẻ VikkiONE Connect, bạn vui lòng khóa thẻ ngay lập tức theo một trong hai cách sau:</p><p>Cách 1: Khóa thẻ trực tiếp trên ứng dụng Vikki</p><ul><li>Đăng nhập ứng dụng Vikki, chọn mục “Thẻ”.</li><li>Chọn thẻ Vạn năng VikkiONE Connect đang sử dụng.</li><li>Chọn “Khóa thẻ tạm thời”.</li></ul><p>Cách 2:</p><ul><li>Liên hệ ngay với Vikki Care qua tính năng \"Hỗ trợ\" trên ứng dụng.</li><li>Gọi Hotline 1900 6608 để được hỗ trợ khóa thẻ ngay trong trường hợp không thể thao tác trên ứng dụng.</li></ul><p>Sau khi khóa thẻ, bạn có thể:</p><ul><li>Yêu cầu phát hành thẻ thay thế trực tiếp trên ứng dụng Vikki, hoặc</li><li>Liên hệ Vikki Care để được hỗ trợ phát hành thẻ mới, giúp bạn tiếp tục sử dụng dịch vụ an toàn.</li></ul>"
+    },
+    {
+      "title": "Nếu tôi nghỉ việc/chuyển trường thì thẻ VikkiONE Connect có bị khóa không?",
+      "content": "<p>Khi bạn nghỉ việc hoặc chuyển trường thì thẻ VikkiONE Connect vẫn hoạt động bình thường. Tuy nhiên, bạn sẽ thanh toán phí theo biểu phí hiện hành của Vikki Bank.</p><p>Về thẻ định danh tại trường, bạn không còn thuộc quản lý của trường hoặc công ty nên các tính năng như điểm danh, ưu đãi nội bộ,... sẽ bị vô hiệu hóa trên hệ thống của trường hoặc công ty.</p><p>Khi công ty/nhà trường yêu cầu thu hồi thẻ, bạn cần thanh toán dư nợ thẻ tín dụng và các khoản phí khác liên quan (nếu có). Đồng thời, Vikki Bank sẽ thực hiện khóa hoặc hủy thẻ theo quy định của ngân hàng trong từng thời kỳ.</p>"
+    },
+    {
+      "title": "Tôi có thể dùng thẻ cho nhiều tổ chức cùng lúc không?",
+      "content": "<p>Sản phẩm thẻ Vạn năng VikkiONE Connect được thiết kế dành riêng cho các cá nhân thuộc các tổ chức khác nhau có liên kết hợp tác với Vikki Bank.</p>"
+    },
+    {
+      "title": "Tổ chức có xem được lịch sử chi tiêu cá nhân của tôi không?",
+      "content": "<p>Tổ chức không có quyền truy cập, tra cứu lịch sử chi tiêu cá nhân trên thẻ của bạn.</p>"
+    },
+    {
+      "title": "Thẻ định danh có dùng offline (mất mạng) được không?",
+      "content": "<p>Việc mất hoặc không có kết nối Internet, thẻ VikkiONE Connect vẫn có thể chấm công hoặc điểm danh tại công ty hoặc tổ chức.</p>"
+    },
+
+    {
+      "title": "Khi đổi công ty, tôi có cần làm lại thẻ vật lý không?",
+      "content": "<p>Trường hợp công ty cũ của bạn đã thu hồi thẻ VikkiONE Connect thì bạn vẫn có thể làm lại thẻ của công ty khác nếu có liên kết với Vikki Bank hoặc các thẻ khác theo nhu cầu của bạn.</p><p>Bạn có thể liên hệ VikkiCare các cách sau để được tư vấn về sản phẩm thẻ:</p><ul><li>Tính năng chat trên ứng dụng Vikki/Zalo/Facebook</li><li>Hotline 1900.6608 (1000đ/phút)</li><li>Email: 19006608@vikkibank.vn</li></ul>"
+    },
+    {
+      "title": "Thẻ VikkiONE Connect có bắt buộc phát hành kèm tín dụng không?",
+      "content": "<p>Thẻ Vạn Năng VikkiONE Connect là thẻ quốc tế Mastercard tiên phong với mô hình “nhiều tính năng trong một thẻ”, tích hợp đồng thời Thẻ Thanh toán & tín dụng (Debit & Credit).</p>"
+    },
+    {
+      "title": "Tổ chức cần chuẩn bị gì để triển khai VikkiONE Connect?",
+      "content": "<p>Tổ chức có nhu cầu hợp tác với Vikki Bank để triển khai thẻ Vạn năng VikkiONE Connect, Tổ chức vui lòng liên hệ đến Vikki Bank qua các hình thức sau:</p><ul><li>Địa điểm giao dịch gần nhất của Vikki Bank</li><li>Tính năng chat trên ứng dụng Vikki/Zalo/Facebook</li><li>Hotline 1900.6608 (1000đ/phút)</li><li>Email: 19006608@vikkibank.vn</li></ul>"
+    },
+    {
+      "title": "Vai trò của tổ chức trong việc cấp/thu hồi thẻ?",
+      "content": "<p>Tổ chức có vai trò quản lý chính trong việc cấp và thu hồi thẻ (cán bộ, công chức, viên chức, hoặc thẻ ra vào) nhằm đảm bảo an ninh, trật tự và quy định.</p><p>Tổ chức chịu trách nhiệm phê duyệt, cấp mới, đổi thẻ khi có thay đổi thông tin, thu hồi thẻ khi nhân sự chuyển công tác, nghỉ hưu, hoặc làm mất, đồng thời quản lý, giám sát việc sử dụng thẻ đúng mục đích.</p>"
+    }
+  ],
+
+  "tempQA": [
+    {
+      "title": "Quản lý trên ứng dụng",
+      "children": [
+        {
+          "title": "1. Tôi xem thông tin thẻ ở đâu?",
+          "content": "Trong mục Thẻ Vikki trên ứng dụng Vikki."
+        },
+        {
+          "title": "2. Tôi có thể khóa thẻ tạm thời không?",
+          "content": "Có, thao tác trực tiếp trên app."
+        },
+        {
+          "title": "3. Tôi có thể bật/tắt thanh toán online không?",
+          "content": "Có, trong phần cài đặt thẻ."
+        },
+        {
+          "title": "4. Có thể giới hạn chi tiêu hàng ngày không?",
+          "content": "Có, tùy chính sách từng thời kỳ."
+        },
+        {
+          "title": "5. Tôi muốn đổi PIN thì làm sao?",
+          "content": "Đổi PIN trên app hoặc ATM."
+        },
+        {
+          "title": "7. App không hiển thị thẻ thì sao?",
+          "content": "Bạn đăng xuất và đăng nhập lại."
+        },
+        {
+          "title": "8. Tôi có thể xem lịch sử giao dịch bao lâu?",
+          "content": "Bạn xem toàn bộ lịch sử trên app."
+        },
+        {
+          "title": "9. App bị treo khi vào mục thẻ?",
+          "content": "Bạn cập nhật phiên bản mới nhất."
+        },
+        {
+          "title": "10. Tôi có thể quản lý nhiều thẻ trên một app không?",
+          "content": "Bạn hoàn toàn quản lý nhiều thẻ trên app."
+        },
+        {
+          "title": "11. Tôi muốn nhận thông báo chi tiêu thì làm sao?",
+          "content": "Bật thông báo trong phần cài đặt."
+        }
+      ]
+    },
+    {
+      "title": "Tính năng định danh - vận hành",
+      "children": [
+        {
+          "title": "1. Tôi chấm công nhưng hệ thống không ghi nhận?",
+          "content": "Kiểm tra thiết bị hoặc liên hệ bộ phận quản lý."
+        },
+        {
+          "title": "2. Thẻ bị trầy xước có ảnh hưởng không?",
+          "content": "Nếu hỏng chip, cần cấp lại."
+        },
+        {
+          "title": "3. Thẻ có thể dùng ở nhiều chi nhánh không?",
+          "content": "Có, nếu được cấp quyền."
+        },
+        {
+          "title": "4. Khi nhân viên nghỉ việc, thẻ có cần đổi không?",
+          "content": "Vikki Bank không bắt buộc (tùy điều kiện), Tổ chức bạn tắt tính năng chấm công."
+        }
+      ]
+    },
+    {
+      "title": "Thanh toán - chi tiêu",
+      "children": [
+        {
+          "title": "1. Thẻ có thể dùng để trả học phí, vé máy bay, hóa đơn dịch vụ không?",
+          "content": "Có, Thẻ được sử dụng thanh toán học phí, vé máy bay, hóa đơn dịch vụ… như Thẻ tín dụng và Thẻ thanh toán quốc tế."
+        },
+        {
+          "title": "2. Tôi thanh toán nhưng bị trừ tiền hai lần?",
+          "content": "Có thể là giao dịch treo. Trường hợp cần hỗ trợ, bạn vui lòng liên hệ Tổng đài Vikki Care."
+        },
+        {
+          "title": "3. Thẻ bị từ chối tại cửa hàng?",
+          "content": "Bạn vui lòng kiểm tra hạn mức còn lại hoặc trạng thái thẻ trên app Vikki."
+        },
+        {
+          "title": "4. Thẻ có hỗ trợ thanh toán không tiếp xúc không?",
+          "content": "Có, nếu thiết bị thanh toán (POS) hỗ trợ."
+        },
+        {
+          "title": "5. Thẻ có thể dùng tại máy ATM không?",
+          "content": "Có, để rút tiền hoặc đổi PIN."
+        },
+        {
+          "title": "6. Thanh toán QR có dùng được không?",
+          "content": "Tùy điểm chấp nhận và cấu hình từng thời kỳ."
+        },
+        {
+          "title": "7. Sao kê chưa chốt nhưng đã thấy dư nợ?",
+          "content": "Ứng dụng Vikki sẽ cập nhật dư nợ theo thời gian thực ngay khi giao dịch phát sinh để giúp bạn quản lý chi tiêu hiệu quả.\n\nDư nợ hiện tại: Tổng số tiền bạn đã chi tiêu tính đến thời điểm kiểm tra.\nDư nợ cuối kỳ (Sao kê): Tổng số tiền được chốt vào ngày sao kê hàng tháng để thanh toán."
+        }
+      ]
+    },
+    {
+      "title": "Ưu đãi - Tích điểm - Hỗ trợ",
+      "children": [
+        {
+          "title": "1. Tôi tích điểm SkyJoy như thế nào?",
+          "content": "Qua các giao dịch thanh toán bằng thẻ."
+        },
+        {
+          "title": "2. Điểm tích lũy có hết hạn không?",
+          "content": "Theo chính sách từng chương trình."
+        },
+        {
+          "title": "3. Tôi có thể nhận thông báo ưu đãi mới không?",
+          "content": "Có, qua app hoặc Website của Vikki Bank."
+        },
+        {
+          "title": "4. Thẻ có chương trình hoàn tiền không?",
+          "content": "Có, tùy từng chiến dịch. Bạn vui lòng tham khảo mục “Ưu đãi” Thẻ trên app Vikki."
+        },
+        {
+          "title": "5. Tôi cần hỗ trợ về ưu đãi thì liên hệ ai?",
+          "content": "Bạn liên hệ Tổng đài Chăm sóc khách hàng Vikki Care."
+        },
+        {
+          "title": "6. Khi nào nên gọi CSKH thay vì tự xử lý trên app?",
+          "content": "Khi mất thẻ, nghi ngờ gian lận hoặc xảy ra lỗi giao dịch."
+        }
+      ]
+    }
+  ]
+}

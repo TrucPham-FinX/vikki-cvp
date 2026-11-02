@@ -1,0 +1,33 @@
+<style>
+  .legal-content .fee-table {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  .legal-content .fee-table th,
+  .legal-content .fee-table td,
+  .legal-content .fee-table th *,
+  .legal-content .fee-table td * {
+    font-family: inherit;
+    font-size: 14px;
+  }
+
+  .legal-content .fee-table th {
+    font-weight: 700;
+  }
+
+  #co-cau-giai-thuong
+    .fee-table:has(thead tr:nth-child(2))
+    tbody
+    td:not(:first-child),
+  #co-cau-giai-thuong
+    .fee-table:has(tbody td[rowspan])
+    tbody
+    td:not(:first-child) {
+    text-align: center;
+  }
+
+  #co-cau-giai-thuong .legal-note {
+    font-style: italic;
+  }
+</style>

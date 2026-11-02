@@ -1,0 +1,28 @@
+<style>
+  #booking_vja {
+    border: none;
+    padding: 0;
+  }
+</style>
+<script>
+  window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (data?.type === 'setHeight') {
+      const iframe = document.getElementById('booking_vja');
+      iframe.style.height = event.data.height + 50 + 'px';
+    }
+
+    if (data && data.type === 'redirect' && data.url) {
+      window.location.href = data.url;
+    }
+  });
+</script>
+
+<iframe
+  id="booking_vja"
+  src="./index.html"
+  height="660"
+  width="100%"
+  title="Iframe Example"
+  scrolling="no"
+></iframe>

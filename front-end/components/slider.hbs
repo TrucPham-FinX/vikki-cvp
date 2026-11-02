@@ -1,0 +1,24 @@
+<div class='slide-container' style='{{#if background-color}}background-color:{{background-color}}{{/if}}'>
+{{#if srcTitle}}
+  <div class='gjs-row container'>
+    <div class='gjs-cell'>
+      <img src='{{srcTitle}}' class='section {{#if imgClassName}}{{imgClassName}}{{/if}}' />
+    </div>
+  </div>
+{{/if}}
+<swiper-container class='center-swiper {{#if hide-pagination}} hide-pagination{{/if}}' {{#if id}}id='{{id}}' {{/if}}>
+  {{#each slider}}
+  <swiper-slide>
+    <div class='slide-img'>
+      {{#if popupLink}}
+      <span data-popup='{{popupLink}}' data-title='{{popupTitle}}'>
+        <img class='swiper-img' src='{{src}}' />
+      </span>
+      {{else}}
+      <img class='swiper-img' src='{{src}}' />
+      {{/if}}
+    </div>
+  </swiper-slide>
+  {{/each}}
+</swiper-container>
+</div>

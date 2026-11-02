@@ -1,0 +1,331 @@
+<style>
+  /* Match the horizontal inset of the QA "Show more" button
+     (container px-1 + px-3 + px-3 = 1.75rem) so both buttons render
+     the same width. */
+  .no-bg {
+    padding: 0;
+    padding-inline: 1rem;
+  }
+  .no-bg .full-w {
+    width: 100%;
+  }
+  .no-bg .full-w .button {
+    width: 100%;
+  }
+
+  /* Answer text was rendering as heavy as the question title; force normal
+     weight on both the inline QA accordion and the FAQ popup content. */
+  .accordion-content,
+  .accordion-content p,
+  .accordion-content li {
+    font-weight: 400;
+    color: #040B1EEB;
+  }
+  .group-sub,
+  .group-sub p,
+  .group-sub li {
+    font-weight: 400;
+  }
+
+  /* Padding above the "FAQs" title image, right before the QA list. */
+  .pt-1 {
+    padding-top: 0;
+  }
+
+  .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+  }
+  .popup-title {
+    min-height: 80px;
+    background: none;
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .accordion {
+    max-width: none;
+  }
+
+  #backToTop {
+    bottom: 60px;
+  }
+  body {
+    padding-bottom: 0;
+  }
+  .popup-inner,
+  .bg-bottom {
+    padding-bottom: 120px;
+  }
+  html,
+  body {
+    padding-bottom: 0;
+  }
+
+  .btn-register {
+    background: linear-gradient(
+      88.03deg,
+      #0000ff 0%,
+      #6100ff 55.85%,
+      #da0191 77.92%,
+      #ff8a00 90.71%,
+      #ffb907 100%
+    );
+    box-shadow:
+      0px 0px 8px 0px rgba(0, 0, 0, 0.1),
+      0px 2px 5px 0px rgba(255, 255, 255, 0.18) inset,
+      0px 0px 8px 0px rgba(255, 255, 255, 0.3) inset,
+      0px 0px 12px 6px rgba(255, 255, 255, 0.16) inset,
+      0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset 0px 6px 6px 0px
+        rgba(255, 255, 255, 0.12) inset;
+
+    height: 48px;
+    left: 16px;
+    right: 16px;
+    line-height: 48px;
+    position: fixed;
+    bottom: 16px;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    z-index: 99999999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .hasCard .btn-register{
+    display: none;
+  }
+  .group-item{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .group-heading{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  .group-sub-title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+  .group-sub{
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+
+  }
+  .group-sub:last-child{
+    border:none
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    }
+
+    .partner-item {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .partner-item.is-primary {
+    grid-row: span 2;
+    background: #ffffff;
+    }
+
+    .partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    }
+
+    .partner-logo img.activeLogo, .partner-logo img.inactiveLogo{
+      display: none;
+    }
+
+    .partner-item.is-primary .partner-logo{
+      padding-bottom: 91%;
+    }
+
+    .partner-item.is-primary img.normalLogo{
+        display: none;
+    }
+
+    .partner-item.is-primary .activeLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    .hasCard .partner-item.is-primary .activeLogo{
+      display: none;
+    }
+
+  .custom {
+    background-color: #EDF4FF;
+    padding-top: 3rem;
+  }
+  .custom .slide-container {
+    padding-top: 0;
+  }
+  .custom swiper-container::part(pagination) {
+    display: none;
+  }
+
+    .hasCard .partner-item.is-primary .inactiveLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    [data-id='sovico'] img,
+    [data-id='hdbank'] img{
+      border: 1px solid #d1d1d1;
+    }
+
+    
+
+    .partner-logo{
+      padding-bottom: 44%;
+      position: relative;
+      height: 0;
+    }
+
+    .partner-logo img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .partner-sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+    }
+
+    .partner-btn {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b4bff, #ff9f2f);
+    }
+    .btn-full .button-wrap{
+        flex-direction: column;
+    }
+    .btn-full .button{
+        width: 100%;
+    }
+  #backToTopQA  {
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    transform: translateY(10px);
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    display: none;
+    z-index: 999;
+
+    border-radius: 9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #backToTopQA.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .popup {
+    overflow: hidden;
+  }
+
+.popup-body {
+  height: 100%;
+}
+
+.popup-body iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Match the T&C iframe popup header style used by vikki-safe-plus-cvp
+   (.safe-popup-body--iframe .popup-title): left-aligned, full-width,
+   flex-anchored title bar above the iframe. */
+.popup-body.safe-popup-body--iframe {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+.safe-popup-body--iframe .popup-title {
+  flex: 0 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  min-height: 80px;
+  margin: 0;
+  padding: 16px 64px 16px 16px;
+  font-size: 24px;
+  line-height: 1.3;
+  text-align: left;
+  justify-content: flex-start;
+}
+.safe-popup-body--iframe .popup-iframe {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 0;
+  min-height: 0;
+}
+</style>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('popup');
+    const popupBody = document.getElementById('popupBody');
+    if (!popup || !popupBody) return;
+
+    const syncPopupIframeClass = () => {
+      const isOpen = popup.classList.contains('show');
+      const hasIframe = Boolean(popupBody.querySelector('.popup-iframe'));
+      popupBody.classList.toggle('safe-popup-body--iframe', isOpen && hasIframe);
+    };
+
+    new MutationObserver(syncPopupIframeClass).observe(popup, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+  });
+</script>
+<div id='qa'>
+  <div class='menu-top'>
+    <div>
+    </div>
+    <div>
+    </div>
+    <div>
+    </div>
+  </div>
+</div>
+
+{{> video}}

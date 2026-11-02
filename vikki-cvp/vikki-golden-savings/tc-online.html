@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        color: rgba(4, 11, 30, 0.92);
+      }
+      .legal-page {
+        padding: 16px;
+        line-height: 135%;
+        padding-top: 20px;
+      }
+      .legal-content > .accordion {
+        box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+        border-radius: 20px;
+        margin-bottom: 20px;
+        background: #FFF;
+        overflow: hidden;
+      }
+      .legal-content > .accordion > .accordion-header {
+        background: rgba(232, 241, 255, 1);
+        font-weight: 600;
+        font-size: 17px;
+      }
+      .accordion-body {
+        font-size: 14px;
+        padding: 0 5px;
+      }
+      .accordion-header {
+        font-size: 16px;
+        padding: 12px 8px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color:  rgba(0, 0, 255, 1);
+        line-height: 22px;
+      }
+      .article .accordion-header {
+        background: #fff;
+        border: 1px solid #ddd;
+      }
+      .legal-list {
+        margin: 8px 0 12px 6px;
+        padding: 0;
+      }
+      .legal-list-item {
+        margin-bottom: 6px;
+        margin-left: 15px;
+      }
+      .legal-list-text {
+        display: inline;
+        line-height: 1.6;
+      }
+
+      /* ===== Marker styles ===== */
+      .legal-list.numeric,
+      .legal-list.decimal {
+        list-style-type: decimal;
+      }
+      .legal-list.alpha {
+        list-style-type: lower-alpha;
+      }
+      .legal-list.roman {
+        list-style-type: lower-roman;
+      }
+      .legal-list.disc {
+        list-style-type: disc;
+      }
+      .legal-list.none {
+        list-style-type: none;
+        margin-left: 0;
+      }
+      .legal-title {
+        font-size: 20px;
+        color: rgba(0, 0, 255, 1);
+        text-transform: uppercase;
+        text-align: center;
+      }
+      .center {
+        text-align: center;
+        padding-top:20px;
+      }
+      .center img {
+        width: 85px;
+      }
+      .legal-small-title {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      thead {
+        background: rgba(0, 72, 255, 1);
+        color: #fff;
+      }
+      thead th {
+        font-weight: normal;
+        font-size: 12px;
+      }
+      .bg-blue {
+        background: rgba(237, 248, 255, 1);
+      }
+      tbody td {
+        font-size: 14px;
+        color: rgba(1, 5, 15, 1);
+      }
+      tbody td,
+      table {
+        border-collapse: collapse;
+        border: 1px solid #dfdfdf;
+        min-width: 100%;
+        table-layout: fixed;
+      }
+      table th:first-child,
+      table td:first-child {
+        width: 40px;
+      }
+      thead th,
+      tbody td {
+        max-width: 150px;
+        padding: 8px;
+      }
+      .scroll-x {
+        overflow-x: auto;
+      }
+      .auto-table {
+        table-layout: auto;
+        width: auto;
+        border-collapse: collapse;
+      }
+      .auto-table {
+        width: 700px;
+      }
+      thead th {
+        border: 1px solid #fff;
+      }
+      .m-w-100 {
+        min-width: 100px;
+      }
+      .fz-14 {
+        font-size: 14px;
+      }
+      .p-8 {
+        padding: 8px;
+      }
+      .table-scroll {
+        width: 100%;
+        overflow-x: auto;
+      }
+      .fee-table {
+        min-width: 100%;
+        width: max-content;
+        border-collapse: collapse;
+      }
+      .w-150 {
+        width: 150px;
+      }
+      .legal-note {
+        font-size: 1rem;
+        padding: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+      .legal-footer {
+        text-align: right;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 8px;
+      }
+      .legal-content {
+        padding-bottom: 120px;
+      }
+      .w-unset {
+        width: unset !important;
+      }
+      .bold{
+        font-weight: bold;
+      }
+      .bold-center{
+        font-weight: bold;
+        text-align: center;
+      }
+      .w-150-f {
+        width: 150px !important;
+      }
+      .no-list-style {
+        list-style-type: none;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="legal-page">
+      <span class="legal-small-title">Điều khoản và Điều kiện</span>
+      <div class="center"><img src="assets/vikki-logo.png" alt="Vikki" /></div>
+      <h1 class="legal-title">ĐIỀU KHOẢN VÀ ĐIỀU KIỆN VỀ MỞ VÀ SỬ DỤNG TIỀN GỬI TIẾT KIỆM TRỰC TUYẾN VIKKI</h1>
+
+
+      <div class="legal-layout">
+
+        <main class="legal-content">
+            <div class="accordion" id="giai-thich-tu-ngu">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-giai-thich-tu-ngu')"
+              >
+                Điều 1. Giải thích từ ngữ
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-giai-thich-tu-ngu"
+                style="display: block"
+              >
+                  <div class="accordion" id="dinh-nghia">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dinh-nghia')"
+                    >
+                      Giải thích từ ngữ
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dinh-nghia"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list numeric">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank: là Ngân hàng Trách nhiệm hữu hạn Một thành viên Số Vikki (gọi tắt là “Ngân hàng”).
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khách hàng (gọi tắt là KH): là khách hàng cá nhân đủ điều kiện gửi tiết kiệm và được Vikki Bank chấp thuận cung cấp sản phẩm “Tiền gửi tiết kiệm trực tuyến Vikki” bằng việc thực hiện giao dịch qua ứng dụng Vikki và trở thành Chủ sở hữu khoản tiền gửi “Tiền gửi tiết kiệm trực tuyến Vikki”.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Tài khoản thanh toán trực tuyến Vikki (gọi tắt là “TKTT trực tuyến Vikki”): là tài khoản thanh toán Vikki Bank được mở bằng phương thức điện tử và áp dụng định danh trực tuyến (eKYC) đối với Khách hàng thực hiện trên ứng dụng Vikki. Theo đó, Khách hàng được xác thực và định danh trên các phương tiện điện tử tại thời điểm mở Tài khoản mà không cần phải đến điểm giao dịch của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Tiền gửi tiết kiệm: là khoản tiền được KH gửi tại Vikki Bank theo nguyên tắc được hoàn trả đầy đủ gốc, lãi theo thỏa thuận với Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Tiền gửi Tiết kiệm trực tuyến Vikki (gọi tắt là “TG Tiết kiệm trực tuyến Vikki”): là một sản phẩm tiền gửi tiết kiệm bằng đồng Việt Nam, theo đó KH có thể trích tiền từ TKTT trực tuyến Vikki của KH để gửi tiết kiệm bằng phương tiện điện tử tại Vikki Bank thông qua ứng dụng Vikki và được hưởng lãi theo thỏa thuận với Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Ứng dụng Vikki: là ứng dụng trên thiết bị di động của Vikki Bank, cho phép khách hàng sử dụng các dịch vụ Mobile Banking của Vikki Bank theo quy định của Vikki Bank từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Dịch vụ TG Tiết kiệm trực tuyến (Dịch vụ): là một hoặc một số dịch vụ do KH đăng ký và được Vikki Bank chấp thuận cung cấp, bao gồm dịch vụ gửi (mở)/rút (tất toán) một phần hoặc toàn bộ TG Tiết kiệm trực tuyến Vikki hoặc các dịch vụ khác được Vikki Bank triển khai theo từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Giao dịch TKTT trực tuyến Vikki: là các giao dịch được thực hiện bởi KH trên TKTT trực tuyến Vikki của KH theo các dịch vụ mà KH đăng ký và được Vikki Bank chấp thuận cung cấp.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Ngày gửi tiền TG Tiết kiệm trực tuyến Vikki: là ngày KH thực hiện giao dịch trích tiền từ TKTT trực tuyến Vikki của KH mở qua ứng dụng Vikki để gửi tiết kiệm trực tuyến.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  .Ngày giá trị: là ngày KH gửi TG Tiết kiệm trực tuyến Vikki và Vikki Bank bắt đầu tính lãi theo thỏa thuận. Ngày giá trị sẽ được tính từ thời điểm KH gửi tiền và bắt đầu được tính lãi. Trường hợp thời điểm KH gửi TG Tiết kiệm trực tuyến Vikki trùng hoặc sau thời điểm hệ thống Vikki khóa ngày làm việc, khi đó hệ thống Vikki sẽ thông báo cho KH Ngày giá trị để bắt đầu tính lãi là ngày tiếp theo của ngày gửi TG Tiết kiệm trực tuyến Vikki sau khi KH hoàn tất giao dịch trên ứng dụng Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Ngày đến hạn: là ngày trả vốn gốc và lãi tiền gửi.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Số ngày tính lãi: là số ngày gửi thực tế được tính từ Ngày giá trị đến ngày đến hạn/ ngày KH thực hiện tất toán TG Tiết kiệm trực tuyến Vikki (theo nguyên tắc tính ngày đầu, bỏ ngày cuối).
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Thời hạn gửi tiền: là khoảng thời gian từ ngày giá trị đến ngày đến hạn của TG Tiết kiệm trực tuyến Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Kỳ hạn gửi tiền: là thời hạn gửi tiền được xác định cụ thể, theo thỏa thuận giữa Vikki Bank với KH.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Kéo dài thời hạn gửi tiền: Vào ngày đến hạn của khoản tiền gửi tiết kiệm, nếu KH không thực hiện giao dịch tất toán và không có yêu cầu hoặc thỏa thuận khác thì Vikki Bank sẽ tự động kéo dài thêm một kỳ hạn mới theo quy định của Vikki Bank về hình thức TG Tiết kiệm trực tuyến Vikki nếu tại thời điểm đến hạn, Vikki Bank còn triển khai sản phẩm và KH đáp ứng điều kiện gửi tiền.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Điều khoản và Điều kiện về mở và sử dụng tiền gửi tiết kiệm trực tuyến Vikki (gọi tắt là “Điều khoản và Điều kiện”): là điều khoản và điều kiện của sản phẩm Tiền gửi tiết kiệm trực tuyến Vikki, bao gồm các văn bản sửa đổi, bổ sung thay thế trong từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="quy-dinh-tien-gui">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-quy-dinh-tien-gui')"
+              >
+                Điều 2. Quy định về Tiền gửi Tiết kiệm trực tuyến Vikki
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-quy-dinh-tien-gui"
+                style="display: block"
+              >
+                  <div class="accordion" id="gui-tien">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-gui-tien')"
+                    >
+                      1. Gửi tiền TG Tiết kiệm trực tuyến Vikki:
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-gui-tien"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.1</span> KH phải tuân theo các quy định của pháp luật, quy định của Vikki Bank về việc gửi TG Tiết kiệm trực tuyến Vikki và cung cấp thông tin, tài liệu đầy đủ, chính xác, theo yêu cầu của Vikki Bank và chịu mọi trách nhiệm về các thông tin, tài liệu mà KH cung cấp cho Ngân hàng.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.2</span> KH chỉ có thể gửi TG Tiết kiệm trực tuyến Vikki thông qua ứng dụng Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.3</span> Tài khoản “TG Tiết kiệm trực tuyến Vikki” sẽ được mở ngay tại thời điểm KH hoàn tất các bước đăng ký mở và chấp thuận theo các điều khoản, điều kiện Tiết kiệm trực tuyến Vikki tại Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.4</span> Sau khi KH hoàn tất thủ tục để gửi TG Tiết kiệm trực tuyến Vikki theo quy định, Vikki Bank sẽ gửi thông báo về việc mở TG Tiết kiệm trực tuyến thành công qua ứng dụng Vikki cho KH.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.5</span> KH có thể theo dõi, tra cứu, tìm kiếm các thông tin về TG Tiết kiệm trực tuyến Vikki (số lượng TG Tiết kiệm trực tuyến Vikki, số tiền gửi, ngày gửi, ngày đến hạn, lãi suất, kỳ hạn,…) thông qua ứng dụng Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.6</span> KH không được gửi thêm tiền vào TG Tiết kiệm trực tuyến Vikki đã mở trừ trường hợp Vikki Bank có quy định khác.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.7</span> Việc cầm cố, sử dụng TG Tiết kiệm trực tuyến Vikki để làm tài sản bảo đảm cho nghĩa vụ của KH tại Vikki Bank hoặc tại bất kỳ bên thứ ba nào sẽ được Vikki Bank thông báo và triển khai theo từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.8</span> KH lưu ý rằng KH không được chuyển quyền sở hữu hoặc ủy quyền giao dịch đối với TG Tiết kiệm trực tuyến Vikki đã mở trừ trường hợp quy định tại điểm 1.9 Khoản 1 Điều này.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.9</span> Trường hợp KH chết hoặc bị hạn chế/mất năng lực hành vi dân sự, TG Tiết kiệm trực tuyến Vikki sẽ được xử lý theo các quy định tương ứng về tiền gửi tiết kiệm hiện hành của Vikki Bank và theo các phương thức được Vikki Bank triển khai trong từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.10</span>Trừ trường hợp có thỏa thuận khác về việc thông báo khi có thay đổi đối với khoản tiền gửi tiết kiệm, Vikki Bank sẽ thông báo cho người gửi tiền theo các hình thức: thông báo bằng văn bản tới địa chỉ cư trú hoặc thông báo qua tin nhắn SMS với số điện thoại mà KH đăng ký với Vikki Bank, hoặc các hình thức khác phù hợp theo quy định Vikki Bank từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="tat-toan">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-tat-toan')"
+                    >
+                      2. Tất toán TG Tiết kiệm trực tuyến Vikki
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-tat-toan"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.1</span> KH có thể tất toán TG Tiết kiệm trực tuyến Vikki thông qua ứng dụng Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.2</span> Tất toán trước hạn:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list roman">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            KH được quyền tất toán TG Tiết kiệm trực tuyến Vikki trước hạn.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Số tiền rút trước hạn được áp dụng mức lãi suất không kỳ hạn thấp nhất của Vikki Bank tại thời điểm rút trước hạn tính theo số ngày thực gửi từ ngày giá trị đến ngày tất toán TG Tiết kiệm trực tuyến Vikki.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.3</span> Rút một phần vốn trước hạn:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list roman">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            KH được phép rút một phần vốn trước hạn trên ứng dụng Vikki hoặc theo quy định sản phẩm của từng thời kỳ.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Số tiền tối thiểu áp dụng rút một phần vốn trước hạn của 01 khoản TG Tiết kiệm trực tuyến Vikki là 1.000.000 VND (Bằng chữ: Một triệu đồng), không giới hạn số lần rút một phần vốn trước hạn.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Số tiền còn lại sau khi rút một phần vốn trước hạn phải lớn hơn hoặc bằng 1.000.000 VND (Bằng chữ: Một triệu đồng).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Số tiền rút trước hạn được áp dụng mức lãi suất không kỳ hạn thấp nhất của Vikki Bank tại thời điểm rút trước hạn tính theo số ngày thực gửi từ Ngày giá trị đến ngày rút trước hạn TG Tiết kiệm trực tuyến Vikki.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Đối với số tiền còn lại tiếp tục được duy trì và áp dụng mức lãi suất đang áp dụng đối với khoản tiền gửi theo như đã thoả thuận giữa Vikki Bank với khách hàng.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.4</span> Đối với các khoản tiền gửi nhận lãi đầu kỳ hoặc nhận lãi định kỳ (tháng, quý) rút một phần vốn hoặc tất toán trước hạn: phần chênh lệch giữa số tiền lãi khách hàng thực sự được hưởng vào thời điểm rút và số tiền lãi khách hàng đã nhận (lãi trả đầu kỳ/ lãi hàng tháng/lãi hàng quý) trước đó sẽ được thu hồi lại.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.5</span> Trường hợp Vikki Bank phải thực hiện tất toán trước hạn TG Tiết kiệm trực tuyến Vikki của KH theo: (i) các cam kết/thỏa thuận giữa KH với Vikki Bank trong trường hợp KH sử dụng TG Tiết kiệm trực tuyến Vikki làm tài sản bảo đảm cho nghĩa vụ tại Vikki Bank hoặc tại bất kỳ bên thứ ba nào; và/hoặc (ii) theo các quyết định của Cơ quan có thẩm quyền; mức lãi suất áp dụng trong các trường hợp này cũng áp dụng tương tự trường hợp KH tất toán TG Tiết kiệm trực tuyến Vikki trước hạn.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="dac-diem">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-dac-diem')"
+                    >
+                      3. Đặc điểm TG Tiết kiệm trực tuyến Vikki:
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-dac-diem"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.1</span> Đồng tiền nhận và chi trả tiền gửi tiết kiệm: Đồng Việt Nam (VND)
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.2</span> Số tiền gửi tối thiểu, tối đa TG Tiết kiệm trực tuyến Vikki:
+                                </span>
+                                
+                          
+                                    <ul class="legal-list roman">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Tối thiểu: 1.000.000 VND (Một triệu đồng).
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Tối đa: không giới hạn.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Tại một thời điểm, Khách hàng có thể gửi nhiều TG Tiết kiệm trực tuyến Vikki trên ứng dụng Vikki.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.3</span> Thời hạn gửi tiền: Kỳ hạn gửi tiền của TG Tiết kiệm trực tuyến Vikki sẽ được Vikki Bank triển khai từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.4</span> Lãi suất và cơ sở tính lãi
+                                </span>
+                                
+                          
+                                    <ul class="legal-list roman">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Lãi suất của sản phẩm TG Tiết kiệm trực tuyến Vikki do Vikki Bank quy định từng thời kỳ và được cố định trong suốt kỳ hạn gửi tiền.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Cơ sở tính lãi: một năm có 365 ngày.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.5</span> Phương thức tính lãi
+                                </span>
+                                
+                          
+                                    <ul class="legal-list roman">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Tiền lãi KH được trả vào ngày đến hạn và được tính theo công thức:
+                                          </span>
+                                          
+                                    
+                                              <ul class="legal-list no-list-style formula-list">
+                                                  <li class="legal-list-item ">
+                                                    <span class="legal-list-text ">
+                                                      <span>Tiền lãi KH<br>được nhận<br>vào ngày đến<br>hạn</span><span>=</span><span>Số dư TG<br>Tiết kiệm<br>trực tuyến<br>Vikki</span><span>x</span><span>Lãi suất<br>(%/năm)</span><span>x</span><span>Số<br>ngày<br>tính lãi</span><span>/</span><span>365</span>
+                                                    </span>
+                                                    
+                                              
+                                                  </li>
+                                              </ul>
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            Trường hợp KH tất toán trước hạn: Khách hàng được hưởng lãi suất không kỳ hạn (KKH) thấp nhất tại thời điểm rút vốn tính theo số ngày thực gửi thực tế theo công thức sau:
+                                          </span>
+                                          
+                                    
+                                              <ul class="legal-list no-list-style formula-list">
+                                                  <li class="legal-list-item ">
+                                                    <span class="legal-list-text ">
+                                                      <span>Tiền lãi KH<br>được nhận</span><span>=</span><span>Số tiền<br>rút</span><span>x</span><span>Lãi suất KKH<br>thấp nhất tại<br>thời điểm rút<br>(%/năm)</span><span>x</span><span>Số<br>ngày<br>tính lãi</span><span>/</span><span>365</span>
+                                                    </span>
+                                                    
+                                              
+                                                  </li>
+                                              </ul>
+                                        </li>
+                                    </ul>
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">3.6</span> Phương thức tái tục
+                                </span>
+                                
+                          
+                                    <ul class="legal-list no-list-style decimal-inline-list sub-decimal-list">
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            <span class="legal-decimal-marker">3.6.1</span> Khi đăng ký mở TG Tiết kiệm trực tuyến Vikki, KH có thể lựa chọn một trong ba phương thức tái tục sau đây:
+                                          </span>
+                                          
+                                    
+                                              <ul class="legal-list roman">
+                                                  <li class="legal-list-item ">
+                                                    <span class="legal-list-text ">
+                                                      Tự động tái tục vốn và lãi: tiền lãi KH được hưởng sẽ được nhập vào vốn gốc khi đến hạn TG Tiết kiệm trực tuyến Vikki và tự động gia hạn thêm một kỳ hạn mới theo lãi suất áp dụng tại thời điểm gia hạn nếu KH không có giao dịch khác.
+                                                    </span>
+                                                    
+                                              
+                                                  </li>
+                                                  <li class="legal-list-item ">
+                                                    <span class="legal-list-text ">
+                                                      Tự động tái tục vốn, lãi chuyển vào TKTT trực tuyến Vikki: tiền lãi được tính và tự động chuyển vào TKTT trực tuyến Vikki, vốn gốc được gia hạn thêm một kỳ hạn mới theo lãi suất áp dụng tại thời điểm gia hạn nếu KH không có giao dịch gì khác.
+                                                    </span>
+                                                    
+                                              
+                                                  </li>
+                                                  <li class="legal-list-item ">
+                                                    <span class="legal-list-text ">
+                                                      Tự động tất toán: khi đến hạn TG Tiết kiệm trực tuyến Vikki, tiền lãi KH được hưởng cùng với vốn gốc được tự động chuyển vào TKTT trực tuyến Vikki.
+                                                    </span>
+                                                    
+                                              
+                                                  </li>
+                                              </ul>
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            <span class="legal-decimal-marker">3.6.2</span> KH lưu ý rằng đối với phương thức “tự động tái tục vốn và lãi” và “tự động tái tục vốn, lãi chuyển vào TKTT trực tuyến Vikki” nhưng đến ngày đến hạn, nếu Vikki Bank ngừng triển khai kỳ hạn gửi tiền tương ứng hoặc ngừng triển khai sản phẩm TG Tiết kiệm trực tuyến Vikki hoặc KH không còn thuộc đối tượng được gửi tiết kiệm bằng phương tiện điện tử, thì Vikki Bank sẽ chuyển toàn bộ tiền gốc và lãi KH được hưởng vào TKTT trực tuyến Vikki của KH tại Vikki Bank:
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            <span class="legal-decimal-marker">3.6.3</span> Vikki Bank không giới hạn số lần tái tục theo phương thức tái tục KH đã chọn khi mở TG Tiết kiệm trực tuyến Vikki trừ trường hợp Vikki Bank có quy định khác.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                        <li class="legal-list-item ">
+                                          <span class="legal-list-text ">
+                                            <span class="legal-decimal-marker">3.6.4</span> Thời gian giao dịch: KH có thể thực hiện các giao dịch liên quan đến TG Tiết kiệm trực tuyến Vikki bất kỳ thời gian nào (24/7) trên ứng dụng Vikki.
+                                          </span>
+                                          
+                                    
+                                        </li>
+                                    </ul>
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="quyen-nghia-vu-khach-hang">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-quyen-nghia-vu-khach-hang')"
+              >
+                Điều 3. Quyền và Nghĩa vụ của KH
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-quyen-nghia-vu-khach-hang"
+                style="display: block"
+              >
+                  <div class="accordion" id="quyen-kh">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-quyen-kh')"
+                    >
+                      1. Quyền của KH
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-quyen-kh"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.1</span> Được gửi tiền, tất toán, rút một phần vốn TG Tiết kiệm trực tuyến Vikki, hưởng lãi theo đúng quy định Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.2</span> Các quyền khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của Vikki Bank và quy định pháp luật.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="nghia-vu-kh">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-nghia-vu-kh')"
+                    >
+                      2. Trách nhiệm của KH
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-nghia-vu-kh"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.1</span> Tuân thủ các quy định của Điều khoản và Điều kiện này, quy định của Vikki Bank về việc gửi và sử dụng TG Tiết kiệm trực tuyến Vikki.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.2</span> Kiểm tra và thanh toán đầy đủ các khoản phí liên quan đến việc sử dụng dịch vụ theo biểu phí được Vikki Bank quy định theo từng thời kỳ.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.3</span> Khi Khách hàng có nhu cầu khiếu nại, tra soát các thông tin về TG Tiết kiệm trực tuyến Vikki mở tại Vikki Bank, Khách hàng có thể liên hệ đến bộ phận Dịch vụ Khách hàng Vikki Care hoặc theo đường dây nóng 19006608 hoặc qua kênh ứng dụng Vikki trong vòng 07 ngày làm việc kể từ ngày KH nhận được thông báo giao dịch hoặc kể từ ngày quyền và lợi ích của KH bị vi phạm. KH phải chịu phí khiếu nại theo quy định của Vikki Bank. KH lưu ý rằng nếu KH khiếu nại quá thời hạn trên, Vikki Bank sẽ không phải chịu bất kỳ trách nhiệm nào phát sinh.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.4</span> Đã đọc, hiểu và cam kết thực hiện đúng và đầy đủ theo các quy định tại Điều khoản và Điều kiện này. KH phải chịu trách nhiệm thanh toán tất cả các giao dịch được thực hiện có sử dụng chữ ký điện tử của KH mà không được hủy, phủ nhận, từ chối, thay đổi, thoái thác giao dịch với bất kỳ lý do nào; cam kết chịu mọi rủi ro liên quan đến giao dịch đã được thực hiện với Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.5</span> KH nhận thức đầy đủ các rủi ro có thể gặp phải khi sử dụng Dịch vụ, cam kết các hoạt động diễn ra do chứng từ điện tử có sử dụng chữ ký điện tử của mình lập phù hợp với quy định và chịu trách nhiệm về những thiệt hại xảy ra do vô tình hay cố ý để lộ chữ ký điện tử hay bất kỳ thông tin bảo mật nào dẫn đến bị kẻ gian lợi dụng.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.6</span> KH đồng ý từ bỏ quyền khiếu nại, khiếu kiện khi dịch vụ cung cấp bị gián đoạn do sự kiện bất khả kháng hoặc do lỗi của bên thứ ba cung ứng dịch vụ đường truyền, lỗi hệ thống, lỗi mạng, virus.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.7</span> Chịu mọi trách nhiệm về những sai sót hay hành vi lợi dụng, lừa đảo hoặc bị lợi dụng, lừa đảo khi sử dụng dịch vụ do lỗi của chính KH hoặc do KH không cung cấp đúng, đầy đủ, chính xác, kịp thời khi có thay đổi thông tin; cam kết chịu mọi rủi ro bao gồm cả thiệt hại về tài chính, chi phí phát sinh do thông tin KH cung cấp sai hoặc không thống nhất.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.8</span> Các nghĩa vụ khác theo quy định của Điều khoản và Điều kiện này và các quy định có liên quan của Pháp luật.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="quyen-nghia-vu-vikki">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-quyen-nghia-vu-vikki')"
+              >
+                Điều 4. Quyền và Nghĩa vụ của Vikki Bank
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-quyen-nghia-vu-vikki"
+                style="display: block"
+              >
+                  <div class="accordion" id="quyen-vikki">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-quyen-vikki')"
+                    >
+                      1. Quyền của Vikki Bank
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-quyen-vikki"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.1</span> Được quyền tự động trích nợ tài khoản TG Tiết kiệm trực tuyến Vikki của KH để (i) Thanh toán các khoản lãi, phí, chi phí phát sinh trong quá trình quản lý TG Tiết kiệm trực tuyến Vikki; (ii) Thực hiện các nghĩa vụ tài chính theo quyết định của cơ quan nhà nước có thẩm quyền yêu cầu KH phải thực hiện nghĩa vụ; (iii) Xử lý các khoản giao dịch rút thừa, rút quá số dư, các khoản tiền ghi có nhầm, thừa vào TKTT trực tuyến Vikki (nếu có); (iv) xử lý các nghĩa vụ của KH theo các cam kết/thỏa thuận đã xác lập tại Vikki Bank; (v) xử lý các trường hợp khác theo thỏa thuận giữa Vikki Bank và KH hoặc theo quy định của pháp luật;
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.2</span> Được quyền tự động trích số dư TG Tiết kiệm trực tuyến Vikki là tài sản bảo đảm hoặc trong trường hợp KH có nghĩa vụ nợ với Vikki Bank, để thực hiện nghĩa vụ trả nợ trong trường hợp đến hạn nghĩa vụ trả nợ mà không được KH và/hoặc các bên có liên quan thực hiện theo đúng thỏa thuận với Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.3</span> Phong tỏa, đóng, chuyển đổi hoặc tất toán hoặc rút một phần vốn TG Tiết kiệm trực tuyến Vikki theo quy định của pháp luật và của Vikki Bank.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.4</span> Chấm dứt cung cấp Dịch vụ cho KH do vi phạm các quy định về sử dụng TG Tiết kiệm trực tuyến Vikki theo quy định của Điều khoản và Điều kiện này, các nội dung đã thỏa thuận hoặc đã có quy định.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.5</span> Được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin, điện, lỗi hệ thống, lỗi mạng, virus… bị trục trặc, lỗi do bên thứ ba cung ứng dịch vụ hoặc vì bất kỳ lý do gì ngoài khả năng kiểm soát của Vikki Bank hoặc trong trường hợp vì lý do để bảo đảm an toàn và hạn chế rủi ro cho KH, Vikki Bank không thực hiện hoặc chậm trễ trong việc thực hiện các thỏa thuận tại Điều khoản và Điều kiện này.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.6</span>Trong trường hợp phát hiện KH vi phạm các quy định hiện hành hoặc thỏa thuận đã có với ngân hàng, có dấu hiệu vi phạm pháp luật, Vikki Bank có quyền không thực hiện các yêu cầu sử dụng dịch vụ của KH, giữ lại tang vật và thông báo ngay với cấp/cơ quan có thẩm quyền xem xét và xử lý.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">1.7</span> Các quyền khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của pháp luật.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+                  <div class="accordion" id="trach-nhiem-vikki">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-trach-nhiem-vikki')"
+                    >
+                      2. Trách nhiệm của Vikki Bank
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-trach-nhiem-vikki"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list no-list-style decimal-inline-list">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.1</span> Đảm bảo cung cấp dịch vụ cho KH đúng theo thỏa thuận tại Điều khoản và Điều kiện này. Giải quyết các yêu cầu tra soát, khiếu nại của KH liên quan đến việc sử dụng dịch vụ theo quy định của pháp luật và của Vikki Bank – Vikki Bank không có trách nhiệm với những thiệt hại do nguyên nhân vượt quá phạm vi kiểm soát của Vikki Bank dẫn đến sự không thể thực hiện được dịch vụ, bao gồm nhưng không giới hạn các nguyên nhân sự cố kỹ thuật, phá hoại, động đất, thiên tai, đứt nghẽn mạng, đường truyền, mất điện.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  <span class="legal-decimal-marker">2.2</span> Các trách nhiệm khác theo quy định của Điều khoản và Điều kiện này và các quy định khác có liên quan của pháp luật.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="giao-dich-khong-huy-ngang">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-giao-dich-khong-huy-ngang')"
+              >
+                Điều 5. Giao dịch không hủy ngang
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-giao-dich-khong-huy-ngang"
+                style="display: block"
+              >
+                  <div class="accordion" id="khong-huy-ngang">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-khong-huy-ngang')"
+                    >
+                      Giao dịch không hủy ngang
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-khong-huy-ngang"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list numeric">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH không thể hủy, thay đổi, phủ nhận, thoái thác bất kỳ giao dịch nào đã thực hiện thành công (tức là từ thời điểm dữ liệu đã được nhập vào hệ thống của Vikki Bank). Trường hợp KH muốn hủy yêu cầu thực hiện giao dịch của mình, Ngân hàng có quyền (nhưng không có nghĩa vụ) xem xét, với điều kiện (i) yêu cầu hủy giao dịch được gửi đến Vikki Bank ngay lập tức sau khi KH thực hiện giao dịch, và (ii) Ngân hàng chưa ghi nhận và/hoặc chưa xử lý giao dịch trên hệ thống của mình theo yêu cầu của KH, và (iii) việc hủy giao dịch không ảnh hưởng đến lợi ích của Ngân hàng cũng như quyền và lợi ích của bất kỳ một bên thứ ba nào khác.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Bất kỳ giao dịch nào đã được thực hiện thành công sẽ được Vikki Bank coi là có giá trị và không hủy ngang và KH cam kết chịu hoàn toàn trách nhiệm cũng như nghĩa vụ với Vikki Bank đối với các giao dịch đó.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="thay-doi-dich-vu">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-thay-doi-dich-vu')"
+              >
+                Điều 6. Thay đổi, sửa đổi, chấm dứt dịch vụ, sửa đổi nội dung điều khoản
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-thay-doi-dich-vu"
+                style="display: block"
+              >
+                  <div class="accordion" id="thay-doi">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-thay-doi')"
+                    >
+                      Thay đổi, sửa đổi, chấm dứt
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-thay-doi"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list numeric">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Vikki Bank có quyền thay đổi, sửa đổi, điều chỉnh các tính năng, nội dung của Dịch vụ, được phép khóa/ tạm ngừng/ chấm dứt/ từ chối/ sửa đổi/ bổ sung/ thay đổi giao diện, đổi tên Dịch vụ và các điều chỉnh khác liên quan đến việc cung cấp Dịch vụ cho KH mà không cần báo trước khi Vikki Bank thấy là cần thiết, bao gồm nhưng không giới hạn các trường hợp: KH không tuân thủ Điều khoản và Điều kiện này, quy định của Vikki Bank hoặc quy định của pháp luật về việc sử dụng dịch vụ; theo quyết định, yêu cầu pháp luật hoặc cơ quan nhà nước có thẩm quyền; các trường hợp liên quan đến giả mạo, rủi ro hoặc có gian lận; khi lợi ích của Vikki Bank/ KH/ Bên thứ ba có thể bị vi phạm; Vikki Bank tạm ngưng dịch vụ để bảo trì; khi có sự cố của nhà cung cấp dịch vụ viễn thông; khi có sự cố do nguyên nhân vượt quá phạm vi kiểm soát của Vikki Bank dẫn đến sự không thể thực hiện được Dịch vụ, bao gồm nhưng không giới hạn các nguyên nhân sự cố kỹ thuật, phá hoại, động đất, thiên tai, đứt nghẽn mạng, mất điện do nhà cung ứng dịch vụ hoặc do Vikki Bank, khi giao dịch không đúng hạn mức KH đăng ký; TKTT của KH không đủ tiền thanh toán hoặc chuyển khoản sau khi trừ các khoản phí; mã và/ hoặc mật khẩu (chữ ký điện tử) không đúng; KH không tuân thủ các yêu cầu bảo mật hoặc dịch vụ có khả năng rủi ro theo khuyến cáo của tổ chức liên quan; nghi ngờ giao dịch có liên quan đến yếu tố tội phạm, rửa tiền, vi phạm pháp luật hoặc để thực hiện chính sách phòng chống rửa tiền theo quy định của Ngân hàng và pháp luật ; các trường hợp ngoài khả năng kiểm soát của Ngân hàng.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Ngân hàng có quyền sửa đổi, bổ sung các Điều khoản và Điều kiện này vào bất cứ lúc nào. Các sửa đổi, bổ sung này có hiệu lực kể từ ngày được ghi rõ trong thông báo. Nếu KH tiếp tục sử dụng dịch vụ sau thời điểm có hiệu lực của sửa đổi, bổ sung có nghĩa là KH chấp nhận hoàn toàn các sửa đổi, bổ sung đó.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Khi có các sự kiện trên, Vikki Bank sẽ thông báo trên website và/ hoặc trên các phương tiện thông tin đại chúng và/ hoặc gửi thông báo cho KH qua một trong các phương tiện: email, điện thoại cố định, điện thoại di động của KH (đã đăng ký với Vikki Bank). Những thay đổi, sửa đổi, điều chỉnh sẽ có hiệu lực vào ngày được xác định trong thông báo. Nếu KH tiếp tục sử dụng dịch vụ sau ngày đó thì được hiểu là KH chấp nhận các thay đổi, sửa đổi này.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  KH tại đây đồng ý và không có bất kỳ khiếu nại nào rằng Vikki Bank được thực hiện các hành vi thay đổi, sửa đổi, chấm dứt dịch vụ, sửa đổi nội dung điều khoản bằng việc thông báo trên các phương tiện như quy định tại điều này.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="luat-dieu-chinh">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-luat-dieu-chinh')"
+              >
+                Điều 7. Luật điều chỉnh, giải quyết tranh chấp
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-luat-dieu-chinh"
+                style="display: block"
+              >
+                  <div class="accordion" id="tranh-chap">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-tranh-chap')"
+                    >
+                      Luật điều chỉnh và tranh chấp
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-tranh-chap"
+                      style="display: block"
+                    >
+                  
+                  
+                          <ul class="legal-list numeric">
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Điều khoản và điều kiện này được điều chỉnh bởi pháp luật Việt Nam. Nếu có bất kỳ tranh chấp nào liên quan đến việc giải thích từ ngữ trong Điều khoản và Điều kiện này thì việc giải thích từ ngữ theo ý chí của Vikki Bank sẽ được ưu tiên áp dụng.
+                                </span>
+                                
+                          
+                              </li>
+                              <li class="legal-list-item ">
+                                <span class="legal-list-text ">
+                                  Nếu có bất kỳ tranh chấp nào phát sinh từ việc thực hiện Dịch vụ giữa KH và Vikki Bank, thì tranh chấp đó trước hết sẽ được giải quyết thông qua thương lượng, hòa giải. Trường hợp hòa giải không thành, các Bên có quyền đưa tranh chấp ra Tòa án có thẩm quyền tại thành phố Hồ Chí Minh, Việt Nam để giải quyết.
+                                </span>
+                                
+                          
+                              </li>
+                          </ul>
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+            <div class="accordion" id="hieu-luc">
+              <div
+                class="accordion-header"
+                onclick="toggle('body-hieu-luc')"
+              >
+                Điều 8. Thời hạn hiệu lực và Điều khoản thi hành
+              </div>
+            
+              <div
+                class="accordion-body"
+                id="body-hieu-luc"
+                style="display: block"
+              >
+                  <div class="accordion" id="hieu-luc-thi-hanh">
+                    <div
+                      class="accordion-header"
+                      onclick="toggle('body-hieu-luc-thi-hanh')"
+                    >
+                      
+                    </div>
+                  
+                    <div
+                      class="accordion-body"
+                      id="body-hieu-luc-thi-hanh"
+                      style="display: block"
+                    >
+                          <div >Điều khoản và điều kiện về mở và sử dụng TG Tiết kiệm trực tuyến Vikki này có hiệu lực kể từ ngày KH xác nhận đã đọc, hiểu rõ và đồng ý với tất cả các Điều khoản và Điều kiện này, cam kết thực hiện đúng nội dung các Điều khoản và Điều kiện cũng như các quy định của Vikki Bank về dịch vụ và các thỏa thuận liên quan khác với ngân hàng cho đến khi có sự kiện pháp lý làm chấm dứt dịch vụ giữa KH và Vikki Bank.</div>
+                  
+                  
+                    </div>
+                  </div>
+            
+            
+            
+              </div>
+            </div>
+        </main>
+      </div>
+    </div>
+    <style>
+  .legal-small-title {
+    display: none;
+  }
+
+  .legal-title {
+    color: #0047ff;
+    font-size: 19px;
+    line-height: 1.35;
+    margin: 12px 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .legal-content .legal-list.decimal {
+    list-style-type: decimal;
+  }
+
+  .legal-content .legal-list.disc,
+  .legal-content .legal-list.decimal,
+  .legal-content .legal-list.roman {
+    padding-left: 28px;
+    margin-left: 0;
+  }
+
+  .legal-content .legal-list.disc .legal-list-item,
+  .legal-content .legal-list.decimal .legal-list-item,
+  .legal-content .legal-list.roman .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item {
+    margin-bottom: 12px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list-text {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 8px;
+    align-items: start;
+  }
+
+  .legal-content .legal-decimal-marker {
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman {
+    margin-top: 10px;
+    padding-left: 44px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-item {
+    padding-left: 8px;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .legal-list-text {
+    display: inline;
+  }
+
+  .legal-content .formula-list {
+    margin: 18px 0 20px;
+    overflow-x: auto;
+    padding-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-item {
+    margin-left: 0;
+  }
+
+  .legal-content .formula-list .legal-list-text {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 78px 10px 76px 10px 62px 10px 40px 8px 22px;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list {
+    margin-left: -52px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .legal-content .decimal-inline-list > .legal-list-item > .legal-list.roman .formula-list .legal-list-text {
+    display: grid;
+  }
+
+  .legal-content .sub-decimal-list {
+    padding-left: 0;
+  }
+</style>
+
+    <script>
+      function toggle(id) {
+        const el = document.getElementById(id)
+        if (!el) return
+        el.style.display = el.style.display === 'none' ? 'block' : 'none'
+      }
+    </script>
+  </body>
+</html>

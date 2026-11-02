@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>{{title}}</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+  
+        <style>
+            html{
+                background: rgba(246, 247, 248, 1);
+            }
+           body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: rgba(4, 11, 30, 0.92);
+    padding-bottom: 120px
+  }
+  .legal-page {
+    padding: 16px;
+    line-height: 135%;
+    padding-top: 20px;
+  }
+  .legal-content > .accordion {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .legal-content > .accordion > .accordion-header {
+    background: rgba(232, 241, 255, 1);
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .accordion-body {
+    font-size: 14px;
+  }
+  .accordion-header {
+    font-size: 16px;
+    padding: 12px 8px;
+    cursor: pointer;
+    color:  rgba(14, 14, 15, 1);
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
+   .accordion-header:after{
+    content: '';
+    width: 16px;
+    height: 16px;
+  }
+  .article .accordion-header {
+    background: #fff;
+    border: 1px solid #ddd;
+  }
+  .legal-list {
+    margin: 8px 0 12px 6px;
+    padding: 0;
+    font-size: 14px;
+  }
+  .legal-list-item {
+    margin-bottom: 6px;
+    margin-left: 15px;
+  }
+  .legal-list-text {
+    display: inline;
+    line-height: 1.6;
+  }
+  /* ===== Marker styles ===== */
+  .legal-list.numeric,
+  .legal-list.decimal {
+    list-style-type: decimal;
+  }
+  .legal-list.alpha {
+    list-style-type: lower-alpha;
+  }
+  .legal-list.roman {
+    list-style-type: lower-roman;
+  }
+  .legal-list.disc {
+    list-style-type: disc;
+  }
+  .legal-list.none {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .legal-title {
+    font-size: 20px;
+    color: rgba(0, 0, 255, 1);
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .center {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .center img {
+    width: 85px;
+  }
+  .legal-small-title {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  thead {
+    background: rgba(0, 72, 255, 1);
+    color: #fff;
+  }
+  thead th {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  .bg-blue {
+    background: rgba(237, 248, 255, 1);
+  }
+  tbody td {
+    font-size: 14px;
+    color: rgba(1, 5, 15, 1);
+  }
+  tbody td,
+  table {
+    border-collapse: collapse;
+    border: 1px solid #dfdfdf;
+    min-width: 100%;
+    
+  }
+  table th:first-child,
+  table td:first-child {
+    width: 40px;
+  }
+  thead th,
+  tbody td {
+    max-width: 150px;
+    padding: 8px;
+    -webkit-text-size-adjust: 100%;
+    
+  }
+   tbody td{
+    font-size: 14px;
+   }
+  .scroll-x {
+    overflow-x: auto;
+  }
+  .auto-table {
+    table-layout: auto; /* QUAN TRỌNG */
+    width: auto; /* hoặc bỏ width */
+    border-collapse: collapse;
+  }
+  .auto-table {
+    width: 700px;
+  }
+  thead th {
+    border: 1px solid #fff;
+  }
+  .m-w-100 {
+    min-width: 100px;
+  }
+  .fz-14 {
+    font-size: 14px;
+  }
+  .p-8 {
+    padding: 8px;
+  }
+  .table-scroll {
+    width: 100%;
+    overflow-x: auto;
+  }
+  .fee-table {
+    min-width: 100%;
+    width: max-content;
+    border-collapse: collapse;
+  }
+  .w-195 {
+    width: 195px;
+  }
+  .w-215 {
+    width: 215px;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-unset {
+    width: unset !important;
+  }
+  .fz-125{
+    font-size: 1.25rem;
+  }
+  .fw-500{
+    font-weight: 500;
+  }
+  .fw-600{
+    font-weight: 600;
+  }
+  .bold{
+    font-weight: bold;
+  }
+  .text-right{
+    text-align: right;
+  }
+  .legal-content h3{
+    margin:0
+  }
+  .fz-1{
+    font-size: 1rem;
+  }
+  .text-right{
+    text-align: right;
+  }
+.legal-content h3{
+    margin-top: 15px;
+}
+.title{
+  background: none;
+  font-size: 2rem;
+  justify-content: flex-start;
+  padding: 0px 8px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+.accordion{
+  margin: 8px;
+  background: #FFF;
+  border-radius: 8px;
+}
+.toc-item {
+    margin: 0 8px;
+    border-bottom: 1px solid #dfdfdf;
+    list-style: none;
+    padding: 12px 0;
+}
+.toc-item:last-child{
+  border-bottom: none;
+}
+.toc-item a{
+  text-decoration: none;
+  color: rgba(14, 14, 15, 1);
+  display: block;
+  position: relative;
+  padding-right: 20px;
+}
+.toc-item a:after{
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url(assets/chevron.svg) no-repeat;
+}
+.accordion-header .icon-collapse{
+  position: absolute;
+  right: 14px;
+}
+
+.icon-collapse{
+  display: block;
+  width: 16px;
+  height: 16px;
+}
+.icon-collapse:before,.icon-collapse:after{
+  content:'';
+  width: 100%;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+.icon-collapse:after{
+  top: 50%;
+  left: 0
+}
+.icon-collapse:before{
+  transform: rotate(90deg);
+  left: 0;
+  top: 50%;
+  height: 2px;
+  transition: 0.2s;
+}
+.accordion-header.show .icon-collapse:before{
+   transform: rotate(0deg);
+}
+
+ </style>
+    </head>
+    <body>
+    <div class="">
+     <h1 class="title">Biểu phí - Biểu lãi suất - Hạn mức</h1>
+
+    {{#each header.intro}}
+        <p class="legal-intro">{{this}}</p>
+    {{/each}}
+
+
+    <div class="legal-layout">
+      <div class="accordion" id="toc-wrapper">
+        <div class="accordion-header" onclick="toggle('body-toc-wrapper')">
+          <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.4 4.6001C2.6268 4.6001 2 5.2269 2 6.0001C2 6.7733 2.6268 7.4001 3.4 7.4001C4.1732 7.4001 4.8 6.7733 4.8 6.0001C4.8 5.2269 4.1732 4.6001 3.4 4.6001Z" fill="#0048FF"/>
+              <path d="M3.4 16.6001C2.6268 16.6001 2 17.2269 2 18.0001C2 18.7733 2.6268 19.4001 3.4 19.4001C4.1732 19.4001 4.8 18.7733 4.8 18.0001C4.8 17.2269 4.1732 16.6001 3.4 16.6001Z" fill="#0048FF"/>
+              <path d="M2 12.0001C2 11.2269 2.6268 10.6001 3.4 10.6001C4.1732 10.6001 4.8 11.2269 4.8 12.0001C4.8 12.7733 4.1732 13.4001 3.4 13.4001C2.6268 13.4001 2 12.7733 2 12.0001Z" fill="#0048FF"/>
+              <path d="M8 5.1C7.50294 5.1 7.1 5.50294 7.1 6C7.1 6.49706 7.50294 6.9 8 6.9H21C21.497 6.9 21.9 6.49706 21.9 6C21.9 5.50294 21.497 5.1 21 5.1H8Z" fill="#0048FF"/>
+              <path d="M7.1 18C7.1 17.5029 7.50294 17.1 8 17.1H21C21.497 17.1 21.9 17.5029 21.9 18C21.9 18.4971 21.497 18.9 21 18.9H8C7.50294 18.9 7.1 18.4971 7.1 18Z" fill="#0048FF"/>
+              <path d="M8 11.1C7.50294 11.1 7.1 11.5029 7.1 12C7.1 12.4971 7.50294 12.9 8 12.9H21C21.497 12.9 21.9 12.4971 21.9 12C21.9 11.5029 21.497 11.1 21 11.1H8Z" fill="#0048FF"/>
+            </svg>
+          </span>
+          <span>Nội dung chính</span>
+          <span class="icon-collapse"></span>
+        </div>
+        <div class="accordion-body" id="body-toc-wrapper" style="display: none">
+          <div id="toc"></div>
+        </div>
+      </div>
+       
+
+        <main class="legal-content" id="fee">
+        {{#each blocks}}
+            {{#if (eq type "paragraph")}}
+                {{> static/blocks/paragraph}}
+            {{/if}}
+
+            {{#if (eq type "subheading")}}
+                {{> static/blocks/subheading}}
+            {{/if}}
+
+            {{#if (eq type "list")}}
+                {{> static/blocks/list}}
+            {{/if}}
+
+            {{#if (eq type "table")}}
+                {{> static/blocks/table}}
+            {{/if}}
+            {{/each}}
+        </main>
+    </div>
+
+    </div>
+{{{body}}}
+<script>
+  function toggle(id) {
+    const el = document.getElementById(id)
+    const header = el.previousElementSibling
+    if (!el) return
+    if(el.style.display === 'none'){
+      el.style.display = 'block';
+      header.classList.add('show')
+    } else {
+      el.style.display = 'none';
+      header.classList.remove('show')
+    }
+  }
+  
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const content = document.getElementById('fee');
+    const tocList = document.getElementById('toc');
+
+    if (!content || !tocList) return;
+
+    const headings = content.querySelectorAll('h2, h3, h4');
+
+    headings.forEach((heading, index) => {
+      // đảm bảo mỗi heading có id
+      if (!heading.id) {
+        heading.id = 'heading-' + index;
+      }
+
+      const li = document.createElement('li');
+      li.className = 'toc-item toc-' + heading.tagName.toLowerCase();
+
+      const a = document.createElement('a');
+      a.textContent = heading.textContent;
+      a.href = '#' + heading.id;
+
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        heading.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1104 @@
+{
+  "id": "vikki-one-connect",
+  "version": "2.1.0",
+  "layout": "fee",
+  "blocks": [
+    {
+      "type": "subheading",
+      "className": "fz-125 fw-500 p-8",
+      "text": "BIỂU PHÍ THẺ VẠN NĂNG VIKKIONE CONNECT DÀNH CHO KHÁCH HÀNG CÁ NHÂN"
+    },
+    {
+      "type": "subheading",
+      "text": "I. Biểu phí",
+      "className": "p-8 fw-500 fz-1"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "Stt", "rowspan": 2 },
+            { "value": "Tên phí", "rowspan": 2 },
+            { "value": "Thẻ VikkiONE Connect", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "Tính năng<br>Thẻ tín dụng", "className": "m-w-100" },
+            { "value": "Tính năng<br>Thẻ ghi nợ", "className": "m-w-100" }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "value": "1.", "className": "" },
+            {
+              "value": "Phí phát hành",
+              "colspan": 3,
+              "className": ""
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            {
+              "value": "Phí phát hành thẻ",
+              "colspan": 3
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "i." },
+            { "value": "Phát hành thông thường" },
+            { "value": "Miễn phí", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "ii." },
+            { "value": "Phát hành nhanh" },
+            { "value": "110.000 VND", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "b." },
+            {
+              "value": "Phí cấp lại/thay thế thẻ",
+              "colspan": 3
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "i." },
+            { "value": "Phát hành thông thường", "colspan": 3 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "a." },
+            { "value": "Tại Quầy" },
+            { "value": "110.000 VND", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Qua app Vikki" },
+            { "value": "55.000 VND", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "ii." },
+            { "value": "Phát hành nhanh" },
+            { "value": "110.000 VND", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "2.", "className": "" },
+            { "value": "Phí thường niên", "className": "" },
+            {
+              "value": "Năm đầu: Miễn phí<br/>Các năm tiếp theo: 110.000 VND",
+              "colspan": 2,
+              "className": ""
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "3.", "className": "" },
+            {
+              "value": "Phí cấp lại ePIN",
+              "colspan": 3,
+              "className": ""
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            { "value": "Tại Quầy giao dịch Vikki Bank" },
+            { "value": "22.000 VND", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Qua app Vikki Digital Bank" },
+            { "value": "11.000 VND", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "4.", "className": "" },
+            {
+              "value": "Phí truy vấn số dư/in sao kê rút gọn tại máy giao dịch tự động",
+              "colspan": 3,
+              "className": ""
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            { "value": "Thuộc Vikki Bank" },
+            { "value": "Miễn phí", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Thuộc liên minh Mastercard" },
+            { "value": "11.000 VND", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "5.", "className": "" },
+            {
+              "value": "Phí rút tiền mặt tại máy giao dịch tự động",
+              "colspan": 3,
+              "className": ""
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            { "value": "Thuộc Vikki Bank" },
+            { "value": "Miễn phí", "colspan": 2 }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Thuộc liên minh Mastercard" },
+            {
+              "value": "1,1%/số tiền giao dịch. Tối thiểu 11.000 VND",
+              "colspan": 2
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "6.", "className": "" },
+            {
+              "value": "Phí cấp lại bản sao Hóa đơn giao dịch",
+              "className": ""
+            },
+            { "value": "88.000 VND", "className": "", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "7.", "className": "" },
+            {
+              "value": "Phí xác nhận theo yêu cầu của Chủ thẻ",
+              "className": ""
+            },
+            { "value": "110.000 VND", "className": "", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "8.", "className": "" },
+            { "value": "Phí giao dịch ngoại tệ", "className": "" },
+            {
+              "value": "3,3%/số tiền giao dịch. Tối thiểu 11.000 VND",
+              "className": "",
+              "colspan": 2
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "9.", "className": "" },
+            {
+              "value": "Phí giao dịch nội tệ tại Đơn vị chấp nhận thẻ có mã tiền tệ khác VND",
+              "className": ""
+            },
+            {
+              "value": "1,1%/số tiền giao dịch. Tối thiểu 11.000 VND",
+              "colspan": 2,
+              "className": ""
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "10.", "className": "" },
+            {
+              "value": "Phí gửi thẻ qua bưu điện về địa chỉ KH yêu cầu",
+              "className": ""
+            },
+            { "value": "Miễn phí", "colspan": 2, "className": "" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "11.", "className": "" },
+            { "value": "Phí khiếu nại sai", "className": "" },
+            { "value": "99.000 VND", "className": "", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "12.", "className": "" },
+            {
+              "value": "Phí dịch vụ nhận tiền qua thẻ quốc tế Mastercard (MoneySend)",
+              "className": "",
+              "colspan": 3
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            { "value": "Giao dịch VND" },
+            { "value": "Miễn phí" },
+            { "value": "Miễn phí" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Giao dịch khác VND" },
+            { "value": "15.000 VND" },
+            { "value": "15.000 VND" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "13.", "className": "" },
+            {
+              "value": "Phí thay đổi hạn mức tín dụng",
+              "className": ""
+            },
+            { "value": "220.000 VND", "className": "" },
+            { "value": "Không áp dụng", "className": "" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "14.", "className": "" },
+            {
+              "value": "Phí thanh lý Thẻ trong vòng 12 tháng kể từ ngày phát hành Thẻ",
+              "className": ""
+            },
+            { "value": "300.000 VND", "className": "", "colspan": 2 }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "15.", "className": "" },
+            { "value": "Phí chậm thanh toán", "className": "" },
+            {
+              "value": "4%/số tiền chậm thanh toán. Tối thiểu 200.000 VND/lần",
+              "className": ""
+            },
+            { "value": "Không áp dụng", "className": "" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "16.", "className": "" },
+            {
+              "value": "Phí thay đổi hình thức bảo đảm",
+              "className": ""
+            },
+            { "value": "220.000 VND", "className": "" },
+            { "value": "Không áp dụng", "className": "" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "17." },
+            { "value": "Phí vượt hạn mức" },
+            {
+              "value": "4%/số tiền vượt hạn mức tín dụng. Tối thiểu 50.000 VND"
+            },
+            { "value": "Không áp dụng" }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "18." },
+            { "value": "Phí thông báo biến động giao dịch" },
+            { "value": "9.900/tháng" },
+            { "value": "Không áp dụng" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "19." },
+            { "value": "Phí hoàn dư có" },
+            {
+              "value": "1%/số tiền dư có. Tối thiểu 55.000"
+            },
+            { "value": "Không áp dụng" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "className": "fz-14 p-8",
+      "text": "Ghi chú: Phí thay đổi hạn mức tín dụng, Phí chậm thanh toán, Phí thay đổi hình thức bảo đảm, Phí vượt hạn mức trong biểu phí này là dịch vụ không thuộc đối tượng chịu thuế VAT"
+    },
+    {
+      "type": "subheading",
+      "className": "p-8",
+      "text": "II. Quy định chung"
+    },
+    {
+      "type": "paragraph",
+      "className": "fz-14 p-8 bold",
+      "text": "1. Giải thích từ ngữ và từ viết tắt:"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "Stt", "rowspan": 2 },
+            { "value": "Từ ngữ", "rowspan": 2 },
+            { "value": "Diễn giải", "colspan": 2 }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "value": "1." },
+            { "value": "Vikki Bank" },
+            { "value": "Ngân hàng TNHH Một thành viên số Vikki." }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "2." },
+            { "value": "KH" },
+            { "value": "Khách hàng." }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "3." },
+            { "value": "ĐVKD" },
+            { "value": "Đơn vị kinh doanh." }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "4." },
+            { "value": "TT" },
+            { "value": "Tối thiểu." }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "5." },
+            { "value": "VND" },
+            { "value": "Đồng Việt Nam." }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "6." },
+            {
+              "value": "Thẻ đang hoạt động"
+            },
+            {
+              "value": "Là thẻ không do Vikki Bank khóa, tạm ngưng sử dụng vì bất cứ lý do nào."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "className": "fz-14 p-8 bold",
+      "text": "2. Phương thức và thời gian thu phí:"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "STT" },
+            { "value": "Tên phí" },
+            { "value": "Nguyên tắc thu phí", "className": "w-195" },
+            { "value": "Hình thức thu phí" },
+            { "value": "Thời gian thu phí" }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "value": "1." },
+            { "value": "Phí phát hành thẻ" },
+            {
+              "value": "Phí phát hành từ thẻ thứ 02 (hai) trở đi sẽ thu khi KH phát hành cùng 01 (một) sản phẩm thẻ.<br><br><strong>Lưu ý:</strong> số lượng thẻ căn cứ chỉ tính trên số lượng thẻ đang hoạt động (chưa đóng)."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Trước khi thẻ được phát hành trên hệ thống."
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "2." },
+            { "value": "Phí cấp lại/thay thế thẻ" },
+            {
+              "value": "Phí thu khi KH yêu cầu cấp lại thẻ khi Thẻ bị thất lạc/mất/cắp/lộ thông tin thẻ/ thẻ hỏng/ theo yêu cầu của KH.<br><br><strong>Không áp dụng:</strong><br>- Thẻ hết hạn và cấp lại thẻ cho KH.<br>- Thẻ hỏng do lỗi khách quan (không phải lỗi KH).",
+              "className": "w-195"
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Trước khi Thẻ được cấp lại trên hệ thống."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "3." },
+            { "value": "Phí cấp lại ePIN" },
+            {
+              "value": "Phí thu khi KH yêu cầu cấp lại ePIN."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu cấp lại ePIN."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "4." },
+            { "value": "Phí truy vấn số dư tại máy giao dịch tự động" },
+            {
+              "value": "Phí tính trên từng lần giao dịch."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu truy vấn số dư tại máy giao dịch tự động."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "5." },
+            { "value": "Phí in sao kê rút gọn tại máy giao dịch tự động" },
+            {
+              "value": "Phí tính trên từng lần giao dịch."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu in sao kê rút gọn tại máy giao dịch tự động."
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "6." },
+            { "value": "Phí cấp lại bản sao Hóa đơn giao dịch" },
+            {
+              "value": "Phí tính trên từng lần yêu cầu của KH."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu sau khi KH yêu cầu cấp lại bản sao Hóa đơn giao dịch."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "7." },
+            { "value": "Phí xác nhận theo yêu cầu của Chủ thẻ" },
+            {
+              "value": "Phí tính trên từng lần yêu cầu của KH."
+            },
+            {
+              "value": "ĐVKD thu phí bằng tiền mặt/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu xác nhận thông tin."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "8." },
+            { "value": "Phí giao dịch ngoại tệ" },
+            {
+              "value": "- Phí này không áp dụng cho giao dịch VND.<br>- Phí tính trên số tiền giao dịch."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH thực hiện giao dịch bằng ngoại tệ."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "9." },
+            {
+              "value": "Phí giao dịch nội tệ tại Đơn vị chấp nhận thẻ có mã tiền tệ khác VND"
+            },
+            {
+              "value": "- Phí thu cho các giao dịch bằng VND được thực hiện tại đơn vị bán hàng có mã nước ngoài khác Việt Nam (căn cứ trên thông tin Ngân hàng thanh toán gửi về cho Vikki Bank).<br>- Phí tính trên số tiền giao dịch."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH thực hiện giao dịch bằng VND tại nước ngoài."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "10." },
+            { "value": "Phí khiếu nại sai" },
+            {
+              "value": "Phí thu trên từng giao dịch khiếu nại (không thu nếu KH khiếu nại đúng)."
+            },
+            {
+              "value": "Trung tâm Thẻ thực hiện thu trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi Trung tâm Thẻ phản hồi cho KH kết quả khiếu nại và kết quả: KH khiếu nại sai"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "11." },
+            {
+              "value": "Phí dịch vụ nhận tiền qua thẻ quốc tế Mastercard (MoneySend)"
+            },
+            {
+              "value": "Phí tính trên số tiền giao dịch."
+            },
+            {
+              "value": "Hệ thống thu tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi số tiền giao dịch được ghi có vào thẻ."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "15." },
+            {
+              "value": "Phí thay đổi hạn mức tín dụng"
+            },
+            {
+              "value": "Phí thu khi KH yêu cầu thay đổi hạn mức tín dụng hoặc khi KH yêu cầu thay đổi hình thức bảo đảm thẻ tín dụng/thay đổi tài sản bảo đảm thẻ tín dụng dẫn đến hạn mức tín dụng bị điều chỉnh giảm tương ứng theo quy định của Vikki Bank.<br><br><strong>Không áp dụng:</strong> trường hợp Vikki Bank chủ động giảm hạn mức tín dụng của khách hàng."
+            },
+            {
+              "value": "Hệ thống thu phí tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng."
+            },
+            {
+              "value": "Thu khi KH yêu cầu thay đổi hạn mức tín dụng hoặc hạn mức tín dụng bị điều chỉnh giảm do KH yêu cầu thay đổi tài sản bảo đảm."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "16." },
+            {
+              "value": "Phí thanh lý Thẻ trong vòng 12 tháng kể từ ngày phát hành Thẻ"
+            },
+            {
+              "value": "Phí thu khi KH yêu cầu thanh lý thẻ trong thời gian quy định kể từ ngày phát hành thẻ: + Ngày phát hành là ngày thẻ được phát hành ghi nhận trên hệ thống Vikki Bank (không tính ngày thẻ được cấp lại, gia hạn). Không áp dụng phí này trong trường hợp Vikki Bank đơn phương thanh lý thẻ tín dụng."
+            },
+            {
+              "value": "ĐVKD thu tiền mặt/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu thanh lý thẻ tín dụng trong vòng 12 tháng kể từ ngày phát hành thẻ. Thời gian 12 tháng: tính từ ngày phát hành thẻ năm một đến trước 01 ngày của năm hai."
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "17." },
+            {
+              "value": "Phí chậm thanh toán"
+            },
+            {
+              "value": "Phí tính trên số tiền chậm thanh toán."
+            },
+            {
+              "value": "Hệ thống thu phí tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng."
+            },
+            {
+              "value": "Thu khi KH không thanh toán số tiền tối thiểu theo kỳ sao kê theo quy định."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "18." },
+            {
+              "value": "Phí thay đổi hình thức bảo đảm"
+            },
+            {
+              "value": "Phí thu khi KH yêu cầu thay đổi hình thức bảo đảm thẻ tín dụng từ có tài sản bảo đảm sang không có tài sản bảo đảm.<br/>Phí tính trên từng hợp đồng thẻ tín dụng"
+            },
+            {
+              "value": "Hệ thống thu phí tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng."
+            },
+            {
+              "value": "Thu khi KH yêu cầu thay đổi hình thức bảo đảm thẻ tín dụng."
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "19." },
+            {
+              "value": "Phí vượt hạn mức"
+            },
+            {
+              "value": "Phí tính khi Dư nợ (bao gồm Phí, Lãi) lớn hơn hạn mức tín dụng tại ngày chốt sao kê."
+            },
+            {
+              "value": "Hệ thống thu phí tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng."
+            },
+            {
+              "value": "Thu vào Ngày sao kê."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "20." },
+            {
+              "value": "Phí thông báo biến động giao dịch"
+            },
+            {
+              "value": "Phí được tính theo tháng/thẻ đăng ký nhận thông báo biến động giao dịch qua SMS. Trường hợp Khách hàng hủy đăng ký trong tháng vẫn áp dụng thu phí."
+            },
+            {
+              "value": "Hệ thống thu phí tự động trên Thẻ/Tài khoản quản lý Thẻ tín dụng."
+            },
+            {
+              "value": "Thu vào Ngày cuối cùng của tháng."
+            }
+          ]
+        },
+
+        {
+          "cells": [
+            { "value": "21." },
+            {
+              "value": "Phí hoàn dư có"
+            },
+            {
+              "value": "Không áp dụng trong trường hợp thanh lý thẻ."
+            },
+            {
+              "value": "ĐVKD thu tiền mặt/Tài khoản quản lý Thẻ tín dụng/Tài khoản thanh toán."
+            },
+            {
+              "value": "Thu khi KH yêu cầu hoàn dư có."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "className": "fz-1 p-8 fw-500",
+      "text": "III. Quy định khác"
+    },
+    {
+      "type": "list",
+      "style": "decimal",
+      "className": "fz-14 p-8",
+      "items": [
+        {
+          "text": "Các mức phí không ghi chú cụ thể thẻ chính/thẻ phụ hoặc thẻ vật lý/phi vật lý thì được hiểu mức phí của thẻ chính/thẻ phụ, thẻ vật lý/phi vật lý là như nhau."
+        },
+        { "text": "Các mức phí không đề cập trong Biểu phí này thì miễn phí." },
+        {
+          "text": "Miễn phí các loại phí, lãi phát sinh đối với thẻ phát hành do các nguyên nhân sau bao gồm nhưng không giới hạn: phục vụ cho dự án kiểm thử, nguyên nhân không xuất phát từ khách hàng."
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "className": "fz-125 fw-500 p-8",
+      "text": "BIỂU LÃI SUẤT THẺ VẠN NĂNG VIKKIONE CONNECT DÀNH CHO KHÁCH HÀNG CÁ NHÂN"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "Stt", "rowspan": 2 },
+            { "value": "Lãi suất áp dụng", "rowspan": 2 },
+            { "value": "Thẻ VikkiONE Connect" }
+          ]
+        },
+        {
+          "cells": [{ "value": "Tính năng Thẻ tín dụng" }]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [{ "value": "I. Lãi suất trong hạn", "colspan": 3 }]
+        },
+        {
+          "cells": [{ "value": "Không có tài sản đảm bảo", "colspan": 3 }]
+        },
+        {
+          "cells": [
+            { "value": "1" },
+            {
+              "value": "Khách hàng là cán bộ nhân viên Vikki Bank, công ty trực thuộc và các CBNV thuộc tập đoàn Sovico, HDFG do TTT thông báo từng thời kỳ",
+              "className": "w-215"
+            },
+            { "value": "10%/năm" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "2" },
+            {
+              "value": "Khách hàng có nhận lương qua Vikki Bank (bao gồm báo có vào tài khoản)"
+            },
+            { "value": "24%/năm" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "3" },
+            { "value": "Khách hàng khác" },
+            { "value": "30%/năm" }
+          ]
+        },
+        {
+          "cells": [{ "value": "Có tài sản đảm bảo", "colspan": 3 }]
+        },
+        {
+          "cells": [
+            { "value": "4" },
+            {
+              "value": "Có tài sản đảm bảo là giấy tờ có giá do Vikki Bank phát hành"
+            },
+            { "value": "15%/năm" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "5" },
+            { "value": "Tài sản đảm bảo khác" },
+            { "value": "18%/năm" }
+          ]
+        },
+        {
+          "cells": [{ "value": "II. Lãi suất quá hạn", "colspan": 3 }]
+        },
+        {
+          "cells": [
+            { "value": "1" },
+            { "value": "Đối với Dư nợ gốc quá hạn" },
+            {
+              "value": "150% của lãi suất thẻ tín dụng được công bố từng thời kỳ"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "2" },
+            { "value": "Đối với Lãi chậm trả lãi" },
+            { "value": "10%/năm" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "subheading",
+      "className": "fz-125 fw-500 p-8",
+      "text": "HẠN MỨC SỬ DỤNG THẺ VẠN NĂNG VIKKIONE CONNECT DÀNH CHO KHÁCH HÀNG CÁ NHÂN"
+    },
+    {
+      "type": "subheading",
+      "className": "fz-1 fw-600 p-8",
+      "text": "I. Hạn mức sử dụng Thẻ:"
+    },
+    {
+      "type": "paragraph",
+      "className": "p-8 fz-1 fw-500",
+      "text": "1. Hạn mức sử dụng Thẻ áp dụng như sau"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "Loại hạn mức", "rowspan": 2 },
+            {
+              "value": "Hạn mức sử dụng Vạn năng VikkiONE Connect",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "Tính năng Thẻ tín dụng" },
+            { "value": "Tính năng Thẻ ghi nợ" }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "value": "Hạn mức rút tiền mặt" },
+            {
+              "value": "Bằng 100% tổng hạn mức tín dụng được cấp",
+              "className": "w-195"
+            },
+            {
+              "value": "Tối đa 100% số dư khả dụng trong TKTT (không bao gồm hạn mức thấu chi khả dụng)",
+              "className": "w-215"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "Hạn mức chuyển khoản" },
+            { "value": "Không áp dụng" },
+            {
+              "value": "Tối đa 100% số dư khả dụng trong TKTT (không bao gồm hạn mức thấu chi khả dụng)"
+            }
+          ]
+        },
+        {
+          "cells": [
+            {
+              "value": "Hạn mức thanh toán qua thiết bị chấp nhận Thẻ (POS/mPOS)"
+            },
+            {
+              "value": "Bằng tổng hạn mức tín dụng được cấp và số tiền nộp thêm (nếu có)"
+            },
+            {
+              "value": "Tối đa 100% số dư khả dụng trong TKTT"
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "Hạn mức thanh toán trực tuyến" },
+            {
+              "value": "Bằng tổng hạn mức tín dụng được cấp và số tiền nộp thêm (nếu có)"
+            },
+            {
+              "value": "Tối đa 100% số dư khả dụng trong TKTT"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "className": "fz-14 p-8",
+      "text": "<b>2. Đối với Tính năng Thẻ ghi nợ:</b> <br/>Hạn mức sử dụng, giao dịch trên tháng, giao dịch trên ngày và giao dịch từng lần không được vượt quá quy định về hạn mức giao dịch đối với tài khoản thanh toán."
+    },
+    {
+      "type": "subheading",
+      "className": "fz-125 fw-500 p-8",
+      "text": "II. Hạn mức giao dịch Thẻ:"
+    },
+    {
+      "type": "table",
+      "headerRows": [
+        {
+          "cells": [
+            { "value": "Stt", "rowspan": 2 },
+            { "value": "Loại giao dịch", "rowspan": 2 },
+            {
+              "value": "Hạn mức giao dịch <br/>Thẻ VikkiONE Connect",
+              "colspan": 2
+            }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "Tính năng<br/>Thẻ tín dụng" },
+            { "value": "Tính năng<br/>Thẻ ghi nợ" }
+          ]
+        }
+      ],
+      "rows": [
+        {
+          "cells": [
+            { "value": "1." },
+            { "value": "Tổng hạn mức giao dịch rút tiền mặt tối đa/ngày" },
+            { "value": "30.000.000 VND" },
+            { "value": "100.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            {
+              "value": "Hạn mức giao dịch rút tiền mặt tối đa/lần\nGhi chú: Số tiền rút tối đa sẽ phụ thuộc theo quy định của Ngân hàng chủ quản máy giao dịch tự động"
+            },
+            { "value": "10.000.000 VND" },
+            { "value": "10.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            {
+              "value": "Hạn mức giao dịch rút tiền mặt bằng ngoại tệ tối đa/ngày"
+            },
+            { "value": "30.000.000 VND" },
+            { "value": "100.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "c." },
+            { "value": "Hạn mức giao dịch rút tiền mặt tối đa/tháng" },
+            { "value": "100.000.000 VND" },
+            { "value": "100.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "2." },
+            {
+              "value": "Tổng hạn mức giao dịch thanh toán tối đa/ngày (bao gồm POS và mPOS và thanh toán trực tuyến)"
+            },
+            { "value": "200.000.000 VND" },
+            { "value": "200.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            {
+              "value": "Hạn mức giao dịch thanh toán trên POS/mPOS tối đa/lần"
+            },
+            { "value": "200.000.000 VND" },
+            { "value": "40.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            { "value": "Hạn mức giao dịch thanh toán trực tuyến tối đa/lần" },
+            { "value": "200.000.000 VND" },
+            { "value": "200.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "3." },
+            { "value": "Tổng hạn mức giao dịch chuyển khoản tối đa/ngày" },
+            { "value": "Không áp dụng" },
+            { "value": "100.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "a." },
+            {
+              "value": "Hạn mức giao dịch chuyển khoản tại máy giao dịch tự động của Vikki Bank tối đa/lần"
+            },
+            { "value": "Không áp dụng" },
+            { "value": "50.000.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "b." },
+            {
+              "value": "Hạn mức giao dịch chuyển khoản tại máy giao dịch tự động của Vikki Bank tối thiểu/lần"
+            },
+            { "value": "Không áp dụng" },
+            { "value": "2.000 VND" }
+          ]
+        },
+        {
+          "cells": [
+            { "value": "c." },
+            {
+              "value": "Hạn mức giao dịch chuyển khoản tại máy giao dịch tự động khác Vikki Bank tối đa/lần"
+            },
+            { "value": "Không áp dụng" },
+            { "value": "10.000.000 VND" }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "className": "text-right fw-600 fz-1 p-8",
+      "text": "NGÂN HÀNG TNHH MTV SỐ VIKKI"
+    }
+  ]
+}

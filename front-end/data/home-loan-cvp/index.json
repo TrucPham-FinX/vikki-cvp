@@ -1,0 +1,125 @@
+{
+  "title": "Vay mua nhà, đất | VikkiBank",
+  "hasTopSpace": true,
+  "layout": "template",
+  "className": "home-loan-cvp",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Giới thiệu",
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#intro"
+        }
+      ]
+    },
+    {
+      "type": "video"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "className": "section",
+      "src": "./assets/title-section.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "features",
+      "className": "section",
+      "src": "./assets/feature-vay-100.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-tra-dan-50-nam.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-lai-suat.png"
+    },
+    {
+      "type": "imageSection",
+      "className": "section",
+      "src": "./assets/feature-ho-tro.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/cau-hoi-thuong-gap.png"
+      },
+      "button": {
+        "text": "Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Tôi muốn mua nhà nhưng chưa đủ tiền, ngân hàng có thể hỗ trợ bao nhiêu?",
+          "content": "<p>Vikki Digital Bank có thể hỗ trợ vay lên đến 100% nhu cầu vốn, tùy theo:</p><ul><li>Thu nhập và khả năng trả nợ của bạn.</li><li>Uy tín và lịch sử tín dụng.</li><li>Giá trị tài sản bảo đảm theo quy định từng thời kỳ.</li></ul>"
+        },
+        {
+          "title": "Tôi làm tự do hoặc kinh doanh nhỏ lẻ thì có vay được không?",
+          "content": "<p>Bạn hoàn toàn có thể vay vốn nếu:</p><ul><li>Bạn chứng minh được thu nhập (sổ sách bán hàng, sao kê, dòng tiền, …).</li><li>Thu nhập ổn định và có khả năng trả nợ phù hợp.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể tất toán trước hạn không?",
+          "content": "<p>Bạn hoàn toàn có thể tất toán khoản vay trước hạn.</p><p>Tuy nhiên, Vikki Digital Bank có thể áp dụng phí tất toán trước hạn theo quy định từng thời kỳ và theo điều khoản trong hợp đồng vay.</p><p>Để biết điều kiện và mức phí cụ thể, bạn vui lòng liên hệ Chi nhánh/Phòng giao dịch Vikki Digital Bank hoặc tham khảo hợp đồng tín dụng.</p>"
+        },
+        {
+          "title": "Tôi đang có khoản vay khác, có vay thêm mua nhà được không?",
+          "content": "Bạn vẫn có thể đăng ký vay mua nhà nếu tổng nghĩa vụ trả nợ vẫn phù hợp với khả năng tài chính và đáp ứng điều kiện xét duyệt của Vikki Digital Bank."
+        },
+        {
+          "title": "Tôi có thể vay mua nhà, đất ở nếu chưa có tài sản đảm bảo không?",
+          "content": "Sản phẩm vay mua nhà, đất ở yêu cầu tài sản đảm bảo. Bạn sử dụng chính tài sản mua làm tài sản bảo đảm cho khoản vay."
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-white",
+      "termsButtonFullW": {
+        "title": "Điều khoản và Điều kiện",
+        "popup": "/vikki-cvp/home-loan-cvp/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "children": [
+        {
+          "title": "Tôi muốn mua nhà nhưng chưa đủ tiền, ngân hàng có thể hỗ trợ bao nhiêu?",
+          "content": "<p>Vikki Digital Bank có thể hỗ trợ vay lên đến 100% nhu cầu vốn, tùy theo:</p><ul><li>Thu nhập và khả năng trả nợ của bạn.</li><li>Uy tín và lịch sử tín dụng.</li><li>Giá trị tài sản bảo đảm theo quy định từng thời kỳ.</li></ul>"
+        },
+        {
+          "title": "Tôi làm tự do hoặc kinh doanh nhỏ lẻ thì có vay được không?",
+          "content": "<p>Bạn hoàn toàn có thể vay vốn nếu:</p><ul><li>Bạn chứng minh được thu nhập (sổ sách bán hàng, sao kê, dòng tiền, …).</li><li>Thu nhập ổn định và có khả năng trả nợ phù hợp.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể tất toán trước hạn không?",
+          "content": "<p>Bạn hoàn toàn có thể tất toán khoản vay trước hạn.</p><p>Tuy nhiên, Vikki Digital Bank có thể áp dụng phí tất toán trước hạn theo quy định từng thời kỳ và theo điều khoản trong hợp đồng vay.</p><p>Để biết điều kiện và mức phí cụ thể, bạn vui lòng liên hệ Chi nhánh/Phòng giao dịch Vikki Digital Bank hoặc tham khảo hợp đồng tín dụng.</p>"
+        },
+        {
+          "title": "Tôi đang có khoản vay khác, có vay thêm mua nhà được không?",
+          "content": "Bạn vẫn có thể đăng ký vay mua nhà nếu tổng nghĩa vụ trả nợ vẫn phù hợp với khả năng tài chính và đáp ứng điều kiện xét duyệt của Vikki Digital Bank."
+        },
+        {
+          "title": "Tôi có thể vay mua nhà, đất ở nếu chưa có tài sản đảm bảo không?",
+          "content": "Sản phẩm vay mua nhà, đất ở yêu cầu tài sản đảm bảo. Bạn sử dụng chính tài sản mua làm tài sản bảo đảm cho khoản vay."
+        },
+        {
+          "title": "Tôi có thể mua nhà, đất ở cho cha mẹ không? Thời gian vay tại Vikki Digital Bank là bao lâu?",
+          "content": "<p>Bạn có thể vay mua nhà, đất ở cho bản thân hoặc cho người thân bao gồm:</p><ul><li>Cha/mẹ/anh/chị/em/con ruột của Bạn.</li><li>Hoặc cha/mẹ/con ruột hợp pháp của Bạn.</li></ul><p>Thời gian vay vốn mua nhà, đất ở tại Vikki Digital Bank tối đa lên tới 50 năm.</p>"
+        }
+      ]
+    }
+  ]
+}

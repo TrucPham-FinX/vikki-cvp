@@ -1,0 +1,170 @@
+{
+  "title": "Vikki Lixi 2026 | VikkiBank",
+  "hasTopSpace": true,
+  "hasBackground": true,
+  "layout": "template",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Giới thiệu",
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#intro"
+        },
+        {
+          "title": "Ưu đãi",
+          "text": "Ưu đãi",
+          "iconSrc": "./assets/offer.svg",
+          "scroll": "#promotion"
+        }
+      ]
+    },
+    {
+      "type": "video"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "src": "./assets/li_xi_nhom.png"
+    },
+    {
+      "type": "slider",
+      "id": "promotion",
+      "title": {
+        "src": "./assets/title-su-kien.png"
+      },
+      "items": [
+        {
+          "src": "assets/slide-1.png",
+          "popupLink": "https://vikkibank.vn/ngan-hang-so-vikki-ra-mat-li-xi-online-2026/",
+          "popupTitle": "Sự kiện & Khuyến mãi"
+        },
+        {
+          "src": "assets/slide-2.png",
+          "popupLink": "https://vikkibank.vn/li-xi-online-mung-tuoi-hien-dai-cung-vikki/",
+          "popupTitle": "Sự kiện & Khuyến mãi"
+        },
+        {
+          "src": "assets/slide-3.png",
+          "popupLink": "https://vikkibank.vn/bat-app-tet-ngo-cham-ma-du-xuan-vikki-tung-loat-deal-sieu-hoi-cho-mua-du-xuan-tet-ngo-2026/",
+          "popupTitle": "Sự kiện & Khuyến mãi"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/li_xi_cung_vikki.png"
+    },
+    {
+      "type": "qa",
+      "items": [
+        {
+          "title": "Lì Xì Nhóm là gì? Tôi có thể gửi cho bao nhiêu người cùng lúc?",
+          "content": "Lì Xì Nhóm là tính năng giúp bạn tạo một túi lì xì chung và chia sẻ Link/QR cho nhóm bạn bè, đồng nghiệp cùng nhận. Năm nay, Vikki cho phép bạn gửi lì xì cho nhóm tối đa lên tới 200 người trong một lần tạo."
+        },
+        {
+          "title": "Chế độ 'Chia ngẫu nhiên' và 'Chia đều' khác nhau thế nào?",
+          "content": "<ul><li>Chia đều: Mọi người nhận số tiền bằng nhau (VD: Tổng 100k cho 5 người -> Mỗi người 20k).</li><li>Chia ngẫu nhiên: Tổng tiền cố định, nhưng hệ thống chia ngẫu nhiên cho từng người (có người nhiều, người ít) để tạo sự bất ngờ.</li></ul>"
+        },
+        {
+          "title": "Tôi có mất phí khi gửi Lì xì không?",
+          "content": "Hoàn toàn KHÔNG. Mọi giao dịch tạo Lì xì, gửi và nhận Lì xì trên Vikki đều miễn phí 100%."
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-green",
+      "title": {
+        "src": "./assets/title-step-kich-hoat.png"
+      },
+      "image": {
+        "src": "./assets/content-step-kich-hoat.png"
+      },
+      "termsButtonFullW": {
+        "title": "Điều khoản & điều kiện",
+        "popup": "/vikki-cvp/vikki-lixi-2026/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Chương trình lì xì",
+      "children": [
+        {
+          "title": "Lì Xì Nhóm là gì? Tôi có thể gửi cho bao nhiêu người cùng lúc?",
+          "content": "Lì Xì Nhóm là tính năng giúp bạn tạo một túi lì xì chung và chia sẻ Link/QR cho nhóm bạn bè, đồng nghiệp cùng nhận. Năm nay, Vikki cho phép bạn gửi lì xì cho nhóm tối đa lên tới 200 người trong một lần tạo."
+        },
+        {
+          "title": "Tôi có thể chia tiền lì xì như thế nào?",
+          "content": "Có 02 lựa chọn chia tiền lì xì:<ul><li>Chia đều: Mọi người nhận số tiền bằng nhau (VD: Tổng 100.000.000 VND cho 5 người thì mỗi người sẽ nhận 20.000.000 VND).</li><li>Chia ngẫu nhiên: Tổng tiền cố định, nhưng hệ thống chia ngẫu nhiên cho từng người (có người nhiều, người ít) để tạo sự bất ngờ.</li></ul>"
+        },
+        {
+          "title": "Lì Xì Nhóm sẽ hết hạn trong trong bao lâu?",
+          "content": "Lì Xì Nhóm có hiệu lực trong thời gian được bạn chọn (tối đa đến hết ngày 28/2/2026). Ví dụ: bạn chọn hết hạn vào ngày 20/2/2026 thì sau 23:59:59 của ngày này, link/QR sẽ hết hạn và không thể nhận tiền."
+        },
+        {
+          "title": "Tôi có được hoàn tiền lại nếu lì xì đã hết hạn mà mọi người chưa nhận hết không?",
+          "content": "Có. Nếu hết ngày bạn chọn mà túi lì xì vẫn còn dư tiền, Vikki sẽ tự động hoàn trả toàn bộ số tiền chưa có người nhận về tài khoản thanh toán của bạn kèm theo thông báo xác nhận."
+        },
+        {
+          "title": "Tôi chưa có tài khoản VikkiME thì có nhận được Lì xì Nhóm không?",
+          "content": "Bạn cần tải App Vikki và đăng ký mở tài khoản. Ngay khi đăng nhập thành công, bao lì xì sẽ tự động hiện ra để bạn mở ngay."
+        },
+        {
+          "title": "Tôi có mất phí khi gửi lì xì không?",
+          "content": "Không. Mọi giao dịch tạo Lì xì, gửi và nhận Lì xì trên Vikki đều miễn phí 100%."
+        },
+        {
+          "title": "Làm sao để gửi lì xì với số đẹp (68.686đ, 88.888đ)?",
+          "content": "Bạn có thể tự nhập tay con số mình muốn hoặc chọn nhanh từ danh sách 'Gợi ý số đẹp' (Lộc Phát, Thần Tài...) được Vikki hiển thị sẵn trên màn hình nhập tiền."
+        },
+        {
+          "title": "Tôi muốn gửi lời chúc riêng kèm theo bao lì xì được không?",
+          "content": "Được chứ! Bạn có thể tự soạn lời chúc (tối đa 70 ký tự) hoặc chọn từ thư viện lời chúc mẫu của Vikki."
+        },
+        {
+          "title": "Làm sao để biết bạn bè đã nhận được lì xì hay chưa?",
+          "content": "Lì Xì Nhóm: Vikki sẽ thông báo khi bạn bè và người thân của bạn đã nhận lì xì. Bạn cũng có thể xem danh sách người đã nhận bằng cách: Chọn túi đã gửi để xem danh sách chi tiết: Ai đã nhận và nhận bao nhiêu tiền."
+        },
+        {
+          "title": "Tại sao tiền lì xì trong lịch sử giao dịch của tôi bị ẩn (dạng ***VND)?",
+          "content": "Để giữ sự bất ngờ, Vikki ẩn số tiền trong lịch sử cho đến khi bạn thực hiện thao tác 'Mở lì xì' trên màn hình chính. Sau khi bạn đã mở hết, số tiền sẽ hiển thị như bình thường."
+        },
+        {
+          "title": "Tôi lỡ gửi nhầm Lì xì cho người khác, có thu hồi được không?",
+          "content": "Không. Giao dịch Lì xì sau khi xác thực thành công sẽ được chuyển đi ngay và không thể thu hồi. Bạn vui lòng kiểm tra kỹ thông tin người nhận (Tên, Số tài khoản) trước khi xác nhận."
+        },
+        {
+          "title": "Tôi có thể gửi lì xì cho người thân/ bạn bè đang sử dụng ngân hàng khác không?",
+          "content": "Không. Hiện tại, tính năng này chỉ hỗ trợ gửi/nhận lì xì trong nội bộ Vikki. Trường hợp người nhận sử dụng ngân hàng khác, bạn có thể gửi link lì xì để 'nhắn nhủ' họ mở tài khoản Vikki và nhận lì xì ngay sau đó."
+        },
+        {
+          "title": "Số tiền tối thiểu, tối đa tôi có thể gửi lì xì là bao nhiêu?",
+          "content": "Tối thiểu: 2.000 VND/bao lì xì. <br></br> Tối đa: <ul><li>Lì xì cá nhân: Tối đa 499.000.000 VND/ bao lì xì.</li><li>Lì xì nhóm: Không giới hạn. Tuy nhiên, việc thực hiện sẽ phụ thuộc vào số dư khả dụng trong TKTT của bạn tại thời điểm đó.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể nhận lì xì nhiều lần từ cùng một link chia sẻ không?",
+          "content": "Không. Bạn chỉ được nhận 01 lần duy nhất cho mỗi bao lì xì nhóm."
+        },
+        {
+          "title": "Tôi có thể hủy lì xì nhóm đã tạo thành công không?",
+          "content": "Không. Vikki chưa hỗ trợ hủy các lì xì nhóm đã được tạo thành công. Trường hợp bao lì xì chưa có người nhận, bạn vui lòng chờ đến khi bao lì xì hết thời gian hiệu lực, Vikki sẽ tự động hoàn tiền về TKTT của bạn."
+        },
+        {
+          "title": "Nếu cần hỗ trợ, tôi liên hệ Vikki qua các kênh nào?",
+          "content": "Khi cần hỗ trợ, bạn có thể liên hệ Vikki Care qua các kênh sau: <ul><li>Tính năng chat trên app Vikki, Zalo OA hoặc Facebook Fanpage.</li><li>Hotline: 1900 6608 (1.000đ/phút).</li><li>Email: 19006608@vikkibank.vn</li></ul>"
+        }
+      ]
+    }
+  ]
+}

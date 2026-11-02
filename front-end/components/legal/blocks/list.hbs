@@ -1,0 +1,17 @@
+<ul class="legal-list {{style}}{{#if className}} {{className}}{{/if}}">
+  {{#each items}}
+    <li class="legal-list-item">
+      {{{text}}}
+
+      {{#if children}}
+        {{#if children.items.length}}
+          {{> legal/blocks/list
+            items=children.items
+            style=children.style
+            className=children.className
+          }}
+        {{/if}}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

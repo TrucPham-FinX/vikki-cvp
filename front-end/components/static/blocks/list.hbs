@@ -1,0 +1,22 @@
+<ul class="legal-list {{style}}">
+  {{#each items}}
+    <li class="legal-list-item {{className}}">
+      <span class="legal-list-text {{classNameTitle}}">
+        {{{text}}}
+      </span>
+      
+      {{#if (eq type "table")}}
+      {{> static/blocks/table }}
+      {{/if}}
+
+      {{#if children}}
+        {{#if children.items.length}}
+          {{> static/blocks/list
+            items=children.items
+            style=children.style
+          }}
+        {{/if}}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>

@@ -1,0 +1,15 @@
+<aside class='legal-toc'>
+  {{#each sections}}
+    <div class='toc-section'>
+      <a href='#{{id}}' class='toc-section-title'>
+        {{title}}
+      </a>
+
+      {{#each articles}}
+        <div class='toc-article'>
+          <a href='#{{id}}'>{{title}}</a>
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</aside>

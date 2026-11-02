@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>VikkiME Foreigner&#x27;s Account</title>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>
+    VikkiME Foreigner&#x27;s Account
+  </title>
+  <meta name='description' content='' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  
+  <link
+    href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'
+    rel='stylesheet'
+  />
+  <style>
+    :root,
+    :host {
+      --spacing: 0.25rem;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    html,
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      padding-bottom:50px;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .block {
+      display: block;
+    }
+    .flex {
+      display: flex;
+    }
+    .\!w-\[70\%\] {
+      width: 70% !important;
+    }
+    .\!w-\[80\%\] {
+      width: 80% !important;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .list-inside {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    .list-disc {
+      list-style-type: disc;
+    }
+    .p-1 {
+      padding: calc(var(--spacing) * 1);
+    }
+    .px-1 {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+    .px-3 {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+    .px-2{
+      padding-inline: calc(var(--spacing) * 2);
+    }
+    .py-3 {
+      padding-top: calc(var(--spacing) * 3);
+      padding-bottom: calc(var(--spacing) * 3);
+    }
+    .pt-1 {
+      padding-top: calc(var(--spacing) * 1);
+    }
+    .pt-2 {
+      padding-top: calc(var(--spacing) * 2);
+    }
+    .pt-3 {
+      padding-top: calc(var(--spacing) * 3);
+    }
+    .pt-4{
+       padding-top: calc(var(--spacing) * 4);
+    }
+    .pb-1 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    .pb-5 {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
+    .pb-3 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+  
+    .hasTopSpace {
+      padding-top: 25vw;
+    }
+    .hasBackground {
+      background: linear-gradient(
+        #FFFFFF,
+        #F2EBFF,
+        #FFFFFF
+      );
+    }
+  
+    #qa {
+      height: 40px;
+    }
+    .menu-top {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      height: 40px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background: #fff;
+    }
+    .hasTopSpace .menu-top {
+      top: 25vw;
+    }
+    .menu-top a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: rgba(14, 14, 15, 1);
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .gjs-cell {
+      width: 100%;
+    }
+  
+    .gjs-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 0px;
+    }
+  
+    .section {
+      margin: 0px auto 0px auto;
+      width: 100%;
+    }
+  
+    .container {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    button {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      border: none;
+    }
+  
+    .solution-background {
+      background: linear-gradient(
+        180.02deg,
+        rgba(255, 183, 0, 0.2) -0.02%,
+        rgba(255, 149, 27, 0.2) 17.31%,
+        rgba(222, 0, 148, 0.2) 35.72%,
+        rgba(0, 0, 255, 0.2) 93.21%
+      );
+      padding-bottom: 5vh;
+    }
+  
+    .loan-gift-container {
+      /* margin-top: 3vh; */
+    }
+  
+    .register-container {
+      padding-bottom: 5vh;
+    }
+  
+    .loan-now-container {
+      padding-bottom: 5vh;
+      width: 100%;
+    }
+  
+    .disbursement-container {
+      margin-top: 5vh;
+    }
+  
+    .finance-container {
+      width: 100%;
+    }
+  
+    .absolute-row {
+      position: relative;
+      top: -20px;
+    }
+    .relative-row {
+      position: relative;
+    }
+    .show-detail-text {
+      position: relative;
+      cursor: pointer;
+      bottom: 20vw;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      left: 7vw;
+      font-weight: 400;
+      font-size: 6vw;
+      line-height: 8vw;
+      letter-spacing: -0.26px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: #fff;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+    }
+  
+    /* video */
+    #video-container {
+      display: flex;
+    }
+    #banner-container {
+      overflow: hidden;
+    }
+  
+    #video-container,
+    #section-1-cell,
+    #section-3-cell {
+      position: relative;
+    }
+  
+    #banner-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    #volume-icon {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 1vw;
+      left: 1vw;
+    }
+  
+    .fa-icon {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  
+    .muted .fa-icon.fa-volume-high {
+      display: none;
+    }
+  
+    .unmuted .fa-icon.fa-volume-xmark {
+      display: none;
+    }
+  
+    /* Real height instead of the old padding-bottom:177% hack — that hack's
+       size is capped by nothing, so on wide viewports (e.g. a Galaxy Fold
+       unfolded) it made the banner taller than the screen. --video-ar is set
+       from each video's own real dimensions once it loads (see scripts.hbs),
+       so this stays correct regardless of which video a page uses; 16/9 (the
+       current videos' real height:width, 9:16 portrait) is only the fallback
+       for the instant before that script runs. */
+    #video-container {
+      position: relative;
+      padding-bottom: 0;
+      height: calc(100vw * var(--video-ar, calc(16 / 9)));
+    }
+  
+    /* Accodion */
+    .accordion {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 0;
+      line-height: 1.5;
+    }
+    .accordion * {
+      line-height: 22px;
+    }
+    .accordion ul {
+      padding-left: 10px;
+    }
+    .accordion-section {
+      background: rgb(240, 248, 233);
+      padding: 1rem;
+    }
+  
+    .accordion-item {
+      background: #fff;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .accordion-item:first-child {
+      margin-top: 0;
+    }
+  
+    .accordion-header {
+      width: 100%;
+      padding: 16px 20px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header span {
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header .icon {
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+    }
+  
+    .accordion-item.active .icon {
+      transform: rotate(0deg);
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding: 0 20px;
+    }
+  
+    .accordion-item.active .accordion-content {
+      padding-bottom: 16px;
+    }
+  
+    .accordion-content p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+  
+    /* tooltip */
+    .tooltip-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .tooltip-title {
+      width: 90%;
+    }
+    .tooltip-box {
+      background: #000;
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      width: 100%;
+      display: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+      /* arrow */
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid black;
+      display: none;
+      margin: 0 auto;
+    }
+    .tooltip-box::after {
+      content: "";
+      display: block;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #000 transparent;
+    }
+    .vikki_flexi_button {
+      width: 25vw;
+    }
+    /* show tooltip */
+    .tooltip-wrapper.active .tooltip-box {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .tooltip-wrapper.active .arrow-up {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .spinnerKichHoatNgay {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #ccc;
+      border-top: 2px solid #0000FF;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-position {
+      position: absolute;
+      top: 53vw;
+      right: 8vw;
+    }
+    /* overlay */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: top 0.3s;
+      z-index: 9999;
+      top: 150%;
+    }
+    .hasTopSpace .popup-overlay.show {
+      top: 25vw;
+    }
+  
+    .popup-overlay.show {
+      top:0;
+    }
+    .popup-overlay .popup-close{
+      display: none;
+    }
+    .popup-overlay.show .popup-close{
+      display: block;
+    }
+  
+    .popup-content {
+      background: rgba(246, 247, 248, 1);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    #promo-detail-popup  .popup-content{
+      height: 100%;
+    }
+  
+    .popup-body {
+      height: 100%;
+      overflow-y: auto;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    .popup-close {
+      position: fixed;
+      right: 0;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 99;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hasTopSpace .popup-close {
+      top: 25vw;
+    }
+    .popup-close img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    .popup-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      min-height: 70vh;
+      background: #FFF
+    }
+    .popup-inner {
+      padding: 0px 10px 50px;
+    }
+  
+    /* slider */
+    swiper-container {
+      width: 100vw;
+    }
+  
+    swiper-slide {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .slide-img {
+      width: 100%;
+    }
+    .slide-img > span{
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 10%;
+      overflow: hidden;
+    }
+  
+    .slide-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  
+    .swiper-slide-next {
+      left: -5vw;
+      z-index: 1;
+      animation-name: showNextSlide;
+      animation-duration: 0.5s;
+    }
+    .swiper-pagination {
+      background-color: red;
+    }
+    @keyframes showNextSlide {
+      0% {
+        left: 0%;
+      }
+  
+      100% {
+        left: -5vw;
+      }
+    }
+  
+    .swiper-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .bg-transparent {
+      background: rgba(76, 39, 39, 0.05);
+      border-radius: 50px;
+    }
+    .bg-transparent .menu-top {
+      height: 48px;
+    }
+    .button {
+      height: 48px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+  
+    /* background */
+  
+    .p-1 {
+      padding: 1rem;
+    }
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+    .pt-1 {
+      padding-top: 1rem;
+    }
+    .pt-2{
+      padding-top: 2rem;
+    }
+    .g-1 {
+      gap: 1rem;
+    }
+    .g-2 {
+      gap: 1.5rem;
+    }
+    .bg-gray {
+      padding-top: 2rem;
+    }
+    .bg-green {
+      background: linear-gradient(180deg, #f0f8e9 70.24%, #ffffff 100%);
+      border-radius: 50px 50px 0 0;
+      padding-top: 2rem;
+    }
+    .bg-gray-gradient {
+      background: linear-gradient(180deg, #f6f7f8 0%, #ffffff 100%);
+    }
+    [data-popup],
+    [data-scroll] {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .button-wrap {
+      display: flex;
+      gap: 10px;
+    }
+    .button-wrap > * {
+      width: calc(50% - 5px);
+    }
+  
+    /* Pagination wrapper */
+    swiper-container::part(pagination) {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #f3f3f3;
+      padding: 8px 9px;
+      border-radius: 999px;
+      width: fit-content;
+      margin: 40px auto 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+    }
+  
+    .hide-pagination::part(pagination) {
+      display: none;
+    }
+    .slide-container {
+      padding-top: 3rem;
+    }
+    swiper-container::part(bullet) {
+      width: 8px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  
+    swiper-container::part(bullet-active) {
+      width: 20px;
+      height: 8px;
+      background: #0a46ff;
+      border-radius: 999px;
+    }
+  
+    .popup-title {
+      top: 0;
+      font-weight: bold;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+      font-size: 17px;
+      color: rgba(1, 5, 15, 1);
+      margin: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    #backToTop {
+      opacity: 0;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      transform: translateY(10px);
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      display: none;
+      z-index: 999;
+  
+      border-radius: 9999px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    #backToTop.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .popup-close {
+      color: #333;
+    }
+  
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 100;
+  
+      display: none;
+    }
+    .loading-overlay.show{
+      display: flex;
+    }
+  
+    .spinner {
+      width: 39px;
+      height: 39px;
+      border: 3px solid #e5e7eb;
+      border-top-color: #111827;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .section-title{
+      text-align: center;
+    }
+  
+    .bg-blue{
+      background: rgba(237, 248, 255, 1);
+      border-radius: 50px 50px 0 0;
+    }
+  
+  </style></head>
+
+<body class="hasTopSpace " id="body">
+  <style>
+  .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+  }
+  .popup-title {
+    min-height: 80px;
+    background: none;
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .pt-0 { 
+    padding-top: 0;
+  }
+  .pb-1 { 
+    padding-bottom: 0.5rem;
+  }
+  .pb-0 { 
+    padding-bottom: 0;
+  }
+
+  .accordion {
+    max-width: none;
+  }
+  
+  #backToTop {
+    bottom: 60px;
+  }
+  body {
+    padding-bottom: 0;
+  }
+
+  html,
+  body {
+    padding-bottom: 0;
+  }
+
+  .btn-register {
+    background: linear-gradient(
+      88.03deg,
+      #0000ff 0%,
+      #6100ff 55.85%,
+      #da0191 77.92%,
+      #ff8a00 90.71%,
+      #ffb907 100%
+    );
+    box-shadow:
+      0px 0px 8px 0px rgba(0, 0, 0, 0.1),
+      0px 2px 5px 0px rgba(255, 255, 255, 0.18) inset,
+      0px 0px 8px 0px rgba(255, 255, 255, 0.3) inset,
+      0px 0px 12px 6px rgba(255, 255, 255, 0.16) inset,
+      0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset 0px 6px 6px 0px
+        rgba(255, 255, 255, 0.12) inset;
+
+    height: 48px;
+    left: 16px;
+    right: 16px;
+    line-height: 48px;
+    position: fixed;
+    bottom: 16px;
+    border-radius: 50px;
+    color: #fff;
+    display: none;
+    z-index: 99999999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .hasCard .btn-register{
+    display: block;
+  }
+  .group-item{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .group-heading{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  .group-sub-title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+  .group-sub{
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+
+  }
+  .group-sub:last-child{
+    border:none
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    }
+
+    .partner-item {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+  
+
+    .partner-item.is-primary {
+    grid-row: span 2;
+    background: #ffffff;
+    }
+
+    .partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    }
+    .partner-item.is-primary img{
+        opacity: 0;
+    }
+
+    .partner-item.is-primary .partner-logo{
+      background-image: url('assets/d-1-inactive.png');
+      background-size: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+      will-change: transform;
+      padding-bottom: 100%;
+      background-repeat: no-repeat;
+    }
+    .hasCard .partner-item.is-primary .partner-logo {
+        background-image: url('assets/d-1-active.png');
+    }
+    .partner-logo{
+      padding-bottom: 44%;
+      position: relative;
+      height: 0;
+    }
+
+    .partner-logo img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .partner-sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+    }
+
+    .partner-btn {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b4bff, #ff9f2f);
+    }
+    .btn-full .button-wrap{
+        flex-direction: column;
+    }
+    .btn-full .button{
+        width: 100%;
+    }
+  #backToTopQA  {
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    transform: translateY(10px);
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    display: none;
+    z-index: 999;
+
+    border-radius: 9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #backToTopQA.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .popup {
+    overflow: hidden;
+  }
+
+.popup-body {
+  height: 100%;
+}
+
+.popup-body iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+</style>
+
+        <div id='qa'>
+          <div class='menu-top'>
+              <div>
+                <span data-popup='qa'  data-title="FAQs">
+                  <img src='./assets/qa.svg' />
+                  <span>
+                    FAQs
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span  data-scroll='#intro' data-title="Introduction">
+                  <img src='./assets/info.svg' />
+                  <span>
+                    Introduction
+                  </span>
+                </span>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+        <div class='gjs-row container ' >
+            <div class='gjs-cell '>
+                <img src='./assets/banner.png' class='section ' />
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class='gjs-row container ' id='intro'>
+            <div class='gjs-cell '>
+                <img src='./assets/vikki-me-account.png' class='section ' />
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class='gjs-row container ' >
+            <div class='gjs-cell '>
+                <img src='./assets/promotions.png' class='section ' />
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class='gjs-row container pt-4' >
+          <div class='gjs-cell text-center section'>
+            <img src='' class='section !w-[70%]' />
+            <div class='slide-container' style='background-color:#EDF4FF'>
+              <div class='gjs-row container'>
+                <div class='gjs-cell'>
+                  <img src='./assets/3-steps-open-account.png' class='section ' />
+                </div>
+              </div>
+            <swiper-container class='center-swiper  hide-pagination' >
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/step-1.png' />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/step-2.png' />
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class='slide-img'>
+                  <img class='swiper-img' src='assets/step-3.png' />
+                </div>
+              </swiper-slide>
+            </swiper-container>
+            </div>          </div>
+        </div>
+
+
+
+
+        <div class='gjs-row container ' >
+            <div class='gjs-cell '>
+                <img src='./assets/getting-started.png' class='section ' />
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class='gjs-row container pt-1'>
+          <div class='gjs-cell'>
+            <img src='' class='section' />
+          </div>
+        </div>
+
+        <div class='container px-1'>
+          <div class='pb-1 px-3'>
+            <div class='accordion js-accordion'>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      What is a Foreign Customer Current Account?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    A Foreign Customer Current Account is a payment account designed for foreign individuals, whether residing or non-residing in Vietnam. It enables customers to perform essential financial transactions such as receiving money, fund transfers, and daily payments.
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      What features does this account offer?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <strong>This account allows customers to conveniently manage finances via the Vikki digital banking app, with key features including:</strong><ul><li>Fast fund transfers via account number or card number (intrabank and interbank)</li><li>Free bill payments (electricity, water), mobile top-up, and QR payments</li><li>Booking services (flight tickets, transportation, movies, hotels, golf, etc.) directly on the Vikki App</li><li>Loyalty rewards accumulation (SkyJoy) for redemption</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      What are the requirements to open an account?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <strong>Customers must meet the following conditions:</strong><ul><li>Aged 15 or above with full or appropriate civil legal capacity</li><li>Registered Vietnamese phone number</li><li>Valid passport</li><li>Valid visa or proof of visa exemption (e.g. visa exemption certificate, temporary/permanent residence card)</li><li>Proof of lawful income or income declaration (if required)</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      What documents are required?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <strong>You should prepare:</strong><ul><li>Passport</li><li>Visa / Temporary or Permanent Residence Card / Visa exemption documents</li><li>Proof of residence duration (if applicable)</li><li>Proof of income (if required)</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      What are the general transaction limits?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <strong>Daily limits:</strong><ul><li><strong>18+:</strong> up to VND 500 million/day</li><li><strong>15 – under 18:</strong> up to VND 100 million/day</li></ul><ul><strong>Monthly limits:</strong><li><strong>18+:</strong> from VND 500 million up to VND 3 billion/month (depending on income verification)</li><li><strong>15 – under 18: </strong> up to VND 500 million/month</li></ul>
+                  </div>
+                </div>
+                <div class='accordion-item'>
+                  <button class='accordion-header'>
+                    <span>
+                      How can I get support?
+                    </span>
+                    <span class='icon'>
+                      <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                      </svg>
+                    </span>
+                  </button>
+                  <div class='accordion-content'>
+                    <strong>You can contact Vikki Bank via:</strong><ul><li><strong>Hotline:</strong> 1900 6608 / +84 28 3995 9001 (overseas)</li><li><strong>Email:</strong> 19006608@vikkibank.vn</li><li>In-app chat</li><li><strong>Facebook Fanpage:</strong> Ngân hàng số Vikki</li><li><strong>Zalo Official Account:</strong> Ngân hàng số Vikki</li><li>Vikki Bank branches nationwide</li></ul>
+                  </div>
+                </div>
+            </div>          </div>
+            <div class='px-3 pb-5 pt-3'>
+              <span class='bg-transparent button w-full' data-popup="qa" data-title="Hỏi đáp">
+                <img src='' />
+                <span>
+                  See more frequently asked questions.
+                </span>
+              </span>
+            </div>
+        </div>
+
+
+  <span id='backToTop'>
+    <img src='./assets/icon-btt.svg' />
+  </span>
+
+  <div class='popup-overlay' id='popup'>
+    <button class='popup-close' id='popupClose'>
+      <img src='./assets/icon-x.svg' />
+    </button>
+    <div class='popup-content'>
+      <div class='popup-body' id='popupBody'></div>
+      <div class='loading-overlay show' id='loading'>
+        <span class='spinner'></span>
+      </div>
+    </div>
+  </div>
+ 
+  <template id='qaTemplate'>
+    <div class='popup-inner'>
+    <h2 class='popup-title' id="popupTitle">
+       FAQs 
+    </h2>
+          <div class='group-item'>
+            <div class="group-heading">
+                VikkiME Foreigner&#x27;s Account
+              </div>
+            <div class='group-content'>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  1. What is a Foreign Customer Current Account?
+                </div>
+                <div>
+                A Foreign Customer Current Account is a payment account designed for foreign individuals, whether residing or non-residing in Vietnam. It enables customers to perform essential financial transactions such as receiving money, fund transfers, and daily payments.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  2. What features does this account offer?
+                </div>
+                <div>
+                <strong>This account allows customers to conveniently manage finances via the Vikki digital banking app, with key features including:</strong><ul><li>Fast fund transfers via account number or card number (intrabank and interbank)</li><li>Free bill payments (electricity, water), mobile top-up, and QR payments</li><li>Booking services (flight tickets, transportation, movies, hotels, golf, etc.) directly on the Vikki App</li><li>Loyalty rewards accumulation (SkyJoy) for redemption</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  3. What are the requirements to open an account?
+                </div>
+                <div>
+                <strong>Customers must meet the following conditions:</strong><ul><li>Aged 15 or above with full or appropriate civil legal capacity</li><li>Registered Vietnamese phone number</li><li>Valid passport</li><li>Valid visa or proof of visa exemption (e.g. visa exemption certificate, temporary/permanent residence card)</li><li>Proof of lawful income or income declaration (if required)</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  4. What documents are required?
+                </div>
+                <div>
+                <strong>You should prepare:</strong><ul><li>Passport</li><li>Visa / Temporary or Permanent Residence Card / Visa exemption documents</li><li>Proof of residence duration (if applicable)</li><li>Proof of income (if required)</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  5. What are the general transaction limits?
+                </div>
+                <div>
+                <strong>Daily limits:</strong><ul><li><strong>18+:</strong> up to VND 500 million/day</li><li><strong>15 – under 18:</strong> up to VND 100 million/day</li></ul><ul><strong>Monthly limits:</strong><li><strong>18+:</strong> from VND 500 million up to VND 3 billion/month (depending on income verification)</li><li><strong>15 – under 18: </strong> up to VND 500 million/month</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  6. How can I get support?
+                </div>
+                <div>
+                <strong>You can contact Vikki Bank via:</strong><ul><li><strong>Hotline:</strong> 1900 6608 / +84 28 3995 9001 (overseas)</li><li><strong>Email:</strong> 19006608@vikkibank.vn</li><li>In-app chat</li><li><strong>Facebook Fanpage:</strong> Ngân hàng số Vikki</li><li><strong>Zalo Official Account:</strong> Ngân hàng số Vikki</li><li>Vikki Bank branches nationwide</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        <span id='backToTopQA'>
+          <img src='./assets/icon-btt.svg' />
+        </span>
+    </div>
+  </template>
+
+  <div class='popup-overlay' id="promo-detail-popup">
+  <button class='popup-close' id='popupDetail-close'>
+    <img src='./assets/icon-x.svg' />
+  </button>
+
+  <div class='popup-content'>
+    <iframe
+      id="promo-detail-frame"
+      class="popup-iframe"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+  <script>
+      function initAccordion(root, options = {}) {
+        const { multiple = false, defaultOpenIndex = null } = options;
+  
+        const items = root.querySelectorAll('.accordion-item');
+  
+        items.forEach((item, index) => {
+          const header = item.querySelector('.accordion-header');
+          const content = item.querySelector('.accordion-content');
+  
+          header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+  
+            if (!multiple) {
+              items.forEach((i) => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = null;
+              });
+            }
+  
+            if (!isActive) {
+              item.classList.add('active');
+              content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+              item.classList.remove('active');
+              content.style.maxHeight = null;
+            }
+          });
+  
+          if (defaultOpenIndex === index) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      }
+  
+      function initAccordionsIn(root) {
+        root.querySelectorAll('.js-accordion').forEach((acc) => {
+          initAccordion(acc);
+        });
+      }
+  
+      initAccordionsIn(document);
+    </script>
+  
+  <script>
+      const popup = document.getElementById('popup');
+      const popupBody = document.getElementById('popupBody');
+      const closeBtn = document.getElementById('popupClose');
+      const qaTemplate = document.getElementById('qaTemplate');
+      const loading = document.getElementById('loading')
+      const popupTitle = document.getElementById('popupTitle')
+  
+      document.querySelectorAll('[data-popup]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.popup;
+          const title = btn.dataset.title;
+         
+          openPopup(type, title);
+        });
+      });
+  
+      if(closeBtn){
+        closeBtn.addEventListener('click', closePopup);
+      }
+      
+  
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+      });
+  
+       function retryContent (type, iframe) {
+          iframe.src = type;
+          popupBody.appendChild(iframe);
+         
+          let timeout = setTimeout(() => {
+            retryContent(type, iframe)
+          }, 5000);
+  
+          iframe.onload = () => {
+            loading.classList.remove('show');
+            clearTimeout(timeout);
+          };
+      }
+  
+      function looksLikePdf(url) {
+        return /\.pdf($|\?)/i.test(url);
+      }
+     
+      function openPopup(type, title) {
+        popupBody.innerHTML = '';
+        const isLink = type.startsWith('https://') || type.startsWith('/')
+        const isPdfLink = looksLikePdf(type)
+  
+       // if(title){
+           // popupTitle.textContent = title;
+       // }
+  
+        if (!isLink) {
+          popupBody.appendChild(qaTemplate.content.cloneNode(true));
+          initAccordionsIn(popupBody);
+          loading.classList.remove('show');
+        } else {
+          if(title){
+            const titleEl = document.createElement('h2');
+            titleEl.className = 'popup-title';
+            titleEl.textContent = title;
+            popupBody.appendChild(titleEl);
+            popupBody.classList.add('pt-50')
+          }
+  
+          const iframe = document.createElement('iframe');
+          iframe.className = 'popup-iframe';
+          if(isPdfLink){
+            retryContent(type, iframe)
+          } else {
+            iframe.src = type;
+            popupBody.appendChild(iframe);
+           loading.classList.remove('show');
+          }
+          
+        }
+       
+        popup.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+  
+      function closePopup() {
+        loading.classList.add('show')
+        popup.classList.remove('show');
+        popupBody.innerHTML = '';
+        document.body.style.overflow = '';
+      }
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.4"></script>
+  
+  <script type="text/javascript">
+      const body = document.getElementById('body');
+      const videoContainer = document.getElementById('banner-container');
+      const video = document.getElementById('banner-video');
+      const volumeIcon = document.getElementById('volume-icon');
+      const params = new URLSearchParams(window.location.search);
+      const hasTopSpace = params.get('hasTopSpace');
+  
+      if (hasTopSpace === 'false') {
+        // body.style.paddingTop = '0';
+        body.classList.remove('hasTopSpace');
+      }
+      
+      if(videoContainer){
+        const videoSrc = './assets/video/playlist.m3u8';
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoSrc);
+          hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoSrc;
+        } else {
+          video.src = './assets/video.mp4';
+        }
+  
+        video.addEventListener('loadedmetadata', () => {
+          video.play().catch(() => {
+            console.log('Autoplay blocked');
+          });
+        });
+  
+        // #video-container's height (see styles.hbs) is driven by --video-ar
+        // instead of a hardcoded ratio, so it stays correct no matter which
+        // video a given page loads.
+        const videoBox = document.getElementById('video-container');
+        const applyVideoRatio = () => {
+          if (videoBox && video.videoWidth && video.videoHeight) {
+            videoBox.style.setProperty('--video-ar', video.videoHeight / video.videoWidth);
+          }
+        };
+        video.addEventListener('loadedmetadata', applyVideoRatio);
+        applyVideoRatio();
+  
+  
+        videoContainer.addEventListener('click', () => {
+          video.muted = !video.muted;
+          volumeIcon.classList.toggle('muted', video.muted);
+          volumeIcon.classList.toggle('unmuted', !video.muted);
+  
+          if (!video.paused) return;
+          video.play().catch(() => {});
+        });
+  
+        const tryPlay = () => {
+          video.play().catch((err) => console.warn('Replay blocked:', err));
+          document.removeEventListener('touchstart', tryPlay);
+        };
+  
+        tryPlay();
+        document.addEventListener('touchstart', tryPlay);
+      }
+  
+  </script>
+  
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-element-bundle.min.js'
+  ></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js'
+  ></script>
+  
+  <script>
+    document.querySelectorAll('.center-swiper').forEach((swiper) => {
+    Object.assign(swiper, {
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 12,
+      pagination: true
+    });
+  
+    swiper.initialize();
+  });
+  
+  </script>
+  
+  <script>
+      function scrollToSection(target, options = {}) {
+        const { offset = 0, behavior = 'smooth' } = options;
+  
+        const el =
+          typeof target === 'string' ? document.querySelector(target) : target;
+  
+        if (!el) return;
+  
+        let finalOffset = offset;
+  
+        // ✅ check hasTopSpace → +25vw
+        if (document.body.classList.contains('hasTopSpace')) {
+          const vw25 = window.innerWidth * 0.25;
+          finalOffset += vw25;
+        }
+  
+        const top =
+          el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+  
+        window.scrollTo({
+          top,
+          behavior,
+        });
+      }
+  
+      function initScrollToSection({ offset = 0 } = {}) {
+        document.querySelectorAll('[data-scroll]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            scrollToSection(btn.dataset.scroll, { offset });
+          });
+        });
+      }
+  
+      initScrollToSection({ offset: 48 });
+    </script>
+  
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+  
+  <script>
+    const popupDetail = document.getElementById('promo-detail-popup');
+    const iframeDetail = document.getElementById('promo-detail-frame');
+    const popupDetailClose = document.getElementById('popupDetail-close');
+  
+    window.addEventListener('message', (e) => {
+      if (e.data?.type !== 'OPEN_PROMO_DETAIL') return;
+      openPromoDetail(e.data.id);
+    });
+  
+    function openPromoDetail(id) {
+      iframeDetail.src = `/vikki-cvp/promotion/${id}.html`;
+      popupDetail.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  
+    if (popupDetailClose) {
+      popupDetailClose.addEventListener('click', closePromoDetail);
+    }
+  
+    function closePromoDetail() {
+      iframeDetail.src = '';
+      popupDetail.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  </script>
+
+</body>
+</html>

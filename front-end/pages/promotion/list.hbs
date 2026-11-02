@@ -1,0 +1,64 @@
+<ul id='promo-list'>
+  {{#each items}}
+    <li
+      class='promo-card'
+      data-category='{{promotionCate}}'
+      data-brand='{{promotionGroup}}'
+      data-id='{{id}}'
+    >
+      <div class='promo-image'>
+        <img src='{{thumbnail}}' alt='{{name}}' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          {{name}}
+        </h3>
+
+        <div class='promo-desc'>
+          {{{shortDesc}}}
+        </div>
+
+        <p class='promo-expire'>{{extraData}}</p>
+      </div>
+    </li>
+  {{/each}}
+</ul>
+
+{{!-- prettier-ignore --}}
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get('category');
+
+    if (!category) return;
+
+    const cards = document.querySelectorAll('#promo-list .promo-card');
+
+    cards.forEach((card) => {
+      const cardCategory = card.dataset.category;
+ 
+      if (!cardCategory.includes(category)) {
+        card.style.display = 'none';
+      }
+    });
+  })();
+</script>
+
+{{!-- prettier-ignore --}}
+<script>
+  document.addEventListener('click', function (e) {
+    const card = e.target.closest('.promo-card');
+    if (!card) return;
+  
+    const id = card.dataset.id;
+    if (!id) return;
+    window.parent.postMessage(
+      {
+        type: 'OPEN_PROMO_DETAIL',
+         id: card.dataset.id
+      },
+      '*'
+    );
+  });
+</script>

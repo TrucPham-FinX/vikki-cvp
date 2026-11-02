@@ -1,0 +1,2456 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vikki Cobadge | VikkiBank</title>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>
+    Vikki Cobadge | VikkiBank
+  </title>
+  <meta name='description' content='' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  
+  <link
+    href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'
+    rel='stylesheet'
+  />
+  <style>
+    :root,
+    :host {
+      --spacing: 0.25rem;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    html,
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      padding-bottom:50px;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .block {
+      display: block;
+    }
+    .flex {
+      display: flex;
+    }
+    .\!w-\[70\%\] {
+      width: 70% !important;
+    }
+    .\!w-\[80\%\] {
+      width: 80% !important;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .list-inside {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    .list-disc {
+      list-style-type: disc;
+    }
+    .p-1 {
+      padding: calc(var(--spacing) * 1);
+    }
+    .px-1 {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+    .px-3 {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+    .px-2{
+      padding-inline: calc(var(--spacing) * 2);
+    }
+    .py-3 {
+      padding-top: calc(var(--spacing) * 3);
+      padding-bottom: calc(var(--spacing) * 3);
+    }
+    .pt-1 {
+      padding-top: calc(var(--spacing) * 1);
+    }
+    .pt-2 {
+      padding-top: calc(var(--spacing) * 2);
+    }
+    .pt-3 {
+      padding-top: calc(var(--spacing) * 3);
+    }
+    .pt-4{
+       padding-top: calc(var(--spacing) * 4);
+    }
+    .pb-1 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    .pb-5 {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
+    .pb-3 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+  
+    .hasTopSpace {
+      padding-top: 25vw;
+    }
+    .hasBackground {
+      background: linear-gradient(
+        #FFFFFF,
+        #F2EBFF,
+        #FFFFFF
+      );
+    }
+  
+    #qa {
+      height: 40px;
+    }
+    .menu-top {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      height: 40px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background: #fff;
+    }
+    .hasTopSpace .menu-top {
+      top: 25vw;
+    }
+    .menu-top a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: rgba(14, 14, 15, 1);
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .gjs-cell {
+      width: 100%;
+    }
+  
+    .gjs-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 0px;
+    }
+  
+    .section {
+      margin: 0px auto 0px auto;
+      width: 100%;
+    }
+  
+    .container {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    button {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      border: none;
+    }
+  
+    .solution-background {
+      background: linear-gradient(
+        180.02deg,
+        rgba(255, 183, 0, 0.2) -0.02%,
+        rgba(255, 149, 27, 0.2) 17.31%,
+        rgba(222, 0, 148, 0.2) 35.72%,
+        rgba(0, 0, 255, 0.2) 93.21%
+      );
+      padding-bottom: 5vh;
+    }
+  
+    .loan-gift-container {
+      /* margin-top: 3vh; */
+    }
+  
+    .register-container {
+      padding-bottom: 5vh;
+    }
+  
+    .loan-now-container {
+      padding-bottom: 5vh;
+      width: 100%;
+    }
+  
+    .disbursement-container {
+      margin-top: 5vh;
+    }
+  
+    .finance-container {
+      width: 100%;
+    }
+  
+    .absolute-row {
+      position: relative;
+      top: -20px;
+    }
+    .relative-row {
+      position: relative;
+    }
+    .show-detail-text {
+      position: relative;
+      cursor: pointer;
+      bottom: 20vw;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      left: 7vw;
+      font-weight: 400;
+      font-size: 6vw;
+      line-height: 8vw;
+      letter-spacing: -0.26px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: #fff;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+    }
+  
+    /* video */
+    #video-container {
+      display: flex;
+    }
+    #banner-container {
+      overflow: hidden;
+    }
+  
+    #video-container,
+    #section-1-cell,
+    #section-3-cell {
+      position: relative;
+    }
+  
+    #banner-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    #volume-icon {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 1vw;
+      left: 1vw;
+    }
+  
+    .fa-icon {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  
+    .muted .fa-icon.fa-volume-high {
+      display: none;
+    }
+  
+    .unmuted .fa-icon.fa-volume-xmark {
+      display: none;
+    }
+  
+    /* Real height instead of the old padding-bottom:177% hack — that hack's
+       size is capped by nothing, so on wide viewports (e.g. a Galaxy Fold
+       unfolded) it made the banner taller than the screen. --video-ar is set
+       from each video's own real dimensions once it loads (see scripts.hbs),
+       so this stays correct regardless of which video a page uses; 16/9 (the
+       current videos' real height:width, 9:16 portrait) is only the fallback
+       for the instant before that script runs. */
+    #video-container {
+      position: relative;
+      padding-bottom: 0;
+      height: calc(100vw * var(--video-ar, calc(16 / 9)));
+    }
+  
+    /* Accodion */
+    .accordion {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 0;
+      line-height: 1.5;
+    }
+    .accordion * {
+      line-height: 22px;
+    }
+    .accordion ul {
+      padding-left: 10px;
+    }
+    .accordion-section {
+      background: rgb(240, 248, 233);
+      padding: 1rem;
+    }
+  
+    .accordion-item {
+      background: #fff;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .accordion-item:first-child {
+      margin-top: 0;
+    }
+  
+    .accordion-header {
+      width: 100%;
+      padding: 16px 20px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header span {
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header .icon {
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+    }
+  
+    .accordion-item.active .icon {
+      transform: rotate(0deg);
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding: 0 20px;
+    }
+  
+    .accordion-item.active .accordion-content {
+      padding-bottom: 16px;
+    }
+  
+    .accordion-content p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+  
+    /* tooltip */
+    .tooltip-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .tooltip-title {
+      width: 90%;
+    }
+    .tooltip-box {
+      background: #000;
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      width: 100%;
+      display: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+      /* arrow */
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid black;
+      display: none;
+      margin: 0 auto;
+    }
+    .tooltip-box::after {
+      content: "";
+      display: block;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #000 transparent;
+    }
+    .vikki_flexi_button {
+      width: 25vw;
+    }
+    /* show tooltip */
+    .tooltip-wrapper.active .tooltip-box {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .tooltip-wrapper.active .arrow-up {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .spinnerKichHoatNgay {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #ccc;
+      border-top: 2px solid #0000FF;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-position {
+      position: absolute;
+      top: 53vw;
+      right: 8vw;
+    }
+    /* overlay */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: top 0.3s;
+      z-index: 9999;
+      top: 150%;
+    }
+    .hasTopSpace .popup-overlay.show {
+      top: 25vw;
+    }
+  
+    .popup-overlay.show {
+      top:0;
+    }
+    .popup-overlay .popup-close{
+      display: none;
+    }
+    .popup-overlay.show .popup-close{
+      display: block;
+    }
+  
+    .popup-content {
+      background: rgba(246, 247, 248, 1);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    #promo-detail-popup  .popup-content{
+      height: 100%;
+    }
+  
+    .popup-body {
+      height: 100%;
+      overflow-y: auto;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    .popup-close {
+      position: fixed;
+      right: 0;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 99;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hasTopSpace .popup-close {
+      top: 25vw;
+    }
+    .popup-close img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    .popup-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      min-height: 70vh;
+      background: #FFF
+    }
+    .popup-inner {
+      padding: 0px 10px 50px;
+    }
+  
+    /* slider */
+    swiper-container {
+      width: 100vw;
+    }
+  
+    swiper-slide {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .slide-img {
+      width: 100%;
+    }
+    .slide-img > span{
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 10%;
+      overflow: hidden;
+    }
+  
+    .slide-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  
+    .swiper-slide-next {
+      left: -5vw;
+      z-index: 1;
+      animation-name: showNextSlide;
+      animation-duration: 0.5s;
+    }
+    .swiper-pagination {
+      background-color: red;
+    }
+    @keyframes showNextSlide {
+      0% {
+        left: 0%;
+      }
+  
+      100% {
+        left: -5vw;
+      }
+    }
+  
+    .swiper-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .bg-transparent {
+      background: rgba(76, 39, 39, 0.05);
+      border-radius: 50px;
+    }
+    .bg-transparent .menu-top {
+      height: 48px;
+    }
+    .button {
+      height: 48px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+  
+    /* background */
+  
+    .p-1 {
+      padding: 1rem;
+    }
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+    .pt-1 {
+      padding-top: 1rem;
+    }
+    .pt-2{
+      padding-top: 2rem;
+    }
+    .g-1 {
+      gap: 1rem;
+    }
+    .g-2 {
+      gap: 1.5rem;
+    }
+    .bg-gray {
+      padding-top: 2rem;
+    }
+    .bg-green {
+      background: linear-gradient(180deg, #f0f8e9 70.24%, #ffffff 100%);
+      border-radius: 50px 50px 0 0;
+      padding-top: 2rem;
+    }
+    .bg-gray-gradient {
+      background: linear-gradient(180deg, #f6f7f8 0%, #ffffff 100%);
+    }
+    [data-popup],
+    [data-scroll] {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .button-wrap {
+      display: flex;
+      gap: 10px;
+    }
+    .button-wrap > * {
+      width: calc(50% - 5px);
+    }
+  
+    /* Pagination wrapper */
+    swiper-container::part(pagination) {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #f3f3f3;
+      padding: 8px 9px;
+      border-radius: 999px;
+      width: fit-content;
+      margin: 40px auto 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+    }
+  
+    .hide-pagination::part(pagination) {
+      display: none;
+    }
+    .slide-container {
+      padding-top: 3rem;
+    }
+    swiper-container::part(bullet) {
+      width: 8px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  
+    swiper-container::part(bullet-active) {
+      width: 20px;
+      height: 8px;
+      background: #0a46ff;
+      border-radius: 999px;
+    }
+  
+    .popup-title {
+      top: 0;
+      font-weight: bold;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+      font-size: 17px;
+      color: rgba(1, 5, 15, 1);
+      margin: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    #backToTop {
+      opacity: 0;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      transform: translateY(10px);
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      display: none;
+      z-index: 999;
+  
+      border-radius: 9999px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    #backToTop.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .popup-close {
+      color: #333;
+    }
+  
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 100;
+  
+      display: none;
+    }
+    .loading-overlay.show{
+      display: flex;
+    }
+  
+    .spinner {
+      width: 39px;
+      height: 39px;
+      border: 3px solid #e5e7eb;
+      border-top-color: #111827;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .section-title{
+      text-align: center;
+    }
+  
+    .bg-blue{
+      background: rgba(237, 248, 255, 1);
+      border-radius: 50px 50px 0 0;
+    }
+  
+  </style></head>
+
+<body class="hasTopSpace vikki-cobadge" id="body">
+  <style>
+  .vikki-cobadge .popup-overlay {
+    background-color: #fff;
+    background-size: 100% auto;
+  }
+  .vikki-cobadge .popup-title {
+    min-height: 80px;
+    background: none;
+    font-size: 2rem;
+    justify-content: flex-start;
+    padding: 0px 16px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  .vikki-cobadge .accordion {
+    max-width: none;
+  }
+  
+  .vikki-cobadge #backToTop {
+    bottom: 60px;
+  }
+  body.vikki-cobadge {
+    padding-bottom: 0;
+  }
+  .popup-inner,
+  .vikki-cobadge .bg-bottom {
+    padding-bottom: 120px;
+  }
+  html,
+  body {
+    padding-bottom: 0;
+  }
+
+  .btn-register {
+    background: linear-gradient(
+      88.03deg,
+      #0000ff 0%,
+      #6100ff 55.85%,
+      #da0191 77.92%,
+      #ff8a00 90.71%,
+      #ffb907 100%
+    );
+    box-shadow:
+      0px 0px 8px 0px rgba(0, 0, 0, 0.1),
+      0px 2px 5px 0px rgba(255, 255, 255, 0.18) inset,
+      0px 0px 8px 0px rgba(255, 255, 255, 0.3) inset,
+      0px 0px 12px 6px rgba(255, 255, 255, 0.16) inset,
+      0px 1px 1px 0px rgba(255, 255, 255, 0.25) inset 0px 6px 6px 0px
+        rgba(255, 255, 255, 0.12) inset;
+
+    height: 48px;
+    left: 16px;
+    right: 16px;
+    line-height: 48px;
+    position: fixed;
+    bottom: 16px;
+    border-radius: 50px;
+    color: #fff;
+    display: block;
+    z-index: 99999999;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .hasCard .btn-register{
+    display: none;
+  }
+  .group-item{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+    padding: 16px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+  }
+  .group-heading{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: none;
+  }
+  .group-sub-title{
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: rgba(4, 11, 30, 0.92);
+    font-weight: 500;
+  }
+  .group-sub{
+    font-size: 14px;
+    padding: 10px 0;
+    border-bottom: 1px solid #f5f5f5;
+    color: rgba(4, 11, 30, 0.92);
+    line-height: 22px;
+
+  }
+  .group-sub:last-child{
+    border:none
+  }
+
+  .partner-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+
+    }
+
+    .partner-item {
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .partner-item.is-primary {
+    grid-row: span 2;
+    background: #ffffff;
+    }
+
+    .partner-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+    }
+
+    .partner-logo img.activeLogo, .partner-logo img.inactiveLogo{
+      display: none;
+    }
+
+    .partner-item.is-primary .partner-logo{
+      padding-bottom: 91%;
+    }
+
+    .partner-item.is-primary img.normalLogo{
+        display: none;
+    }
+
+    .partner-item.is-primary .activeLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    .hasCard .partner-item.is-primary .activeLogo{
+      display: none;
+    }
+
+    .hasCard .partner-item.is-primary .inactiveLogo{
+      display: block;
+      border: 1px solid #d1d1d1;
+    }
+
+    [data-id='sovico'] img,
+    [data-id='hdbank'] img{
+      border: 1px solid #d1d1d1;
+    }
+
+    
+
+    .partner-logo{
+      padding-bottom: 44%;
+      position: relative;
+      height: 0;
+    }
+
+    .partner-logo img{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .partner-sub {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #555;
+    }
+
+    .partner-btn {
+    margin-top: 10px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    background: linear-gradient(90deg, #3b4bff, #ff9f2f);
+    }
+    .btn-full .button-wrap{
+        flex-direction: column;
+    }
+    .btn-full .button{
+        width: 100%;
+    }
+  #backToTopQA  {
+    opacity: 0;
+    transition:
+      opacity 0.3s ease,
+      transform 0.3s ease;
+    transform: translateY(10px);
+    position: fixed;
+    left: 16px;
+    bottom: 16px;
+    display: none;
+    z-index: 999;
+
+    border-radius: 9999px;
+    cursor: pointer;
+    display: block;
+  }
+
+  #backToTopQA.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .popup {
+    overflow: hidden;
+  }
+
+.popup-body {
+  height: 100%;
+}
+
+.popup-body iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+</style>
+
+<div id='qa'>
+  <div class='menu-top'>
+    <div>
+      <span data-popup='qa' data-title=" Hỏi đáp">
+        <img src='./assets/qa.svg' />
+        <span>
+          Hỏi đáp
+        </span>
+      </span>
+    </div>
+    <div>
+      <span data-title="Giới thiệu" data-popup='/vikki-cvp/card-intro/vikki-go-cobage.html'>
+        <img src='./assets/info.svg' />
+        <span>
+          Giới thiệu
+        </span>
+      </span>
+    </div>
+    <div>
+      <span data-title="Ưu đãi" data-popup='/vikki-cvp/promotion/list.html?category=VIKKIGO_COBAGE'>
+        <img src='./assets/offer.svg' />
+        <span>
+          Ưu đãi
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id='banner-container'>
+  <div id='video-container'>
+    <video
+      id='banner-video'
+      src='./assets/video.mp4'
+      poster='./assets/poster.jpg'
+      autoplay
+      playsinline
+      preload='auto'
+      muted
+      loop
+      webkit-playsinline
+      class='banner-video'
+    ></video>
+    <button id='volume-icon' class='volume-icon muted'>
+      <img src='./assets/icon-unmuted.svg' class='fa-icon fa-volume-high' />
+      <img src='./assets/icon-muted.svg' class='fa-icon fa-volume-xmark' />
+    </button>
+  </div>
+</div>
+<div class='gjs-row container loan-gift-container' id="intro">
+  <div class='gjs-cell'>
+    <img src='./assets/mien-lai.png' id='section-2-img' class='section' />
+  </div>
+</div>
+
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/linh-hoat.png' id='section-4-img' class='section' />
+  </div>
+</div>
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/toan-cau.png' id='section-4-img' class='section' />
+  </div>
+</div>
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/tich-diem.png' class='section' />
+  </div>
+</div>
+
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/title-su-kien.png' class='section' />
+    <div class='slide-container' style=''>
+    <swiper-container class='center-swiper ' >
+      <swiper-slide>
+        <div class='slide-img'>
+          <span data-popup='/vikki-cvp/promotion/promo-075.html' data-title=''>
+            <img class='swiper-img' src='assets/slide-4.png' />
+          </span>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class='slide-img'>
+          <span data-popup='https://vikkibank.vn/the-dong-thuong-hieu-vikkigo-duoc-vinh-danh-la-trai-nghiem-san-pham-ngan-hang-cua-nam-tai-asian-experience-awards-2025/' data-title='Sự kiện &amp; Khuyến mãi'>
+            <img class='swiper-img' src='assets/slide-2.png' />
+          </span>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class='slide-img'>
+          <span data-popup='https://vikkibank.vn/vikki-ra-mat-the-dong-thuong-hieu-dau-tien-giua-napas-va-mastercard/' data-title='Sự kiện &amp; Khuyến mãi'>
+            <img class='swiper-img' src='assets/slide-3.png' />
+          </span>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    </div>  </div>
+</div> 
+
+<div class='gjs-row container'>
+  <div class='gjs-cell pt-4'>
+    <img src='./assets/the-vikki-go.png' class='section' />
+    <img src='./assets/tc.png' class='section' />
+  </div>
+</div>
+
+<div class='container bg-gray pt-1'>
+  <div class='gjs-cell'>
+    <img src='./assets/title-san-sang.png' class='mb-1 section' />
+    <img src='./assets/tien-ich.png' class='section' />
+  </div>
+  <div class='py-3 px-3'>
+    <div class='accordion js-accordion'>
+        <div class='accordion-item'>
+          <button class='accordion-header'>
+            <span>
+              Làm sao để sở hữu Thẻ thanh toán tích hợp VikkiGO?
+            </span>
+            <span class='icon'>
+              <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+              </svg>
+            </span>
+          </button>
+          <div class='accordion-content'>
+            Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay.</li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO.</li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/ 
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <button class='accordion-header'>
+            <span>
+              Chủ thẻ có thể quản lý Thẻ thanh toán tích hợp VikkiGO như thế nào?
+            </span>
+            <span class='icon'>
+              <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+              </svg>
+            </span>
+          </button>
+          <div class='accordion-content'>
+            Chủ thẻ có thể dễ dàng quản lý Thẻ thanh toán tích hợp VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki: <ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <button class='accordion-header'>
+            <span>
+              Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ?
+            </span>
+            <span class='icon'>
+              <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+              </svg>
+            </span>
+          </button>
+          <div class='accordion-content'>
+            Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời. 
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <button class='accordion-header'>
+            <span>
+              Thẻ Co-badge được sử dụng như thế nào? Các loại giao dịch nào có thể thực hiện với thẻ này?
+            </span>
+            <span class='icon'>
+              <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+              </svg>
+            </span>
+          </button>
+          <div class='accordion-content'>
+            Thẻ Co-badge có đầy đủ các tính năng thanh toán như một loại thẻ nội địa/quốc tế thông thường, bao gồm: ECOM (thanh toán trực tuyến), POS (thanh toán tại cửa hàng), ATM (Rút tiền mặt, truy vấn số dư tài khoản tại ATM, chuyển khoản). Phạm vi sử dụng: trong nước và quốc tế. Tuy nhiên, sẽ có một số điểm khác biệt: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas, và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard, do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>
+          </div>
+        </div>
+        <div class='accordion-item'>
+          <button class='accordion-header'>
+            <span>
+              Điều kiện để được phát hành thẻ Co-badge là gì?
+            </span>
+            <span class='icon'>
+              <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+              </svg>
+            </span>
+          </button>
+          <div class='accordion-content'>
+            Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay. </li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO. </li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/ tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. 
+          </div>
+        </div>
+    </div>  </div>
+
+  <div class='px-3 pb-5'>
+    <span class='bg-transparent button w-full' data-popup='qa' data-title="Hỏi đáp">
+      <img src='./assets/qa.svg' />
+      <span>
+        Hỏi đáp
+      </span>
+    </span>
+  </div>
+</div>
+
+<div class='gjs-row container p-1 bg-green'>
+  <div class='gjs-cell'>
+    <div class='flex g-2'>
+      <img src='./assets/title-kich-hoat.png' class='section' />
+
+      <img src='./assets/kich-hoat.png' class='section' />
+
+      <div class='button-wrap g-1'>
+        <span class='bg-transparent button' data-popup='/vikki-cvp/card-co-badged-cvp/fee.html'>
+          Xem biểu phí
+        </span>
+        <span class='bg-transparent button' data-popup='/vikki-cvp/card-co-badged-cvp/tc.html'>
+          Điều khoản & điều kiện
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        <div id='qa'>
+          <div class='menu-top'>
+              <div>
+                <span data-popup='qa'  data-title="Hỏi đáp">
+                  <img src='./assets/qa.svg' />
+                  <span>
+                    Hỏi đáp
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span data-popup='/vikki-cvp/card-intro/vikki-go-cobage.html'  data-title="">
+                  <img src='./assets/info.svg' />
+                  <span>
+                    Giới thiệu
+                  </span>
+                </span>
+              </div>
+              <div>
+                <span data-popup='/vikki-cvp/promotion/list.html?category&#x3D;VIKKIGO_COBAGE'  data-title="">
+                  <img src='./assets/offer.svg' />
+                  <span>
+                    Ưu đãi
+                  </span>
+                </span>
+              </div>
+          </div>
+        </div>
+
+
+
+
+
+
+  <span id='backToTop'>
+    <img src='./assets/icon-btt.svg' />
+  </span>
+
+  <div class='popup-overlay' id='popup'>
+    <button class='popup-close' id='popupClose'>
+      <img src='./assets/icon-x.svg' />
+    </button>
+    <div class='popup-content'>
+      <div class='popup-body' id='popupBody'></div>
+      <div class='loading-overlay show' id='loading'>
+        <span class='spinner'></span>
+      </div>
+    </div>
+  </div>
+ 
+  <template id='qaTemplate'>
+    <div class='popup-inner'>
+    <h2 class='popup-title' id="popupTitle">
+       Hỏi đáp 
+    </h2>
+          <div class='group-item'>
+            <div class="group-heading">
+                
+              </div>
+            <div class='group-content'>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  1. Làm sao để sở hữu Thẻ thanh toán tích hợp VikkiGO?
+                </div>
+                <div>
+                Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay.</li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO.</li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <strong>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</strong> 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  2. Chủ thẻ có thể quản lý Thẻ thanh toán tích hợp VikkiGO như thế nào?
+                </div>
+                <div>
+                Chủ thẻ có thể dễ dàng quản lý Thẻ thanh toán tích hợp VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki: <ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  3. Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ?
+                </div>
+                <div>
+                Sau khi nhận Thẻ thanh toán tích hợp VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời. 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  4. Thẻ Co-badge được sử dụng như thế nào? Các loại giao dịch nào có thể thực hiện với thẻ này?
+                </div>
+                <div>
+                Thẻ Co-badge có đầy đủ các tính năng thanh toán như một loại thẻ nội địa/quốc tế thông thường, bao gồm: ECOM (thanh toán trực tuyến), POS (thanh toán tại cửa hàng), ATM (Rút tiền mặt, truy vấn số dư tài khoản tại ATM, chuyển khoản). Phạm vi sử dụng: trong nước và quốc tế. Tuy nhiên, sẽ có một số điểm khác biệt: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas, và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard, do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  5. Điều kiện để được phát hành thẻ Co-badge là gì?
+                </div>
+                <div>
+                Bạn có thể mở thẻ VikkiGO như sau: <ul><li>Nếu bạn chưa có tài khoản VikkiME, thực hiện mở tài khoản thanh toán trực tuyến VikkiME và Thẻ thanh toán tích hợp VikkiGO qua ứng dụng Vikki ngay. </li><li>Nếu bạn đã có tài khoản thanh toán VikkiME, truy cập ứng dụng Vikki và thực hiện yêu cầu phát hành thẻ thanh toán VikkiGO. </li></ul><strong>Lưu ý:</strong> Hãy đảm bảo Căn cước công dân còn thời hạn sử dụng và Tài khoản thanh toán VikkiME không bị khoá/ tạm khoá. Ngoài ra, Vikki Bank cũng đang hoàn thiện dịch vụ tại quầy để bạn có thể đến bất kỳ chi nhánh/phòng giao dịch của Vikki Bank yêu cầu phát hành thẻ thanh toán VikkiGO. Vikki sẽ thông báo cho quý khách khi sẵn sàng. 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  6. Thẻ Co-badge có hai số thẻ, làm thế nào để biết giao dịch sử dụng số thẻ nào?
+                </div>
+                <div>
+                Lịch sử giao dịch sẽ ghi nhận theo loại thẻ được sử dụng. Chủ thẻ có thể truy vấn tại lịch sử của giao dịch trên ứng dụng Vikki. 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  7. Tôi có được quyền lựa chọn số thẻ tôi muốn cho giao dịch cụ thể được không?
+                </div>
+                <div>
+                Tùy theo loại hình giao dịch và tính sẵn sàng của kênh giao dịch, chủ thẻ có thể chủ động lựa chọn loại thẻ để giao dịch. Tuy nhiên, xem thêm thông tin dưới đây để có thể lựa chọn giao dịch phù hợp: <ul><li><strong>ECOM:</strong> khách hàng nhập thông tin thẻ khi giao dịch tại các trang thanh toán trực tuyến, các nền tảng thanh toán ecommerce. </li><li><strong>ATM:</strong> có thể sử dụng tại ATM Vikki, Napas và Mastercard; chỉ sử dụng một số PIN ATM duy nhất khi giao dịch. Đối với giao dịch ATM, hệ thống ưu tiên xử lý giao dịch bằng thông tin chip VCCS (tức là xử lý qua kênh giao dịch Napas), giao dịch được ghi nhận sẽ là thông tin giao dịch thẻ VCCS (Napas). Trường hợp kết nối xử lý giao dịch VCCS không sẵn sàng tại Vikki Bank – Ngân hàng phát hành hoặc Napas, hệ thống sẽ tự động chuyển đổi xử lý sang chip Mastercard. Trong trường hợp này, thông tin giao dịch ghi nhận sẽ là giao dịch thẻ Mastercard. </li><li><strong>POS:</strong> tương tự như giao dịch tại ATM, hệ thống cũng sẽ ưu tiên xử lý giao dịch bằng chip VCCS (Napas) và chuyển xử lý chip Mastercard khi kết nối VCCS bị gián đoạn. Trong một số trường hợp, một số POS có tính năng chuyển đổi giữa VCCS và Mastercard. Do đó, chủ thẻ có thể thông báo cho cashier tại POS machine muốn thực hiện giao dịch bằng thông tin thẻ VCCS hay bằng thẻ Mastercard để nhân viên hỗ trợ thực hiện giao dịch (theo nghiệp vụ xử lý của nhân viên tại cửa hàng, chủ thẻ chỉ cần thông báo thẻ muốn giao dịch là thẻ nào). </li></ul><strong>Lưu ý:</strong> <ul><li>Phí giao dịch/dịch vụ qua liên minh Napas/Mastercard sẽ được áp dụng tương ứng khi xử lý chip VCCS hoặc chip Mastercard. </li><li>Đối với các giao dịch quốc tế, i.e. mua hàng qua trang thương mại điện tử nước ngoài (AMAZON, PAYPAL,…), quẹt thẻ thanh toán tại các cửa hàng hoặc rút tiền mặt tại ATM ở nước ngoài, chỉ xử lý giao dịch bằng chip thẻ Mastercard. Phí giao dịch qua liên minh Mastercard sẽ được áp dụng trong trường hợp này. </li><li>Tính năng giao dịch trực tuyến ECOM đang được tạm khóa. Vikki Bank sẽ thông báo cho Khách hàng ngay khi tính năng sẵn sàng sử dụng. </li></ul>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  8. Thẻ cứng cần thiết không?
+                </div>
+                <div>
+                Bên cạnh việc sở hữu thẻ ảo ngay sau khi mở thẻ thành công, thẻ cứng sẽ giúp bạn tiện lợi hơn khi sử dụng thẻ. Cụ thể, với thẻ cứng, chủ thẻ có thể thao tác rút tiền tại cây ATM trong và ngoài nước với biểu tượng NAPAS hoặc Mastercard. Đặc biệt, khi rút tiền miễn phí tại hơn 700 cây ATM của Vikki Digital Bank. Với việc sở hữu thẻ cứng, khách hàng còn có thể quẹt thẻ tại máy quẹt thẻ (POS) hoặc thanh toán không tiếp xúc (Tap to pay) tại hệ thống cửa hàng, siêu thị, nhà hàng hoặc giao thông công cộng trên toàn thế giới. Thông qua ứng dụng Vikki, chủ thẻ có thể yêu cầu phát hành thẻ cứng giao miễn phí lần đầu đến các điểm giao dịch VikkiBank gần bạn nhất (xem thêm điều kiện và điều khoản cùng phí và biểu phí cho các trường hợp phát hành lần 2 hoặc phát hành khác). 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  9. Các tính năng thanh toán của thẻ là gì? Quản lý như thế nào?
+                </div>
+                <div>
+                Thẻ cứng cũng như thẻ ảo của thẻ thanh toán tích hợp NAPAS Mastercard VikkiGO đều có thể có nhiều tính năng thanh toán như: <ul><li>Thanh toán trực tuyến qua các sàn thương mại điện tử, website trong và ngoài nước chấp nhận thẻ NAPAS/Mastercard.</li><li>Thanh toán tại máy quẹt thẻ tại siêu thị, cửa hàng tiện lợi, nhà hàng, trung tâm mua sắm. Có đến hơn 5 Triệu điểm chấp nhận thanh toán thẻ thanh toán tích hợp VikkiGO trên toàn cầu.</li><li>Rút tiền tại các máy ATM với biểu tượng NAPAS hoặc Mastercard.</li><li>Thanh toán quốc tế (bao gồm rút tiền và quẹt thẻ) ngoài phạm vi lãnh thổ Việt Nam.</li></ul>Toàn bộ các tính năng thanh toán trên đều có thể tắt (khóa) và mở (mở khóa), hoặc giới hạn hạn mức giao dịch cho từng loại theo ngày, số lần giao dịch theo nhu cầu thông qua ứng dụng Vikki. Chủ thẻ có thể khám phá tại mục quản lý thẻ trong ứng dụng. Việc quản lý thẻ này giúp bảo vệ tiền trong thẻ, trong tài khoản khỏi kẻ gian. 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  10. Những việc cần làm khi thất lạc thẻ
+                </div>
+                <div>
+                Nguồn tiền của thẻ lấy từ tài khoản VikkiME. Việc thất lạc thẻ hoặc lộ thông tin thẻ đều có thể dẫn đến việc bị mất tiền trong tài khoản. Do đó, khi thất lạc thẻ hay phát hiện giao dịch khả nghi cần liên hệ ngay với Vikki Care và khóa thẻ khẩn cấp trên ứng dụng Vikki. Đừng lo! Sau khi khóa thẻ, chủ thẻ có thể chủ động mở khóa trên ứng dụng khi tìm được thẻ hoặc xác định thông tin thẻ vẫn an toàn. 
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  11. Bao lâu sau khi đăng ký thì nhận được thẻ VikkiGO?
+                </div>
+                <div>
+                Thời gian nhận thẻ VikkiGO thông thường 05 ngày làm việc sau khi hoàn tất đăng ký, tùy theo phương thức nhận thẻ mà khách hàng đăng ký.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  12. Biểu tượng cột sóng trên thẻ có ý nghĩa gì?
+                </div>
+                <div>
+                Đây là biểu tượng cho biết thẻ hỗ trợ tính năng thanh toán không tiếp xúc (Contactless), cho phép thực hiện giao dịch bằng cách đưa thẻ lại gần thiết bị thanh toán tương thích.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  13. CCCD của tôi sắp hết hạn (còn 10 ngày) thì tôi có thể tải app Vikki và mở Thẻ VikkiGO được không?
+                </div>
+                <div>
+                Không được. Bạn cần làm lại CCCD (đổi CCCD) để tải app Vikki và mở thẻ VikkiGO.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  14. Có thể đăng ký thẻ VikkiGO online 100% không?
+                </div>
+                <div>
+                Có. Bạn có thể đăng ký thẻ VikkiGO hoàn toàn trực tuyến trên ứng dụng Vikki.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  15. Có thể yêu cầu cấp lại thẻ VikkiGO khi còn hạn không?
+                </div>
+                <div>
+                Có. Bạn có thể yêu cầu cấp lại thẻ VikkiGO khi thẻ bị mất, hỏng hoặc khi cần thay đổi thông tin theo quy định áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  16. Để mở thẻ VikkiGO online tôi cần làm gì?
+                </div>
+                <div>
+                Để mở thẻ VikkiGO online bằng cần chuẩn bị: Điện thoại thông minh có NFC; Điện thoại có kết nối internet; CCCD gắn chip (còn thời hạn sử dụng trên 30 ngày).
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  17. Điểm SkyJoy dùng để đổi quà gì?
+                </div>
+                <div>
+                Bạn có thể sử dụng điểm SkyJoy để đổi vé máy bay Vietjet, voucher mua sắm, ẩm thực và nhiều ưu đãi, dịch vụ khác theo chương trình áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  18. Điểm tích lũy có hết hạn không?
+                </div>
+                <div>
+                Điểm tích lũy từ các giao dịch chi tiêu bằng thẻ được áp dụng thời hạn sử dụng theo chính sách của từng chương trình trong từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  19. Hệ thống của Vikki có kết nối được với phần mềm nhân sự hiện tại của công ty không?
+                </div>
+                <div>
+                Có. Vikki Bank có thể hỗ trợ tích hợp dữ liệu chấm công và các dữ liệu liên quan vào phần mềm quản lý nhân sự của Tổ chức/Doanh nghiệp theo phương án tích hợp được thống nhất trong quá trình triển khai.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  20. Khi bị mất thẻ, tôi có thể liên hệ ai để được hỗ trợ?
+                </div>
+                <div>
+                Bạn nên liên hệ Tổng đài chăm sóc khách hàng Vikki Care <strong>19006608</strong> khi bị mất thẻ, nghi ngờ gian lận hoặc gặp lỗi giao dịch cần được hỗ trợ kiểm tra.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  21. Khoảng cách tối đa để máy nhận tín hiệu Contactless là bao nhiêu?
+                </div>
+                <div>
+                Khoảng cách nhận tín hiệu thanh toán không tiếp xúc (Contactless) thông thường dưới 4 cm để đảm bảo an toàn và hạn chế phát sinh giao dịch ngoài ý muốn.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  22. Làm sao để biết thẻ của mình sắp hết hạn?
+                </div>
+                <div>
+                Ngày hết hạn (Expiry Date) được in trên thẻ theo định dạng tháng/năm. Ngoài ra, ứng dụng Vikki có thể gửi thông báo nhắc trước thời điểm thẻ hết hạn để bạn chủ động theo dõi và thực hiện gia hạn khi cần.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  23. Làm sao để biết thẻ VikkiGO của mình là thẻ chính chủ?
+                </div>
+                <div>
+                Tên của bạn được in trên mặt trước của thẻ vật lý theo thông tin đăng ký. Ngoài ra, bạn có thể kiểm tra thông tin chủ thẻ VikkiGO trên ứng dụng Vikki để đối chiếu.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  24. Làm sao để đóng góp ý kiến về chất lượng thẻ?
+                </div>
+                <div>
+                Bạn có thể gửi email đến <strong>hotro@vikki.vn</strong>, phản hồi trực tiếp trên ứng dụng Vikki hoặc liên hệ Vikki Care <strong>19006608</strong> để đóng góp ý kiến về chất lượng thẻ VikkiGO.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  25. Làm sao để liên kết tài khoản SkyJoy với thẻ Vikki?
+                </div>
+                <div>
+                Việc liên kết tài khoản SkyJoy với thẻ VikkiGO thường được thực hiện tự động khi bạn đăng ký thẻ trên ứng dụng Vikki theo quy trình áp dụng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  26. Làm sao để xuất file sao kê dạng PDF?
+                </div>
+                <div>
+                Bạn vào mục <strong>“Sao kê”</strong> trên ứng dụng Vikki và chọn chức năng <strong>“Tải về”</strong> để xuất file sao kê dạng PDF.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  27. Mã CVV trên thẻ VikkiGO là gì?
+                </div>
+                <div>
+                Mã CVV là 3 chữ số bảo mật được in ở mặt sau thẻ, sử dụng để xác thực các giao dịch thanh toán trực tuyến. Bạn không nên chia sẻ mã này với bất kỳ ai để đảm bảo an toàn thông tin thẻ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  28. Nếu CCCD của tôi hết hạn sử dụng thì tôi có giao dịch tại app Vikki được không?
+                </div>
+                <div>
+                Không được. Bạn cần làm lại CCCD và cập nhật thông tin tại Vikki Bank để không gián đoạn giao dịch.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  29. Nếu điện thoại thông minh của tôi không có NFC thì có thể mở thẻ VikkiGO online được không?
+                </div>
+                <div>
+                Để mở thẻ VikkiGO online bằng cần chuẩn bị: Điện thoại thông minh có kết nối internet; CCCD gắn chip (còn thời hạn sử dụng trên 30 ngày). Trường hợp điện thoại của bạn không có NFC thì bạn hãy đến bất kỳ CN/PGD Vikki Bank để được hỗ trợ tải ứng dụng Vikki và hướng dẫn mở và sử dụng thẻ VikkiGO
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  30. Nếu tôi bị mất điện thoại và mất thẻ cùng lúc thì phải làm sao?
+                </div>
+                <div>
+                Bạn vui lòng gọi ngay Vikki Care <strong>19006608</strong> từ một điện thoại khác để yêu cầu khóa thẻ và tài khoản khẩn cấp nhằm đảm bảo an toàn giao dịch.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  31. Nếu tôi đổi số điện thoại đăng ký thì thẻ có dùng được tiếp không?
+                </div>
+                <div>
+                Bạn vẫn có thể sử dụng thẻ VikkiGO. Tuy nhiên, bạn cần cập nhật số điện thoại mới trên ứng dụng Vikki hoặc tại Chi nhánh/Phòng Giao dịch Vikki Bank nhằm đảm bảo nhận được mã OTP và sử dụng đầy đủ các tính năng của thẻ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  32. PIN thẻ và mật khẩu đăng nhập ứng dụng Vikki có giống nhau không?
+                </div>
+                <div>
+                Không. PIN thẻ và mật khẩu đăng nhập ứng dụng là hai loại mã khác nhau, được sử dụng cho các mục đích xác thực khác nhau nhằm tăng cường bảo mật.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  33. Phí cấp lại thẻ do làm mất là bao nhiêu?
+                </div>
+                <div>
+                Phí cấp lại thẻ được áp dụng theo Biểu phí thẻ VikkiGO và được cập nhật theo quy định từng thời kỳ. Bạn có thể tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  34. Phí rút tiền mặt tại ATM là bao nhiêu?
+                </div>
+                <div>
+                Phí rút tiền mặt tại ATM được áp dụng theo Biểu phí thẻ VikkiGO và được cập nhật theo quy định từng thời kỳ. Bạn vui lòng tham khảo chi tiết trên ứng dụng Vikki hoặc website của Vikki Bank (Hiện tại đang được Miễn phí)
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  35. Tại sao tôi nhận được OTP dù không thực hiện giao dịch?
+                </div>
+                <div>
+                Có thể có giao dịch đang được thực hiện bằng thông tin thẻ của bạn. Bạn vui lòng khóa thẻ ngay trên ứng dụng Vikki và liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra kịp thời.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  36. Tính năng thanh toán không tiếp xúc (Contactless) có an toàn không?
+                </div>
+                <div>
+                Tính năng thanh toán không tiếp xúc (Contactless) được áp dụng các tiêu chuẩn bảo mật theo quy định của Ngân hàng Nhà nước Việt Nam và các tiêu chuẩn thanh toán quốc tế. Đối với các giao dịch có giá trị lớn, hệ thống có thể yêu cầu xác thực bổ sung như nhập PIN hoặc ký xác nhận để tăng cường an toàn.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  37. Tôi cần hỗ trợ về ưu đãi thì liên hệ ai?
+                </div>
+                <div>
+                Bạn vui lòng liên hệ bất kỳ điểm giao dịch Vikki Bank hoặc Vikki Care <strong>19006608</strong> để được hỗ trợ bất kỳ lúc nào.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  38. Tôi cần mang giấy tờ gì khi đi nhận thẻ VikkiGO tại CN/PGD Vikki Bank?
+                </div>
+                <div>
+                Bạn chỉ cần xuất trình GTTT (bản gốc) hoặc thông tin định danh điện tử hợp lệ (VNeID) để đối chiếu khi nhận thẻ theo quy định.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  39. Tôi có được tính lãi với số tiền trong thẻ không?
+                </div>
+                <div>
+                Có. Số dư trong tài khoản thanh toán gắn với Thẻ VikkiGO sẽ được tính lãi không kỳ hạn theo quy định áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  40. Tôi có thể chat trực tiếp với nhân viên hỗ trợ trên ứng dụng Vikki không?
+                </div>
+                <div>
+                Có. Bạn có thể sử dụng tính năng Live Chat trên ứng dụng Vikki để được hỗ trợ trực tiếp với nhân viên của Vikki Bank.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  41. Tôi có thể chọn địa chỉ nhận thẻ VikkiGO không?
+                </div>
+                <div>
+                Có. Bạn có thể lựa chọn nhận thẻ tại địa chỉ nhà riêng, nơi làm việc hoặc tại bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất theo phương thức nhận thẻ đã đăng ký.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  42. Tôi có thể dùng thẻ VikkiGO để nạp tiền điện thoại cho người thân được không?
+                </div>
+                <div>
+                Có. Bạn có thể nạp tiền điện thoại cho người thân trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  43. Tôi có thể dùng thẻ VikkiGO để thanh toán cước thuê bao điện thoại Viettel, Vinaphone trả sau tự động hàng tháng không?
+                </div>
+                <div>
+                Có. Bạn có thể thiết lập tính năng <strong>“Thanh toán hóa đơn tự động”</strong> trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  44. Tôi có thể dùng thẻ VikkiGO để thanh toán tại các trang web nước ngoài không uy tín không?
+                </div>
+                <div>
+                Bạn không nên sử dụng thẻ VikkiGO để thanh toán tại các website không uy tín. Để đảm bảo an toàn thông tin thẻ, bạn nên thực hiện giao dịch tại các website đáng tin cậy và có cơ chế bảo mật thanh toán phù hợp.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  45. Tôi có thể dùng thẻ VikkiGO để thanh toán tại nước ngoài không?
+                </div>
+                <div>
+                Có. Bạn có thể sử dụng thẻ VikkiGO để thanh toán tại các điểm chấp nhận thẻ Mastercard trên toàn cầu theo quy định áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  46. Tôi có thể dùng thẻ VikkiGO để thanh toán tiền điện, nước tự động hàng tháng không?
+                </div>
+                <div>
+                Có. Bạn có thể thiết lập tính năng <strong>“Thanh toán hóa đơn tự động”</strong> trên ứng dụng Vikki và thanh toán qua tài khoản thanh toán gắn với Thẻ VikkiGO
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  47. Tôi có thể dùng thẻ VikkiGO để trả phí gửi xe tại các trung tâm thương mại không?
+                </div>
+                <div>
+                Có. Bạn có thể sử dụng thẻ VikkiGO để thanh toán phí gửi xe tại các địa điểm chấp nhận thẻ Mastercard hoặc tại các địa điểm có hỗ trợ thiết bị thanh toán không tiếp xúc (Contactless) tương thích.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  48. Tôi có thể điều chỉnh hạn mức giao dịch tại POS không?
+                </div>
+                <div>
+                Có. Bạn có thể điều chỉnh hạn mức giao dịch thanh toán tại POS của thẻ VikkiGO trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> --> <strong>chức năng Quản lý Thẻ</strong> --> <strong>“Hạn mức GD POS”</strong>.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  49. Tôi có thể điều chỉnh hạn mức rút tiền mặt tại ATM không?
+                </div>
+                <div>
+                Có. Bạn có thể điều chỉnh hạn mức rút tiền mặt tại ATM của thẻ VikkiGO trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> --> <strong>Quản lý Thẻ</strong> --> <strong>“Hạn mức rút tiền ATM”.</strong>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  50. Tôi có thể kích hoạt thẻ VikkiGO mà không cần ra ngân hàng không?
+                </div>
+                <div>
+                Có. Bạn có thể kích hoạt thẻ VikkiGO hoàn toàn trên ứng dụng Vikki theo các hướng dẫn hiển thị trên ứng dụng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  51. Tôi có thể khóa thẻ VikkiGO tạm thời không?
+                </div>
+                <div>
+                Có. Bạn có thể khóa thẻ VikkiGO tạm thời trên ứng dụng Vikki tại mục <strong>“THẺ”</strong> và truy cập chức năng <strong>“Khóa thẻ”</strong>.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  52. Tôi có thể mua vé máy bay Vietjet bằng thẻ VikkiGO với các chương trình giảm giá của Vietjet?
+                </div>
+                <div>
+                Có. Bạn có thể mua vé máy bay Vietjet trên ứng dụng Vikki thông qua tài khoản thanh toán gắn với Thẻ VikkiGO và tham gia các chương trình giảm giá của Vietjet tại từng thời điểm và quy định của hãng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  53. Tôi có thể nhận thông báo ưu đãi mới không?
+                </div>
+                <div>
+                Có. Bạn có thể nhận thông báo ưu đãi mới thông qua ứng dụng Vikki hoặc website của Vikki Bank.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  54. Tôi có thể quản lý nhiều thẻ trên Ứng dụng Vikki không?
+                </div>
+                <div>
+                Có. Bạn có thể quản lý nhiều thẻ trên ứng dụng Vikki trong cùng một tài khoản đăng nhập.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  55. Tôi có thể sử dụng Thẻ để thanh toán dư nợ thẻ tín dụng được không?
+                </div>
+                <div>
+                Có. Bạn có thể thanh toán dự nợ thẻ tín dụng thông qua tài khoản thanh toán gắn vói thẻ VikkiGO trên ứng dụng Vikki.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  56. Tôi có thể tự thay đổi hạn mức thanh toán online không?
+                </div>
+                <div>
+                Có. Bạn có thể chủ động điều chỉnh hạn mức thanh toán online trên ứng dụng Vikki theo các mức hệ thống cho phép nhằm tăng cường kiểm soát và đảm bảo an toàn giao dịch.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  57. Tôi có thể xem lịch sử giao dịch bao lâu?
+                </div>
+                <div>
+                Bạn có thể xem toàn bộ lịch sử giao dịch thẻ VikkiGO của bạn trên ứng dụng Vikki
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  58. Tôi chưa tải ứng dụng Vikki thì quản lý thẻ được không?
+                </div>
+                <div>
+                Bạn cần tải và đăng nhập ứng dụng Vikki để kích hoạt và quản lý thẻ VikkiGO, đồng thời sử dụng đầy đủ các tiện ích liên quan đến thẻ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  59. Tôi đã mở 2 tài khoản thanh toán (VikkiMe) tại ứng dụng Vikki. Tôi có thể chọn tài khoản để mở thẻ VikkiGO không?
+                </div>
+                <div>
+                Có. Bạn có thể chọn 1 tài khoản thanh toán mong muốn để liên kết mở thẻ VikkiGO.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  60. Tôi đi công tác nước ngoài, có cần gọi điện thông báo cho ngân hàng không?
+                </div>
+                <div>
+                Không bắt buộc, tuy nhiên để việc thanh toán được thuận tiện hơn, bạn có thể chủ động thông báo trước cho Vikki Bank qua ứng dụng hoặc Vikki Care <strong>19006608</strong>.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  61. Tôi làm mất thẻ VikkiGO trước khi kích hoạt thì sao?
+                </div>
+                <div>
+                Bạn vui lòng liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ khóa thẻ và thực hiện thủ tục cấp lại thẻ mới theo quy định.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  62. Tôi muốn đổi PIN thì làm sao?
+                </div>
+                <div>
+                Bạn có thể đổi PIN thẻ VikkiGO trên ứng dụng Vikki hoặc tại các máy ATM theo hướng dẫn hiển thị trên màn hình.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  63. Tôi muốn nhận thông báo biến động số dư thì làm sao?
+                </div>
+                <div>
+                Bạn có thể bật tính năng <strong>“Thông báo qua ứng dụng”</strong> trong phần Cài đặt trên ứng dụng Vikki để nhận thông báo chi tiêu và giao dịch.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  64. Tôi nên làm gì nếu thẻ VikkiGO bị kẹt trong máy ATM?
+                </div>
+                <div>
+                Bạn vui lòng khóa thẻ VikkiGO ngay trên ứng dụng Vikki và liên hệ ngân hàng sở hữu máy ATM nơi bạn thực hiện giao dịch hoặc Vikki Care <strong>19006608</strong> để được hỗ trợ xử lý.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  65. Tôi nhận thẻ VikkiGO rồi nhưng chưa dùng được, vì sao?
+                </div>
+                <div>
+                Thẻ VikkiGO cần được kích hoạt trên ứng dụng Vikki trước khi sử dụng và trải nghiệm đầy đủ các tiện ích của thẻ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  66. Tôi tích điểm SkyJoy như thế nào?
+                </div>
+                <div>
+                Bạn có thể tích điểm SkyJoy thông qua các giao dịch thanh toán bằng thẻ VikkiGO theo chương trình tích điểm áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  67. Tôi thanh toán nhưng bị trừ tiền hai lần?
+                </div>
+                <div>
+                Giao dịch của bạn có thể đang trong trạng thái chờ xử lý (giao dịch treo). Tuy nhiên, bạn vui lòng liên hệ ngay Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra và xử lý kịp thời.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  68. Tôi xem thông tin thẻ VikkiGO của Tôi ở đâu?
+                </div>
+                <div>
+                Bạn có thể xem thông tin thẻ tại mục <strong>“THẺ”</strong> trên ứng dụng Vikki.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  69. Thanh toán QR có dùng được không?
+                </div>
+                <div>
+                Thẻ VikkiGO có thể sử dụng thanh toán QR tại các điểm chấp nhận phù hợp theo quy định và cấu hình áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  70. Thanh toán quốc tế bằng thẻ VikkiGO có phí chuyển đổi ngoại tệ không?
+                </div>
+                <div>
+                Có. Giao dịch thanh toán quốc tế có thể phát sinh phí chuyển đổi ngoại tệ theo quy định của Vikki Bank và Mastercard. Bạn vui lòng tham khảo Biểu phí thẻ VikkiGO tại website hoặc trên ứng dụng Vikki để biết chi tiết.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  71. Thẻ bị cong, vênh có dùng được nữa không?
+                </div>
+                <div>
+                Trường hợp thẻ bị cong, vênh nhưng chip và anten NFC vẫn hoạt động bình thường, thẻ vẫn có thể sử dụng. Nếu chip hoặc anten NFC bên trong bị hỏng, bạn nên yêu cầu cấp lại thẻ mới.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  72. Thẻ có chương trình hoàn tiền không ?
+                </div>
+                <div>
+                Có. Chương trình hoàn tiền được áp dụng theo từng chương trình ưu đãi trong từng thời kỳ. Bạn có thể tham khảo tại mục <strong>“Ưu đãi Vikki”</strong> hoặc <strong>“Ưu đãi”</strong> trong tab <strong>“THẺ”</strong> trên ứng dụng Vikki.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  73. Thẻ có hỗ trợ thanh toán không tiếp xúc không?
+                </div>
+                <div>
+                Có. Thẻ VikkiGO hỗ trợ thanh toán không tiếp xúc (Contactless) tại các thiết bị thanh toán (POS) có hỗ trợ công nghệ tương thích.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  74. Thẻ có thể dùng để trả học phí, vé máy bay, hóa đơn dịch vụ không?
+                </div>
+                <div>
+                Có. Thẻ VikkiGO có thể được sử dụng để thanh toán học phí, vé máy bay, hóa đơn dịch vụ và các giao dịch thanh toán khác tại các điểm chấp nhận thẻ trong nước và quốc tế theo quy định áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  75. Thẻ cobadge VikkiGO là thẻ gì?
+                </div>
+                <div>
+                Thẻ thanh toán tích hợp VikkiGO của Ngân hàng số Vikki là dòng thẻ đồng thương hiệu kết hợp mạng lưới NAPAS nội địa và Mastercard quốc tế. Thẻ cho phép thanh toán và rút tiền mượt mà trên toàn cầu chỉ với một chip duy nhất, đi kèm nhiều ưu đãi hoàn tiền và tích điểm hấp dẫn.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  76. Thẻ vật lý và thẻ ảo trên ứng dụng Vikki có số giống nhau không?
+                </div>
+                <div>
+                Thẻ vật lý và thẻ ảo trên ứng dụng Vikki sẽ có cùng số thẻ để thuận tiện cho việc quản lý và giao dịch.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  77. Thẻ VikkiGO bị kích hoạt sai thông tin thì sao?
+                </div>
+                <div>
+                Bạn vui lòng liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra và xác minh lại thông tin.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  78. Thẻ VikkiGO bị từ chối tại cửa hàng?
+                </div>
+                <div>
+                Bạn vui lòng kiểm tra số dư tài khoản và trạng thái thẻ trên ứng dụng Vikki. Nếu vẫn không thực hiện được giao dịch, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  79. Thẻ VikkiGO bị trầy xước có ảnh hưởng không?
+                </div>
+                <div>
+                Thẻ VikkiGO bị trầy xước nhẹ thường không ảnh hưởng đến việc sử dụng. Trường hợp chip trên thẻ bị hỏng, bạn cần yêu cầu cấp lại thẻ theo quy định.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  80. Thẻ VikkiGO có hỗ trợ rút tiền mặt tại nước ngoài không?
+                </div>
+                <div>
+                Có. Bạn có thể rút tiền mặt tại các máy ATM có biểu tượng Mastercard trên toàn cầu theo quy định áp dụng của Mastercard từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  81. Thẻ VikkiGO có phải là thẻ Thanh toán kết hợp Tín dụng không?
+                </div>
+                <div>
+                Không đúng. Thẻ VikkiGO là loại thẻ thanh toán (thẻ ghi nợ) quốc tế.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  82. Thẻ VikkiGO có tự động kích hoạt khi nhận không?
+                </div>
+                <div>
+                Không. Bạn cần chủ động kích hoạt thẻ VikkiGO trên ứng dụng Vikki trước khi sử dụng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  83. Thẻ VikkiGO có thể dùng tại máy ATM không?
+                </div>
+                <div>
+                Có. Thẻ VikkiGO có thể sử dụng tại máy ATM để rút tiền mặt, đổi PIN và thực hiện các giao dịch khác theo chức năng ATM hỗ trợ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  84. Thẻ VikkiGO khác gì thẻ VikkiGO+ ?
+                </div>
+                <div>
+                Thẻ VikkiGO khác biệt chính so với thẻ VikkiGO+ là Thẻ VikkiGO là thẻ ghi nợ, còn thẻ VikkiGO+ là thẻ kép bao gồm thẻ Tín dụng và thẻ thanh toán
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  85. Thẻ VikkiGO là loại thẻ tín dụng hay thẻ ghi nợ?
+                </div>
+                <div>
+                Thẻ VikkiGO là thẻ ghi nợ do Vikki Bank phát hành
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  86. Thẻ VikkiGO là thẻ nào?
+                </div>
+                <div>
+                Thẻ VikkiGO có tên gọi đầy đủ là Thẻ thanh toán tích hợp VikkiGO, do Vikki Bank phát hành
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  87. Ứng dụng Vikki bị treo khi vào mục thẻ?
+                </div>
+                <div>
+                Bạn vui lòng cập nhật ứng dụng Vikki lên phiên bản mới nhất và thử đăng nhập lại. Nếu vẫn gặp lỗi, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  88. Ứng dụng Vikki không hiển thị thẻ thì sao?
+                </div>
+                <div>
+                Bạn vui lòng đăng xuất và đăng nhập lại ứng dụng Vikki để kiểm tra. Nếu vẫn chưa hiển thị thẻ VikkiGO, bạn có thể liên hệ Vikki Care <strong>19006608</strong> để được hỗ trợ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  89. Ưu đãi tại các cửa hàng có thể áp dụng đồng thời với thẻ VikkiGO không?
+                </div>
+                <div>
+                Tùy theo điều kiện của từng chương trình, bạn có thể đồng thời nhận ưu đãi từ hệ thống Mastercard và các đối tác của Vikki Bank theo chính sách áp dụng từng thời kỳ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  90. Tôi có thể mở thẻ phụ thẻ VikkiGO cho người thân không?
+                </div>
+                <div>
+                Thẻ thanh toán tích hợp VikkiGO không có phát hành thẻ phụ
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  91. Thẻ VikkiGO có phải là thẻ tích hợp giữa Napas và Visa không?
+                </div>
+                <div>
+                Không. Thẻ thanh toán tích hợp VikkiGO của Ngân hàng số Vikki là dòng thẻ đồng thương hiệu kết hợp mạng lưới NAPAS nội địa và Mastercard quốc tế.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  92. Thời hạn sử dụng của thẻ VikkiGO là bao lâu?
+                </div>
+                <div>
+                Thẻ có thời hạn hiệu lực là 05 năm kể từ ngày phát hành (đối với người nước ngoài thì thời hạn sử dụng thẻ không quá thời hạn được cư trú tại Việt Nam).
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  93. Làm sao để đặt lại mã PIN nếu tôi lỡ quên?
+                </div>
+                <div>
+                Bạn vào mục <strong>"THẺ"</strong> -> <strong>"Quản lý thẻ"</strong> -> <strong>"Đổi mã PIN"</strong> trên app Vikki để tạo PIN mới.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  94. Tôi có thể chủ động khóa và mở khóa giao dịch rút tiền mặt tại ATM mà không cần liên hệ với Ngân hàng không?
+                </div>
+                <div>
+                Có. Bạn có thể chủ động khóa và mở khóa giao dịch online, tại máy quẹt thẻ (POS) trên ứng dụng Vikki, bằng cách vào Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> <strong>"Quản lý thẻ"</strong> và thao tác bật/tắt tại giao dịch <strong>"Rút tiền ATM".</strong>
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  95. Thẻ VikkiGO sử dụng công nghệ chip gì để thanh toán?
+                </div>
+                <div>
+                Thẻ sử dụng chip Dual-interface, hỗ trợ cả giao dịch chạm (contactless) và giao dịch tiếp xúc (cắm chip).
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  96. Tôi đã có thể sử dụng thẻ VikkiGO trên Apple Pay chưa?
+                </div>
+                <div>
+                Hiện tại Vikki Bank đang phát triển tính năng này và sẽ thông báo đến khách hàng sau.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  97. Thẻ ảo VikkiGO có được phát hành tự động không?
+                </div>
+                <div>
+                Có, thẻ ảo được phát hành tự động ngay khi đăng ký thành công để bạn thanh toán trực tuyến ngay lập tức.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  98. Tôi có thể xem thông tin số thẻ và mã CVC trên ứng dụng Vikki được không?
+                </div>
+                <div>
+                Có. Bạn xem thông tin số thẻ và mã CVC trên ứng dụng Vikki, bằng cách vào Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> <strong>"Thông tin thẻ"</strong>.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  99. Hủy thẻ trong vòng 12 tháng đầu tiên có mất phí không?
+                </div>
+                <div>
+                Có. Ngân hàng có thu phí thanh lý thẻ nếu yêu cầu đóng thẻ trong vòng 12 tháng kể từ ngày phát hành.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  100. Tôi có thể chủ động khóa và mở khóa giao dịch online và tại máy quẹt thẻ (POS) mà không cần liên hệ với Ngân hàng không?
+                </div>
+                <div>
+                Có. Bạn có thể chủ động khóa và mở khóa giao dịch online, tại máy quẹt thẻ (POS) trên ứng dụng Vikki, bằng cách vào Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> <strong>"Quản lý thẻ"</strong> và thao tác bật/tắt tại giao dịch mong muốn.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  101. Thẻ bị khóa do nhập sai PIN 3 lần thì xử lý thế nào?
+                </div>
+                <div>
+                Bạn chỉ cần vào ứng dụng Vikki, chọn Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> <strong>"Quản lý thẻ"</strong> --> <strong>"Đổi mã PIN ATM"</strong> để tạo lại mã PIN mới.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  102. Việc thay đổi mã PIN trên ứng dụng có tốn phí không?
+                </div>
+                <div>
+                Vikki Bank không thu phí và không giới hạn số lần đổi mã PIN trên ứng dụng.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  103. Tôi có thể nhận thẻ vật lý tận nhà được không?
+                </div>
+                <div>
+                Được. Bạn có thể chọn nhận thẻ VikkiGO tại nhà. Việc này sẽ phát sinh phí theo Biểu phí của Vikki Bank được quy định tại từng thời điểm.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  104. Tôi có thể xem các chương trình ưu đãi dành cho thẻ ở đâu?
+                </div>
+                <div>
+                Thông tin ưu đãi được niêm yết tại mục <strong>"Ưu đãi"</strong> trên website vikkibank.vn hoặc trên ứng dụng Vikki.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  105. Nếu rút tiền tại ATM máy báo &quot;Thẻ không hợp lệ&quot; thì phải làm gì?
+                </div>
+                <div>
+                Bạn hãy liên hệ tổng đài <strong>19006608</strong> hoặc đến Chi nhánh/PGD gần nhất để được hỗ trợ.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  106. Sau khi đã hủy thẻ, tôi có phải trả phí thường niên không?
+                </div>
+                <div>
+                Không. Sau hoàn tất việc thanh toán các phí đã phát sinh trước đó (nếu có) và việc hủy thẻ thành công, bạn sẽ không trả phí thường niên hoặc phí nào khác liên quan đến thẻ nữa.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  107. Tôi có thể thực hiện thay thế thẻ VikkiGO tại ứng dụng Vikki mà không cần đến CN/PGD của Vikki Bank không?
+                </div>
+                <div>
+                Được. Bạn có thể thực hiện thay thế thẻ VikkiGO tại trên ứng dụng Vikki, bằng cách: vào ứng dụng Vikki, chọn Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> <strong>"Quản lý thẻ"</strong> --> <strong>"Yêu cầu thay thế thẻ"</strong> và thực hiện theo yêu cầu của từng màn hình.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  108. Sau khi nhận được thẻ VikkiGO (thẻ vật lý), tôi cần phải làm gì để sử dụng thẻ tại ATM?
+                </div>
+                <div>
+                Sau khi nhận được thẻ, bạn cần kích hoạt và tạo mã PIN ATM cho thẻ. Bạn vào ứng dụng Vikki, chọn Menu <strong>"THẺ"</strong>, chọn <strong>"Thẻ thanh toán"</strong> --> tại đây, sẽ hiển thị thông báo gợi ý việc kích hoạt thẻ <strong>"Bạn đã nhận được thẻ?"</strong>. Hãy chọn vào thông báo này và thao tác theo hướng dẫn của từng màn hình.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  109. Tính năng nhận thông báo biến động số dư trên ứng dụng Vikki có bị tính phí không?
+                </div>
+                <div>
+                Tính năng <strong>“Thông báo qua ứng dụng”</strong> trên ứng dụng Vikki hoàn toàn miễn phí.
+                </div>
+              </div>
+              <div class="group-sub">
+                <div class="group-sub-title">
+                  110. Trước đây tôi nhận lương hưu qua thẻ đa năng Đông Á, giờ thẻ của tôi không còn sử dụng được thì tôi phải làm gì để tiếp tục nhận lương qua Vikki Bank
+                </div>
+                <div>
+                Để tiếp tục nhận lương hưu tại Vikki Bank, Bạn thực hiện tải ứng dụng Vikki để mở tài khoản thanh toán (TK VikkiMe hoặc TK số đẹp) và thực hiện mở thẻ VikkiGO. Tiếp theo, Bạn cung cấp số tài khoản gắn với thẻ VikkiGO cho BHXH đang cung cấp lương hưu để nhận lương hưu hàng tháng qua Vikki Bank.
+                </div>
+              </div>
+            </div>
+          </div>
+        <span id='backToTopQA'>
+          <img src='./assets/icon-btt.svg' />
+        </span>
+    </div>
+  </template>
+
+  <div class='popup-overlay' id="promo-detail-popup">
+  <button class='popup-close' id='popupDetail-close'>
+    <img src='./assets/icon-x.svg' />
+  </button>
+
+  <div class='popup-content'>
+    <iframe
+      id="promo-detail-frame"
+      class="popup-iframe"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+  <script>
+      function initAccordion(root, options = {}) {
+        const { multiple = false, defaultOpenIndex = null } = options;
+  
+        const items = root.querySelectorAll('.accordion-item');
+  
+        items.forEach((item, index) => {
+          const header = item.querySelector('.accordion-header');
+          const content = item.querySelector('.accordion-content');
+  
+          header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+  
+            if (!multiple) {
+              items.forEach((i) => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = null;
+              });
+            }
+  
+            if (!isActive) {
+              item.classList.add('active');
+              content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+              item.classList.remove('active');
+              content.style.maxHeight = null;
+            }
+          });
+  
+          if (defaultOpenIndex === index) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      }
+  
+      function initAccordionsIn(root) {
+        root.querySelectorAll('.js-accordion').forEach((acc) => {
+          initAccordion(acc);
+        });
+      }
+  
+      initAccordionsIn(document);
+    </script>
+  
+  <script>
+      const popup = document.getElementById('popup');
+      const popupBody = document.getElementById('popupBody');
+      const closeBtn = document.getElementById('popupClose');
+      const qaTemplate = document.getElementById('qaTemplate');
+      const loading = document.getElementById('loading')
+      const popupTitle = document.getElementById('popupTitle')
+  
+      document.querySelectorAll('[data-popup]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.popup;
+          const title = btn.dataset.title;
+         
+          openPopup(type, title);
+        });
+      });
+  
+      if(closeBtn){
+        closeBtn.addEventListener('click', closePopup);
+      }
+      
+  
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+      });
+  
+       function retryContent (type, iframe) {
+          iframe.src = type;
+          popupBody.appendChild(iframe);
+         
+          let timeout = setTimeout(() => {
+            retryContent(type, iframe)
+          }, 5000);
+  
+          iframe.onload = () => {
+            loading.classList.remove('show');
+            clearTimeout(timeout);
+          };
+      }
+  
+      function looksLikePdf(url) {
+        return /\.pdf($|\?)/i.test(url);
+      }
+     
+      function openPopup(type, title) {
+        popupBody.innerHTML = '';
+        const isLink = type.startsWith('https://') || type.startsWith('/')
+        const isPdfLink = looksLikePdf(type)
+  
+       // if(title){
+           // popupTitle.textContent = title;
+       // }
+  
+        if (!isLink) {
+          popupBody.appendChild(qaTemplate.content.cloneNode(true));
+          initAccordionsIn(popupBody);
+          loading.classList.remove('show');
+        } else {
+          if(title){
+            const titleEl = document.createElement('h2');
+            titleEl.className = 'popup-title';
+            titleEl.textContent = title;
+            popupBody.appendChild(titleEl);
+            popupBody.classList.add('pt-50')
+          }
+  
+          const iframe = document.createElement('iframe');
+          iframe.className = 'popup-iframe';
+          if(isPdfLink){
+            retryContent(type, iframe)
+          } else {
+            iframe.src = type;
+            popupBody.appendChild(iframe);
+           loading.classList.remove('show');
+          }
+          
+        }
+       
+        popup.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+  
+      function closePopup() {
+        loading.classList.add('show')
+        popup.classList.remove('show');
+        popupBody.innerHTML = '';
+        document.body.style.overflow = '';
+      }
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.4"></script>
+  
+  <script type="text/javascript">
+      const body = document.getElementById('body');
+      const videoContainer = document.getElementById('banner-container');
+      const video = document.getElementById('banner-video');
+      const volumeIcon = document.getElementById('volume-icon');
+      const params = new URLSearchParams(window.location.search);
+      const hasTopSpace = params.get('hasTopSpace');
+  
+      if (hasTopSpace === 'false') {
+        // body.style.paddingTop = '0';
+        body.classList.remove('hasTopSpace');
+      }
+      
+      if(videoContainer){
+        const videoSrc = './assets/video/playlist.m3u8';
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoSrc);
+          hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoSrc;
+        } else {
+          video.src = './assets/video.mp4';
+        }
+  
+        video.addEventListener('loadedmetadata', () => {
+          video.play().catch(() => {
+            console.log('Autoplay blocked');
+          });
+        });
+  
+        // #video-container's height (see styles.hbs) is driven by --video-ar
+        // instead of a hardcoded ratio, so it stays correct no matter which
+        // video a given page loads.
+        const videoBox = document.getElementById('video-container');
+        const applyVideoRatio = () => {
+          if (videoBox && video.videoWidth && video.videoHeight) {
+            videoBox.style.setProperty('--video-ar', video.videoHeight / video.videoWidth);
+          }
+        };
+        video.addEventListener('loadedmetadata', applyVideoRatio);
+        applyVideoRatio();
+  
+  
+        videoContainer.addEventListener('click', () => {
+          video.muted = !video.muted;
+          volumeIcon.classList.toggle('muted', video.muted);
+          volumeIcon.classList.toggle('unmuted', !video.muted);
+  
+          if (!video.paused) return;
+          video.play().catch(() => {});
+        });
+  
+        const tryPlay = () => {
+          video.play().catch((err) => console.warn('Replay blocked:', err));
+          document.removeEventListener('touchstart', tryPlay);
+        };
+  
+        tryPlay();
+        document.addEventListener('touchstart', tryPlay);
+      }
+  
+  </script>
+  
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-element-bundle.min.js'
+  ></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js'
+  ></script>
+  
+  <script>
+    document.querySelectorAll('.center-swiper').forEach((swiper) => {
+    Object.assign(swiper, {
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 12,
+      pagination: true
+    });
+  
+    swiper.initialize();
+  });
+  
+  </script>
+  
+  <script>
+      function scrollToSection(target, options = {}) {
+        const { offset = 0, behavior = 'smooth' } = options;
+  
+        const el =
+          typeof target === 'string' ? document.querySelector(target) : target;
+  
+        if (!el) return;
+  
+        let finalOffset = offset;
+  
+        // ✅ check hasTopSpace → +25vw
+        if (document.body.classList.contains('hasTopSpace')) {
+          const vw25 = window.innerWidth * 0.25;
+          finalOffset += vw25;
+        }
+  
+        const top =
+          el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+  
+        window.scrollTo({
+          top,
+          behavior,
+        });
+      }
+  
+      function initScrollToSection({ offset = 0 } = {}) {
+        document.querySelectorAll('[data-scroll]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            scrollToSection(btn.dataset.scroll, { offset });
+          });
+        });
+      }
+  
+      initScrollToSection({ offset: 48 });
+    </script>
+  
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+  
+  <script>
+    const popupDetail = document.getElementById('promo-detail-popup');
+    const iframeDetail = document.getElementById('promo-detail-frame');
+    const popupDetailClose = document.getElementById('popupDetail-close');
+  
+    window.addEventListener('message', (e) => {
+      if (e.data?.type !== 'OPEN_PROMO_DETAIL') return;
+      openPromoDetail(e.data.id);
+    });
+  
+    function openPromoDetail(id) {
+      iframeDetail.src = `/vikki-cvp/promotion/${id}.html`;
+      popupDetail.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  
+    if (popupDetailClose) {
+      popupDetailClose.addEventListener('click', closePromoDetail);
+    }
+  
+    function closePromoDetail() {
+      iframeDetail.src = '';
+      popupDetail.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  </script>
+
+</body>
+</html>

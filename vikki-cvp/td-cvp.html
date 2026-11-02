@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TD Campaign CVP</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+      integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+      integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .gjs-row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        padding: 0px;
+      }
+      .gjs-cell {
+        display: flex;
+        flex-grow: 1;
+        flex-basis: 100%;
+      }
+      .section {
+        margin: 0px auto 0px auto;
+        width: 100%;
+      }
+      #video-container {
+        display: flex;
+      }
+      #video-container,
+      #section-1-cell,
+      #section-3-cell {
+        position: relative;
+      }
+      #banner-video {
+        height: auto;
+        width: 100%;
+        margin: 0px auto 0px auto;
+      }
+      #volume-icon {
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 1vw;
+        left: 1vw;
+      }
+      .fa-icon {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+      }
+      .muted .fa-icon.fa-volume-high {
+        display: none;
+      }
+      .unmuted .fa-icon.fa-volume-xmark {
+        display: none;
+      }
+      .sec-btn-area {
+        position: absolute;
+        margin: 0px auto 0px auto;
+        height: auto;
+        left: 0;
+        right: 0;
+      }
+      #section-1-btn-area {
+        width: 88vw;
+        bottom: 4vw;
+      }
+      #section-3-btn-area {
+        width: 82vw;
+        bottom: 10vw;
+      }
+      .sec-btn-bg {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      #section-1-btn-1,
+      #section-1-btn-2,
+      #section-3-btn-1,
+      #section-3-btn-2 {
+        position: absolute;
+        width: 49.2%;
+        height: auto;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      #section-1-btn-1,
+      #section-3-btn-1 {
+        left: 0.9%;
+      }
+      #section-1-btn-2,
+      #section-3-btn-2 {
+        right: 0.9%;
+      }
+      .container {
+        padding: 0px 0px 0px 0px;
+      }
+      #popup-overlay {
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: fixed;
+        z-index: 99998;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        border: none;
+      }
+      #popup-close-btn {
+        display: inherit;
+        position: fixed;
+        bottom: 20px;
+        left: 50%;
+        margin-left: -20px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+        z-index: 99999;
+      }
+      #popup-close-icon {
+        font-size: 40px;
+        opacity: 0.7;
+        line-height: 40px;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="banner-container">
+      <div id="video-container">
+        <video
+          id="banner-video"
+          src="./td-cvp/assets/td-campaign-cvp.mp4"
+          autoplay
+          playsinline
+          preload="auto"
+          muted
+          loop
+          class="banner-video"
+        ></video>
+        <div id="volume-icon" class="volume-icon muted">
+          <i class="fa-icon fa-solid fa-volume-high"></i>
+          <i class="fa-icon fa-solid fa-volume-xmark"></i>
+        </div>
+      </div>
+    </div>
+    <div id="section-1-container" class="gjs-row container">
+      <div id="section-1-cell" class="gjs-cell">
+        <img id="section-1-img" src="./td-cvp/assets/sec-1.png" class="section" />
+        <div id="section-1-btn-area" class="sec-btn-area">
+          <img
+            src="./td-cvp/assets/sec-1-btn-bg.png"
+            id="section-1-btn-bg"
+            class="sec-btn-bg"
+          />
+          <img
+            src="./td-cvp/assets/sec-1-btn-1.png"
+            id="section-1-btn-1"
+            class="sec-1-btn-1"
+          />
+          <img
+            src="./td-cvp/assets/sec-1-btn-2.png"
+            id="section-1-btn-2"
+            class="sec-1-btn-2"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="section-2-container" class="gjs-row container">
+      <div id="section-2-cell" class="gjs-cell">
+        <img src="./td-cvp/assets/sec-2.png" id="section-2-img" class="section" />
+      </div>
+    </div>
+    <div id="section-3-container" class="gjs-row container">
+      <div id="section-3-cell" class="gjs-cell">
+        <img src="./td-cvp/assets/sec-3.png" id="section-3-img" class="section" />
+        <div id="section-3-btn-area" class="sec-btn-area">
+          <img
+            src="./td-cvp/assets/sec-3-btn-bg.png"
+            id="section-3-btn-bg"
+            class="sec-btn-bg"
+          />
+          <img
+            src="./td-cvp/assets/sec-3-btn-1.png"
+            id="section-3-btn-1"
+            class="sec-3-btn-1"
+          />
+          <img
+            src="./td-cvp/assets/sec-3-btn-2.png"
+            id="section-3-btn-2"
+            class="sec-3-btn-2"
+          />
+        </div>
+      </div>
+    </div>
+    <div id="section-4-container" class="gjs-row container">
+      <div id="section-4-cell" class="gjs-cell">
+        <img src="./td-cvp/assets/sec-4.png" id="section-4-img" class="section" />
+      </div>
+    </div>
+    <div id="section-5-container" class="gjs-row container">
+      <div id="section-5-cell" class="gjs-cell">
+        <img src="./td-cvp/assets/sec-5.png" id="section-5-img" class="section" />
+      </div>
+    </div>
+    <div id="popup-overlay">
+      <div id="popup-close-btn">
+        <i class="fa-icon fa-solid fa-circle-xmark" id="popup-close-icon"></i>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+    const THE_LE_TRUNG_VANG_URL =
+      'https://vikkibank.vn/trung-vang-ky?utm_source=Organic_InApp&utm_medium=Appbutton&utm_campaign=TrungVangKy28Feb25&utm_term=Vikki_MS&utm_content=LongForm';
+    const HOI_DAP_TRUNG_VANG_URL =
+      'https://vikkibank.vn/trung-vang-ky?utm_source=Organic_InApp&utm_medium=Appbutton&utm_campaign=TrungVangKy28Feb25&utm_term=Vikki_MS&utm_content=LongForm#FAQ';
+
+    const THE_LE_WOW_SPIN_URL = 'https://vikki-cdn.prod.galaxyfinx.cloud/campaign-management/lucky-spin/rules/td-lucky-spin-rules.html';
+    const HOI_DAP_WOW_SPIN_URL = 'https://vikkibank.vn/trung-vang-ky/#FAQ';
+
+    const video = document.getElementById('banner-video');
+    const volumeIcon = document.getElementById('volume-icon');
+    const section1BtnArea = document.getElementById('section-1-btn-area');
+    const section3BtnArea = document.getElementById('section-3-btn-area');
+    const popupCloseButton = document.getElementById('popup-close-btn');
+    const popupOverlay = document.getElementById('popup-overlay');
+
+    const createPopup = (url = '') => {
+      const embed = document.createElement('embed');
+      embed.id = 'popup-embed';
+      embed.src = url;
+      embed.style.width = '100%';
+      embed.style.height = '100%';
+      popupOverlay.appendChild(embed);
+      popupOverlay.style.display = 'block';
+    };
+
+    video.addEventListener('click', () => {
+      if (video.muted) {
+        video.muted = false;
+        volumeIcon.classList.remove('muted');
+        volumeIcon.classList.add('unmuted');
+      } else {
+        video.muted = true;
+        volumeIcon.classList.remove('unmuted');
+        volumeIcon.classList.add('muted');
+      }
+    });
+
+    section1BtnArea.addEventListener('click', (e) => {
+      if (e.target.id === 'section-1-btn-1') {
+        createPopup(THE_LE_TRUNG_VANG_URL);
+      } else if (e.target.id === 'section-1-btn-2') {
+        createPopup(HOI_DAP_TRUNG_VANG_URL);
+      }
+    });
+
+    section3BtnArea.addEventListener('click', (e) => {
+      if (e.target.id === 'section-3-btn-1') {
+        createPopup(THE_LE_WOW_SPIN_URL);
+      } else if (e.target.id === 'section-3-btn-2') {
+        createPopup(HOI_DAP_WOW_SPIN_URL);
+      }
+    });
+
+    popupCloseButton.addEventListener('click', () => {
+      const popup = document.getElementById('popup-embed');
+      popupOverlay.removeChild(popup);
+      popupOverlay.style.display = 'none';
+    });
+  </script>
+</html>

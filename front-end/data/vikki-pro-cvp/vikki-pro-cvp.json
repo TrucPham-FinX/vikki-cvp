@@ -1,0 +1,49 @@
+{
+  "title": "Vikki Pro | VikkiBank",
+  "qa": [
+    {
+      "title": "Làm sao để sở hữu Thẻ VikkiPRO?",
+      "content": "<p>Bạn có thể đăng ký mở thẻ VikkiPRO theo một trong các phương thức sau:<ul class=\"list-disc list-inside\"><li>Đăng ký thông tin tại: <span data-popup='http://vikkibank.vn/the-doanh-nghiep-vikkipro/' ><b>http://vikkibank.vn/the-doanh-nghiep-vikkipro/</b></span><li>Liên hệ với Tổng đài 19006608<li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <span data-popup='https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/' ><b>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</b></span></ul>"
+    },
+    {
+      "title": "Doanh nghiệp có thể mở bao nhiêu Thẻ VikkiPRO?",
+      "content": "<p>Vikki Bank không quy định giới hạn số lượng thẻ VikkiPRO phát hành</p>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ VikkiPRO như thế nào?",
+      "content": "<p>Chủ thẻ có thể dễ dàng quản lý Thẻ VikkiPRO một cách an toàn trên ứng dụng ngân hàng số Vikki:<ul class=\"list-disc list-inside\"><li>Kích hoạt thẻ<li>Tạo mã PIN<li>Khóa thẻ<li>Tra cứu thông tin thẻ<li>Tra cứu giao dịch thẻ, sao kê thẻ<li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ VikkiPRO, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "<ul class='list-inside list-disc'><li>Sau khi nhận Thẻ VikkiPRO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.<li>Bạn có thể liên hệ Vikki Bank qua Tổng đài <b>19006608 </b>để được hỗ trợ kịp thời.</ul>"
+    }
+  ],
+  "slider": [
+    {
+      "src": "assets/slide-5.png",
+      "popupLink": "/vikki-cvp/promotion/promo-075.html"
+    },
+    {
+      "src": "assets/slide-1.png",
+      "popupLink": "/vikki-cvp/promotion/promo-001.html"
+    }
+  ],
+  "qaItems": [
+    {
+      "title": "Làm sao để sở hữu Thẻ VikkiPRO?",
+      "content": "<p>Bạn có thể đăng ký mở thẻ VikkiPRO theo một trong các phương thức sau:<ul class=\"list-disc list-inside\"><li>Đăng ký thông tin tại: <span data-popup='http://vikkibank.vn/the-doanh-nghiep-vikkipro/' ><b>http://vikkibank.vn/the-doanh-nghiep-vikkipro/</b></span><li>Liên hệ với Tổng đài 19006608<li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <span data-popup='https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/' ><b>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</b></span></ul>"
+    },
+    {
+      "title": "Doanh nghiệp có thể mở bao nhiêu Thẻ VikkiPRO?",
+      "content": "<p>Vikki Bank không quy định giới hạn số lượng thẻ VikkiPRO phát hành</p>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ VikkiPRO như thế nào?",
+      "content": "<p>Chủ thẻ có thể dễ dàng quản lý Thẻ VikkiPRO một cách an toàn trên ứng dụng ngân hàng số Vikki:<ul class=\"list-disc list-inside\"><li>Kích hoạt thẻ<li>Tạo mã PIN<li>Khóa thẻ<li>Tra cứu thông tin thẻ<li>Tra cứu giao dịch thẻ, sao kê thẻ<li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ VikkiPRO, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "<ul class='list-inside list-disc'><li>Sau khi nhận Thẻ VikkiPRO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.<li>Bạn có thể liên hệ Vikki Bank qua Tổng đài <b>19006608 </b>để được hỗ trợ kịp thời.</ul>"
+    }
+  ]
+}

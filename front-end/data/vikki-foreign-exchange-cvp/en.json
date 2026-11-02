@@ -1,0 +1,184 @@
+{
+  "title": "Foreign Exchange | VikkiBank",
+  "language": "en",
+  "filename": "index",
+  "hasTopSpace": true,
+  "hasBackground": false,
+  "layout": "template",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "FAQs",
+          "text": "FAQs",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Term & Conditions",
+          "text": "Term & Conditions",
+          "iconSrc": "./assets/info.svg",
+          "popup": "/vikki-cvp/vikki-foreign-exchange-cvp/en/tc.html"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "src": "./assets/intro.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/promotion.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/new-version.png"
+    },
+    {
+      "type": "slider",
+      "className": "section custom",
+      "title": {
+        "src": "./assets/buy-forex.png"
+      },
+      "items": [
+        {
+          "src": "./assets/slide-1.png"
+        },
+        {
+          "src": "./assets/slide-2.png"
+        },
+        {
+          "src": "./assets/slide-3.png"
+        },
+        {
+          "src": "./assets/slide-4.png"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/service-hours.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/FAQs.png"
+      },
+      "button": {
+        "text": "Show more"
+      },
+      "items": [
+        {
+          "title": "What is \"Purchase Foreign Currency\" on the Vikki App?",
+          "content": "<p>This is a service that allows you to proactively order foreign currency online via the Vikki App if you have an international flight ticket. It is quick, flexible, and convenient. You can collect the physical cash directly at your chosen Vikki Bank branch.</p><p>(Note: The service is only available during working days from Monday to Friday from 8:30 - 16:30, not include with holiday).</p>"
+        },
+        {
+          "title": "Why should I choose to purchase foreign currency on the Vikki App instead of other banks?",
+          "content": "<p>Outstanding benefits when using the Vikki App include:</p><ul><li>Competitive exchange rates to optimize your costs.</li><li>Flexible ordering time, fully operated on the Vikki App.</li><li>Secure and transparent transactions with a saved transaction history.</li><li>Easy cash collection at Vikki Bank branches nationwide.</li></ul>"
+        },
+        {
+          "title": "What are the conditions for purchasing foreign currency on the Vikki App?",
+          "content": "<p>To use this service, you must meet the following requirements:</p><ul><li>Have a successfully opened VikkiME payment account from Feb 17, 2025, a GenV account, or have migrated from Vikki by HDBank to Vikki Bank.</li><li>Possess an international flight ticket (from Vietjet Air or other airlines). A return ticket is not strictly required.</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "no-bg",
+      "termsButtonFullW": {
+        "title": "Terms & Conditions",
+        "popup": "/vikki-cvp/vikki-foreign-exchange-cvp/en/tc.html",
+        "text": "Terms & Conditions"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Foreign Exchange",
+      "children": [
+        {
+          "title": "What is \"Purchase Foreign Currency\" on the Vikki App?",
+          "content": "<p>This is a service that allows you to proactively order foreign currency online via the Vikki App if you have an international flight ticket. It is quick, flexible, and convenient. You can collect the physical cash directly at your chosen Vikki Bank branch.</p><p>(Note: The service is only available during working days from Monday to Friday from 8:30 - 16:30, not include with holiday).</p>"
+        },
+        {
+          "title": "Why should I choose to purchase foreign currency on the Vikki App instead of other banks?",
+          "content": "<p>Outstanding benefits when using the Vikki App include:</p><ul><li>Competitive exchange rates to optimize your costs.</li><li>Flexible ordering time, fully operated on the Vikki App.</li><li>Secure and transparent transactions with a saved transaction history.</li><li>Easy cash collection at Vikki Bank branches nationwide.</li></ul>"
+        },
+        {
+          "title": "What are the conditions for purchasing foreign currency on the Vikki App?",
+          "content": "<p>To use this service, you must meet the following requirements:</p><ul><li>Have a successfully opened VikkiME payment account from Feb 17, 2025, a GenV account, or have migrated from Vikki by HDBank to Vikki Bank.</li><li>Possess an international flight ticket (from Vietjet Air or other airlines). A return ticket is not strictly required.</li></ul>"
+        },
+        {
+          "title": "How do I order foreign currency on the Vikki App?",
+          "content": "<p>Please follow these steps:</p><ul><li>Step 1: Log in to the Vikki App.</li><li>Step 2: Select \"Purchase Foreign Currency\".</li><li>Step 3: Choose the desired currency and select \"Purchase\".</li><li>Step 4: Enter the amount and select \"Continue\".</li><li>Step 5: Provide details regarding your flight, passenger information, and the purpose of purchasing foreign currency.</li><li>Step 6: Select the Vikki Bank branch where you want to collect the cash.</li><li>Step 7: Review your personal information and the requested amount, then select \"Confirm Order\".</li><li>Step 8: Authenticate the transaction. The system will display a successful payment screen.</li><li>Step 9: Select \"View Order Details\" to prepare the necessary documents for currency collection.</li></ul><p>On the order details screen, you will find the transaction code, branch information, flight details, and a list of required documents. Please bring this code along with the relevant documents to your selected Vikki Bank branch to collect your cash.</p><p>Note: You must collect the currency before 4:30 PM within the next 2 working days from your order time (excluding Saturdays, Sundays, and public holidays), and at least 4 hours before your departure time.</p>"
+        },
+        {
+          "title": "When can I place an order to buy foreign currency on the Vikki App?",
+          "content": "<ul><li>You can place orders from 8:30 AM to 4:30 PM, Monday to Friday (excluding public holidays).</li><li>Orders must be placed at least 01 working day before your departure date.</li><li>After a successful order, you must visit your selected Vikki Bank branch to collect the cash before 4:30 PM within 02 working days from the order time.</li></ul>"
+        },
+        {
+          "title": "Which foreign currencies can I purchase on the Vikki App?",
+          "content": "<p>The supported currencies are: USD, AUD, THB, EUR, JPY, SGD, GBP, and CAD.</p><p>However, depending on your flight destination, Vikki allows you to purchase up to 2 types of currencies per flight: the local currency of your destination country and/or USD.</p>"
+        },
+        {
+          "title": "What is the minimum limit for purchasing foreign currency on the Vikki App?",
+          "content": "<p>The minimum limit varies by currency:</p><ul><li>GBP: Minimum 50 GBP.</li><li>AUD, CAD, EUR, USD, SGD: Minimum 100 units (e.g., 100 USD, 100 EUR, etc.).</li><li>JPY, THB: Minimum 1,000 units (e.g., 1,000 JPY, 1,000 THB).</li></ul>"
+        },
+        {
+          "title": "Which account can I use to pay for the foreign currency on the Vikki App?",
+          "content": "<p>You can only use funds from your VikkiME payment account. Currently, Vikki does not support payments from other sources such as savings accounts or overdraft limits.</p>"
+        },
+        {
+          "title": "Can I collect the currency at a different Vikki Bank branch than the one I selected?",
+          "content": "<p>No, you must visit the exact Vikki Bank branch you selected during the ordering process. Vikki currently does not support changing the collection branch once the order is placed.</p>"
+        },
+        {
+          "title": "What documents do I need to bring to the counter to collect the foreign currency?",
+          "content": "<p>Please prepare the following flight-related documents when visiting the Vikki Bank branch:</p><ul><li>Flight ticket along with proof of payment.</li><li>Original Passport / Citizen ID card (CCCD).</li><li>Transaction code / Order confirmation on the Vikki App.</li><li>For study abroad purposes: Please bring your school admission letter.</li><li>For medical treatment purposes: Please bring medical documents such as an acceptance letter from a foreign medical facility, a referral letter for overseas treatment, or a notice/estimate of medical expenses from the foreign facility.</li></ul><p>Note regarding the proof of payment:</p><ul><li>If the bank can verify that the ticket has been paid, the branch may consider supporting your request.</li><li>If it cannot be verified, the branch will ask you to provide additional proof of payment.</li></ul>"
+        },
+        {
+          "title": "May I authorize a family member to collect the foreign currency on my behalf at the Branch/Transaction Office?",
+          "content": "<p>At present, VikkiBank only permits the account holder, who is also the passenger of the relevant flight itinerary, to place a foreign currency purchase order via the Vikki App and personally collect the foreign currency at the designated VikkiBank Branch/Transaction Office.</p>"
+        },
+        {
+          "title": "How can I access and review my foreign currency purchase transaction history via the Vikki App?",
+          "content": "<p>To review information relating to your previous foreign currency purchase transactions, please access the \"Foreign Currency Purchase\" section and select \"Purchase History\".</p><p>Within this section, you will be able to view comprehensive details of your foreign currency purchase transactions, including both successful and unsuccessful transactions.</p>"
+        },
+        {
+          "title": "In case that I do not collect the purchased foreign currency at the designated Branch/Transaction Office, how will the amount initially held upon placement of the foreign currency purchase order online be treated?",
+          "content": "<p>If you fail to collect the purchased foreign currency online at the designated VikkiBank Branch/Transaction Office within two (02) business days following a successful purchase order, the transaction will be automatically cancelled.</p><p>The amount initially held for the transaction will then be credited back to your settlement account after completion of the relevant procedures, subject to deduction of any applicable fees, if any.</p>"
+        },
+        {
+          "title": "If a foreign currency purchase transaction fails or is cancelled, when will I receive a refund of the amount initially held upon placement of the foreign currency purchase order online?",
+          "content": "<ul><li>If the payment transaction fails, your account will not be deducted at all.</li><li>If the payment transaction is canceled, the system will refund your money immediately (minus any applicable fees, if any).</li></ul>"
+        },
+        {
+          "title": "If I do not collect the foreign currency on the scheduled collection date, or if I decide to cancel the purchase and no longer wish to receive the foreign currency, how will the cancellation fee, if any, be calculated?",
+          "content": "<p>The cancellation penalty, if any, shall be calculated as follows:</p><p>Cancellation Penalty = Amount held at the time of the foreign currency purchase order online − (Foreign currency amount × VikkiBank's foreign currency Buy exchange rate prevailing at the time of cancellation), provided that the result is a positive amount.</p><p>The amount refundable to the customer shall be calculated as follows:</p><p>Refund Amount = Original amount held − Cancellation Penalty.</p>"
+        },
+        {
+          "title": "If the exchange rate on the date when I collect the foreign currency at a VikkiBank Branch/Transaction Office differs from the exchange rate applicable at the time I placed the foreign currency purchase order via the Vikki App, will I be required to pay any additional amount or be entitled to a refund arising from the exchange rate difference?",
+          "content": "<p>Please be assured that VikkiBank will apply the exchange rate prevailing at the time you place your foreign currency purchase order online. Accordingly, you will not be required to make any additional payment, nor will you be entitled to any refund, as a result of any exchange rate fluctuation on the date of foreign currency collection.</p>"
+        },
+        {
+          "title": "If I have successfully submitted a foreign currency purchase order for a specific travel itinerary but have not fully utilized the maximum permissible foreign currency purchase quota, am I entitled to submit additional purchase orders for the remaining available quota in respect of the same itinerary?",
+          "content": "<ul><li>Each customer (per passport) is allowed to buy a maximum of 5,000 USD (or equivalent) per flight or equivalent in other currencies.</li><li>If you are still within the valid timeframe for your flight, you can place an additional order for the remaining limit, as long as the total amount does not exceed the maximum limit mentioned above.</li></ul>"
+        },
+        {
+          "title": "How will I be notified of my foreign currency purchase order status?",
+          "content": "<p>Upon successful submission of your foreign currency purchase request, a confirmation notification will be sent to you via the Vikki App.</p>"
+        },
+        {
+          "title": "In case that I purchase foreign currency online via the App but inputting incorrect passport information, is it necessary to cancel the foreign currency purchase order? If cancellation is required, is there any cancellation fee will be applied and whether I may immediately place a new foreign currency purchase order on the same day?",
+          "content": "<p>In case that you purchase foreign currency online via the Vikki App but inputting incorrect passport information, you are not required to cancel your foreign currency purchase order.</p><p>Instead, you only need to present your original passport at the branch or transaction office that you selected for foreign currency collection, Vikki Digital Bank will assist in updating the relevant passport details accordingly.</p><p>Please rest assured that such amendment will not incur any fee and will not affect the validity or processing of the foreign currency purchase order already submitted.</p>"
+        },
+        {
+          "title": "Are there any charges applied for purchasing foreign currency online on the Vikki App?",
+          "content": "<p>At present, Vikki Digital Bank does not impose any fee for the online purchase of foreign currency via the Vikki App. Notwithstanding the foregoing, a foreign currency cash handling/counting fee may be applied, where applicable, in accordance with Vikki Digital Bank's Fee Schedule in effect from time to time, and shall be payable by the Customer. For the avoidance of doubt, the cash handling/counting fee is a fee levied in connection with cash processing, delivery and receipt services. It does not form part of, nor shall it be deemed to constitute, any foreign exchange transaction fee, foreign exchange rates, or any other cost directly associated with the foreign currency conversion transaction.</p>"
+        }
+      ]
+    }
+  ]
+}

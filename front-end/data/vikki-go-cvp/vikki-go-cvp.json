@@ -1,0 +1,83 @@
+{
+  "title": "Vikki Go | VikkiBank",
+  "qa": [
+    {
+      "title": "Làm sao để sở hữu Thẻ tín dụng VikkiGO",
+      "content": "<p>Bạn có thể đăng ký mở Thẻ tín dụng VikkiGO theo một trong các phương thức sau:</p><ul><li>Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki</li><li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</li></ul>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ tín dụng VikkiGO như thế nào?",
+      "content": "<p>Chủ thẻ có thể dễ dàng quản lý Thẻ tín dụng VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki:</p><ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ tín dụng VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ",
+      "content": "<p>Sau khi nhận Thẻ tín dụng VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki.</p><p>Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.</p><p>Bạn có thể liên hệ Vikki Bank qua Tổng đài 19006608 để được hỗ trợ kịp thời</p>"
+    },
+    {
+      "title": "Giới thiệu thẻ tín dụng VikkiGO",
+      "content": "<ul><li>Mở thẻ online 100%</li><li>Miễn phí thường niên</li><li>Dùng trước trả sau lên đến 45 ngày</li><li>Thanh toán không dùng tiền mặt</li><li>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng</li></ul>"
+    },
+    {
+      "title": "Vì sao Quý khách nên có Thẻ tín dụng VikkiGO?",
+      "content": "<ul><li><p><strong>Mở thẻ online 100%:</strong> Mở thẻ nhanh chóng, thủ tục nhanh gọn hoàn toàn trực tuyến 100%, chi tiêu thanh toán trực tuyến trong thời gian đợi thẻ vật lý.</p></li><li><p><strong>Miễn phí thường niên:</strong> Miễn phí thường niên trọn đời.</p></li><li><p><strong>Dùng trước trả sau lên đến 45 ngày:</strong> Dùng trước tiền trong thẻ mà không cần thanh toán ngay số tiền đã sử dụng, thời gian miễn lãi lên đến 45 ngày.</p></li><li><p><strong>Thanh toán không dùng tiền mặt:</strong> Dùng thẻ để thanh toán hàng hóa, dịch vụ tại cửa hàng hoặc mua sắm online, giúp giảm thiểu rủi ro thiếu tiền mặt, mất tiền.</p></li><li><p><strong>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng:</strong> Trả góp linh hoạt 0% lãi suất với mức phí chuyển đổi ưu đãi cho từng kỳ hạn 3, 6, 9, 12 tháng.</p></li></ul>"
+    }
+  ],
+  "slider": [
+    {
+      "src": "assets/event-1.png",
+      "popupLink": "https://vikkibank.vn/tra-gop-bang-the-tin-dung/",
+      "popupTitle": "Sự kiện & Khuyến mãi"
+    },
+    {
+      "src": "assets/event-2.png",
+      "popupLink": "https://vikkibank.vn/vikki-nam-thu-hai-duoc-vinh-danh-tai-better-choice-awards-voi-2-giai-thuong-ve-doi-moi-sang-tao/",
+      "popupTitle": "Sự kiện & Khuyến mãi"
+    }
+  ],
+  "qaItems": [
+    {
+      "title": "Làm sao để sở hữu Thẻ tín dụng VikkiGO",
+      "content": "<p>Bạn có thể đăng ký mở Thẻ tín dụng VikkiGO theo một trong các phương thức sau:</p><ul><li>Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki</li><li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</li></ul>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ tín dụng VikkiGO như thế nào?",
+      "content": "<p>Chủ thẻ có thể dễ dàng quản lý Thẻ tín dụng VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki:</p><ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ tín dụng VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ",
+      "content": "<p>Sau khi nhận Thẻ tín dụng VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki.</p><p>Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.</p><p>Bạn có thể liên hệ Vikki Bank qua Tổng đài 19006608 để được hỗ trợ kịp thời</p>"
+    },
+    {
+      "title": "Giới thiệu thẻ tín dụng VikkiGO",
+      "content": "<ul><li>Mở thẻ online 100%</li><li>Miễn phí thường niên</li><li>Dùng trước trả sau lên đến 45 ngày</li><li>Thanh toán không dùng tiền mặt</li><li>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng</li></ul>"
+    },
+    {
+      "title": "Vì sao Quý khách nên có Thẻ tín dụng VikkiGO?",
+      "content": "<ul><li><p><strong>Mở thẻ online 100%:</strong> Mở thẻ nhanh chóng, thủ tục nhanh gọn hoàn toàn trực tuyến 100%, chi tiêu thanh toán trực tuyến trong thời gian đợi thẻ vật lý.</p></li><li><p><strong>Miễn phí thường niên:</strong> Miễn phí thường niên trọn đời.</p></li><li><p><strong>Dùng trước trả sau lên đến 45 ngày:</strong> Dùng trước tiền trong thẻ mà không cần thanh toán ngay số tiền đã sử dụng, thời gian miễn lãi lên đến 45 ngày.</p></li><li><p><strong>Thanh toán không dùng tiền mặt:</strong> Dùng thẻ để thanh toán hàng hóa, dịch vụ tại cửa hàng hoặc mua sắm online, giúp giảm thiểu rủi ro thiếu tiền mặt, mất tiền.</p></li><li><p><strong>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng:</strong> Trả góp linh hoạt 0% lãi suất với mức phí chuyển đổi ưu đãi cho từng kỳ hạn 3, 6, 9, 12 tháng.</p></li></ul>"
+    },
+    {
+      "title": "Làm sao để chi tiêu mua sắm online ngay khi được duyệt thẻ?",
+      "content": "<p>Quý khách có thể chi tiêu mua sắm online trong khi chờ thẻ vật lý (thẻ cứng) bằng cách xem thông tin thẻ tại ứng dụng Vikki trước khi giao dịch.</p><ul><li>Bước 1: Đăng nhập vào ứng dụng Vikki của Quý khách</li><li>Bước 2: Chọn Thẻ tại màn hình chính tại ứng dụng Vikki</li><li>Bước 3: Chạm vào hình thẻ, xác thực để truy cập thông tin thẻ gồm có: Số thẻ, Tên chủ thẻ, Ngày hết hạn, số CVC và sử dụng các thông tin này để giao dịch trực tuyến</li></ul><p><strong>Lưu ý:</strong></p><p>Nhằm tránh các đối tượng lừa đảo sử dụng thông tin thẻ chiếm đoạn tiền, QUÝ KHÁCH KHÔNG CHIA SẺ THÔNG TIN THẺ CHO BẤT KỲ AI KỂ CẢ NHÂN VIÊN VIKKI bao gồm các thông tin:</p><ul><li>Số thẻ</li><li>Số CVC</li><li>Mã OTP</li></ul>"
+    },
+    {
+      "title": "Làm thế nào để thanh toán khi mua hàng online",
+      "content": "<ul><li>Bước 1: Mua hàng online tại các trang TMĐT: Shopee, Lazada, Tiktok… Quý khách nên mua hàng ở những trang nổi tiếng và phổ biến để đảm bảo an toàn giao dịch.</li><li>Bước 2: Chọn thanh toán bằng thẻ tín dụng tại bước thanh toán.</li><li>Bước 3: Chọn thêm thẻ mới và nhập thông tin theo yêu cầu. Việc thêm thẻ này giúp Quý khách thuận tiện thanh toán cho lần mua hàng kế tiếp tại trang TMĐT này.</li><li>Bước 4: Kiểm tra lại thông tin đơn hàng, số tiền cần thanh toán và xác nhận.</li><li>Bước 5: Bấm thanh toán và nhập mã OTP hoàn thành giao dịch.</li></ul>"
+    },
+    {
+      "title": "Cách kích hoạt thẻ cứng trước khi sử dụng",
+      "content": "<p>Thẻ phi vật lý sẽ sẵn sàng để bạn chi tiêu ngay. Đối với thẻ vật lý, Quý khách có thể vào ứng dụng Vikki, lựa chọn thẻ cần kích hoạt và thực hiện theo hướng dẫn.</p>"
+    },
+    {
+      "title": "Hướng dẫn sử dụng thẻ cứng",
+      "content": "<p>Mua sắm tại cửa hàng có biểu tượng chấp nhận thẻ Mastercard.</p><ul><li>Bước 1: Quẹt/ chạm thẻ tại máy cà thẻ (POS).</li><li>Bước 2: Kiểm tra lại số tiền thanh toán trên hóa đơn.</li><li>Bước 3: Ký tên vào hóa đơn (nếu được yêu cầu).</li></ul>"
+    },
+    {
+      "title": "Lưu ý khi sử dụng thẻ",
+      "content": "<p><strong>Nên:</strong></p><ul><li>Hãy luôn tìm kiếm các ưu đãi, giảm giá, khuyến mãi khi mua sắm bằng thẻ, sẽ giúp Quý khách tiết kiệm tiền.</li><li>Hãy đặt câu hỏi – Nếu có thắc mắc, hãy liên hệ DVKH Vikki 19006608.</li><li>Đặt lịch nhắc hẹn ngày đến hạn thanh toán và đảm bảo số dư tài khoản Vikki sẽ giúp Quý khách thanh toán đúng hạn, tránh phát sinh phí chậm thanh toán.</li><li>Kiểm tra sao kê hàng tháng để biết được Quý khách đã sử dụng bao nhiêu và phát hiện những giao dịch bất thường.</li></ul><p><strong>Không nên:</strong></p><ul><li>Không chia sẻ thông tin thẻ bao gồm số thẻ, số CVC, mã OTP với bất kỳ ai, kể cả nhân viên Vikki. Quý khách có thể bị mất tiền mà vẫn phải thanh toán số tiền bị mất đó.</li><li>Tuyệt đối không bấm vào các trang web hay đường link lạ để tránh lộ thông tin thẻ.</li><li>Không xem thường việc thẻ bị mất hoặc thất lạc – Thực hiện khóa thẻ ngay tại ứng dụng hoặc gọi DVKH Vikki 19006608 để tránh rủi ro.</li><li>Không bỏ qua các tin nhắn/ thông báo từ Vikki vì Quý khách có thể bỏ lỡ các thông tin quan trọng liên quan đến thẻ của mình.</li></ul>"
+    },
+    {
+      "title": "Thanh toán dư nợ thẻ",
+      "content": "<p><strong>Thanh toán trích nợ tự động:</strong></p><p>Vào ngày đến hạn thanh toán hàng tháng, Ngân hàng số Vikki sẽ ghi nợ tự động (số tiền thanh toán tối thiểu) vào Tài khoản của Quý khách mở tại Vikki. Quý khách cần đảm bảo đủ số dư để Vikki thực hiện ghi nợ bằng cách chuyển khoản từ tài khoản thanh toán của Quý khách mở tại bất kỳ ngân hàng nào vào tài khoản thanh toán mở tại Vikki được gắn với thẻ tín dụng.</p><p><strong>Thanh toán qua ứng dụng Vikki by HDBank:</strong></p><p>Quý khách có thể thanh toán dư nợ thẻ tại bất kỳ thời điểm nào bằng cách chuyển khoản từ Tài khoản của Quý khách tại Vikki vào Thẻ tín dụng Vikki trên ứng dụng Vikki.</p><p>Các phương thức thanh toán dư nợ thẻ sẽ được Ngân hàng số Vikki cập nhật theo từng thời kỳ.</p>"
+    }
+  ]
+}

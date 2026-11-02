@@ -1,0 +1,82 @@
+<html lang='vi'>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <title>
+      {{title}}
+    </title>
+    <meta name='description' content='' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding-bottom: 50px;
+      }
+    </style>
+
+  </head>
+  <body class='hasTopSpace' id='body'>
+
+    {{{body}}}
+    <span id='backToTop'>
+      <img src='./assets/icon-btt.svg' />
+    </span>
+
+  </body>
+  {{!-- prettier-ignore --}}
+  <script>
+    function scrollToSection(target, options = {}) {
+      const { offset = 0, behavior = 'smooth' } = options;
+
+      const el =
+        typeof target === 'string' ? document.querySelector(target) : target;
+
+      if (!el) return;
+
+      let finalOffset = offset;
+
+      // ✅ check hasTopSpace → +25vw
+      if (document.body.classList.contains('hasTopSpace')) {
+        const vw25 = window.innerWidth * 0.25;
+        finalOffset += vw25;
+      }
+
+      const top =
+        el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+
+      window.scrollTo({
+        top,
+        behavior,
+      });
+    }
+    </script>
+  {{!-- prettier-ignore --}}
+  <script>
+  const btn = document.getElementById('backToTop');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+</script>
+</html>

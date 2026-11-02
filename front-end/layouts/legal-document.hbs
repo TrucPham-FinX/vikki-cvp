@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --legal-color-background: #f6f7f8;
+        --legal-color-surface: #ffffff;
+        --legal-color-text: rgba(4, 11, 30, 0.92);
+        --legal-color-accent: #0000ff;
+        --legal-space-xs: 8px;
+        --legal-space-sm: 12px;
+        --legal-space-md: 16px;
+        --legal-space-lg: 24px;
+        --legal-space-xl: 32px;
+        --legal-space-document-gap: 11px;
+        --legal-body-line-height: 1.53;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        background: var(--legal-color-background);
+      }
+
+      body {
+        margin: 0;
+        background: var(--legal-color-background);
+        color: var(--legal-color-text);
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 16px;
+        line-height: var(--legal-body-line-height);
+        letter-spacing: -0.02em;
+      }
+
+      .legal-page {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0 auto;
+        padding-bottom: var(--legal-space-xl);
+      }
+
+      .legal-document-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+      }
+
+      .legal-logo {
+        display: block;
+        width: 86px;
+        height: 64px;
+        object-fit: contain;
+      }
+
+      .legal-product {
+        width: 100%;
+        margin: 0;
+        padding: var(--legal-space-md) var(--legal-space-xl) 0;
+        color: #0e0e0f;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.58;
+      }
+
+      .legal-tagline {
+        width: 100%;
+        margin: 0;
+        padding: 0 var(--legal-space-xl) var(--legal-space-md);
+        color: var(--legal-color-accent);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.58;
+        text-transform: uppercase;
+      }
+
+      .legal-tagline-line {
+        display: block;
+        white-space: nowrap;
+      }
+
+      .legal-content {
+        padding: var(--legal-space-document-gap) var(--legal-space-lg)
+          var(--legal-space-xs);
+      }
+
+      .legal-section + .legal-section {
+        margin-top: var(--legal-space-md);
+      }
+
+      .legal-section > :last-child {
+        margin-bottom: 0;
+      }
+
+      .legal-section-title,
+      .legal-subheading {
+        margin: 0 0 var(--legal-space-md);
+        color: var(--legal-color-text);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: var(--legal-body-line-height);
+        letter-spacing: inherit;
+      }
+
+      .legal-paragraph {
+        margin: 0 0 var(--legal-space-md);
+      }
+
+      .legal-list {
+        margin: 0 0 var(--legal-space-md);
+        padding-left: var(--legal-space-lg);
+      }
+
+      .legal-list.none {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .legal-list.disc {
+        list-style: disc;
+      }
+
+      .legal-list.decimal {
+        list-style: decimal;
+      }
+
+      .legal-list-item + .legal-list-item {
+        margin-top: var(--legal-space-sm);
+      }
+
+      .legal-list .legal-list {
+        margin-top: var(--legal-space-sm);
+        margin-bottom: 0;
+      }
+
+      .legal-note {
+        margin: var(--legal-space-md) 0 0;
+      }
+
+      .legal-note a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .legal-note a:hover,
+      .legal-note a:focus-visible {
+        color: var(--legal-color-accent);
+        text-decoration: underline;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+    </style>
+    {{{body}}}
+  </head>
+  <body>
+    <main class="legal-page" aria-labelledby="legal-product-title">
+      <header class="legal-document-header">
+        <img
+          class="legal-logo"
+          src="{{header.logo.src}}"
+          alt="{{header.logo.alt}}"
+        />
+        <h1 class="legal-product" id="legal-product-title">{{header.productName}}</h1>
+        <p class="legal-tagline">
+          {{#each header.taglineLines}}
+            <span class="legal-tagline-line">{{this}}</span>
+          {{/each}}
+        </p>
+      </header>
+
+      <div class="legal-content">
+        {{#each sections}}
+          {{> legal/section}}
+        {{/each}}
+
+        {{#if note}}
+          <aside class="legal-note" aria-label="{{note.label}}">
+            <p class="legal-paragraph">{{{note.text}}}</p>
+          </aside>
+        {{/if}}
+      </div>
+    </main>
+  </body>
+</html>

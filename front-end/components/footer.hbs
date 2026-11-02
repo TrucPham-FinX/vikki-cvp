@@ -1,0 +1,23 @@
+<span id='backToTop'>
+  <img src='./assets/icon-btt.svg' />
+</span>
+
+{{> popup}}
+
+<div class='popup-overlay' id="promo-detail-popup">
+  <button class='popup-close' id='popupDetail-close'>
+    <img src='./assets/icon-x.svg' />
+  </button>
+
+  <div class='popup-content'>
+    <iframe
+      id="promo-detail-frame"
+      class="popup-iframe"
+      loading="lazy"
+    ></iframe>
+  </div>
+</div>
+
+{{> qaTemplate}}
+
+{{> scripts}}

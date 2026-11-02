@@ -1,0 +1,561 @@
+{
+  "title": "Vikki Go Plus | VikkiBank",
+  "layout": "template",
+  "className": "vikki-go-plus",
+  "hasTopSpace": true,
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "popup": "/vikki-cvp/card-intro/vikki-go-plus.html"
+        },
+        {
+          "text": "Ưu đãi",
+          "iconSrc": "./assets/offer.svg",
+          "popup": "/vikki-cvp/promotion/list.html?category=VIKKIGO_PLUS"
+        }
+      ]
+    }
+  ],
+  "qa": [
+    {
+      "title": "Làm sao để sở hữu Thẻ kép VikkiGO+?",
+      "content": "<p>Bạn có thể đăng ký mở thẻ kép VikkiGO+ theo một trong các phương thức sau:<p>Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki<p>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <span><b>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</b></span></p>"
+    },
+    {
+      "title": "Chủ thẻ có thể quản lý Thẻ kép VikkiGO+ như thế nào?",
+      "content": "<p>Chủ thẻ có thể dễ dàng quản lý Thẻ kép VikkiGO+ một cách an toàn trên ứng dụng ngân hàng số Vikki:</p><ul class=\"list-disc  list-inside\"><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+    },
+    {
+      "title": "Sau khi nhận Thẻ kép VikkiGO+, tôi cần lưu ý gì khi sử dụng thẻ?",
+      "content": "Sau khi nhận Thẻ kép VikkiGO+, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <b><strong>19006608</strong></b> để được hỗ trợ kịp thời."
+    },
+    {
+      "title": "Thẻ kép VikkiGO+ là gì? Có điểm khác biệt nào so với các loại thẻ thông thường?",
+      "content": "Thẻ kép VikkiGO+ là sản phẩm thẻ quốc tế mang thương hiệu Mastercard, được tích hợp 2 tính năng trên cùng một chip:<ul><li>Thẻ ghi nợ quốc tế</li><li>Thẻ tín dụng quốc tế</li></ul>Cả hai cùng sử dụng 01 mã PIN duy nhất, giúp bạn thanh toán, chi tiêu linh hoạt trong nước và quốc tế mà không cần mang nhiều thẻ riêng biệt. Đây là dòng thẻ cao cấp hạng World Business, hỗ trợ thanh toán chạm (contactless) hiện đại."
+    },
+    {
+      "title": "Điều kiện để mở thẻ kép VikkiGO+ là gì?",
+      "content": "Điều kiện để mở thẻ kép VikkiGO+ rất đơn giản:<ul><li>Là khách hàng cá nhân đủ 18 tuổi trở lên.</li><li>Có giấy tờ tùy thân hợp lệ (CCCD/thẻ căn cước còn hiệu lực).</li><li>Đáp ứng các quy định mở thẻ tại Vikki Bank.</li><li>Với thẻ tín dụng: cần xác minh thu nhập hoặc bổ sung chứng từ theo quy định cấp hạn mức của Vikki Bank.</li></ul>"
+    }
+  ],
+  "slider": [
+    {
+      "src": "assets/slide-5.png",
+      "popupLink": "/vikki-cvp/promotion/promo-075.html"
+    },
+    {
+      "src": "assets/slide-2.png",
+      "popupLink": "/vikki-cvp/promotion/promo-013.html"
+    },
+    {
+      "src": "assets/slide-3.png",
+      "popupLink": "/vikki-cvp/promotion/promo-017.html"
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "A. GIỚI THIỆU SẢN PHẨM",
+      "children": [
+        {
+          "title": "Làm sao để sở hữu Thẻ kép VikkiGO+?",
+          "content": "Bạn có thể đăng ký mở thẻ kép VikkiGO+ theo một trong các phương thức sau: Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: <strong>https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</strong>"
+        },
+        {
+          "title": "Chủ thẻ có thể quản lý Thẻ kép VikkiGO+ như thế nào?",
+          "content": "Chủ thẻ có thể dễ dàng quản lý Thẻ kép VikkiGO+ một cách an toàn trên ứng dụng ngân hàng số Vikki:<ul class=\"list-disc  list-inside\"><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>"
+        },
+        {
+          "title": "Sau khi nhận Thẻ kép VikkiGO+, tôi cần lưu ý gì khi sử dụng thẻ?",
+          "content": "Sau khi nhận Thẻ kép VikkiGO+, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki. Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác. Bạn có thể liên hệ Vikki Bank qua Tổng đài <strong>19006608</strong> để được hỗ trợ kịp thời."
+        },
+        {
+          "title": "Thẻ kép VikkiGO+ là gì? Có điểm khác biệt nào so với các loại thẻ thông thường?",
+          "content": "Thẻ kép VikkiGO+ là sản phẩm thẻ quốc tế mang thương hiệu Mastercard, được tích hợp 2 tính năng trên cùng một chip:<ul><li>Thẻ ghi nợ quốc tế</li><li>Thẻ tín dụng quốc tế</li></ul>Cả hai cùng sử dụng 01 mã PIN duy nhất, giúp bạn thanh toán, chi tiêu linh hoạt trong nước và quốc tế mà không cần mang nhiều thẻ riêng biệt. Đây là dòng thẻ cao cấp hạng World Business, hỗ trợ thanh toán chạm (contactless) hiện đại."
+        },
+        {
+          "title": "Điều kiện để mở thẻ kép VikkiGO+ là gì?",
+          "content": "Điều kiện để mở thẻ kép VikkiGO+ rất đơn giản:<ul><li>Là khách hàng cá nhân đủ 18 tuổi trở lên. </li><li>Có giấy tờ tùy thân hợp lệ (CCCD/thẻ căn cước còn hiệu lực). </li><li>Đáp ứng các quy định mở thẻ tại Vikki Bank. </li><li><strong>Với thẻ tín dụng:</strong> cần xác minh thu nhập hoặc bổ sung chứng từ theo quy định cấp hạn mức của Vikki Bank.</li></ul>"
+        },
+        {
+          "title": "Tôi đã có thẻ tín dụng VikkiGO và thẻ thanh toán tích hợp VikkiGO, vậy có thể đăng ký thêm thẻ kép VikkiGO+ không?",
+          "content": "Có. Bạn vẫn có thể đăng ký mở thẻ kép VikkiGO+ để trải nghiệm tính năng kép, vì đây là sản phẩm độc lập và có cơ chế hoạt động riêng. Tuy nhiên, mỗi khách hàng chỉ được phát hành 01 thẻ chính VikkiGO+ tại một thời điểm."
+        },
+        {
+          "title": "Thời gian phê duyệt mở thẻ kép VikkiGO+ mất bao lâu?",
+          "content": "Thông thường, thời gian phê duyệt trung bình chỉ trong vài ngày làm việc nếu bạn đáp ứng điều kiện phát hành. Trường hợp cần bổ sung hồ sơ xác minh, thời gian xử lý có thể kéo dài hơn dự kiến."
+        },
+        {
+          "title": "Thẻ kép VikkiGO+ có những tính năng nổi bật nào? Khi thanh toán, làm sao để chọn giữa thẻ tín dụng và thẻ ghi nợ?",
+          "content": "Thẻ VikkiGO+ cho phép bạn thực hiện đầy đủ các loại giao dịch tại các điểm chấp nhận Mastercard, bao gồm:<ul><li><strong>Thanh toán trực tuyến:</strong> bạn dùng thông tin trên thẻ để thanh toán tại các trang thương mại điện tử. (Tính năng này sẽ được triển khai trong thời gian sắp tới)</li><li><strong>Quẹt thẻ tại cửa hàng (POS):</strong> bạn có thể thanh toán tại các cửa hàng trong nước và quốc tế. </li><li><strong>Rút tiền tại ATM:</strong> bạn có thể giao dịch tại ATM của Vikki Bank, hoặc Mastercard bằng một mã PIN duy nhất. </li><li>Khi thanh toán hoặc rút tiền mặt tại máy POS hoặc ATM, mặc định thẻ sẽ trừ tiền trên thẻ tín dụng. Một số dòng máy ATM hoặc POS sẽ có tính năng cho phép lựa chọn trừ tiền trên thẻ tín dụng hoặc thẻ ghi nợ, bạn lưu ý khi sử dụng. </li></ul><strong>Lưu ý:</strong> tính năng thanh toán nước ngoài hoặc quốc tế đang tạm thời chưa triển khai."
+        },
+        {
+          "title": "Cách kích hoạt thẻ kép VikkiGO+ như thế nào? Sau khi nhận thẻ, tôi cần chờ bao lâu để kích hoạt trên ứng dụng?",
+          "content": "Ngay sau khi nhận thẻ vật lý, bạn có thể kích hoạt ngay trên ứng dụng Vikki theo hướng dẫn tại mục <strong>\"Thẻ VikkiGO+\"</strong>. Tuy nhiên, sau khi nhận thẻ vật lý bạn cần chờ để tính năng kích hoạt thẻ khả dụng nhé."
+        },
+        {
+          "title": "Tôi có thể đổi mã PIN của thẻ kép VikkiGO+ bằng cách nào? Mã PIN dùng chung cho cả 2 thẻ đúng không?",
+          "content": "Trường hợp cần thay đổi mã PIN, bạn có thể chọn chức năng Thay đổi mã PIN ATM, theo các bước:<ul><li>Đăng nhập ứng dụng Vikki</li><li>Vào mục <strong>\"Thẻ\"</strong>, chọn thẻ VikkiGO+</li><li>Chọn <strong>\"Quản lý thẻ\", \"Thay đổi mã PIN\"</strong></li><li>Làm theo hướng dẫn trên ứng dụng để hoàn tất</li></ul>Mã PIN sẽ áp dụng cho cả thẻ ghi nợ và thẻ tín dụng."
+        },
+        {
+          "title": "Tôi có thể khóa hoặc mở khóa thẻ kép VikkiGO+ như thế nào? Có thể chỉ khóa/mở một trong hai thẻ (ghi nợ hoặc tín dụng) riêng không?",
+          "content": "<p>Bạn có thể tự khóa hoặc mở khóa thẻ trực tiếp trên ứng dụng Vikki bằng cách:<ul><li>Đăng nhập ứng dụng Vikki</li><li>Chọn biểu tượng <strong>\"Thẻ\"</strong></li><li>Chọn thẻ cần khóa hoặc mở khóa</li><li>Nhấn <strong>\"Khóa thẻ\"</strong> hoặc <strong>\"Mở khóa\"</strong> tại màn hình chi tiết thẻ</li><li>Làm theo hướng dẫn để hoàn tất quy trình</li></ul><p>Trong trường hợp khẩn cấp, nếu không truy cập được ứng dụng, bạn có thể liên hệ hotline <strong>19006608</strong> để được hỗ trợ khóa thẻ ngay. <p><strong>Lưu ý:</strong> Thẻ VikkiGO+ là thẻ kép, bao gồm 2 thẻ trên cùng 1 chip. Khi bạn khóa thẻ, hệ thống sẽ khóa toàn bộ thẻ, tức là cả thẻ ghi nợ và thẻ tín dụng cùng lúc."
+        },
+        {
+          "title": "Thẻ VikkiGO+ là gì?",
+          "content": "Thẻ VikkiGO+ (tên đầy đủ: Thẻ đa tính năng VikkiGO+) là dòng sản phẩm thẻ đa tính năng dành cho khách hàng cá nhân, mang thương hiệu Mastercard, do Ngân hàng số Vikki phát hành. Thẻ tích hợp cả tính năng thẻ ghi nợ quốc tế và thẻ tín dụng quốc tế trên cùng một chiếc thẻ duy nhất."
+        },
+        {
+          "title": "Thẻ VikkiGO+ thuộc hạng thẻ nào?",
+          "content": "Thẻ VikkiGO+ gồm 2 hạng thẻ là standard (với tính năng thẻ debit) và platinum (với tính năng thẻ credit) của Mastercard."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có mấy loại chức năng?",
+          "content": "Thẻ VikkiGO+ tích hợp 2 tính năng trên cùng 1 chip: tính năng thẻ ghi nợ quốc tế (Debit) và tính năng thẻ tín dụng quốc tế (Credit), với 2 số thẻ riêng biệt nhưng dùng chung một mã PIN."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có phát hành thẻ phụ không?",
+          "content": "Không. Thẻ VikkiGO+ không phát hành thẻ phụ. Mỗi khách hàng chỉ có 01 thẻ chính tại 01 thời điểm."
+        },
+        {
+          "title": "Thẻ VikkiGO+ sử dụng công nghệ thẻ gì?",
+          "content": "Thẻ VikkiGO+ sử dụng chip Dual-interface, hỗ trợ giao dịch chạm (contactless) và giao dịch tiếp xúc (cắm chip) tại các thiết bị POS/mPOS tương thích."
+        },
+        {
+          "title": "Thời hạn của thẻ VikkiGO+ là bao lâu?",
+          "content": "Thẻ VikkiGO+ có thời hạn hiệu lực 05 năm kể từ ngày phát hành. Đối với người nước ngoài, thời hạn hiệu lực không vượt quá thời hạn cư trú còn lại tại Việt Nam."
+        },
+        {
+          "title": "Đầu số BIN của thẻ VikkiGO+ là gì?",
+          "content": "Thẻ VikkiGO+ có 2 đầu BIN: BIN thẻ tín dụng là 52626387 và BIN thẻ ghi nợ là 53787213. Mỗi đầu BIN tương ứng với 1 tính năng của thẻ."
+        },
+        {
+          "title": "Thẻ VikkiGO+ khác gì thẻ VikkiGO thông thường?",
+          "content": "Thẻ VikkiGO+ là phiên bản nâng cấp, tích hợp thêm hạn mức tín dụng (thẻ tín dụng) bên cạnh tính năng ghi nợ có sẵn, cho phép khách hàng vừa chi tiêu từ tài khoản thanh toán, vừa có thể sử dụng hạn mức tín dụng linh hoạt trên cùng một thẻ."
+        },
+        {
+          "title": "Thẻ VikkiGO+ liên kết với tài khoản nào?",
+          "content": "Thẻ VikkiGO+ liên kết với tài khoản VikkiME của Vikki Bank."
+        },
+        {
+          "title": "Phạm vi giao dịch của thẻ VikkiGO+ là ở đâu?",
+          "content": "Thẻ VikkiGO+ được chấp nhận giao dịch toàn cầu tại tất cả các điểm chấp nhận thẻ Mastercard trong và ngoài nước."
+        }
+      ]
+    },
+    {
+      "title": "B. ĐIỀU KIỆN VÀ THỦ TỤC MỞ THẺ",
+      "children": [
+        {
+          "title": "Điều kiện để mở thẻ VikkiGO+ là gì?",
+          "content": "Để mở thẻ VikkiGO+, khách hàng cần: <ul><li>Có tài khoản VikkiME đang hoạt động trên ứng dụng Vikki; </li><li>Từ đủ 18 tuổi trở lên; </li><li>Có CCCD/Hộ chiếu còn hiệu lực; </li><li>Đáp ứng các điều kiện phát hành thẻ theo quy định hiện hành của Vikki Bank.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể đăng ký thẻ VikkiGO+ hoàn toàn trực tuyến không?",
+          "content": "Có. Bạn có thể đăng ký mở thẻ VikkiGO+ hoàn toàn trực tuyến trên ứng dụng Vikki mà không cần đến chi nhánh."
+        },
+        {
+          "title": "Hồ sơ mở thẻ VikkiGO+ gồm những gì?",
+          "content": "Hồ sơ mở thẻ VikkiGO+ được thực hiện theo Quy định sản phẩm Thẻ đa tính năng cho Khách hàng cá nhân số 9293/2025/QĐ-TGĐ. Khách hàng thực hiện định danh điện tử (eKYC) trên app Vikki, cung cấp thông tin cá nhân và xác nhận nhu cầu sử dụng sản phẩm thẻ."
+        },
+        {
+          "title": "Khách hàng bị nợ xấu có mở được thẻ VikkiGO+ không?",
+          "content": "Khách hàng có thể mở thẻ VikkiGO+ nhưng sẽ không được cấp hạn mức tín dụng nếu thuộc nhóm nợ 2 trở lên. Phần tính năng thẻ ghi nợ vẫn sử dụng bình thường."
+        },
+        {
+          "title": "Tôi cần làm gì để đăng ký mở thẻ VikkiGO+ trên app Vikki?",
+          "content": "Các bước đăng ký:<ul><li>Bước 1 – Mở app Vikki, tại trang chủ chọn <strong>\"Quét QR\"</strong> hoặc truy cập mục Thẻ. </li><li>Bước 2 – Quét mã QR hoặc chọn sản phẩm VikkiGO+. </li><li>Bước 3 – Chọn tài khoản VikkiME muốn liên kết. </li><li>Bước 4 – Chụp ảnh eKYC, xác nhận thông tin, nhập email. </li><li>Bước 5 – Đọc và đồng ý điều khoản, xác thực Smart OTP. </li><li>Bước 6 – Chờ hệ thống xử lý và thông báo kết quả.</li></ul>"
+        },
+        {
+          "title": "Sau khi đăng ký bao lâu thì nhận được thẻ VikkiGO+?",
+          "content": "Thời gian giao thẻ trong khu vực nội thành TP. Hồ Chí Minh là từ 3 – 5 ngày làm việc. Thời gian cam kết cụ thể sẽ hiển thị trên ứng dụng Vikki khi khách hàng yêu cầu phát hành thẻ."
+        },
+        {
+          "title": "Tôi có thể chọn địa chỉ nhận thẻ VikkiGO+ không?",
+          "content": "Có. Bạn có thể nhận thẻ tại địa chỉ nhà riêng hoặc tại bất kỳ Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất theo phương thức đã đăng ký. Giao thẻ tận nhà hoàn toàn miễn phí."
+        },
+        {
+          "title": "Tôi chưa có tài khoản Vikki thì mở thẻ VikkiGO+ như thế nào?",
+          "content": "Bạn cần tải ứng dụng Vikki từ App Store hoặc Google Play, đăng ký mở tài khoản VikkiMe (thực hiện eKYC qua CCCD gắn chip hoặc VNeID), sau đó mới tiến hành đăng ký mở thẻ VikkiGO+."
+        },
+        {
+          "title": "Hệ thống sẽ tự động cấp hạn mức tín dụng khi mở thẻ không?",
+          "content": "Có. Khách hàng được cấp hạn mức tín dụng tự động tối thiểu 2 triệu VNĐ ngay khi đăng ký, nếu không có TSĐB, có lịch sử tín dụng tốt và phù hợp quy định cấp tín dụng thẻ. Vikki Bank sẽ thông báo hạn mức ngay khi có kết quả."
+        },
+        {
+          "title": "Tôi muốn tăng hạn mức tín dụng lên cao hơn mức tự động thì làm thế nào?",
+          "content": "Bạn bổ sung hồ sơ/chứng từ theo nhóm đối tượng và điều kiện theo Quy định cấp hạn mức thẻ tín dụng KHCN số 6328/2025/QĐ-TGĐ. Đơn vị kinh doanh sẽ tư vấn và tiếp nhận hồ sơ để nâng hạn mức cho bạn."
+        }
+      ]
+    },
+    {
+      "title": "C. KÍCH HOẠT VÀ QUẢN LÝ THẺ",
+      "children": [
+        {
+          "title": "Tôi vừa nhận được thẻ VikkiGO+, cần làm gì tiếp theo?",
+          "content": "Sau khi nhận thẻ vật lý: <ul><li>(1) Vào app Vikki <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+; </li><li>(2) Nhấn <strong>\"Kích hoạt thẻ\"</strong>; </li><li>(3) Nhập 6 số cuối số thẻ CREDIT in ở mặt sau; </li><li>(4) Xác thực Smart OTP; </li><li>(5) Tạo mã PIN để rút tiền và thanh toán tại máy quẹt thẻ.</li></ul>"
+        },
+        {
+          "title": "Thẻ VikkiGO+ có tự động kích hoạt khi nhận không?",
+          "content": "Không. Bạn cần chủ động kích hoạt thẻ VikkiGO+ trên ứng dụng Vikki sau khi nhận thẻ vật lý. Thẻ sẽ không hoạt động cho đến khi được kích hoạt thành công."
+        },
+        {
+          "title": "Tôi không kích hoạt được thẻ thì phải làm gì?",
+          "content": "Bạn thực hiện theo thứ tự: <ul><li>(1) Đăng xuất và đăng nhập lại ứng dụng Vikki; </li><li>(2) Cập nhật ứng dụng Vikki lên phiên bản mới nhất; </li><li>(3) Nếu vẫn không được, liên hệ Vikki Care <strong>19006608</strong> hoặc đến Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất.</li></ul>"
+        },
+        {
+          "title": "Tôi xem thông tin thẻ VikkiGO+ ở đâu?",
+          "content": "Bạn đăng nhập ứng dụng Vikki, chọn Tab <strong>\"THẺ\"</strong>, chọn thẻ VikkiGO+, vào mục <strong>\"Thông tin Thẻ\"</strong> để xem đầy đủ thông tin bao gồm số thẻ, ngày hết hạn và mã CVC/CVV."
+        },
+        {
+          "title": "Mã CVC/CVV trên thẻ VikkiGO+ là gì và xem ở đâu?",
+          "content": "CVC là mã bảo mật 3 chữ số dùng để xác thực các giao dịch thanh toán trực tuyến. Xem trong app Vikki tại mục <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+ <strong>\"Thông tin Thẻ\"</strong>. Không chia sẻ mã này với bất kỳ ai."
+        },
+        {
+          "title": "Tôi có thể khóa thẻ VikkiGO+ tạm thời không?",
+          "content": "Có. Bạn vào ứng dụng Vikki <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+ chức năng <strong>\"Khóa thẻ tạm thời\"</strong>. Hoặc gọi Vikki Care <strong>19006608</strong> để được hỗ trợ khóa thẻ ngay lập tức."
+        },
+        {
+          "title": "Làm thế nào để mở khóa thẻ VikkiGO+ sau khi đã tự khóa?",
+          "content": "Bạn vào ứng dụng Vikki <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+ đang ở trạng thái khóa chọn <strong>\"Mở khóa thẻ\"</strong>. Thẻ sẽ được mở khóa ngay lập tức."
+        },
+        {
+          "title": "Tôi có thể bật/tắt tính năng rút tiền tại ATM không?",
+          "content": "Có. Bạn vào ứng dụng Vikki <strong>\"THẺ\"</strong> truy cập chức năng <strong>\"Quản lý thẻ\"</strong> để bật hoặc tắt tính năng rút tiền tại ATM theo nhu cầu."
+        },
+        {
+          "title": "Tôi có thể tự thay đổi hạn mức thanh toán online không?",
+          "content": "Có. Bạn có thể chủ động điều chỉnh hạn mức thanh toán online trên ứng dụng Vikki theo các mức hệ thống cho phép, nhằm tăng cường kiểm soát và đảm bảo an toàn giao dịch."
+        },
+        {
+          "title": "Tôi có thể quản lý nhiều thẻ trên cùng một tài khoản ứng dụng Vikki không?",
+          "content": "Có. Bạn có thể quản lý nhiều thẻ khác nhau trên ứng dụng Vikki trong cùng một tài khoản đăng nhập."
+        }
+      ]
+    },
+    {
+      "title": "D. GIAO DỊCH VÀ THANH TOÁN",
+      "children": [
+        {
+          "title": "Khi thanh toán tại POS, tôi chọn \"VikkiGO Plus (C)\" hay \"VikkiGO Plus (D)\"?",
+          "content": "Chọn <strong>\"VikkiGO Plus (C)\"</strong> để thanh toán bằng thẻ tín dụng, hoặc <strong>\"VikkiGO Plus (D)\"</strong> để thanh toán bằng thẻ ghi nợ. Nếu POS không hiển thị lựa chọn nguồn tiền, hệ thống mặc định thanh toán bằng thẻ tín dụng."
+        },
+        {
+          "title": "Khi rút tiền tại ATM Vikki, tôi chọn chức năng gì?",
+          "content": "Tại ATM Vikki, chọn <strong>\"VikkiGO Plus (C)\"</strong> để rút tiền từ hạn mức tín dụng, hoặc <strong>\"VikkiGO Plus (D)\"</strong> để rút tiền từ tài khoản ghi nợ."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có hỗ trợ thanh toán không tiếp xúc (Contactless) không?",
+          "content": "Có. Thẻ VikkiGO+ hỗ trợ thanh toán Contactless tại các thiết bị POS có hỗ trợ công nghệ tương thích. Khoảng cách nhận tín hiệu thông thường dưới 4 cm."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có thanh toán QR được không?",
+          "content": "Có. Thẻ VikkiGO+ có thể sử dụng thanh toán QR tại các điểm chấp nhận phù hợp theo quy định và cấu hình áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi có thể dùng thẻ VikkiGO+ để thanh toán tại nước ngoài không?",
+          "content": "Có. Thẻ VikkiGO+ được chấp nhận tại tất cả các điểm chấp nhận thẻ Mastercard trên toàn cầu. \n <strong>Lưu ý:</strong> giao dịch quốc tế có thể phát sinh phí chuyển đổi ngoại tệ theo quy định của Vikki Bank và Mastercard."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có rút tiền mặt tại ATM được không? Hạn mức tối đa là bao nhiêu?",
+          "content": "Có, hiện tại rút tiền mặt của tính năng thẻ ghi nợ đang hoạt động. Tuy nhiên, Vikki Bank đang bảo trì tính năng rút tiền mặt của tính năng thẻ tín dụng và sẽ hoạt động lại khi tính năng sẵn sàng."
+        },
+        {
+          "title": "Ngoài ATM Vikki Bank, thẻ VikkiGO+ giao dịch được tại ATM nào?",
+          "content": "Thẻ VikkiGO+ giao dịch được tại toàn bộ hệ thống ATM có logo Mastercard, bao gồm ATM của HDBank và các ngân hàng khác trong và ngoài nước. Tuy nhiên, hiện tại Vikki Bank đang bảo trì rút tiền mặt của tính năng thẻ tín dụng và sẽ hoạt động lại khi tính năng sẵn sàng."
+        },
+        {
+          "title": "Giao dịch bị giữ tiền (pending) là gì?",
+          "content": "Đây là trạng thái giao dịch đã được ghi nhận bởi hệ thống nhưng đơn vị chấp nhận thẻ chưa hoàn tất quyết toán. Số tiền sẽ được xử lý chính thức sau khi đơn vị chấp nhận thẻ hoàn tất."
+        },
+        {
+          "title": "Tôi thanh toán nhưng bị trừ tiền hai lần phải làm gì?",
+          "content": "Giao dịch có thể đang trong trạng thái chờ xử lý (giao dịch treo). Bạn vui lòng liên hệ ngay Vikki Care <strong>19006608</strong> để được hỗ trợ kiểm tra và xử lý kịp thời."
+        },
+        {
+          "title": "Tôi muốn hủy giao dịch vừa thực hiện thì làm thế nào?",
+          "content": "Vikki Bank không thể đơn phương hủy giao dịch đã thực hiện thành công. Bạn liên hệ trực tiếp đơn vị chấp nhận thẻ để yêu cầu hủy đơn/hoàn tiền. Nếu đơn vị đồng ý, thời gian nhận tiền hoàn từ 7–15 ngày làm việc."
+        },
+        {
+          "title": "Tôi có thể chuyển khoản từ thẻ tín dụng VikkiGO+ sang ví điện tử không?",
+          "content": "Không. Theo quy định của NHNN, thẻ tín dụng không được chuyển tiền vào tài khoản thanh toán, tài khoản ghi nợ và ví điện tử."
+        },
+        {
+          "title": "Thẻ VikkiGO+ bị từ chối tại cửa hàng, tôi cần kiểm tra gì?",
+          "content": "Bạn kiểm tra: <ul><li>(1) Số dư tài khoản VikkiME hoặc hạn mức tín dụng khả dụng; </li><li>(2) Trạng thái thẻ trên ứng dụng Vikki; </li><li>(3) Hạn mức giao dịch đã cài đặt. Nếu vẫn không thực hiện được, liên hệ Vikki Care <strong>19006608</strong>.</li><ul>"
+        },
+        {
+          "title": "Tại sao thẻ VikkiGO+ bị từ chối khi thanh toán tại website nước ngoài?",
+          "content": "Có thể do: website yêu cầu xác thực 3D Secure nhưng kết nối gián đoạn; thẻ chưa bật tính năng thanh toán quốc tế; hoặc các yếu tố kiểm soát an toàn giao dịch. Kiểm tra cài đặt thẻ trên app hoặc liên hệ Vikki Care <strong>19006608</strong>."
+        },
+        {
+          "title": "Tôi trả lại hàng đã mua bằng thẻ VikkiGO+, tiền hoàn về đâu?",
+          "content": "Số tiền hoàn sẽ được chuyển trả trực tiếp vào tài khoản thẻ tín dụng/thanh toán của bạn sau khi bên bán hoàn tất xử lý giao dịch theo quy định."
+        },
+        {
+          "title": "Nếu tôi đi công tác nước ngoài, có cần thông báo cho ngân hàng không?",
+          "content": "Không bắt buộc, nhưng để thanh toán thuận tiện hơn, bạn có thể chủ động thông báo trước cho Vikki Bank qua ứng dụng hoặc Vikki Care <strong>19006608</strong>."
+        },
+        {
+          "title": "Thẻ VikkiGO+ có hỗ trợ thẻ ảo (Virtual Card) không?",
+          "content": "Có. Thẻ ảo VikkiGO+ được phát hành tự động ngay khi bạn đăng ký thành công trên ứng dụng Vikki, dùng để thanh toán trực tuyến ngay cả khi chưa nhận thẻ vật lý."
+        },
+        {
+          "title": "Số thẻ ảo và thẻ vật lý VikkiGO+ có giống nhau không?",
+          "content": "Thẻ ảo và thẻ vật lý có cùng số thẻ để thuận tiện cho việc quản lý và giao dịch trực tuyến."
+        },
+        {
+          "title": "Thẻ VikkiGO+ bị cong vênh có dùng được nữa không?",
+          "content": "Nếu chip và anten NFC vẫn hoạt động bình thường, thẻ vẫn có thể sử dụng. Nếu chip hoặc anten NFC bên trong bị hỏng do biến dạng, bạn nên yêu cầu cấp lại thẻ mới."
+        },
+        {
+          "title": "Biểu tượng cột sóng trên thẻ VikkiGO+ có ý nghĩa gì?",
+          "content": "Đây là biểu tượng cho biết thẻ hỗ trợ tính năng thanh toán không tiếp xúc (Contactless), cho phép thực hiện giao dịch bằng cách đưa thẻ lại gần thiết bị thanh toán tương thích (dưới 4 cm)."
+        },
+        {
+          "title": "Tôi có thể tích hợp thẻ VikkiGO+ lên Google Pay được không?",
+          "content": "Hoàn toàn được, thẻ VikkiGO+ có thể tích hợp cả 2 tính năng thẻ ghi nợ và thẻ tín dụng vào Google Pay"
+        },
+        {
+          "title": "Các tiện ích khi sử dụng thẻ VikkiGO+ trên Google Pay là gì?",
+          "content": "Thanh toán được các dịch vụ cho phép thanh toán bằng Google Pay, ngoài ra có thẻ VikkiGO+ khi tích hợp vào Google Pay trên thiết bị điện thoại thông minh có thể thay thế thẻ vật lý thực hiện thanh toán không tiếp xúc."
+        },
+        {
+          "title": "Tôi có thể tích hợp thẻ VikkiGO+ lên Apple Pay được không?",
+          "content": "Không, hiện tại Vikki Bank đang phát triển tính năng và sẽ thông báo đến khách hàng trong thời gian sớm nhất."
+        },
+        {
+          "title": "Khi tôi bị mất thiết bị điện thoại Android/IOS thì tôi nên xử lý như thế nào?",
+          "content": "Ngay lập tức liên hệ với tổng đài <strong>19006608</strong> bằng phương tiện di động, yêu cầu khóa thẻ ngay lập tức. Ngoài ra, xử dụng thiết bị máy tính gỡ thẻ VikkiGO+ ra khỏi Google Pay và Apple Pay để đảm bảo an toàn sử dụng thẻ."
+        }
+      ]
+    },
+    {
+      "title": "E. HẠN MỨC TÍN DỤNG",
+      "children": [
+        {
+          "title": "Hạn mức tín dụng của thẻ VikkiGO+ là bao nhiêu?",
+          "content": "Hạn mức được Vikki Bank xét duyệt cho từng khách hàng dựa trên lịch sử tín dụng và các tiêu chí đánh giá theo quy định. Khách hàng được cấp tự động tối thiểu 2 triệu VNĐ khi đáp ứng điều kiện; có thể nâng cao hơn khi bổ sung hồ sơ chứng từ."
+        },
+        {
+          "title": "Ngày chốt sao kê của thẻ tín dụng VikkiGO+ là ngày nào?",
+          "content": "Ngày chốt sao kê là ngày 15 hàng tháng."
+        },
+        {
+          "title": "Thẻ tín dụng VikkiGO+ được miễn lãi tối đa bao nhiêu ngày?",
+          "content": "Tối đa 55 ngày miễn lãi đối với giao dịch thanh toán hàng hóa/dịch vụ và thanh toán trực tuyến, khi khách hàng thanh toán đủ tổng số tiền theo kỳ sao kê và dư nợ đầu kỳ bằng 0."
+        },
+        {
+          "title": "Ngày đến hạn thanh toán dư nợ là ngày mấy?",
+          "content": "Ngày đến hạn = Ngày chốt sao kê (15) + 25 ngày."
+        },
+        {
+          "title": "Mức thanh toán dư nợ tối thiểu là bao nhiêu?",
+          "content": "Mức thanh toán tối thiểu là 3% tổng dư nợ phát sinh trong kỳ sao kê, tối thiểu 100.000 VNĐ."
+        },
+        {
+          "title": "Tôi xem số tiền cần thanh toán và ngày đến hạn ở đâu?",
+          "content": "Bạn có thể xem trên ứng dụng Vikki, qua tin nhắn SMS, hoặc trong sao kê được gửi đến email đã đăng ký với Vikki Bank."
+        },
+        {
+          "title": "Các hình thức thanh toán dư nợ thẻ tín dụng VikkiGO+ gồm những gì?",
+          "content": "Các hình thức thanh toán: <ul><li>(1) Thanh toán tự động từ tài khoản VikkiME; </li><li>(2) Chủ động thanh toán nợ trên ứng dụng Vikki; </li><li>(3) Nhận chuyển khoản Napas 247; </li><li>(4) Nhận chuyển khoản Citad.</li></ul>"
+        },
+        {
+          "title": "Sau khi thanh toán nợ, hạn mức khả dụng có khôi phục ngay không?",
+          "content": "Có. Ngay sau khi thanh toán nợ và hệ thống nhận được báo có, hạn mức khả dụng của thẻ tín dụng sẽ được khôi phục ngay lập tức."
+        },
+        {
+          "title": "Tôi chỉ thanh toán số tiền tối thiểu có bị phạt không?",
+          "content": "Nếu thanh toán đúng số tiền tối thiểu vào đúng thời hạn, sẽ không bị tính phí chậm thanh toán. Tuy nhiên, phần dư nợ còn lại vẫn bị tính lãi suất theo quy định."
+        },
+        {
+          "title": "Tôi thanh toán trễ hạn thì sao?",
+          "content": "Trường hợp thanh toán trễ hạn, bạn có thể phát sinh phí chậm thanh toán và lãi suất theo quy định áp dụng từng thời kỳ. Điều này cũng ảnh hưởng tiêu cực đến lịch sử tín dụng cá nhân."
+        },
+        {
+          "title": "Rút tiền mặt từ thẻ tín dụng VikkiGO+ có bị tính lãi không?",
+          "content": "Có. Giao dịch rút tiền mặt bị tính lãi ngay từ thời điểm giao dịch thực hiện thành công, không được hưởng thời gian miễn lãi. Tuy nhiên, hiện tại Vikki Bank đang bảo trì tính năng rút tiền mặt của tính năng thẻ tín dụng và sẽ hoạt động lại khi tính năng sẵn sàng."
+        },
+        {
+          "title": "Làm thế nào để nâng hạn mức tín dụng?",
+          "content": "Duy trì lịch sử tín dụng tốt, sử dụng thẻ hợp lý và thanh toán đúng hạn. Vikki Bank xem xét điều chỉnh hạn mức định kỳ. Bạn có thể chủ động bổ sung hồ sơ chứng từ qua đơn vị kinh doanh để yêu cầu nâng hạn mức."
+        },
+        {
+          "title": "Tôi có thể rút toàn bộ hạn mức tín dụng dưới dạng tiền mặt không?",
+          "content": "<p>Có thể rút tiền mặt, nhưng tối đa 100.000.000 VNĐ/tháng.</p><p><strong>Lưu ý:</strong> giao dịch rút tiền mặt bị tính lãi ngay từ khi thực hiện. Tuy nhiên, hiện tại Vikki Bank đang bảo trì tính năng rút tiền mặt của thẻ VikkiGO+ và sẽ hoạt động lại khi tính năng sẵn sàng.</p>"
+        },
+        {
+          "title": "Thẻ VikkiGO+ có chức năng trả góp không?",
+          "content": "Chức năng trả góp trên giao dịch và trả góp trên dư nợ sẽ được triển khai trong thời gian tới. Theo dõi thông báo trên ứng dụng Vikki hoặc liên hệ Vikki Care <strong>19006608</strong>."
+        },
+        {
+          "title": "Tôi có thể chuyển khoản từ ngân hàng khác để thanh toán dư nợ thẻ tín dụng không?",
+          "content": "Có. Bạn có thể nhận chuyển khoản từ ngân hàng khác qua Napas 247 hoặc Citad để thanh toán dư nợ thẻ tín dụng VikkiGO+."
+        }
+      ]
+    },
+    {
+      "title": "F. PHÍ VÀ LÃI SUẤT",
+      "children": [
+        {
+          "title": "Phí thường niên của thẻ VikkiGO+ là bao nhiêu?",
+          "content": "Năm đầu tiên được miễn phí thường niên. Từ năm thứ 2 trở đi, phí áp dụng theo biểu phí hiện hành của Vikki Bank. Tham khảo chi tiết trên ứng dụng Vikki hoặc website vikkibank.vn."
+        },
+        {
+          "title": "Làm thế nào để được miễn phí thường niên trọn đời?",
+          "content": "Bạn có thể được miễn phí thường niên theo các chương trình ưu đãi hoặc khi đáp ứng điều kiện chi tiêu theo chính sách áp dụng từng thời kỳ. Chi tiết được công bố trên ứng dụng Vikki."
+        },
+        {
+          "title": "Phí SMS thông báo biến động số dư là bao nhiêu?",
+          "content": "Phí thông báo biến động qua SMS là 9.900 VNĐ/tháng. Bạn có thể chủ động bật/tắt tính năng này trên ứng dụng Vikki tại mục <strong>\"Cài đặt thông báo qua SMS\".</strong>"
+        },
+        {
+          "title": "Phí cấp lại thẻ VikkiGO+ do làm mất là bao nhiêu?",
+          "content": "Phí cấp lại thẻ áp dụng theo Biểu phí thẻ VikkiGO+ và được cập nhật theo quy định từng thời kỳ. Tham khảo chi tiết trên ứng dụng Vikki hoặc website Vikki Bank."
+        },
+        {
+          "title": "Phí giao thẻ tận nhà là bao nhiêu?",
+          "content": "Hoàn toàn miễn phí. Bạn không bị thu bất kỳ khoản phí nào khi yêu cầu giao thẻ tại nhà."
+        },
+        {
+          "title": "Hủy thẻ trong vòng 12 tháng có mất phí không?",
+          "content": "Có. Vikki Bank thu phí thanh lý thẻ trong vòng 12 tháng kể từ ngày phát hành. Sau 12 tháng sử dụng và đã tất toán toàn bộ dư nợ, việc đóng thẻ không phát sinh thêm phí."
+        },
+        {
+          "title": "Đổi thẻ VikkiGO+ trên app có miễn phí không?",
+          "content": "Phí thay thế thẻ phụ thuộc vào hình thức thực hiện (qua app Vikki hay tại quầy giao dịch) và áp dụng theo biểu phí hiện hành. Tham khảo biểu phí trên website hoặc app Vikki trước khi thực hiện."
+        },
+        {
+          "title": "Tôi đã hủy thẻ thì có phát sinh phí thường niên nữa không?",
+          "content": "Khi bạn yêu cầu hủy thẻ và đã hoàn tất nghĩa vụ nợ, sau khi ngân hàng thực hiện hủy thẻ thì sẽ không phát sinh phí nào thêm liên quan đến thẻ này."
+        },
+        {
+          "title": "Phí chuyển đổi ngoại tệ khi thanh toán quốc tế là bao nhiêu?",
+          "content": "Giao dịch quốc tế có thể phát sinh phí chuyển đổi ngoại tệ theo quy định của Vikki Bank và Mastercard. Tham khảo Biểu phí thẻ VikkiGO+ trên website hoặc ứng dụng Vikki để biết chi tiết."
+        },
+        {
+          "title": "Lãi suất thẻ tín dụng VikkiGO+ được tính như thế nào?",
+          "content": "Lãi suất tính trên dư nợ thực tế. Thông tin chi tiết về lãi suất và cách tính được công bố trong Biểu phí thẻ VikkiGO+ trên ứng dụng Vikki hoặc website Vikki Bank theo từng thời kỳ."
+        }
+      ]
+    },
+    {
+      "title": "G. SAO KÊ VÀ LỊCH SỬ GIAO DỊCH",
+      "children": [
+        {
+          "title": "Tôi nhận sao kê thẻ VikkiGO+ qua kênh nào?",
+          "content": "Sao kê được gửi tự động qua email đăng ký và thông báo trên ứng dụng Vikki vào ngày 15 hàng tháng (ngày chốt sao kê)."
+        },
+        {
+          "title": "Tôi không nhận được sao kê tháng này phải làm gì?",
+          "content": "Kiểm tra: <ul><li>(1) Hộp thư Rác (Spam/Junk) trong email; </li><li>(2) Mục <strong>\"Thông báo\"</strong> (biểu tượng chuông) trên app Vikki. Bạn cũng có thể xem sao kê bất cứ lúc nào trong app tại mục <strong>\"Thẻ\"</strong> chọn <strong>\"Sao kê thẻ\"</strong>.</li></ul>"
+        },
+        {
+          "title": "Tôi xem lịch sử giao dịch thẻ VikkiGO+ ở đâu?",
+          "content": "Bạn có thể xem toàn bộ lịch sử giao dịch trên ứng dụng Vikki tại mục <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+."
+        },
+        {
+          "title": "Làm thế nào để xuất sao kê dạng PDF?",
+          "content": "Bạn vào mục <strong>\"Sao kê\"</strong> trên ứng dụng Vikki và chọn chức năng <strong>\"Tải về\"</strong> để xuất file sao kê dạng PDF."
+        },
+        {
+          "title": "Tại sao tôi thấy dư nợ trong khi sao kê chưa chốt?",
+          "content": "Ứng dụng Vikki cập nhật dư nợ theo thời gian thực ngay khi giao dịch phát sinh. Dư nợ hiện tại = tổng tiền đã chi tiêu đến thời điểm kiểm tra. Dư nợ cuối kỳ = tổng số tiền được chốt vào ngày 15 hàng tháng."
+        },
+        {
+          "title": "Tôi trả thiếu vài nghìn so với sao kê có ảnh hưởng không?",
+          "content": "Có ảnh hưởng. Nếu số tiền đóng nhỏ hơn khoản tối thiểu, bị tính phí phạt trả chậm và ảnh hưởng lịch sử tín dụng. Nên dùng tính năng <strong>\"Sao chép số tiền\"</strong> trên app khi thanh toán để tránh sai sót."
+        }
+      ]
+    },
+    {
+      "title": "H. BẢO MẬT VÀ AN TOÀN GIAO DỊCH",
+      "children": [
+        {
+          "title": "Tôi quên PIN thẻ VikkiGO+ phải làm gì?",
+          "content": "Đặt lại PIN mới trực tiếp trên app Vikki: Đăng nhập <strong>\"THẺ\"</strong> chọn thẻ VikkiGO+ <strong>\"Quản lý thẻ\"</strong> <strong>\"Đổi mã PIN\"</strong> Nhập PIN mới Xác thực để hoàn tất. Mã PIN mới có hiệu lực ngay sau khi thay đổi thành công."
+        },
+        {
+          "title": "Tôi nhập sai PIN quá 3 lần bị khóa thẻ thì làm sao?",
+          "content": "Bạn vào ứng dụng Vikki <strong>\"THẺ\"</strong> <strong>\"Quản lý thẻ\"</strong> để tạo lại mã PIN mới."
+        },
+        {
+          "title": "PIN thẻ và mật khẩu đăng nhập ứng dụng Vikki có giống nhau không?",
+          "content": "Không. PIN thẻ và mật khẩu đăng nhập là hai loại mã khác nhau, dùng cho các mục đích xác thực riêng biệt để tăng cường bảo mật."
+        },
+        {
+          "title": "Vikki Bank có giới hạn số lần đổi PIN không? Có thu phí không?",
+          "content": "Vikki Bank không giới hạn số lần đổi PIN và không thu phí đổi PIN."
+        },
+        {
+          "title": "Tôi nhận được OTP dù không thực hiện giao dịch, phải làm gì?",
+          "content": "Có thể có giao dịch đang thực hiện bằng thông tin thẻ của bạn. Hãy khóa thẻ ngay trên ứng dụng Vikki và liên hệ Vikki Care <strong>19006608</strong> để kiểm tra kịp thời."
+        },
+        {
+          "title": "Tôi nghi ngờ bị lộ thông tin thẻ VikkiGO+ thì làm gì?",
+          "content": "Khóa thẻ ngay: <ul><li>(1) App Vikki <strong>\"THẺ\"</strong> <strong>\"Khóa thẻ tạm thời\"</strong>; hoặc </li><li>(2) Gọi <strong>19006608</strong>. Sau khi khóa, yêu cầu phát hành thẻ thay thế trên app hoặc liên hệ Vikki Care để hủy thẻ cũ và phát hành thẻ mới.</li><ul>"
+        },
+        {
+          "title": "Nếu mất cả điện thoại lẫn thẻ cùng lúc, tôi phải làm gì?",
+          "content": "Gọi ngay Vikki Care <strong>19006608</strong> từ điện thoại khác để yêu cầu khóa đồng thời cả thẻ và tài khoản ứng dụng khẩn cấp nhằm đảm bảo an toàn tài sản."
+        },
+        {
+          "title": "Thanh toán Contactless trên thẻ VikkiGO+ có an toàn không?",
+          "content": "Có. Tính năng Contactless áp dụng tiêu chuẩn bảo mật theo quy định của NHNN Việt Nam và tiêu chuẩn quốc tế Mastercard. Với giao dịch giá trị lớn, hệ thống có thể yêu cầu nhập PIN để xác thực bổ sung."
+        },
+        {
+          "title": "Thẻ VikkiGO+ bị kẹt trong máy ATM phải làm gì?",
+          "content": "Khóa thẻ ngay trên ứng dụng Vikki và liên hệ ngân hàng sở hữu máy ATM nơi thực hiện giao dịch, hoặc gọi Vikki Care <strong>19006608</strong> để được hỗ trợ."
+        },
+        {
+          "title": "Gặp sự cố rút tiền ATM bị thông báo thẻ không hợp lệ thì làm gì?",
+          "content": "Liên hệ qua tổng đài <strong>19006608</strong> hoặc đến Chi nhánh/Phòng Giao dịch Vikki Bank gần nhất để được hỗ trợ xử lý."
+        }
+      ]
+    },
+    {
+      "title": "I. ƯU ĐÃI",
+      "children": [
+        {
+          "title": "Tôi có thể xem các thông tin về ưu đãi thẻ VikkiGO+ ở đâu?",
+          "content": "Thông tin ưu đãi thẻ được niêm yết trên trang chủ https://vikkibank.vn/. Chọn mục <strong>\"Ưu đãi\"</strong> , sau đó chọn <strong>\"Ưu đãi thẻ\"</strong>. Ngoài ra, có thể theo dõi trên CVP Long Form của sản phẩm trên App và thông báo OTT theo từng thời kỳ."
+        },
+        {
+          "title": "Khi tôi có khiếu nại về chương trình ưu đãi, tôi phải thực hiện như thế nào?",
+          "content": "Tổng đài <strong>19006608</strong> đang là tổng đài tiếp nhận khiếu nại về ưu đãi dành cho chủ thẻ. "
+        }
+      ]
+    },
+    {
+      "title": "J. CẤP LẠI, THAY THẾ VÀ ĐÓNG THẺ",
+      "children": [
+        {
+          "title": "Tôi bị mất thẻ VikkiGO+ phải làm gì?",
+          "content": "Bạn cần: <ul><li>(1) Ngay lập tức khóa thẻ trên ứng dụng Vikki hoặc gọi Vikki Care <strong>19006608</strong>; </li><li>(2) Yêu cầu phát hành thẻ thay thế trực tiếp trên ứng dụng Vikki hoặc đến Chi nhánh/PGD Vikki Bank gần nhất.</li><ul>"
+        },
+        {
+          "title": "Có thể yêu cầu cấp lại thẻ VikkiGO+ khi thẻ còn hạn không?",
+          "content": "Có. Bạn có thể yêu cầu cấp lại thẻ VikkiGO+ khi thẻ bị mất, hỏng hoặc khi cần thay đổi thông tin theo quy định áp dụng từng thời kỳ."
+        },
+        {
+          "title": "Tôi mất thẻ và đã khóa. Sau 1 tháng tìm lại được, có dùng tiếp không?",
+          "content": "Không nên. Bạn nên yêu cầu cấp lại thẻ mới để đảm bảo an toàn tuyệt đối."
+        },
+        {
+          "title": "Tôi muốn đóng thẻ VikkiGO+ thì làm thế nào?",
+          "content": "Bạn cần: <ul><li>(1) Tất toán toàn bộ dư nợ (nếu có); </li><li>(2) Liên hệ Vikki Care <strong>19006608</strong> để được hướng dẫn thủ tục chấm dứt sử dụng thẻ theo quy định.</li></ul><p><strong>Lưu ý:</strong> đóng thẻ trong vòng 12 tháng đầu có thể phát sinh phí thanh lý.</p>"
+        }
+      ]
+    }
+  ]
+}

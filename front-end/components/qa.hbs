@@ -1,0 +1,19 @@
+<div class='accordion js-accordion'>
+  {{#each qa}}
+    <div class='accordion-item'>
+      <button class='accordion-header'>
+        <span>
+          {{title}}
+        </span>
+        <span class='icon'>
+          <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+          </svg>
+        </span>
+      </button>
+      <div class='accordion-content'>
+        {{{content}}}
+      </div>
+    </div>
+  {{/each}}
+</div>

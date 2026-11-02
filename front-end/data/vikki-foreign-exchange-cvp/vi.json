@@ -1,0 +1,185 @@
+{
+  "title": "Đổi ngoại tệ | VikkiBank",
+  "language": "vi",
+  "filename": "index",
+  "hasTopSpace": true,
+  "hasBackground": false,
+  "layout": "template",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Điều khoản & Điều kiện",
+          "text": "Điều khoản & Điều kiện",
+          "iconSrc": "./assets/info.svg",
+          "popup": "/vikki-cvp/vikki-foreign-exchange-cvp/vi/tc.html"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "src": "./assets/intro.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/promotion.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/new-version.png"
+    },
+    {
+      "type": "slider",
+      "className": "section custom",
+      "title": {
+        "src": "./assets/buy-forex.png"
+      },
+      "items": [
+        {
+          "src": "./assets/slide-1.png"
+        },
+        {
+          "src": "./assets/slide-2.png"
+        },
+        {
+          "src": "./assets/slide-3.png"
+        },
+        {
+          "src": "./assets/slide-4.png"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/service-hours.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/FAQs.png"
+      },
+      "button": {
+        "text": "Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Mua Ngoại tệ trên App Vikki là gì?",
+          "content": "<p>Vikki Bank cung cấp dịch vụ Mua Ngoại tệ chủ động trên App Vikki dành cho bạn khi sở hữu vé máy bay chặng quốc tế. Bạn có thể dễ dàng đặt mua ngoại tệ trực tuyến ngay trên App Vikki – nhanh chóng, linh hoạt và tiện lợi. Ngoại tệ sẽ được nhận trực tiếp tại Điểm giao dịch Vikki Bank mà bạn lựa chọn.</p><p>(Lưu ý: Thời gian đặt lệnh vào các ngày trong tuần từ Thứ Hai đến Thứ Sáu từ 8:30 - 16:30, ngoại trừ ngày lễ)</p>"
+        },
+        {
+          "title": "Tại sao tôi nên lựa chọn Mua Ngoại tệ trên App Vikki thay vì giao dịch tại các ngân hàng khác",
+          "content": "<p>Các ưu đãi vượt trội khi Mua Ngoại tệ trên App Vikki:</p><ul><li>Tỷ giá hấp dẫn, cạnh tranh giúp bạn tối ưu chi phí.</li><li>Thời gian đặt mua linh hoạt, thao tác ngay trên App Vikki.</li><li>Giao dịch an toàn, minh bạch, thông tin đặt mua được lưu trong lịch sử giao dịch.</li><li>Nhận ngoại tệ dễ dàng trên toàn quốc tại các Điểm giao dịch Vikki Bank.</li></ul>"
+        },
+        {
+          "title": "Điều kiện để Mua Ngoại tệ trên App Vikki",
+          "content": "<p>Điều kiện để khách hàng thực hiện Mua Ngoại tệ với App Vikki:</p><ul><li>Đã có tài khoản thanh toán VikkiME mở thành công từ 17/2/2025, tài khoản GenV hoặc đã chuyển đổi từ khách hàng Vikki by HDBank thành Vikki Bank.</li><li>Sở hữu vé bay chặng quốc tế của Vietjet Air hoặc các hãng hàng không khác. Không bắt buộc phải có vé chiều về.</li></ul>"
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "no-bg",
+      "termsButtonFullW": {
+        "title": "Điều khoản & Điều kiện",
+        "popup": "/vikki-cvp/vikki-foreign-exchange-cvp/vi/tc.html",
+        "text": "Điều khoản & Điều kiện"
+      }
+    }
+    
+  ],
+  "qaGroup": [
+    {
+      "title": "Đổi ngoại tệ",
+      "children": [
+        {
+          "title": "Mua Ngoại tệ trên App Vikki là gì?",
+          "content": "<p>Vikki Bank cung cấp dịch vụ Mua Ngoại tệ chủ động trên App Vikki dành cho bạn khi sở hữu vé máy bay chặng quốc tế. Bạn có thể dễ dàng đặt mua ngoại tệ trực tuyến ngay trên App Vikki – nhanh chóng, linh hoạt và tiện lợi. Ngoại tệ sẽ được nhận trực tiếp tại Điểm giao dịch Vikki Bank mà bạn lựa chọn.</p><p>(Lưu ý: Thời gian đặt lệnh vào các ngày trong tuần từ Thứ Hai đến Thứ Sáu từ 8:30 - 16:30, ngoại trừ ngày lễ)</p>"
+        },
+        {
+          "title": "Tại sao tôi nên lựa chọn Mua Ngoại tệ trên App Vikki thay vì giao dịch tại các ngân hàng khác",
+          "content": "<p>Các ưu đãi vượt trội khi Mua Ngoại tệ trên App Vikki:</p><ul><li>Tỷ giá hấp dẫn, cạnh tranh giúp bạn tối ưu chi phí.</li><li>Thời gian đặt mua linh hoạt, thao tác ngay trên App Vikki.</li><li>Giao dịch an toàn, minh bạch, thông tin đặt mua được lưu trong lịch sử giao dịch.</li><li>Nhận ngoại tệ dễ dàng trên toàn quốc tại các Điểm giao dịch Vikki Bank.</li></ul>"
+        },
+        {
+          "title": "Điều kiện để Mua Ngoại tệ trên App Vikki",
+          "content": "<p>Điều kiện để khách hàng thực hiện Mua Ngoại tệ với App Vikki:</p><ul><li>Đã có tài khoản thanh toán VikkiME mở thành công từ 17/2/2025, tài khoản GenV hoặc đã chuyển đổi từ khách hàng Vikki by HDBank thành Vikki Bank.</li><li>Sở hữu vé bay chặng quốc tế của Vietjet Air hoặc các hãng hàng không khác. Không bắt buộc phải có vé chiều về.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể đặt Mua Ngoại tệ trên App Vikki như thế nào?",
+          "content": "<p>Bạn có thể đặt Mua Ngoại tệ trên App Vikki theo hướng dẫn sau:</p><ul><li>Bước 1: Đăng nhập vào App Vikki.</li><li>Bước 2: Chọn \"Mua Ngoại tệ\".</li><li>Bước 3: Chọn loại tiền tệ, chọn \"Mua\".</li><li>Bước 4: Nhập số tiền muốn mua chọn \"Tiếp tục\".</li><li>Bước 5: Cung cấp thông tin chuyến bay, hành khách và mục đích để Mua Ngoại tệ.</li><li>Bước 6: Chọn Điểm giao dịch Vikki Bank mà bạn có thể đến để nhận ngoại tệ.</li><li>Bước 7: Kiểm tra lại thông tin cá nhân & số tiền yêu cầu, chọn \"Xác nhận đặt mua\".</li><li>Bước 8: Xác thực giao dịch, hệ thống sẽ chuyển đến màn hình thanh toán thành công.</li><li>Bước 9: Chọn \"Xem thông tin nhận ngoại tệ\" để chuẩn bị các hồ sơ và thủ tục nhận ngoại tệ cần thiết.</li></ul><p>Tại màn hình thông tin nhận ngoại tệ sẽ có mã giao dịch, thông tin chi nhánh nhận ngoại tệ, thông tin chuyến bay và thông tin các giấy tờ cần thiết, bạn vui lòng mang mã này và các giấy tờ liên quan tới Chi nhánh/PGD Vikki Bank đã chọn trước đó để nhận ngoại tệ.</p><p>Lưu ý: Bạn cần đến nhận ngoại tệ trước 16:30 trong vòng 2 ngày tiếp theo kể từ thời điểm đặt mua (không bao gồm thứ Bảy, Chủ nhật và ngày Lễ), đảm bảo trước thời gian khởi hành tối thiểu 4 giờ.</p>"
+        },
+        {
+          "title": "Tôi có thể đặt lệnh Mua Ngoại tệ trên App Vikki trong khung thời gian nào?",
+          "content": "<ul><li>Bạn có thể đặt lệnh Mua Ngoại tệ từ 8:30 – 16:30, từ thứ Hai đến thứ Sáu (trừ ngày lễ).</li><li>Lệnh đặt phải được thực hiện chậm nhất 01 ngày làm việc trước ngày khởi hành.</li><li>Sau khi đặt lệnh thành công, bạn cần đến Điểm giao dịch Vikki Bank đã chọn để nhận tiền mặt trước 16:30 trong vòng 02 ngày làm việc kể từ thời điểm đặt mua.</li></ul>"
+        },
+        {
+          "title": "Các loại ngoại tệ nào tôi có thể đặt mua trên App Vikki?",
+          "content": "<p>Danh sách các ngoại tệ cho phép áp dụng là: USD, AUD, THB, EUR, JPY, SGD, GBP, CAD.</p><p>Tuy nhiên, tùy theo điểm đến của chặng bay, Vikki chỉ hỗ trợ 2 loại ngoại tệ cho mỗi chuyến bay là loại tiền tệ quốc gia bạn sắp đến hoặc USD.</p>"
+        },
+        {
+          "title": "Hạn mức tối thiểu tôi có thể đặt Mua Ngoại tệ trên App Vikki là bao nhiêu?",
+          "content": "<p>Hạn mức tối thiểu sẽ được áp dụng tùy theo từng loại ngoại tệ:</p><ul><li>GBP: tối thiểu 50 GBP.</li><li>AUD, CAD, EUR, USD, SGD: tối thiểu 100 đơn vị ngoại tệ (ví dụ: 100 USD, 100 EUR, …).</li><li>JPY, THB: tối thiểu 1,000 đơn vị ngoại tệ (ví dụ: 1,000 JPY, 1,000 THB).</li></ul>"
+        },
+        {
+          "title": "Tôi có thể sử dụng tài khoản nào để thanh toán Mua Ngoại tệ trên App Vikki?",
+          "content": "<p>Bạn chỉ có thể thanh toán bằng nguồn tiền tài khoản thanh toán VikkiME. Hiện tại, Vikki chưa hỗ trợ thanh toán từ nguồn tiền khác như tài khoản tiết kiệm hoặc hạn mức thấu chi.</p>"
+        },
+        {
+          "title": "Tôi có thể nhận tiền tại Điểm giao dịch Vikki Bank khác với thông tin tôi đã chọn không?",
+          "content": "<p>Bạn cần đến đúng Điểm giao dịch Vikki Bank đã chọn trước đó để nhận ngoại tệ, hiện tại Vikki chưa hỗ trợ thay đổi Điểm giao dịch bạn đã chọn ban đầu.</p>"
+        },
+        {
+          "title": "Tôi có cần mang giấy tờ gì khi ra quầy nhận ngoại tệ?",
+          "content": "<p>Bạn vui lòng chuẩn bị các giấy tờ liên quan đến chuyến bay khi đến Điểm giao dịch Vikki Bank để nhận ngoại tệ:</p><ul><li>Vé máy bay kèm chứng từ chứng minh đã được thanh toán.</li><li>Passport/ CCCD.</li><li>Mã giao dịch/ thông báo Mua Ngoại tệ trên App Vikki.</li><li>Đối với mục đích du học: bạn vui lòng mang thêm giấy báo nhập học.</li><li>Đối với mục đích chữa bệnh: bạn vui lòng mang thêm giấy tờ khám chữa bệnh như: giấy tiếp nhận khám chữa bệnh của cở sở chữa bệnh nước ngoài hoặc giấy giới thiệu ra nước ngoài chữa bệnh, giấy thông báo hoặc dự tính chi phí của cở sở chữa bệnh nước ngoài.</li></ul><p>Lưu ý: Trường hợp không có chứng từ thanh toán:</p><ul><li>Nếu ngân hàng xác minh được vé đã thanh toán. ĐVKD có thể xem xét hỗ trợ.</li><li>Nếu không xác minh được. ĐVKD yêu cầu bổ sung thêm chứng từ thanh toán.</li></ul>"
+        },
+        {
+          "title": "Tôi có thể nhờ người thân ra quầy nhận tiền giúp không?",
+          "content": "<p>Hiện tại, Vikki chỉ hỗ trợ chính chủ tài khoản và là hành khách trên chuyến bay được phép đặt Mua Ngoại tệ trên App Vikki và trực tiếp đến nhận ngoại tệ tại Điểm giao dịch Vikki Bank.</p>"
+        },
+        {
+          "title": "Tôi có thể xem lại lịch sử mua ngoại tệ của tôi ở đâu trên App Vikki?",
+          "content": "<p>Để kiểm tra lại thông tin các giao dịch mua ngoại tệ trước đó, bạn vào mục \"Mua Ngoại tệ\", sau đó chọn \"Lịch sử đặt mua\". Tại đây, bạn sẽ thấy đầy đủ thông tin chi tiết về giao dịch trước đó bạn đã mua ngoại tệ bao gồm cả giao dịch thành công/ giao dịch thất bại.</p>"
+        },
+        {
+          "title": "Nếu tôi không ra quầy nhận ngoại tệ, thì phần tiền tạm ứng của tôi sẽ xử lý như thế nào?",
+          "content": "<p>Sau 02 ngày làm việc kể từ khi bạn đặt mua ngoại tệ thành công, nếu bạn không đến nhận tại Điểm giao dịch Vikki Bank theo thông tin đã đăng ký, hệ thống sẽ tự động hủy giao dịch. Số tiền tạm giữ (treo) của bạn sẽ được hoàn trả vào tài khoản thanh toán của bạn sau khi hoàn tất thủ tục và trừ đi các khoản phí (nếu có).</p>"
+        },
+        {
+          "title": "Nếu giao dịch mua ngoại tệ thất bại, hoặc bị hủy thì bao lâu tôi sẽ nhận lại được tiền tạm ứng ban đầu?",
+          "content": "<ul><li>Nếu giao dịch thanh toán mua ngoại tệ thất bại, bạn sẽ không bị trừ tiền.</li><li>Nếu giao dịch thanh toán mua ngoại tệ bị hủy, hệ thống sẽ hoàn tiền ngay và tính phí (nếu có).</li></ul>"
+        },
+        {
+          "title": "Nếu tôi không đến nhận ngoại tệ hoặc hủy không nhận nữa thì phí hủy được tính như thế nào?",
+          "content": "<p>Phí phạt hủy mua ngoại tệ = số tiền tạm giữ khi đặt mua ngoại tệ - (số lượng ngoại tệ*tỉ giá mua lại của Vikki Bank tại thời điểm hủy) (nếu là số dương).</p><p>Số tiền trả lại = số tiền giữ ban đầu - phí phạt.</p>"
+        },
+        {
+          "title": "Nếu đến ngày nhận ngoại tệ tại Điểm giao dịch Vikki Digital Bank mà tỷ giá có sự thay đổi so với lúc đặt mua ngoại tệ trên App Vikki, tôi có phải bù thêm hay nhận lại phần tỷ giá chênh lệch không?",
+          "content": "<p>Bạn hoàn toàn yên tâm, Vikki sẽ áp dụng tỷ giá tại thời điểm bạn đặt Mua Ngoại tệ. Vì vậy, bạn không phải bù thêm hay nhận lại phần chênh lệch nếu có thay đổi tỷ giá vào ngày nhận tiền.</p>"
+        },
+        {
+          "title": "Nếu tôi đã thực hiện đặt lệnh mua ngoại tệ thành công cho một chuyến bay nhưng chưa hết hạn mức tối đa, thì tôi có thể tiếp tục thao tác đặt mua thêm hạn mức còn lại cho cùng chuyến bay đó không?",
+          "content": "<ul><li>Mỗi khách hàng (theo một số hộ chiếu) cho một lần xuất cảnh chỉ được mua tối đa 5,000 USD hoặc ngoại tệ khác quy đổi tương đương.</li><li>Nếu vẫn còn trong thời gian hợp lệ để mua ngoại tệ cho chuyến bay, bạn có thể đặt mua thêm phần hạn mức còn lại, miễn tổng số ngoại tệ mua không vượt quá hạn mức nêu trên.</li></ul>"
+        },
+        {
+          "title": "Tôi sẽ nhận thông báo đặt mua qua đâu?",
+          "content": "<p>Sau khi bạn đăng ký Mua Ngoại tệ thành công, hệ thống sẽ gửi thông báo xác nhận qua App Vikki.</p>"
+        },
+        {
+          "title": "Trường hợp tôi mua ngoại tệ trên app nhưng điền sai thông tin Hộ chiếu, Tôi có cần hủy lệnh đặt mua ngoại tệ này hay không, Trường hợp nếu phải hủy vậy sẽ báo phí và KH có thể đặt lại ngay trong ngày hay không?",
+          "content": "<p>Trong trường hợp Bạn mua ngoại tệ trên app nhưng nhập sai thông tin hộ chiếu, Bạn không cần hủy lệnh đặt mua.</p><p>Bạn chỉ cần mang hộ chiếu bản gốc đến Chi nhánh/Phòng giao dịch đã đăng ký nhận ngoại tệ để được ngân hàng hỗ trợ điều chỉnh lại thông tin.</p><p>Bạn yên tâm, việc điều chỉnh này không phát sinh phí và không ảnh hưởng đến lệnh mua đã đặt ạ.</p>"
+        },
+        {
+          "title": "Tôi đặt mua ngoại tệ trên App Vikki có mất phí không?",
+          "content": "<p>Dạ hiện tại việc đặt mua ngoại tệ trên App Vikki không thu phí giao dịch; VikkiBank chỉ thực hiện thu phí kiểm đếm ngoại tệ (nếu có) theo quy định của VikkiBank từng thời kỳ và Khách hàng có trách nhiệm chi trả phí này. Để làm rõ, phí kiểm đếm là phí dịch vụ tiền mặt, phát sinh từ hoạt động giao nhận, không cấu thành chi phí, tỷ giá hoặc phí giao dịch ngoại hối.</p>"
+        }
+      ]
+    }
+  ]
+}

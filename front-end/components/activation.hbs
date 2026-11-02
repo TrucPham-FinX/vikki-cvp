@@ -1,0 +1,46 @@
+<div class='gjs-row container p-1 {{#if bgClass}}{{bgClass}}{{else}}bg-green{{/if}} {{#if className}}{{className}}{{/if}}'>
+    <div class='gjs-cell'>
+    <div class='flex g-2'>
+        {{#if title}}
+        <img src='{{title.src}}' class='section' />
+        {{/if}}
+
+        {{#if image}}
+        <img src='{{image.src}}' class='section' />
+        {{/if}}
+
+        {{#if termsButtonFullW}}
+        <div class="g-1 full-w">
+            <span
+            class='bg-transparent button'
+            data-title="{{termsButtonFullW.title}}"
+            data-popup='{{termsButtonFullW.popup}}'
+            >
+            {{termsButtonFullW.text}}
+            </span>
+        </div>
+        {{/if}}
+
+        <div class='button-wrap g-1'>
+        {{#if feeButton}}
+            <span
+            class='bg-transparent button'
+            data-title="{{feeButton.title}}"
+            data-popup='{{feeButton.popup}}'
+            >
+            {{feeButton.text}}
+            </span>
+        {{/if}}
+        {{#if termsButton}}
+            <span
+            class='bg-transparent button'
+            data-title="{{termsButton.title}}"
+            data-popup='{{termsButton.popup}}'
+            >
+            {{termsButton.text}}
+            </span>
+        {{/if}}
+        </div>
+    </div>
+    </div>
+</div>

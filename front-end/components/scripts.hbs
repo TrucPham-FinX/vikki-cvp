@@ -1,0 +1,311 @@
+{{!-- prettier-ignore --}}
+<script>
+    function initAccordion(root, options = {}) {
+      const { multiple = false, defaultOpenIndex = null } = options;
+
+      const items = root.querySelectorAll('.accordion-item');
+
+      items.forEach((item, index) => {
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
+
+        header.addEventListener('click', () => {
+          const isActive = item.classList.contains('active');
+
+          if (!multiple) {
+            items.forEach((i) => {
+              i.classList.remove('active');
+              i.querySelector('.accordion-content').style.maxHeight = null;
+            });
+          }
+
+          if (!isActive) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          } else {
+            item.classList.remove('active');
+            content.style.maxHeight = null;
+          }
+        });
+
+        if (defaultOpenIndex === index) {
+          item.classList.add('active');
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+      });
+    }
+
+    function initAccordionsIn(root) {
+      root.querySelectorAll('.js-accordion').forEach((acc) => {
+        initAccordion(acc);
+      });
+    }
+
+    initAccordionsIn(document);
+  </script>
+
+{{!-- prettier-ignore --}}
+<script>
+    const popup = document.getElementById('popup');
+    const popupBody = document.getElementById('popupBody');
+    const closeBtn = document.getElementById('popupClose');
+    const qaTemplate = document.getElementById('qaTemplate');
+    const loading = document.getElementById('loading')
+    const popupTitle = document.getElementById('popupTitle')
+
+    document.querySelectorAll('[data-popup]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const type = btn.dataset.popup;
+        const title = btn.dataset.title;
+       
+        openPopup(type, title);
+      });
+    });
+
+    if(closeBtn){
+      closeBtn.addEventListener('click', closePopup);
+    }
+    
+
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) closePopup();
+    });
+
+     function retryContent (type, iframe) {
+        iframe.src = type;
+        popupBody.appendChild(iframe);
+       
+        let timeout = setTimeout(() => {
+          retryContent(type, iframe)
+        }, 5000);
+
+        iframe.onload = () => {
+          loading.classList.remove('show');
+          clearTimeout(timeout);
+        };
+    }
+
+    function looksLikePdf(url) {
+      return /\.pdf($|\?)/i.test(url);
+    }
+   
+    function openPopup(type, title) {
+      popupBody.innerHTML = '';
+      const isLink = type.startsWith('https://') || type.startsWith('/')
+      const isPdfLink = looksLikePdf(type)
+
+     // if(title){
+         // popupTitle.textContent = title;
+     // }
+
+      if (!isLink) {
+        popupBody.appendChild(qaTemplate.content.cloneNode(true));
+        initAccordionsIn(popupBody);
+        loading.classList.remove('show');
+      } else {
+        if(title){
+          const titleEl = document.createElement('h2');
+          titleEl.className = 'popup-title';
+          titleEl.textContent = title;
+          popupBody.appendChild(titleEl);
+          popupBody.classList.add('pt-50')
+        }
+
+        const iframe = document.createElement('iframe');
+        iframe.className = 'popup-iframe';
+        if(isPdfLink){
+          retryContent(type, iframe)
+        } else {
+          iframe.src = type;
+          popupBody.appendChild(iframe);
+         loading.classList.remove('show');
+        }
+        
+      }
+     
+      popup.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePopup() {
+      loading.classList.add('show')
+      popup.classList.remove('show');
+      popupBody.innerHTML = '';
+      document.body.style.overflow = '';
+    }
+  </script>
+
+{{!-- prettier-ignore --}}
+<script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.4"></script>
+
+{{!-- prettier-ignore --}}
+<script type="text/javascript">
+    const body = document.getElementById('body');
+    const videoContainer = document.getElementById('banner-container');
+    const video = document.getElementById('banner-video');
+    const volumeIcon = document.getElementById('volume-icon');
+    const params = new URLSearchParams(window.location.search);
+    const hasTopSpace = params.get('hasTopSpace');
+
+    if (hasTopSpace === 'false') {
+      // body.style.paddingTop = '0';
+      body.classList.remove('hasTopSpace');
+    }
+    
+    if(videoContainer){
+      const videoSrc = {{#if bannerVideoHlsSrc}}{{{json bannerVideoHlsSrc}}}{{else}}'./assets/video/playlist.m3u8'{{/if}};
+      if (Hls.isSupported()) {
+        var hls = new Hls();
+        hls.loadSource(videoSrc);
+        hls.attachMedia(video);
+      } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = videoSrc;
+      } else {
+        video.src = './assets/video.mp4';
+      }
+
+      video.addEventListener('loadedmetadata', () => {
+        video.play().catch(() => {
+          console.log('Autoplay blocked');
+        });
+      });
+
+      // #video-container's height (see styles.hbs) is driven by --video-ar
+      // instead of a hardcoded ratio, so it stays correct no matter which
+      // video a given page loads.
+      const videoBox = document.getElementById('video-container');
+      const applyVideoRatio = () => {
+        if (videoBox && video.videoWidth && video.videoHeight) {
+          videoBox.style.setProperty('--video-ar', video.videoHeight / video.videoWidth);
+        }
+      };
+      video.addEventListener('loadedmetadata', applyVideoRatio);
+      applyVideoRatio();
+
+
+      videoContainer.addEventListener('click', () => {
+        video.muted = !video.muted;
+        volumeIcon.classList.toggle('muted', video.muted);
+        volumeIcon.classList.toggle('unmuted', !video.muted);
+
+        if (!video.paused) return;
+        video.play().catch(() => {});
+      });
+
+      const tryPlay = () => {
+        video.play().catch((err) => console.warn('Replay blocked:', err));
+        document.removeEventListener('touchstart', tryPlay);
+      };
+
+      tryPlay();
+      document.addEventListener('touchstart', tryPlay);
+    }
+
+</script>
+
+<script
+  src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-element-bundle.min.js'
+></script>
+<script
+  src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js'
+></script>
+
+{{!-- prettier-ignore --}}
+<script>
+  document.querySelectorAll('.center-swiper').forEach((swiper) => {
+  Object.assign(swiper, {
+    slidesPerView: 1.2,
+    centeredSlides: true,
+    spaceBetween: 12,
+    pagination: true
+  });
+
+  swiper.initialize();
+});
+
+</script>
+
+{{!-- prettier-ignore --}}
+<script>
+    function scrollToSection(target, options = {}) {
+      const { offset = 0, behavior = 'smooth' } = options;
+
+      const el =
+        typeof target === 'string' ? document.querySelector(target) : target;
+
+      if (!el) return;
+
+      let finalOffset = offset;
+
+      // ✅ check hasTopSpace → +25vw
+      if (document.body.classList.contains('hasTopSpace')) {
+        const vw25 = window.innerWidth * 0.25;
+        finalOffset += vw25;
+      }
+
+      const top =
+        el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+
+      window.scrollTo({
+        top,
+        behavior,
+      });
+    }
+
+    function initScrollToSection({ offset = 0 } = {}) {
+      document.querySelectorAll('[data-scroll]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          scrollToSection(btn.dataset.scroll, { offset });
+        });
+      });
+    }
+
+    initScrollToSection({ offset: 48 });
+  </script>
+
+{{!-- prettier-ignore --}}
+<script>
+  const btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      btn.classList.add('show');
+    } else {
+      btn.classList.remove('show');
+    }
+  });
+
+  btn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
+</script>
+
+{{!-- prettier-ignore --}}
+<script>
+  const popupDetail = document.getElementById('promo-detail-popup');
+  const iframeDetail = document.getElementById('promo-detail-frame');
+  const popupDetailClose = document.getElementById('popupDetail-close');
+
+  window.addEventListener('message', (e) => {
+    if (e.data?.type !== 'OPEN_PROMO_DETAIL') return;
+    openPromoDetail(e.data.id);
+  });
+
+  function openPromoDetail(id) {
+    iframeDetail.src = `/vikki-cvp/promotion/${id}.html`;
+    popupDetail.classList.add('show');
+    document.body.style.overflow = 'hidden';
+  }
+
+  if (popupDetailClose) {
+    popupDetailClose.addEventListener('click', closePromoDetail);
+  }
+
+  function closePromoDetail() {
+    iframeDetail.src = '';
+    popupDetail.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+</script>

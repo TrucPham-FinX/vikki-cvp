@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vikki Go | VikkiBank</title>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>
+    Vikki Go | VikkiBank
+  </title>
+  <meta name='description' content='' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  
+  <link
+    href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap'
+    rel='stylesheet'
+  />
+  <style>
+    :root,
+    :host {
+      --spacing: 0.25rem;
+    }
+  
+    * {
+      box-sizing: border-box;
+    }
+  
+    html,
+    body {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      padding-bottom:50px;
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+    }
+  
+    .block {
+      display: block;
+    }
+    .flex {
+      display: flex;
+    }
+    .\!w-\[70\%\] {
+      width: 70% !important;
+    }
+    .\!w-\[80\%\] {
+      width: 80% !important;
+    }
+    .w-full {
+      width: 100%;
+    }
+    .list-inside {
+      list-style-position: inside;
+      padding-left: 0;
+    }
+    .list-disc {
+      list-style-type: disc;
+    }
+    .p-1 {
+      padding: calc(var(--spacing) * 1);
+    }
+    .px-1 {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+    .px-3 {
+      padding-inline: calc(var(--spacing) * 3);
+    }
+    .px-2{
+      padding-inline: calc(var(--spacing) * 2);
+    }
+    .py-3 {
+      padding-top: calc(var(--spacing) * 3);
+      padding-bottom: calc(var(--spacing) * 3);
+    }
+    .pt-1 {
+      padding-top: calc(var(--spacing) * 1);
+    }
+    .pt-2 {
+      padding-top: calc(var(--spacing) * 2);
+    }
+    .pt-3 {
+      padding-top: calc(var(--spacing) * 3);
+    }
+    .pt-4{
+       padding-top: calc(var(--spacing) * 4);
+    }
+    .pb-1 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    .pb-5 {
+      padding-bottom: calc(var(--spacing) * 5);
+    }
+    .pb-3 {
+      padding-bottom: calc(var(--spacing) * 1);
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+  
+    .hasTopSpace {
+      padding-top: 25vw;
+    }
+    .hasBackground {
+      background: linear-gradient(
+        #FFFFFF,
+        #F2EBFF,
+        #FFFFFF
+      );
+    }
+  
+    #qa {
+      height: 40px;
+    }
+    .menu-top {
+      display: flex;
+      justify-content: space-around;
+      text-align: center;
+      height: 40px;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.875rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      background: #fff;
+    }
+    .hasTopSpace .menu-top {
+      top: 25vw;
+    }
+    .menu-top a {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      text-decoration: none;
+      color: rgba(14, 14, 15, 1);
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+    }
+    .gjs-cell {
+      width: 100%;
+    }
+  
+    .gjs-row {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: nowrap;
+      padding: 0px;
+    }
+  
+    .section {
+      margin: 0px auto 0px auto;
+      width: 100%;
+    }
+  
+    .container {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    button {
+      font-family: 'Be Vietnam Pro', sans-serif;
+      box-shadow: none;
+      background: none;
+      outline: none;
+      border: none;
+    }
+  
+    .solution-background {
+      background: linear-gradient(
+        180.02deg,
+        rgba(255, 183, 0, 0.2) -0.02%,
+        rgba(255, 149, 27, 0.2) 17.31%,
+        rgba(222, 0, 148, 0.2) 35.72%,
+        rgba(0, 0, 255, 0.2) 93.21%
+      );
+      padding-bottom: 5vh;
+    }
+  
+    .loan-gift-container {
+      /* margin-top: 3vh; */
+    }
+  
+    .register-container {
+      padding-bottom: 5vh;
+    }
+  
+    .loan-now-container {
+      padding-bottom: 5vh;
+      width: 100%;
+    }
+  
+    .disbursement-container {
+      margin-top: 5vh;
+    }
+  
+    .finance-container {
+      width: 100%;
+    }
+  
+    .absolute-row {
+      position: relative;
+      top: -20px;
+    }
+    .relative-row {
+      position: relative;
+    }
+    .show-detail-text {
+      position: relative;
+      cursor: pointer;
+      bottom: 20vw;
+      font-family: 'Be Vietnam Pro', sans-serif;
+      left: 7vw;
+      font-weight: 400;
+      font-size: 6vw;
+      line-height: 8vw;
+      letter-spacing: -0.26px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      color: #fff;
+      text-decoration-thickness: 0%;
+      text-decoration-skip-ink: auto;
+    }
+  
+    /* video */
+    #video-container {
+      display: flex;
+    }
+    #banner-container {
+      overflow: hidden;
+    }
+  
+    #video-container,
+    #section-1-cell,
+    #section-3-cell {
+      position: relative;
+    }
+  
+    #banner-video {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  
+    #volume-icon {
+      position: absolute;
+      width: auto;
+      height: auto;
+      top: 1vw;
+      left: 1vw;
+    }
+  
+    .fa-icon {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  
+    .muted .fa-icon.fa-volume-high {
+      display: none;
+    }
+  
+    .unmuted .fa-icon.fa-volume-xmark {
+      display: none;
+    }
+  
+    /* Real height instead of the old padding-bottom:177% hack — that hack's
+       size is capped by nothing, so on wide viewports (e.g. a Galaxy Fold
+       unfolded) it made the banner taller than the screen. --video-ar is set
+       from each video's own real dimensions once it loads (see scripts.hbs),
+       so this stays correct regardless of which video a page uses; 16/9 (the
+       current videos' real height:width, 9:16 portrait) is only the fallback
+       for the instant before that script runs. */
+    #video-container {
+      position: relative;
+      padding-bottom: 0;
+      height: calc(100vw * var(--video-ar, calc(16 / 9)));
+    }
+  
+    /* Accodion */
+    .accordion {
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 0;
+      line-height: 1.5;
+    }
+    .accordion * {
+      line-height: 22px;
+    }
+    .accordion ul {
+      padding-left: 10px;
+    }
+    .accordion-section {
+      background: rgb(240, 248, 233);
+      padding: 1rem;
+    }
+  
+    .accordion-item {
+      background: #fff;
+      box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      margin-top: 1rem;
+    }
+    .accordion-item:first-child {
+      margin-top: 0;
+    }
+  
+    .accordion-header {
+      width: 100%;
+      padding: 16px 20px;
+      background: none;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header span {
+      color: rgba(4, 11, 30, 0.92);
+    }
+  
+    .accordion-header .icon {
+      transition: transform 0.3s ease;
+      transform: rotate(180deg);
+    }
+  
+    .accordion-item.active .icon {
+      transform: rotate(0deg);
+    }
+  
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease;
+      padding: 0 20px;
+    }
+  
+    .accordion-item.active .accordion-content {
+      padding-bottom: 16px;
+    }
+  
+    .accordion-content p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+  
+    /* tooltip */
+    .tooltip-wrapper {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .tooltip-title {
+      width: 90%;
+    }
+    .tooltip-box {
+      background: #000;
+      color: #fff;
+      padding: 12px 14px;
+      border-radius: 8px;
+      width: 100%;
+      display: none;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+      /* arrow */
+    .arrow-up {
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 6px solid black;
+      display: none;
+      margin: 0 auto;
+    }
+    .tooltip-box::after {
+      content: "";
+      display: block;
+      border-width: 6px;
+      border-style: solid;
+      border-color: transparent transparent #000 transparent;
+    }
+    .vikki_flexi_button {
+      width: 25vw;
+    }
+    /* show tooltip */
+    .tooltip-wrapper.active .tooltip-box {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .tooltip-wrapper.active .arrow-up {
+      transition: opacity 0.5s ease;
+      display: block;
+    }
+    .spinnerKichHoatNgay {
+      width: 26px;
+      height: 26px;
+      border: 2px solid #ccc;
+      border-top: 2px solid #0000FF;
+      border-radius: 50%;
+      animation: spin 2s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    .loading-position {
+      position: absolute;
+      top: 53vw;
+      right: 8vw;
+    }
+    /* overlay */
+    .popup-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      transition: top 0.3s;
+      z-index: 9999;
+      top: 150%;
+    }
+    .hasTopSpace .popup-overlay.show {
+      top: 25vw;
+    }
+  
+    .popup-overlay.show {
+      top:0;
+    }
+    .popup-overlay .popup-close{
+      display: none;
+    }
+    .popup-overlay.show .popup-close{
+      display: block;
+    }
+  
+    .popup-content {
+      background: rgba(246, 247, 248, 1);
+      width: 100%;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+    }
+  
+    #promo-detail-popup  .popup-content{
+      height: 100%;
+    }
+  
+    .popup-body {
+      height: 100%;
+      overflow-y: auto;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    .popup-close {
+      position: fixed;
+      right: 0;
+      font-size: 28px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 99;
+      top: 0;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hasTopSpace .popup-close {
+      top: 25vw;
+    }
+    .popup-close img {
+      display: block;
+      width: 30px;
+      height: 30px;
+    }
+    .popup-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      min-height: 70vh;
+      background: #FFF
+    }
+    .popup-inner {
+      padding: 0px 10px 50px;
+    }
+  
+    /* slider */
+    swiper-container {
+      width: 100vw;
+    }
+  
+    swiper-slide {
+      padding: 15px;
+      margin-bottom: 15px;
+    }
+    .slide-img {
+      width: 100%;
+    }
+    .slide-img > span{
+      background: rgba(0, 0, 0, 0.04);
+      border-radius: 10%;
+      overflow: hidden;
+    }
+  
+    .slide-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+    }
+  
+    .swiper-slide-next {
+      left: -5vw;
+      z-index: 1;
+      animation-name: showNextSlide;
+      animation-duration: 0.5s;
+    }
+    .swiper-pagination {
+      background-color: red;
+    }
+    @keyframes showNextSlide {
+      0% {
+        left: 0%;
+      }
+  
+      100% {
+        left: -5vw;
+      }
+    }
+  
+    .swiper-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .bg-transparent {
+      background: rgba(76, 39, 39, 0.05);
+      border-radius: 50px;
+    }
+    .bg-transparent .menu-top {
+      height: 48px;
+    }
+    .button {
+      height: 48px;
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+  
+    /* background */
+  
+    .p-1 {
+      padding: 1rem;
+    }
+    .mb-1 {
+      margin-bottom: 1rem;
+    }
+    .pt-1 {
+      padding-top: 1rem;
+    }
+    .pt-2{
+      padding-top: 2rem;
+    }
+    .g-1 {
+      gap: 1rem;
+    }
+    .g-2 {
+      gap: 1.5rem;
+    }
+    .bg-gray {
+      padding-top: 2rem;
+    }
+    .bg-green {
+      background: linear-gradient(180deg, #f0f8e9 70.24%, #ffffff 100%);
+      border-radius: 50px 50px 0 0;
+      padding-top: 2rem;
+    }
+    .bg-gray-gradient {
+      background: linear-gradient(180deg, #f6f7f8 0%, #ffffff 100%);
+    }
+    [data-popup],
+    [data-scroll] {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .button-wrap {
+      display: flex;
+      gap: 10px;
+    }
+    .button-wrap > * {
+      width: calc(50% - 5px);
+    }
+  
+    /* Pagination wrapper */
+    swiper-container::part(pagination) {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: #f3f3f3;
+      padding: 8px 9px;
+      border-radius: 999px;
+      width: fit-content;
+      margin: 40px auto 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(10px);
+    }
+  
+    .hide-pagination::part(pagination) {
+      display: none;
+    }
+    .slide-container {
+      padding-top: 3rem;
+    }
+    swiper-container::part(bullet) {
+      width: 8px;
+      height: 8px;
+      background: #e0e0e0;
+      border-radius: 50%;
+      opacity: 1;
+      transition: all 0.3s ease;
+    }
+  
+    swiper-container::part(bullet-active) {
+      width: 20px;
+      height: 8px;
+      background: #0a46ff;
+      border-radius: 999px;
+    }
+  
+    .popup-title {
+      top: 0;
+      font-weight: bold;
+      left: 10px;
+      right: 10px;
+      text-align: center;
+      font-size: 17px;
+      color: rgba(1, 5, 15, 1);
+      margin: 0;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(246, 247, 248, 1);
+    }
+  
+    #backToTop {
+      opacity: 0;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      transform: translateY(10px);
+      position: fixed;
+      left: 16px;
+      bottom: 16px;
+      display: none;
+      z-index: 999;
+  
+      border-radius: 9999px;
+      cursor: pointer;
+      display: block;
+    }
+  
+    #backToTop.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .popup-close {
+      color: #333;
+    }
+  
+    .loading-overlay {
+      position: absolute;
+      inset: 0;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 100;
+  
+      display: none;
+    }
+    .loading-overlay.show{
+      display: flex;
+    }
+  
+    .spinner {
+      width: 39px;
+      height: 39px;
+      border: 3px solid #e5e7eb;
+      border-top-color: #111827;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  
+    .section-title{
+      text-align: center;
+    }
+  
+    .bg-blue{
+      background: rgba(237, 248, 255, 1);
+      border-radius: 50px 50px 0 0;
+    }
+  
+  </style></head>
+<body class="hasTopSpace" id="body">
+
+  <div id='qa'>
+  <div class='menu-top'>
+    <div>
+      <span data-popup='qa' data-title="Hỏi đáp">
+        <img src='./assets/qa.svg' />
+        <span>
+          Hỏi đáp
+        </span>
+      </span>
+    </div>
+    <div>
+      <span data-title="Giới thiệu" data-popup='/vikki-cvp/card-intro/vikki-go.html'>
+        <img src='./assets/info.svg' />
+        <span>
+          Giới thiệu
+        </span>
+      </span>
+    </div>
+    <div>
+      <span data-title="Ưu đãi" data-popup='/vikki-cvp/promotion/list.html?category=VIKKIGO_HDB'>
+        <img src='./assets/offer.svg' />
+
+        <span>
+          Ưu đãi
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+
+<div id='banner-container'>
+  <div id='video-container'>
+    <video
+      id='banner-video'
+      src='./assets/video.mp4'
+      poster='./assets/poster.jpg'
+      autoplay
+      playsinline
+      preload='auto'
+      muted
+      loop
+      webkit-playsinline
+      class='banner-video'
+    ></video>
+    <button id='volume-icon' class='volume-icon muted'>
+      <img src='./assets/icon-unmuted.svg' class='fa-icon fa-volume-high' />
+      <img src='./assets/icon-muted.svg' class='fa-icon fa-volume-xmark' />
+    </button>
+  </div>
+</div>
+<div id='intro' class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img
+      src='./assets/free-thuong-nien.png'
+      id='section-4-img'
+      class='section'
+    />
+  </div>
+</div>
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <span data-popup='/vikki-cvp/promotion/list.html?category=VIKKIGO_HDB' data-title="Ưu đãi">
+      <img src='./assets/offers.png' id='section-4-img' class='section' />
+    </span>
+  </div>
+</div>
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/ve-may-bay.png' class='section' />
+  </div>
+</div>
+
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/han-muc.png' class='section' />
+  </div>
+</div>
+
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/mien-lai.png' class='section' />
+  </div>
+</div>
+
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/tra-gop.png' class='section' />
+  </div>
+</div>
+<div class='gjs-row container'>
+  <div class='gjs-cell'>
+    <img src='./assets/mo-the.png' class='section block' />
+  </div>
+</div>
+
+<div class='gjs-row container pt-1 bg-yellow'>
+  <div class='gjs-cell text-center'>
+    <img src='./assets/title-tien-ich.png' class='section !w-[70%]' />
+    <swiper-container class='center-swiper'>
+      <swiper-slide>
+        <div class='slide-img'>
+          <img class='swiper-img' src='assets/slide-1.png' />
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class='slide-img'>
+          <img class='swiper-img' src='assets/slide-2.png' />
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class='slide-img'>
+          <img class='swiper-img' src='assets/slide-3.png' />
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  </div>
+</div>
+
+<div class='gjs-row container pt-4'>
+  <div class='gjs-cell text-center pt-2'>
+    <img src='./assets/title-su-kien.png' class='section !w-[70%]' />
+    <div class='slide-container' style=''>
+    <swiper-container class='center-swiper ' >
+      <swiper-slide>
+        <div class='slide-img'>
+          <span data-popup='https://vikkibank.vn/tra-gop-bang-the-tin-dung/' data-title='Sự kiện &amp; Khuyến mãi'>
+            <img class='swiper-img' src='assets/event-1.png' />
+          </span>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class='slide-img'>
+          <span data-popup='https://vikkibank.vn/vikki-nam-thu-hai-duoc-vinh-danh-tai-better-choice-awards-voi-2-giai-thuong-ve-doi-moi-sang-tao/' data-title='Sự kiện &amp; Khuyến mãi'>
+            <img class='swiper-img' src='assets/event-2.png' />
+          </span>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    </div>  </div>
+</div>
+
+<div class='gjs-row container pt-1'>
+  <div class='gjs-cell'>
+    <img src='./assets/bao-mat.png' class='section' />
+  </div>
+</div>
+
+<div class='pt-1'>
+  <div class='gjs-row container pt-1'>
+    <div class='gjs-cell text-center'>
+      <img src='./assets/title-san-sang.png' class='section !w-[80%]' />
+      <img src='./assets/the-vikki-go.png' class='section' />
+      <img src='./assets/tc.png' class='section' />
+    </div>
+  </div>
+
+  <div class='gjs-row container pt-1'>
+    <div class='gjs-cell'>
+      <img src='./assets/qa.png' class='section' />
+    </div>
+  </div>
+
+  <div class='container px-1'>
+    
+    <div class='pb-1 px-3'>
+      <div class='accordion js-accordion'>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Làm sao để sở hữu Thẻ tín dụng VikkiGO
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Bạn có thể đăng ký mở Thẻ tín dụng VikkiGO theo một trong các phương thức sau:</p><ul><li>Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki</li><li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Chủ thẻ có thể quản lý Thẻ tín dụng VikkiGO như thế nào?
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Chủ thẻ có thể dễ dàng quản lý Thẻ tín dụng VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki:</p><ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Sau khi nhận Thẻ tín dụng VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Sau khi nhận Thẻ tín dụng VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki.</p><p>Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.</p><p>Bạn có thể liên hệ Vikki Bank qua Tổng đài 19006608 để được hỗ trợ kịp thời</p>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Giới thiệu thẻ tín dụng VikkiGO
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <ul><li>Mở thẻ online 100%</li><li>Miễn phí thường niên</li><li>Dùng trước trả sau lên đến 45 ngày</li><li>Thanh toán không dùng tiền mặt</li><li>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Vì sao Quý khách nên có Thẻ tín dụng VikkiGO?
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <ul><li><p><strong>Mở thẻ online 100%:</strong> Mở thẻ nhanh chóng, thủ tục nhanh gọn hoàn toàn trực tuyến 100%, chi tiêu thanh toán trực tuyến trong thời gian đợi thẻ vật lý.</p></li><li><p><strong>Miễn phí thường niên:</strong> Miễn phí thường niên trọn đời.</p></li><li><p><strong>Dùng trước trả sau lên đến 45 ngày:</strong> Dùng trước tiền trong thẻ mà không cần thanh toán ngay số tiền đã sử dụng, thời gian miễn lãi lên đến 45 ngày.</p></li><li><p><strong>Thanh toán không dùng tiền mặt:</strong> Dùng thẻ để thanh toán hàng hóa, dịch vụ tại cửa hàng hoặc mua sắm online, giúp giảm thiểu rủi ro thiếu tiền mặt, mất tiền.</p></li><li><p><strong>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng:</strong> Trả góp linh hoạt 0% lãi suất với mức phí chuyển đổi ưu đãi cho từng kỳ hạn 3, 6, 9, 12 tháng.</p></li></ul>
+            </div>
+          </div>
+      </div>    </div>
+    <div class='px-3 pb-5 pt-3'>
+      <span class='bg-transparent button w-full' data-popup="qa" data-title="Hỏi đáp">
+        <img src='./assets/qa.svg' />
+        <span>
+          Hỏi đáp
+        </span>
+      </span>
+    </div>
+
+  </div>
+</div>
+
+<div class='gjs-row container p-1 bg-green'>
+  <div class='gjs-cell'>
+    <div class='flex g-2'>
+      <img src='./assets/title-kich-hoat.png' class='section' />
+
+      <img src='./assets/kich-hoat.png' class='section' />
+
+      <div class='button-wrap g-1'>
+        <span
+          class='bg-transparent button'
+          data-title="Xem biểu phí"
+          data-popup='https://vikkibank.vn/phi-va-bieu-phi-su-dung-the-tin-dung-vikkigo/'
+        >
+          Xem biểu phí
+        </span>
+        <span
+          class='bg-transparent button'
+          data-title="Điều khoản & điều kiện"
+          data-popup='https://docs.google.com/gview?embedded=true&url=https://vikki-cdn.prod.galaxyfinx.cloud/lending/cards/vikki-go/TnC_Credit.pdf'
+        >
+          Điều khoản & điều kiện
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <span id='backToTop'>
+    <img src='./assets/icon-btt.svg' />
+  </span>
+  
+  <div class='popup-overlay' id='popup'>
+    <button class='popup-close' id='popupClose'>
+      <img src='./assets/icon-x.svg' />
+    </button>
+    <div class='popup-content'>
+      <div class='popup-body' id='popupBody'></div>
+      <div class='loading-overlay show' id='loading'>
+        <span class='spinner'></span>
+      </div>
+    </div>
+  </div>
+  <div class='popup-overlay' id="promo-detail-popup">
+    <button class='popup-close' id='popupDetail-close'>
+      <img src='./assets/icon-x.svg' />
+    </button>
+  
+    <div class='popup-content'>
+      <iframe
+        id="promo-detail-frame"
+        class="popup-iframe"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+  
+  <template id='qaTemplate'>
+    <div class='popup-inner'>
+      <h2 class='popup-title'>
+        Hỏi đáp
+      </h2>
+      <div class='accordion js-accordion'>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Làm sao để sở hữu Thẻ tín dụng VikkiGO
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Bạn có thể đăng ký mở Thẻ tín dụng VikkiGO theo một trong các phương thức sau:</p><ul><li>Đăng ký mở thẻ ngay trên ứng dụng ngân hàng số Vikki</li><li>Đến bất kỳ Điểm giao dịch nào của Vikki Bank. Thông tin chi tiết Điểm giao dịch của Vikki Bank: https://vikkibank.vn/mang-luoi-hoat-dong-ngan-hang-so-vikki-digital-bank/</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Chủ thẻ có thể quản lý Thẻ tín dụng VikkiGO như thế nào?
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Chủ thẻ có thể dễ dàng quản lý Thẻ tín dụng VikkiGO một cách an toàn trên ứng dụng ngân hàng số Vikki:</p><ul><li>Kích hoạt thẻ</li><li>Tạo mã PIN</li><li>Khóa thẻ</li><li>Tra cứu thông tin thẻ</li><li>Tra cứu giao dịch thẻ, sao kê thẻ</li><li>Và các tính năng khác được Vikki Bank triển khai trong từng thời kỳ</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Sau khi nhận Thẻ tín dụng VikkiGO, tôi cần lưu ý gì khi sử dụng thẻ
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Sau khi nhận Thẻ tín dụng VikkiGO, Bạn có thể kích hoạt thẻ trên ứng dụng ngân hàng số Vikki.</p><p>Đồng thời lưu ý bảo mật thông tin Thẻ, PIN, OTP và không cung cấp thông tin cho người khác.</p><p>Bạn có thể liên hệ Vikki Bank qua Tổng đài 19006608 để được hỗ trợ kịp thời</p>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Giới thiệu thẻ tín dụng VikkiGO
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <ul><li>Mở thẻ online 100%</li><li>Miễn phí thường niên</li><li>Dùng trước trả sau lên đến 45 ngày</li><li>Thanh toán không dùng tiền mặt</li><li>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Vì sao Quý khách nên có Thẻ tín dụng VikkiGO?
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <ul><li><p><strong>Mở thẻ online 100%:</strong> Mở thẻ nhanh chóng, thủ tục nhanh gọn hoàn toàn trực tuyến 100%, chi tiêu thanh toán trực tuyến trong thời gian đợi thẻ vật lý.</p></li><li><p><strong>Miễn phí thường niên:</strong> Miễn phí thường niên trọn đời.</p></li><li><p><strong>Dùng trước trả sau lên đến 45 ngày:</strong> Dùng trước tiền trong thẻ mà không cần thanh toán ngay số tiền đã sử dụng, thời gian miễn lãi lên đến 45 ngày.</p></li><li><p><strong>Thanh toán không dùng tiền mặt:</strong> Dùng thẻ để thanh toán hàng hóa, dịch vụ tại cửa hàng hoặc mua sắm online, giúp giảm thiểu rủi ro thiếu tiền mặt, mất tiền.</p></li><li><p><strong>Trả góp thuận tiện với mỗi chi tiêu từ 1 triệu đồng:</strong> Trả góp linh hoạt 0% lãi suất với mức phí chuyển đổi ưu đãi cho từng kỳ hạn 3, 6, 9, 12 tháng.</p></li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Làm sao để chi tiêu mua sắm online ngay khi được duyệt thẻ?
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Quý khách có thể chi tiêu mua sắm online trong khi chờ thẻ vật lý (thẻ cứng) bằng cách xem thông tin thẻ tại ứng dụng Vikki trước khi giao dịch.</p><ul><li>Bước 1: Đăng nhập vào ứng dụng Vikki của Quý khách</li><li>Bước 2: Chọn Thẻ tại màn hình chính tại ứng dụng Vikki</li><li>Bước 3: Chạm vào hình thẻ, xác thực để truy cập thông tin thẻ gồm có: Số thẻ, Tên chủ thẻ, Ngày hết hạn, số CVC và sử dụng các thông tin này để giao dịch trực tuyến</li></ul><p><strong>Lưu ý:</strong></p><p>Nhằm tránh các đối tượng lừa đảo sử dụng thông tin thẻ chiếm đoạn tiền, QUÝ KHÁCH KHÔNG CHIA SẺ THÔNG TIN THẺ CHO BẤT KỲ AI KỂ CẢ NHÂN VIÊN VIKKI bao gồm các thông tin:</p><ul><li>Số thẻ</li><li>Số CVC</li><li>Mã OTP</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Làm thế nào để thanh toán khi mua hàng online
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <ul><li>Bước 1: Mua hàng online tại các trang TMĐT: Shopee, Lazada, Tiktok… Quý khách nên mua hàng ở những trang nổi tiếng và phổ biến để đảm bảo an toàn giao dịch.</li><li>Bước 2: Chọn thanh toán bằng thẻ tín dụng tại bước thanh toán.</li><li>Bước 3: Chọn thêm thẻ mới và nhập thông tin theo yêu cầu. Việc thêm thẻ này giúp Quý khách thuận tiện thanh toán cho lần mua hàng kế tiếp tại trang TMĐT này.</li><li>Bước 4: Kiểm tra lại thông tin đơn hàng, số tiền cần thanh toán và xác nhận.</li><li>Bước 5: Bấm thanh toán và nhập mã OTP hoàn thành giao dịch.</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Cách kích hoạt thẻ cứng trước khi sử dụng
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Thẻ phi vật lý sẽ sẵn sàng để bạn chi tiêu ngay. Đối với thẻ vật lý, Quý khách có thể vào ứng dụng Vikki, lựa chọn thẻ cần kích hoạt và thực hiện theo hướng dẫn.</p>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Hướng dẫn sử dụng thẻ cứng
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p>Mua sắm tại cửa hàng có biểu tượng chấp nhận thẻ Mastercard.</p><ul><li>Bước 1: Quẹt/ chạm thẻ tại máy cà thẻ (POS).</li><li>Bước 2: Kiểm tra lại số tiền thanh toán trên hóa đơn.</li><li>Bước 3: Ký tên vào hóa đơn (nếu được yêu cầu).</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Lưu ý khi sử dụng thẻ
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p><strong>Nên:</strong></p><ul><li>Hãy luôn tìm kiếm các ưu đãi, giảm giá, khuyến mãi khi mua sắm bằng thẻ, sẽ giúp Quý khách tiết kiệm tiền.</li><li>Hãy đặt câu hỏi – Nếu có thắc mắc, hãy liên hệ DVKH Vikki 19006608.</li><li>Đặt lịch nhắc hẹn ngày đến hạn thanh toán và đảm bảo số dư tài khoản Vikki sẽ giúp Quý khách thanh toán đúng hạn, tránh phát sinh phí chậm thanh toán.</li><li>Kiểm tra sao kê hàng tháng để biết được Quý khách đã sử dụng bao nhiêu và phát hiện những giao dịch bất thường.</li></ul><p><strong>Không nên:</strong></p><ul><li>Không chia sẻ thông tin thẻ bao gồm số thẻ, số CVC, mã OTP với bất kỳ ai, kể cả nhân viên Vikki. Quý khách có thể bị mất tiền mà vẫn phải thanh toán số tiền bị mất đó.</li><li>Tuyệt đối không bấm vào các trang web hay đường link lạ để tránh lộ thông tin thẻ.</li><li>Không xem thường việc thẻ bị mất hoặc thất lạc – Thực hiện khóa thẻ ngay tại ứng dụng hoặc gọi DVKH Vikki 19006608 để tránh rủi ro.</li><li>Không bỏ qua các tin nhắn/ thông báo từ Vikki vì Quý khách có thể bỏ lỡ các thông tin quan trọng liên quan đến thẻ của mình.</li></ul>
+            </div>
+          </div>
+          <div class='accordion-item'>
+            <button class='accordion-header'>
+              <span>
+                Thanh toán dư nợ thẻ
+              </span>
+              <span class='icon'>
+                <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M2.8028 13.447C3.09569 13.7399 3.57057 13.7399 3.86346 13.447L9.99979 7.31066L16.1361 13.447C16.429 13.7399 16.9039 13.7399 17.1968 13.447C17.4897 13.1541 17.4897 12.6792 17.1968 12.3863L10.5301 5.71967C10.2372 5.42678 9.76235 5.42678 9.46946 5.71967L2.8028 12.3863C2.50991 12.6792 2.50991 13.1541 2.8028 13.447Z' fill='#0F1524' fill-opacity='0.6' />
+                </svg>
+              </span>
+            </button>
+            <div class='accordion-content'>
+              <p><strong>Thanh toán trích nợ tự động:</strong></p><p>Vào ngày đến hạn thanh toán hàng tháng, Ngân hàng số Vikki sẽ ghi nợ tự động (số tiền thanh toán tối thiểu) vào Tài khoản của Quý khách mở tại Vikki. Quý khách cần đảm bảo đủ số dư để Vikki thực hiện ghi nợ bằng cách chuyển khoản từ tài khoản thanh toán của Quý khách mở tại bất kỳ ngân hàng nào vào tài khoản thanh toán mở tại Vikki được gắn với thẻ tín dụng.</p><p><strong>Thanh toán qua ứng dụng Vikki by HDBank:</strong></p><p>Quý khách có thể thanh toán dư nợ thẻ tại bất kỳ thời điểm nào bằng cách chuyển khoản từ Tài khoản của Quý khách tại Vikki vào Thẻ tín dụng Vikki trên ứng dụng Vikki.</p><p>Các phương thức thanh toán dư nợ thẻ sẽ được Ngân hàng số Vikki cập nhật theo từng thời kỳ.</p>
+            </div>
+          </div>
+      </div>  </div>
+  </template>
+  <script>
+      function initAccordion(root, options = {}) {
+        const { multiple = false, defaultOpenIndex = null } = options;
+  
+        const items = root.querySelectorAll('.accordion-item');
+  
+        items.forEach((item, index) => {
+          const header = item.querySelector('.accordion-header');
+          const content = item.querySelector('.accordion-content');
+  
+          header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+  
+            if (!multiple) {
+              items.forEach((i) => {
+                i.classList.remove('active');
+                i.querySelector('.accordion-content').style.maxHeight = null;
+              });
+            }
+  
+            if (!isActive) {
+              item.classList.add('active');
+              content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+              item.classList.remove('active');
+              content.style.maxHeight = null;
+            }
+          });
+  
+          if (defaultOpenIndex === index) {
+            item.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + 'px';
+          }
+        });
+      }
+  
+      function initAccordionsIn(root) {
+        root.querySelectorAll('.js-accordion').forEach((acc) => {
+          initAccordion(acc);
+        });
+      }
+  
+      initAccordionsIn(document);
+    </script>
+  
+  <script>
+      const popup = document.getElementById('popup');
+      const popupBody = document.getElementById('popupBody');
+      const closeBtn = document.getElementById('popupClose');
+      const qaTemplate = document.getElementById('qaTemplate');
+      const loading = document.getElementById('loading')
+      const popupTitle = document.getElementById('popupTitle')
+  
+      document.querySelectorAll('[data-popup]').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.popup;
+          const title = btn.dataset.title;
+         
+          openPopup(type, title);
+        });
+      });
+  
+      if(closeBtn){
+        closeBtn.addEventListener('click', closePopup);
+      }
+      
+  
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+      });
+  
+       function retryContent (type, iframe) {
+          iframe.src = type;
+          popupBody.appendChild(iframe);
+         
+          let timeout = setTimeout(() => {
+            retryContent(type, iframe)
+          }, 5000);
+  
+          iframe.onload = () => {
+            loading.classList.remove('show');
+            clearTimeout(timeout);
+          };
+      }
+  
+      function looksLikePdf(url) {
+        return /\.pdf($|\?)/i.test(url);
+      }
+     
+      function openPopup(type, title) {
+        popupBody.innerHTML = '';
+        const isLink = type.startsWith('https://') || type.startsWith('/')
+        const isPdfLink = looksLikePdf(type)
+  
+       // if(title){
+           // popupTitle.textContent = title;
+       // }
+  
+        if (!isLink) {
+          popupBody.appendChild(qaTemplate.content.cloneNode(true));
+          initAccordionsIn(popupBody);
+          loading.classList.remove('show');
+        } else {
+          if(title){
+            const titleEl = document.createElement('h2');
+            titleEl.className = 'popup-title';
+            titleEl.textContent = title;
+            popupBody.appendChild(titleEl);
+            popupBody.classList.add('pt-50')
+          }
+  
+          const iframe = document.createElement('iframe');
+          iframe.className = 'popup-iframe';
+          if(isPdfLink){
+            retryContent(type, iframe)
+          } else {
+            iframe.src = type;
+            popupBody.appendChild(iframe);
+           loading.classList.remove('show');
+          }
+          
+        }
+       
+        popup.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+  
+      function closePopup() {
+        loading.classList.add('show')
+        popup.classList.remove('show');
+        popupBody.innerHTML = '';
+        document.body.style.overflow = '';
+      }
+    </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.7.4"></script>
+  
+  <script type="text/javascript">
+      const body = document.getElementById('body');
+      const videoContainer = document.getElementById('banner-container');
+      const video = document.getElementById('banner-video');
+      const volumeIcon = document.getElementById('volume-icon');
+      const params = new URLSearchParams(window.location.search);
+      const hasTopSpace = params.get('hasTopSpace');
+  
+      if (hasTopSpace === 'false') {
+        // body.style.paddingTop = '0';
+        body.classList.remove('hasTopSpace');
+      }
+      
+      if(videoContainer){
+        const videoSrc = './assets/video/playlist.m3u8';
+        if (Hls.isSupported()) {
+          var hls = new Hls();
+          hls.loadSource(videoSrc);
+          hls.attachMedia(video);
+        } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+          video.src = videoSrc;
+        } else {
+          video.src = './assets/video.mp4';
+        }
+  
+        video.addEventListener('loadedmetadata', () => {
+          video.play().catch(() => {
+            console.log('Autoplay blocked');
+          });
+        });
+  
+        // #video-container's height (see styles.hbs) is driven by --video-ar
+        // instead of a hardcoded ratio, so it stays correct no matter which
+        // video a given page loads.
+        const videoBox = document.getElementById('video-container');
+        const applyVideoRatio = () => {
+          if (videoBox && video.videoWidth && video.videoHeight) {
+            videoBox.style.setProperty('--video-ar', video.videoHeight / video.videoWidth);
+          }
+        };
+        video.addEventListener('loadedmetadata', applyVideoRatio);
+        applyVideoRatio();
+  
+  
+        videoContainer.addEventListener('click', () => {
+          video.muted = !video.muted;
+          volumeIcon.classList.toggle('muted', video.muted);
+          volumeIcon.classList.toggle('unmuted', !video.muted);
+  
+          if (!video.paused) return;
+          video.play().catch(() => {});
+        });
+  
+        const tryPlay = () => {
+          video.play().catch((err) => console.warn('Replay blocked:', err));
+          document.removeEventListener('touchstart', tryPlay);
+        };
+  
+        tryPlay();
+        document.addEventListener('touchstart', tryPlay);
+      }
+  
+  </script>
+  
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-element-bundle.min.js'
+  ></script>
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js'
+  ></script>
+  
+  <script>
+    document.querySelectorAll('.center-swiper').forEach((swiper) => {
+    Object.assign(swiper, {
+      slidesPerView: 1.2,
+      centeredSlides: true,
+      spaceBetween: 12,
+      pagination: true
+    });
+  
+    swiper.initialize();
+  });
+  
+  </script>
+  
+  <script>
+      function scrollToSection(target, options = {}) {
+        const { offset = 0, behavior = 'smooth' } = options;
+  
+        const el =
+          typeof target === 'string' ? document.querySelector(target) : target;
+  
+        if (!el) return;
+  
+        let finalOffset = offset;
+  
+        // ✅ check hasTopSpace → +25vw
+        if (document.body.classList.contains('hasTopSpace')) {
+          const vw25 = window.innerWidth * 0.25;
+          finalOffset += vw25;
+        }
+  
+        const top =
+          el.getBoundingClientRect().top + window.pageYOffset - finalOffset;
+  
+        window.scrollTo({
+          top,
+          behavior,
+        });
+      }
+  
+      function initScrollToSection({ offset = 0 } = {}) {
+        document.querySelectorAll('[data-scroll]').forEach((btn) => {
+          btn.addEventListener('click', () => {
+            scrollToSection(btn.dataset.scroll, { offset });
+          });
+        });
+      }
+  
+      initScrollToSection({ offset: 48 });
+    </script>
+  
+  <script>
+    const btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('show');
+      } else {
+        btn.classList.remove('show');
+      }
+    });
+  
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    });
+  </script>
+  
+  <script>
+    const popupDetail = document.getElementById('promo-detail-popup');
+    const iframeDetail = document.getElementById('promo-detail-frame');
+    const popupDetailClose = document.getElementById('popupDetail-close');
+  
+    window.addEventListener('message', (e) => {
+      if (e.data?.type !== 'OPEN_PROMO_DETAIL') return;
+      openPromoDetail(e.data.id);
+    });
+  
+    function openPromoDetail(id) {
+      iframeDetail.src = `/vikki-cvp/promotion/${id}.html`;
+      popupDetail.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    }
+  
+    if (popupDetailClose) {
+      popupDetailClose.addEventListener('click', closePromoDetail);
+    }
+  
+    function closePromoDetail() {
+      iframeDetail.src = '';
+      popupDetail.classList.remove('show');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>

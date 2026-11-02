@@ -1,0 +1,14 @@
+<div class='gjs-row container {{#if className}}{{className}}{{/if}}' {{#if id}}id='{{id}}'{{/if}}>
+    <div class='gjs-cell {{#if cellClassName}}{{cellClassName}}{{/if}}'>
+    {{#if link}}
+        <span data-popup='{{link}}' data-title="{{linkTitle}}">
+        <img src='{{src}}' class='section {{#if imgClassName}}{{imgClassName}}{{/if}}' />
+        </span>
+    {{else}}
+        <img src='{{src}}' class='section {{#if imgClassName}}{{imgClassName}}{{/if}}' />
+    {{/if}}
+    {{#if loading}}
+        <div class="spinnerKichHoatNgay {{loadingClassName}}"></div>
+    {{/if}}
+    </div>
+</div>

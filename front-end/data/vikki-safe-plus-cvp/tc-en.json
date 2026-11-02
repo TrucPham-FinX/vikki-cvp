@@ -1,0 +1,621 @@
+{
+  "language": "en",
+  "layout": "static",
+  "useHeaderImage": true,
+  "title": "Vikki Safe Plus Terms & Conditions",
+  "tableScrollHint": "Swipe horizontally to view the full table.",
+  "header": {
+    "img": "../assets/vikki-logo.png",
+    "h1": "Product Overview"
+  },
+  "sections": [
+    {
+      "id": "product-overview",
+      "title": "CONTENT",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "the-insured",
+          "title": "The Insured",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Vietnamese citizens and foreigners living, studying, working, and working in Vietnam and are between the ages of 18 years old and 75 years old. The insured does not fall into the following cases:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Persons with a history of or currently suffering from mental illness, neurological disorders, or leprosy."
+                },
+                {
+                  "text": "Persons with disability or permanent impairment of 50% or more."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "benefits-and-coverage",
+          "title": "Benefits and coverage",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Sum insured: Please select an approriate plan as below."
+                },
+                {
+                  "text": "Insurance period: Flexible based on customer request, up to a maximum of 12 months."
+                },
+                {
+                  "text": "Beneficiary: Insured or nominated beneficiary."
+                },
+                {
+                  "text": "Territory limit: Vietnam"
+                },
+                {
+                  "text": "Waiting period: Not Applicable"
+                },
+                {
+                  "text": "Insurance benefits:"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Pay entire sum insured in case of death or total permanent disability;"
+                },
+                {
+                  "text": "Pay compensation subject to List of Disability Ratio attached to policy wording for permanent partial disability;"
+                },
+                {
+                  "text": "Pay medical expenses for temporary disability due to accident;"
+                },
+                {
+                  "text": "Pay allowance during hospitalization for injuries caused by accidents."
+                },
+                {
+                  "text": "Please kindly refer to detailed insurance benefits of each insurance plan."
+                },
+                {
+                  "text": "Beneficiary: Insured or nominated beneficiary"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "className": "legal-note",
+              "text": "<em>Please refer to the policy breakdown for detailed coverage details of each plan.</em>"
+            }
+          ]
+        },
+        {
+          "id": "insurance-plans",
+          "title": "Insurance plan",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Quyền lợi bảo hiểm"
+                    },
+                    {
+                      "value": "Full Choice"
+                    },
+                    {
+                      "value": "Full Care"
+                    },
+                    {
+                      "value": "Full Coverage"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Total Sum Inssured</strong>"
+                    },
+                    {
+                      "value": "<strong>24,800,000</strong>"
+                    },
+                    {
+                      "value": "<strong>49,600,000</strong>"
+                    },
+                    {
+                      "value": "<strong>74,400,000</strong>"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "1. For Accident"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "2. Hospitalization Allowance"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Detailed Sum Inssured</strong>"
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": ""
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "1. Accidental death/disability"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Death"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Permanent total disability"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Permanent partial disability"
+                    },
+                    {
+                      "value": "Paid as per Injury Benefit List"
+                    },
+                    {
+                      "value": "Paid as per Injury Benefit List"
+                    },
+                    {
+                      "value": "Paid as per Injury Benefit List"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Temporary disability"
+                    },
+                    {
+                      "value": "Paid to % of Injury Benefit List"
+                    },
+                    {
+                      "value": "Actual Medical Expenses + Daily Allowance = 0.1% of the Sum Insured per day, for up to 180 days. Total benefits payable shall not exceed the applicable injury benefit percentage."
+                    },
+                    {
+                      "value": "Actual Medical Expenses + Daily Allowance = 0.1% of the Sum Insured per day, for up to 180 days. Total benefits payable shall not exceed the applicable injury benefit percentage."
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Total allowance during hospitalization for accident treatment *"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Allowance per day of hospital stay"
+                    },
+                    {
+                      "value": "80,000"
+                    },
+                    {
+                      "value": "160,000"
+                    },
+                    {
+                      "value": "240,000"
+                    }
+                  ]
+                }
+              ],
+              "note": "<strong>* The Sum Insured displayed is applicable to a one-year policy term. For shorter policy terms, the Sum Insured will be reduced in accordance with Table of Number of Hospitalization Allowance Days by Insurance Period</strong>"
+            },
+            {
+              "type": "subheading",
+              "text": "Table of Number of Hospitalization Allowance Days by Insurance Period"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Months Covered",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Days with allowance benefit",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Max allowance",
+                      "colspan": 3
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Full Choice"
+                    },
+                    {
+                      "value": "Full Care"
+                    },
+                    {
+                      "value": "Full Cover"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "12 months"
+                    },
+                    {
+                      "value": "60"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "11 months"
+                    },
+                    {
+                      "value": "55"
+                    },
+                    {
+                      "value": "4,400,000"
+                    },
+                    {
+                      "value": "8,800,000"
+                    },
+                    {
+                      "value": "13,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "10 months"
+                    },
+                    {
+                      "value": "50"
+                    },
+                    {
+                      "value": "4,000,000"
+                    },
+                    {
+                      "value": "8,000,000"
+                    },
+                    {
+                      "value": "12,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "9 months"
+                    },
+                    {
+                      "value": "45"
+                    },
+                    {
+                      "value": "3,600,000"
+                    },
+                    {
+                      "value": "7,200,000"
+                    },
+                    {
+                      "value": "10,800,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "8 months"
+                    },
+                    {
+                      "value": "40"
+                    },
+                    {
+                      "value": "3,200,000"
+                    },
+                    {
+                      "value": "6,400,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "7 months"
+                    },
+                    {
+                      "value": "35"
+                    },
+                    {
+                      "value": "2,800,000"
+                    },
+                    {
+                      "value": "5,600,000"
+                    },
+                    {
+                      "value": "8,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "6 months"
+                    },
+                    {
+                      "value": "30"
+                    },
+                    {
+                      "value": "2,400,000"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "7,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "5 months"
+                    },
+                    {
+                      "value": "25"
+                    },
+                    {
+                      "value": "2,000,000"
+                    },
+                    {
+                      "value": "4,000,000"
+                    },
+                    {
+                      "value": "6,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "4 months"
+                    },
+                    {
+                      "value": "20"
+                    },
+                    {
+                      "value": "1,600,000"
+                    },
+                    {
+                      "value": "3,200,000"
+                    },
+                    {
+                      "value": "4,800,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "3 months"
+                    },
+                    {
+                      "value": "15"
+                    },
+                    {
+                      "value": "1,200,000"
+                    },
+                    {
+                      "value": "2,400,000"
+                    },
+                    {
+                      "value": "3,600,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "2 months"
+                    },
+                    {
+                      "value": "10"
+                    },
+                    {
+                      "value": "800,000"
+                    },
+                    {
+                      "value": "1,600,000"
+                    },
+                    {
+                      "value": "2,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "1 month"
+                    },
+                    {
+                      "value": "5"
+                    },
+                    {
+                      "value": "400,000"
+                    },
+                    {
+                      "value": "800,000"
+                    },
+                    {
+                      "value": "1,200,000"
+                    }
+                  ]
+                }
+              ],
+              "note": null
+            }
+          ]
+        },
+        {
+          "id": "exclusions",
+          "title": "Exclusions",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Key exclusions:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Intentional acts of the insured, the insurance buyer or the beneficiary (only excluding beneficiaries who commit violations);"
+                },
+                {
+                  "text": "The insured person violates the law on the following acts: Illegal racing; Driving a vehicle without a Driver’s License/or an invalid Driver’s License; Entering prohibited roads or restricted areas; Going in the opposite direction on a one-way street, going in the opposite direction on a road with a “Prohibited” sign; Not staying in the correct lane or designated part of the road."
+                },
+                {
+                  "text": "The insured person uses alcohol or beer in excess of the concentration prescribed by the Road Traffic Law."
+                },
+                {
+                  "text": "The insured person uses drugs or other stimulants."
+                },
+                {
+                  "text": "The insured person dies suddenly or of unknown cause or dies without being able to determine the cause of death for any reason."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "className": "legal-note",
+              "text": "<em>Other exclusions are specifically specified in the Insurance Wording.</em>"
+            },
+            {
+              "type": "paragraph",
+              "className": "bold",
+              "text": "To view further information about this insurance product, please refer to <a href=\"insurance-wording.html\" style=\"color: #0047ff;\">Accident insurance wordings.</a>"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "title": "VikkiME Foreigner's Account",
+  "language": "en",
+  "hasTopSpace": true,
+  "hasBackground": false,
+  "layout": "template",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "FAQs",
+          "text": "FAQs",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Introduction",
+          "text": "Introduction",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#intro"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/banner.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "src": "./assets/vikki-me-account.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/promotions.png"
+    },
+    {
+      "type": "slider",
+      "className": "section",
+      "srcTitle": "./assets/3-steps-open-account.png",
+      "hide-pagination": "true",
+      "background-color": "#EDF4FF",
+      "items": [
+        {
+          "src": "assets/step-1.png"
+        },
+        {
+          "src": "assets/step-2.png"
+        },
+        {
+          "src": "assets/step-3.png"
+        }
+      ]
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/getting-started.png"
+    },
+    {
+      "type": "qa",
+      "button": {
+        "text": "See more frequently asked questions."
+      },
+      "items": [
+        {
+          "title": "What is a Foreign Customer Current Account?",
+          "content": "A Foreign Customer Current Account is a payment account designed for foreign individuals, whether residing or non-residing in Vietnam. It enables customers to perform essential financial transactions such as receiving money, fund transfers, and daily payments."
+        },
+        {
+          "title": "What features does this account offer?",
+          "content": "<strong>This account allows customers to conveniently manage finances via the Vikki digital banking app, with key features including:</strong><ul><li>Fast fund transfers via account number or card number (intrabank and interbank)</li><li>Free bill payments (electricity, water), mobile top-up, and QR payments</li><li>Booking services (flight tickets, transportation, movies, hotels, golf, etc.) directly on the Vikki App</li><li>Loyalty rewards accumulation (SkyJoy) for redemption</li></ul>"
+        },
+        {
+          "title": "What are the requirements to open an account?",
+          "content": "<strong>Customers must meet the following conditions:</strong><ul><li>Aged 15 or above with full or appropriate civil legal capacity</li><li>Registered Vietnamese phone number</li><li>Valid passport</li><li>Valid visa or proof of visa exemption (e.g. visa exemption certificate, temporary/permanent residence card)</li><li>Proof of lawful income or income declaration (if required)</li></ul>"
+        },
+        {
+          "title": "What documents are required?",
+          "content": "<strong>You should prepare:</strong><ul><li>Passport</li><li>Visa / Temporary or Permanent Residence Card / Visa exemption documents</li><li>Proof of residence duration (if applicable)</li><li>Proof of income (if required)</li></ul>"
+        },
+        {
+          "title": "What are the general transaction limits?",
+          "content": "<strong>Daily limits:</strong><ul><li><strong>18+:</strong> up to VND 500 million/day</li><li><strong>15 – under 18:</strong> up to VND 100 million/day</li></ul><ul><strong>Monthly limits:</strong><li><strong>18+:</strong> from VND 500 million up to VND 3 billion/month (depending on income verification)</li><li><strong>15 – under 18: </strong> up to VND 500 million/month</li></ul>"
+        },
+        {
+          "title": "How can I get support?",
+          "content": "<strong>You can contact Vikki Bank via:</strong><ul><li><strong>Hotline:</strong> 1900 6608 / +84 28 3995 9001 (overseas)</li><li><strong>Email:</strong> 19006608@vikkibank.vn</li><li>In-app chat</li><li><strong>Facebook Fanpage:</strong> Ngân hàng số Vikki</li><li><strong>Zalo Official Account:</strong> Ngân hàng số Vikki</li><li>Vikki Bank branches nationwide</li></ul>"
+        }
+      ]
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "VikkiME Foreigner's Account",
+      "children": [
+        {
+          "title": "What is a Foreign Customer Current Account?",
+          "content": "A Foreign Customer Current Account is a payment account designed for foreign individuals, whether residing or non-residing in Vietnam. It enables customers to perform essential financial transactions such as receiving money, fund transfers, and daily payments."
+        },
+        {
+          "title": "What features does this account offer?",
+          "content": "<strong>This account allows customers to conveniently manage finances via the Vikki digital banking app, with key features including:</strong><ul><li>Fast fund transfers via account number or card number (intrabank and interbank)</li><li>Free bill payments (electricity, water), mobile top-up, and QR payments</li><li>Booking services (flight tickets, transportation, movies, hotels, golf, etc.) directly on the Vikki App</li><li>Loyalty rewards accumulation (SkyJoy) for redemption</li></ul>"
+        },
+        {
+          "title": "What are the requirements to open an account?",
+          "content": "<strong>Customers must meet the following conditions:</strong><ul><li>Aged 15 or above with full or appropriate civil legal capacity</li><li>Registered Vietnamese phone number</li><li>Valid passport</li><li>Valid visa or proof of visa exemption (e.g. visa exemption certificate, temporary/permanent residence card)</li><li>Proof of lawful income or income declaration (if required)</li></ul>"
+        },
+        {
+          "title": "What documents are required?",
+          "content": "<strong>You should prepare:</strong><ul><li>Passport</li><li>Visa / Temporary or Permanent Residence Card / Visa exemption documents</li><li>Proof of residence duration (if applicable)</li><li>Proof of income (if required)</li></ul>"
+        },
+        {
+          "title": "What are the general transaction limits?",
+          "content": "<strong>Daily limits:</strong><ul><li><strong>18+:</strong> up to VND 500 million/day</li><li><strong>15 – under 18:</strong> up to VND 100 million/day</li></ul><ul><strong>Monthly limits:</strong><li><strong>18+:</strong> from VND 500 million up to VND 3 billion/month (depending on income verification)</li><li><strong>15 – under 18: </strong> up to VND 500 million/month</li></ul>"
+        },
+        {
+          "title": "How can I get support?",
+          "content": "<strong>You can contact Vikki Bank via:</strong><ul><li><strong>Hotline:</strong> 1900 6608 / +84 28 3995 9001 (overseas)</li><li><strong>Email:</strong> 19006608@vikkibank.vn</li><li>In-app chat</li><li><strong>Facebook Fanpage:</strong> Ngân hàng số Vikki</li><li><strong>Zalo Official Account:</strong> Ngân hàng số Vikki</li><li>Vikki Bank branches nationwide</li></ul>"
+        }
+      ]
+    }
+  ]
+}

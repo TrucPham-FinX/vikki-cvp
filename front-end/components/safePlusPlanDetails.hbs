@@ -1,0 +1,192 @@
+<style>
+  .safe-plan-detail {
+    padding: 20px 16px 32px;
+    color: rgba(4, 11, 30, .92);
+  }
+
+  .safe-plan-detail__brand {
+    margin-bottom: 18px;
+    padding: 14px 16px;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(100deg, #3114ff, #e50089, #ff9700);
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  .safe-plan-detail h1,
+  .safe-plan-detail h2 {
+    color: #1414e8;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .safe-plan-detail h1 {
+    margin: 0 0 22px;
+    font-size: 22px;
+  }
+
+  .safe-plan-detail h2 {
+    margin: 24px 0 12px;
+    font-size: 18px;
+  }
+
+  .safe-plan-detail__table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .safe-plan-detail table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background: #fff;
+  }
+
+  .safe-plan-detail th,
+  .safe-plan-detail td {
+    padding: 10px 12px;
+    border: 1px solid #dce1eb;
+    font-size: 14px;
+    line-height: 1.4;
+    vertical-align: middle;
+  }
+
+  .safe-plan-detail th {
+    color: #fff;
+    background: #1810ed;
+    font-weight: 600;
+  }
+
+  .safe-plan-detail td:last-child {
+    width: 42%;
+    font-weight: 600;
+    text-align: right;
+  }
+
+  .safe-plan-detail td.is-regular {
+    font-weight: 400;
+  }
+
+  .safe-plan-detail__general td:last-child,
+  .safe-plan-detail__details td:last-child,
+  .safe-plan-detail__allowance td {
+    white-space: nowrap;
+  }
+
+  .safe-plan-detail__details td.is-wrap {
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+
+  .safe-plan-detail .is-total td {
+    color: #fff;
+    background: #1810ed;
+    font-weight: 700;
+  }
+
+  .safe-plan-detail .is-total td:last-child {
+    background: #ff9d00;
+  }
+
+  .safe-plan-detail__note {
+    margin: 12px 0;
+    color: #ff3b30;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .safe-plan-detail__footer-note {
+    margin: 0;
+    padding: 10px 12px;
+    background: #f1f4f9;
+    color: #667085;
+    font-size: 13px;
+  }
+
+  .safe-plan-detail__allowance th,
+  .safe-plan-detail__allowance td {
+    width: 30%;
+    padding: 8px 5px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .safe-plan-detail__allowance th:last-child,
+  .safe-plan-detail__allowance td:last-child {
+    width: 40%;
+    text-align: right;
+  }
+
+  @media (max-width: 359px) {
+    .safe-plan-detail th,
+    .safe-plan-detail td {
+      padding-right: 6px;
+      padding-left: 6px;
+      font-size: 11px;
+    }
+
+    .safe-plan-detail__allowance th,
+    .safe-plan-detail__allowance td {
+      font-size: 10px;
+    }
+  }
+</style>
+
+<article class="safe-plan-detail">
+  <div class="safe-plan-detail__brand">Vikki Safe Plus</div>
+  <h1>{{planName}}</h1>
+
+  <h2>{{generalTitle}}</h2>
+  <div class="safe-plan-detail__table-wrap safe-plan-detail__general">
+    <table>
+      <tbody>
+        {{#each generalBenefits}}
+          <tr class="{{#if total}}is-total{{/if}}">
+            <td>{{label}}</td>
+            <td>{{value}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>{{detailsTitle}}</h2>
+  <div class="safe-plan-detail__table-wrap safe-plan-detail__details">
+    <table>
+      <tbody>
+        {{#each detailedBenefits}}
+          <tr>
+            <td>{{label}}</td>
+            <td class="{{#if regularValue}}is-regular {{/if}}{{#if wrapValue}}is-wrap{{/if}}">{{value}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+  <p class="safe-plan-detail__note">{{insuranceAmountNote}}</p>
+
+  <h2>{{allowanceTitle}}</h2>
+  <div class="safe-plan-detail__table-wrap">
+    <table class="safe-plan-detail__allowance">
+      <thead>
+        <tr>
+          {{#each allowanceHeaders}}<th>{{this}}</th>{{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#each allowances}}
+          <tr>
+            <td>{{months}}</td>
+            <td>{{days}}</td>
+            <td>{{amount}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  <p class="safe-plan-detail__footer-note">{{allowanceNote}}</p>
+</article>

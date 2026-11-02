@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Thẻ co-badge</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/solid.min.css"
+        integrity="sha512-DzC7h7+bDlpXPDQsX/0fShhf1dLxXlHuhPBkBo/5wJWRoTU6YL7moeiNoej6q3wh5ti78C57Tu1JwTNlcgHSjg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            overflow-x: hidden;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #video-container {
+            display: flex;
+        }
+
+        #video-container,
+        #section-1-cell,
+        #section-3-cell {
+            position: relative;
+        }
+
+        #banner-video {
+            height: auto;
+            width: 100%;
+            margin: 0px auto 0px auto;
+        }
+
+        #volume-icon {
+            position: absolute;
+            width: auto;
+            height: auto;
+            top: 1vw;
+            left: 1vw;
+        }
+
+        .fa-icon {
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+        }
+
+        .gjs-cell {
+            width: 100%;
+        }
+
+        .muted .fa-icon.fa-volume-high {
+            display: none;
+        }
+
+        .unmuted .fa-icon.fa-volume-xmark {
+            display: none;
+        }
+
+        .gjs-row {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            flex-wrap: nowrap;
+            padding: 0px;
+        }
+
+        .section {
+            margin: 0px auto 0px auto;
+            width: 100%;
+        }
+
+        .container {
+            padding: 0px 0px 0px 0px;
+        }
+
+        .solution-background {
+            background: linear-gradient(180.02deg, rgba(255, 183, 0, 0.2) -0.02%, rgba(255, 149, 27, 0.2) 17.31%, rgba(222, 0, 148, 0.2) 35.72%, rgba(0, 0, 255, 0.2) 93.21%);
+            padding-bottom: 5vh;
+        }
+
+        .loan-gift-container {
+            margin-top: 3vh;
+        }
+
+        .register-container {
+            padding-bottom: 5vh;
+        }
+
+        .loan-now-container {
+            padding-bottom: 5vh;
+            width: 100%
+        }
+
+        .disbursement-container {
+            margin-top: 5vh;
+        }
+
+        .finance-container {
+            width: 100%;
+        }
+
+        .absolute-row {
+            position: relative;
+            top: -20px;
+        }
+
+        .show-detail-text {
+            position: relative;
+            cursor: pointer;
+            bottom: 20vw;
+            font-family: 'Be Vietnam Pro', sans-serif;
+            left: 7vw;
+            font-weight: 400;
+            font-size: 6vw;
+            line-height: 8vw;
+            letter-spacing: -0.26px;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            color: #FFF;
+            text-decoration-thickness: 0%;
+            text-decoration-skip-ink: auto;
+        }
+
+        #popup-overlay {
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: fixed;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+            bottom: 0;
+            border: none;
+        }
+
+        #popup-close-btn {
+            display: inherit;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            margin-left: -20px;
+            width: 40px;
+            height: 40px;
+            box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        #popup-close-icon {
+            font-size: 40px;
+            opacity: 0.7;
+            padding-bottom: 5vh;
+            line-height: 40px;
+        }
+
+        swiper-container {
+            width: 100vw;
+        }
+
+        swiper-slide {
+            background-position: center;
+            background-size: cover;
+            padding: 8px;
+            margin-bottom: 15px;
+        }
+
+        .swiper-slide-next {
+            left: -5vw;
+            z-index: 1;
+            animation-name: showNextSlide;
+            animation-duration: 0.5s;
+        } 
+        .swiper-pagination { 
+            background-color: red;
+        }
+        @keyframes showNextSlide {
+            0% {
+                left: 0%;
+            }
+
+            100% {
+                left: -5vw
+            }
+        }
+
+        .swiper-img {
+            object-fit: center;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body id="body">
+    <div id="banner-container">
+        <div id="video-container">
+            <video id="banner-video" src="./assets/card-cvp.mp4" autoplay playsinline preload="auto" muted loop
+                class="banner-video"></video>
+            <div id="volume-icon" class="volume-icon muted">
+                <i class="fa-icon fa-solid fa-volume-high"></i>
+                <i class="fa-icon fa-solid fa-volume-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-2-container" class="gjs-row container loan-gift-container">
+        <div id="section-2-cell" class="gjs-cell">
+            <img src="./assets/tien-loi-linh-hoat.png" id="section-2-img" class="section" />
+        </div>
+    </div>
+
+    <div id="section-4-container" class="gjs-row container">
+        <div id="section-4-cell" class="gjs-cell">
+            <img src="./assets/napas.png" id="section-4-img" class="section" />
+        </div>
+    </div>
+
+    <div>
+        <div id="section-4-container" class="gjs-row container">
+            <div id="section-4-cell" class="gjs-cell">
+                <img src="./assets/uu-dai-me-ly.png" id="section-4-img" class="section" />
+            </div>
+        </div>
+        <swiper-container class="mySwiper" pagination="true" grab-cursor="true" centered-slides="true"
+            slides-per-view="auto" coverflow-effect-rotate="55" coverflow-effect-stretch="0"
+            coverflow-effect-depth="-10" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
+            <swiper-slide>
+                <img class="swiper-img" src="assets/the-quoc-te.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="swiper-img" src="assets/uu-dai-napas.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="swiper-img" src="assets/uu-dai-khap-the-gioi.png">
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
+    <div id="section-4-container" class="gjs-row container">
+        <div id="section-4-cell" class="gjs-cell">
+            <img src="./assets/doi-ve-may-bay.png" id="section-4-img" class="section" />
+        </div>
+    </div>
+
+    <div id="section-4-container" class="gjs-row container register-container">
+        <div id="section-img-xem-biet-phi" class="gjs-cell">
+            <a href="https://vikki-cdn.uat.galaxyfinx.cloud/vikki-card/card-debit-fee-vikki-bank.pdf">
+                <img src="./assets/xem-bieu-phi.png" class="section"/>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    const video = document.getElementById('banner-video');
+    const volumeIcon = document.getElementById('volume-icon');
+   
+    video.addEventListener('click', () => {
+        if (video.muted) {
+            video.muted = false;
+            volumeIcon.classList.remove('muted');
+            volumeIcon.classList.add('unmuted');
+        } else {
+            video.muted = true;
+            volumeIcon.classList.remove('unmuted');
+            volumeIcon.classList.add('muted');
+        }
+    });
+
+</script>
+
+</html>

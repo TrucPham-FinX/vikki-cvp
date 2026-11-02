@@ -1,0 +1,280 @@
+{
+  "id": "vikki-pro-tnc",
+  "version": "2.1.0",
+  "layout": "static",
+  "header": {
+    "img": "assets/vikki-logo.png",
+    "h1": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN THỰC HIỆN VAY ONLINE TẠI ViKKI BANK"
+  },
+  "sections": [
+    {
+      "id": "phan-a",
+      "title": "Phần A. QUY ĐỊNH CHUNG",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "dieu-1",
+          "title": "ĐIỀU 1. ĐỐI TƯỢNG VAY VỐN, MỤC ĐÍCH VAY",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "<strong>1. Đối tượng vay vốn:</strong> Là khách hàng (“KH”) cá nhân có nhu cầu vay vốn trực tuyến (online) trên kênh ngân hàng điện tử (eBanking) của Vikki Bank, thông qua hình thức cầm cố Tiền gửi tiết kiệm thuộc sở hữu hợp pháp của chính KH và đáp ứng đầy đủ điều kiện vay vốn theo Quy định hiện hành của Vikki Bank."
+                },
+                {
+                  "text": "<strong>2. Mục đích vay:</strong> Phục vụ mục đích tiêu dùng cá nhân phù hợp với quy định Vikki Bank."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieu-2",
+          "title": "ĐIỀU 2. GIẢI THÍCH TỪ NGỮ",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "Các từ ngữ sau đây được hiểu như sau:"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank: Ngân hàng TNHH MTV số Vikki."
+                },
+                {
+                  "text": "Khách hàng (KH): Là KH cá nhân có nhu cầu vay vốn tại Vikki Bank và được Vikki Bank chấp thuận mở sổ tiết kiệm trực tuyến bằng việc giao dịch qua dịch vụ eBanking của Vikki Bank."
+                },
+                {
+                  "text": "Tiền gửi tiết kiệm trực tuyến (TGTK): Là tiền gửi tiết kiệm (không phải tiết kiệm tích lũy) do chính KH mở bằng hình thức trực tuyến tại Vikki Bank."
+                },
+                {
+                  "text": "TKTT: Tài khoản thanh toán của KH tại Vikki Bank."
+                },
+                {
+                  "text": "eBanking: Là kênh Ngân hàng điện tử của Vikki Bank, bao gồm Mobile Banking/Internet Banking."
+                },
+                {
+                  "text": "TSBĐ: Tài sản bảo đảm."
+                },
+                {
+                  "text": "HĐTD: Giấy đề nghị vay kiêm phương án sử dụng vốn kiêm hợp đồng tín dụng kiêm hợp đồng cầm cố tiền gửi tiết kiệm online kiêm khế ước nhận nợ."
+                },
+                {
+                  "text": "ĐVKD: Đơn vị kinh doanh."
+                },
+                {
+                  "text": "Điều khoản và Điều kiện: Điều khoản và Điều kiện thực hiện vay online tại Vikki Bank này và các nội dung được Vikki Bank cập nhật, điều chỉnh, bổ sung trong từng thời kỳ."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieu-3",
+          "title": "ĐIỀU 3. QUY ĐỊNH CHUNG VỀ SẢN PHẨM",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "<strong>1. Điều kiện KH:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text":"KH là công dân Việt Nam từ đủ 18 tuổi trở lên có đầy đủ năng lực hành vi dân sự theo quy định của Pháp luật."
+                      },
+                      {
+                        "text": "KH có nhu cầu vay vốn trực tuyến thông qua hình thức cầm cố TGTK online thuộc sở hữu hợp pháp của chính KH."
+                      },
+                      {
+                        "text": "Sở hữu TGTK trực tuyến trên eBanking."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>2. Phương thức cho vay:</strong> Từng lần"
+                },
+                {
+                  "text": "<strong>3. Số tiền vay:</strong> Tối thiểu 1 triệu đồng/khoản vay."
+                },
+                {
+                  "text": "<strong>4. Thời hạn vay:</strong> Là thời gian còn lại của TGTK."
+                },
+                {
+                  "text": "<strong>5. Lãi suất cho vay, Phí:</strong> Theo Quy định hiện hành của Vikki Bank."
+                },
+                {
+                  "text": "<strong>6. Phương thức trả nợ gốc và lãi:</strong> Gốc, lãi trả cuối kỳ."
+                },
+                {
+                  "text": "<strong>7. Điều kiện TSBĐ:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "TSBĐ là TGTK online của chính KH mở tại Vikki Bank như quy định tại Khoản 3, Điều 2."
+                      },
+                      {
+                        "text": "TGTK online đã được cầm cố cho khoản vay trực tuyến trên eBanking sẽ không được cầm cố/bảo đảm để tiếp tục vay vốn tại Vikki Bank và/hoặc tại tổ chức tín dụng khác."
+                      },
+                      {
+                        "text": "Tài sản cầm cố là Tiền gửi đang có hiệu lực, không bị phong tỏa, không bị hạn chế giao dịch online và đang không bị cầm cố/thế chấp (kể cả trường hợp đã gửi yêu cầu vay chưa giải ngân xong) để đảm bảo cho bất kỳ khoản vay hoặc nghĩa vụ nào khác của KH tại Vikki Bank (ngoại trừ khoản vay trực tuyến trên eBanking) và/hoặc tổ chức tín dụng khác."
+                      },
+                      {
+                        "text": "KH không được phép rút bớt 1 phần giá trị TGTK online khi đang được cầm cố để bảo đảm cho khoản vay."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>8. Thời gian thực hiện giao dịch: </strong> 24/7 (bao gồm cả ngày nghỉ, ngày lễ) trên eBanking."
+                },
+                {
+                  "text": "<strong>9. Trả nợ trước hạn:</strong> Khi phát sinh nhu cầu trả nợ trước hạn, KH sử dụng nguồn tiền tự có từ TKTT của mình để thực hiện tất toán khoản vay trên eBanking và hệ thống tự động giải tỏa TGTK."
+                },
+                {
+                  "text": "<strong>10. Tài khoản nhận lãi TGTK:</strong> Là tài khoản trung gian. Sau khi tất toán TGTK để thu nợ, số tiền còn dư sẽ được chuyển sang tài khoản chỉ định nhận lãi TGTK của KH."
+                },
+                {
+                  "text": "<strong>11. Tài khoản nhận gốc và lãi của TGTK:</strong> Là tài khoản trung gian do Vikki Bank mở nhằm quản lý khoản vay của KH, hoặc tài khoản khác theo quyết định của Vikki Bank. Theo đó, trường hợp Vikki Bank thực hiện xử lý tài sản bảo đảm để thu hồi nợ, thì số dư tiền gốc lãi còn lại (nếu có) sau khi đã được Vikki Bank trích thu từ tài khoản trung gian sẽ được chuyển lại vào tài khoản mà KH đã chỉ định nhận gốc, lãi của TGTK."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieu-4",
+          "title": "ĐIỀU 4. QUYỀN VÀ TRÁCH NHIỆM CỦA KH",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "KH chấp nhận vô điều kiện rằng:"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Bất cứ việc truy cập nào vào dịch vụ eBanking bằng chính tên đăng nhập với đúng mật khẩu và kết hợp phương pháp xác thực khác do Vikki Bank cung cấp/chấp thuận cho KH để thực hiện dịch vụ vay vốn online được coi là giao dịch vay vốn và/hoặc trả nợ của chính KH, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch."
+                },
+                {
+                  "text": "Đồng thời, (các) HĐTD được khởi tạo thông qua ký kết khi KH thực hiện trên eBanking được coi là có hiệu lực pháp lý tương đương như KH đã ký kết trực tiếp với Vikki Bank, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch (HĐTD được gửi tới KH qua email của KH ngay khi khoản vay được khởi tạo thành công)."
+                },
+                {
+                  "text": "KH thừa nhận rằng việc thực hiện các giao dịch trực tuyến theo phương thức nêu trên luôn tồn tại những rủi ro tiềm tàng và cam kết chấp nhận mọi rủi ro, chậm trễ, mất mát hoặc thiệt hại do những rủi ro tiềm tàng gây ra. Những rủi ro tiềm tàng của các giao dịch trực tuyến bao gồm nhưng không giới hạn các nội dung sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text":"Những sự cố liên quan đến đường truyền Internet do nhà cung cấp dịch vụ gây ra như: đứt đường truyền, dung lượng đường truyền bị hạn chế hoặc những sự cố tương tự có thể ảnh hưởng đến việc thực hiện các giao dịch trực tuyến của KH."
+                      },
+                      {
+                        "text":"Hệ thống của Vikki Bank gặp sự cố do bị mất nguồn điện, bị tấn công, nhiễm virus hoặc bị ảnh hưởng của những sự cố ngoài ý muốn dẫn đến việc không thể xử lý hoặc thực hiện các giao dịch trực tuyến của KH."
+                      },
+                      {
+                        "text":"Hệ thống, thiết bị điện tử của KH bị hỏng, bị nhiễm virus, bị tấn công dẫn đến việc làm lộ hoặc bị đánh cắp các thông tin về giao dịch của KH hoặc tài khoản của KH bị sử dụng một cách trái phép bởi một bên thứ ba."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Giao dịch trực tuyến do KH thực hiện sẽ được xử lý và thực hiện một cách tự động hoặc khi truyền đến hệ thống của Vikki Bank. Vikki Bank xác nhận mọi giao dịch trực tuyến của KH gửi đến Vikki Bank đều là đúng và do chính KH thực hiện. Vì vậy, mọi ý kiến/khiếu nại/tranh chấp cho rằng đó là nhầm lẫn hoặc sai sót liên quan đến giao dịch của KH đều không được chấp nhận. Mọi thiệt hại phát sinh do KH chịu trách nhiệm."
+                },
+                {
+                  "text": "KH phải tự chịu trách nhiệm khi để lộ thông tin và/hoặc chủ động cung cấp thông tin User, mật khẩu đăng nhập eBanking và/hoặc OTP cho người khác;"
+                },
+                {
+                  "text": "KH phải chịu trách nhiệm với bất kỳ thiệt hại, tổn thất nào xảy ra do bất kỳ nguyên nhân nào khác mà không do lỗi trực tiếp của Vikki Bank."
+                },
+                {
+                  "text": "KH qua dịch vụ eBanking, có trách nhiệm đối với thông tin cung cấp liên quan tới việc sử dụng sản phẩm cho vay"
+                },
+                {
+                  "text": "KH có trách nhiệm chấp hành tất cả các quy định, hướng dẫn của Vikki Bank liên quan đến việc sử dụng sản phẩm cho vay qua dịch vụ eBanking."
+                },
+                {
+                  "text": "Các quyền và trách nhiệm khác của KH được xác định theo quy định Pháp luật, Điều khoản và Điều kiện này, HĐTD."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieu-5",
+          "title": "ĐIỀU 5. QUYỀN VÀ TRÁCH NHIỆM CỦA NGÂN HÀNG",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank có quyền được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin... bị trục trặc hoặc vì bất kỳ lý do nào khác không phải lỗi chủ quan của Vikki Bank dẫn đến các giao dịch liên quan đến sản phẩm cho vay qua dịch vụ eBanking không thực hiện được hoặc chậm trễ trong việc thực hiện."
+                },
+                {
+                  "text": "Vikki Bank có trách nhiệm cung cấp sản phẩm cho vay qua dịch vụ eBanking đúng các quy định tại Điều khoản và Điều kiện, HĐTD và quy định của Vikki Bank trong từng thời kỳ."
+                },
+                
+                {
+                  "text": "Vikki Bank có trách nhiệm xử lý các yêu cầu kiểm tra của KH liên quan đến các khoản vay thực hiện qua dịch vụ eBanking theo quy định của pháp luật và của Vikki Bank."
+                },
+                {
+                  "text": "Các quyền và trách nhiệm khác của Vikki Bank được xác định theo quy định Pháp luật và Điều khoản và Điều kiện này."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dieu-6",
+          "title": "ĐIỀU 6. ĐIỀU KHOẢN THI HÀNH",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Sau khi KH thực hiện vay vốn online, Vikki Bank có quyền (nhưng không có nghĩa vụ) gửi thông tin cho KH thông qua tin nhắn, gọi điện thoại di động, điện thoại cố định, gửi thư vào email của KH."
+                },
+                {
+                  "text": "Trường hợp KH có bất cứ thắc mắc nào, KH có trách nhiệm gửi yêu cầu bằng văn bản đến ĐVKD của Vikki Bank trong vòng 01 (một) ngày làm việc kể từ thời điểm nhận được HĐTD qua email nhưng trong mọi trường hợp phải trước thời điểm KH sử dụng sản phẩm vay vốn online. Kể từ thời điểm TKTT của KH nhận được tiền của Vikki Bank đã giải ngân (một phần hoặc toàn bộ), KH đồng ý vô điều kiện nhận nợ và có nghĩa vụ thanh toán nợ theo quy định của HĐTD, quy định của Vikki Bank."
+                },
+                {
+                  "text": "Các tranh chấp phát sinh nếu có liên quan đến khoản vay của Khách hàng và/hoặc việc thực hiện các nội dung của Điều khoản và Điều kiện này sẽ được xử lý theo quy định tại HĐTD giữa Vikki Bank và KH."
+                },
+                {
+                  "text": "Điều khoản và Điều kiện này là một phần đính kèm của HĐTD."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "note": {
+    "text": "KH chịu trách nhiệm trước pháp luật về tính trung thực, chính xác, đầy đủ, kịp thời và hợp pháp của các thông tin, tài liệu đã khai báo."
+  },
+  "footer": {
+    "h1": "NGÂN HÀNG TNHH MTV SỐ VIKKI"
+  }
+}

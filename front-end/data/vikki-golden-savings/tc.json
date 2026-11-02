@@ -1,0 +1,365 @@
+{
+  "id": "vikki-golden-savings-tnc",
+  "version": "1.0.0",
+  "layout": "static",
+  "header": {
+    "img": "assets/logo-vikki.png",
+    "h1": "ĐIỀU KHOẢN & ĐIỀU KIỆN CHƯƠNG TRÌNH KHUYẾN MẠI"
+  },
+  "sections": [
+    {
+      "id": "noi-dung",
+      "title": "NỘI DUNG",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "thoi-gian-trien-khai",
+          "title": "1. Thời gian triển khai chương trình",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Từ 00:00:00 ngày 01/07/2026 đến 17:59:59 ngày 07/07/2026."
+            }
+          ]
+        },
+        {
+          "id": "khach-hang-ap-dung",
+          "title": "2. Khách hàng áp dụng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Khách hàng cá nhân (KH) tham gia gửi tiết kiệm có kỳ hạn VND tại quầy và kênh Online (Vikki App) thỏa mãn điều kiện chương trình."
+            }
+          ]
+        },
+        {
+          "id": "san-pham-ap-dung",
+          "title": "3. Sản phẩm áp dụng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "<strong>Nhóm sản phẩm thông thường:</strong> Tiết kiệm có kỳ hạn VND, Tiết kiệm Tài Sắc, Tiết kiệm Trường An, Tiết kiệm Ưu Việt, Tiết kiệm Phú Quý, Tiết kiệm Phát Lộc, Tiết kiệm An Tâm, Tiết kiệm An Nhàn."
+                },
+                {
+                  "text": "<strong>Nhóm sản phẩm tích lũy:</strong> Tiết kiệm Kế thừa, Tiết kiệm [GenV] Future."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hinh-thuc-khuyen-mai",
+          "title": "4. Hình thức khuyến mại",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Ưu đãi Ngày dành cho KH có phát sinh tổng số tiền gửi tiết kiệm VND kỳ hạn từ 6 tháng trở lên cao nhất trong ngày theo Vùng của Vikki Bank (áp dụng gửi tiết kiệm tại quầy và online, bao gồm tổng số tiền gửi tái tục và gửi mới)."
+            }
+          ]
+        },
+        {
+          "id": "co-cau-giai-thuong",
+          "title": "5. Cơ cấu giải thưởng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Top 10 KH có phát sinh tổng số tiền gửi tiết kiệm VND kỳ hạn từ 6 tháng trở lên cao nhất trong ngày theo Vùng tại Vikki Bank được xác định là người trúng thưởng."
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    { "value": "Vùng (*)" },
+                    { "value": "Số giải/ngày" },
+                    { "value": "Tổng số giải" },
+                    { "value": "Giải thưởng" },
+                    { "value": "Trị giá giải thưởng (VND)" },
+                    { "value": "Thành tiền (VND)" }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    { "value": "Vùng 1" },
+                    { "value": "10" },
+                    { "value": "70" },
+                    { "value": "01 ly Vàng SJC 999.9" },
+                    { "value": "1,462,300" },
+                    { "value": "102,361,000" }
+                  ]
+                },
+                {
+                  "cells": [
+                    { "value": "Vùng 2  " },
+                    { "value": "10" },
+                    { "value": "70" },
+                    { "value": "01 ly Vàng SJC 999.9" },
+                    { "value": "1,462,300" },
+                    { "value": "102,361,000" }
+                  ]
+                },
+                {
+                  "cells": [
+                    { "value": "Vùng 3" },
+                    { "value": "10" },
+                    { "value": "70" },
+                    { "value": "01 ly Vàng SJC 999.9" },
+                    { "value": "1,462,300" },
+                    { "value": "102,361,000" }
+                  ]
+                },
+                {
+                  "cells": [
+                    { "value": "<strong>Tổng cộng</strong>" },
+                    { "value": "<strong>30</strong>" },
+                    { "value": "<strong>210</strong>" },
+                    { "value": "" },
+                    { "value": "" },
+                    { "value": "<strong>307,083,000</strong>" }
+                  ]
+                }
+              ],
+              "note": "<p><ul><li>(*) Quy định phân Vùng theo điểm d khoản 5.</li><li>Giá trị giải thưởng theo giá Vàng 999.9 do SJC công bố ngày 25/06/2026.</li></ul></p>"
+            }
+          ]
+        },
+        {
+          "id": "noi-dung-chi-tiet",
+          "title": "6. Nội dung chi tiết thể lệ chương trình",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "<strong>Lãi suất huy động tiền gửi tiết kiệm áp dụng:</strong> Theo quy định Vikki Bank từng thời kỳ, áp dụng đồng thời các CTKM, ưu đãi khác tại Vikki Bank."
+                },
+                {
+                  "text": "<strong>Điều kiện, cách thức tham gia CTKM</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Khách hàng có phát sinh tổng số tiền gửi tiết kiệm VND kỳ hạn từ 6 tháng trở lên cao nhất trong ngày tại Vikki Bank, bao gồm giao dịch gửi mới hoặc tái tục tại quầy và gửi tiết kiệm online qua ứng dụng Vikki theo từng Vùng tại Vikki Bank được xác định là người trúng thưởng. Trường hợp KH phát sinh gửi tiết kiệm tại nhiều Đơn vị kinh doanh (ĐVKD) hoặc thuộc nhiều Vùng, Vùng của KH được xác định theo ĐVKD có tổng số tiền gửi tiết kiệm phát sinh hợp lệ cao nhất trong kỳ xét thưởng."
+                      },
+                      {
+                        "text": "Tổng số tiền gửi tiết kiệm trong ngày tối thiểu từ 100 triệu đồng. Đối với nhóm các sản phẩm tích lũy chỉ tính số dư đầu tiên khi khởi tạo/tái tục TTK."
+                      },
+                      {
+                        "text": "KH có tài khoản thanh toán VikkiME."
+                      },
+                      {
+                        "text": "Trường hợp có từ hai KH trở lên có tổng số tiền gửi bằng nhau thỏa điều kiện nhận thưởng chương trình (ở vị trí Top 10) sẽ ưu tiên xét thưởng theo thứ tự các tiêu chí sau:",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Tiêu chí 1: KH có tổng số dư tiết kiệm VND (bao gồm tất cả Thẻ tiết kiệm (TTK) kỳ hạn từ 6 tháng trở lên) đến ngày T cao hơn."
+                            },
+                            {
+                              "text": "Tiêu chí 2: Nếu tổng số dư vẫn bằng nhau, xét KH có kỳ hạn gửi trung bình dài hơn."
+                            },
+                            {
+                              "text": "Tiêu chí 3: Nếu các tiêu chí trên vẫn trùng khớp, KH có giao dịch gửi tiết kiệm sớm hơn trong ngày T được xác định là người trúng thưởng."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Quy định rút 1 phần vốn hoặc tất toán trước hạn đối với TTK tham gia chương trình:",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Kể từ ngày Vikki Bank công bố danh sách Khách hàng trúng thưởng, Khách hàng không được tất toán trước hạn hoặc rút một phần gốc đối với (các) Thẻ tiết kiệm (TTK) tham gia chương trình và trúng thưởng cho đến ngày đến hạn của TTK đó."
+                            },
+                            {
+                              "text": "Trường hợp Khách hàng trúng thưởng vi phạm quy định (tất toán trước hạn hoặc rút một phần gốc), Vikki Bank có quyền hủy kết quả, từ chối trao thưởng hoặc thu hồi lại toàn bộ giá trị giải thưởng quy định tại Thể lệ này."
+                            },
+                            {
+                              "text": "Khách hàng có nhu cầu sử dụng vốn có thể đăng ký cầm cố TTK dự thưởng để vay vốn tại các Chi nhánh/Phòng giao dịch của Vikki Bank theo quy định hiện hành."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Thời gian địa điểm, cách thức xác định trúng thưởng và trao thưởng</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "<strong>Thời gian xét thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Xét thưởng mỗi ngày, từ 18:00:00 ngày T-1 đến 17:59:59 ngày T."
+                            },
+                            {
+                              "text": "Riêng kết quả ưu đãi ngày đầu tiên (Thứ Tư, 01/07/2026) được tính từ 00:00:00 ngày 01/07/2026 đến 17:59:59 ngày 01/07/2026."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Thời gian thông báo trúng thưởng</strong>",
+                        "children": {
+                          "type": "list",
+                          "style": "disc",
+                          "items": [
+                            {
+                              "text": "Vikki Bank thực hiện liên hệ cho KH trúng thưởng theo số điện thoại KH đã đăng ký tại Vikki Bank trong vòng 07 ngày làm việc kể từ ngày Vikki xét thưởng, qua các đầu Hotline của Vikki Bank (19006608 hoặc 0383.338.253 hoặc 0368.939.309)."
+                            },
+                            {
+                              "text": "Danh sách trúng thưởng công bố và được đăng tải trên website https://vikkibank.vn của ngân hàng."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "<strong>Thời gian trao thưởng:</strong> Vikki Bank thực hiện chuyển khoản vào tài khoản của KH trong vòng 7 ngày làm việc kể từ ngày Vikki Bank thông báo KH trúng giải."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "quy-dinh-phan-vung",
+          "title": "f. Quy định phân Vùng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "roman",
+              "items": [
+                {
+                  "text": "<strong>Danh sách ĐVKD theo từng Vùng được quy định tại Vikki Bank</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "disc",
+                    "items": [
+                      {
+                        "text": "<strong>Vùng 1:</strong> CN Hà Nội, PGD Hoàng Mai, PGD Ba Đình, PGD Bạch Mai, PGD Cầu Giấy, PGD Hà Thành, PGD Thanh Xuân, PGD Long Biên, PGD Minh Khai, PGD Hà Đông, PGD Đông Đô, PGD Vạn Xuân, PGD Tây Hồ, PGD Vạn Phúc, PGD Sơn Tây, PGD Thăng Long, PGD Đông Anh, CN Hải Phòng, PGD Kiến An, PGD Thủy Nguyên, PGD Ngô Quyền, PGD Hồng Bàng, CN Quảng Ninh, PGD Hạ Long, CN Thái Bình, PGD Thái Thụy, PGD Đông Hưng, PGD Kiến Xương, PGD Tiền Hải, PGD Vũ Thư, CN Hưng Yên, PGD Yên Mỹ, CN Bắc Ninh, PGD Quế Võ, PGD Gia Bình, CN Thái Nguyên, CN Vĩnh Phúc, PGD Phúc Yên, CN Bắc Giang, PGD Lạng Giang, PGD Tân Yên, PGD Hiệp Hòa, CN Nam Định, CN Hà Nam, CN Sở Giao Dịch, Sở Giao Dịch 1, Hội Sở."
+                      },
+                      {
+                        "text": "<strong>Vùng 2:</strong> CN Nha Trang, CN Đà Nẵng, PGD Hải Châu, PGD Ngũ Hành Sơn, PGD Phan Đình Phùng, PGD Hòa Khánh, PGD Hòa Cường, PGD Đống Đa, PGD Hòa Vang, PGD Khuê Trung, PGD Cẩm Lệ, PGD Điện Biên Phủ, CN TP. Huế, PGD Trần Hưng Đạo, CN Quảng Ngãi, PGD Hùng Vương, PGD Châu Ổ, PGD Đức Phổ, CN Bình Định, PGD Quy Nhơn, PGD Phú Tài, CN Quảng Nam, PGD Hội An, PGD Tam Kỳ, PGD Chu Lai, PGD Đại Lộc, PGD Duy Xuyên, PGD Hà Lam, PGD Vĩnh Điện, CN Ninh Thuận, CN Phú Yên, CN Daklak, PGD Buôn Hồ, PGD Cumgar, PGD Eakar, PGD Eatam, PGD Krông Păk, PGD Eahleo, CN Đắk Nông, CN Kontum, CN Lâm Đồng, PGD Đức Trọng, CN Gia Lai, CN Bình Thuận, PGD Lagi, CN Thủ Đức, PGD Đặng Văn Bi, PGD Nguyễn Duy Trinh, PGD Lương Định Của, CN Củ Chi, PGD Quận 12, PGD Tân Thạnh Đông, PGD Nguyễn Ảnh Thủ, PGD Hóc Môn, PGD Xuân Thới Thượng, CN Bình Dương, PGD Đại Lộ Bình Dương, CN Thuận An, PGD Sóng Thần, CN Vũng Tàu, CN Bình Phước, PGD Bình Long, CN Đồng Nai, PGD Đồng Khởi."
+                      },
+                      {
+                        "text": "<strong>Vùng 3:</strong> CN TP. Hồ Chí Minh, PGD Nơ Trang Long, PGD Bạch Đằng, PGD Thanh Đa, PGD Nguyễn Thị Tú, PGD Hiệp Bình, PGD An Sương, PGD Nguyễn Tất Thành, CN Quận 1, PGD Bến Thành, PGD Hòa Hưng, PGD An Dương Vương, CN Đinh Tiên Hoàng, PGD Bà Chiểu, PGD Lê Văn Sỹ, PGD Hai Bà Trưng, CN Tân Bình, PGD Lê Văn Quới, PGD Trường Chinh, PGD Hiệp Phước, PGD Lý Thường Kiệt, PGD Tân Phú, PGD Bà Quẹo, PGD Nguyễn Sơn, PGD Lê Trọng Tấn, CN Quận 5, PGD Bình Chánh, PGD BX Miền Tây, PGD Bình Tân, PGD Lê Văn Lương, PGD Bình Tây, PGD PouYuen, CN Gò Vấp, PGD Lê Văn Thọ, PGD Phan Văn Trị, PGD Hà Huy Giáp, PGD Phú Nhuận, CN Quận 10, PGD Lê Đại Hành, PGD Lý Thái Tổ, PGD Hạnh Thông Tây, CN Quận 7, PGD Phú Mỹ Hưng, PGD Nhà Bè, PGD Nguyễn Thị Thập, CN Quận 3, PGD Nguyễn Chí Thanh, PGD Nguyễn Thị Tần, PGD Cư Xá Bắc Hải, PGD Quận 8, CN Cần Thơ, PGD Thới Lai, PGD Ninh Kiều, PGD An Bình, PGD Trà Nóc, PGD Bình Thủy, PGD Cái Răng, PGD Thốt Nốt, PGD Cờ Đỏ, PGD An Hòa, CN Tây Ninh, PGD Long Hoa, CN Kiên Giang, PGD Kiên Lương, PGD Kinh B, PGD Rạch Sỏi, PGD Giồng Riềng, PGD An Biên, PGD Nguyễn Trung Trực, PGD Phú Quốc, CN Tiền Giang, PGD Cai Lậy, PGD Mỹ Tho, PGD Gò Công, PGD An Hữu, CN An Giang, PGD Thoại Sơn, PGD TP Long Xuyên, PGD Tân Châu, PGD Chợ Mới, PGD Châu Đốc, CN Bạc Liêu, PGD Lý Tự Trọng, PGD Phước Long, PGD Hộ Phòng, PGD Giá Rai, PGD Hồng Dân, CN Trà Vinh, PGD Cầu Ngang, PGD Càng Long, CN Cà Mau, CN Sóc Trăng, CN Bến Tre, PGD Bình Đại, PGD Mỏ Cày, PGD Giồng Trôm, CN Vĩnh Long, PGD Vũng Liêm, PGD Bình Minh, CN Hậu Giang, CN Đồng Tháp, CN Long An, PGD Bến Lức."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Danh sách ĐVKD theo từng Vùng được áp dụng theo danh mục hiện hành của Vikki Bank và bao gồm cả các ĐVKD mở mới hoặc đổi tên phát sinh trong thời gian triển khai Chương trình."
+            }
+          ]
+        },
+        {
+          "id": "dau-moi-giai-dap",
+          "title": "7. Đầu mối giải đáp thắc mắc cho Khách hàng",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Mọi thắc mắc liên quan đến Chương trình khuyến mại này, Khách hàng liên hệ:"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ngân hàng TNHH MTV Số Vikki (Vikki Digital Bank) - 72 phố Lý Thường Kiệt, Phường Cửa Nam, Thành phố Hà Nội - Điện thoại: 024 33986060."
+            },
+            {
+              "type": "list",
+              "style": "roman",
+              "items": [
+                {
+                  "text": "Chi nhánh/ Phòng giao dịch Vikki Digital Bank trên toàn quốc (danh sách cập nhật theo website tại https://www.vikkibank.vn)."
+                },
+                { "text": "Hotline: 19006608." },
+                {
+                  "text": "Thời hạn tra soát cho các giao dịch là trong vòng 60 ngày kể từ ngày cuối cùng của tháng phát sinh các giao dịch đó."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "trach-nhiem-cong-bo-thong-tin",
+          "title": "8. Trách nhiệm công bố thông tin",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Vikki Digital Bank có trách nhiệm thông báo nội dung chi tiết chương trình khuyến mại và kết quả chương trình khuyến mại trên website: www.vikkibank.vn của ngân hàng."
+            }
+          ]
+        },
+        {
+          "id": "cac-quy-dinh-khac",
+          "title": "9. Các quy định khác",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "alpha",
+              "items": [
+                {
+                  "text": "Bằng việc tham gia vào Chương trình khuyến mại này, KH chấp nhận tất cả các điều khoản và điều kiện được liệt kê trong Thể lệ trên đây và theo tất cả các quy định khác trong các điều khoản và điều kiện gửi tiết kiệm do Vikki Bank phát hành."
+                },
+                {
+                  "text": "KH được áp dụng đồng thời các chương trình khuyến mãi khác của Vikki Bank tại thời điểm tham gia."
+                },
+                {
+                  "text": "Trong trường hợp xảy ra tranh chấp liên quan đến Chương trình khuyến mại này, Vikki Bank có trách nhiệm trực tiếp giải quyết, nếu không thỏa thuận được, tranh chấp sẽ được xử lý theo quy định của pháp luật Việt Nam hiện hành."
+                },
+                {
+                  "text": "Nếu KH tham gia chương trình khuyến mại đồng ý, Vikki Bank sẽ sử dụng hình ảnh, thông tin của KH trúng giải vào các hoạt động quảng cáo, thông báo rộng rãi với công chúng mà không phải trả thêm bất cứ khoản chi phí nào khác."
+                },
+                {
+                  "text": "KH nhận thưởng phải nộp các loại thuế, phí, lệ phí có liên quan đến giải thưởng, kể cả thuế thu nhập cá nhân (nếu có) theo quy định của pháp luật hiện hành, Vikki Bank sẽ khấu trừ khoản thuế, phí, lệ phí (nếu có) này trên trị giá giải thưởng KH nhận được và Vikki Bank thay mặt KH nộp cho cơ quan có thẩm quyền theo quy định của pháp luật."
+                },
+                {
+                  "text": "Thể lệ chương trình khuyến mại được công bố trên website của Vikki Bank (https://www.vikkibank.vn). Trong trường hợp phát sinh yêu cầu sửa đổi, điều chỉnh Thể lệ này, Vikki Bank đảm bảo, công bố công khai Thể lệ sửa đổi/bổ sung theo đúng quy định."
+                },
+                {
+                  "text": "KH tham gia chương trình khuyến mại đồng ý nhận các thông báo ưu đãi qua các kênh truyền thông (SMS, Email, Banner điện tử, trang xã hội...) của Vikki Bank và đối tác thứ ba để truyền thông cho chương trình."
+                },
+                {
+                  "text": "Sau khi kết thúc chương trình khuyến mại, Vikki Bank có trách nhiệm báo cáo kết quả thực hiện khuyến mại theo đúng quy định của pháp luật. Các chứng từ, tài liệu liên quan đến báo cáo kết quả thực hiện khuyến mại phải được Vikki Bank lưu trữ và chịu trách nhiệm theo đúng quy định của pháp luật để phục vụ công tác thanh tra, kiểm tra, giám sát."
+                },
+                {
+                  "text": "Trường hợp sau ngày đăng ký thông báo thể lệ này, lãi suất huy động áp dụng cho chương trình không phù hợp quy định mới của NHNN hoặc cơ quan có thẩm quyền thì Vikki Bank sẽ điều chỉnh phù hợp với yêu cầu."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Điểm đến hấp dẫn</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <div class="heading">
+          <div class="title">
+            <img src="./assets/checkin.png" alt="checkin" />
+            <h2>
+              <div class="gradient-text">Điểm đến<br />hấp dẫn</div>
+            </h2>
+          </div>
+
+          <div class="tabs">
+            <a class="tab-item tablinks active" data-tab="tab-1" id="vn-tab">
+              <div class="airplane-wrapper">
+                <img
+                  src="./assets/airplane.png"
+                  class="airplane"
+                  alt="Airplane"
+                />
+                <img src="./assets/cloud.png" class="cloud" alt="Cloud" />
+              </div>
+
+              <span class="tab-text">Việt Nam </span>
+            </a>
+            <a class="tab-item tablinks" data-tab="tab-2" id="qt-tab"
+              ><div class="airplane-wrapper">
+                <img
+                  src="./assets/airplane.png"
+                  class="airplane"
+                  alt="Airplane"
+                />
+                <img src="./assets/cloud.png" class="cloud" alt="Cloud" />
+              </div>
+              <span class="tab-text">Quốc tế</span></a
+            >
+          </div>
+        </div>
+
+        <div class="section-main">
+          <div class="slide-item">
+            <div class="main-img">
+              <div
+                class="overlay"
+                style="
+                  background: linear-gradient(
+                    90deg,
+                    rgba(210, 2, 138, 0.9) 13.94%,
+                    rgba(255, 182, 1, 0.2) 100%
+                  );
+                "
+              ></div>
+              <img
+                id="mainImage"
+                class="img-large"
+                src="./assets/1.png"
+                alt=""
+              />
+            </div>
+            <div class="main-content"></div>
+            <div class="tabcontent" id="tab-1">
+              <div class="slider-container">
+                <div class="center">
+                  <div data-key="sapa">
+                    <div class="slide-img">
+                      <img src="./assets/1.png" />
+                      <div class="title">Sapa</div>
+                    </div>
+                  </div>
+                  <div data-key="danang">
+                    <div class="slide-img">
+                      <img src="./assets/2.png" />
+                      <div class="title">Đà Nẵng</div>
+                    </div>
+                  </div>
+                  <div data-key="phuquoc">
+                    <div class="slide-img">
+                      <img src="./assets/3.png" />
+                      <div class="title">Phú Quốc</div>
+                    </div>
+                  </div>
+                  <div data-key="sapa">
+                    <div class="slide-img">
+                      <img src="./assets/1.png" />
+                      <div class="title">Sapa</div>
+                    </div>
+                  </div>
+                  <div data-key="danang">
+                    <div class="slide-img">
+                      <img src="./assets/2.png" />
+                      <div class="title">Đà Nẵng</div>
+                    </div>
+                  </div>
+                  <div data-key="phuquoc">
+                    <div class="slide-img">
+                      <img src="./assets/3.png" />
+                      <div class="title">Phú Quốc</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END LARGE TAB-1 -->
+            <!-- LARGE TAB-2 -->
+
+            <div class="tabcontent" id="tab-2">
+              <div class="slider-container">
+                <div class="center">
+                  <div data-key="sydney">
+                    <div class="slide-img">
+                      <img src="./assets/4.png" />
+                      <div class="title">Sydney</div>
+                    </div>
+                  </div>
+                  <div data-key="tokyo">
+                    <div class="slide-img">
+                      <img src="./assets/5.png" />
+                      <div class="title">Tokyo</div>
+                    </div>
+                  </div>
+                  <div data-key="singapore">
+                    <div class="slide-img">
+                      <img src="./assets/6.png" />
+                      <div class="title">Singapore</div>
+                    </div>
+                  </div>
+                  <div data-key="sydney">
+                    <div class="slide-img">
+                      <img src="./assets/4.png" />
+                      <div class="title">Sydney</div>
+                    </div>
+                  </div>
+                  <div data-key="tokyo">
+                    <div class="slide-img">
+                      <img src="./assets/5.png" />
+                      <div class="title">Tokyo</div>
+                    </div>
+                  </div>
+                  <div data-key="singapore">
+                    <div class="slide-img">
+                      <img src="./assets/6.png" />
+                      <div class="title">Singapore</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END SLIDER -->
+            </div>
+            <!-- END LARGE TAB-2 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script src="./assets/script.js"></script>
+  <!-- setHeight for iframe -->
+  <script>
+    function sendHeightToParent() {
+      const height = document.body.scrollHeight;
+      window.parent.postMessage({ type: "setHeight", height }, "*");
+    }
+
+    window.addEventListener("load", sendHeightToParent);
+
+    const resizeObserver = new ResizeObserver(sendHeightToParent);
+    resizeObserver.observe(document.body);
+
+    $(document).on("click", ".btn-discover", function () {
+      $(this).addClass("disabled");
+      const href = $(this).data("href");
+      window.parent.postMessage({ type: "redirect", url: href }, "*");
+    });
+  </script>
+</html>

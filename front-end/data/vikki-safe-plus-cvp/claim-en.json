@@ -1,0 +1,132 @@
+{
+  "language": "en",
+  "htmlLanguage": "en",
+  "layout": "static",
+  "useHeaderImage": true,
+  "title": "CLAIMS FILING GUIDELINES",
+  "header": {
+    "img": "../assets/vikki-logo.png",
+    "h1": "CLAIMS FILING GUIDELINES"
+  },
+  "sections": [
+    {
+      "id": "claim-content",
+      "title": "CONTENT",
+      "defaultExpanded": "block",
+      "articles": [
+        {
+          "id": "claim-notice",
+          "title": "CLAIM NOTICE",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                { "text": "Should there be an insured risk, the Insured or the Insured's relatives must take necessary measures to provide aid to themselves or save the victim." },
+                { "text": "If necessary, notify the police or local authorities at the place of the accident to assist the victim in accordance with regulations." },
+                {
+                  "text": "Promptly contact HDI via the hotline 1900068898 to report the insured event and provide initial declaration for instructions. Initial declaration shall include:",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      { "text": "Information of the person requesting insurance payment." },
+                      { "text": "Insurance contract detail: Insured; ID No./citizen No., policy or insurance certificate No., insurance buyer." },
+                      { "text": "Insurance event briefing: time, place and cause of the event, development of event." }
+                    ]
+                  }
+                },
+                { "text": "Within 30 days from the time of the event, claimant needs to confirm their claim by written notice to HDI." }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "claim-dossier",
+          "title": "COMPLETION OF THE CLAIM DOSSIER",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                { "text": "HDI’s claims officer will promptly contact you to provide guidance on collecting the required documents and proceed with the settlement of the insured benefits." },
+                { "text": "Claim file usually includes the following documents:" }
+              ]
+            },
+            { "type": "paragraph", "text": "1. Insurance claim request form, signed by the Policyholder (using HDI’s template), in original." },
+            { "type": "paragraph", "text": "2. Depending on the cause of the incident, the following documents will be required:" },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "For traffic accidents",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      { "text": "accident report (HDI's form) signed by policyholder in original." },
+                      { "text": "traffic accident record, if any (original or notarized)." },
+                      { "text": "A valid driver's license (if the person is directly driving) and other relevant documents (photocopy)." }
+                    ]
+                  }
+                },
+                {
+                  "text": "occupational accidents and domestic accidents",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      { "text": "accident report (HDI's form) signed by policyholder and confirmed by their company and/or authority in original." },
+                      { "text": "other relevant documents in original." }
+                    ]
+                  }
+                }
+              ]
+            },
+            { "type": "paragraph", "text": "3. Medical documents:" },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                { "text": "Hospital discharge papers/treatment record (in case of inpatient treatment)." },
+                { "text": "Surgery paper (in case of surgery)" },
+                { "text": "Hospital invoices/ prescriptions/ bills/ statements" },
+                { "text": "Clinical test results" },
+                { "text": "And other relevant documents in copy" }
+              ]
+            },
+            { "type": "paragraph", "text": "4. Extract of death declaration (in case of death of the insured) (notarized copy)" },
+            { "type": "paragraph", "text": "5. Documents proving lawful inheritance (in case the Insured passes away)." },
+            { "type": "paragraph", "text": "6. In case the Insured authorizes another person to receive the insurance payment, a legally valid power of attorney (notarized copy) must be provided.." }
+          ]
+        },
+        {
+          "id": "claim-settlement",
+          "title": "CLAIM SETTLEMENT:",
+          "defaultExpanded": "block",
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                { "text": "HDI is committed to fully compensate customers subject to wordings of the insurance contract." },
+                { "text": "In the event that the customer fails to cooperate in following HDI’s instructions or does not fully perform their obligations, HDI may reduce part or all compensation amount in accordance with the law." },
+                {
+                  "text": "For further information please contact:",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      { "text": "HD INSURANCE CO., LTD" },
+                      { "text": "Hotline: 1900068898" },
+                      { "text": "Email: Giamdinhboithuong@hdinsurance.com.vn" }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

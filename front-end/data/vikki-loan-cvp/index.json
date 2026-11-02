@@ -1,0 +1,117 @@
+{
+  "title": "Vikki Loan | VikkiBank",
+  "hasTopSpace": true,
+  "hasBackground": true,
+  "layout": "template",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Giới thiệu",
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#intro"
+        }
+      ]
+    },
+    {
+      "type": "video"
+    },
+    {
+      "type": "imageSection",
+      "id": "intro",
+      "src": "./assets/mo_app.png"
+    },
+    
+    {
+      "type": "imageSection",
+      "src": "./assets/promotions.png"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/cau_hoi_thuong_gap.png"
+      },
+      "button":{
+        "text":"Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Vay cầm cố Sổ Tiết kiệm là gì?",
+          "content": "Vay cầm cố Sổ Tiết kiệm là sản phẩm vay dùng tài khoản tiền gửi tiết kiệm của bạn để làm tài sản đảm bảo cho khoản vay. Sản phẩm này giúp bạn có thể vay tiền để phục vụ nhu cầu cá nhân nhưng vẫn giữ được Sổ Tiết kiệm hiện tại."
+        },
+        {
+          "title": "Tôi có thể vay tối đa bao nhiêu từ Sổ Tiết kiệm?",
+          "content": "Bạn có thể vay tối đa lên đến 100% giá trị Sổ Tiết kiệm (bao gồm lãi đến hạn) sau khi trừ lãi vay. Hệ thống sẽ tự tính toán để gợi ý số tiền tối đa."
+        },
+        {
+          "title": "Sổ Tiết kiệm của tôi khi vay vẫn sinh lãi chứ?",
+          "content": "Sổ Tiết kiệm của bạn vẫn được hưởng lãi suất theo kỳ hạn của Sổ mà bạn gửi cho đến ngày đáo hạn."
+        },
+        {
+          "title": "Lãi suất vay là bao nhiêu?",
+          "content": "Lãi suất cho vay cầm cố Sổ Tiết kiệm thường được tính bằng lãi suất Sổ Tiết kiệm cộng thêm một khoảng biên độ lãi suất cho vay do Ngân hàng quy định và có thể thay đổi theo từng thời kỳ. Tuy nhiên, bạn yên tâm là lãi suất của khoản vay sẽ được cố định trong suốt thời gian của Hợp đồng tín dụng mà bạn đã ký."
+        },
+        {
+          "title": "Tôi có cần thông qua quy trình thẩm định tín dụng không?",
+          "content": "Sản phẩm vay cầm cố Sổ Tiết kiệm sẽ đi qua quy trình thẩm định tự động dựa trên tài sản bảo đảm là chính khoản tiền gửi tiết kiệm của bạn, thường sẽ được phê duyệt ngay lập tức sau khi hoàn tất quy trình đăng ký."
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-white",
+      "termsButtonFullW": {
+        "title": "Điều khoản & điều kiện",
+        "popup": "/vikki-cvp/vikki-loan-cvp/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Vay cầm cố Sổ Tiết Kiệm",
+      "children": [
+        {
+          "title": "Vay cầm cố Sổ Tiết kiệm là gì?",
+          "content": "Vay cầm cố Sổ Tiết kiệm là sản phẩm vay dùng tài khoản tiền gửi tiết kiệm của bạn để làm tài sản đảm bảo cho khoản vay. Sản phẩm này giúp bạn có thể vay tiền để phục vụ nhu cầu cá nhân nhưng vẫn giữ được Sổ Tiết kiệm hiện tại."
+        },
+        {
+          "title": "Tôi có thể vay tối đa bao nhiêu từ Sổ Tiết kiệm?",
+          "content": "Bạn có thể vay tối đa lên đến 100% giá trị Sổ Tiết kiệm (bao gồm lãi đến hạn) sau khi trừ lãi vay. Hệ thống sẽ tự tính toán để gợi ý số tiền tối đa."
+        },
+        {
+          "title": "Sổ Tiết kiệm của tôi khi vay vẫn sinh lãi chứ?",
+          "content": "Sổ Tiết kiệm của bạn vẫn được hưởng lãi suất theo kỳ hạn của Sổ mà bạn gửi cho đến ngày đáo hạn."
+        },
+        {
+          "title": "Lãi suất vay là bao nhiêu?",
+          "content": "Lãi suất cho vay cầm cố Sổ Tiết kiệm thường được tính bằng lãi suất Sổ Tiết kiệm cộng thêm một khoảng biên độ lãi suất cho vay do Ngân hàng quy định và có thể thay đổi theo từng thời kỳ. Tuy nhiên, bạn yên tâm là lãi suất của khoản vay sẽ được cố định trong suốt thời gian của Hợp đồng tín dụng mà bạn đã ký."
+        },
+        {
+          "title": "Tôi có cần thông qua quy trình thẩm định tín dụng không?",
+          "content": "Sản phẩm vay cầm cố Sổ Tiết kiệm sẽ đi qua quy trình thẩm định tự động dựa trên tài sản bảo đảm là chính khoản tiền gửi tiết kiệm của bạn, thường sẽ được phê duyệt ngay lập tức sau khi hoàn tất quy trình đăng ký."
+        },
+        {
+          "title": "Tôi có rút được Sổ Tiết kiệm trong thời gian vay không?",
+          "content": "Trong suốt thời gian vay, bạn không thể rút tiền từ Sổ Tiết kiệm đang làm tài sản đảm bảo cho khoản vay. Tiền gửi của bạn sẽ được phong tỏa trong suốt thời hạn hiệu lực của khoản vay."
+        },
+        {
+          "title": "Tôi có thể trả nợ trước hạn được không?",
+          "content": "Trong giai đoạn hiện tại, sản phẩm chưa hỗ trợ tất toán trước hạn hay trả nợ một phần.<br>Đến ngày đáo hạn của khoản vay, ngân hàng sẽ sử dụng nguồn tiền từ Sổ Tiết kiệm của bạn để thanh toán cho khoản vay, nếu tiền còn dư thì phần tiền này sẽ được chuyển về tài khoản thanh toán của bạn."
+        },
+        {
+          "title": "Kỳ hạn vay có bắt buộc đến thời gian đáo hạn Sổ Tiết kiệm không?",
+          "content": "Hiện tại theo chính sách sản phẩm của Vikki Bank, chưa hỗ trợ thời hạn vay ngắn hơn thời hạn của Sổ Tiết kiệm."
+        }
+      ]
+    }
+  ]
+}

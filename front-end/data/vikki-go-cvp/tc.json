@@ -1,0 +1,1483 @@
+{
+    "id": "vikki-go-tnc",
+    "version": "2.1.0",
+    "layout": "static",
+    "header": {
+      "img": "assets/logo-vikki.png",
+      "h1": "Điều khoản và Điều kiện phát hành, sử dụng Thẻ tín dụng Vikki",
+      "intro": [
+        "Nội dung của Điều khoản và Điều kiện phát hành, sử dụng Thẻ tín dụng Vikki (“Điều khoản và Điều kiện”) dưới đây cùng với Giấy đề nghị cấp Thẻ tín dụng cá nhân kiêm Hợp đồng sử dụng Thẻ tín dụng (“Giấy Đề nghị cấp Thẻ tín dụng”) tạo thành một Hợp đồng phát hành và sử dụng Thẻ tín dụng ràng buộc pháp lý giữa Chủ thẻ và HDBank. Khi Chủ thẻ sử dụng Thẻ nghĩa là Chủ thẻ đã chấp nhận và chịu sự ràng buộc bởi “Điều khoản và Điều kiện” dưới đây."
+      ]
+    },
+  
+    "sections": [
+      {
+        "id": "phan-a",
+        "title": "Phần A. QUY ĐỊNH CHUNG",
+        "defaultExpanded": "block",
+        "articles": [
+          {
+            "id": "dieu-1",
+            "title": "Điều 1. Giải thích từ ngữ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Ngân hàng TMCP Phát triển TP.HCM (viết tắt là “HDBank”): là ngân hàng phát hành và thanh toán Thẻ tín dụng theo quy định của Ngân hàng Nhà nước Việt Nam và tổ chức Thẻ."
+                  },
+                  {
+                    "text": "Thẻ Tín dụng Vikki (viết tắt là “Thẻ”): là loại Thẻ tín dụng do HDBank phát hành dưới hình thức Thẻ vật lý hoặc Thẻ phi vật lý và là Thẻ tín dụng quốc tế. Thời hạn hiệu lực Thẻ được ghi trên Thẻ cho phép Chủ thẻ thực hiện Giao dịch Thẻ trong phạm vi hạn mức tín dụng đã được cấp theo thỏa thuận với HDBank."
+                  },
+                  {
+                    "text": "Thẻ tín dụng nội địa: là Thẻ tín dụng do HDBank phát hành cho phép Chủ thẻ thực hiện giao dịch trong phạm vi lãnh thổ Việt Nam."
+                  },
+                  {
+                    "text": "Thẻ tín dụng quốc tế: là Thẻ tín dụng do HDBank phát hành cho phép Chủ thẻ thực hiện giao dịch trong phạm vi lãnh thổ Việt Nam và ngoài lãnh thổ Việt Nam."
+                  },
+                  {
+                    "text": "Thẻ vật lý: là Thẻ có hình thức hiện hữu vật chất, thông thường được làm bằng chất liệu nhựa, có gắn chip điện tử để lưu giữ dữ liệu Thẻ, có thông tin in trên Thẻ theo quy định của Ngân hàng Nhà nước Việt Nam và HDBank từng thời kỳ."
+                  },
+                  {
+                    "text": "Thẻ phi vật lý: là Thẻ không hiện hữu bằng hình thức vật chất, tồn tại dưới dạng điện tử và hiển thị các thông tin trên Thẻ theo quy định. Thẻ phi vật lý có thể được tổ chức phát hành thẻ in ra Thẻ vật lý theo thỏa thuận giữa HDBank và Chủ thẻ. Chủ thẻ có nghĩa vụ bảo mật Thẻ vật lý theo quy định pháp luật và quy định của HDBank từng thời kỳ."
+                  },
+                  {
+                    "text": "Điểm giao dịch: là các Đơn vị kinh doanh của HDBank, bao gồm Trung tâm kinh doanh, Chi nhánh, Phòng giao dịch và các Đơn vị khác có chức năng kinh doanh trong từng thời kỳ của HDBank."
+                  },
+                  {
+                    "text": "Tài khoản thanh toán trực tuyến Vikki (gọi tắt là “TKTT trực tuyến Vikki”): là tài khoản thanh toán HDBank được mở bằng phương thức/phương tiện điện tử và áp dụng định danh trực tuyến (eKYC) đối với Khách hàng trên ứng dụng Vikki. Theo đó, Khách hàng được xác thực và định danh trên các phương tiện điện tử tại thời điểm mở tài khoản mà không cần phải đến điểm giao dịch của HDBank."
+                  },
+                  {
+                    "text": "Chủ TKTT trực tuyến Vikki: là Khách hàng cá nhân đăng ký và đứng tên mở TKTT trực tuyến Vikki tại HDBank."
+                  },
+                  {
+                    "text": "Ứng dụng Vikki: là ứng dụng trên thiết bị di động được phát triển bởi HDBank, cho phép Khách hàng sử dụng các dịch vụ Mobile Banking của HDBank theo quy định của HDBank từng thời kỳ."
+                  },
+                  {
+                    "text": "Hợp đồng phát hành và sử dụng Thẻ (viết tắt là “Hợp đồng”): là thỏa thuận giữa HDBank với Chủ thẻ về việc phát hành và sử dụng Thẻ tín dụng Vikki. Hợp đồng này được tạo nên bởi Điều khoản và Điều kiện phát hành, sử dụng Thẻ tín dụng Vikki cùng với Giấy đề nghị kiêm hợp đồng phát hành và sử dụng Thẻ tín dụng Vikki hoặc Giấy đề nghị kiêm hợp đồng mở, sử dụng tài khoản thanh toán/ sản phẩm – dịch vụ hoặc văn bản khác có tên gọi tương đương theo quy định của HDBank trong từng thời kỳ, được HDBank và Chủ thẻ ký/ xác nhận trực tiếp hoặc được ký số phù hợp với quy định HDBank, quy định của pháp luật giao dịch điện tử."
+                  },
+                  {
+                    "text": "Hợp đồng bảo đảm: là hợp đồng thế chấp/ cầm cố/ bảo lãnh, hoặc các văn bản khác quy định về biện pháp bảo đảm để đảm bảo cho việc thực hiện nghĩa vụ của Chủ thẻ với HDBank."
+                  },
+                  {
+                    "text": "Sao kê Thẻ: là thông báo được HDBank gửi cho Chủ thẻ hàng tháng, trong đó liệt kê chi tiết các nội dung giao dịch của Chủ thẻ như: các Giao dịch Thẻ, phí, lãi phát sinh trong kỳ, số tiền đã thanh toán, số dư nợ đầu kỳ, số dư nợ cuối kỳ, số tiền thanh toán tối thiểu, ngày đến hạn thanh toán, và một số nội dung khác có liên quan."
+                  },
+                  {
+                    "text": "Kỳ sao kê: là khoảng thời gian giữa 02 lần sao kê liên tiếp hoặc là khoảng thời gian HDBank lập Sao kê, được tính từ ngày sau Ngày sao kê của kỳ liền trước tới hết Ngày sao kê của kỳ hiện tại."
+                  },
+                  {
+                    "text": "Ngày sao kê: là ngày HDBank lập Sao kê Thẻ và do HDBank quy định."
+                  },
+                  {
+                    "text": "Chủ thẻ: là Chủ thẻ tín dụng Vikki, là chủ TKTT trực tuyến Vikki, là cá nhân đề nghị HDBank cấp Thẻ và đứng tên thực hiện giao kết Hợp đồng phát hành và sử dụng Thẻ tín dụng Vikki trên ứng dụng Vikki. Tên Chủ thẻ được in trên Thẻ."
+                  },
+                  {
+                    "text": "Tổ chức thanh toán Thẻ (viết tắt là “TCTTT”): là HDBank hoặc các tổ chức tín dụng khác, chi nhánh ngân hàng nước ngoài được phép thực hiện dịch vụ thanh toán Thẻ theo quy định của pháp luật."
+                  },
+                  {
+                    "text": "Tổ chức Thẻ Việt Nam (viết tắt là “TCTVN”): là tổ chức trung gian cung ứng dịch vụ kết nối hệ thống xử lý Giao dịch Thẻ, thực hiện việc trao đổi dữ liệu bằng điện tử hoặc bằng chứng từ và bù trừ các nghĩa vụ tài chính phát sinh từ các Giao dịch Thẻ cho HDBank, các TCTTT và đơn vị chấp nhận Thẻ theo thỏa thuận bằng văn bản giữa các bên có liên quan."
+                  },
+                  {
+                    "text": "Tổ chức Thẻ quốc tế (viết tắt là “TCTQT”) là tổ chức được thành lập, hoạt động ở nước ngoài theo quy định của pháp luật nước ngoài, có thỏa thuận với các TCPHT, TCTTT, tổ chức chuyển mạch Thẻ và/ hoặc các bên liên quan để hợp tác về hoạt động Thẻ ngân hàng đối với Thẻ có mã TCPHT do TCTQT cấp hoặc Thẻ có mã TCPHT của quốc gia khác, phù hợp với các quy định của pháp luật Việt Nam và cam kết quốc tế."
+                  },
+                  {
+                    "text": "Đơn vị chấp nhận Thẻ (viết tắt là “ĐVCNT”): là các tổ chức, cá nhân chấp nhận thanh toán hàng hóa, dịch vụ bằng Thẻ theo hợp đồng thanh toán Thẻ ký kết với TCTTT."
+                  },
+                  {
+                    "text": "Hóa đơn: là chứng từ xác nhận các giao dịch thông qua Thẻ do Chủ thẻ thực hiện tại ĐVCNT."
+                  },
+                  {
+                    "text": "Tổng đài dịch vụ khách hàng Vikki: là kênh hỗ trợ của HDBank đa kênh (qua số điện thoại 19006808, email 19006808@vikki.vn để tiếp nhận các yêu cầu của Chủ Thẻ liên quan đến việc phát hành và sử dụng Thẻ theo quy định của HDBank tại từng thời điểm."
+                  },
+
+                  {
+                    "text": "eKYC cơ bản: là việc định danh Khách hàng trực tuyến thông qua kiểm tra, đối chiếu, đảm bảo sự khớp đúng giữa thông tin nhận biết Khách hàng, Dữ liệu sinh trắc học của Khách hàng với các thông tin, yếu tố sinh trắc học tương ứng trên Giấy tờ tùy thân của Khách hàng, bao gồm:",
+                    "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                        {
+                            "text": "Thông tin định danh: Họ và tên; Ngày, tháng năm sinh; Địa chỉ thường trú; Số điện thoại; Số CCCD, Ngày cấp, Nơi cấp; Giới tính; và"
+                        },
+                        {
+                            "text": "Hình ảnh Giấy tờ tùy thân: hình chụp rõ nét, đọc được thông tin, không bị lóe sáng, không bị mất góc, đúng loại giấy tờ đã chọn bao gồm cả mặt trước và mặt sau; và"
+                        },
+                        {
+                            "text": "Các thông tin khác (nếu có) theo yêu cầu của HDBank phù hợp với quy định của pháp luật trong việc phát hành Thẻ."
+                        }
+                        ]
+                    }
+                  },
+                  {
+                    "text": "eKYC nâng cao: là các biện pháp dùng để nhận biết, xác minh thông tin Chủ thẻ mà HDBank có thể áp dụng sau khi thực hiện eKYC cơ bản, bao gồm các biện pháp sau đây:",
+                    "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                            {
+                                "text": "HDBank áp dụng công nghệ để kiểm tra, đối chiếu đặc điểm sinh trắc học của Chủ thẻ với dữ liệu sinh trắc học công dân thông qua cơ sở dữ liệu căn cước công dân; hoặc;"
+                            },
+                            {
+                                "text": "HDBank áp dụng giải pháp cuộc gọi ghi hình (video call) để thực hiện thu thập kiểm tra, xác minh thông tin nhận biết Chủ thẻ trong quá trình phát hành hoặc sử dụng Thẻ đảm bảo hiệu quả như quy trình nhận biết, xác minh thông tin Chủ thẻ qua phương thức gặp mặt trực tiếp. Giải pháp video call phải đáp ứng tối thiểu các yêu cầu sau: đảm bảo an toàn, bảo mật; độ phân giải cao; tín hiệu liên tục; cho phép tương tác âm thanh, hình ảnh với Chủ thẻ theo thời gian thực để đảm bảo nhận diện người thật; lưu trữ toàn bộ dữ liệu âm thanh, hình ảnh hoặc bản ghi hình, ghi âm trong quá trình phát hành Thẻ cho Chủ thẻ."
+                            }
+                        ]
+                    }
+                 },
+
+                  {
+                    "text": "Tạm ngưng sử dụng Thẻ: là việc HDBank tạm khóa Thẻ trên hệ thống và Chủ thẻ tạm thời không sử dụng được Thẻ."
+                  },
+
+                  {
+                    "text": "Tài khoản Thẻ tín dụng (viết tắt là “Tài khoản Thẻ”): là tài khoản gắn với Thẻ được mở với thông tin của Chủ thẻ tại HDBank và dùng để quản lý các loại Giao dịch Thẻ, phí, lãi và các phát sinh liên quan đến việc sử dụng Thẻ."
+                  },
+                  {
+                    "text": "Giao dịch Thẻ: là việc sử dụng thẻ để thực hiện giao dịch thanh toán, rút tiền mặt và các dịch vụ khác được HDBank và các TCTTT cung ứng theo quy định của pháp luật."
+                  },
+                  {
+                    "text": "Số tiền giao dịch: là số tiền mà Chủ thẻ sử dụng trong các Giao dịch Thẻ."
+                  },
+                  {
+                    "text": "Số tiền giao dịch quy đổi: là số tiền giao dịch được quy đổi theo tỷ giá quy đổi từ ngoại tệ ra Việt Nam đồng (VNĐ) do HDBank hoặc các TCTQT quy định."
+                  },
+                  {
+                    "text": "Dư nợ: là tổng số tiền Chủ thẻ phải thanh toán cho HDBank bao gồm giá trị (các) Giao dịch Thẻ, phí, lãi phát sinh, các khoản phải trả khác liên quan đến việc sử dụng Thẻ hoặc các nghĩa vụ tài chính khác (nếu có) chưa được Chủ thẻ thanh toán cho HDBank và được liệt kê trong Sao kê Thẻ hàng tháng."
+                  },
+                  {
+                    "text": "Số tiền ghi nợ: là tổng các giá trị Giao dịch Thẻ và các khoản thanh toán khác liên quan đến việc sử dụng Thẻ, bao gồm: số tiền giao dịch quy đổi, các khoản phí do HDBank quy định, TCTQT quy định (nếu có) và các khoản phụ phí (nếu có) được ghi nợ vào Tài khoản Thẻ."
+                  },
+                  {
+                    "text": "Dư nợ gốc trong hạn: là số dư nợ gốc mà Chủ thẻ có nghĩa vụ thanh toán trong thời hạn đã thỏa thuận/ cam kết với HDBank tại Hợp đồng hoặc theo yêu cầu của HDBank."
+                  },
+                  {
+                    "text": "Dư nợ gốc quá hạn: bao gồm số dư nợ gốc bị chuyển nợ quá hạn khi Chủ thẻ không thực hiện nghĩa vụ trả nợ/ thanh toán theo Hợp đồng, số dư nợ gốc mà Chủ thẻ không trả được nợ trước hạn khi HDBank thực hiện các nội dung theo quy định khoản 11.3 Điều 11 và Điều 14 của Điều khoản và Điều kiện này."
+                  },
+                  {
+                    "text": "Nợ quá hạn: là khoản nợ mà Chủ thẻ không thực hiện hoặc thực hiện không đầy đủ nghĩa vụ trả nợ khi đến hạn thanh toán theo Hợp đồng với HDBank và/ hoặc các thỏa thuận khác với HDBank (nếu có)."
+                  },
+                  {
+                    "text": "Ngày đến hạn thanh toán: là ngày cuối cùng để Chủ thẻ thanh toán Dư nợ theo quy định của HDBank (trước 16g30 cùng ngày)."
+                  },
+                  {
+                    "text": "Số tiền thanh toán tối thiểu: là số tiền mà Chủ thẻ cần phải thanh toán theo thông báo trên sao kê của HDBank chậm nhất vào Ngày đến hạn thanh toán."
+                  },
+                  {
+                    "text": "Hạn mức tín dụng Thẻ (viết tắt là “HMTD”): là số tiền tối đa mà Chủ thẻ được HDBank cho phép sử dụng tại một thời điểm nhất định."
+                  },
+                  {
+                    "text": "Tài sản bảo đảm (viết tắt là “TSBĐ”): là tiền ký quỹ, giấy tờ có giá hoặc tài sản khác đáp ứng quy định của HDBank trong từng thời kỳ dùng để bảo đảm việc thực hiện các nghĩa vụ tài chính của Chủ thẻ tại HDBank. Việc nhận, quản lý TSBĐ thực hiện theo quy định của HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Bên bảo đảm: là cá nhân hoặc tổ chức dùng tài sản thuộc quyền sở hữu/ quyền sử dụng hợp pháp của mình để bảo đảm cho nghĩa vụ của Chủ thẻ tại HDBank."
+                  },
+                  {
+                    "text": "Máy giao dịch tự động (viết tắt là “ATM”) là thiết bị mà Chủ thẻ có thể sử dụng để thực hiện các giao dịch như: gửi, nạp, rút tiền mặt, thanh toán hóa đơn hàng hóa, dịch vụ, vấn tin tài khoản, đổi PIN, tra cứu thông tin Thẻ hoặc các giao dịch khác theo quy định của pháp luật."
+                  },
+                  {
+                    "text": "Hệ thống giao dịch Thẻ nội địa: bao gồm hệ thống HDBank, hệ thống các ĐVCNT, hệ thống các ATM của các tổ chức có tham gia cùng hệ thống kết nối với HDBank (NAPAS,…)"
+                  },
+                  {
+                    "text": "Hệ thống giao dịch Thẻ quốc tế bao gồm hệ thống HDBank, hệ thống các ĐVCNT, hệ thống các ATM của các tổ chức có tham gia cùng hệ thống kết nối với HDBank (Visa, Master, JCB, …)."
+                  },
+                  {
+                    "text": "Mã số xác định Chủ thẻ (Personal Identification Number – viết tắt là “PIN”): là mã số mật được HDBank cung cấp cho Chủ thẻ hoặc do Chủ thẻ thay đổi theo quy trình do HDBank quy định để sử dụng trong các Giao dịch Thẻ. Mã số này do Chủ thẻ chịu trách nhiệm bảo mật. Trong giao dịch điện tử, số PIN được coi là chữ ký của Chủ thẻ."
+                  },
+                  {
+                    "text": "Thời hạn hiệu lực/ hiệu lực Thẻ: là khoảng thời gian HDBank cho phép Chủ thẻ sử dụng Thẻ và được in trên Thẻ."
+                  },
+                  {
+                    "text": "Phí dịch vụ Thẻ tín dụng (viết tắt là “phí”): là các khoản phí mà Chủ thẻ thanh toán cho HDBank khi mở, sử dụng và thực hiện các Giao dịch Thẻ. Mức phí, loại phí sẽ do HDBank quy định theo từng thời điểm và được ban hành trong biểu phí dịch vụ Thẻ."
+                  },
+                  {
+                    "text": "Chứng từ giao dịch liên quan đến Tài khoản Thẻ: là bất kỳ giấy tờ, chứng từ nào có chữ ký của Chủ thẻ hoặc thông điệp dữ liệu thể hiện thông tin của Giao dịch Thẻ có sử dụng số PIN hoặc theo các tiêu chuẩn do TCTVN (NAPAS,…) quy định xác nhận việc thực hiện Giao dịch Thẻ của Chủ thẻ."
+                  },
+                  {
+                    "text": "Giấy tờ tuỳ thân: bao gồm một trong các loại sau: căn cước công dân gắn chip, hộ chiếu hoặc các loại giấy tờ khác (còn hiệu lực) được HDBank chấp nhận sử dụng trong các giao dịch tại HDBank."
+                  },
+                  {
+                    "text": "Thẻ Chip theo chuẩn EMV/ chuẩn VSSC (viết tắt là “Thẻ Chip”): là sản phẩm Thẻ được gắn chip điện tử với bộ vi xử lý như một máy tính thu nhỏ đa chức năng và ứng dụng, có khả năng lưu trữ các thông tin quan trọng được mã hóa với độ bảo mật cao."
+                  },
+                  {
+                    "text": "Thẻ Chip HDBank contactless (hay còn gọi là “Thẻ phi tiếp xúc”): là Thẻ thông minh được ứng dụng cả công nghệ “tiếp xúc” và “phi tiếp xúc” trên 1 chiếc Thẻ. Thẻ có cách thức giao tiếp kép, vừa giao tiếp bằng cách tiếp xúc (contact) với đầu đọc Thẻ hoặc giao tiếp từ xa (contactless). Chủ thẻ chỉ cần chạm hoặc vẫy nhẹ Thẻ lên máy POS để thực hiện Giao dịch Thẻ."
+                  },
+                  {
+                    "text": "POS NFC: là thiết bị chấp nhận Thẻ có tích hợp công nghệ NFC (công nghệ kết nối không dây), ngoài chức năng như máy POS thông thường, máy POS NFC còn có chức năng chấp nhận Thẻ phi tiếp xúc và các thiết bị kết nối không dây khác."
+                  },
+                  {
+                    "text": "Giao dịch Thẻ phi tiếp xúc: là giao dịch được thực hiện bằng cách chạm hoặc đặt Thẻ HDBank contactless trong cự ly gần với máy POS NFC."
+                  },
+                  {
+                    "text": "Giao dịch Thẻ trực tuyến: là việc sử dụng Thẻ để thanh toán tiền mua hàng hóa, dịch vụ trực tiếp trên các website của ĐVCNT có kết nối với hệ thống thanh toán trực tuyến của HDBank và/ hoặc đối tác của HDBank."
+                  },
+                  {
+                    "text": "Giao dịch Easy Payment: là việc Chủ thẻ Contactless thực hiện các giao dịch thanh toán hàng hóa, dịch vụ qua POS (đã nâng cấp công nghệ Contactless) mà không cần ký tên trên hóa đơn giao dịch với số tiền hàng hóa, dịch vụ nhỏ hơn một giá trị nhất định được quy định từ TCTQT trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Giao dịch đáng ngờ: là giao dịch có dấu hiệu bất thường hoặc có cơ sở hợp lý để nghi ngờ tài sản trong giao dịch có nguồn gốc từ hoạt động tội phạm hoặc liên quan tới rửa tiền và theo quy định của pháp luật, quy định của NHNN từng thời kỳ."
+                  },
+                  {
+                    "text": "Giao dịch thanh toán khống tại ĐVCNT: là việc sử dụng Thẻ để thanh toán tiền hàng hóa, dịch vụ nhưng thực tế không phát sinh việc mua bán, cung ứng hàng hóa, dịch vụ."
+                  },
+                  {
+                    "text": "Thẻ giả: là Thẻ không do HDBank phát hành Thẻ phát hành nhưng có chứa các thông tin của Thẻ thật, Chủ thẻ thật."
+                  },
+                  {
+                    "text": "Giao dịch Thẻ gian lận, giả mạo: là giao dịch được thực hiện bằng Thẻ giả, giao dịch sử dụng trái phép Thẻ."
+                  },
+
+                  {
+                    "text": "Dịch vụ xác thực giao dịch Thẻ trực tuyến quốc tế (viết tắt là “Dịch vụ 3D Secured”): là dịch vụ nhằm tăng thêm sự an toàn cho Chủ thẻ khi thực hiện giao dịch Thẻ trực tuyến tại các website có biểu tượng Verified by Visa hoặc MasterCard SecureCode hoặc JCB thông qua việc xác thực Chủ thẻ bằng một mật khẩu."
+                  },
+                  {
+                    "text": "One Time Password (viết tắt là “OTP”): Mật khẩu sử dụng một lần và chỉ có giá trị trong một khoảng thời gian nhất định. Tùy theo từng phương thức đăng ký OTP, Chủ thẻ sử dụng thiết bị để đăng ký OTP (OTP Token) hoặc phần mềm phát sinh mật khẩu trên thiết bị di động (Soft Token) của Chủ thẻ hoặc hoặc HDBank gửi OTP dưới dạng tin nhắn SMS/ Email (OTP SMS/ OTP email) tới số điện thoại di động/ email đã đăng ký với HDBank của Chủ thẻ."
+                  },
+                  {
+                    "text": "Ngày làm việc: từ thứ hai đến thứ sáu trong tuần trừ các ngày Thứ 7, Chủ nhật và ngày nghỉ/ ngày lễ/ Tết theo quy định HDBank và của pháp luật trong từng thời kỳ."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-2",
+            "title": "Điều 2. HẠN MỨC TÍN DỤNG THẺ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "HMTD thẻ KH được cấp do HDBank quyết định căn cứ vào đề nghị của Chủ Thẻ tại Giấy đề nghị (nếu có) và thực hiện thông báo cho KH."
+                  },
+                  {
+                    "text": "Định kỳ hàng năm HDBank có toàn quyền (nhưng không có nghĩa vụ) thực hiện điều chỉnh tăng hoặc giảm HMTD tự động cho Chủ thẻ theo quy định của HDBank trong từng thời kỳ. HDBank thông báo cho Chủ thẻ bằng các phương thức phù hợp do HDBank quyết định về sự điều chỉnh HMTD. Với trường hợp HDBank thực hiện tăng HMTD tự động, trong thời gian 05 ngày làm việc kể từ ngày HDBank gửi thông báo, nếu Chủ thẻ tiếp tục sử dụng Thẻ và/ hoặc HDBank không nhận được phản hồi từ chối bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ từ Chủ thẻ, HDBank hiểu rằng Chủ thẻ đồng ý với việc thực hiện tăng HMTD của HDBank."
+                  },
+                  {
+                    "text": "Dựa trên kết quả đánh giá hợp lý các rủi ro tín dụng, tình hình tài chính liên quan đến Chủ thẻ, việc sử dụng Thẻ, Tài khoản Thẻ dựa vào những thông tin mà HDBank có được, HDBank có toàn quyền xem xét điều chỉnh giảm HMTD vào bất kỳ thời điểm nào mà không cần phải thông báo trước cho Chủ thẻ."
+                  },
+                  {
+                    "text": "Chủ thẻ có thể đề nghị HDBank xem xét điều chỉnh (tăng/ giảm) HMTD được cấp bằng cách gửi giấy đề nghị hoặc bằng các phương thức khác phù hợp do HDBank quyết định. HDBank có quyền đánh giá để xem xét việc chấp nhận hoặc từ chối việc điều chỉnh HMTD theo đề nghị của Chủ thẻ theo quy định hiện hành của HDBank. HDBank thông báo cho chủ thẻ qua ứng dụng Vikki hoặc các phương thức khác do HDBank quyết định về kết quả xem xét việc chấp nhận hoặc từ chối điều chỉnh HMTD theo đề nghị của Chủ thẻ."
+                  },
+                  {
+                    "text": "Hạn mức giao dịch (bao gồm hạn mức thanh toán, hạn mức rút tiền mặt trong và ngoài nước (nếu có) và các hạn mức khác trong việc sử dụng Thẻ) sẽ được HDBank quy định trong từng thời kỳ và phù hợp với quy định của pháp luật."
+                  },
+                  {
+                    "text": "Các biện pháp eKYC nâng cao để nhận biết, xác minh thông tin Chủ thẻ mà HDBank có thể áp dụng bao gồm các biện pháp sau đây:",
+                    "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                            {
+                                "text": "HDBank áp dụng công nghệ để kiểm tra, đối chiếu đặc điểm sinh trắc học của Chủ thẻ với dữ liệu sinh trắc học công dân thông qua cơ sở dữ liệu căn cước công dân; hoặc"
+                            },
+                            {
+                                "text": "HDBank áp dụng giải pháp cuộc gọi ghi hình (video call) để thực hiện thu thập kiểm tra, xác minh thông tin nhận biết Chủ thẻ trong quá trình phát hành Thẻ đảm bảo hiệu quả như quy trình nhận biết, xác minh thông tin Chủ thẻ qua phương thức gặp mặt trực tiếp. Giải pháp video call phải đáp ứng tối thiểu các yêu cầu sau: đảm bảo an toàn, bảo mật; độ phân giải cao; tín hiệu liên tục; cho phép tương tác âm thanh, hình ảnh với Chủ thẻ theo thời gian thực để đảm bảo nhận diện người thật; lưu trữ toàn bộ dữ liệu âm thanh, hình ảnh hoặc bản ghi hình, ghi âm trong quá trình phát hành Thẻ cho Chủ thẻ."
+                            }
+                        ]
+                    }
+                 }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-3",
+            "title": "Điều 3. PHẠM VI SỬ DỤNG, MỤC ĐÍCH SỬ DỤNG, THỜI HẠN CẤP HẠN MỨC TÍN DỤNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "numeric",
+                "items": [
+                  {
+                    "text": "Phạm vi sử dụng: Thẻ được sử dụng trong lãnh thổ Việt Nam và/ hoặc ngoài lãnh thổ Việt Nam. Phạm vi sử dụng thẻ được cấp cho Chủ thẻ căn cứ trên loại Thẻ tín dụng Khách hàng yêu cầu, chấp thuận của HDBank theo Hợp đồng và theo quy định của HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Mục đích sử dụng HMTD: Tiêu dùng. Chủ thẻ cam kết không sử dụng HMTD vào các mục đích trái pháp luật hoặc trái quy định HDBank."
+                  },
+                  {
+                    "text": "Thời hạn cấp HMTD: 5 năm hoặc theo quy định về thời gian sử dụng Thẻ của HDBank ban hành từng thời kỳ. HDBank thực hiện cấp HMTD, đánh giá, xem xét điều chỉnh HMTD (nếu có) theo quy định của HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Thời hạn trả nợ: KH có nghĩa vụ trả nợ cho HDBank vào các thời điểm cụ thể được HDBank thông báo trên các Sao kê Thẻ."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-4",
+            "title": "Điều 4. ĐỒNG TIỀN GIAO DỊCH – LÃI SUẤT – PHÍ DỊCH VỤ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Đồng tiền sử dụng trong Giao dịch Thẻ",
+                    "children": {
+                      "type": "list",
+                      "style": "alpha",
+                      "items": [
+                        {
+                          "text":"Trên lãnh thổ Việt Nam:",
+                          "children": {
+                            "style": "roman",
+                            "items": [
+                              {
+                                "text": "Giao dịch rút tiền mặt bằng Thẻ phải được thực hiện bằng VNĐ;"
+                              },
+                              {
+                                "text": "Đối với các Giao dịch khác bằng Thẻ:",
+                                "children": {
+                                  "items": [
+                                    {
+                                      "text": "Đồng tiền giao dịch là VNĐ. Trường hợp được sử dụng ngoại hối để giao dịch theo quy định pháp luật về quản lý ngoại hối thì đồng tiền thể hiện trong giao dịch là VNĐ hoặc VNĐ và ngoại tệ;"
+                                    },
+                                    {
+                                      "text": "Đồng tiền thanh toán là VNĐ. Các ĐVCNT chỉ được nhận thanh toán bằng VNĐ từ TCTTT;"
+                                    }
+                                  ]
+                                }
+                              },
+                              {
+                                "text": "Trường hợp cần quy đổi từ ngoại tệ ra VNĐ, áp dụng theo tỷ giá quy đổi từ ngoại tệ ra VNĐ do HDBank hoặc TCTQT quy định."
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "text": "Ngoài lãnh thổ Việt Nam: Khi thực hiện Giao dịch Thẻ ngoài lãnh thổ Việt Nam, Chủ Thẻ phải thực hiện thanh toán cho HDBank bằng VNĐ tỷ giá quy đổi từ ngoại tệ ra VNĐ do HDBank hoặc TCTQT quy định phù hợp với quy định của Ngân hàng Nhà nước."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Lãi suất: được áp dụng theo Biểu lãi suất Thẻ tín dụng do HDBank quy định tùy từng thời kỳ và được niêm yết công khai."
+                  },
+                  {
+                    "text": "Phương pháp tính lãi",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Phương pháp tính lãi: HDBank tính lãi từ ngày Chủ thẻ chi tiêu phát sinh dư nợ đến hết ngày liền kề trước ngày Chủ thẻ thanh toán hết dư nợ (tính ngày đầu, bỏ ngày cuối của thời hạn tính lãi) theo Hợp đồng giữa Chủ thẻ và HDBank. Tiền lãi được tính theo công thức:",
+                          "children": {
+                            "style": "roman",
+                            "items": [
+                              {
+                                "text": "Trong đó:"
+                              },
+                              {
+                                "text": "Số dư nợ gốc tính lãi: là Dư nợ gốc trong hạn và/ hoặc Dư nợ gốc quá hạn (nếu có)."
+                              },
+                              {
+                                "text": "Số ngày tính lãi: được xác định tương ứng với từng loại hình giao dịch theo quy định tại điểm b, điểm c khoản 4.3. Điều này."
+                              },
+                              {
+                                "text": "Lãi suất: được quy đổi theo tỷ lệ %/ năm, theo biểu lãi suất Thẻ do HDBank quy định từng thời kỳ; bao gồm cả lãi suất điều chỉnh từng thời kỳ (nếu có) là lãi suất năm tương ứng với lãi suất áp dụng theo phương pháp tính lãi với thời hạn tính lãi được xác định từ ngày tiếp theo ngày giao dịch đến hết ngày Chủ thẻ thanh toán hết Dư nợ (bỏ ngày đầu, tính ngày cuối của thời hạn tính lãi) cho HDBank và số dư thực tế được sử dụng để tính lãi là số dư đầu ngày tính lãi của số Dư nợ gốc trong hạn, số Dư nợ gốc quá hạn mà Chủ thẻ còn phải trả cho HDBank."
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "text": "Giao dịch rút tiền mặt: sẽ được tính lãi ngay từ ngày phát sinh giao dịch rút tiền mặt đến hết ngày liền kề trước (không phụ thuộc vào Ngày sao kê và ngày đến hạn thanh toán) ngày Chủ thẻ thực hiện thanh toán. Trường hợp Chủ thẻ không thanh toán hết toàn bộ Dư nợ hay chỉ thanh toán một phần Dư nợ trong Kỳ sao kê (bao gồm cả lãi và phí), Dư nợ còn lại sẽ tiếp tục được tính lãi cho đến khi được thanh toán hết và sẽ được thể hiện trên Sao kê Thẻ của các kỳ tiếp theo."
+                        },
+                        {
+                          "text": "Đối với Giao dịch thanh toán hàng hóa, dịch vụ:",
+                          "children": {
+                            "style": "roman",
+                            "items": [
+                              {
+                                "text": "Trường hợp Chủ thẻ không có Dư nợ đầu kỳ và chậm nhất vào ngày đến hạn thanh toán, nếu Chủ thẻ thanh toán toàn bộ Dư nợ cuối kỳ được thông báo trên Sao kê Thẻ, HDBank sẽ ưu đãi miễn lãi cho toàn bộ Dư nợ của các giao dịch phát sinh trong Kỳ sao kê đó của Chủ thẻ."
+                              },
+                              {
+                                "text": "Trường hợp Chủ thẻ có Dư nợ đầu kỳ hoặc chậm nhất vào ngày đến hạn thanh toán, nếu Chủ thẻ không thanh toán hoặc chỉ thanh toán một phần Dư nợ cuối kỳ (bao gồm cả trường hợp chỉ thanh toán số tiền tối thiểu theo sao kê), HDBank sẽ tính lãi đối với tất cả các giao dịch kể từ ngày hạch toán giao dịch vào hệ thống quản lý Thẻ của HDBank cho đến hết ngày liền kề trước ngày Chủ thẻ thanh toán, phần Dư nợ còn lại chưa thanh toán sẽ tiếp tục bị tính lãi và được thể hiện trên Kỳ sao kê tiếp theo."
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "text": "Lãi suất quá hạn: Trường hợp khoản nợ Thẻ bị chuyển nợ quá hạn, thì Chủ thẻ phải trả lãi trên Dư nợ gốc quá hạn tương ứng với thời gian quá hạn, lãi suất bằng 150% lãi suất cấp tín dụng qua Thẻ được HDBank quy định và thông báo cho Chủ thẻ theo từng thời kì. Thời điểm bắt đầu tính lãi quá hạn kể từ thời điểm chuyển Nợ quá hạn."
+                        },
+                        {
+                          "text": "Lãi suất chậm trả lãi: áp dụng đối với khoản lãi bị chậm trả với mức lãi suất 10%/ năm tính trên khoản lãi chậm trả tương ứng với thời gian chậm trả hoặc theo quy định của HDBank từng thời kỳ trên cơ sở phù hợp với quy định của NHNN."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Phí dịch vụ: Căn cứ vào dịch vụ mà Chủ thẻ đã đăng ký và sử dụng, HDBank được quyền ghi nợ và thu phí theo biểu phí dịch vụ Thẻ của HDBank ban hành tùy từng thời điểm. Thời gian từ khi thông báo đến khi áp dụng các thay đổi về phí tối thiểu là 07 (bảy) ngày."
+                  },
+                  {
+                    "text": "Lãi suất Thẻ và biểu phí dịch vụ Thẻ được quy định chi tiết tại biểu lãi suất Thẻ và biểu phí dịch vụ Thẻ (sẽ được thay đổi theo quy định của HDBank trong từng thời kỳ). Chủ thẻ đồng ý việc HDBank có quyền thay đổi biểu lãi suất Thẻ và biểu phí dịch vụ Thẻ và HDBank sẽ thông báo cho Chủ thẻ bằng một trong các hình thức sau: qua tin nhắn SMS, địa chỉ email đã đăng ký, các phương tiện thông tin đại chúng, website chính thức của HDBank, hoặc các hình thức khác thông báo phù hợp với quy định pháp luật trong từng thời kỳ. Trường hợp Chủ thẻ không đồng ý với việc thay đổi này, Chủ thẻ phải liên hệ với HDBank để yêu cầu HDBank chấm dứt việc sử dụng Thẻ và thực hiện các thủ tục để tất toán Thẻ."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-5",
+            "title": "Điều 5. QUYỀN VÀ TRÁCH NHIỆM CỦA CHỦ THẺ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Quyền của Chủ thẻ",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                          {
+                            "text": "Có quyền sử dụng Thẻ để thực hiện Giao dịch Thẻ theo quy định."
+                          },
+                          {
+                            "text": "Có quyền tra soát, khiếu nại với HDBank trong quá trình sử dụng các dịch vụ liên quan đến Tài khoản Thẻ nếu có căn cứ cho rằng quyền và lợi ích hợp pháp của mình bị vi phạm. Thời hiệu khiếu nại là trong vòng 60 (sáu mươi) ngày kể từ ngày phát sinh giao dịch tra soát, khiếu nại."
+                          },
+                          {
+                            "text": "Có quyền yêu cầu HDBank cấp lại số PIN mới."
+                          },
+                          {
+                            "text": "Có quyền đề nghị HDBank cấp lại Thẻ mới theo quy định Điều khoản và Điều kiện này."
+                          },
+                          {
+                            "text": "Có quyền nhận Sao kê Thẻ theo định kỳ hàng tháng hoặc theo quy định HDBank trong từng thời kỳ."
+                          },
+                          {
+                            "text": "HMTD được HDBank phê duyệt cấp cho Chủ thẻ."
+                          },
+                          {
+                            "text": "Có quyền đồng ý hoặc từ chối nhận các thông tin về thông báo, cảnh báo, tin tức truyền thông, quảng cáo, khuyến mãi,... theo phương thức đăng ký/ xác nhận mà HDBank cung cấp. Chủ thẻ hoàn toàn chịu trách nhiệm về mọi rủi ro có thể xảy ra khi từ chối nhận các thông tin truyền thông từ HDBank."
+                          },
+                          {
+                            "text": "Có quyền yêu cầu HDBank hoàn trả lại số dư có trên Tài khoản Thẻ sau khi đã hoàn thành mọi nghĩa vụ trả nợ đối với HDBank (bao gồm nợ Thẻ, nợ cấp tín dụng hoặc các nghĩa vụ tài chính khác)."
+                          },
+                          {
+                            "text": "Các quyền khác theo quy định Điều khoản và Điều kiện này, thỏa thuận với HDBank hoặc quy định pháp luật."
+                          }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Nghĩa vụ của Chủ thẻ:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                          {
+                            "text": "Chủ thẻ có nghĩa vụ thanh toán cho HDBank tất cả các Giao dịch Thẻ được thực hiện bằng Thẻ của Chủ thẻ, kể cả trong trường hợp Chủ thẻ không ký xác nhận trên hóa đơn giao dịch. Chủ thẻ cam kết chịu trách nhiệm thực hiện Điều khoản và Điều kiện này và các quy định khác có liên quan của HDBank Khi Chủ thẻ chấm dứt việc sử dụng Thẻ, Chủ thẻ có trách nhiệm thanh toán toàn bộ Dư nợ và hoàn trả thẻ vật lý cho HDBank. Việc thanh toán phải đảm bảo được thực hiện trước 16g30 hàng ngày kể từ ngày đến hạn thanh toán. Mọi thanh toán được thực hiện sau giờ này của Ngày đến hạn thanh toán đều được xem là Chủ thẻ bị quá hạn thanh toán."
+                          },
+                          {
+                            "text": "Đảm bảo tính chính xác và đầy đủ của thông tin định danh và sinh trắc học trong quá trình đăng ký mở thẻ để HDBank tiến hành thẩm định, phê duyệt hồ sơ đăng ký mở thẻ và hạn mức thẻ. Thông báo ngay cho HDBank bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ những thay đổi về thông tin định danh của khách hàng."
+                          },
+                          {
+                            "text": "Đồng ý cho HDBank cung cấp các thông tin, dữ liệu cá nhân về (Các) Chủ thẻ, thông tin liên quan đến Thẻ và việc sử dụng Thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của HDBank và/hoặc trường hợp theo quy định pháp luật, theo yêu cầu của Cơ quan có thẩm quyền."
+                          },
+                          {
+                            "text": "Chủ thẻ có nghĩa vụ bảo mật Thẻ vật lý theo quy định pháp luật và quy định của HDBank từng thời kỳ"
+                          },
+                          {
+                            "text": "Có trách nhiệm bảo quản Thẻ, bảo mật số PIN và không được chuyển nhượng Thẻ hoặc đưa Thẻ cho người khác sử dụng."
+                          },
+                          {
+                            "text": "Chủ thẻ có trách nhiệm xuất trình Thẻ vật lý còn hiệu lực khi Giao dịch Thẻ."
+                          },
+
+                          {
+                            "text": "Ký chữ ký mẫu vào ô chữ ký ở mặt sau Thẻ vật lý ngay sau khi nhận Thẻ"
+                          },
+                          {
+                            "text": "Mỗi lần sử dụng Thẻ để rút tiền mặt hoặc thanh toán hàng hóa dịch vụ, Chủ thẻ phải ký hóa đơn thanh toán giống chữ ký này trừ những giao dịch thực hiện bằng đơn đặt hàng qua thư, điện thoại, Internet hoặc các loại hình khác được sự chấp thuận của HDBank mà không yêu cầu có chữ ký của Chủ thẻ."
+                          },
+                          {
+                            "text": "Ngay khi phát hiện Thẻ bị lộ số PIN, mã OTP, thông tin trên Thẻ, Thẻ bị thất lạc/ mất cắp hoặc nghi ngờ bị lợi dụng, Chủ thẻ có trách nhiệm thực hiện theo quy định về khai báo khi Thẻ bị lộ số PIN, bị thất lạc/ mất cắp hoặc nghi ngờ bị lợi dụng và thực hiện theo quy trình, thủ tục tại khoản 8.5 Điều 8 của Điều khoản và Điều kiện này."
+                          },
+                          {
+                            "text": "Chịu trách nhiệm về tất cả những giao dịch bằng Thẻ đã được thực hiện trước khi HDBank nhận được thông báo về việc Thẻ bị mất cắp, bị thất lạc hoặc việc sử dụng Thẻ và/ hoặc sử dụng thông tin trên Thẻ trái phép bao gồm nhưng không giới hạn các giao dịch lừa đảo và/ hoặc chữ ký giả mạo bởi bất kỳ bên thứ ba nào khác; hoặc trong trường hợp giao dịch bằng Thẻ được thực hiện sau khi ngân hàng tư vấn khoá Thẻ/ đổi PIN/ cấp lại Thẻ nhưng Chủ thẻ không đồng ý thực hiện hoặc chưa thực hiện.",
+                            "children": {
+                              "style": "roman",
+                              "items":[
+                                {
+                                  "Text": "Trường hợp sau khi đã thông báo cho HDBank mà Chủ thẻ tìm lại được Thẻ bị thất lạc/ mất cắp, Chủ thẻ không được sử dụng lại Thẻ và phải làm thủ tục cấp Thẻ mới."
+                                },
+                                {
+                                  "Text": "Trường hợp Thẻ bị lộ số PIN hoặc nghi ngờ bị lợi dụng, Chủ thẻ phải trực tiếp đến HDBank để yêu cầu cấp số PIN mới."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "text": "Chịu trách nhiệm toàn bộ các thiệt hại phát sinh (nếu có) đối với các Giao dịch Thẻ được thực hiện do sai sót của Chủ thẻ hoặc do Chủ thẻ không thực hiện đúng các nghĩa vụ theo Hợp đồng phát hành và sử dụng Thẻ tín dụng. Trong trường hợp Thẻ bị lợi dụng, gây ra thiệt hại, HDBank và Chủ thẻ xử lý theo quy định của pháp luật và quy định của HDBank."
+                          },
+                          {
+                            "text": "Chịu toàn bộ tổn thất, thiệt hại, trách nhiệm phát sinh đối với các giao dịch đã được HDBank thông báo để cảnh báo trước đó nhưng Chủ thẻ vẫn quyết định thực hiện hoặc không đồng ý hoặc không thực hiện khóa Thẻ, bao gồm nhưng không giới hạn ở trường hợp lừa đảo, giả mạo,..."
+                          },
+                          {
+                            "text": "Chịu trách nhiệm đối với các giao dịch thanh toán định kỳ mà Chủ thẻ đã đăng ký sử dụng kể từ thời điểm đăng ký đến thời điểm Chủ thẻ yêu cầu chấm dứt/ ngừng/ hủy đăng ký và được HDBank xác nhận."
+                          },
+                          {
+                            "text": "Chịu trách nhiệm toàn bộ đối với mọi rủi ro, tranh chấp, thiệt hại phát sinh liên quan đến các giao dịch có chữ ký và/ hoặc sử dụng PIN của Chủ thẻ; các giao dịch được thực hiện thông qua Thẻ Chip, Thẻ phi tiếp xúc và giao dịch chi tiêu qua mạng có sử dụng Dịch vụ 3D Secured. Đồng thời chịu trách nhiệm tương tự đối với các giao dịch khác nếu HDBank cung cấp được bằng chứng về việc Chủ thẻ đã sử dụng Thẻ để thực hiện giao dịch mà không cần cung cấp chữ ký của Chủ thẻ khi thực hiện giao dịch đó."
+                          },
+
+                          {
+                            "text": "Chủ thẻ công nhận, cam kết không hủy ngang và chịu trách nhiệm thanh toán tất cả các giao dịch mà Chủ thẻ đã thực hiện theo đúng quy định của HDBank về quy trình thanh toán bằng Thẻ qua Internet và/ hoặc có sử dụng chữ ký, chữ ký điện tử của Chủ thẻ mà không được hủy, phủ nhận, từ chối, thay đổi, thoái thác giao dịch với bất kỳ lý do nào; và cam kết chịu mọi rủi ro liên quan đến giao dịch đã được thực hiện."
+                          },
+                          {
+                            "text": "Chịu mọi tổn thất về tài chính đối với các Giao dịch Thẻ thực hiện thông qua Thẻ phi tiếp xúc. Khi chấm dứt/ ngừng/ hủy dịch vụ sử dụng Thẻ để chi tiêu với các giao dịch mang tính chất định kỳ (hàng tháng, hàng quý), Chủ thẻ phải giữ được bằng chứng đã hủy dịch vụ này."
+                          },
+                          {
+                            "text": "Thông báo ngay cho HDBank bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ những thay đổi về địa chỉ nhà riêng, địa chỉ thường trú, địa chỉ liên lạc hay thay đổi về nghề nghiệp của Chủ thẻ."
+                          },
+                          {
+                            "text": "Thông báo ngay cho HDBank bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ về việc thay đổi (hoặc hủy) email, số điện thoại mà Chủ thẻ sử dụng để nhận thông tin về sản phẩm, dịch vụ. Chủ thẻ sẽ chịu trách nhiệm cho mọi thiệt hại phát sinh do không cung cấp thông tin hoặc cung cấp thông tin chậm trễ."
+                          },
+                          {
+                            "text": "Có trách nhiệm hợp tác và cung cấp chính xác tất cả các thông tin cần thiết theo yêu cầu của HDBank/ Đối tác liên kết phát hành Thẻ và các tổ chức, cá nhân được phép khác theo quy định của pháp luật khi đề nghị phát hành Thẻ và trong quá trình sử dụng Thẻ. Chủ thẻ phải chịu trách nhiệm về tính trung thực của các thông tin mà mình cung cấp."
+                          },
+                          {
+                            "text": "Có trách nhiệm bổ sung TSBĐ hoặc xác lập biện pháp bảo đảm khác theo quy định tại Điều khoản và Điều kiện này."
+                          },
+                          {
+                            "text": "Có trách nhiệm thanh toán đầy đủ, đúng hạn số tiền thanh toán tối thiểu theo Sao kê Thẻ được lập hàng tháng và/ hoặc số dư nợ cho tất cả các Giao dịch Thẻ đã thực hiện theo quy định Điều khoản và Điều kiện này."
+                          },
+                          {
+                            "text": "Cam kết không sử dụng Tài khoản Thẻ để thực hiện các giao dịch trái pháp luật, các giao dịch gian lận, giả mạo, giao dịch khống tại ĐVCNT (không phát sinh việc mua bán hàng hóa và cung ứng dịch vụ)."
+                          },
+
+                          {
+                            "text": "Chịu mọi trách nhiệm liên quan đến các Giao dịch Thẻ thực hiện thành công và được báo nợ vào Tài khoản Thẻ (bao gồm nhưng không giới hạn: Giao dịch Thẻ trực tuyến có sử dụng Dịch vụ 3D Secured, Giao dịch Thẻ có/ không nhập PIN, ...)"
+                          },
+                          {
+                            "text": "Hợp tác với HDBank trong quá trình điều tra các giao dịch gian lận phát sinh liên quan đến Tài khoản Thẻ bằng cách cung cấp các thông tin liên quan đến Tài khoản Thẻ, thông tin giấy tờ tùy thân, thông tin liên quan đến quá trình sử dụng Thẻ, thông tin về người thân của Chủ thẻ, ... theo yêu cầu của HDBank."
+                          },
+                          {
+                            "text": "Trong trường hợp Chủ thẻ yêu cầu HDBank hỗ trợ giao dịch (xác nhận tình trạng Thẻ, thông tin giao dịch, hạn mức khả dụng…) hoặc yêu cầu HDBank thực hiện các thao tác hỗ trợ (khóa Thẻ, kích hoạt Thẻ, …) bằng cuộc gọi điện thoại vào Tổng đài dịch vụ khách hàng Vikki 24/7 (Tổng đài điện thoại) 19006808 hoặc đến CN/ PGD gần nhất (được HDBank triển khai theo từng thời kỳ) thì Chủ thẻ đồng ý rằng:",
+                            "children": {
+                              "style": "roman",
+                              "items": [
+                                {
+                                  "text": "Thông tin định danh Chủ thẻ được HDBank xác định thông qua số điện thoại của Chủ thẻ đã đăng ký với HDBank và trả lời các câu hỏi định danh theo quy định của HDBank từng thời kỳ."
+                                },
+                                {
+                                  "text": "Tùy vào đánh giá của HDBank trên cơ sở các thông tin định danh Chủ thẻ cung cấp và nhằm hạn chế các rủi ro cho Chủ thẻ, HDBank có quyền quyết định việc thực hiện hoặc không thực hiện việc hỗ trợ giao dịch, thao tác hỗ trợ cho Chủ thẻ qua điện thoại."
+                                },
+                                {
+                                  "text": "Chủ thẻ chấp nhận các rủi ro phát sinh liên quan đến Thẻ/ Tài khoản Thẻ do việc HDBank định danh, hỗ trợ giao dịch hoặc thực hiện các thao tác hỗ trợ theo quy định nêu trên."
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "text": "Chủ thẻ đồng ý rằng trường hợp Chủ thẻ xác nhận thông qua các phương tiện, công cụ do HDBank cung cấp (như email, SMS,…) hoặc Chủ thẻ chủ động đăng ký/ sử dụng Thẻ, sản phẩm, dịch vụ của HDBank thông qua các phương tiện, công cụ này và được HDBank chấp nhận thì sẽ ràng buộc trách nhiệm, nghĩa vụ của Chủ thẻ trong việc xác nhận/ yêu cầu/ đăng ký/ sử dụng Thẻ, sản phẩm, dịch vụ đó, bao gồm nhưng không giới hạn thay đổi hạn mức Thẻ và các yêu cầu khác trong quá trình phát hành, sử dụng Thẻ."
+                          },
+                          {
+                            "text": "Chủ thẻ đồng ý cho HDBank cung cấp thông tin của Chủ thẻ, bao gồm nhưng không giới hạn dữ liệu cá nhân của Chủ thẻ cho các đối tác của HDBank để triển khai sản phẩm, dịch vụ cho Chủ thẻ, thực hiện hoạt động thu hồi nợ, mua, bán nợ, xử lý nợ mà không cần sự đồng ý hoặc thông báo trước cho Chủ thẻ. Để làm rõ, Chủ thẻ cũng đồng ý để các đối tác này được cung cấp thông tin cho các nhân sự liên quan để thực hiện các công việc theo quy định tại điểm aa khoản 6.1 Điều 6 này."
+                          },
+                          {
+                            "text": "Chủ thẻ đồng ý tiếp nhận tin nhắn, cuộc gọi thoại, thư (bản giấy hoặc điện tử) liên quan đến sản phẩm, dịch vụ mà HDBank hoặc bên thứ ba là các công ty viễn thông/ công ty công nghệ thông tin, ... cung cấp theo số điện thoại, email mà Chủ thẻ đã cung cấp cho HDBank."
+                          },
+
+                          {
+                            "text": "Tuân thủ các quy định pháp luật về phòng, chống rửa tiền, chống tài trợ khủng bố và cấm vận. Nếu bất kỳ giao dịch nào của tài khoản bị chặn, phong tỏa, trì hoãn, từ chối hoặc hủy bỏ do có liên quan đến vi phạm các quy định này, Chủ thẻ hoàn toàn chịu trách nhiệm về các tổn thất, nghĩa vụ pháp lý, khoản phạt, chi phí hay phí tổn phát sinh, đồng thời bồi hoàn cho HDBank đối với các nghĩa vụ tài chính mà HDBank có thể phải thực hiện do các vi phạm này."
+                          },
+                          {
+                            "text": "Chủ thẻ đồng ý rằng trong trường hợp vì các sự kiện bất khả kháng, bảo trì hệ thống, hoặc các lý do khách quan khác dẫn đến Tổng đài điện thoại của HDBank không thể hoạt động hoặc tiếp nhận thông tin từ Chủ thẻ, thì Chủ thẻ thực hiện tra soát/khiếu nại tại các điểm giao dịch của HDBank. Chủ thẻ đồng ý không có bất kỳ khiếu nại và miễn trừ cho HDBank các trách nhiệm liên quan trong trường hợp Chủ thẻ không thể thực hiện tra soát, khiếu nại Thẻ qua tổng đài điện thoại."
+                          },
+                          {
+                            "text": "Trong trường hợp quy định pháp luật cho phép, theo đây Chủ thẻ đồng ý rằng HDBank được quyền xem xét chuyển giao quyền quản lý, khai thác, sử dụng và định đoạt đối với dữ liệu cá nhân của Chủ thẻ tại HDBank cho bên thứ ba, với điều kiện HDBank và đối tác là bên thứ ba đảm bảo quyền lợi và nghĩa vụ của Chủ thẻ như đang sử dụng sản phẩm dịch vụ của HDBank."
+                          },
+                          {
+                            "text": "Các nghĩa vụ khác theo quy định Điều khoản và Điều kiện này, thỏa thuận/ cam kết với HDBank hoặc quy định của pháp luật."
+                          },
+                          {
+                            "text": "Chịu trách nhiệm giải quyết các vấn đề phát sinh liên quan đến chất lượng hàng hóa, dịch vụ với ĐVCNT và việc này không ảnh hưởng đến nghĩa vụ thanh toán của Chủ thẻ vào ngày đến hạn thanh toán cho HDBank."
+                          },
+                          {
+                            "text": "Chủ thẻ cam kết việc giao dịch bằng Thẻ ở nước ngoài đúng mục đích, hạn mức sử dụng Thẻ theo quy định quản lý ngoại hối, quy định phòng chống rửa tiền của HDBank và quy định của pháp luật Việt Nam."
+                          }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-6",
+            "title": "Điều 6. QUYỀN VÀ TRÁCH NHIỆM CỦA HDBANK",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Quyền của HDBank:",
+                    "children": {
+                      "type": "list",
+                      "style": "alpha",
+                      "items":[
+                        {
+                          "text": "HDBank được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin, … bị trục trặc hoặc vì bất kỳ lý do gì ngoài khả năng kiểm soát của HDBank."
+                        },
+                        {
+                          "text": "Được quyền thu nợ, xử lý TSBĐ để thu nợ theo các phương thức mà HDBank lựa chọn mà không cần sự đồng ý từ Chủ thẻ (kể cả việc định giá TSBĐ để xử lý). Trường hợp Chủ thẻ không thanh toán đúng hạn cho HDBank, HDBank có quyền, trích tiền từ TKTT trực tuyến Vikki/ tài khoản tiền gửi của Chủ thẻ tại HDBank, xử lý các tài sản khác của Chủ thẻ để thanh toán các khoản nợ phát sinh. HDBank được quyền thay mặt Chủ thẻ để lập, ký bất kỳ/ tất cả tài liệu và thực hiện bất kỳ hành động cần thiết để thu nợ của Chủ thẻ theo quy định của HDBank và phù hợp với quy định pháp luật."
+                        },
+                        {
+                          "text": "Được quyền thực hiện trích nợ tự động hàng tháng từ TKTT trực tuyến Vikki để thanh toán Số tiền thanh toán tối thiểu Thẻ tín dụng Vikki khi gần đến hạn thanh toán hàng tháng theo quy định của HDBank trong từng thời kỳ mà không cần ký thêm bất kỳ văn bản, thỏa thuận bổ sung nào khác. Trường hợp TKTT trực tuyến Vikki không đủ số dư để trích nợ tối thiểu thì hệ thống sẽ trích toàn bộ số tiền còn lại trong các TKTT trực tuyến Vikki khác (nếu có) và TKTT các nguồn tiền khác tại HDBank nhằm đảm bảo công tác thu hồi nợ, và sẽ tiếp tục trích thu nợ vào các ngày tiếp theo cho đến khi thu đủ số tiền cần thu."
+                        },
+                        {
+                          "text": "HDBank và các ĐVCNT có quyền kiểm tra chữ ký (nếu có) và giấy tờ tuỳ thân của Chủ thẻ khi Chủ thẻ thực hiện các Giao dịch Thẻ."
+                        },
+                        {
+                          "text": "Có quyền thu thập thông tin từ các cá nhân, tổ chức khác về Chủ thẻ khi đề nghị phát hành Thẻ; và có quyền từ chối các yêu cầu không hợp lý của Chủ thẻ."
+                        },
+                        {
+                          "text": "Trong một số trường hợp đặc biệt (bao gồm nhưng không giới hạn các trường hợp sau: Thẻ giả, Thẻ bị nghi ngờ giao dịch gian lận, …) nhằm kịp thời hỗ trợ và đảm bảo an toàn cho Thẻ/ Chủ thẻ, HDBank có quyền quyết định việc hạn chế một số tiện ích của Thẻ (khóa Thẻ, khóa chức năng thanh toán trực tuyến) hoặc áp dụng các biện pháp xử lý khác theo quy định HDBank."
+                        },
+                        {
+                          "text": "Có quyền áp dụng các biện pháp cần thiết mà không cần thông báo trước cho Chủ thẻ (bao gồm nhưng không giới hạn: ngăn chặn, tạm dừng giao dịch Thẻ/ tạm khóa/ phong tỏa Giao dịch Thẻ, từ chối Giao dịch Thẻ, khóa Thẻ, tạm ngưng/ ngăn chặn/ chấm dứt/ phong tỏa việc sử dụng Thẻ,…) khi xảy ra một trong các trường hợp sau:",
+                          "children": {
+                            "style": "roman",
+                            "items":[
+                              {
+                                "text": "Chủ thẻ không đến nhận Thẻ trong thời hạn mà HDBank thông báo cho Chủ thẻ;"
+                              },
+                              {
+                                "text": "Phát hiện có giao dịch không do Chủ thẻ thực hiện;"
+                              },
+                              {
+                                "text": "Nghi ngờ hoặc phát hiện Giao dịch gian lận, giả mạo;"
+                              },
+                              {
+                                "text": "Thẻ bị hư hỏng không truy xuất được thông tin do lỗi bảo quản của Chủ thẻ;"
+                              },
+                              {
+                                "text": "Chủ thẻ không thực hiện đúng các quy định của HDBank khi sử dụng Thẻ;"
+                              },
+                              {
+                                "text": "Chủ thẻ vi phạm bất kỳ nghĩa vụ nào tại HDBank, bao gồm nhưng không giới hạn nghĩa vụ thanh toán khoản vay, nghĩa vụ thanh toán bảo lãnh, nghĩa vụ thanh toán Thẻ, nghĩa vụ bảo đảm cho bên thứ ba, …"
+                              },
+                              {
+                                "text": "Chủ thẻ sử dụng Thẻ để thực hiện các giao dịch bị cấm theo quy định của pháp luật;"
+                              },
+                              {
+                                "text": "Thẻ bị sử dụng trái phép;"
+                              },
+                              {
+                                "text": "Theo quy định của tổ chức Thẻ;"
+                              },
+                              {
+                                "text": "Sau 60 ngày kể từ ngày đến hạn thanh toán, Chủ thẻ không trả hoặc chỉ trả khoản tiền nhỏ hơn giá trị thanh toán tối thiểu;"
+                              },
+                              {
+                                "text": "Chủ thẻ đã sử dụng vượt HMTD mà không được HDBank cho phép;"
+                              },
+                              {
+                                "text": "Thẻ đã được Chủ thẻ thông báo bị mất, bị lộ thông tin Thẻ, PIN và/ hoặc OTP hoặc các thông tin khác của Thẻ, Chủ thẻ;"
+                              },
+                              {
+                                "text": "Thẻ hết hiệu lực;"
+                              },
+                              {
+                                "text": "ChủHDBank phát hiện có rủi ro, sai lệch thông tin định danh và dấu hiệu bất thường trong quá trình phát hành hoặc sử dụng Thẻ được phát hành bằng phương thức điện tử;"
+                              },
+                              {
+                                "text": "Để ngăn ngừa thiệt hại xảy ra với HDBank và/ hoặc Chủ thẻ;"
+                              },
+                              {
+                                "text": "Để phục vụ công tác điều tra, yêu cầu của cơ quan nhà nước có thẩm quyền hoặc quy định pháp luật, hoặc"
+                              },
+                              {
+                                "text": "Chủ thẻ phát sinh giao dịch có dấu hiệu đáng ngờ theo quy định của pháp luật về phòng, chống rửa tiền hoặc khi HDBank phát hiện thông tin hoặc thông tin thay đổi của KH có dấu hiệu Hoa Kỳ nhưng khách hàng chưa hoặc không cung cấp thông tin FATCA cho HDBank"
+                              },
+                              {
+                                "text": "Bất kỳ trường hợp nào được nêu trên áp dụng trên thực tế cũng sẽ không làm ảnh hưởng đến nghĩa vụ khác của Chủ thẻ đối với HDBank và các quyền khác của HDBank được quy định trong Điều khoản và Điều kiện này hoặc theo quy định pháp luật."
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "text": "Thực hiện các yêu cầu liên quan đến việc sử dụng Thẻ do Chủ thẻ đề nghị thực hiện tại quầy giao dịch/ trên các kênh điện tử của HDBank và qua điện thoại."
+                        },
+                        {
+                          "text": "HDBank có quyền thực hiện ghi âm (các) cuộc trao đổi/ giao dịch qua điện thoại giữa HDBank và Chủ thẻ để làm chứng từ đề nghị liên quan đến nghiệp vụ Thẻ từ Chủ thẻ; đồng thời là bằng chứng giải quyết tranh chấp giữa các bên (nếu có)."
+                        },
+                        {
+                          "text": "Trường hợp HMTD của Chủ thẻ là một loại tiền, số tiền được trích để thực hiện giao dịch là loại tiền khác, tỷ giá quy đổi trong trường hợp này do HDBank quyết định phù hợp với quy định của pháp luật."
+                        },
+                        {
+                          "text": "Khởi kiện Chủ thẻ và/ hoặc Bên bảo đảm theo quy định pháp luật khi Chủ thẻ và/ hoặc Bên bảo đảm vi phạm nghĩa vụ đã cam kết;"
+                        },
+                        {
+                          "text": "HDBank tự động đăng ký Dịch vụ 3D Secured cho Thẻ cấp mới/ gia hạn/ thay Thẻ (mà trước đó chưa được đăng ký Dịch vụ 3D Secured) bằng số điện thoại di động/ Email mà Chủ thẻ đã đăng ký với HDBank. Bằng việc ký vào Biểu mẫu “Giấy đề nghị kiêm hợp đồng mở, sử dụng tài khoản thanh toán/ sản phẩm – dịch vụ” và/ hoặc các Biểu mẫu khác được HDBank quy định trong từng thời kỳ, Chủ thẻ đã đồng ý việc HDBank được tự động đăng ký và áp dụng phí dịch vụ 3D Secured (nếu có), …"
+                        },
+                        {
+                          "text": "Khi yêu cầu giao Thẻ/ PIN theo yêu cầu của Chủ thẻ được HDBank chấp thuận, HDBank có thể gửi cho Chủ thẻ Thẻ/ PIN, và sau đó là những Thẻ gia hạn hoặc Thẻ thay thế, qua đường bưu điện thông thường đến địa chỉ của Chủ thẻ đã đăng ký với HDBank."
+                        },
+                        {
+                          "text": "Từ chối các yêu cầu dịch vụ, các yêu cầu cấp phép của Chủ thẻ nếu yêu cầu không phù hợp với điều kiện và quy định của HDBank hoặc các trường hợp ngoài khả năng kiểm soát của HDBank."
+                        },
+                        {
+                          "text": "HDBank được quyền từ chối các yêu cầu tra soát, khiếu nại các giao dịch không hợp lệ quy định tại Điều khoản và Điều kiện phát hành sử dụng thẻ tín dụng Vikki và vượt quá số lượng các giao dịch khiếu nại gian lận mà TCTQT quy định trong từng thời kỳ (không phân biệt ĐVCNT và thời gian sử dụng Thẻ) và các trường hợp giao dịch được HDBank xác định có cơ sở trục lợi, gian lận."
+                        },
+                        {
+                          "text": "HDBank được quyền từ chối tiếp nhận tra soát khiếu nại với các giao dịch được đánh giá Chủ thẻ có dấu hiệu hoặc hành vi trục lợi trong quá trình sử dụng Thẻ hoặc Chủ thẻ cung cấp thông tin thẻ, PIN, OTP cho bên thứ 3 để thực hiện Giao dịch thẻ."
+                        },
+                        {
+                          "text": "HDBank được quyền chủ động gửi các thông tin về thông báo, cảnh báo, tin tức truyền thông, quảng cáo, khuyến mãi, ... khi Chủ thẻ xác nhận đồng ý nhận thông tin qua các phương thức đăng ký/ xác nhận mà HDBank cung cấp (như Giấy Đề nghị cấp Thẻ tín dụng, …) hoặc các phương thức thông báo khác của HDBank áp dụng trong từng thời kỳ. Thông tin của HDBank được xem là đã gửi tới Chủ thẻ khi: Thông tin đã được gửi đi thành công tới số điện thoại di động của Chủ thẻ khi thiết bị báo gửi thành công, gửi tới địa chỉ thường trú/ tạm trú/ email của Chủ thẻ, đưa lên website của HDBank, hiển thị trên tiện ích khi Chủ thẻ sử dụng Thẻ."
+                        },
+                        {
+                          "text": "HDBank được quyền sử dụng, cung cấp các thông tin về (các) Chủ thẻ, thông tin liên quan đến Thẻ và việc sử dụng Thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của HDBank và các trường hợp theo quy định pháp luật, theo yêu cầu của Cơ quan Nhà nước có thẩm quyền."
+                        },
+                        {
+                          "text": "HDBank không có nghĩa vụ cung cấp hóa đơn giao dịch đối với Giao dịch Easy Payment."
+                        },
+                        {
+                          "text": "Chuyển nhượng hoặc ủy thác các quyền theo Hợp đồng và theo các hợp đồng bảo đảm cho Bên thứ ba mà không cần có sự chấp thuận của Chủ thẻ và/ hoặc Bên bảo đảm."
+                        },
+                        {
+                          "text": "Các quyền khác theo quy định Điều khoản và Điều kiện này, thỏa thuận giữa HDBank và Chủ thẻ, quy định của HDBank và quy định pháp luật."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trách nhiệm của HDBank",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Có trách nhiệm khoá Thẻ khi nhận được thông báo của Chủ thẻ về việc Thẻ bị lộ số PIN, Thẻ bị thất lạc/ mất cắp hoặc nghi ngờ bị lợi dụng với điều kiện Chủ thẻ cung cấp chính xác thông tin do HDBank yêu cầu liên quan đến Tài khoản Thẻ."
+                        },
+                        {
+                          "text": "Có trách nhiệm tư vấn, hỗ trợ Chủ thẻ trong những trường hợp khẩn cấp liên quan đến việc sử dụng Tài khoản Thẻ, trừ những yêu cầu nằm ngoài khả năng của HDBank (như sự cố do lỗi của Chủ thẻ khi thực hiện giao dịch, sự cố do lỗi của bên thứ ba không liên quan đến HDBank hoặc những yêu cầu bất hợp lý khác của Chủ thẻ)."
+                        },
+                        {
+                          "text": "Chủ thẻ được nhận/ được hoàn trả lại số tiền (số dư có) trên Thẻ nếu Chủ thẻ chưa sử dụng hết số tiền trên Thẻ tại thời điểm chấm dứt việc sử dụng Thẻ. Việc nhận số tiền còn lại của Thẻ được thực hiện trực tiếp tại các điểm giao dịch của HDBank và theo các thủ tục giao dịch tại quầy của HDBank trong từng thời kỳ. Để làm rõ, HDBank sẽ hoàn trả lại cho Chủ thẻ số dư còn lại trên Thẻ (nếu có) sau khi đã khấu trừ tất cả các khoản tiền phí, lệ phí và các nghĩa vụ thanh toán của Chủ thẻ đối với HDBank, vào TKTT trực tuyến Vikki của Chủ thẻ tại HDBank hoặc bằng tiền mặt hoặc dựa vào văn bản yêu cầu của Chủ thẻ. Trong thời hạn 06 (sáu) tháng kể từ thời điểm chấm dứt sử dụng Thẻ và Chủ thẻ không có yêu cầu hoặc cung cấp các thông tin tài khoản thanh toán để chuyển số số dư có trong Thẻ khi chấm dứt sử dụng Thẻ thì số tiền còn lại này sẽ do HDBank toàn quyền xử lý kể cả việc hạch toán ghi nhận là tài sản của HDBank."
+                        },
+                        {
+                          "text": "Thực hiện xử lý tra soát, khiếu nại theo quy định thỏa thuân giữa Chủ Thẻ với HDBank, quy định của HDBank trong từng thời kỳ."
+                        },
+                        {
+                          "text": "Các nghĩa vụ khác theo Điều khoản và Điều kiện này, thoả thuận giữa HDBank và Chủ Thẻ, quy định của HDBank và quy định pháp luật."
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-7",
+            "title": "ĐIỀU 7. XỬ LÝ TRA SOÁT, KHIẾU NẠI",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "HDBank thực hiện tiếp nhận thông tin tra soát, khiếu nại của Chủ thẻ theo các phương thức: Tổng đài điện thoại (có ghi âm, hoạt động 24/24 giờ trong ngày, 7/7 ngày trong tuần) và qua các điểm giao dịch (đơn vị kinh doanh) của HDBank theo quy định HDBank từng thời kỳ."
+                  },
+                  {
+                    "text": "HDBank thực hiện giải quyết hoặc phản hồi các yêu cầu tra soát, khiếu nại của Chủ thẻ liên quan đến việc sử dụng Thẻ theo quy định thời gian như sau:",
+
+                    "children": {
+                      "style":"alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Thời gian giải quyết"
+                        },
+                        {
+                          "text": "Thời hạn xử lý và thông báo kết quả nêu trên được tính từ ngày tiếp nhận đề nghị tra soát, khiếu nại lần đầu của Chủ thẻ. Trường hợp vụ việc có dấu hiệu tội phạm, thời hạn xử lý và thông báo kết quả tra soát, khiếu nại cho Chủ thẻ sẽ phụ thuộc vào thời hạn giải quyết của Cơ quan Nhà nước có thẩm quyền."
+                        },
+                        {
+                          "text": "Trong trường hợp hết thời hạn xử lý đề nghị tra soát, khiếu nại lần 2 quy định tại điểm a khoản 7.2 Điều này mà vẫn chưa xác định được nguyên nhân hay lỗi thuộc bên nào thì trong vòng 15 (mười lăm) ngày làm việc tiếp theo, HDBank sẽ thỏa thuận với Chủ thẻ về phương án xử lý cho đến khi có kết luận cuối cùng của cơ quan có thẩm quyền phân định rõ lỗi và trách nhiệm của các bên.",
+                          "children": {
+                            "style": "roman",
+                            "items": [
+                              {
+                                "text": "Trường hợp vụ việc có dấu hiệu tội phạm, HDBank thực hiện thông báo cho Cơ quan Nhà nước có thẩm quyền theo quy định của pháp luật về tố tụng hình sự và báo cáo Ngân hàng Nhà nước; đồng thời, thông báo bằng văn bản cho Chủ thẻ về tình trạng xử lý đề nghị tra soát, khiếu nại. Việc xử lý kết quả tra soát, khiếu nại thuộc trách nhiệm giải quyết của cơ quan nhà nước có thẩm quyền. Trong trường hợp Cơ quan Nhà nước có thẩm quyền thông báo kết quả giải quyết không có yếu tố tội phạm, trong vòng 15 (mười lăm) ngày làm việc kể từ ngày có kết luận của Cơ quan Nhà nước có thẩm quyền, HDBank thỏa thuận với Chủ thẻ về phương án xử lý kết quả tra soát, khiếu nại."
+                              },
+                              {
+                                "text": "Trường hợp HDBank, Chủ thẻ và các bên liên quan không thỏa thuận được và/ hoặc không đồng ý với quá trình xử lý đề nghị tra soát, khiếu nại thì việc giải quyết tranh chấp được thực hiện theo quy định của pháp luật."
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-8",
+            "title": "ĐIỀU 8. TỶ GIÁ QUY ĐỔI",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "numeric",
+                "items": [
+                  {
+                    "text": "Tỷ giá được áp dụng đối với tất cả các Giao dịch Thẻ được quy đổi từ ngoại tệ ra VNĐ vào thời điểm Giao dịch Thẻ được ghi nợ/ có vào Tài khoản Thẻ do HDBank hoặc TCTQT quy định."
+                  },
+                  {
+                    "text": "Trường hợp loại tiền được dùng để xác định giá trị TSBĐ/ giá trị nghĩa vụ được bảo đảm khác với loại tiền HDBank cấp HMTD cho Chủ thẻ, nếu do thay đổi về tỷ giá ngoại tệ/ giá mua bán vàng dẫn đến việc HMTD vượt quá giá trị TSBĐ hoặc giá trị nghĩa vụ được bảo đảm hoặc vượt quá tỷ lệ tối đa do HDBank và Chủ thẻ/ Bên bảo đảm thỏa thuận thì HDBank có quyền áp dụng một hoặc các biện pháp sau:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Giảm HMTD đã cấp cho Chủ thẻ xuống đến mức tương ứng với tỷ giá trị TSBĐ hoặc giá trị nghĩa vụ được bảo đảm đã thỏa thuận trước đó trong hợp đồng/ cam kết bảo đảm giữa các bên; hoặc"
+                        },
+                        {
+                          "text": "Yêu cầu Chủ thẻ bổ sung TSBĐ hoặc biện pháp bảo đảm khác; hoặc"
+                        },
+                        {
+                          "text": "Chấm dứt việc sử dụng Thẻ của Chủ thẻ."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trường hợp Chủ thẻ dùng TSBĐ để thanh toán dư nợ Thẻ là số dư tiền gửi, sổ tiết kiệm,... là ngoại tệ khác VNĐ, HDBank có quyền quy đổi theo tỷ giá/ lãi suất quy định của HDBank vào ngày thực hiện yêu cầu. Tại thời điểm thực hiện yêu cầu, số dư tài khoản tiền gửi, sổ tiết kiệm có kỳ hạn thì lãi suất áp dụng là lãi suất rút vốn trước hạn/ đúng hạn tương ứng."
+                  },
+                  {
+                    "text": "Việc áp dụng tỷ giá ngoại tệ/ giá mua bán vàng quy đổi để xác định tỷ lệ giữa HMTD và giá trị TSBĐ do HDBank quyết định."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-9",
+            "title": "ĐIỀU 9. QUẢN LÝ THẺ, THÔNG TIN LIÊN QUAN ĐẾN THẺ, MẬT KHẨU, SỐ PIN",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "numeric",
+                "items": [
+                  {
+                    "text": "Chủ thẻ đồng ý rằng HDBank có toàn quyền chuyển Thẻ vật lý và số PIN cho Chủ thẻ theo bất kỳ cách thức chuyển giao nào mà HDBank cho là an toàn và tin cậy. Chủ thẻ được xem là đã nhận được Thẻ vật lý và số PIN khi HDBank giao Thẻ và số PIN đến đúng địa chỉ nhận thông tin mà Chủ thẻ đã cung cấp cho HDBank và Chủ thẻ ký xác nhận đã nhận Thẻ và/ hoặc PIN1 trên chứng từ do HDBank quy định cho từng cách thức chuyển giao."
+                  },
+                  {
+                    "text": "Trường hợp, HDBank giao Thẻ vật lý/ PIN trực tiếp cho Chủ thẻ tại một địa chỉ cụ thể, HDBank sẽ nhận dạng Chủ thẻ thông qua một số thông tin cá nhân của Chủ thẻ và thông tin trên Thẻ đã được Chủ thẻ đăng ký với HDBank và theo quy định của HDBank. HDBank được miễn trừ mọi trách nhiệm trong việc giao Thẻ/ PIN cho Chủ thẻ khi thông tin nhận dạng Chủ thẻ nhận được trùng khớp và chính xác, đầy đủ với thông tin HDBank có."
+                  },
+                  {
+                    "text": "Nếu Chủ thẻ không nhận được Thẻ vật lý/ số PIN từ HDBank, Chủ thẻ chủ động liên hệ HDBank để nhận Thẻ vật lý/ số PIN trong vòng 30 ngày kể từ ngày Thẻ vật lý/ số PIN được phát hành theo thông báo của HDBank. Sau thời gian trên, HDBank sẽ tiến hành xử lý Thẻ/ số PIN không được nhận theo quy trình xử lý Thẻ/ số PIN tồn. Nếu Chủ thẻ có nhu cầu nhận Thẻ/ số PIN mới, Chủ thẻ sẽ chịu các phí liên quan theo quy định của HDBank."
+                  },
+                  {
+                    "text": "Chủ thẻ bắt buộc phải đổi PIN do HDBank cung cấp trước khi thực hiện bất kỳ giao dịch nào. Chủ thẻ không được thực hiện các giao dịch Thẻ sử dụng PIN với số PIN do HDBank lần đầu cung cấp."
+                  },
+                  {
+                    "text": "Chủ thẻ chịu trách nhiệm bảo quản Thẻ và giữ bí mật số PIN, mã OTP, thông tin trên Thẻ và thông tin phải bảo mật khác của Thẻ sau khi nhận Thẻ/ PIN/ OTP cho dù Chủ thẻ có nhu cầu kích hoạt Thẻ hay không. Trong trường hợp Thẻ/ thông tin liên quan đến Thẻ/ mật khẩu/ số PIN/ mã OTP bị mất/ bị đánh cắp/ bị sử dụng bởi người khác mà không có sự chấp thuận của Chủ thẻ, Chủ thẻ phải:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "item": [
+                        {
+                          "text": "Thông báo ngay cho HDBank qua Tổng đài Dịch vụ khách hàng Vikki đến số điện thoại 19006808 hoặc qua các kênh giao tiếp được HDBank quy định trong từng thời kỳ."
+                        },
+                        {
+                          "text": "Cung cấp các thông tin về thời gian, địa điểm Thẻ bị mất, thông tin liên quan đến Thẻ/ mật khẩu/ số PIN bị lộ/ đánh cắp, các giao dịch thực hiện cuối cùng và các thông tin khác theo yêu cầu của HDBank."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Chủ thẻ phải chịu trách nhiệm về tất cả Giao dịch Thẻ, thiệt hại và bồi thường thiệt hại cho HDBank và/ hoặc bên thứ ba (nếu có) đối với các Giao dịch Thẻ, nếu:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "item": [
+                        {
+                          "text": "Phát sinh từ việc Chủ thẻ gian lận hoặc làm trái các nội dung đã thỏa thuận với HDBank tại Hợp đồng, Điều khoản và Điều kiện này trong quá trình sử dụng Thẻ hoặc bất cẩn trong việc quản lý, sử dụng Thẻ, PIN, mã OTP kể cả trong trường hợp Chủ thẻ để cho Bên thứ ba sử dụng Thẻ, PIN, mã OTP;"
+                        },
+                        {
+                          "text": "Phát sinh từ việc Thẻ bị lợi dụng trước khi HDBank có xác nhận bằng văn bản về việc xử lý theo thông báo bị mất Thẻ, bị đánh cắp Thẻ hoặc việc sử dụng Thẻ của Chủ thẻ hoặc thông tin trên Thẻ trái phép, bao gồm nhưng không giới hạn: các Giao dịch Thẻ phát sinh từ việc lừa đảo và/ hoặc giả mạo chữ ký."
+                        },
+                        {
+                          "text": "Chủ thẻ không thông báo cho HDBank theo quy định tại Điều này ngay sau khi Thẻ bị mất hoặc bị lộ PIN, mã OTP, lộ thông tin Thẻ hoặc các vấn đề bảo mật liên quan khác."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Khi Thẻ bị mất cắp/ thất lạc/ bị giữ tại ATM/ ĐVCNT của các ngân hàng khác, Chủ thẻ phải thông báo và đề nghị cấp lại Thẻ (nếu có nhu cầu cấp lại Thẻ) bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ cho HDBank. HDBank sẽ xem xét và quyết định việc cấp lại Thẻ. Khi cấp lại, Chủ thẻ phải trả phí thất lạc (nếu có) và phí thay thế Thẻ theo biểu phí được HDBank ban hành phù hợp với pháp luật bằng văn bản và cập nhật trên website theo từng thời điểm. Nếu tìm lại hoặc thu hồi được Thẻ bị mất cắp/ thất lạc sau khi Chủ thẻ đã thông báo cho HDBank, Chủ thẻ không được sử dụng Thẻ này và chủ động hủy Thẻ để Thẻ không sử dụng được. Khi thay thế Thẻ, Chủ thẻ sẽ được cấp lại số PIN mới và Chủ thẻ phải thực hiện thay đổi số PIN riêng để được an toàn khi sử dụng Thẻ."
+                  },
+                  {
+                    "text": "HDBank có thể thông báo chấm dứt hiệu lực Thẻ vì bất cứ lý do gì, bao gồm nhưng không giới hạn thực hiện theo yêu cầu hợp pháp của Cơ quan Nhà nước có thẩm quyền, thực hiện theo yêu cầu chuyên môn, kỹ thuật, …Thẻ chấm dứt hiệu lực kể từ thời điểm HDBank thông báo cho Chủ thẻ về việc chấm dứt hiệu lực Thẻ. Trường hợp Chủ thẻ tiếp tục sử dụng Thẻ mới, Chủ thẻ phải thực hiện theo quy định của HDBank."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-10",
+            "title": "ĐIỀU 10. SAO KÊ THẺ TÍN DỤNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "numeric",
+                "items": [
+                  {
+                    "text": "Hàng tháng, Chủ thẻ nhận được sao kê Thẻ (do HDBank lập vào một ngày cố định trong tháng) sẽ liệt kê chi tiết các Giao dịch Thẻ, phí, lãi phát sinh trong kỳ giao dịch lần trước, các bút toán điều chỉnh (nếu có), tổng dư nợ, số tiền đã thanh toán, số dư nợ đầu kỳ, số dư nợ cuối kỳ, số tiền thanh toán tối thiểu, ngày thanh toán số tiền thanh toán tối thiểu, và các thông tin khác theo quy định của HDBank."
+                  },
+                  {
+                    "text": "Trường hợp HDBank không nhận được khiếu nại của Chủ thẻ sau khi nhận được Sao kê Thẻ tín dụng theo quy định, Sao kê Thẻ tín dụng sẽ là bằng chứng xác nhận các giao dịch, phí, lãi (nếu có) và các khoản ghi nợ và ghi có trong Sao kê Thẻ là đúng và có hiệu lực, Chủ thẻ có trách nhiệm thanh toán tất cả các giao dịch, phí, lãi thể hiện trên Sao kê Thẻ theo thời hạn được quy định trong Sao kê Thẻ."
+                  },
+                  {
+                    "text": "Sao kê Thẻ sẽ được gửi cho Chủ thẻ trên các kênh điện tử của HDBank, SMS, email do Chủ thẻ đăng ký với HDBank. Đối với trường hợp Chủ thẻ yêu cầu gửi Sao kê Thẻ bằng bản giấy hàng tháng qua đường bưu điện, HDBank sẽ thu phí theo quy định tại biểu phí Thẻ trong từng thời kỳ. Nếu sau 7 (bảy) ngày kể từ ngày gửi Sao kê Thẻ, HDBank không nhận được bất kỳ thông báo của Chủ thẻ thì HDBank xem như Chủ thẻ đã nhận được sao kê Thẻ tín dụng. Trường hợp nhận được khiếu nại của Chủ thẻ trong vòng 60 (sáu mươi) ngày kể từ ngày báo nợ giao dịch, HDBank sẽ giải quyết các khiếu nại theo quy định của Điều khoản và Điều kiện này, quy định nội bộ HDBank và quy định pháp luật."
+                  }
+                    ]
+                  }
+                ]
+          },
+          {
+            "id": "dieu-11",
+            "title": "ĐIỀU 11. QUY ĐỊNH PHÁT HÀNH THÊM THẺ TÍN DỤNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "HDBank sẽ phát hành thêm một hoặc nhiều sản phẩm Thẻ khác theo một chính sách cấp Thẻ phù hợp được theo quy định của HDBank trong từng thời kỳ để Chủ thẻ sử dụng trong phạm vi HMTD đã được cấp bởi HDBank."
+                  },
+                  {
+                    "text": "Trường hợp HDBank chủ động phát hành thêm Thẻ cho Chủ thẻ: HDBank sẽ thông báo cho Chủ thẻ qua điện thoại/ tin nhắn (SMS)/ email/ ứng dụng Vikki mà Chủ thẻ đã đăng ký với HDBank hoặc bằng phương thức khác phù hợp do HDBank quyết định. Theo đó:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Chủ thẻ nhận và kích hoạt Thẻ trong 60 (sáu mươi) ngày kể từ khi phát hành Thẻ đồng nghĩa Chủ thẻ chấp nhận sử dụng Thẻ và đồng ý với Điều khoản và Điều kiện của HDBank. Nếu sau 60 ngày kể từ khi phát hành Thẻ mà Chủ thẻ không kích hoạt Thẻ, HDBank hiểu rằng Chủ thẻ từ chối kích hoạt Thẻ và không đồng ý sử dụng Thẻ. HDBank sẽ thực hiện hủy Thẻ theo quy định của HDBank trong từng thời kỳ."
+                        },
+                        {
+                          "text": "Nếu trong vòng 60 ngày, HDBank nhận được thông báo từ Chủ thẻ về việc Chủ thẻ từ chối phát hành Thẻ, HDBank sẽ thực hiện hủy Thẻ theo quy định của HDBank trong từng thời kỳ."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trường hợp Chủ thẻ yêu cầu HDBank phát hành thêm Thẻ: Chủ thẻ gửi yêu cầu/ đề nghị bằng văn bản hoặc thông qua các phương thức khác do HDBank chấp nhận để HDBank xem xét yêu cầu/ đề nghị phát hành Thẻ. Trường hợp HDBank đồng ý phát hành thêm Thẻ cho Chủ thẻ, Chủ Thẻ phải thực hiện theo quy định HDBank để được phát hành và sử dụng Thẻ đó."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-12",
+            "title": "ĐIỀU 12. CẤP LẠI THẺ/ THAY THẾ THẺ/ CHUYỂN ĐỔI THẺ, GIA HẠN THẺ, CHẤM DỨT VIỆC SỬ DỤNG THẺ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Cấp lại Thẻ/ thay thế Thẻ/ chuyển đổi Thẻ:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Trường hợp Chủ thẻ có yêu cầu HDBank cấp lại Thẻ mới, bao gồm cả thẻ phi vật lý và thẻ vật lý (trong trường hợp Thẻ hết hiệu lực, bị mất cắp/ thất lạc, Thẻ bị hư, nghi ngờ Thẻ bị lợi dụng, …) HDBank có quyền từ chối yêu cầu này nếu Chủ thẻ không thanh toán đầy đủ số tiền thanh toán tối thiểu đúng thời hạn theo Sao kê Thẻ cho đến khi số tiền thanh toán tối thiểu này được thanh toán đầy đủ. Khi được HDBank đồng ý cấp Thẻ mới, Chủ thẻ phải trả phí cấp Thẻ mới đối với thẻ vật lý theo biểu phí dịch vụ Thẻ của HDBank ban hành tùy từng thời điểm. Trường hợp cấp lại Thẻ mới, mặc nhiên Giấy Đề nghị cấp Thẻ tín dụng mà Chủ thẻ đã ký kết trước đó cùng Điều khoản và Điều kiện này sẽ tự động được gia hạn cho đến khi Chủ thẻ chấm dứt sử dụng Thẻ mới (và được HDBank chấp nhận), trừ trường hợp giữa Chủ thẻ và HDBank có thỏa thuận khác."
+                        },
+                        {
+                          "text": "Chủ thẻ có nghĩa vụ hoàn trả lại Thẻ vật lý cho HDBank hoặc tự hủy xác Thẻ vật lý cũ khi Chủ thẻ yêu cầu HDBank thay Thẻ/ cấp lại Thẻ/ chuyển đổi Thẻ và được HDBank đồng ý cấp Thẻ mới. Với các trường hợp Chủ thẻ yêu cầu thay Thẻ không đổi số, Chủ thẻ chịu trách nhiệm đối với tất cả các giao dịch liên quan đến Thẻ trong trường hợp Chủ thẻ không chủ động hủy xác Thẻ cũ."
+                        },
+                        {
+                          "text": "Việc thay Thẻ/ tái cấp Thẻ/ chuyển đổi Thẻ sẽ không ảnh hưởng đến các nghĩa vụ, trách nhiệm của Chủ thẻ được quy định trong Điều khoản và Điều kiện này, thỏa thuận/ cam kết với HDBank (nếu có)."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Gia hạn Thẻ:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "HDBank sẽ xem xét và quyết định việc gia hạn Thẻ trong trường hợp Chủ thẻ gửi đề nghị bằng văn bản hoặc bất kỳ hình thức nào theo quy định của HDBank từng thời kỳ cho HDBank để gia hạn Thẻ trước ngày Thẻ hết hiệu lực. Trong thời gian đề nghị gia hạn Thẻ hoặc chờ HDBank gia hạn Thẻ thì Chủ thẻ có thể sử dụng Thẻ cũ chưa hết hiệu lực cho đến khi nhận Thẻ mới."
+                        },
+                        {
+                          "text": "Trước khi Thẻ hết hiệu lực, HDBank có thể xem xét việc gia hạn Thẻ tự động dựa trên điều kiện, chính sách và thời điểm do HDBank quy định. HDBank sẽ thông báo cho Chủ thẻ về việc Thẻ sẽ được gia hạn tự động qua điện thoại/ tin nhắn (SMS)/ Email mà Chủ thẻ đã đăng ký với HDBank và/ hoặc bằng phương thức khác phù hợp do HDBank quy định trong từng thời kỳ. Trường hợp Thẻ đủ điều kiện gia hạn tự động và HDBank không nhận được phản hồi nào từ Chủ thẻ, điều này được hiểu Chủ thẻ đồng ý với việc thực hiện gia hạn Thẻ. Thẻ mới sẽ được tự động gia hạn và gửi đến cho Chủ thẻ theo thông tin địa chỉ liên lạc cuối cùng mà Chủ thẻ đã đăng ký với HDBank."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Tạm ngưng/ chấm dứt/ thu hồi Thẻ:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Trường hợp Thẻ hết hiệu lực mà HDBank không chấp nhận gia hạn Thẻ (dựa trên các thông tin thu thập được từ Chủ thẻ hoặc Tài khoản Thẻ) hoặc Chủ thẻ không đồng ý gia hạn Thẻ thì Chủ thẻ có trách nhiệm thanh toán toàn bộ Dư nợ (nếu có) theo thông báo của HDBank."
+                        },
+                        {
+                          "text": "Chủ thẻ có quyền chấm dứt việc sử dụng Thẻ trong thời gian hiệu lực Thẻ. Trường hợp Chủ thẻ thực hiện yêu cầu chấm dứt việc sử dụng thẻ, Chủ thẻ phải thông báo cho HDBank trước tối thiểu 03 (ba) ngày làm việc thông qua ứng dụng Vikki hoặc Tổng đài dịch vụ khách hàng Vikki. Yêu cầu chấm dứt sử dụng Thẻ của Chủ thẻ chỉ có hiệu lực và được HDBank chấp thuận khi Chủ thẻ thực hiện đầy đủ các nghĩa vụ quy định theo Điều khoản và Điều kiện này, bao gồm nhưng không giới hạn ở nghĩa vụ thanh toán toàn bộ Dư nợ cho HDBank."
+                        },
+                        {
+                          "text": "Khi chấm dứt sử dụng Thẻ, Chủ thẻ phải hoàn tất các nghĩa vụ, cam kết đã thỏa thuận với HDBank, bao gồm cả việc thanh toán toàn bộ Dư nợ, nộp lại Thẻ vật lý cho HDBank và chấm dứt việc sử dụng Thẻ để thanh toán các giao dịch mua hàng hóa hay dịch vụ, kể cả các giao dịch thông qua Internet, điện thoại hoặc thư tín."
+                        },
+                        {
+                          "text": "Nếu Chủ thẻ không hoàn trả lại Thẻ vật lý cho HDBank, Chủ thẻ phải chịu phí thông báo mất cắp, thất lạc Thẻ theo quy định của HDBank. Nếu Chủ thẻ đã yêu cầu HDBank chấm dứt sử dụng Thẻ nhưng vẫn tiếp tục sử dụng Thẻ để thanh toán hàng hóa, dịch vụ thì Chủ thẻ vẫn phải tiếp tục chịu trách nhiệm với HDBank đối với các giao dịch trên, bao gồm việc thanh toán theo quy định Điều khoản và Điều kiện này."
+                        },
+                        {
+                          "text": "Sau 60 (sáu mươi) ngày kể từ ngày đến hạn thanh toán số tiền thanh toán tối thiểu của kỳ chưa được thanh toán, nếu Chủ thẻ không thanh toán đầy đủ số tiền thanh toán tối thiểu này, HDBank sẽ ngưng quyền sử dụng Thẻ của Chủ thẻ tạm thời. Sau 90 (chín mươi) ngày kể từ ngày đến hạn thanh toán số tiền thanh toán tối thiểu của kỳ chưa được thanh toán, nếu Chủ thẻ không thanh toán đầy đủ số tiền thanh toán tối thiểu này, HDBank sẽ chấm dứt sử dụng Thẻ, thu hồi Thẻ và tiến hành các thủ tục thu hồi nợ, xử lý tài sản để thu hồi nợ được quy định theo Điều khoản và Điều kiện này."
+                        },
+                        {
+                          "text": "HDBank có quyền quyết định chấm dứt việc sử dụng Thẻ của Chủ thẻ trước hạn / thu hồi Thẻ mà không cần sự đồng ý của Chủ thẻ hoặc thông báo trước cho Chủ thẻ trong các trường hợp sau:",
+                          "children": {
+                            "style": "roman",
+                            "items": [
+                              {
+                                "text": "Chủ thẻ có một hoặc một số khoản cấp tín dụng hoặc một số nghĩa vụ tài chính và/ hoặc Thẻ chuyển sang nợ quá hạn tại HDBank và/ hoặc tại các tổ chức tín dụng khác và/ hoặc có nguy cơ không có khả năng trả nợ. Việc xem xét Chủ thẻ có nguy cơ không có khả năng trả nợ là tùy theo nhận định của HDBank;"
+                              },
+                              {
+                                "text": "Các Giao dịch Thẻ có dấu hiệu bất thường, theo nhận định của HDBank, nhằm đảm bảo an toàn cho Tài khoản Thẻ của Chủ thẻ;"
+                              },
+                              {
+                                "text": "Việc duy trì HMTD, theo nhận định của HDBank, dẫn đến HDBank vi phạm các quy định của pháp luật;"
+                              },
+                              {
+                                "text": "Chủ thẻ và/ hoặc Bên bảo đảm (nếu có) vi phạm quy định hoạt động Thẻ, quy định của HDBank, quy định pháp luật, bao gồm nhưng không giới hạn ở quy định về cấp tín dụng, nhận và quản lý TSBĐ, …"
+                              },
+                              {
+                                "text": "Chủ thẻ và/ hoặc Bên bảo đảm bị mất năng lực hành vi dân sự hoặc bị hạn chế năng lực hành vi dân sự hoặc bị khởi tố/ truy tố/ xét xử về hình sự; Bên bảo đảm là tổ chức bị giải thể, phá sản, bị thu hồi giấy phép, chấm dứt hoạt động, chia tách, hợp nhất, sáp nhập, chuyển đổi hình thức, cổ phần hóa, thay đổi chủ sở hữu…; người đại diện hợp pháp, người điều hành của Bên bảo đảm là tổ chức bị khởi tố/ truy tố/ xét xử theo quy định pháp luật hình sự;"
+                              },
+                              {
+                                "text": "Chủ thẻ và/ hoặc Bên bảo đảm có liên quan đến các vụ kiện, tranh chấp mà theo nhận định của HDBank là có ảnh hưởng đến khả năng thực hiện nghĩa vụ của Chủ thẻ và/ hoặc Bên bảo đảm; Chủ thẻ và/ hoặc Bên bảo đảm vi phạm Điều khoản và Điều kiện này, hợp đồng, thỏa thuận, cam kết khác với HDBank (nếu có);"
+                              },
+                              {
+                                "text": "Chủ thẻ chết; Bên bảo đảm chết mà không có người thừa kế được HDBank chấp nhận hoặc không có người thừa kế để kế thừa nghĩa vụ của Chủ thẻ, Bên bảm đảm; Chủ thẻ chết và toàn bộ Dư nợ của Chủ thẻ với HDBank đã được thanh toán bởi Bên bảm đảm, người thừa kế của Chủ thẻ và/ hoặc bất kỳ bên thứ ba nào khác."
+                              },
+                              {
+                                "text": "Thay đổi về tỷ giá ngoại tệ/ giá mua bán vàng dẫn đến việc số tiền cấp HMTD vượt quá giá trị TSBĐ/ giá trị nghĩa vụ được bảo đảm nếu loại tiền cấp HMTD khác với loại tiền được dùng để xác định giá trị TSBĐ/ giá trị nghĩa vụ được bảo đảm;"
+                              },
+                              {
+                                "text": "TSBĐ bị giảm giá trị do HDBank xác định;"
+                              },
+                              {
+                                "text": "Những thay đổi khác về TSBĐ dẫn đến nguy cơ không quản lý, xử lý được TSBĐ theo nhận định của HDBank;"
+                              },
+                              {
+                                "text": "Chủ thẻ không thanh toán phí thuờng niên từ 03 (ba) Kỳ sao kê liên tiếp trở lên;"
+                              },
+                              {
+                                "text": "Quá 60 ngày tính từ ngày mở Thẻ mà Chủ thẻ chưa kích hoạt Thẻ;"
+                              },
+                              {
+                                "text": "Các trường hợp khác bao gồm nhưng không giới hạn trường hợp HDBank phát hiện khách hàng sử dụng giấy tờ giả, mạo danh để phát hành thẻ hoặc sử dụng thẻ cho mục đích lừa đảo, gian lận hoặc các hoạt động bất hợp pháp khác và các trường hợp khác phù hợp quy định pháp luật);"
+                              },
+                              {
+                                "text": "Các trường hợp khác ảnh hưởng hoặc có nguy cơ ảnh hưởng đến khả năng thực hiện nghĩa vụ của Chủ thẻ theo nhận định của HDBank."
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "text": "Việc chấm dứt sử dụng Thẻ không ảnh hưởng đến hiệu lực của Điều khoản và Điều kiện này. Các nội dung của Điều khoản và Điều kiện này vẫn có giá trị ràng buộc Chủ thẻ thực hiện."
+                        }
+                      ]
+                    }
+                  }
+                  
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-13",
+            "title": "ĐIỀU 13. NGÔN NGỮ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Ngôn ngữ chính sử dụng trong Giấy Đề nghị cấp Thẻ tín dụng, Điều khoản và Điều kiện, và các văn bản, tài liệu liên quan giữa HDBank và Chủ thẻ, Bên bảo đảm là tiếng Việt."
+                  },
+                  {
+                    "text": "Trong trường hợp có bên nước ngoài tham gia, các bên có thể thỏa thuận sử dụng tiếng nước ngoài thông dụng kèm theo bản tiếng Việt. Trong trường hợp mâu thuẫn về nội dung giữa bản tiếng Việt và bản tiếng nước ngoài thì bản tiếng Việt có giá trị sử dụng."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-14",
+            "title": "ĐIỀU 14. PHƯƠNG THỨC THANH TOÁN SỐ DƯ NỢ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Thời gian lập Sao kê Thẻ là ngày 15 hàng tháng và/ hoặc ngày khác theo quy định của HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Khi nhận được Sao kê Thẻ, Chủ thẻ có trách nhiệm kiểm tra và thanh toán đúng hạn cho HDBank với số tiền thanh toán ít nhất bằng giá trị thanh toán tối thiểu và chậm nhất là ngày đến hạn thanh toán được HDBank thông báo trong Kỳ sao kê đó. Chủ thẻ phải thông báo thông qua ứng dụng Vikki cho HDBank hoặc Tổng đài dịch vụ khách hàng Vikki các thắc mắc, khiếu nại của mình liên quan đến các giao dịch trên Sao kê Thẻ trong vòng 15 ngày (kể cả ngày nghỉ/ lễ/ tết hoặc ngày HDBank tạm ngưng giao dịch), kể từ ngày HDBank gửi Sao kê Thẻ. Nếu sau thời gian này, HDBank không nhận được thông báo của Chủ thẻ thì xem như Chủ thẻ đồng ý về nội dung Sao kê Thẻ và đồng ý thanh toán tất cả các giao dịch, phí và lãi phát sinh theo thông báo của HDBank trên Sao kê Thẻ."
+                  },
+                  {
+                    "text": "Hàng tháng, HDBank gửi Sao kê Thẻ cho Chủ thẻ theo Email mà Chủ thẻ đã đăng ký với HDBank. Trong trường hợp Chủ thẻ chưa/ không nhận được sao kê, Chủ thẻ vẫn có trách nhiệm thanh toán cho HDBank các khoản phải trả trong kỳ."
+                  },
+                  {
+                    "text": "Phương thức thanh toán Dư nợ Thẻ: HDBank trích nợ tự động từ TKTT trực tuyến Vikki số tiền thanh toán tối thiểu (theo ủy quyền của Chủ thẻ tại Hợp đồng này); hoặc Chủ thẻ chủ động thanh toán từ TKTT trực tuyến Vikki trên ứng dụng Vikki hoặc thanh toán trên Internet banking hoặc các kênh khác được HDBank quy định trong từng thời kỳ trước khi HDBank thực hiện trích nợ tự động."
+                  },
+                  {
+                    "text": "Việc uỷ quyền cho HDBank tự động ghi nợ Tài khoản thanh toán trực tuyến Vikki để thanh toán số tiền thanh toán tối thiểu:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Hàng tháng, việc trích nợ tự động được HDBank thực hiện ghi nợ Tài khoản thanh toán trực tuyến Vikki của Chủ thẻ trước 2 ngày so với ngày đến hạn thanh toán, liên tục hàng ngày cho đến trước mỗi kỳ sao kê mới hoặc cho đến khi thu đủ số tiền thanh toán tối thiểu, tuỳ thời điểm nào tới trước. Chủ thẻ phải đảm bảo tài khoản thanh toán đã đăng ký trích nợ luôn đủ số dư cần thiết để HDBank ghi nợ trong suốt khoảng thời gian nói trên."
+                        },
+                        {
+                          "text": "Nếu Tài khoản thanh toán trực tuyến Vikki không đủ số dư để trích nợ trong thời gian nói trên, Chủ thẻ phải chịu các phí, lãi phát sinh (nếu có)"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "HDBank có toàn quyền chủ động thu nợ từ toàn bộ số tiền có trong (các) Tài khoản thanh toán trực tuyến Vikki của Chủ thẻ để thanh toán nợ thẻ đến hạn/quá hạn theo quy định HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Trường hợp HDBank nhận được khiếu nại của Chủ thẻ trong thời hạn quy định và đang trong quá trình giải quyết khiếu nại, Chủ thẻ có trách nhiệm phải thanh toán toàn bộ các Giao dịch đang khiếu nại và các khoản phí, lãi phát sinh theo Sao kê Thẻ lập hàng tháng. Nếu không thanh toán, Chủ thẻ sẽ chịu trách nhiệm thanh toán hoàn toàn các khoản lãi và phí phát sinh (nếu có). Sau khi có kết quả giải quyết khiếu nại, HDBank sẽ xử lý các giao dịch mà Chủ thẻ khiếu nại (nếu có)."
+                  },
+                  {
+                    "text": "Chủ thẻ chịu trách nhiệm thanh toán toàn bộ các Giao dịch Thẻ, kể cả các Giao dịch qua Internet và/ hoặc các giao dịch khác được cho là hợp lệ theo quy định HDBank nếu HDBank cung cấp được bằng chứng về việc Thẻ đã được sử dụng để giao dịch mà không cần cung cấp bằng chứng về chữ ký của Chủ thẻ trên chứng từ của các Giao dịch Thẻ đã phát sinh."
+                  },
+                  {
+                    "text": "Nghĩa vụ thanh toán Dư nợ của Chủ thẻ được thực hiện theo thứ tự ưu tiên sau:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Nợ trong hạn: lãi, phí, dư nợ gốc, ..."
+                        },
+                        {
+                          "text": "Nợ quá hạn: dư nợ gốc, lãi, phí, ..."
+                        },
+                        {
+                          "text": "Các nghĩa vụ tài chính khác của Chủ thẻ (nếu có)."
+                        },
+                        {
+                          "text": "Trường hợp cùng loại Giao dịch Thẻ thì áp dụng ưu tiên thanh toán theo thứ tự về thời gian hoặc theo bất kỳ thứ tự nào mà HDBank cho là phù hợp mà không cần thỏa thuận trước với Chủ thẻ hoặc sự đồng ý của Chủ thẻ. Thứ tự ưu tiên thanh toán nợ nêu trên có thể được HDBank thay đổi trong từng thời kỳ phù hợp với quy định của pháp luật."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trong trường hợp Chủ thẻ vi phạm bất kỳ nghĩa vụ nào tại HDBank, bao gồm nhưng không giới hạn nghĩa vụ thanh toán khoản vay, nghĩa vụ thanh toán bảo lãnh, nghĩa vụ thanh toán Thẻ, nghĩa vụ đảm bảo cho bên thứ ba, … thì HDBank được toàn quyền quyết định lựa chọn các nghĩa vụ của Chủ thẻ để thu hồi theo thứ tự do HDBank quyết định. Theo đó, HDBank được quyền sử dụng số tiền thanh toán cho các Giao dịch Thẻ của Chủ thẻ và/ hoặc khi có nguồn tiền chuyển đến tài khoản của Chủ thẻ để thu hồi bất kỳ nghĩa vụ nào của Chủ thẻ tại HDBank. Trường hợp số tiền thanh toán/ phát sinh từ các Giao dịch Thẻ của Chủ thẻ và hoặc nguồn tiền chuyển đến tài khoản được HDBank trích thu/ khấu trừ cho các nghĩa vụ khác của Chủ thẻ tại HDBank, thì Chủ thẻ có nghĩa vụ phải tiếp tục phải thanh toán Dư nợ tại HDBank."
+                  },
+                  {
+                    "text": "Nếu Chủ thẻ không thanh toán hoặc thanh toán không đầy đủ số tiền thanh toán tối thiểu hoặc thanh toán sau ngày đến hạn thanh toán, HDBank sẽ tính phí/ lãi chậm thanh toán theo biểu phí dịch vụ Thẻ do HDBank ban hành tùy từng thời điểm."
+                  },
+                  {
+                    "text": "Tất cả các Giao dịch Thẻ, phí, lãi chưa được thanh toán trong Kỳ sao kê được nhập vào số Dư nợ đầu kỳ tiếp theo (không được nhập lãi và phí vào nợ gốc). HDBank vẫn có quyền tiếp tục ghi nợ và Chủ thẻ vẫn có trách nhiệm thanh toán toàn bộ Dư nợ cho dù số Dư nợ hiện hữu vượt HMTD."
+                  },
+                  {
+                    "text": "Nếu số Dư nợ cuối kỳ vượt quá HMTD đã được cấp cho Chủ thẻ, HDBank có quyền tính phí vượt HMTD theo biểu phí dịch vụ Thẻ do HDBank ban hành theo từng thời kì."
+                  },
+                  {
+                    "text": "Trường hợp HDBank có thay đổi Biểu lãi suất Thẻ thì việc áp dụng lãi suất được thực hiện theo nguyên tắc sau:",
+                    "children": {
+                      "style": "alpha",
+                      "type": "list",
+                      "items": [
+                        {
+                          "text": "Đối với những giao dịch xảy ra sau 01 ngày so với ngày thay đổi lãi suất: Lãi suất mới được áp dụng."
+                        },
+                        {
+                          "text": "Đối với những giao dịch xảy ra từ ngày thay đổi lãi suất trở về trước: Lãi suất cũ được áp dụng."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Phí chậm thanh toán: Nếu đến hạn thanh toán, Chủ thẻ không thanh toán hoặc không thanh toán đủ số tiền thanh toán tối thiểu mà HDBank yêu cầu, Chủ thẻ sẽ chịu mức phí chậm thanh toán theo quy định của HDBank."
+                  }
+
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-15",
+            "title": "ĐIỀU 15. CHUYỂN NỢ QUÁ HẠN, XỬ LÝ TÀI SẢN BẢO ĐẢM/ YÊU CẦU THỰC HIỆN NGHĨA VỤ BẢO ĐẢM VÀ THU HỒI NỢ",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Trường hợp Chủ thẻ không thanh toán đầy đủ số tiền thanh toán tối thiểu vào ngày đến hạn HDBank có quyền chuyển toàn bộ số dư nợ gốc sang nợ quá hạn kể từ ngày đến hạn thanh toán đó. Trường hợp, nếu Chủ thẻ có nhiều khoản cấp tín dụng tại HDBank thì toàn bộ dư nợ của các khoản cấp tín dụng đó cũng sẽ chuyển sang nhóm nợ tương ứng theo quy định của HDBank phù hợp với quy định pháp luật trong từng thời kỳ."
+                  },
+                  {
+                    "text": "HDBank có quyền thu hồi toàn bộ Dư nợ trước hạn và chấm dứt việc sử dụng Thẻ của Chủ thẻ khi xảy ra một trong các trường hợp sau:",
+                    "children": {
+                      "type": "list",
+                      "style": "alpha",
+                      "items": [
+                        {
+                          "text": "Chủ thẻ vi phạm bất kỳ điều khoản nào tại Điều khoản và Điều kiện này, hợp đồng/ thỏa thuận/ cam kết khác với HDBank (nếu có);"
+                        },
+                        {
+                          "text": "Số dư nợ gốc của Thẻ của Chủ thẻ bị chuyển sang nợ quá hạn;"
+                        },
+                        {
+                          "text": "Chủ thẻ gặp khó khăn về tài chính và theo đánh giá của HDBank là có ảnh hưởng nghiêm trọng đến khả năng trả nợ cho HDBank;"
+                        },
+                        {
+                          "text": "Chủ thẻ hoặc Bên bảo đảm (nếu có) chết mà người thừa kế không được HDBank chấp nhận hoặc không có người thừa kế để kế thừa nghĩa vụ của Chủ thẻ hoặc Bên bảo đảm;"
+                        },
+                        {
+                          "text": "Một hoặc một số khoản cấp tín dụng của Chủ thẻ tại HDBank chuyển sang nợ quá hạn mà theo nhận định của HDBank, Chủ thẻ không hoặc có nguy cơ không có khả năng trả nợ;"
+                        },
+                        {
+                          "text": "Chủ thẻ không bổ sung thêm TSBĐ hoặc biện pháp bảo đảm khác theo yêu cầu của HDBank;"
+                        },
+                        {
+                          "text": "Chủ thẻ hoặc Bên bảo đảm (nếu có) bị mất năng lực hành vi dân sự hoặc bị hạn chế năng lực hành vi dân sự hoặc bị khởi tố/ truy tố/ xét xử theo quy định pháp luật hình sự."
+                        },
+                        {
+                          "text": "Việc thu hồi nợ trước hạn và chấm dứt việc sử dụng Thẻ sẽ được HDBank gửi thông báo cho Chủ thẻ; và Chủ thẻ có trách nhiệm thanh toán toàn bộ Dư nợ cho HDBank trong thời hạn đã nêu trong thông báo. Hết thời hạn thanh toán được ghi trong thông báo mà Chủ thẻ chưa thanh toán hết Dư nợ, HDBank sẽ tiến hành các biện pháp để thu hồi nợ theo quy định tại Điều khoản và Điều kiện này, các hợp đồng, thỏa thuận, cam kết khác mà Chủ thẻ đã xác lập với HDBank."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trường hợp Chủ Thẻ không thanh toán đầy đủ số tiền tối thiểu vào ngày đến hạn theo Sao kê Thẻ và/ hoặc không thực hiện đúng các nghĩa vụ quy định tại Điều khoản và Điều kiện này, HDBank có quyền chủ động xử lý bất kỳ tài sản hợp pháp của Chủ thẻ tại HDBank (tiền ký quỹ, tài khoản tiền gửi, sổ tiết kiệm, tài sản cầm cố/ thế chấp…) hoặc yêu cầu thực hiện biện pháp bảo đảm để thu hồi Dư nợ của Chủ thẻ tại HDBank mà không cần chữ ký xác nhận của Chủ thẻ; hoặc thực hiện các biện pháp thu hồi nợ khác theo quy định của pháp luật. Thứ tự, hình thức xử lý các tài sản của Chủ thẻ và thời điểm xử lý tài sản do HDBank toàn quyền quyết định; và HDBank sẽ thông báo cho Chủ thẻ biết. Việc thu hồi nợ vẫn được thực hiện khi:",
+                    "children": {
+                      "type": "list",
+                      "style": "alpha",
+                      "items": [
+                        {
+                          "text": "Việc sử dụng Thẻ hay Tài khoản Thẻ chưa hoặc đã chấm dứt; hoặc"
+                        },
+                        {
+                          "text": "Số Dư nợ chưa hoặc vượt quá HMTD."
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "text": "Trường hợp Chủ Thẻ đề nghị HDBank cơ cấu lại thời hạn trả nợ, HDBank có quyền xem xét nhưng không có nghĩa vụ thực hiện cơ cấu lại thời hạn trả nợ theo đề nghị của Chủ Thẻ. Việc cơ cấu lại thời hạn trả nợ sẽ được HDBank cân nhắc và thực hiện theo quy định pháp luật, văn bản quy định của HDBank theo từng thời kỳ."
+                  }
+                ]
+              }
+              
+            ]
+          },
+          {
+            "id": "dieu-16",
+            "title": "ĐIỀU 16. CÁC HÀNH VI CHỦ THẺ KHÔNG ĐƯỢC THỰC HIỆN TRONG QUÁ TRÌNH MỞ VÀ SỬ DỤNG THẺ ĐƯỢC HDBANK PHÁT HÀNH",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Làm, sử dụng, chuyển nhượng và lưu hành Thẻ giả;"
+                  },
+                  {
+                    "text": "Thực hiện, tổ chức thực hiện hoặc tạo điều kiện để người khác thực hiện các hành vi Giao dịch Thẻ gian lận, giả mạo; giao dịch thanh toán khống tại ĐVCNT;"
+                  },
+                  {
+                    "text": "Cung cấp các thông tin gian lận, không chính xác khi thực hiện mở và sử dụng Thẻ;"
+                  },
+                  {
+                    "text": "LGiả mạo giấy tờ tùy thân để định danh trực tuyến hoặc có hành vi chỉnh sửa làm thay đổi nội dung, hình ảnh trên giấy tờ tùy thân, hình ảnh chân dung và các thông tin cá nhân khác lúc thực hiện định danh trực tuyến;"
+                  },
+                  {
+                    "text": "Lấy cắp, thông đồng để lấy cắp thông tin Thẻ; tiết lộ và cung cấp thông tin Thẻ, Chủ thẻ và Giao dịch Thẻ không đúng quy định của pháp luật;"
+                  },
+                  {
+                    "text": "Xâm nhập hoặc tìm cách xâm nhập trái phép, phá hủy chương trình hoặc cơ sở dữ liệu của hệ thống phát hành, thanh toán Thẻ, chuyển mạch Thẻ, bù trừ điện tử Giao dịch Thẻ;"
+                  },
+                  {
+                    "text": "Sử dụng Thẻ để thực hiện các giao dịch cho các mục đích rửa tiền, tài trợ khủng bố, lừa đảo, gian lận hoặc các hành vi vi phạm pháp luật khác;"
+                  },
+                  {
+                    "text": "Mua, bán, thuê, cho thuê, mượn, cho mượn Thẻ hoặc thông tin Thẻ, mở hộ Thẻ;"
+                  },
+                  {
+                    "text": "Không tuân thủ các giới hạn về hạn mức giao dịch và phạm vi sử dụng Thẻ theo quy định tại khoản 2.5 Điều 2 Điều khoản và Điều kiện này trong trường hợp HDBank phát hành Thẻ bằng phương thức điện tử mà không áp dụng các biện pháp nâng cao để nhận biết, xác minh thông tin Chủ thẻ;"
+                  },
+                  {
+                    "text": "Các hành vi vi phạm pháp luật khác và quy định của HDBank trong từng thời kỳ."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-17",
+            "title": "ĐIỀU 17. BẤT KHẢ KHÁNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Bất khả kháng là những sự kiện xảy ra một cách khách quan, không thể lường trước và không thể khắc phục được mặc dù đã áp dụng mọi biện pháp cần thiết mà khả năng cho phép, bao gồm nhưng không giới hạn ở các sự kiện như chiến tranh, hành động khủng bố, biểu tình, đình công, bạo loạn, hỏa hoạn, động đất, lũ lụt, thiếu hụt năng lượng, thiên tai, sự cố điện, sự hư hỏng/ lỗi của ATM, POS, hệ thống thanh toán trực tuyến hoặc bất kì máy móc, thiết bị, hệ thống nào khác phục vụ cho hoạt động của Thẻ hoặc hệ thống xử lý dữ liệu hoặc hệ thống viễn thông/ internet hoặc dịch vụ trao đổi thông tin; hành động hoặc, sự thay đổi chính sách, quy định pháp luật, hoặc theo yêu cầu của Cơ quan Nhà nước có thẩm quyền hoặc các sự kiện khách quan khác nằm ngoài sự kiểm soát của các bên."
+                  },
+                  {
+                    "text": "Khi xảy ra sự kiện Bất khả kháng, HDBank sẽ tạm ngưng việc thực hiện Điều khoản và Điều kiện này và thông báo cho Chủ thẻ bằng các phương thức tại Điều 17 Điều khoản và Điều kiện này và không phát sinh trách nhiệm đối với Chủ thẻ, Bên thứ ba, kể cả trách nhiệm bồi thường."
+                  },
+                  {
+                    "text": "Bất khả kháng không là cơ sở để miễn trừ trách nhiệm, hoặc thực hiện nghĩa vụ của Chủ thẻ với HDBank trừ trường hợp được HDBank đồng ý."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-18",
+            "title": "ĐIỀU 18. THÔNG BÁO",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Bất kỳ yêu cầu nào của Chủ thẻ phải được lập thành văn bản và ký tên. HDBank có thể (nhưng không bắt buộc) chấp nhận và thực hiện các yêu cầu đó thông qua telex, fax, điện thoại mà HDBank tin rằng do chính Chủ thẻ đưa ra; và HDBank không chịu trách nhiệm về những thiệt hại do hậu quả của việc thực hiện hay tuân theo các yêu cầu của Chủ thẻ thông qua: telex, fax hay điện thoại."
+                  },
+                  {
+                    "text": "Việc sửa đổi, bổ sung bất kỳ nội dung Điều khoản và Điều kiện này hoặc các thông báo, yêu cầu khác sẽ được HDBank thông báo trước cho Chủ thẻ bằng cách niêm yết tại Điểm giao dịch/ hệ thống HDBank hoặc công bố trên website chính thức của HDBank hoặc các phương tiện thông tin đại chúng hoặc các hình thức khác theo quy định của HDBank. Chủ thẻ chấp thuận toàn bộ các nội dung được HDBank sửa đổi, bổ sung. Trường hợp Chủ thẻ không đồng ý, Chủ thẻ phải phản hồi lại cho HDBank và yêu cầu HDBank chấm dứt hiệu lực của Thẻ, đồng thời thực hiện các nghĩa vụ theo quy định Điều khoản và Điều kiện này, hợp đồng, thỏa thuận, cam kết khác với HDBank để chấm dứt hiệu lực của Thẻ. Trường hợp Chủ Thẻ và/hoặc Bên bảo đảm vi phạm nghĩa vụ thông báo về sự thay đổi địa chỉ thường trú, địa chỉ tạm trú, nơi cư trú mới và/hoặc đã gạch tên khỏi hộ khẩu và/ hoặc xuất cảnh quá 06 (sáu tháng) mà không thông báo địa chỉ, nơi cư trú mới, Chủ Thẻ và/hoặc Bên bảo đảm được xem là giấu địa chỉ nhằm trốn tránh nghĩa vụ trả nợ. Trong trường hợp này, nơi cư trú nêu tại văn bản này, tại hợp đồng bảo đảm là nơi cư trú cuối cùng của Chủ Thẻ và/ hoặc Bên bảo đảm. HDBank được quyền yêu cầu Tòa Án hoặc Trung tâm trọng tài thương mại Phía Nam (STAC) xét xử vắng mặt. Chủ Thẻ và/ hoặc Bên bảo đảm chấp nhận việc Tòa xét xử vụ án vắng mặt, kể cả trường hợp không lấy được lời khai của Chủ Thẻ và/ hoặc Bên bảo đảm."
+                  },
+                  {
+                    "text": "Các nội dung về việc phát hành Thẻ, số dư tài khoản, lịch sử giao dịch Thẻ và các thông tin cần thiết khác HDBank sẽ thông báo cho Chủ thẻ qua điện thoại/ tin nhắn (SMS)/ email/ ứng dụng Vikki mà Chủ thẻ đã đăng ký với HDBank hoặc bằng phương thức khác phù hợp do HDBank quyết định"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-19",
+            "title": "ĐIỀU 19.  LUẬT ÁP DỤNG VÀ GIẢI QUYẾT TRANH CHẤP",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Hợp đồng và các, thỏa thuận, cam kết khác giữa HDBank và Chủ thẻ đều được giải thích theo quy định pháp luật Việt Nam, trừ trường hợp các Bên có thỏa thuận khác."
+                  },
+                  {
+                    "text": "Nếu có bất kỳ tranh chấp nào phát sinh hoặc liên quan đến việc thực hiện Hợp đồng phát hành và sử dụng thẻ này giữa Chủ thẻ và HDBank, trước hết sẽ được giải quyết thông qua thương lượng, hoà giải. Các Bên thống nhất rằng trong trường hợp tranh chấp không giải quyết được bằng hoà giải, thì tranh chấp được giải quyết tại Toà án có thẩm quyền hoặc tại Trung tâm trọng tài thương mại Phía Nam (STAC). Chủ thẻ đồng ý rằng việc giải quyết tranh chấp tại Trung tâm trọng tài thương mại Phía Nam (STAC) được thực hiện theo thủ tục thông thường hoặc thủ tục rút gọn quy định tại quy tắc tố tụng của STAC theo lựa chọn của HDBank."
+                  },
+                  {
+                    "text": "Trường hợp Tòa án hoặc Trung tâm trọng tài thương mại Phía Nam (STAC) buộc Chủ Thẻ và/ hoặc Bên bảo đảm phải trả nợ, Chủ Thẻ và/ hoặc Bên bảo đảm phải chịu án phí theo quy định của pháp luật và chịu mọi chi phí phát sinh của HDBank trong quá trình khởi kiện bao gồm: chi phí đi lại, phí luật sư (trường hợp thuê luật sư)."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-20",
+            "title": "ĐIỀU 20. THỎA THUẬN CUNG CẤP THÔNG TIN TÍN DỤNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Chủ thẻ đồng ý vô điều kiện, không hủy ngang và cho phép HDBank xử lý dữ liệu của Chủ thẻ, tìm kiếm, xác minh các thông tin liên quan đến Chủ thẻ từ Bên thứ ba, cung cấp thông tin của Chủ thẻ cho bất kỳ Bên thứ ba nào theo các quy định của HDBank. Chủ thẻ cũng đồng ý rằng Bên thứ ba nêu trên sẽ có quyền cung cấp các thông tin tín dụng của Chủ thẻ cho bất kỳ cá nhân/tổ chức nào liên quan để phục vụ hoạt động thu hồi nợ, mua bán nợ, xử lý nợ, kiểm toán, tư vấn, thông tin tín dụng, ..."
+                  },
+                  {
+                    "text": "Chủ thẻ đồng ý vô điều kiện, không hủy ngang để HDBank được quyền thực hiện cung cấp thông tin tín dụng/ tiếp nhận (các) sản phẩm thông tin tín dụng của Chủ thẻ cho/từ (các) công ty thông tin tín dụng mà HDBank đang là tổ chức tham gia (bao gồm CÔNG TY CỔ PHẦN THÔNG TIN TÍN DỤNG VIỆT NAM (PCB), mã số doanh nghiệp 0102547296, đăng ký lần đầu ngày 27/11/2007 và (các) Công ty thông tin tín dụng khác theo thông báo của HDBank từng thời kỳ) và các công ty thông tin tín dụng mà HDBank dự kiến sẽ tham gia."
+                  },
+                  {
+                    "text": "Chủ thẻ đồng ý rằng thông tin tín dụng (dữ liệu, số liệu, dữ kiện liên quan của Chủ thẻ…) được HDBank cung cấp cho công ty thông tin tín dụng bao gồm nhưng không giới hạn thông tin định danh của Chủ thẻ; thông tin về lịch sử cấp tín dụng; thông tin về lịch sử trả nợ, số tiền đã đến hạn hoặc chưa đến hạn, thời hạn phải trả, hạn mức tín dụng, nhóm nợ, việc bán nợ, thực hiện cam kết ngoại bảng và kết quả chấm điểm xếp hạng của Chủ thẻ; thông tin về các biện pháp bảo đảm; các thông tin liên quan khác của Chủ thẻ mà HDBank cho rằng không vi phạm quyền lợi hợp pháp của Chủ thẻ,… Việc cung cấp thông tin tín dụng/ tiếp nhận (các) sản phẩm thông tin tín dụng được HDBank thực hiện theo các biện pháp, cách thức/ phương thức theo quyết định của HDBank trong từng thời kỳ."
+                  },
+                  {
+                    "text": "Chủ thẻ khẳng định đã hiểu và biết rõ rằng: (i) Thông tin tín dụng của Chủ thẻ được cung cấp bao gồm dữ liệu cá nhân nhạy cảm theo quy định của pháp luật về bảo vệ dữ liệu cá nhân; (ii) Thông tin tín dụng gồm dữ liệu cá nhân nhạy cảm đó được thu thập, xử lý và lưu trữ trong thời gian tối thiểu 05 (năm) năm nhằm mục đích tạo lập các sản phẩm thông tin tín dụng bởi các phần mềm chuyên dụng của Công ty Thông tin tín dụng; và (iii) mọi sự đồng ý của Chủ thẻ tại khoản này là dựa trên cơ sở tự nguyện và hiểu biết rõ ràng về các quyền của Chủ thẻ theo các quy định của luật, pháp luật có liên quan."
+                  },
+                  {
+                    "text": "Chủ thẻ đồng ý rằng trường hợp công ty thông tin tín dụng bị thu hồi Giấy chứng nhận, HDBank sẽ ngừng cung cấp thông tin tín dụng của Chủ thẻ cho công ty thông tin tín dụng và thông tin tín dụng của Chủ thẻ tại công ty thông tin tín dụng được xử lý theo quy định của Chính phủ về hoạt động cung ứng dịch vụ thông tin tín dụng. HDBank sẽ thông báo với Chủ thẻ về việc xử lý thông tin tín dụng của Chủ thẻ trong thời hạn tối đa 10 ngày làm việc, kể từ ngày HDBank nhận được thông báo của công ty thông tin tín dụng về phương án xử lý thông tin tín dụng."
+                  },
+                  {
+                    "text": "Trường hợp có sự thay đổi bất kỳ nội dung nào tại Điều 20 này và điểm ee khoản 6.2. Điều 6, điểm aa khoản 7.1. Điều 7, HDBank sẽ thông báo tới Chủ thẻ bằng hình thức do HDBank chủ động quyết định phù hợp với thỏa thuận giữa HDBank với Chủ thẻ, bao gồm nhưng không giới hạn bằng văn bản, qua email, cuộc gọi điện thoại, tin nhắn SMS và các hình thức khác có giá trị tương đương, … và Chủ thẻ có thể đồng ý các sửa đổi, bổ sung đó bằng các phương thức xác thực hoặc bằng văn bản, qua email, cuộc gọi điện thoại, tin nhắn SMS, tùy trường hợp HDBank thông báo cho Chủ thẻ."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-21",
+            "title": "ĐIỀU 21. QUY ĐỊNH VỀ BẢO VỆ, XỬ LÝ DỮ LIỆU CÁ NHÂN",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Trong quá trình khách hàng phát hàng đăng ký, phát hành, sử dụng Thẻ, HDBank áp dụng các biện pháp để bảo vệ dữ liệu cá nhân của Chủ thẻ, dữ liệu cá nhân của người có liên quan mà Chủ thẻ cung cấp theo các chính sách, quy định của HDBank trong từng thời kỳ và phù hợp với quy định pháp luật."
+                  },
+                  {
+                    "text": "HDBank thực hiện xử lý dữ liệu cá nhân của Chủ thẻ, dữ liệu cá nhân của người có liên quan mà Chủ thẻ cung cấp nhằm mục đích phát hành Thẻ, cung cấp các sản phẩm/dịch vụ của HDBank cho Chủ Thẻ, và/hoặc cho các mục đích khác theo Thông báo về xử lý dữ liệu, Điều khoản và Điều kiện về xử lý dữ liệu, các văn bản/tài liệu mà Chủ thẻ đã đồng ý/xác nhận với HDBank."
+                  },
+                  {
+                    "text": "HDBank thực hiện cung cấp thông tin của Chủ thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của HDBank, xử lý các trường hợp nghi ngờ gian lận, giả mạo, vi phạm quy định pháp luật và các trường hợp theo quy định pháp luật, theo yêu cầu của Cơ quan Nhà nước có thẩm quyền"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "dieu-22",
+            "title": "ĐIỀU 22. ĐIỀU KHOẢN CHUNG",
+            "blocks": [
+              {
+                "type": "list",
+                "style": "decimal",
+                "items": [
+                  {
+                    "text": "Nếu bất kỳ nội dung của Điều khoản và Điều kiện này không hợp lệ, không giá trị hoặc không thể thi hành, thì hiệu lực của những điều khoản còn lại trong Điều khoản và Điều kiện này vẫn không bị ảnh hưởng svà vẫn giữ nguyên giá trị thi hành."
+                  },
+                  {
+                    "text": "Việc chưa hoặc chậm trễ thực hiện quyền hạn, nghĩa vụ của HDBank trong Điều khoản và Điều kiện này sẽ không được coi như là từ bỏ toàn bộ hay một phần quyền hạn, nghĩa vụ của HDBank, trừ khi HDBank có thông báo bằng văn bản về sự khước từ quyền hạn, nghĩa vụ của mình."
+                  },
+                  {
+                    "text": "Trong phạm vi quy định của pháp luật và bằng Điều khoản và Điều kiện này Chủ thẻ đồng ý cho HDBank được quyền cung cấp thông tin về Chủ thẻ cho các đơn vị trực thuộc của HDBank; và cho phép HDBank và các Đơn vị trực thuộc của HDBank toàn quyền cung cấp thông tin về Chủ thẻ cho các bên thứ ba mà HDBank cho là hợp lý và cần thiết; đồng thời cho phép nhân sự của Chủ thẻ, cơ quan, cá nhân nào khác cung cấp thông tin về Chủ thẻ cho HDBank vào bất cứ lúc nào mà không cần có ý kiến chấp thuận hoặc có sự uỷ quyền của Chủ thẻ. Chủ thẻ đồng ý cho HDBank cung cấp thông tin, số điện thoại của Chủ thẻ cho các đối tác của HDBank để triển khai dịch vụ cho Chủ thẻ. Chủ thẻ đồng ý tiếp nhận tin nhắn/ cuộc gọi liên quan đến dịch vụ cung cấp từ HDBank hoặc bên thứ ba là các công ty viễn thông/ công ty công nghệ thông tin… theo số điện thoại mà Chủ thẻ đã cung cấp cho HDBank."
+                  },
+                  {
+                    "text": "Bằng việc đồng ý đăng ký sản phẩm Thẻ này, Chủ thẻ đồng ý cho HDBank thực hiện cấp Thẻ tín dụng Chủ thẻ."
+                  },
+                  {
+                    "text": "Các hợp đồng, thỏa thuận, cam kết giữa HDBank và Chủ thẻ hoặc bên bảo đảm liên quan đến việc phát hành và sử dụng Thẻ, TSBĐ, biện pháp bảo đảm, biểu phí dịch vụ Thẻ, biểu lãi suất Thẻ là bộ phận không tách rời của Điều khoản và Điều kiện này."
+                  },
+                  {
+                    "text": "Toàn bộ Các Điều khoản và Điều kiện và các văn bản khác giữa HDBank và Chủ Thẻ đều được giải thích theo Pháp luật Việt Nam, trừ khi các văn bản đó quy định khác"
+                  },
+                  {
+                    "text": "Chủ thẻ xác nhận đã đọc, hiểu rõ và cam kết thực hiện các nội dung ghi trong Điều khoản và Điều kiện này và các biểu lãi suất và biểu phí dịch vụ và các văn bản khác có liên quan đến việc phát hành và sử dụng Thẻ do HDBank ban hành, công khai và gửi đến cho Chủ thẻ."
+                  },
+                  {
+                    "text": "Chủ thẻ xác nhận đã được HDBank phổ biến, hướng dẫn về sản phẩm, dịch vụ Thẻ, các bước thao tác, quy trình thực hiện, các rủi ro có thể gặp phải khi sử dụng Thẻ và cách xử lý khi gặp sự cố xảy ra."
+                  },
+                  {
+                    "text": "Các Điều khoản và Điều kiện này có hiệu lực đối với Chủ thẻ kể từ ngày Chủ thẻ thực hiện xác nhận/ ký/ký số/ đồng ý Giấy Đề nghị, Điều khoản và Điều kiện này."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

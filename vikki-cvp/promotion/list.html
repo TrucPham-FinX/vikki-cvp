@@ -1,0 +1,1164 @@
+<html lang='vi'>
+  <head>
+    <meta charset='UTF-8' />
+    <title></title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='description' content='' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      /* overlay */
+      .popup-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(246, 247, 248, 1);
+        z-index: 99999;
+        bottom: 0;
+        display: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .popup-overlay.show {
+        display: block;
+      }
+
+      .popup-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      .popup-body {
+        height: 100%;
+        overflow-y: auto;
+        background: rgba(246, 247, 248, 1);
+      }
+      .promo-detail {
+        padding-bottom: 50px;
+      }
+      .popup-close {
+        position: fixed;
+        right: 0;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2147483647;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .popup-close img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+      .popup-iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        min-height: 70vh;
+        background: #fff;
+      }
+      .popup-inner {
+        padding: 20px 10px;
+      }
+
+      /* IMAGE */
+      .promo-image {
+        position: relative;
+        padding-bottom: 67%;
+        height: 0;
+      }
+
+      .promo-image img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        height: 100%;
+      }
+
+      /* AVATAR / BADGE */
+      .promo-avatar {
+        position: absolute;
+        right: 16px;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+        background: #0f766e; /* xanh kiểu Mantine */
+        color: #fff;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        border: 3px solid #fff;
+      }
+
+      /* CONTENT */
+      .promo-content {
+        padding: 28px 10px 20px;
+      }
+
+      .promo-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #111827;
+        line-height: 1.3;
+        margin: 0 0 10px;
+      }
+
+      .promo-desc {
+        font-size: 13px;
+
+        color: rgba(15, 21, 36, 0.6);
+        line-height: 1.6;
+        margin: 0 0 12px;
+      }
+
+      .promo-expire {
+        font-size: 13px;
+        color: rgba(15, 21, 36, 0.36);
+        margin: 0;
+        position: absolute;
+        bottom: 16px;
+      }
+
+      #promo-list {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 0;
+        margin: 0;
+        margin-bottom: 120px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .promo-card {
+        background: #fff;
+        overflow: hidden;
+        margin-bottom: 10px;
+        width: 50%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        position: relative;
+        padding-bottom: 40px;
+      }
+      .promo-card:nth-child(2n) {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .popup-title {
+        background: none;
+        font-size: 36px;
+        padding: 0px 16px;
+        margin-top: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body class='hasTopSpace' id='body'>
+
+    <ul id='promo-list'>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-114'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-114.png' alt='Lotte Duty Free' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Lotte Duty Free
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 50 USD
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 30/11/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-113'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-113.jpg' alt='LONG BEACH PEARL' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          LONG BEACH PEARL
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 30/06/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-112'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-112.jpg' alt='SKECHERS USA' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          SKECHERS USA
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 15/05/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-111'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-111.jpg' alt='JUMP ARENA' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          JUMP ARENA
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá 50.000 VNĐ cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-110'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-110.jpg' alt='IMPERIAL VUNG TAU' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          IMPERIAL VUNG TAU
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 25% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 25/02/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-109'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-109.png' alt='Vinpearl' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Vinpearl
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-108'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-108.jpg' alt='BLISS HOI AN BEACH RESORT &amp; WELLNESS' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          BLISS HOI AN BEACH RESORT &amp; WELLNESS
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-107'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-107.jpg' alt='Angsana' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Angsana
+        </h3>
+
+        <div class='promo-desc'>
+          Tặng 01 đêm nghỉ miễn phí
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-106'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-106.jpg' alt='ANANTARA HOTELS &amp; RESORTS' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          ANANTARA HOTELS &amp; RESORTS
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 25% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 25/07/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-105'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-105.jpg' alt='ALMA RESORT CAM RANH' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          ALMA RESORT CAM RANH
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 20/05/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-104'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-104.jpg' alt='Dhawa' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Dhawa
+        </h3>
+
+        <div class='promo-desc'>
+          Tặng 01 đêm nghỉ miễn phí
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-103'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-103.jpg' alt='HOLIDAY INN' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          HOLIDAY INN
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 30/04/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-102'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-102.png' alt='IHG® Hotels &amp; Resorts' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          IHG® Hotels &amp; Resorts
+        </h3>
+
+        <div class='promo-desc'>
+          Tiết kiệm 15% trên Giá linh hoạt tốt nhất (Best Flexible Rate) tại các khách sạn IHG tham gia chương trình
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-101'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-101.png' alt='M VILLAGE' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          M VILLAGE
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 25/02/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-100'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-100.jpg' alt='LONG WANG' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          LONG WANG
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-099'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-099.png' alt='KHÈN - NƯỚNG SAPA' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          KHÈN - NƯỚNG SAPA
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-098'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-098.jpg' alt='JOHNNY STEAK HOUSE' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          JOHNNY STEAK HOUSE
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-097'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-097.jpg' alt='IZAKAYA UNATOTO' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          IZAKAYA UNATOTO
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-096'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-096.jpg' alt='Gánh' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Gánh
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/05/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-095'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-095.jpg' alt='Bò tơ quán mộc' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Bò tơ quán mộc
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-094'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-094.jpg' alt='BAMBOO RESTAURANT' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          BAMBOO RESTAURANT
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-093'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-093.jpg' alt='ALL SEASON' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          ALL SEASON
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 20/02/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-092'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-092.jpg' alt='A MÀ KITCHEN' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          A MÀ KITCHEN
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 10% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 30/09/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-091'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-091.jpg' alt='3 SPOONS RESTAURANT' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          3 SPOONS RESTAURANT
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 10/05/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-090'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-090.jpg' alt='&quot;S&quot; POOL BAR &amp; DINING' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          &quot;S&quot; POOL BAR &amp; DINING
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến 15% cùng thẻ Mastercard
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-089'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-089.png' alt='Viettel Store' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Viettel Store
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 400.000đ
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-088'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-088.png' alt='Hoàng Hà Mobile' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Hoàng Hà Mobile
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 500.000đ
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-087'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-087.png' alt='FPT Shop' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          FPT Shop
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 300.000đ
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-086'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-086.png' alt='CellphoneS' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          CellphoneS
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 600.000đ
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS,VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-085'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-085.png' alt='iPhone 18' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          iPhone 18
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm ngay 2 triệu đồng
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE, VIKKIGO_PLUS'
+      data-brand='HDB'
+      data-id='promo-084'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-084.png' alt='iPhone 18' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          iPhone 18
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm ngay 2 triệu đồng
+        </div>
+
+        <p class='promo-expire'>Thời gian: 18/09/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE, VIKKIGO_PLUS'
+      data-brand='HDB'
+      data-id='promo-083'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-083.png' alt='Giảm đến 1 triệu VNĐ khi thanh toán dịch vụ trên App Traveloka' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm đến 1 triệu VNĐ khi thanh toán dịch vụ trên App Traveloka
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm đến 1 triệu VNĐ khi thanh toán dịch vụ trên App Traveloka
+        </div>
+
+        <p class='promo-expire'>Thời gian: 16/07/2026 - 31/10/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE, VIKKIGO_PLUS'
+      data-brand='HDB'
+      data-id='promo-082'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-082.png' alt='Mua vé với giá tốt tại CGV' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Mua vé với giá tốt tại CGV
+        </h3>
+
+        <div class='promo-desc'>
+          Mua 2 vé xem phim 2D với giá 97.000 vào thứ Sáu, thứ Bảy, Chủ Nhật.
+        </div>
+
+        <p class='promo-expire'>Từ ngày 15/06/2026 - 15/09/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE, VIKKIGO_PLUS, VIKKI_PRO'
+      data-brand='HDB'
+      data-id='promo-081'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-081.png' alt='Giảm giá khi đặt phòng trên AGODA' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm giá khi đặt phòng trên AGODA
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 8% khi đặt phòng trên App AGODA
+        </div>
+
+        <p class='promo-expire'>Từ bây giờ - 31/03/2027</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category=''
+      data-brand='HDB'
+      data-id='promo-075'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-075.png' alt='Giảm giá gần 400 nhà hàng trên toàn quốc' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm giá gần 400 nhà hàng trên toàn quốc
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá lên đến <strong>50%</strong> tại gần <strong>400 nhà hàng</strong> trên toàn quốc:  MANWAH, ISUSHI, GOGIHOUSE, KICHI-KICHI, WOW YAKINIKU, SUMOGOYA, CLOUDPOT, BẮC KIM THANG
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ 20/04/2026 - 31/12/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS'
+      data-brand='PREPAID_CARD'
+      data-id='promo-017'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-017.png' alt='Vikki đồng hành Tài chính cùng Khách hàng sau bão lũ' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Vikki đồng hành Tài chính cùng Khách hàng sau bão lũ
+        </h3>
+
+        <div class='promo-desc'>
+          Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với Thẻ Kép VikkiGO+
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến hết 31/12/2030</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKIGO_PLUS'
+      data-brand='PREPAID_CARD'
+      data-id='promo-013'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-013.png' alt='Gói giải pháp Đồng hành Tài chính cho Hội Liên hiệp Phụ Nữ Việt Nam' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Gói giải pháp Đồng hành Tài chính cho Hội Liên hiệp Phụ Nữ Việt Nam
+        </h3>
+
+        <div class='promo-desc'>
+          Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với thẻ VikkiGO+
+        </div>
+
+        <p class='promo-expire'>Thời gian: Từ nay đến hết 31/12/2030</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-040'
+    >
+      <div class='promo-image'>
+        <img src='./assets/pr-1.png' alt='Tích điểm SkyJoy, đổi vé máy bay' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Tích điểm SkyJoy, đổi vé máy bay
+        </h3>
+
+        <div class='promo-desc'>
+          Tặng ngay 2.500 điểm SkyPoint khi chi tiêu từ 30 triệu VNĐ/Kỳ sao kê
+        </div>
+
+        <p class='promo-expire'>Thời gian triển khai: Dự kiến từ 31/03/2026 - 31/12/2026​</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-041'
+    >
+      <div class='promo-image'>
+        <img src='./assets/m-2.png' alt='Hoàn tiền lên đến 10% chi tiêu, tối đa 6 Triệu đồng/năm' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Hoàn tiền lên đến 10% chi tiêu, tối đa 6 Triệu đồng/năm
+        </h3>
+
+        <div class='promo-desc'>
+          Hoàn tiền lên đến 10% chi tiêu, tối đa 6 Triệu đồng/năm
+        </div>
+
+        <p class='promo-expire'>Thời gian: Dự kiến từ 31/03/2026 - 31/12/2026​.</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-061'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-061.png' alt='Giảm 10% trên hóa đơn tại nhà hàng Spice Việt Sài Gòn' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm 10% trên hóa đơn tại nhà hàng Spice Việt Sài Gòn
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 10% trên hóa đơn tại nhà hàng Spice Việt Sài Gòn
+        </div>
+
+        <p class='promo-expire'>Thời gian: 01/11/2025 - 30/09/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-062'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-062.png' alt='Giảm 10% trên hóa đơn tại nhà hàng Pasteur Street Beer' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm 10% trên hóa đơn tại nhà hàng Pasteur Street Beer
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm 10% trên hóa đơn tại nhà hàng Pasteur Street Beer
+        </div>
+
+        <p class='promo-expire'>Thời gian: 01/10/2025 - 30/09/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE'
+      data-brand='HDB'
+      data-id='promo-063'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-063.png' alt='Tặng 01 món ăn trị giá 500.000 VNĐ trên mỗi hóa đơn tại nhà hàng IBUKI' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Tặng 01 món ăn trị giá 500.000 VNĐ trên mỗi hóa đơn tại nhà hàng IBUKI
+        </h3>
+
+        <div class='promo-desc'>
+          Tặng 01 món ăn trị giá 500.000 VNĐ trên mỗi hóa đơn tại nhà hàng IBUKI
+        </div>
+
+        <p class='promo-expire'>Thời gian: 01/10/2025 - 30/09/2026</p>
+      </div>
+    </li>
+    <li
+      class='promo-card'
+      data-category='VIKKI_ONE, VIKKIGO_PLUS, VIKKIGO_COBAGE, VIKKI_PRO'
+      data-brand='HDB'
+      data-id='promo-067'
+    >
+      <div class='promo-image'>
+        <img src='./assets/promo-067.png' alt='Giảm giá nhà hàng Bắc Kim Thang' />
+      </div>
+
+      <div class='promo-content'>
+        <h3 class='promo-title'>
+          Giảm giá nhà hàng Bắc Kim Thang
+        </h3>
+
+        <div class='promo-desc'>
+          Giảm giá 10% trên tổng hóa đơn và tặng món 'Chả giò Bắc Kim Thang' cho nhóm khách từ 4 người
+        </div>
+
+        <p class='promo-expire'>Thời gian: 20/04/2026 - 31/12/2026</p>
+      </div>
+    </li>
+</ul>
+
+<script>
+  (function () {
+    const params = new URLSearchParams(window.location.search);
+    const category = params.get('category');
+
+    if (!category) return;
+
+    const cards = document.querySelectorAll('#promo-list .promo-card');
+
+    cards.forEach((card) => {
+      const cardCategory = card.dataset.category;
+ 
+      if (!cardCategory.includes(category)) {
+        card.style.display = 'none';
+      }
+    });
+  })();
+</script>
+
+<script>
+  document.addEventListener('click', function (e) {
+    const card = e.target.closest('.promo-card');
+    if (!card) return;
+  
+    const id = card.dataset.id;
+    if (!id) return;
+    window.parent.postMessage(
+      {
+        type: 'OPEN_PROMO_DETAIL',
+         id: card.dataset.id
+      },
+      '*'
+    );
+  });
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,132 @@
+{
+  "title": "Vikki OD At Branch | VikkiBank",
+  "hasTopSpace": true,
+  "hasBackground": true,
+  "layout": "template",
+  "bannerVideoHlsSrc": "./assets/video/playlist-20261012-230952.m3u8",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "title": "Hỏi đáp",
+          "text": "Hỏi đáp",
+          "iconSrc": "./assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "title": "Giới thiệu",
+          "text": "Giới thiệu",
+          "iconSrc": "./assets/info.svg",
+          "scroll": "#tooltip_vikki_flexi"
+        }
+      ]
+    },
+    {
+      "type": "video"
+    },
+    {
+      "type": "tooltip",
+      "className":"pt-2 pb-1",
+      "id": "tooltip_vikki_flexi",
+      "textTooltip": "VikkiFlexi là sản phẩm vay hạn mức thấu chi bằng VNĐ không cần tài sản bảo đảm, giúp bạn chi tiêu vượt số dư tài khoản khi cần. Chủ động tài chính, linh hoạt đáp ứng mọi nhu cầu tiêu dùng và phát sinh trong cuộc sống.",
+      "srcTitle": "./assets/vikki_flexi.png",
+      "srcTooltipButton": "./assets/tooltip_button.png"
+    },
+    {
+      "type": "imageSection",
+      "id": "promotions",
+      "src": "./assets/promotions.png"
+    },
+    
+    {
+      "type": "imageSection",
+      "src": "./assets/san_sang_ngay.png"
+    },
+    {
+      "type": "imageSection",
+      "src": "./assets/kich_hoat_ngay.png",
+      "loadingClassName": "loading-position",
+      "className": "pt-0 pb-0 relative-row",
+      "loading": "true"
+    },
+    {
+      "type": "qa",
+      "title": {
+        "src": "./assets/cau_hoi_thuong_gap.png"
+      },
+      "button": {
+        "text": "Xem thêm"
+      },
+      "items": [
+        {
+          "title": "Sản phẩm vay thấu chi VikkiFlexi là gì?",
+          "content": "Thấu chi VikkiFlexi là sản phẩm vay không cần tài sản bảo đảm. Bạn có thể đăng ký và sử dụng cho mục đích tiêu dùng cá nhân. Hạn mức sẽ được áp dụng cho tài khoản VikkiME bạn đăng ký, giúp bạn luôn có 'tiền sẵn tiêu ngay', phục vụ mọi nhu cầu tài chính và chi tiêu đời sống hằng ngày."
+        },
+        {
+          "title": "Điều kiện hợp lệ để tôi có thể đăng ký hoặc được cấp hạn mức thấu chi VikkiFlexi là gì?",
+          "content": "Để đăng ký VikkiFlexi, bạn chỉ cần đáp ứng một số điều kiện cơ bản: <ul><li>Là công dân Việt Nam.</li><li>Có tài khoản thanh toán VikkiME.</li><li>Bạn có thể đăng ký hoàn toàn online trên App Vikki ngay hôm nay. Siêu nhanh, siêu dễ, siêu thuận tiện!</li></ul>"
+        },
+        {
+          "title": "Tôi có thể sử dụng thấu chi VikkiFlexi đối với các dịch vụ nào?",
+          "content": "Hạn mức thấu chi VikkiFlexi được sử dụng thông qua tài khoản thanh toán, giúp bạn thực hiện hầu hết các nhu cầu chi tiêu hàng ngày: <ul><li>Chuyển khoản.</li><li>Quét mã QR để thanh toán.</li><li>Thanh toán hóa đơn điện, nước, internet, truyền hình, điện thoại, lì xì cá nhân... ngay trên App Vikki.</li><li>Một số loại phí phát sinh từ các dịch vụ trên ứng dụng Vikki, ví dụ: phí mở tài khoản số đẹp, phí phát hành thẻ thanh toán, phí thông báo thay đổi số dư tài khoản,...</li></ul>"
+        },
+        {
+          "title": "Ngày đến hạn thanh toán của thấu chi VikkiFlexi là ngày nào?",
+          "content": "Với VikkiFlexi, ngày đến hạn thanh toán trùng với ngày sao kê hàng tháng. Vikki sẽ gửi thông báo về số tiền thanh toán. Bạn nên chủ động thanh toán ngay sau khi nhận sao kê để tối ưu chi phí. <br> Bạn cần hoàn tất trong vòng 9 ngày kể từ ngày sao kê để tránh phát sinh lãi phạt. Sau 18:00 của ngày thứ 9, nếu khoản thanh toán vẫn chưa được thực hiện, hệ thống sẽ bắt đầu tính lãi phạt chậm trả cho đến khi bạn hoàn tất nghĩa vụ thanh toán."
+        },
+        {
+          "title": "Tôi có thể thanh toán dư nợ VikkiFlexi như thế nào?",
+          "content": "VikkiFlexi mang đến sự linh hoạt với 2 hình thức thanh toán: <ul><li>Thanh toán lãi theo sao kê: nạp tiền vào tài khoản VikkiME sau mỗi kỳ sao kê để thanh toán phần lãi được phát sinh.</li><li>Chủ động thanh toán dư nợ gốc: nạp tiền vào tài khoản bất cứ lúc nào để giảm số tiền gốc đã sử dụng, từ đó giúp giảm chi phí lãi.</li></ul>"
+        },
+        {
+          "title": "Tôi có được trả nợ trước hạn không?",
+          "content": "Bạn hoàn toàn có thể trả nợ trước hạn bất cứ lúc nào. Khi bạn nạp tiền vào tài khoản VikkiME, hệ thống sẽ tự động trừ dư nợ gốc vào mỗi ngày (18:00 hàng ngày). <br>Phần lãi phát sinh được chốt theo kỳ sao kê và bạn có thể thanh toán ngay khi sao kê được phát hành (12:00 và 18:00 hàng ngày). <br>Việc trả nợ sớm giúp bạn giảm chi phí lãi và chủ động kiểm soát tài chính tốt hơn."
+        }
+      ]
+    },
+    {
+      "type": "activation",
+      "bgClass": "bg-bottom",
+      "feeButton": {
+        "popup": "/vikki-cvp/vikki-od-at-branch-cvp/fee.html",
+        "text": "Xem biểu phí"
+      },
+      "termsButton": {
+        "popup": "/vikki-cvp/vikki-od-at-branch-cvp/tc.html",
+        "text": "Điều khoản & điều kiện"
+      }
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Sản phẩm vay thấu chi VikkiFlexi",
+      "children": [
+        {
+          "title": "Sản phẩm vay thấu chi VikkiFlexi là gì?",
+          "content": "Thấu chi VikkiFlexi là sản phẩm vay không cần tài sản bảo đảm. Bạn có thể đăng ký và sử dụng cho mục đích tiêu dùng cá nhân. Hạn mức sẽ được áp dụng cho tài khoản VikkiME bạn đăng ký, giúp bạn luôn có 'tiền sẵn tiêu ngay', phục vụ mọi nhu cầu tài chính và chi tiêu đời sống hằng ngày."
+        },
+        {
+          "title": "Điều kiện hợp lệ để tôi có thể đăng ký hoặc được cấp hạn mức thấu chi VikkiFlexi là gì?",
+          "content": "Để đăng ký VikkiFlexi, bạn chỉ cần đáp ứng một số điều kiện cơ bản: <ul><li>Là công dân Việt Nam.</li><li>Có tài khoản thanh toán VikkiME.</li><li>Bạn có thể đăng ký hoàn toàn online trên App Vikki ngay hôm nay. Siêu nhanh, siêu dễ, siêu thuận tiện!</li></ul>"
+        },
+        {
+          "title": "Tôi có thể sử dụng thấu chi VikkiFlexi đối với các dịch vụ nào?",
+          "content": "Hạn mức thấu chi VikkiFlexi được sử dụng thông qua tài khoản thanh toán, giúp bạn thực hiện hầu hết các nhu cầu chi tiêu hàng ngày: <ul><li>Chuyển khoản.</li><li>Quét mã QR để thanh toán.</li><li>Thanh toán hóa đơn điện, nước, internet, truyền hình, điện thoại, lì xì cá nhân... ngay trên App Vikki.</li><li>Một số loại phí phát sinh từ các dịch vụ trên ứng dụng Vikki, ví dụ: phí mở tài khoản số đẹp, phí phát hành thẻ thanh toán, phí thông báo thay đổi số dư tài khoản,...</li></ul>"
+        },
+        {
+          "title": "Ngày đến hạn thanh toán của thấu chi VikkiFlexi là ngày nào?",
+          "content": "Với VikkiFlexi, ngày đến hạn thanh toán trùng với ngày sao kê hàng tháng. Vikki sẽ gửi thông báo về số tiền thanh toán. Bạn nên chủ động thanh toán ngay sau khi nhận sao kê để tối ưu chi phí. <br> Bạn cần hoàn tất trong vòng 9 ngày kể từ ngày sao kê để tránh phát sinh lãi phạt. Sau 18:00 của ngày thứ 9, nếu khoản thanh toán vẫn chưa được thực hiện, hệ thống sẽ bắt đầu tính lãi phạt chậm trả cho đến khi bạn hoàn tất nghĩa vụ thanh toán."
+        },
+        {
+          "title": "Tôi có thể thanh toán dư nợ VikkiFlexi như thế nào?",
+          "content": "VikkiFlexi mang đến sự linh hoạt với 2 hình thức thanh toán: <ul><li>Thanh toán lãi theo sao kê: nạp tiền vào tài khoản VikkiME sau mỗi kỳ sao kê để thanh toán phần lãi được phát sinh.</li><li>Chủ động thanh toán dư nợ gốc: nạp tiền vào tài khoản bất cứ lúc nào để giảm số tiền gốc đã sử dụng, từ đó giúp giảm chi phí lãi.</li></ul>"
+        },
+        {
+          "title": "Tôi có được trả nợ trước hạn không?",
+          "content": "Bạn hoàn toàn có thể trả nợ trước hạn bất cứ lúc nào. Khi bạn nạp tiền vào tài khoản VikkiME, hệ thống sẽ tự động trừ dư nợ gốc vào mỗi ngày (18:00 hàng ngày). <br>Phần lãi phát sinh được chốt theo kỳ sao kê và bạn có thể thanh toán ngay khi sao kê được phát hành (12:00 và 18:00 hàng ngày). <br>Việc trả nợ sớm giúp bạn giảm chi phí lãi và chủ động kiểm soát tài chính tốt hơn."
+        }
+      ]
+    }
+  ]
+}

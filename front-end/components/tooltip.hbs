@@ -1,0 +1,49 @@
+<div class='tooltip-wrapper {{#if className}}{{className}}{{/if}}' {{#if id}}id='{{id}}' {{/if}}>
+  {{#if srcTitle}}
+  <img src='{{srcTitle}}' class='tooltip-title {{#if imgClassName}}{{imgClassName}}{{/if}}' />
+  {{/if}}
+
+  {{#if srcTooltipButton}}
+  <button type="button" class='{{#if imgClassName}}{{imgClassName}}{{/if}}'>
+    <img src='{{srcTooltipButton}}' alt="icon" class="vikki_flexi_button" />
+  </button>
+  {{/if}}
+
+  {{#if textTooltip}}
+  <div class='arrow-up'></div>
+  <div class='tooltip-box {{#if imgClassName}}{{imgClassName}}{{/if}}'>{{textTooltip}}</div>
+  {{/if}}
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const wrappers = document.querySelectorAll('.tooltip-wrapper');
+
+    wrappers.forEach(wrapper => {
+      const btn = wrapper.querySelector('button');
+
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+
+          // close the other tooltips
+          document.querySelectorAll('.tooltip-wrapper').forEach(w => {
+            if (w !== wrapper) w.classList.remove('active');
+          });
+
+          // active current tooltip
+          wrapper.classList.toggle('active');
+          setTimeout(() => {
+            wrapper.classList.remove('active');
+          }, 30000);
+        });
+      }
+    });
+
+    // click out -> close tooltip
+    document.addEventListener('click', () => {
+      document.querySelectorAll('.tooltip-wrapper')
+        .forEach(w => w.classList.remove('active'));
+    });
+  });
+</script>

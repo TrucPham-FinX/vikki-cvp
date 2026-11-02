@@ -1,0 +1,583 @@
+{
+  "language": "en",
+  "title": "Vikki Safe Plus",
+  "layout": "template",
+  "hasTopSpace": true,
+  "className": "vikki-safe-plus-cvp",
+  "assetBase": "../assets/",
+  "heroVideo": true,
+  "videoSrc": "../assets/en/video.mp4",
+  "videoHlsSrc": "../assets/en/video/playlist.m3u8",
+  "posterSrc": "../assets/common/hero.png",
+  "iconUnmutedSrc": "../assets/icon-unmuted.svg",
+  "iconMutedSrc": "../assets/icon-muted.svg",
+  "heroImage": "../assets/common/hero.png",
+  "heroAlt": "Vikki Safe Plus and HD Insurance",
+  "components": [
+    {
+      "type": "topMenu",
+      "items": [
+        {
+          "text": "FAQs",
+          "iconSrc": "../assets/qa.svg",
+          "popup": "qa"
+        },
+        {
+          "text": "Terms & Conditions",
+          "iconSrc": "../assets/info.svg",
+          "popup": "/vikki-cvp/vikki-safe-plus-cvp/en/tc.html",
+          "title": "Terms & Conditions"
+        }
+      ]
+    }
+  ],
+  "registerTitle": "Register fast",
+  "registerSubtitle": "Stay fully covered",
+  "registerSubtitleImage": "../assets/en/benefits_badge.png",
+  "benefitsImage": "../assets/en/benefits_content.png",
+  "benefitsAlt": "Insurance benefits of over 74 million VND, 100% benefit payout in case of injury or death, and hospital cash allowance during treatment",
+  "benefits": [
+    {
+      "title": "Insurance benefits",
+      "subtitle": "of over 74 million VND",
+      "imageLabel": "Benefit illustration"
+    },
+    {
+      "title": "100% benefit payout",
+      "subtitle": "in case of injury or death",
+      "imageLabel": "Payout illustration"
+    },
+    {
+      "title": "Hospital cash",
+      "subtitle": "allowance during treatment",
+      "imageLabel": "Hospital illustration"
+    }
+  ],
+  "plansTitle": "Protection plans",
+  "plansSubtitle": "For every need",
+  "plansSubtitleImage": "../assets/en/protection_plans_badge.png",
+  "plansSlider": true,
+  "viewDetails": "View details",
+  "plans": [
+    {
+      "src": "../assets/en/protection_plan_full_coverage.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/en/full-coverage.html",
+      "popupTitle": "Full Coverage plan details",
+      "title": "Full Coverage",
+      "description": "Comprehensive protection, so you can confidently care for yourself and your loved ones.",
+      "imageLabel": "Plan illustration"
+    },
+    {
+      "src": "../assets/en/protection_plan_full_care.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/en/full-care.html",
+      "popupTitle": "Full Care plan details",
+      "title": "Flexible Coverage",
+      "description": "Practical protection designed to fit your personal needs.",
+      "imageLabel": "Plan illustration"
+    },
+    {
+      "src": "../assets/en/protection_plan_full_choice.png",
+      "popupLink": "/vikki-cvp/vikki-safe-plus-cvp/en/full-choice.html",
+      "popupTitle": "Full Choice plan details",
+      "title": "Full Choice",
+      "description": "Protection tailored to your needs, helping you live each day with greater ease and confidence.",
+      "imageLabel": "Plan illustration"
+    }
+  ],
+  "stepsTitle": "3 easy steps",
+  "stepsSubtitle": "To register",
+  "stepsHeaderImage": "../assets/en/registration_header.png",
+  "stepsSlider": true,
+  "steps": [
+    {
+      "src": "../assets/en/registration_step_1.png",
+      "number": 1,
+      "title": "Open Vikki App",
+      "description": "Vikki Safe Plus under My Insurance",
+      "imageLabel": "Step 1 screen"
+    },
+    {
+      "src": "../assets/en/registration_step_2.png",
+      "number": 2,
+      "title": "Select Vikki Safe Plus",
+      "description": "Customize your coverage and review your benefits.",
+      "imageLabel": "Step 2 screen"
+    },
+    {
+      "src": "../assets/en/registration_step_3.png",
+      "number": 3,
+      "title": "Confirm registration",
+      "description": "Review and complete your registration.",
+      "imageLabel": "Step 3 screen"
+    }
+  ],
+  "faqTitle": "Frequently Asked Questions Vikki Safe Plus",
+  "faqs": [
+    {
+      "title": "How long can I buy insurance?",
+      "content": "You can flexibly choose the Vikki Safe Plus insurance term from 1 month to 12 months, depending on your personal needs and plans."
+    },
+    {
+      "title": "When does the insurance policy take effect?",
+      "content": "The insurance policy takes effect immediately after premium is successful paid."
+    },
+    {
+      "title": "How long is the waiting time of Vikki Safe Plus insurance?",
+      "content": "Vikki Safe Plus does not apply a waiting period. Your insurance benefits are effective immediately after successful payment."
+    },
+    {
+      "title": "Do I have to pay any additional fees/charges in addition to the premium?",
+      "content": "Except premium, you will not need to pay any additional fees or further charges."
+    }
+  ],
+  "qaGroup": [
+    {
+      "title": "Vikki Safe Plus Q&A",
+      "children": [
+        {
+          "title": "Who can be insured person for this accident insurance?",
+          "content": "<p>Person insured can be any individual who fully meets all the following conditions:</p><ul><li>Vietnamese citizen or foreigner residing in Vietnam at the time the insurance contract takes effect.</li><li>From full 18 years old to 75 years old.</li></ul><p>The participant must not fall into the following cases:</p><ul><li>Suffering from mental illness, neurological illness or leprosy.</li><li>An injured or permanently disabled person with a disability of 50% or more.</li></ul><p>Should you not be in the age range specified above, please contact HD Insurance for further advice.</p>"
+        },
+        {
+          "title": "Do I need a medical check-up when I enroll in insurance?",
+          "content": "No medical check is required upon inception of this insurance."
+        },
+        {
+          "title": "Will the premium be changed during the insurance term?",
+          "content": "No, the premium will not change throughout the coverage period."
+        },
+        {
+          "title": "After joining, can I change my insurance benefits?",
+          "content": "You cannot change your insurance benefits during the insurance term. You can only change them at the time of renewal of the insurance policy on the condition that it is accepted by HD Insurance."
+        },
+        {
+          "title": "In case the accident occurs before the effective date of the insurance but the medical expenses incurred during the insurance term are covered?",
+          "content": "No, this insurance policy only covers direct medical expenses originating from accidents that occur during the insurance period."
+        },
+        {
+          "title": "What documents are included in the dossier of request for insurance payment?",
+          "content": "<p>For the most detailed and complete information about the necessary documents in the Insurance Claim Dossier, please refer to the “Claim Guide” section in the Vikki app.</p><p>Alternatively, you can contact the Claim Settlement Unit stated on the Certificate of Insurance for guidance on collecting the claim dossier on a case-by-case basis.</p>"
+        },
+        {
+          "title": "How long does it take to settle a claim?",
+          "content": "HD Insurance is responsible for settling insurance claims within 15 days from the date HD Insurance receives the full and valid insurance claim dossier."
+        },
+        {
+          "title": "Who is the beneficiary?",
+          "content": "<p>In case of an insurance event, insurance benefits shall be paid in the following order of priority:</p><ul><li>Insured.</li><li>Designated beneficiary.</li><li>The legal heir of the Insured in case there is no designated beneficiary.</li></ul>"
+        },
+        {
+          "title": "Can I terminate my insurance policy before it expires?",
+          "content": "If you wish to terminate the insurance policy before the expiration date during the insurance period, you must notify HD Insurance in writing/email 30 days before the intended termination date. HD Insurance will refund 80% of the premium corresponding to the remaining insurance period provided that no claim has been incurred under this insurance policy."
+        },
+        {
+          "title": "Who do I contact if I need assistance or have questions related to this policy?",
+          "content": "You can contact HD Insurance's Customer Service Specialist for advice or call HD Insurance's policy management support number stated on the Certificate of Insurance if you have any questions about the policy."
+        },
+        {
+          "title": "In case of loss of the Electronic Certificate of Insurance, what should I do?",
+          "content": "<p>Option 1: You can look up your E-Certificate of Insurance in the email used when registering for insurance.</p><p>Option 2: Go to <a href=\"https://e-certificate.hdinsurance.com.vn/\">https://e-certificate.hdinsurance.com.vn/</a>, then fill in the relevant information to look up and download your E-Certificate of Insurance.</p>"
+        }
+      ]
+    }
+  ],
+  "legalLinks": [
+    {
+      "label": "Show more",
+      "popup": "qa"
+    },
+    {
+      "label": "Terms & Conditions",
+      "popup": "/vikki-cvp/vikki-safe-plus-cvp/en/tc.html",
+      "title": "Terms & Conditions"
+    },
+    {
+      "label": "How to claim",
+      "popup": "/vikki-cvp/vikki-safe-plus-cvp/en/claim.html",
+      "title": "CLAIMS FILING GUIDELINES"
+    }
+  ],
+  "details": [
+    {
+      "language": "en",
+      "title": "Full Coverage plan details",
+      "layout": "safe-plus-detail",
+      "planName": "FULL COVERAGE",
+      "generalTitle": "GENERAL BENEFITS",
+      "generalBenefits": [
+        {
+          "label": "Total Sum Insured",
+          "value": "74,400,000 VND",
+          "total": true
+        },
+        {
+          "label": "1. For Accident",
+          "value": "60,000,000 VND"
+        },
+        {
+          "label": "2. Hospitalization Allowance",
+          "value": "14,400,000 VND"
+        }
+      ],
+      "detailsTitle": "DETAILED BENEFITS",
+      "detailedBenefits": [
+        {
+          "label": "1. Accidental death/permanent disability",
+          "value": "60,000,000 VND"
+        },
+        {
+          "label": "1.1 Death",
+          "value": "60,000,000 VND"
+        },
+        {
+          "label": "1.2 Permanent total disability",
+          "value": "60,000,000 VND"
+        },
+        {
+          "label": "1.3 Permanent partial disability",
+          "value": "Paid as per Injury Benefit List",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Temporary disability",
+          "value": "Actual Medical Expenses + Daily Allowance = 0.1% of the Sum Insured per day, for up to 180 days. Total benefits payable shall not exceed the applicable injury benefit percentage.",
+          "regularValue": true,
+          "wrapValue": true
+        },
+        {
+          "label": "2. Hospitalization allowance for accident treatment",
+          "value": "14,400,000 VND"
+        },
+        {
+          "label": "Allowance per day of hospital stay",
+          "value": "240,000 VND"
+        }
+      ],
+      "insuranceAmountNote": "* The Sum Insured displayed applies to a one-year policy term. For shorter policy terms, the Sum Insured will be reduced in accordance with the table below.",
+      "allowanceTitle": "ALLOWANCE BY POLICY TERM",
+      "allowanceHeaders": [
+        "Months Covered",
+        "Days with Allowance Benefit",
+        "Maximum Allowance (VND)"
+      ],
+      "allowances": [
+        {
+          "months": "12 months",
+          "days": "60 days",
+          "amount": "14,400,000 VND"
+        },
+        {
+          "months": "11 months",
+          "days": "55 days",
+          "amount": "13,200,000 VND"
+        },
+        {
+          "months": "10 months",
+          "days": "50 days",
+          "amount": "12,000,000 VND"
+        },
+        {
+          "months": "9 months",
+          "days": "45 days",
+          "amount": "10,800,000 VND"
+        },
+        {
+          "months": "8 months",
+          "days": "40 days",
+          "amount": "9,600,000 VND"
+        },
+        {
+          "months": "7 months",
+          "days": "35 days",
+          "amount": "8,400,000 VND"
+        },
+        {
+          "months": "6 months",
+          "days": "30 days",
+          "amount": "7,200,000 VND"
+        },
+        {
+          "months": "5 months",
+          "days": "25 days",
+          "amount": "6,000,000 VND"
+        },
+        {
+          "months": "4 months",
+          "days": "20 days",
+          "amount": "4,800,000 VND"
+        },
+        {
+          "months": "3 months",
+          "days": "15 days",
+          "amount": "3,600,000 VND"
+        },
+        {
+          "months": "2 months",
+          "days": "10 days",
+          "amount": "2,400,000 VND"
+        },
+        {
+          "months": "1 month",
+          "days": "5 days",
+          "amount": "1,200,000 VND"
+        }
+      ],
+      "allowanceNote": "Note: The allowance amount varies according to the policy term.",
+      "id": "full-coverage"
+    },
+    {
+      "language": "en",
+      "title": "Full Care plan details",
+      "layout": "safe-plus-detail",
+      "planName": "FULL CARE",
+      "generalTitle": "GENERAL BENEFITS",
+      "generalBenefits": [
+        {
+          "label": "Total Sum Insured",
+          "value": "49,600,000 VND",
+          "total": true
+        },
+        {
+          "label": "1. For Accident",
+          "value": "40,000,000 VND"
+        },
+        {
+          "label": "2. Hospitalization Allowance",
+          "value": "9,600,000 VND"
+        }
+      ],
+      "detailsTitle": "DETAILED BENEFITS",
+      "detailedBenefits": [
+        {
+          "label": "1. Accidental death/permanent disability",
+          "value": "40,000,000 VND"
+        },
+        {
+          "label": "1.1 Death",
+          "value": "40,000,000 VND"
+        },
+        {
+          "label": "1.2 Permanent total disability",
+          "value": "40,000,000 VND"
+        },
+        {
+          "label": "1.3 Permanent partial disability",
+          "value": "Paid as per Injury Benefit List",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Temporary disability",
+          "value": "Actual Medical Expenses + Daily Allowance = 0.1% of the Sum Insured per day, for up to 180 days. Total benefits payable shall not exceed the applicable injury benefit percentage.",
+          "regularValue": true,
+          "wrapValue": true
+        },
+        {
+          "label": "2. Hospitalization allowance for accident treatment",
+          "value": "9,600,000 VND"
+        },
+        {
+          "label": "Allowance per day of hospital stay",
+          "value": "160,000 VND"
+        }
+      ],
+      "insuranceAmountNote": "* The Sum Insured displayed applies to a one-year policy term. For shorter policy terms, the Sum Insured will be reduced in accordance with the table below.",
+      "allowanceTitle": "ALLOWANCE BY POLICY TERM",
+      "allowanceHeaders": [
+        "Months Covered",
+        "Days with Allowance Benefit",
+        "Maximum Allowance (VND)"
+      ],
+      "allowances": [
+        {
+          "months": "12 months",
+          "days": "60 days",
+          "amount": "9,600,000 VND"
+        },
+        {
+          "months": "11 months",
+          "days": "55 days",
+          "amount": "8,800,000 VND"
+        },
+        {
+          "months": "10 months",
+          "days": "50 days",
+          "amount": "8,000,000 VND"
+        },
+        {
+          "months": "9 months",
+          "days": "45 days",
+          "amount": "7,200,000 VND"
+        },
+        {
+          "months": "8 months",
+          "days": "40 days",
+          "amount": "6,400,000 VND"
+        },
+        {
+          "months": "7 months",
+          "days": "35 days",
+          "amount": "5,600,000 VND"
+        },
+        {
+          "months": "6 months",
+          "days": "30 days",
+          "amount": "4,800,000 VND"
+        },
+        {
+          "months": "5 months",
+          "days": "25 days",
+          "amount": "4,000,000 VND"
+        },
+        {
+          "months": "4 months",
+          "days": "20 days",
+          "amount": "3,200,000 VND"
+        },
+        {
+          "months": "3 months",
+          "days": "15 days",
+          "amount": "2,400,000 VND"
+        },
+        {
+          "months": "2 months",
+          "days": "10 days",
+          "amount": "1,600,000 VND"
+        },
+        {
+          "months": "1 month",
+          "days": "5 days",
+          "amount": "800,000 VND"
+        }
+      ],
+      "allowanceNote": "Note: The allowance amount varies according to the policy term.",
+      "id": "full-care"
+    },
+    {
+      "language": "en",
+      "title": "Full Choice plan details",
+      "layout": "safe-plus-detail",
+      "planName": "FULL CHOICE",
+      "generalTitle": "GENERAL BENEFITS",
+      "generalBenefits": [
+        {
+          "label": "Total Sum Insured",
+          "value": "24,800,000 VND",
+          "total": true
+        },
+        {
+          "label": "1. For Accident",
+          "value": "20,000,000 VND"
+        },
+        {
+          "label": "2. Hospitalization Allowance",
+          "value": "4,800,000 VND"
+        }
+      ],
+      "detailsTitle": "DETAILED BENEFITS",
+      "detailedBenefits": [
+        {
+          "label": "1. Accidental death/permanent disability",
+          "value": "20,000,000 VND"
+        },
+        {
+          "label": "1.1 Death",
+          "value": "20,000,000 VND"
+        },
+        {
+          "label": "1.2 Permanent total disability",
+          "value": "20,000,000 VND"
+        },
+        {
+          "label": "1.3 Permanent partial disability",
+          "value": "Paid as per Injury Benefit List",
+          "wrapValue": true
+        },
+        {
+          "label": "1.4 Temporary disability",
+          "value": "Actual Medical Expenses + Daily Allowance = 0.1% of the Sum Insured per day, for up to 180 days. Total benefits payable shall not exceed the applicable injury benefit percentage.",
+          "regularValue": true,
+          "wrapValue": true
+        },
+        {
+          "label": "2. Hospitalization allowance for accident treatment",
+          "value": "4,800,000 VND"
+        },
+        {
+          "label": "Allowance per day of hospital stay",
+          "value": "80,000 VND"
+        }
+      ],
+      "insuranceAmountNote": "* The Sum Insured displayed applies to a one-year policy term. For shorter policy terms, the Sum Insured will be reduced in accordance with the table below.",
+      "allowanceTitle": "ALLOWANCE BY POLICY TERM",
+      "allowanceHeaders": [
+        "Months Covered",
+        "Days with Allowance Benefit",
+        "Maximum Allowance (VND)"
+      ],
+      "allowances": [
+        {
+          "months": "12 months",
+          "days": "60 days",
+          "amount": "4,800,000 VND"
+        },
+        {
+          "months": "11 months",
+          "days": "55 days",
+          "amount": "4,400,000 VND"
+        },
+        {
+          "months": "10 months",
+          "days": "50 days",
+          "amount": "4,000,000 VND"
+        },
+        {
+          "months": "9 months",
+          "days": "45 days",
+          "amount": "3,600,000 VND"
+        },
+        {
+          "months": "8 months",
+          "days": "40 days",
+          "amount": "3,200,000 VND"
+        },
+        {
+          "months": "7 months",
+          "days": "35 days",
+          "amount": "2,800,000 VND"
+        },
+        {
+          "months": "6 months",
+          "days": "30 days",
+          "amount": "2,400,000 VND"
+        },
+        {
+          "months": "5 months",
+          "days": "25 days",
+          "amount": "2,000,000 VND"
+        },
+        {
+          "months": "4 months",
+          "days": "20 days",
+          "amount": "1,600,000 VND"
+        },
+        {
+          "months": "3 months",
+          "days": "15 days",
+          "amount": "1,200,000 VND"
+        },
+        {
+          "months": "2 months",
+          "days": "10 days",
+          "amount": "800,000 VND"
+        },
+        {
+          "months": "1 month",
+          "days": "5 days",
+          "amount": "400,000 VND"
+        }
+      ],
+      "allowanceNote": "Note: The allowance amount varies according to the policy term.",
+      "id": "full-choice"
+    }
+  ]
+}

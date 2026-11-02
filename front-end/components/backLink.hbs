@@ -1,0 +1,27 @@
+{{!-- Usage: {{> backLink href="tc.html" label=backShortLabel ariaLabel=backLabel}} --}}
+<style>
+  .back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 0 12px;
+    border-radius: 8px;
+    color: rgba(4, 11, 30, 0.92);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .back-link:hover,
+  .back-link:active {
+    background: #f6f7f8;
+  }
+
+  .back-link:focus-visible {
+    outline: 2px solid #0047ff;
+    outline-offset: 2px;
+  }
+
+</style>
+<a class="back-link" href="{{href}}"{{#if ariaLabel}} aria-label="{{ariaLabel}}"{{/if}}><span aria-hidden="true">&larr;</span> {{label}}</a>

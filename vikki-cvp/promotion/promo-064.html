@@ -1,0 +1,213 @@
+<html lang='vi'>
+  <head>
+    <meta charset='UTF-8' />
+    <title></title>
+    <meta charset='utf-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='description' content='' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      href='https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&display=swap'
+      rel='stylesheet'
+    />
+    <style>
+      body {
+        font-family: 'Be Vietnam Pro', sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      /* overlay */
+      .popup-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(246, 247, 248, 1);
+        z-index: 99999;
+        bottom: 0;
+        display: none;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .popup-overlay.show {
+        display: block;
+      }
+
+      .popup-content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 1;
+      }
+
+      .popup-body {
+        height: 100%;
+        overflow-y: auto;
+        background: rgba(246, 247, 248, 1);
+      }
+      .promo-detail {
+        padding-bottom: 50px;
+      }
+      .popup-close {
+        position: fixed;
+        right: 0;
+        font-size: 28px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2147483647;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .popup-close img {
+        display: block;
+        width: 30px;
+        height: 30px;
+      }
+      .popup-iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        min-height: 70vh;
+        background: #fff;
+      }
+      .popup-inner {
+        padding: 20px 10px;
+      }
+
+      /* IMAGE */
+      .promo-image {
+        position: relative;
+        padding-bottom: 67%;
+        height: 0;
+      }
+
+      .promo-image img {
+        width: 100%;
+        display: block;
+        position: absolute;
+        height: 100%;
+      }
+
+      /* AVATAR / BADGE */
+      .promo-avatar {
+        position: absolute;
+        right: 16px;
+        bottom: -20px;
+        width: 40px;
+        height: 40px;
+        background: #0f766e; /* xanh kiểu Mantine */
+        color: #fff;
+        border-radius: 999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+        border: 3px solid #fff;
+      }
+
+      /* CONTENT */
+      .promo-content {
+        padding: 28px 10px 20px;
+      }
+
+      .promo-title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #111827;
+        line-height: 1.3;
+        margin: 0 0 10px;
+      }
+
+      .promo-desc {
+        font-size: 13px;
+
+        color: rgba(15, 21, 36, 0.6);
+        line-height: 1.6;
+        margin: 0 0 12px;
+      }
+
+      .promo-expire {
+        font-size: 13px;
+        color: rgba(15, 21, 36, 0.36);
+        margin: 0;
+        position: absolute;
+        bottom: 16px;
+      }
+
+      #promo-list {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        padding: 0;
+        margin: 0;
+        margin-bottom: 120px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .promo-card {
+        background: #fff;
+        overflow: hidden;
+        margin-bottom: 10px;
+        width: 50%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        position: relative;
+        padding-bottom: 40px;
+      }
+      .promo-card:nth-child(2n) {
+        border-left: 1px solid rgba(0, 0, 0, 0.08);
+      }
+
+      .popup-title {
+        background: none;
+        font-size: 36px;
+        padding: 0px 16px;
+        margin-top: 40px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body class='hasTopSpace' id='body'>
+
+    <style>
+  .promo-desc {
+    padding-top: 10px;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+  }
+  .promo-title {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .promo-expire {
+    position: static;
+  }
+</style>
+<article class='promo-detail'>
+  <div class='promo-image'>
+      <img src='./assets/promo-064.png' alt='Gia nhập VikkiPAY – Hoàn tiền liền tay' />
+
+  </div>
+
+  <div class='promo-content'>
+    <h3 class='promo-title'>
+      Gia nhập VikkiPAY – Hoàn tiền liền tay
+    </h3>
+    <p class='promo-expire'>Thời gian: 01/04/2026 - 30/06/2026</p>
+
+    <div class='promo-desc'>
+      <h3>1. Thể lệ chương trình:</h3><p>Hoàn 50.000 VNĐ cho 1.000 thẻ phát sinh giao dịch thanh toán bằng Google Pay từ 100.000 VNĐ trở lên lần đầu tiên và sớm nhất trong thời gian triển khai chương trình.</p><h3>2. Điều kiện và điều khoản chương trình:</h3><h4>a. Điều kiện về thẻ và chủ thẻ</h4><strong>Tại thời điểm hoàn tiền:</strong><ul><li>Thẻ đang ở trạng thái đang hoạt động.</li><li>Tài khoản thẻ, tài khoản thanh toán liên kết với thẻ đang ở trạng thái đang hoạt động.</li><li>Thẻ/tài khoản thẻ/tài khoản thanh toán vẫn đang liên kết với Google Pay.</li><li>Chủ thẻ không phát sinh nợ nhóm 2 trở lên tại Vikki Bank.</li><li>Thẻ không thay thế, thẻ không chờ hủy/hủy, thẻ không nợ quá hạn/chậm thanh toán, thẻ không cần xác định lại thông tin, thẻ không bị Vikki Bank nghi ngờ rủi ro, thẻ không bị lộ thông tin.</li><li>Mỗi thẻ (tính trên từng tính năng thẻ) được hoàn tiền duy nhất 1 lần trong suốt thời gian triển khai chương trình.</li></ul><h4>b. Điều kiện về giao dịch</h4><p><strong>Giao dịch chi tiêu hợp lệ là:</strong></p><ul><li>Giao dịch hợp pháp (thanh toán tiền hàng hóa, dịch vụ hợp pháp) qua thiết bị chấp nhận thẻ tại điểm bán (POS) hoặc giao dịch trực tuyến (online) tại các đơn vị chấp nhận thẻ (ĐVCNT) và giao dịch được ghi nhận thành công trên hệ thống thẻ Vikki Bank trong thời gian triển khai chương trình.</li><li>Giao dịch thanh toán Google Pay có giá trị từ 100.000 VNĐ trở lên.</li><li>Giao dịch được báo nợ không quá 7 ngày sau thời điểm kết thúc chương trình.</li></ul><p><strong>Không áp dụng hoàn tiền cho các giao dịch sau:</strong></p><ul><li>Giao dịch bị hủy/hoàn trả, giao dịch ứng/rút tiền mặt, hoàn tiền, ghi có, thanh toán dư nợ thẻ. Trường hợp giao dịch đã được hoàn tiền, sau đó chủ thẻ hủy/hoàn trả giao dịch, Vikki Bank có quyền truy thu chủ thẻ số tiền tương ứng với giá trị hoàn bằng cách ghi nợ vào tài khoản quản lý thẻ tín dụng của chủ thẻ.</li><li>Các giao dịch thu phí, thu lãi, thanh toán phí/lệ phí.</li><li>Giao dịch trả góp phát sinh hàng tháng.</li><li>Các giao dịch bị cấm theo quy định của pháp luật; các giao dịch Vikki Bank nghi ngờ là giao dịch khống/gian lận.</li><li>Các giao dịch qua ví điện tử, thanh toán qua QRcode.</li><li>Các giao dịch phát sinh do sự cố hệ thống và các giao dịch khác do Vikki Bank quy định trong từng thời kỳ.</li><li>Các giao dịch không hợp lệ khác do Vikki Bank quy định từng thời kỳ.</li></ul><p><strong>Thứ tự ưu tiên xét giao dịch hợp lệ/thẻ thỏa điều kiện đồng thời (giá trị từ lớn tới nhỏ, sớm đến trễ):</strong></p><ul><li>Ưu tiên 1: giá trị giao dịch.</li><li>Ưu tiên 2: thời gian liên kết Google Wallet.</li><li>Ưu tiên 3: giá trị giao dịch nguyên tệ là ngoại tệ.</li></ul><div><strong>c. Thời gian hoàn tiền: </strong>15/07/2026.</div>
+    </div>
+
+  </div>
+
+</article>
+
+  </body>
+</html>

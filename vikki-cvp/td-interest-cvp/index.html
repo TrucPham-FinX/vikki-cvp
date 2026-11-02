@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lãi suất Vikki Bank</title>
+    <style>
+      .tp-cvp h2,
+      .tp-cvp {
+        margin: 0;
+      }
+      .tp-cvp * {
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: 'BeVietnam';
+        src: url('./assets/fonts/BeVietnam-Regular.woff2') format('woff2'),
+          url('./assets/fonts/BeVietnam-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'BeVietnam';
+        src: url('./assets/fonts/BeVietnam-Italic.woff2') format('woff2'),
+          url('./assets/fonts/BeVietnam-Italic.woff') format('woff');
+        font-weight: normal;
+        font-style: italic;
+      }
+      @font-face {
+        font-family: 'BeVietnam';
+        src: url('./assets/fonts/BeVietnam-Bold.woff2') format('woff2'),
+          url('./assets/fonts/BeVietnam-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      .tp-cvp img {
+        max-width: 100%;
+      }
+
+      .tp-cvp.container {
+        max-width: 1010px;
+        margin: auto;
+        font-size: 14px;
+        font-family: 'BeVietnam', sans-serif;
+        padding-top: 20px;
+        font-weight: normal;
+      }
+      .tp-cvp .interest-banner {
+        background: linear-gradient(179.16deg, #ffe991 0.7%, #ffd941 103.68%);
+        border: 2px solid transparent;
+        padding: 8px 27px 0;
+        border-radius: 10px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .tp-cvp .calculator {
+        background: linear-gradient(89.79deg, #f1c8e4 -3.95%, #ddddff 99.69%);
+        margin-top: -20px;
+        padding: 20px;
+        border-radius: 17px;
+        position: relative;
+      }
+      .tp-cvp .calculator h2 {
+        padding-top: 20px;
+        max-width: 460px;
+      }
+
+      .tp-cvp .highlight-text {
+        color: #f5a623;
+      }
+
+      .tp-cvp .form .form-item {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 17px;
+      }
+
+      .tp-cvp .form label {
+        display: block;
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+        font-size: 0.875rem;
+        color: #0000ff;
+        align-self: center;
+        line-height: 1.2;
+      }
+
+      .tp-cvp .form .form-input {
+        flex: 1;
+        background: linear-gradient(90deg, #0101ff 0%, #7f01c2 100%);
+        height: 55px;
+        border-radius: 10px;
+        padding: 2px;
+        position: relative;
+      }
+      .tp-cvp .form .form-input:after {
+        content: '';
+        background: #fff;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        bottom: 2px;
+        right: 2px;
+        border-radius: 10px;
+      }
+
+      .tp-cvp .form input,
+      .tp-cvp .form select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: none;
+        background: none;
+        outline: none;
+        font-size: 1.1875rem;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        appearance: none;
+        -webkit-appearance: none;
+        font-family: 'BeVietnam', sans-serif;
+        padding: 0 50px 0 15px;
+        line-height: 47px;
+        margin: 0;
+        color: #0000ff4d;
+        font-weight: bold;
+      }
+      .tp-cvp .form select {
+        position: relative;
+        z-index: 3;
+        padding-right: 15px;
+      }
+
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        transition: background-color 5000s ease-in-out 0s;
+        background: none !important;
+        color: #0000ff4d !important;
+        -webkit-background-clip: text;
+        -webkit-box-shadow: 0 0 0 30px white inset !important;
+        -webkit-text-fill-color: #0000ff4d;
+      }
+
+      .tp-cvp .results {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tp-cvp .result-box {
+        flex: 1;
+        position: relative;
+        max-width: 460px;
+        width: 100%;
+        text-align: center;
+      }
+      .tp-cvp .result-box img {
+        width: 100%;
+      }
+
+      .tp-cvp .result-box + .result-box {
+        margin-top: 8px;
+      }
+
+      .tp-cvp .result-box span {
+        background: linear-gradient(to bottom, #1c08d3 10%, #c240f5 50%);
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 3px transparent;
+        font-size: 1.1875rem;
+        color: #eee;
+        text-transform: capitalize;
+        color: #ffe066;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        bottom: 10px;
+        display: flex;
+        height: 34%;
+        align-items: center;
+        justify-content: center;
+      }
+      .tp-cvp .result-box span strong {
+        padding-bottom: 6px;
+      }
+      .tp-cvp .input-placeholder {
+        color: #0000ff4d;
+        font-size: 1.1875rem;
+        font-weight: bold;
+        position: absolute;
+        right: 18px;
+        z-index: 2;
+        top: 12px;
+      }
+      .tp-cvp .main-arrow {
+        align-self: center;
+        margin-bottom: 15px;
+      }
+      .tp-cvp .bg-icon {
+        position: absolute;
+      }
+      .tp-cvp .bg-icon-star {
+        left: -13px;
+        top: 1px;
+        width: 46px;
+      }
+      .tp-cvp .bg-icon-star-mini {
+        top: -9px;
+        left: 60%;
+        width: 35px;
+      }
+      .tp-cvp .bg-icon-money {
+        display: none;
+      }
+
+      .tp-cvp .d-show {
+        display: none !important;
+      }
+      .tp-cvp .main-arrow {
+        text-align: center;
+        display: block;
+      }
+
+      .tp-cvp .m-title {
+        max-width: 58%;
+      }
+      .tp-cvp .calculator h2 {
+        margin-bottom: 20px;
+        max-width: 85%;
+      }
+      .tp-cvp .m-interests {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -5px;
+      }
+      .tp-cvp .m-interests > div {
+        width: 25%;
+        padding: 5px;
+        position: relative;
+      }
+
+      .tp-cvp .main-arrow .m-show {
+        max-width: 53px;
+      }
+      .tp-cvp .note {
+        font-size: 9px;
+        font-style: italic;
+        color: #0000ff;
+        margin-top: 7px;
+      }
+      .tp-cvp .m-rate-number {
+        position: absolute;
+        font-weight: bold;
+        right: 100px;
+        top: 6px;
+        background: linear-gradient(to bottom, #1c08d3 30%, #c240f5 80%);
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 3px transparent;
+        font-size: 1.7rem;
+        text-transform: capitalize;
+        color: #ffe066;
+        letter-spacing: -0.05rem;
+        padding: 3px;
+        top: 14%;
+        line-height: 1;
+      }
+      .tp-cvp .m-rate-number-0,
+      .tp-cvp .m-rate-number-7 {
+        right: 91px;
+      }
+      .tp-cvp .m-rate-number-30 {
+        right: 78px;
+      }
+      .tp-cvp .m-rate-number-60 {
+        right: 87px;
+      }
+      .tp-cvp .m-rate-number-90 {
+        right: 80px;
+      }
+      .tp-cvp .m-rate-number-180 {
+        right: 73px;
+      }
+      .tp-cvp .m-rate-number-360 {
+        right: 43%;
+      }
+      .tp-cvp .m-rate-number-390 {
+        right: 48%;
+      }
+      @media (max-width: 991px) {
+        .tp-cvp .main {
+          max-width: 475px;
+          margin: 0 auto;
+        }
+        .tp-cvp .m-rate-number {
+          top: 11%;
+          font-size: 2rem;
+        }
+        .tp-cvp .m-rate-number-0 {
+          right: 60%;
+        }
+        .tp-cvp .m-rate-number-7,
+        .tp-cvp .m-rate-number-60,
+        .tp-cvp .m-rate-number-390 {
+          right: 52%;
+        }
+        .tp-cvp .m-rate-number-30,
+        .tp-cvp .m-rate-number-90,
+        .tp-cvp .m-rate-number-180,
+        .tp-cvp .m-rate-number-360 {
+          right: 43%;
+        }
+      }
+      .m-note {
+        font-size: 13px;
+        font-weight: bold;
+        color: #0000ff;
+        position: absolute;
+        right: 26px;
+        top: 10px;
+      }
+
+      @media (max-width: 767px) {
+        .tp-cvp .m-rate-number-30,
+        .tp-cvp .m-rate-number-90,
+        .tp-cvp .m-rate-number-180,
+        .tp-cvp .m-rate-number-360 {
+          right: 43%;
+        }
+
+        .tp-cvp .m-rate-number-0 {
+          right: 58%;
+        }
+
+        .tp-cvp .m-rate-number-7,
+        .tp-cvp .m-rate-number-60,
+        .tp-cvp .m-rate-number-390 {
+          right: 48%;
+        }
+      }
+      @media (max-width: 600px) {
+        .tp-cvp .m-rate-number {
+          font-size: 1.7rem;
+        }
+      }
+      @media (max-width: 480px) {
+        .m-note {
+          font-size: 10px;
+        }
+        .tp-cvp .m-rate-number {
+          top: 14%;
+          font-size: 1.2rem;
+        }
+        .tp-cvp .m-rate-number-30,
+        .tp-cvp .m-rate-number-60,
+        .tp-cvp .m-rate-number-180,
+        .tp-cvp .m-rate-number-360 {
+          right: 43%;
+        }
+        .tp-cvp .m-rate-number-0 {
+          right: 58%;
+        }
+        .tp-cvp .m-rate-number-7,
+        .tp-cvp .m-rate-number-60,
+        .tp-cvp .m-rate-number-390 {
+          right: 54%;
+        }
+      }
+      @media (max-width: 380px) {
+        .tp-cvp .m-rate-number {
+          font-size: 1rem;
+        }
+
+        .tp-cvp .m-rate-number-0 {
+          right: 60%;
+        }
+        .tp-cvp .m-rate-number-7,
+        .tp-cvp .m-rate-number-60,
+        .tp-cvp .m-rate-number-390 {
+          right: 50%;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .tp-cvp .d-show {
+          display: block !important;
+        }
+        .tp-cvp .m-show {
+          display: none !important;
+        }
+        .tp-cvp .interest-banner {
+          border: 10px;
+          padding: 12px 30px;
+        }
+        .tp-cvp .container {
+          margin: auto;
+          padding: 20px;
+          font-size: 16px;
+        }
+
+        .tp-cvp .interest-heading {
+          display: flex;
+          position: relative;
+          margin-bottom: 16px;
+        }
+        .tp-cvp .interest-heading h2 {
+          margin: 0;
+        }
+        .tp-cvp table tr td:first-child,
+        .tp-cvp table tr th:first-child {
+          width: 15%;
+        }
+
+        .tp-cvp .rate-boxes {
+          display: flex;
+          position: absolute;
+          right: -6px;
+          top: -20px;
+        }
+
+        .tp-cvp .rate-box {
+          position: relative;
+        }
+
+        .tp-cvp table {
+          width: 100%;
+          border-collapse: collapse;
+          margin-top: 5px;
+        }
+        .tp-cvp table + table {
+          margin-top: 14px;
+        }
+        .tp-cvp table tr {
+          border-bottom: 5px solid transparent;
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.2) 0%,
+            rgba(255, 255, 255, 0.5) 100%
+          );
+          color: #0000ff;
+          font-size: 0.875rem;
+          height: 53px;
+          border-radius: 10px;
+        }
+        .tp-cvp table + table tr {
+          border-bottom: 0;
+        }
+        .tp-cvp table th {
+          font-weight: 700;
+        }
+        .tp-cvp table th,
+        .tp-cvp table td {
+          padding: 10px;
+          text-align: center;
+          width: 10%;
+          position: relative;
+        }
+        .tp-cvp table tr td:before {
+          content: '';
+          display: block;
+          width: 1px;
+          height: 31px;
+          position: absolute;
+          background: rgba(255, 255, 255, 0.7);
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        .tp-cvp table + table th,
+        .tp-cvp table + table td {
+          padding: 0 10px;
+        }
+
+        .tp-cvp .highlight-cell {
+          font-weight: bold;
+        }
+
+        .tp-cvp .rate-number {
+          position: absolute;
+          font-size: 48px;
+          font-weight: bold;
+          right: 100px;
+          top: -4px;
+          background: linear-gradient(to bottom, #1c08d3 10%, #c240f5 50%);
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          -webkit-text-stroke: 7px transparent;
+          font-size: 47px;
+          color: #eee;
+          text-transform: capitalize;
+          color: #ffe066;
+          letter-spacing: -0.2rem;
+          padding: 0 4px;
+        }
+
+        .tp-cvp .rate-number-2 {
+          right: 127px;
+        }
+
+        .tp-cvp .main {
+          display: flex;
+          gap: 20px;
+        }
+        .tp-cvp .bg-icon-money {
+          right: -80px;
+          top: 11px;
+          display: block;
+        }
+        .tp-cvp .main .form {
+          width: 70%;
+          max-width: 495px;
+        }
+        .tp-cvp .form label {
+          width: 123px;
+        }
+        .tp-cvp .result-box {
+          width: auto;
+        }
+        .tp-cvp .main-arrow {
+          margin-bottom: 0;
+        }
+        .tp-cvp .bg-icon-star {
+          left: -43px;
+          top: 65px;
+          width: auto;
+        }
+        .tp-cvp .bg-icon-star-mini {
+          top: -1px;
+          left: 16%;
+          width: auto;
+        }
+        .tp-cvp .result-box span {
+          bottom: 20px;
+        }
+        .tp-cvp .note {
+          font-size: 12px;
+          padding-left: 12px;
+          margin-top: 21px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tp-cvp container">
+      <div class="interest-banner">
+        <span class="bg-icon bg-icon-star"
+          ><img src="./assets/icon-star.png"
+        /></span>
+
+        <span class="bg-icon bg-icon-star-mini"
+          ><img src="./assets/icon-star-mini.png"
+        /></span>
+        <!-- DESKTOP  -->
+        <div class="d-show">
+          <div class="interest-heading">
+            <h2><img src="./assets/title.png" /></h2>
+            <div class="rate-boxes">
+              <div class="rate-box selected">
+                <span class="rate-number" id="rate-4">6.5</span>
+                <img src="./assets/6-thang.png" />
+              </div>
+              <div class="rate-box">
+                <span class="rate-number rate-number-2" id="rate-6">6.7</span>
+                <img src="./assets/13-thang.png" />
+              </div>
+            </div>
+          </div>
+
+          <table>
+            <tr>
+              <th>Kỳ hạn gửi</th>
+              <td>Không<br />kì hạn</td>
+              <td>1 tuần</td>
+              <td>1 tháng</td>
+              <td>2 tháng</td>
+              <td>3 tháng</td>
+              <td class="highlight-cell">6 tháng</td>
+              <td>12 tháng</td>
+              <td class="highlight-cell">13 tháng</td>
+            </tr>
+          </table>
+          <table>
+            <tr id="d-interest">
+              <th>
+                Lãi suất<br />
+                (%/Năm)
+              </th>
+            </tr>
+          </table>
+        </div>
+        <!-- END DESKTOP -->
+        <!-- MOBILE -->
+        <div class="m-show">
+          <h2><img class="m-title" src="./assets/m-title.png" /></h2>
+          <div class="m-note">Kỳ hạn gửi/Lãi suất (%/Năm)</div>
+          <div class="m-interests" id="m-interest"></div>
+        </div>
+        <p class="note">
+          *Lãi suất áp dụng từ ngày 15/03/2026, có thể thay đổi theo từng thời
+          kỳ & được thông báo trên App, Website Vikki Bank
+        </p>
+        <!-- END MOBILE -->
+      </div>
+
+      <div class="calculator">
+        <span class="bg-icon bg-icon-money"
+          ><img src="./assets/icon-money.png"
+        /></span>
+        <h2>
+          <img class="m-vikki" src="./assets/vikki.png" />
+        </h2>
+        <div class="main">
+          <div class="form">
+            <div class="form-item">
+              <label>Số tiền<br />tiết kiệm</label>
+              <div class="form-input">
+                <input id="amount" type="text" />
+                <span class="input-placeholder">VND</span>
+              </div>
+            </div>
+            <div class="form-item">
+              <label>Chọn<br />kỳ hạn</label>
+              <div class="form-input">
+                <select id="term"></select>
+                <span class="input-placeholder"
+                  ><img src="./assets/icon-subtract.png"
+                /></span>
+              </div>
+            </div>
+            <div class="form-item">
+              <label
+                >Lãi suất<br />
+                (%/Năm)</label
+              >
+              <div class="form-input">
+                <input type="text" id="interest" readonly />
+                <span class="input-placeholder">%</span>
+              </div>
+            </div>
+          </div>
+          <span class="main-arrow">
+            <img class="d-show" src="./assets/arrow.png" />
+            <img class="m-show" src="./assets/m-arrow.png" />
+          </span>
+          <div class="results">
+            <div class="result-box">
+              <img class="d-show" src="./assets/lai-du-chi.png" />
+              <img class="m-show" src="./assets/m-lai-du-chi.png" />
+              <span><strong id="interest-result"></strong></span>
+            </div>
+            <div class="result-box">
+              <img class="d-show" src="./assets/goc-lai.png" />
+              <img class="m-show" src="./assets/m-goc-lai.png" />
+              <span><strong id="princial-interest-result"></strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <script>
+    const CUT_OF_TIME_IN_HOURS = 18;
+    const TENOR_UNIT = {
+      MONTH: 'months',
+      WEEK: 'weeks',
+      UNLIMIT: 'unlimit',
+    };
+    // Set termInput
+      const termOptions = [
+    { value: '', label: 'Chọn kỳ hạn' },
+    //{ value: 0, label: 'Không kì hạn' },
+    { value: 7, label: '1 tuần' },
+    { value: 30, label: '1 tháng' },
+    { value: 60, label: '2 tháng' },
+    { value: 90, label: '3 tháng' },
+    { value: 120, label: '4 tháng' },
+    { value: 150, label: '5 tháng' },
+    { value: 180, label: '6 tháng' },
+    { value: 210, label: '7 tháng' },
+    { value: 240, label: '8 tháng' },
+    { value: 270, label: '9 tháng' },
+    { value: 300, label: '10 tháng' },
+    { value: 330, label: '11 tháng' },
+    { value: 360, label: '12 tháng' },
+    { value: 390, label: '13 tháng' },
+    { value: 450, label: '15 tháng' },
+    { value: 540, label: '18 tháng' },
+    { value: 720, label: '24 tháng' },
+    { value: 1080, label: '36 tháng' },
+  ];
+
+ const attractiveInterest = {
+    7: {
+      label: '1 tuần',
+      value: '0.5',
+      tenorUnit: TENOR_UNIT.WEEK,
+      tenorAmount: 1,
+    },
+    30: {
+      label: '1 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 1,
+    },
+    60: {
+      label: '2 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 2,
+    },
+    90: {
+      label: '3 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    180: {
+      label: '6 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 6,
+    },
+    360: {
+      label: '12 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 12,
+    },
+    390: {
+      label: '13 tháng',
+      value: '6.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+  };
+  const interest = {
+    0: {
+      label: 'Không kì hạn',
+      value: '0.5',
+      tenorUnit: TENOR_UNIT.UNLIMIT,
+      tenorAmount: 1,
+    },
+    7: {
+      label: '1 tuần',
+      value: '0.5',
+      tenorUnit: TENOR_UNIT.WEEK,
+      tenorAmount: 1,
+    },
+    30: {
+      label: '1 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 1,
+    },
+    60: {
+      label: '2 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 2,
+    },
+    90: {
+      label: '3 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    120: {
+      label: '4 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    150: {
+      label: '5 tháng',
+      value: '4.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    180: {
+      label: '6 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    210: {
+      label: '7 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    240: {
+      label: '8 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    270: {
+      label: '9 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 3,
+    },
+    300: {
+      label: '10 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 6,
+    },
+    330: {
+      label: '11 tháng',
+      value: '6.5',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 6,
+    },
+    360: {
+      label: '12 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 12,
+    },
+    390: {
+      label: '13 tháng',
+      value: '6.7',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+    450: {
+      label: '15 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+    540: {
+      label: '18 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+    720: {
+      label: '24 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+    1080: {
+      label: '36 tháng',
+      value: '6.6',
+      tenorUnit: TENOR_UNIT.MONTH,
+      tenorAmount: 13,
+    },
+  };
+    function DTemplateInterest(termSelect, key, idx) {
+      const option = document.createElement('td');
+      option.textContent = `${interest[key].value}%`;
+
+      if (key === '180' || key === '390') {
+        option.classList.add('highlight-cell');
+      }
+      termSelect.appendChild(option);
+    }
+
+    function MTemplateInterest(termSelect, key, idx) {
+      const option = document.createElement('div');
+
+      const inner = document.createElement('img');
+      inner.src = `./assets/m-interest-${key}.png`;
+      option.append(inner);
+
+      const textInterest = document.createElement('span');
+      textInterest.classList.add(`m-rate-number`);
+      textInterest.classList.add(`m-rate-number-${key}`);
+      const value = `${interest[key].value}`;
+      textInterest.textContent = value;
+      option.append(textInterest);
+
+      termSelect.appendChild(option);
+    }
+
+    function DHightLightInterest(value, key) {
+      const termSelect = document.getElementById(`rate-${key}`);
+      termSelect.textContent = value;
+    }
+
+    function setInterestToPresent() {
+      const termSelect = document.getElementById('d-interest');
+      const mTermSelect = document.getElementById('m-interest');
+      Object.keys(attractiveInterest).forEach((key, idx) => {
+        DTemplateInterest(termSelect, key, idx);
+        MTemplateInterest(mTermSelect, key, idx);
+        if (key === 180 || key === 390) {
+          DHightLightInterest(interest[key].value, idx);
+        }
+      });
+    }
+
+    function setTermOptionsFromArray(terms) {
+      const termSelect = document.getElementById('term');
+      termSelect.innerHTML = '';
+
+      terms.forEach((term) => {
+        const option = document.createElement('option');
+        option.value = term.value;
+        option.textContent = term.label;
+        termSelect.appendChild(option);
+      });
+    }
+    setTermOptionsFromArray(termOptions);
+
+    //Caculate
+    const amountInput = document.getElementById('amount');
+    const termInput = document.getElementById('term');
+    const interestInput = document.getElementById('interest');
+    const interestResult = document.getElementById('interest-result');
+    const totalResult = document.getElementById('princial-interest-result');
+
+    function formatVND(number) {
+      return number.toLocaleString('en-EN') + ' VND';
+    }
+
+    function calculateMaturityDate(item, effectiveDate) {
+      let maturityDate;
+
+      if (item?.tenor?.tenorUnit === TENOR_UNIT.MONTH) {
+        const dayInMonthOfEffectiveDate = effectiveDate.daysInMonth();
+        maturityDate = effectiveDate
+          .clone()
+          .add(item?.tenor?.tenorAmount, 'months');
+
+        if (dayInMonthOfEffectiveDate === Number(effectiveDate.format('DD'))) {
+          const dayInMonthOfMaturity = maturityDate.daysInMonth();
+          maturityDate.set('dates', dayInMonthOfMaturity);
+        }
+      } else {
+        maturityDate = effectiveDate
+          .clone()
+          .add(item?.tenor?.tenorAmount, 'weeks');
+      }
+      return maturityDate;
+    }
+
+    function calculateEffectiveDate(item) {
+      let effectiveDate;
+      if (item?.effectiveDate) {
+        effectiveDate = moment(item?.effectiveDate);
+      } else {
+        effectiveDate = moment();
+        const currentHour = effectiveDate.hour();
+        if (currentHour >= CUT_OF_TIME_IN_HOURS) {
+          effectiveDate = effectiveDate
+            .clone()
+            .add(1, 'day')
+            .startOf('D')
+            .add(CUT_OF_TIME_IN_HOURS, 'hours');
+        }
+      }
+      return effectiveDate;
+    }
+
+    function estimateInterest(item) {
+      const effectiveDate = calculateEffectiveDate(item);
+      const maturityDate = calculateMaturityDate(item, effectiveDate);
+      const dayDiffs = Math.abs(maturityDate.diff(effectiveDate, 'days'));
+
+      const interestPerDay =
+        (Number(item?.tenor?.rate) / 365) * Number(item?.amount);
+      const roundUpTwoDecimal = Math.round(interestPerDay * 100) / 100;
+
+      return Math.floor(roundUpTwoDecimal * dayDiffs);
+    }
+
+    function formatNumberWithCommas(value) {
+      return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    }
+
+    function unformatNumber(value) {
+      return value.replace(/[^\d]/g, '');
+    }
+
+    function setInterest(e) {
+      const interestObj = interest[e.target.value];
+      const value = interestObj['value'];
+      interestInput.value = value;
+      calculate();
+    }
+
+    function calculate() {
+      const rawValue = unformatNumber(amountInput.value);
+      const principal = parseFloat(rawValue);
+      const numberOfDays = termInput.value;
+      const interestRate = interestInput.value;
+
+      if (
+        isNaN(principal) ||
+        isNaN(numberOfDays) ||
+        isNaN(interestRate) ||
+        !interest[numberOfDays]
+      ) {
+        interestResult.textContent = '0';
+        totalResult.textContent = '0';
+        return;
+      }
+
+      const item = {
+        effectiveDate: new Date(),
+        tenor: {
+          tenorUnit: interest[numberOfDays].tenorUnit,
+          tenorAmount: interest[numberOfDays].tenorAmount,
+          rate: interestRate / 100,
+        },
+        amount: principal,
+      };
+
+      const interestValue = estimateInterest(item);
+
+      const total = principal + interestValue;
+
+      interestResult.textContent = formatVND(interestValue);
+      totalResult.textContent = formatVND(total);
+    }
+
+    amountInput.addEventListener('input', function (e) {
+      const cursorPosition = this.selectionStart;
+      const raw = unformatNumber(this.value);
+      const formatted = formatNumberWithCommas(raw);
+      this.value = formatted;
+
+      calculate();
+    });
+
+    termInput.addEventListener('change', setInterest);
+    interestInput.addEventListener('input', calculate);
+
+    setInterestToPresent();
+    calculate();
+  </script>
+  <!-- setHeight for iframe -->
+  <script>
+    function sendHeightToParent() {
+      const height = document.body.scrollHeight;
+      window.parent.postMessage({ type: 'setHeight', height }, '*');
+    }
+
+    window.addEventListener('load', sendHeightToParent);
+
+    const resizeObserver = new ResizeObserver(sendHeightToParent);
+    resizeObserver.observe(document.body);
+  </script>
+</html>
