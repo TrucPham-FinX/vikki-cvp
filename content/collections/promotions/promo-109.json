@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-109",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE109",
+  "name": "Vinpearl",
+  "thumbnail": "./assets/promo-109.png",
+  "shortDesc": "Giảm giá lên đến 15% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | Vinpearl | Giảm 15%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 15% (tối đa 1.200.000 VNĐ cho mỗi lượt đặt) khi đặt phòng hoặc dịch vụ trên website Vinpearl.com hoặc ứng dụng MyVinpearl.</li><li>Thời gian đặt dịch vụ: Từ ngày 06/06/2026 đến hết ngày 31/12/2026 (chương trình có thể kết thúc sớm hơn khi hết ngân sách phân bổ).</li><li>Xem hướng dẫn đặt dịch vụ chi tiết tại đây: <a href=\"https://vinpearl.com/en/mastercard-benefit-vinpearl\" target=\"_blank\" rel=\"noopener noreferrer\">https://vinpearl.com/en/mastercard-benefit-vinpearl</a></li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng thanh toán trực tiếp bằng thẻ Mastercard có đầu số BIN bắt đầu bằng &quot;2&quot; hoặc &quot;5&quot;.</li><li>Mỗi thẻ được hưởng ưu đãi 01 lần/tháng cho mỗi dịch vụ của Vinpearl và VinWonders trong suốt thời gian diễn ra chương trình khuyến mãi.</li><li>Chương trình không áp dụng đồng thời với các chiến dịch mã khuyến mãi khác trên website/ứng dụng Vinpearl hoặc VinWonders.</li></ul>",
+  "startDate": "2026-06-06T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 31/12/2026"
+}

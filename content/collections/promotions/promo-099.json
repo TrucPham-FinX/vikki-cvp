@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-099",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE99",
+  "name": "KHÈN - NƯỚNG SAPA",
+  "thumbnail": "./assets/promo-099.png",
+  "shortDesc": "Giảm giá lên đến 10% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | KHÈN - NƯỚNG SAPA | Giảm 10%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 10% trên tổng hóa đơn.</li><li>Địa điểm áp dụng:<ul><li>9 Thoại Ngọc Hầu, Phường Tân Phú, TP. Hồ Chí Minh.</li><li>TTTM Vincom Plaza Quang Trung, 190 Quang Trung, Phường Gò Vấp, TP. Hồ Chí Minh.</li></ul></li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2027-03-31T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 31/03/2027"
+}

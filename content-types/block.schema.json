@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cvp:block-meta",
+  "title": "CVP Block Manifest Meta-Schema",
+  "description": "JSON Schema validating all block.json contracts",
+  "type": "object",
+  "required": ["type", "version", "title", "category"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9_-]+$"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "title": { "type": "string" },
+    "description": { "type": "string" },
+    "category": {
+      "type": "string",
+      "enum": ["cta", "content", "hero", "navigation", "widget", "document", "form"]
+    },
+    "templates": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "variants": {
+      "type": "object",
+      "additionalProperties": { "type": "string" }
+    },
+    "defaultVariant": { "type": "string" },
+    "props": { "type": "object" },
+    "runtime": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "assets": {
+      "type": "object",
+      "properties": {
+        "css": { "type": "string" },
+        "js": { "type": "string" }
+      }
+    },
+    "examples": {
+      "type": "array",
+      "items": { "type": ["string", "object"] }
+    },
+    "deprecated": { "type": "boolean" },
+    "replaces": { "type": "object" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-111",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE111",
+  "name": "JUMP ARENA",
+  "thumbnail": "./assets/promo-111.jpg",
+  "shortDesc": "Giảm giá 50.000 VNĐ cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | JUMP ARENA | Giảm 50.000 VNĐ</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 50.000 VNĐ cho hóa đơn từ 250.000 VNĐ.</li><li>Địa điểm áp dụng: Áp dụng tại tất cả các trung tâm Jump Arena trên toàn quốc theo danh sách trên website: <a href=\"https://jumparena.vn/pages/all-center\" target=\"_blank\" rel=\"noopener noreferrer\">https://jumparena.vn/pages/all-center</a> (ngoại trừ trung tâm Lê Thị Riêng và AEON Mall Hà Đông).</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 31/12/2026"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-040",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE"
+  ],
+  "code": "VGP2026",
+  "name": "Tích điểm SkyJoy, đổi vé máy bay",
+  "thumbnail": "./assets/pr-1.png",
+  "shortDesc": "Tặng ngay 2.500 điểm SkyPoint khi chi tiêu từ 30 triệu VNĐ/Kỳ sao kê",
+  "longDesc": "<p><strong>THỂ LỆ CHƯƠNG TRÌNH TẶNG SKYPOINT</strong><ul><li><strong>Tên Chương trình:</strong> Bay cùng Vikki.<li><strong>Thời gian triển khai:</strong> Dự kiến từ 31/03/2026 - 31/12/2026.<li><strong>Sản phẩm thẻ áp dụng:</strong> Thẻ Vạn năng VikkiONE Connect.<li><strong>Đầu BIN áp dụng:</strong> 52626387 (Tính năng Thẻ tín dụng), 53787213 (Tính năng Thẻ thanh toán).</ul><p><strong>1.Nội dung:</strong><p>Tặng ngay 2.500 điểm SkyPoint: Tương đương với 01 vé máy bay VietJet một chiều (chưa thuế phí) khi chi tiêu từ 30 triệu VNĐ/Kỳ sao kê. Mỗi kỳ sao kê chỉ áp dụng duy nhất 1 lần tặng SkyPoint.<p><strong>2. Chi tiết:</strong><ul><li>Chi tiêu hợp lệ là giao dịch thanh toán hàng hóa, dịch vụ.<li>Thời gian xét ưu đãi được tính theo kỳ sao kê kể từ ngày 16 của tháng T-1 đến ngày 15 của tháng T. Hệ thống sẽ tính toán các giao dịch hợp lệ trong kỳ và và tặng điểm SkyPoint cho Chủ thẻ trong vòng 10 ngày.<li>Và các điều kiện cụ thể khác của chương trình sẽ được thông báo khi chương trình được triển khai chính thức.</ul>",
+  "startDate": "2026-02-01T00:00:00.000Z",
+  "endDate": "31/12/2026",
+  "createdDate": "2026-01-10T08:00:00.000Z",
+  "updatedDate": "31/12/2026",
+  "hotDeal": false,
+  "extraData": "Thời gian triển khai: Dự kiến từ 31/03/2026 - 31/12/2026​"
+}

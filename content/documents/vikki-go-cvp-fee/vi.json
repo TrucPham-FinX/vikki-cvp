@@ -1,0 +1,553 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-go-cvp",
+  "filename": "fee",
+  "variant": "fee",
+  "id": "vikki-one-connect",
+  "version": "2.1.0",
+  "sections": [
+    {
+      "id": "main",
+      "title": "",
+      "expanded": true,
+      "blocks": [
+        {
+          "type": "subheading",
+          "className": "fz-125 fw-500 p-8",
+          "text": "BIỂU PHÍ THẺ TÍN DỤNG VIKKIGO"
+        },
+        {
+          "type": "subheading",
+          "text": "I. Nhóm phí phát hành và sử dụng thẻ:",
+          "className": "p-8 fw-500 fz-1"
+        },
+        {
+          "type": "table",
+          "headerRows": [
+            {
+              "cells": [
+                {
+                  "value": "STT",
+                  "rowspan": 2
+                },
+                {
+                  "value": "Tiêu chí",
+                  "rowspan": 2
+                },
+                {
+                  "value": "Tham số",
+                  "colspan": 2
+                }
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "cells": [
+                {
+                  "value": "<strong>I</strong>",
+                  "className": ""
+                },
+                {
+                  "value": "<strong>Nhóm phí phát hành và phí thường niên</strong>",
+                  "colspan": 3,
+                  "className": ""
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "Phí phát hành thường"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "Phí phát hành nhanh (đ/thẻ)"
+                },
+                {
+                  "value": "110.000",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "3"
+                },
+                {
+                  "value": "Phí phát hành lại thẻ do hết hạn"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "Phí phát hành lại thẻ do thất lạc/ hư hại (đ/thẻ)"
+                },
+                {
+                  "value": "110.000",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "Phí phát hành lại thẻ nhanh do thất lạc/ hư hại (đ/thẻ)"
+                },
+                {
+                  "value": "110.000",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "Phí thường niên (Thẻ chính)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "<strong>II</strong>",
+                  "className": ""
+                },
+                {
+                  "value": "<strong>Nhóm phí dịch vụ khác</strong>",
+                  "colspan": 3,
+                  "className": ""
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "Phí rút tiền mặt (đ/giao dịch)"
+                },
+                {
+                  "value": "4% (tối thiểu: 100.000)",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "Phí chuyển đổi ngoại tệ"
+                },
+                {
+                  "value": "3% giá trị giao dịch",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "3"
+                },
+                {
+                  "value": "Phí xử lý giao dịch bằng VND tại các đơn vị chấp nhận thẻ (ĐVCNT) có mã quốc gia khác Việt Name"
+                },
+                {
+                  "value": "1.1% (Tối thiểu 10.000 đồng/giao dịch",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "Phí thông báo thất lạc thẻ"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "5"
+                },
+                {
+                  "value": "Phí khóa/mở khóa thẻ"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "6"
+                },
+                {
+                  "value": "Phí in sao kê chi tiết hàng tháng"
+                },
+                {
+                  "value": "Không áp dụng dịch vụ",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "7"
+                },
+                {
+                  "value": "Phí nhận sao kê giấy hàng tháng"
+                },
+                {
+                  "value": "Không áp dụng dịch vụ",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "8.1"
+                },
+                {
+                  "value": "Phí cấp bản sao hóa đơn giao dịch (Tại ĐVCNT của HDBank)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "8.2"
+                },
+                {
+                  "value": "Phí cấp bản sao hóa đơn giao dịch (Tại ĐVCNT không thuộc HDBank)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "9"
+                },
+                {
+                  "value": "Phí xác nhận theo yêu cầu của chủ thẻ (đ/lần)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "10"
+                },
+                {
+                  "value": "Phí cấp lại PIM (đ/lần)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "11"
+                },
+                {
+                  "value": "Phí tất toán trước hạn/đóng tài khoảng (đ/lần)"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "12"
+                },
+                {
+                  "value": "Phí khiếu nại sai (đ/lần)"
+                },
+                {
+                  "value": "88.000",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "13"
+                },
+                {
+                  "value": "Phí chậm thanh toán dư nợ tín dụng"
+                },
+                {
+                  "value": "4% số tiền thanh toán tối thiểu (Tối thiểu 100.000 đồng)",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "14"
+                },
+                {
+                  "value": "Phí sử dụng vượt hạn mức (đ/số tiền vượt hạn mức)"
+                },
+                {
+                  "value": "2.5% (Tối thiểu 55.000 đồng)",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "15"
+                },
+                {
+                  "value": "Phí thay đổi hạn mức tín dụng"
+                },
+                {
+                  "value": "Chưa áp dụng dịch vụ",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "16"
+                },
+                {
+                  "value": "Phí cấp lại sao kê"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "17"
+                },
+                {
+                  "value": "Phí chuyển đổi hình thức đảm bảo tiền vay"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "18"
+                },
+                {
+                  "value": "Phí nạp thêm tiền/thanh toán dư nợ thẻ"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "19"
+                },
+                {
+                  "value": "Dịch vụ SMS thông báo biến động giao dịch"
+                },
+                {
+                  "value": "Miễn phí",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "<strong>III</strong>",
+                  "className": ""
+                },
+                {
+                  "value": "<strong>Lãi suất</strong>",
+                  "colspan": 3,
+                  "className": ""
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "Lãi suất trong hạn"
+                },
+                {
+                  "value": "35%/năm",
+                  "colspan": 3
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "Lãi suất quá hạn"
+                },
+                {
+                  "value": "150% lãi suất trong hạn",
+                  "colspan": 3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "className": "fz-14 p-8",
+          "text": "Ghi chú: Biểu phí trên đã bao gồm thuế giá trị gia tăng (VAT), phí phát hành và phí chậm thanh toán không tính VAT. Biểu phí có thể thay đổi theo từng thời kỳ."
+        },
+        {
+          "type": "subheading",
+          "className": "p-8",
+          "text": "2. Nhóm phí dịch vụ trả góp trên ứng dụng Vikki by HDBank:"
+        },
+        {
+          "type": "table",
+          "headerRows": [
+            {
+              "cells": [
+                {
+                  "value": "STT",
+                  "rowspan": 2
+                },
+                {
+                  "value": "Kỳ hạn (tháng)",
+                  "rowspan": 2
+                },
+                {
+                  "value": "Hình thức thu phí",
+                  "colspan": 1
+                },
+                {
+                  "value": "Mức phí thu khách hàng (tính trên giá trị Giao dịch chuyển đổi trả góp)",
+                  "colspan": 1
+                }
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "cells": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "03"
+                },
+                {
+                  "value": "Phí chuyển đổi trả góp thu 1 lần"
+                },
+                {
+                  "value": "3.5%"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "06"
+                },
+                {
+                  "value": "Phí chuyển đổi trả góp thu 1 lần"
+                },
+                {
+                  "value": "5.2%"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sections": []
+    }
+  ]
+}

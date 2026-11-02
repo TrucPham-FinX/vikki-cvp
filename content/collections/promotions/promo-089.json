@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-089",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE89",
+  "name": "Viettel Store",
+  "thumbnail": "./assets/promo-089.png",
+  "shortDesc": "Giảm 400.000đ",
+  "longDesc": "<p><strong>Vikki x Mastercard | Viettel Store | Giảm 400.000đ</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 400.000 đồng cho hóa đơn trị giá 4.000.000 đồng khi thanh toán bằng thẻ Vikki Digital Bank qua Payoo POS.</li><li>Địa điểm áp dụng: hệ thống cửa hàng Viettel Store trên toàn Việt Nam.</li><li>Thời gian áp dụng: từ ngày 18/09/2026 đến ngày 31/12/2026 hoặc có thể kết thúc khi hết ngân sách của chương trình.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng cá nhân là chủ thẻ Vikki Digital Bank: Thẻ Kép VikkiGO+, Thẻ Vạn năng VikkiONE Connect (đầu BIN tính năng thẻ tín dụng: 5262 6387).</li><li>Tổng số lượng lượt/mã ưu đãi là 750 lượt/mã.</li><li>Mỗi thẻ được hưởng ưu đãi tối đa 01 lần/tháng.</li><li>Ưu đãi không có giá trị đổi thành tiền mặt hay hoàn trả.</li><li>Ưu đãi này không áp dụng đồng thời với các ưu đãi khác tại Viettel Store.</li><li>Ưu đãi chỉ áp dụng khi thanh toán bằng thẻ vật lý. Không áp dụng ưu đãi cho thẻ ảo trên các ứng dụng thanh toán (như Samsung Pay, Google Wallet, Apple Pay, Garmin Pay v.v...).</li><li>Không áp dụng đối với các giao dịch hủy và giao dịch hoàn 100% giá trị giao dịch mua bán, sử dụng hàng hóa/dịch vụ/sản phẩm.</li><li>Khách hàng chỉ tiến hành thanh toán khi hệ thống đã hiển thị số tiền giảm giá. Vikki Digital Bank và Đối tác không chịu trách nhiệm về việc hệ thống không hiển thị số tiền giảm giá mà Khách hàng vẫn tiến hành thanh toán.</li><li>Khách hàng sử dụng mã ưu đãi sai mục đích hoặc vi phạm các điều khoản và điều kiện khuyến mại sẽ bị từ chối việc sử dụng mã ưu đãi trong tương lai.</li><li>Giao dịch phải thỏa mãn điều kiện giao dịch thành công, không áp dụng cho giao dịch hủy/giao dịch hoàn tiền (“giao dịch thành công” là giao dịch đã được ghi nhận tại hệ thống của Vikki Digital Bank, được hiểu là giao dịch được bút toán, lên sao kê tài khoản hoặc giao dịch đang chờ cập nhật sao kê).</li><li>Việc xác định giao dịch có phát sinh gian lận sẽ xử lý theo quy định pháp luật.</li><li>Bất cứ khiếu nại và tranh chấp nào phát sinh từ việc mua hoặc định mua liên quan đến hàng hóa và/hoặc dịch vụ theo ưu đãi này do Đối tác cung ứng sẽ được giải quyết trực tiếp giữa Chủ thẻ và Đối tác.</li><li>Đối với những thắc mắc, khiếu nại liên quan đến chương trình khuyến mại nêu trên, chủ thẻ vui lòng liên hệ tới hotline Vikki Digital Bank để được hướng dẫn và giải quyết.</li><li>Chương trình có thể kết thúc sớm hơn khi hết ngân sách của chương trình.</li></ul>",
+  "startDate": "2026-09-18T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-29T00:00:00.000Z",
+  "updatedDate": "2026-09-29T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: 18/09/2026 - 31/12/2026"
+}

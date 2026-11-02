@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-082",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE",
+    "VIKKIGO_PLUS"
+  ],
+  "code": "PRE82",
+  "name": "Mua vé với giá tốt tại CGV",
+  "thumbnail": "./assets/promo-082.png",
+  "shortDesc": "Mua 2 vé xem phim 2D với giá 97.000 vào thứ Sáu, thứ Bảy, Chủ Nhật.",
+  "longDesc": "<p><strong>Vikki x CGV | Mua 2 vé xem phim 2D với giá 97.000</strong></p><p>Hết hạn vào: 23:59 15 thg 9, 2026</p><p><strong>1. Thể lệ</strong></p>- Mua 2 vé xem phim 2D với giá 97.000 vào thứ Sáu, thứ Bảy, Chủ Nhật.<p><strong>2. Điều kiện và điều khoản chương trình</strong></p><p>a. Ưu đãi áp dụng khi thanh toán trực tiếp tại ứng dụng CGV Cinemas và website <strong>https://www.cgv.vn/</strong> hoăc tại quầy vé CGV.</p><p>b. Cách thức nhận ưu đãi trên ứng dụng và website:</p><ol>i. Bước 1: Chọn mua 02 vé xem phim 2D</ol><ol>ii. Bước 2: Tại mục “Giảm giá”, chọn ô “Đối tác”, tiếp tục chọn “VIKKI  MASTERCARD”. </ol><ol>iii. Bước 3: Chủ thẻ tiếp tục đến bước thanh toán và sử dụng thẻ VikkiGO+ và VikkiONE Connect.</ol><ol>iv. Bước 4: Chủ thẻ xuất trình thông tin vé tại cụm rạp chiếu phim CGV trên toàn quốc để nhận vé xem phim.</ol><p>c. Cách thức nhận ưu đãi khi thanh toán tại quầy vé: Ưu đãi giảm trừ trực tiếp khi thanh toán bằng thẻ VikkiGO+ và VikkiONE Connect.</p><p>d. Mỗi thẻ được sử dụng tối đa 01 lượt/ngày trong thời gian diễn ra chương trình.</p><p>e. Không áp dụng ưu đãi cho vé U22.</p><p>f. Số lượng ưu đãi có hạn trong ngày nên chủ thẻ thực hiện giao dịch đủ điều kiện sớm trước. Giới hạn tối đa 100 lượt/ngày.</p><p>g. Chương trình chỉ áp dụng cho hạng ghế thường và hạng ghế VIP cho phim 2D. Mỗi cặp vé được áp dụng cho cùng một bộ phim, một suất chiếu và cùng hạng ghế. </p><p>h. Thời gian áp dụng: thanh toán mua vé xem phim bắt đầu từ 09h00 – 23h59 các ngày thứ 6, 7 & Chủ nhật hàng tuần cho các suất chiếu vào tất cả các ngày trong tuần. </p><p>i. Không áp dụng đặt vé vào ngày lễ tết và cho các suất chiếu vào dịp lễ tết theo quy định của pháp luật.</p><p>j. Không áp dụng cho suất chiếu sớm, suất chiếu đặc biệt, và các phòng chiếu đặc biệt như: IMAX, 4DX, GOLD CLASS, STARIUM, L’AMOUR, SWEETBOX… </p><p>k. Vé xem phim không có giá trị đổi thành tiền mặt hay hoàn trả - Chương trình không áp dụng đồng thời với các chương trình khuyến mãi khác.</p><p>l. Giao dịch phải thỏa mãn điều kiện giao dịch thành công, không áp dụng cho giao dịch hủy/giao dịch hoàn tiền (“giao dịch thành công” là giao dịch đã được ghi nhận tại hệ thống của Vikki Bank, được hiểu là giao dịch được bút toán, lên sao kê tài khoản hoặc giao dịch đang chờ cập nhật sao kê).</p><p>m. Đối với những thắc mắc, khiếu nại liên quan đến chương trình khuyến mại nêu trên, chủ thẻ liên hệ tới hotline Vikki bank để được hướng dẫn và giải quyết.</p>",
+  "startDate": "2026-06-15T04:50:04.997Z",
+  "endDate": "2026-09-15T04:50:04.997Z",
+  "createdDate": "2026-06-24T04:50:04.997Z",
+  "updatedDate": "2026-06-24T04:50:04.997Z",
+  "hotDeal": false,
+  "extraData": "Từ ngày 15/06/2026 - 15/09/2026"
+}

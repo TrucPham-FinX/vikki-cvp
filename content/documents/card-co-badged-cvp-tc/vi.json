@@ -1,0 +1,1610 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "card-co-badged-cvp",
+  "filename": "tc",
+  "variant": "tc",
+  "id": "vikki-go-co-badged-tnc",
+  "version": "2.1.0",
+  "header": {
+    "img": "assets/vikki-logo.png",
+    "h1": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN PHÁT HÀNH, SỬ DỤNG THẺ GHI NỢ VIKKI BANK DÀNH CHO KHÁCH HÀNG CÁ NHÂN",
+    "intro": [
+      "Nội dung của Điều khoản và Điều kiện phát hành, sử dụng Thẻ ghi nợ Vikki Bank (dành cho Khách hàng cá nhân) (sau đây viết tắt là “Điều khoản và Điều kiện”) dưới đây cùng với Thỏa thuận mở, sử dụng tài khoản thanh toán/ Sản phẩm – Dịch vụ hoặc các văn bản khác có tên gọi tương đương trong từng thời kỳ (sau đây gọi tắt là “Giấy Đề Nghị”) tạo thành một Hợp đồng phát hành và sử dụng Thẻ ghi nợ ràng buộc pháp lý giữa Chủ thẻ và Vikki Bank. Khi Chủ thẻ sử dụng Thẻ ghi nợ nghĩa là Chủ thẻ đã chấp nhận và chịu sự ràng buộc bởi Điều khoản và Điều kiện."
+    ]
+  },
+  "sections": [
+    {
+      "id": "phan-a",
+      "title": "Phần A. QUY ĐỊNH CHUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "dieu-1",
+          "title": "ĐIỀU 1. ĐỊNH NGHĨA",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Thẻ ghi nợ (viết tắt là “Thẻ”):</b> là thẻ cho phép Chủ thẻ thực hiện giao dịch Thẻ trong phạm vi số tiền và hạn mức thấu chi (nếu có) trên Tài khoản thanh toán của Chủ thẻ mở tại Vikki Bank, bao gồm Thẻ ghi nợ đồng thương hiệu do Vikki Bank phát hành."
+                },
+                {
+                  "text": "<b>Ngân hàng TNHH MTV Số Vikki (viết tắt là “Vikki Bank”):</b> là tổ chức phát hành Thẻ (sau đây gọi tắt là “TCPHT”) và thanh toán Thẻ theo quy định của Ngân hàng Nhà nước Việt Nam."
+                },
+                {
+                  "text": "<b>Điểm giao dịch:</b> là các Đơn vị kinh doanh của Vikki Bank, bao gồm Chi nhánh, Phòng giao dịch, và các Đơn vị khác có chức năng kinh doanh trong từng thời kỳ của Vikki Bank."
+                },
+                {
+                  "text": "<b>Chủ thẻ:</b> là Khách hàng cá nhân được Vikki Bank cung cấp Thẻ để sử dụng và có tên trên Thẻ. Chủ thẻ bao gồm:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Chủ thẻ chính: là cá nhân đứng tên thực hiện giao kết Hợp đồng phát hành và sử dụng Thẻ ghi nợ với Vikki Bank, đồng thời là Chủ Tài khoản thanh toán được mở tại Vikki Bank."
+                      },
+                      {
+                        "text": "Chủ thẻ phụ: là cá nhân được Chủ thẻ chính cho phép sử dụng Thẻ và Chủ thẻ chính cam kết bằng văn bản thực hiện toàn bộ các nghĩa vụ phát sinh liên quan đến việc sử dụng Thẻ theo Hợp đồng phát hành và sử dụng Thẻ ghi nợ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Tài khoản thanh toán:</b> là tài khoản thanh toán do Khách hàng cá nhân làm Chủ tài khoản và mở tại Vikki Bank và sử dụng các dịch vụ thanh toán."
+                },
+                {
+                  "text": "<b>Thẻ vật lý:</b> là Thẻ có hình thức hiện hữu vật chất, thông thường được làm bằng chất liệu nhựa, có gắn chip điện tử để lưu giữ dữ liệu thẻ, có thông tin in trên thẻ theo quy định của Ngân hàng Nhà nước và/ hoặc quy định của Vikki Bank ban hành từng thời kỳ. Thẻ vật lý được kích hoạt trước khi sử dụng."
+                },
+                {
+                  "text": "<b>Thẻ phi vật lý:</b> là Thẻ không hiện hữu bằng hình thức vật chất, tồn tại dưới dạng điện tử và hiển thị các thông tin trên Thẻ theo quy định Ngân hàng nhà nước và/ hoặc quy định của Vikki Bank ban hành từng thời kỳ. Thẻ phi vật lý có thể được Vikki Bank in ra Thẻ vật lý theo thoả thuận giữa Vikki Bank và Chủ thẻ. Thẻ phi vật lý được kích hoạt ngay sau khi phát hành."
+                },
+                {
+                  "text": "<b>Hợp đồng phát hành và sử dụng Thẻ ghi nợ (viết tắt là “Hợp Đồng”):</b> là thỏa thuận bằng văn bản giữa Vikki Bank với Chủ thẻ về việc phát hành và sử dụng Thẻ ghi nợ. Hợp Đồng này được tạo nên bởi Điều khoản và Điều kiện cùng với Thỏa thuận mở, sử dụng tài khoản thanh toán/ Sản phẩm – Dịch vụ hoặc văn bản khác có tên gọi tương đương theo quy định của Vikki Bank trong từng thời kỳ, được Vikki Bank và Chủ thẻ ký/ xác nhận trực tiếp hoặc được ký số phù hợp với quy định Vikki Bank, quy định của pháp luật giao dịch điện tử."
+                },
+                {
+                  "text": "<b>Thẻ Contactless (viết tắt là “Thẻ phi tiếp xúc”):</b> là Thẻ thông minh được ứng dụng cả công nghệ “tiếp xúc” và “không tiếp xúc” trên một chiếc Thẻ. Thẻ có cách thức giao tiếp kép, vừa giao tiếp bằng cách tiếp xúc (Contact) với đầu đọc Thẻ hoặc giao tiếp từ xa (Contactless). Chủ thẻ chỉ cần chạm hoặc vẫy nhẹ Thẻ lên máy POS để thanh toán mua hàng."
+                },
+                {
+                  "text": "<b>Thẻ Contact:</b> là Thẻ đòi hỏi phải có sự tiếp xúc vật lý với thiết bị đọc Thẻ để trao đổi dữ liệu. Thông tin trên Thẻ được trao đổi với đầu đọc thông qua các điểm tiếp xúc bất kỳ có trên Thẻ."
+                },
+                {
+                  "text": "<b>Thẻ Chip theo chuẩn EMV/ theo chuẩn VCCS (viết tắt là “Thẻ Chip”):</b> là sản phẩm Thẻ được gắn chip điện tử với bộ vi xử lý như một máy tính thu nhỏ đa chức năng và ứng dụng, có khả năng lưu trữ các thông tin quan trọng được mã hóa với độ bảo mật cao."
+                },
+                {
+                  "text": "<b>Đơn vị chấp nhận Thẻ (viết tắt là “ĐVCNT”):</b> là đơn vị chấp nhận thanh toán hàng hóa, dịch vụ bằng Thẻ."
+                },
+                {
+                  "text": "<b>Đối tác liên kết phát hành Thẻ:</b> là tổ chức hợp tác với Vikki Bank trong việc phát hành Thẻ ghi nợ."
+                },
+                {
+                  "text": "<b>Tổ chức thanh toán Thẻ (viết tắt là “TCTTT”):</b> là Vikki Bank hoặc các tổ chức tín dụng khác, chi nhánh ngân hàng nước ngoài được phép thực hiện dịch vụ thanh toán thẻ theo quy định của pháp luật."
+                },
+                {
+                  "text": "<b>Tổ chức hỗ trợ hoạt động Thẻ (viết tắt là “TCHTHĐT”):</b> là các tổ chức, cá nhân có chuyên môn được tổ chức hoạt động thẻ thuê hoặc hợp tác nhằm cung cấp hàng hóa, dịch vụ kỹ thuật cho hệ thống thanh toán thẻ."
+                },
+                {
+                  "text": "<b>Tổ chức thẻ (viết tắt là “TCT”):</b> bao gồm Tổ chức thẻ Việt Nam và Tổ chức thẻ quốc tế, có thỏa thuận với các TCPHT, TCTTT và các bên liên quan khác để hợp tác phát hành và thanh toán Thẻ.",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Tổ chức Thẻ Việt Nam (viết tắt là “TCTVN”): là tổ chức trung gian cung ứng dịch vụ kết nối hệ thống xử lý giao dịch Thẻ, thực hiện việc trao đổi dữ liệu bằng điện tử hoặc bằng chứng từ và bù trừ các nghĩa vụ tài chính phát sinh từ các giao dịch Thẻ cho Vikki Bank, các TCTTT và ĐVCNT theo thỏa thuận bằng văn bản giữa các bên có liên quan."
+                      },
+                      {
+                        "text": "Tổ chức Thẻ quốc tế (viết tắt là “TCTQT”): là tổ chức được thành lập, hoạt động ở nước ngoài theo quy định của pháp luật nước ngoài, có thỏa thuận với các TCPHT, TCTTT, tổ chức chuyển mạch Thẻ và/ hoặc các bên liên quan để hợp tác về hoạt động Thẻ ngân hàng đối với Thẻ có mã TCPHT do TCTQT cấp hoặc Thẻ có mã TCPHT của quốc gia khác, phù hợp với các quy định của pháp luật Việt Nam và cam kết quốc tế."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Tổ chức cung ứng dịch vụ trung gian thanh toán (viết tắt là “TCTGTT”) bao gồm:</b> Tổ chức chuyển mạch thẻ; Tổ chức bù trừ điện tử giao dịch thẻ và TCTGTT có hợp tác với TCTTT."
+                },
+                {
+                  "text": "<b>Tổ chức chuyển mạch thẻ:</b> là TCTGTT thực hiện việc chuyển mạch các giao dịch thẻ cho các TCPHT, TCTTT, TCTGTT có hợp tác với TCTTT, tổ chức thẻ quốc tế và đơn vị chấp nhận thẻ theo các thỏa thuận bằng văn bản giữa các bên liên quan."
+                },
+                {
+                  "text": "<b>Tổ chức bù trừ điện tử giao dịch thẻ:</b> là TCTGTT thực hiện việc bù trừ điện tử các nghĩa vụ tài chính phát sinh từ các giao dịch thẻ cho các TCPHT, TCTTT, TCTGTT có hợp tác với TCTTT, TCTQT và ĐVCNT theo các thỏa thuận bằng văn bản giữa các bên liên quan."
+                },
+                {
+                  "text": "<b>Máy giao dịch tự động:</b> là thiết bị mà Chủ thẻ có thể sử dụng để thực hiện một hoặc một số các giao dịch như: gửi, nạp, rút tiền mặt, chuyển khoản, thanh toán hóa đơn hàng hóa, dịch vụ, vấn tin tài khoản, đổi PIN, tra cứu thông tin Thẻ hoặc các giao dịch khác theo quy định của pháp luật."
+                },
+                {
+                  "text": "<b>Thiết bị chấp nhận Thẻ tại điểm bán bao gồm:</b> Point of Sale (viết tắt là “POS”), Mobile Point of Sale (viết tắt là “mPOS”) và các loại thiết bị chấp nhận Thẻ khác là các loại thiết bị đọc Thẻ, thiết bị đầu cuối được cài đặt và sử dụng tại các ĐVCNT mà Chủ thẻ có thể sử dụng Thẻ để thanh toán tiền hàng hóa, dịch vụ."
+                },
+                {
+                  "text": "<b>POS NFC:</b> là thiết bị chấp nhận Thẻ có tích hợp công nghệ NFC (công nghệ kết nối không dây), ngoài chức năng như máy POS thông thường, máy POS NFC còn có chức năng chấp nhận Thẻ phi tiếp xúc và các thiết bị kết nối không dây khác."
+                },
+                {
+                  "text": "<b>Hệ thống giao dịch Thẻ quốc tế:</b> là hệ thống bao gồm hệ thống Vikki Bank, hệ thống các ĐVCNT, hệ thống các máy giao dịch tự động của các tổ chức có tham gia cùng hệ thống kết nối với Vikki Bank (Visa, Mastercard, JCB…)."
+                },
+                {
+                  "text": "<b>Mã số xác định Chủ thẻ (viết tắt là “PIN”):</b> là mã số mật được Vikki Bank cung cấp cho Chủ thẻ hoặc do Chủ thẻ tạo lập theo quy trình được Vikki Bank quy định để sử dụng trong các giao dịch Thẻ. Mã số này do Chủ thẻ chịu trách nhiệm bảo mật."
+                },
+                {
+                  "text": "<b>Mã CVV/CVC (Card Verification Value/ Card Verification Code):</b> là mã xác thực gồm 03 (ba) chữ số trên thẻ, thường được in bên phải phần chữ ký Chủ thẻ."
+                },
+                {
+                  "text": "<b>Mã tổ chức phát hành thẻ (Bank Identification Number - viết tắt là “BIN”) là một dãy chữ số, bao gồm các loại BIN sau:</b> BIN xác định TCPHT theo quy định của Ngân hàng Nhà nước tại Quy chế cấp, sử dụng và quản lý mã tổ chức phát hành thẻ ngân hàng; BIN do TCTQT cấp; và BIN của quốc gia khác. Trường hợp thẻ có BIN do TCTQT cấp hoặc thẻ có BIN của quốc gia khác, việc cấp, sử dụng và quản lý BIN được thực hiện theo quy định của TCTQT hoặc quốc gia cấp BIN đó."
+                },
+                {
+                  "text": "<b>Thời hạn hiệu lực Thẻ:</b> là khoảng thời gian Vikki Bank cho phép Chủ thẻ sử dụng Thẻ và thường được in trên Thẻ (được xem là ngày cuối cùng của tháng hết hiệu lực)."
+                },
+                {
+                  "text": "<b>Phí dịch vụ Thẻ (viết tắt là “Phí”):</b> là các khoản phí mà Chủ thẻ thanh toán cho Vikki Bank khi mở, sử dụng và thực hiện các giao dịch Thẻ. Mức phí, loại phí sẽ do Vikki Bank quy định theo từng thời kỳ và được ban hành trong (các) Biểu phí dịch vụ Thẻ."
+                },
+                {
+                  "text": "<b>Giao dịch Thẻ:</b> là việc sử dụng thẻ để thực hiện giao dịch thanh toán, rút tiền mặt và các dịch vụ khác do Vikki Bank, TCTTT cung ứng theo quy định của pháp luật."
+                },
+                {
+                  "text": "<b>Giao dịch Thẻ phi tiếp xúc:</b> là giao dịch được thực hiện bằng cách chạm hoặc đặt Thẻ trong cự ly gần với máy POS NFC."
+                },
+                {
+                  "text": "<b>Giao dịch Thẻ trực tuyến (viết tắt là “Giao dịch Ecom”):</b> là việc sử dụng Thẻ để thanh toán tiền mua hàng hóa, dịch vụ trên các website của ĐVCNT có kết nối với hệ thống thanh toán trực tuyến của Vikki Bank và/ hoặc đối tác của Vikki Bank."
+                },
+                {
+                  "text": "<b>Giao dịch Easy Payment:</b> là việc Chủ thẻ sử dụng Thẻ Contactless thực hiện các giao dịch thanh toán hàng hóa, dịch vụ qua POS (đã nâng cấp công nghệ Contactless) mà không cần ký tên trên hóa đơn giao dịch với số tiền hàng hóa, dịch vụ nhỏ hơn một giá trị nhất định được quy định từ TCTQT trong từng thời kỳ."
+                },
+                {
+                  "text": "<b>Giao dịch thanh toán khống tại đơn vị chấp nhận Thẻ:</b> là việc sử dụng Thẻ để thanh toán tiền hàng hóa, dịch vụ nhưng thực tế không phát sinh việc mua bán, cung ứng hàng hóa, dịch vụ."
+                },
+                {
+                  "text": "<b>Giao dịch Thẻ gian lận, giả mạo:</b> là giao dịch bằng Thẻ giả, giao dịch sử dụng trái phép Thẻ."
+                },
+                {
+                  "text": "<b>Giao dịch đáng ngờ:</b> là giao dịch có dấu hiệu bất thường hoặc có cơ sở để nghi ngờ tài sản trong giao dịch có nguồn gốc từ hoạt động tội phạm hoặc liên quan tới rửa tiền và theo quy định của pháp luật, Ngân hàng Nhà nước từng thời kỳ."
+                },
+                {
+                  "text": "<b>Dịch vụ xác thực giao dịch Thẻ trực tuyến quốc tế (viết tắt là “Dịch vụ 3D Secured”):</b> là dịch vụ nhằm tăng thêm sự an toàn cho Chủ thẻ khi thực hiện giao dịch Thẻ trực tuyến tại các website có biểu tượng Verified by Visa hoặc MasterCard SecureCode hoặc J/Secure thông qua việc xác thực Chủ thẻ bằng một mật khẩu."
+                },
+                {
+                  "text": "<b>Giao dịch thanh toán qua Mã phản hồi nhanh (Quick Response Code - viết tắt là “QR Code”):</b> là việc sử dụng dịch vụ thanh toán để trả tiền, chuyển tiền thông qua QR Code của tổ chức, cá nhân."
+                },
+                {
+                  "text": "<b>One Time Password (viết tắt là “OTP”):</b> là mật khẩu sử dụng một lần và chỉ có giá trị trong một khoảng thời gian nhất định. Tùy theo từng phương thức đăng ký OTP, Khách hàng sử dụng thiết bị để đăng ký OTP (OTP Token) hoặc phần mềm phát sinh mật khẩu trên thiết bị di động (Soft Token) của Khách hàng hoặc Vikki Bank gửi OTP dưới dạng tin nhắn SMS/ email (OTP SMS/ OTP Email) tới số điện thoại di động/ email đã đăng ký với Vikki Bank của Khách hàng."
+                },
+                {
+                  "text": "<b>Hạn mức sử dụng Thẻ:</b> là số tiền tối đa của Thẻ mà Chủ thẻ có thể sử dụng để rút tiền mặt và/ hoặc thanh toán hàng hóa, dịch vụ trong ngày và/ hoặc các hạn mức khác trong việc sử dụng Thẻ."
+                },
+                {
+                  "text": "<b>Thẻ giả:</b> là Thẻ không do Vikki Bank phát hành nhưng có chứa các thông tin của Thẻ thật, Chủ thẻ thật."
+                },
+                {
+                  "text": "<b>Hóa đơn:</b> là chứng từ xác nhận các giao dịch thông qua Thẻ do Chủ thẻ thực hiện tại ĐVCNT."
+                },
+                {
+                  "text": "<b>Số tiền giao dịch:</b> là số tiền mà Chủ thẻ dùng để thanh toán hàng hóa, dịch vụ, rút tiền mặt hoặc thực hiện giao dịch tương đương với giao dịch rút tiền mặt tại ĐVCNT hoặc tại máy giao dịch tự động."
+                },
+                {
+                  "text": "<b>Số tiền giao dịch quy đổi:</b> là số tiền giao dịch được quy đổi theo tỷ giá quy đổi từ ngoại tệ ra đồng Việt Nam (viết tắt là VNĐ) do Vikki Bank hoặc các TCTQT quy định."
+                },
+                {
+                  "text": "<b>Số tiền ghi nợ:</b> là số tiền giao dịch quy đổi, các phí do Vikki Bank/ TCTQT quy định (nếu có) và các khoản phụ phí (nếu có) được ghi nợ vào Tài khoản thanh toán."
+                },
+                {
+                  "text": "<b>Ngày làm việc:</b> là ngày Vikki Bank thực hiện giao dịch từ thứ hai đến thứ sáu trừ các ngày thứ 7, chủ nhật và các ngày nghỉ lễ, Tết theo quy định của pháp luật."
+                },
+                {
+                  "text": "<b>Người có liên quan:</b> là tổ chức, cá nhân có quan hệ trực tiếp hoặc gián tiếp với tổ chức, cá nhân khác."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-2",
+          "title": "ĐIỀU 2. QUY ĐỊNH VỀ ĐỒNG TIỀN SỬ DỤNG TRONG GIAO DỊCH THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Trên lãnh thổ Việt Nam:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Giao dịch rút tiền mặt bằng Thẻ phải được thực hiện bằng đồng Việt Nam."
+                      },
+                      {
+                        "text": "Đối với các giao dịch Thẻ khác:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Đồng tiền giao dịch là đồng Việt Nam. Trường hợp được sử dụng ngoại hối để giao dịch theo quy định pháp luật về quản lý ngoại hối thì đồng tiền thể hiện trong giao dịch là đồng Việt Nam hoặc đồng Việt Nam và ngoại tệ;"
+                            },
+                            {
+                              "text": "Đồng tiền thanh toán là đồng Việt Nam. Các ĐVCNT chỉ được nhận thanh toán bằng đồng Việt Nam từ TCTTT."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Trường hợp cần quy đổi từ ngoại tệ ra VNĐ, tỷ giá giữa VNĐ và ngoại tệ theo tỷ giá do các bên thỏa thuận phù hợp với quy định của Ngân hàng Nhà nước."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Ngoài lãnh thổ Việt Nam:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Khi thực hiện giao dịch Thẻ ngoài lãnh thổ Việt Nam, Chủ thẻ phải thực hiện thanh toán cho Vikki Bank bằng đồng Việt Nam theo tỷ giá do các bên thỏa thuận phù hợp với quy định của Ngân hàng Nhà nước."
+                      },
+                      {
+                        "text": "Việc sử dụng Thẻ để thực hiện các giao dịch ngoài lãnh thổ Việt Nam chỉ được thực hiện khi Chủ thẻ đáp ứng các điều kiện và tuân thủ theo các quy định, chính sách của Vikki Bank được ban hành trong từng thời kỳ trên cơ sở phù hợp với quy định Ngân hàng Nhà nước."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-3",
+          "title": "ĐIỀU 3. PHẠM VI SỬ DỤNG THẺ, HẠN MỨC SỬ DỤNG THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Phạm vi sử dụng Thẻ:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Thẻ được sử dụng trong lãnh thổ Việt Nam và/ hoặc ngoài ngoài lãnh thổ Việt Nam. Phạm vi sử dụng Thẻ được cấp cho Chủ thẻ căn cứ trên loại Thẻ mà Chủ thẻ yêu cầu và trên cơ sở chấp thuận của Vikki Bank theo Hợp Đồng, theo quy định của Vikki Bank trong từng thời kỳ."
+                      },
+                      {
+                        "text": "Chủ thẻ được sử dụng Thẻ để thanh toán hàng hóa và dịch vụ trên Internet, thực hiện các giao dịch gửi, rút tiền mặt, chuyển khoản, thanh toán hóa đơn và/ hoặc sử dụng các dịch vụ khác theo quy định của Vikki Bank tại các máy giao dịch tự động hoặc ĐVCNT hoặc các kênh giao dịch khác theo quy định của Vikki Bank, phù hợp với quy định của pháp luật trong từng thời kỳ."
+                      },
+                      {
+                        "text": "Thẻ phụ phát hành cho Chủ thẻ phụ dưới 15 tuổi không được rút tiền mặt và chỉ được sử dụng để thanh toán hàng hóa, dịch vụ hợp pháp và phù hợp với phạm vi sử dụng theo thỏa thuận tại Hợp Đồng hoặc bằng văn bản giữa Vikki Bank và Chủ thẻ chính."
+                      },
+                      {
+                        "text": "Thẻ chỉ được sử dụng để thực hiện giao dịch Thẻ bằng phương tiện điện tử khi đã hoàn thành việc đối chiếu đảm bảo khớp đúng giấy tờ tùy thân và thông tin sinh trắc học của Chủ thẻ với:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Dữ liệu sinh trắc học được lưu trong bộ phận lưu trữ thông tin được mã hóa của thẻ căn cước công dân hoặc thẻ căn cước đã được xác thực chính xác là do cơ quan Công an cấp hoặc thông qua xác thực tài khoản định danh điện tử của người đó do Hệ thống định danh và xác thực điện tử tạo lập; hoặc"
+                            },
+                            {
+                              "text": "Dữ liệu sinh trắc học đã được thu thập và kiểm tra (đảm bảo sự khớp đúng giữa dữ liệu sinh trắc học của người đó với dữ liệu sinh trắc học trong bộ phận lưu trữ thông tin được mã hóa của thẻ căn cước công dân hoặc thẻ căn cước đã được xác thực chính xác là do cơ quan Công an cấp hoặc với dữ liệu sinh trắc học của người đó thông qua xác thực tài khoản định danh điện tử do Hệ thống định danh và xác thực điện tử tạo lập); hoặc"
+                            },
+                            {
+                              "text": "Dữ liệu sinh trắc học được thu thập thông qua gặp mặt trực tiếp người đó đối với trường hợp là người nước ngoài không sử dụng danh tính điện tử, người gốc Việt Nam chưa xác định được quốc tịch; hoặc"
+                            },
+                            {
+                              "text": "Dữ liệu sinh trắc học của người đó được lưu trong Cơ sở dữ liệu quốc gia về dân cư trong trường hợp sử dụng thẻ căn cước công dân không có bộ phận lưu trữ thông tin được mã hóa."
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Hạn mức sử dụng Thẻ:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Hạn mức thanh toán, hạn mức rút tiền mặt trong và ngoài lãnh thổ Việt Nam và các hạn mức khác trong việc sử dụng Thẻ: thực hiện theo quy định của Vikki Bank trong từng thời kỳ và phù hợp với quy định của pháp luật."
+                      },
+                      {
+                        "text": "Chủ thẻ được Vikki Bank xem xét cho vay theo hạn mức thấu chi trên Tài khoản thanh toán nếu Chủ thẻ đáp ứng các điều kiện, tuân thủ các quy định của Vikki Bank và pháp luật liên quan về cho vay theo hạn mức thấu chi đối với Thẻ ghi nợ. Trường hợp Chủ thẻ được Vikki Bank cấp hạn mức thấu chi trên Tài khoản thanh toán, Chủ thẻ được sử dụng Thẻ để thực hiện các giao dịch trong phạm vi hạn mức thấu chi đã được Vikki Bank cấp."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-4",
+          "title": "ĐIỀU 4. HÌNH THỨC ĐĂNG KÝ MỞ THẺ VÀ THỜI HẠN HIỆU LỰC THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Khách hàng đăng ký mở Thẻ theo 01 (một) trong các hình thức sau:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Đăng ký mở Thẻ tại quầy giao dịch Vikki Bank."
+                      },
+                      {
+                        "text": "Các kênh đăng ký khác theo quy định của Vikki Bank từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Thời hạn hiệu lực Thẻ</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Thời hạn hiệu lực Thẻ chính: Tối đa 60 tháng kể từ ngày phát hành Thẻ hoặc theo quy định của Vikki Bank trong từng thời kỳ."
+                      },
+                      {
+                        "text": "Trường hợp phát hành Thẻ cho người nước ngoài thì phải có thời hạn cư trú tại Việt Nam từ 12 tháng (360 ngày) trở lên kể từ thời điểm đề nghị phát hành thẻ và thời hạn hiệu lực của Thẻ không vượt quá thời hạn cư trú còn lại tại Việt Nam."
+                      },
+                      {
+                        "text": "Thời hạn sử dụng của Thẻ phụ sẽ phụ thuộc vào thời hạn sử dụng còn lại của Thẻ chính."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-5",
+          "title": "ĐIỀU 5. TỪ CHỐI THANH TOÁN, TẠM DỪNG GIAO DỊCH THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Thẻ bị từ chối thanh toán trong các trường hợp sau:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Chủ thẻ sử dụng Thẻ để thực hiện các giao dịch thanh toán khống tại ĐVCNT và các giao dịch thẻ bị cấm theo quy định của pháp luật."
+                      },
+                      {
+                        "text": "Thẻ hết hạn sử dụng."
+                      },
+                      {
+                        "text": "Thẻ bị khóa."
+                      },
+                      {
+                        "text": "Vikki Bank, TCTTT, TCTGTT có hợp tác với TCTTT, ĐVCNT có thể từ chối thanh toán thẻ khi có nghi ngờ về tính trung thực, mục đích giao dịch của Chủ thẻ theo quy định pháp luật về phòng, chống rửa tiền, tài trợ khủng bố hoặc khi có nghi ngờ chủ thẻ liên quan đến danh sách đen/ khủng bố hoặc giao dịch có liên quan đến phổ biến và tài trợ phổ biến vũ khí hủy diệt hàng loạt theo quy định pháp luật về phòng, chống phổ biến vũ khí hủy diệt hàng loạt."
+                      },
+                      {
+                        "text": "Số dư Tài khoản thanh toán của Chủ thẻ hoặc hạn mức thấu chi còn lại (nếu có) không đủ để thanh toán hoặc Chủ thẻ đã sử dụng hết hạn mức giao dịch trong ngày và/ hoặc hạn mức giao dịch/lần."
+                      },
+                      {
+                        "text": "Chủ thẻ vi phạm các quy định tại Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Thẻ vật lý bị lỗi chíp điện tử hoặc dải từ, Thẻ bị hư hỏng."
+                      },
+                      {
+                        "text": "Thiết bị hoặc TCTTT không kết nối thành công được với Vikki Bank."
+                      },
+                      {
+                        "text": "Chủ thẻ nhập sai số PIN."
+                      },
+                      {
+                        "text": "Thẻ giả hoặc Thẻ có liên quan đến giao dịch gian lận, giả mạo."
+                      },
+                      {
+                        "text": "Tài khoản thanh toán bị phong tỏa theo yêu cầu của Cơ quan Nhà nước có thẩm quyền."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo quy định của Vikki Bank và/ hoặc pháp luật trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Thẻ bị tạm dừng giao dịch trong các trường hợp sau:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Thẻ đã được Chủ thẻ thông báo mất, bị lộ thông tin Thẻ, PIN và/ hoặc OTP."
+                      },
+                      {
+                        "text": "Giấy tờ tùy thân, giấy tờ chứng minh thời hạn cư trú tại Việt Nam của Chủ thẻ hết hiệu lực."
+                      },
+                      {
+                        "text": "Chủ thẻ thực hiện giao dịch thẻ bằng phương tiện điện tử nhưng chưa hoàn thành điều kiện theo quy định tại điểm d khoản 1 Điều 3 Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Khi phát hiện giao dịch có dấu hiệu đáng ngờ theo quy định của pháp luật về phòng, chống rửa tiền, tài trợ khủng bố."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo quy định của Vikki Bank và/ hoặc pháp luật trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-6",
+          "title": "ĐIỀU 6. TẠM KHÓA THẺ, CHẤM DỨT SỬ DỤNG THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Tạm khóa thẻ:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Theo yêu cầu của Chủ thẻ do chưa có nhu cầu sử dụng hoặc do Chủ thẻ thông báo Thẻ bị thất lạc, mất cắp và sẽ chỉ được mở lại theo yêu cầu của Chủ thẻ và được Vikki Bank chấp thuận."
+                      },
+                      {
+                        "text": "Khi Chủ thẻ bị lộ thông tin Thẻ, Thẻ nghi ngờ gian lận, rủi ro đến Chủ thẻ và được mở lại khi được xác minh, giải quyết hoàn tất."
+                      },
+                      {
+                        "text": "Tạm khóa và mở lại Thẻ theo yêu cầu bằng văn bản của Cơ quan Nhà nước có thẩm quyền."
+                      },
+                      {
+                        "text": "Các trường hợp khóa và mở thẻ theo quy định của Vikki Bank ban hành từng thời kỳ và quy định của pháp luật."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Chấm dứt sử dụng Thẻ:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Khi Chủ thẻ yêu cầu chấm dứt Thẻ và đảm bảo hoàn tất các nghĩa vụ thanh toán các khoản nợ với Vikki Bank nhưng không giới hạn các phí chấm dứt và các khoản thu khác mà Chủ thẻ hoàn thành nghĩa vụ thanh toán."
+                      },
+                      {
+                        "text": "Chủ thẻ vi phạm Hợp Đồng đã ký kết với Vikki Bank, vi phạm quy định Pháp luật về sử dụng Thẻ hoặc sử dụng Thẻ giả, Thẻ bị nghi ngờ là sử dụng Thẻ để thanh toán các giao dịch gian lận, lừa đảo, tài trợ khủng bố, rửa tiền, phổ biến và tài trợ phổ biến vũ khí hủy diệt hàng loạt, bị cấm hoặc các hoạt động bất hợp pháp khác theo quy định pháp luật."
+                      },
+                      {
+                        "text": "Vikki Bank phát hiện các tài liệu, thông tin, dữ liệu do Chủ thẻ cung cấp khi đề nghị mở Thẻ và trong quá trình sử dụng Thẻ là giả mạo, không chính xác, không trung thực và sai sự thật."
+                      },
+                      {
+                        "text": "Thẻ sử dụng trái phép."
+                      },
+                      {
+                        "text": "Chủ thẻ mạo danh người khác để phát hành Thẻ."
+                      },
+                      {
+                        "text": "Chủ thẻ chết, mất tích hoặc bị tuyên bố chết, mất tích."
+                      },
+                      {
+                        "text": "Phục vụ công tác điều tra, xử lý tội phạm theo quy định của pháp luật."
+                      },
+                      {
+                        "text": "Theo yêu cầu của cơ quan Nhà nước có thẩm quyền."
+                      },
+                      {
+                        "text": "Thẻ giả."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo quy định của Vikki Bank và/ hoặc pháp luật trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-7",
+          "title": "ĐIỀU 7. XỬ LÝ TRA SOÁT, KHIẾU NẠI, TRANH CHẤP TRONG QUÁ TRÌNH SỬ DỤNG THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Khi phát hiện có sai sót hoặc nghi ngờ có sai sót về giao dịch Thẻ, Chủ thẻ có quyền thực hiện gửi đề nghị tra soát/ khiếu nại tới Vikki Bank trong vòng 60 ngày kể từ ngày phát sinh giao dịch đề nghị tra soát, khiếu nại. Quá thời hạn trên, Vikki Bank không chịu trách nhiệm xử lý tra soát khiếu nại và Chủ thẻ sẽ phải chịu hoàn toàn thiệt hại phát sinh do khiếu nại chậm."
+                },
+                {
+                  "text": "Chủ thẻ đề nghị tra soát, khiếu nại theo một trong các hình thức sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Qua tổng đài điện thoại theo số 19006608 và các số điện thoại khác theo quy định của Vikki Bank từng thời kỳ - Trung tâm dịch vụ Khách hàng 24/7 của Vikki Bank (có ghi âm, hoạt động 24/24 giờ trong ngày và 7/7 ngày trong tuần) hoặc gửi e-mail: 19006608@vikkibank.vn; Vikki Bank được quyền yêu cầu Chủ thẻ cung cấp các thông tin cần thiết để xác minh Chủ thẻ như: Số giấy tờ tùy thân đăng ký tại Vikki Bank,… nhằm xác thực yêu cầu đề nghị tra soát, khiếu nại của Chủ thẻ; hoặc"
+                      },
+                      {
+                        "text": "Đến trực tiếp các Điểm giao dịch hợp pháp của Vikki Bank trên toàn quốc; hoặc"
+                      },
+                      {
+                        "text": "Các phương thức khác do Vikki Bank triển khai trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Yêu cầu tra soát khiếu nại của Chủ thẻ phải được thực hiện bằng mẫu giấy đề nghị tra soát, khiếu nại do Vikki Bank ban hành và cung cấp các hóa đơn giao dịch hay bất kỳ thông tin, chứng từ có liên quan để chứng minh nội dung khiếu nại theo yêu cầu của Vikki Bank. Đối với các trường hợp liên hệ qua tổng đài đề nghị tra soát, khiếu nại với lý do gian lận hoặc không thực hiện giao dịch thì Chủ thẻ phải bổ sung các chứng từ xác minh, chứng minh khiếu nại bao gồm nhưng không giới hạn giấy đề nghị tra soát, khiếu nại (theo yêu cầu của TCTQT, tổ chức thẻ Napas) cho Vikki Bank trong vòng 60 ngày kể từ ngày phát sinh giao dịch yêu cầu tra soát, khiếu nại."
+                },
+                {
+                  "text": "Vikki Bank sẽ thực hiện ngay các biện pháp để khóa Thẻ khi Chủ thẻ đề nghị do nghi ngờ gian lận hoặc tổn thất. Trong trường hợp Chủ thẻ không đồng ý khóa Thẻ, Chủ thẻ phải chịu mọi trách nhiệm và/ hoặc bồi thường cho Vikki Bank hoặc bên thứ ba (nếu có) khi phát sinh thiệt hại (bao gồm cả thiệt hại về tài chính) do việc không khóa Thẻ gây ra."
+                },
+                {
+                  "text": "Vikki Bank được quyền từ chối các khiếu nại của Chủ thẻ đối với tất cả các Giao dịch Thẻ có giá trị nhỏ hơn 10 Đô la Mỹ (USD) hoặc tương đương. Riêng loại hình du lịch và giải trí, Vikki Bank được quyền từ chối các khiếu nại của Chủ thẻ đối với các Giao dịch Thẻ có giá trị nhỏ hơn 25 Đô la Mỹ (USD) hoặc tương đương tại các ĐVCNT thuộc loại hình này theo quy định của TCTQT (ví dụ: hàng không, dịch vụ thuê xe, đi tàu biển, đi tàu hỏa, khách sạn, nhà nghỉ, nhà hàng, đại lý du lịch,…)."
+                },
+                {
+                  "text": "Nếu Thẻ phát sinh quá 15 (mười lăm) giao dịch được khiếu nại của Chủ thẻ vì lý do giả mạo/ gian lận (đối với Thẻ Mastercard) hoặc quá 35 (ba mươi lăm) giao dịch (đối với Thẻ Visa) hoặc quá số giao dịch mà TCTQT quy định trong từng thời kỳ (không phân biệt ĐVCNT và thời gian sử dụng Thẻ), thì Vikki Bank được quyền từ chối xử lý các khiếu nại giả mạo/ gian lận này."
+                },
+                {
+                  "text": "Trường hợp Chủ thẻ ủy quyền cho người khác thay Chủ thẻ đề nghị tra soát, khiếu nại, người được ủy quyền phải xuất trình văn bản ủy quyền hợp lệ của Chủ thẻ theo quy định của pháp luật về ủy quyền."
+                },
+                {
+                  "text": "<b>Thời hạn xử lý đề nghị tra soát, khiếu nại:</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Tùy thuộc vào từng loại Thẻ và vào từng loại hình giao dịch Thẻ mà Chủ thẻ thực hiện, Vikki Bank sẽ giải quyết và trả lời các đề nghị tra soát, khiếu nại của Chủ thẻ trong thời hạn tương ứng với tính chất của từng giao dịch trên cơ sở tuân thủ thời gian xử lý tra soát, khiếu nại tối đa của pháp luật."
+                      },
+                      {
+                        "text": "Các đề nghị tra soát, khiếu nại của Chủ thẻ sẽ được Vikki Bank xử lý và thông báo kết quả tra soát, khiếu nại cho Chủ thẻ theo thời hạn sau:",
+                        "type": "table",
+                        "headerRows": [
+                          {
+                            "cells": [
+                              {
+                                "value": "Kênh giao dịch",
+                                "rowspan": 2
+                              },
+                              {
+                                "value": "Máy giao dịch tự động",
+                                "colspan": 2
+                              },
+                              {
+                                "value": "POS/ECOM",
+                                "colspan": 2
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Nội mạng"
+                              },
+                              {
+                                "value": "Ngoại mạng"
+                              },
+                              {
+                                "value": "Nội mạng"
+                              },
+                              {
+                                "value": "Ngoại mạng"
+                              }
+                            ]
+                          }
+                        ],
+                        "rows": [
+                          {
+                            "cells": [
+                              {
+                                "value": "Thời gian phản hồi kể từ ngày tiếp nhận tra soát, khiếu nại lần 1:",
+                                "colspan": 5
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Thẻ quốc tế"
+                              },
+                              {
+                                "value": "Tối đa 05 ngày làm việc",
+                                "rowspan": 2,
+                                "className": "w-150"
+                              },
+                              {
+                                "value": "Tối đa 60 ngày làm việc"
+                              },
+                              {
+                                "value": "Tối đa 10 ngày làm việc",
+                                "rowspan": 2
+                              },
+                              {
+                                "value": "Tối đa 60 ngày làm việc"
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Thẻ nội địa"
+                              },
+                              {
+                                "value": "Tối đa 07 ngày làm việc"
+                              },
+                              {
+                                "value": "Tối đa 12 ngày làm việc"
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Thời gian tiếp nhận khiếu nại lần 2 kể từ ngày Vikki Bank gửi trả lời tra soát, khiếu nại lần 1 tối đa là 5 ngày làm việc.",
+                                "colspan": 5
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "<strong>Thời gian phản hồi kể từ ngày tiếp nhận khiếu nại lần 2:</strong>",
+                                "colspan": 5
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Thẻ quốc tế"
+                              },
+                              {
+                                "value": "Tối đa 10 ngày làm việc"
+                              },
+                              {
+                                "value": "Tùy trường hợp cụ thể, tối đa 180 ngày làm việc."
+                              },
+                              {
+                                "value": "Tối đa 12 ngày làm việc"
+                              },
+                              {
+                                "value": "Tùy trường hợp cụ thể, tối đa 180 ngày làm việc"
+                              }
+                            ]
+                          },
+                          {
+                            "cells": [
+                              {
+                                "value": "Thẻ nội địa"
+                              },
+                              {
+                                "value": "Tối đa 10 ngày làm việc",
+                                "colspan": 2
+                              },
+                              {
+                                "value": "Tối đa 12 ngày làm việc",
+                                "colspan": 2
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Vikki Bank thực hiện bồi hoàn cho Chủ thẻ theo thỏa thuận và quy định của pháp luật hiện hành đối với những tổn thất phát sinh không do lỗi của Chủ thẻ và/ hoặc không thuộc các trường hợp bất khả kháng quy định tại Điều 16 Điều khoản và Điều kiện này trong thời hạn tối đa 05 (năm) ngày làm việc kể từ ngày Vikki Bank thông báo kết quả tra soát, khiếu nại cho Chủ thẻ."
+                },
+                {
+                  "text": "Trường hợp Khách hàng không đồng ý với kết quả tra soát khiếu nại lần 01, Khách hàng cần thực hiện lại đề nghị tra soát khiếu nại lần 02 trong vòng 05 (năm) ngày làm việc tiếp theo từ ngày có kết quả tra soát khiếu nại lần trước đó. Nếu Chủ thẻ không gửi kết quả khiếu nại lần 02 trong khoảng thời gian trên đồng nghĩa với việc Chủ thẻ đồng ý với kết quả tra soát khiếu nại lần 1 của Vikki Bank và không có quyền yêu cầu tra soát khiếu nại lần 02."
+                },
+                {
+                  "text": "Trường hợp hết thời hạn xử lý khiếu nại theo quy định tại khoản 8 Điều này mà vẫn chưa xác định được nguyên nhân hay lỗi thuộc bên nào thì trong thời hạn 15 (mười lăm) ngày làm việc tiếp theo, Vikki Bank thỏa thuận với Chủ thẻ về phương án xử lý hoặc xem xét về phương án tạm thời bồi hoàn tổn thất cho Chủ thẻ cho đến khi có kết luận cuối cùng của cơ quan có thẩm quyền phân định rõ lỗi và trách nhiệm của các bên. Trường hợp Vikki Bank, Chủ thẻ và các bên liên quan không thỏa thuận được phương án xử lý, và/ hoặc không đồng ý với quá trình xử lý đề nghị tra soát, khiếu nại thì việc giải quyết tranh chấp được thực hiện theo quy định của pháp luật."
+                },
+                {
+                  "text": "Trường hợp vụ việc có dấu hiệu tội phạm, Vikki Bank sẽ thực hiện thông báo cho cơ quan Nhà nước có thẩm quyền theo quy định của pháp luật về tố tụng hình sự và báo cáo Ngân hàng Nhà nước, đồng thời thông báo bằng văn bản cho Chủ thẻ biết về tình trạng xử lý đề nghị tra soát, khiếu nại. Trong trường hợp cơ quan nhà nước có thẩm quyền thông báo kết quả giải quyết không có yếu tố tội phạm, trong vòng 15 (mười lăm) ngày làm việc kể từ ngày có kết luận của cơ quan nhà nước có thẩm quyền, Vikki Bank thỏa thuận với Chủ thẻ về phương án xử lý kết quả tra soát, khiếu nại."
+                },
+                {
+                  "text": "Trường hợp Vikki Bank, Chủ thẻ và các bên liên quan (nếu có) không thỏa thuận được và/ hoặc không đồng ý với quá trình xử lý đề nghị tra soát, khiếu nại thì việc giải quyết tranh chấp được thực hiện theo quy định của pháp luật."
+                },
+                {
+                  "text": "Chủ thẻ phải hoàn toàn chịu trách nhiệm trong các trường hợp sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Đối với các giao dịch và chứng từ trong giao dịch điện tử bằng Thẻ Vikki Bank có sử dụng PIN/ OTP/ chữ ký/ không chữ ký/ chữ ký không đúng với chữ ký đã đăng ký thực hiện tại bất kỳ máy giao dịch tự động và ĐVCNT."
+                      },
+                      {
+                        "text": "Thẻ bị lợi dụng, lừa đảo khi sử dụng dịch vụ thanh toán tài khoản do lỗi của Chủ thẻ."
+                      },
+                      {
+                        "text": "Giao dịch nhầm lẫn, sai sót do chính Chủ thẻ thực hiện."
+                      },
+                      {
+                        "text": "Các giao dịch Thẻ không tiếp xúc phát sinh ngoài ý muốn của Chủ thẻ nếu Chủ thẻ không thực hiện hoặc thực hiện không đúng và/ hoặc không đầy đủ các biện pháp bảo vệ an toàn giao dịch Thẻ, bảo mật thông tin Thẻ do Vikki Bank hướng dẫn."
+                      },
+                      {
+                        "text": "Các giao dịch nếu Vikki Bank cung cấp được bằng chứng về việc Thẻ của Chủ thẻ đã thực hiện giao dịch mà không cần chữ ký/ PIN/ OTP."
+                      },
+                      {
+                        "text": "Một phần hoặc toàn bộ giá trị dịch vụ, các loại thuế và phí liên quan theo quy định của từng ĐVCNT nếu Chủ thẻ sử dụng Thẻ để đặt trước cho các dịch vụ nhưng không sử dụng dịch vụ đó và không thông báo hủy dịch vụ trong thời hạn quy định của ĐVCNT."
+                      },
+                      {
+                        "text": "Chịu mọi tổn thất về tài chính đối với các giao dịch Thẻ Chip mà Chủ thẻ cho rằng bị giả mạo."
+                      },
+                      {
+                        "text": "Các giao dịch Thẻ do Chủ thẻ vi phạm các quy định sử dụng Thẻ/ Tài khoản thanh toán, quy định về an toàn, bảo mật thông tin Thẻ/ Tài khoản thanh toán, hoặc do Chủ thẻ cho người khác thuê/ mượn Thẻ/ Tài khoản thanh toán theo quy định Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo quy định của Vikki Bank trong từng thời kỳ và quy định của pháp luật."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-8",
+          "title": "ĐIỀU 8. XỬ LÝ TRONG TRƯỜNG HỢP MẤT THẺ HOẶC LỘ THÔNG TIN THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Chủ thẻ phải thông báo ngay cho Vikki Bank khi Thẻ bị mất, thất lạc, nghi ngờ bị lợi dụng hoặc bị lộ thông tin Thẻ theo các phương thức quy định tại khoản 2 Điều 7 Điều khoản và Điều kiện này. Vikki Bank sẽ thực hiện ngay việc khóa Thẻ khi nhận được thông báo của Chủ thẻ và thông báo cho Chủ thẻ biết về việc khóa Thẻ đồng thời phối hợp với các Bên liên quan (nếu có) để thực hiện các biện pháp nghiệp vụ cần thiết khác nhằm ngăn chặn các thiệt hại có thể xảy ra. Vikki Bank sẽ chịu trách nhiệm với toàn bộ tổn thất tài chính phát sinh đối với Chủ thẻ nếu sau thời điểm khóa Thẻ mà Thẻ vẫn còn phát sinh giao dịch."
+                },
+                {
+                  "text": "Chủ Thẻ phải cam kết thực hiện các nội dung sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Chịu trách nhiệm về tất cả những giao dịch bằng Thẻ đã được thực hiện trước khi Vikki Bank khóa Thẻ khi Vikki Bank nhận được thông báo về việc Thẻ bị mất cắp, bị thất lạc hoặc việc sử dụng Thẻ và/ hoặc sử dụng thông tin trên Thẻ trái phép bao gồm nhưng không giới hạn các giao dịch lừa đảo và/ hoặc chữ ký giả mạo bởi bất kỳ bên thứ ba nào khác. Ngoài ra, Chủ thẻ chịu trách nhiệm trong trường hợp giao dịch bằng Thẻ được thực hiện sau khi Vikki Bank tư vấn khoá Thẻ/ đổi PIN/ cấp lại Thẻ nhưng Chủ thẻ không đồng ý thực hiện hoặc chưa thực hiện khóa Thẻ."
+                      },
+                      {
+                        "text": "Cung cấp ngay lập tức bất kỳ thông tin hay bằng chứng, bao gồm các thông tin về thời gian bị mất Thẻ, địa điểm bị mất Thẻ, các giao dịch thực hiện cuối cùng và các thông tin khác theo yêu cầu hợp lý của Vikki Bank để hỗ trợ cho việc điều tra về lạm dụng Thẻ."
+                      },
+                      {
+                        "text": "Thông báo cho Vikki Bank và đề nghị cấp lại Thẻ bằng văn bản hoặc hoặc bất kỳ phương thức nào khác được Vikki Bank triển khai từng thời kỳ để được cấp lại Thẻ. Phí làm lại Thẻ mới và chi phí có liên quan khác (nếu có) có thể được ghi nợ lên Tài khoản thanh toán của Chủ thẻ. Nếu Chủ thẻ tìm lại hoặc thu hồi được Thẻ bị mất, bị lộ PIN và/ hoặc mã CVV/CVC (mà Chủ thẻ đã thông báo cho Vikki Bank), Chủ thẻ không được sử dụng Thẻ này mà phải cắt đôi huỷ Thẻ để đảm bảo an toàn, tránh phát sinh rủi ro nếu có. Vikki Bank sẽ không chịu bất kỳ trách nhiệm phát sinh từ và/ hoặc liên quan nếu Chủ thẻ không thực hiện đúng theo quy định này."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Trường hợp Thẻ cũ bị mất, Chủ thẻ vẫn phải có trách nhiệm thông báo và chịu các trách nhiệm phát sinh theo quy định tại khoản 2 Điều này."
+                },
+                {
+                  "text": "Thời hạn hoàn thành việc xử lý và thông báo kết quả cho Chủ thẻ không quá 05 ngày làm việc đối với Thẻ có BIN do Ngân hàng Nhà nước cấp hoặc 10 ngày làm việc đối với Thẻ có BIN do TCTQT cấp kể từ ngày nhận được thông báo của Chủ thẻ về việc mất Thẻ hoặc lộ thông tin Thẻ."
+                },
+                {
+                  "text": "Chủ thẻ phải chịu trách nhiệm đối với những giao dịch phát sinh trước thời điểm được Vikki Bank khóa Thẻ theo thông báo/đề nghị của Chủ Thẻ."
+                },
+                {
+                  "text": "Trong trường hợp thẻ bị lợi dụng, gây ra thiệt hại, Vikki Bank và chủ thẻ phân định trách nhiệm và thương lượng cách xử lý hậu quả. Trường hợp hai bên không thống nhất thì việc xử lý được thực hiện theo quy định của pháp luật."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-9",
+          "title": "ĐIỀU 9. CUNG CẤP THÔNG TIN VỀ THẺ VÀ HOÀN TRẢ SỐ TIỀN TRÊN THẺ KHI CHƯA SỬ DỤNG HẾT",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Tất cả các thông tin về Thẻ (số dư tài khoản, lịch sử giao dịch thẻ, các thông tin cần thiết khác...), thông báo của Vikki Bank đến Chủ thẻ sẽ được Vikki Bank cập nhật đến Chủ thẻ tại các điểm giao dịch của Vikki Bank và/ hoặc trang thông tin điện tử của Vikki Bank (website: vikkibank.vn) và theo hình thức liên lạc đã được Chủ thẻ đăng ký với Vikki Bank."
+                },
+                {
+                  "text": "Vikki Bank thực hiện hoàn trả lại số tiền trên Thẻ chưa sử dụng hết của Thẻ vào Tài khoản thanh toán của Chủ thẻ (sau khi trừ đi số tiền mà Vikki Bank thu nợ gốc, lãi, phí, thu số tiền sử dụng quá hạn mức và các khoản nợ khác của Chủ thẻ (nếu có) để hoàn tất nghĩa vụ thanh toán cho Vikki Bank) trong trường hợp:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Theo yêu cầu từ Chủ thẻ muốn đóng Tài khoản thanh toán và không có nhu cầu sử dụng Thẻ nữa."
+                      },
+                      {
+                        "text": "Theo yêu cầu từ người được thừa kế, đại diện thừa kế theo quy định của pháp luật của Chủ thẻ trong trường hợp thu hồi Thẻ và chấm dứt sử dụng Thẻ khi Chủ thẻ chết, mất tích hoặc bị tuyên bố chết, mất tích."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-10",
+          "title": "ĐIỀU 10. QUẢN LÝ THẺ, THÔNG TIN LIÊN QUAN ĐẾN THẺ, MẬT KHẨU, SỐ PIN",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Chủ thẻ chịu trách nhiệm thực hiện các biện pháp an toàn, bảo mật thông tin trong quá trình sử dụng Thẻ:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Phải thay đổi PIN ngay sau khi nhận được Thẻ từ Vikki Bank để sử dụng Thẻ vật lý và chịu trách nhiệm liên quan đến việc bảo mật PIN đồng thời cam kết không tiết lộ mã PIN cho bất kỳ đối tượng nào trong bất kỳ trường hợp nào."
+                      },
+                      {
+                        "text": "Bảo quản Thẻ, không được chuyển nhượng/ cho thuê/ cho mượn Thẻ hoặc đưa Thẻ cho người khác sử dụng."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Chủ thẻ chịu trách nhiệm bảo mật và là người duy nhất được sử dụng Thẻ, PIN, CVV/CVC và/ hoặc mã OTP kể từ thời điểm được cung cấp, thiết lập, cho dù Chủ thẻ có nhu cầu kích hoạt Thẻ hay không. Bất kỳ sự sử dụng Thẻ để thực hiện giao dịch Thẻ với PIN và/ hoặc mã OTP do Vikki Bank cấp, dù là do chính Chủ thẻ thực hiện hay bất kỳ người nào khác đều được xem là do chính Chủ thẻ thực hiện."
+                },
+                {
+                  "text": "Cung cấp các thông tin về tất cả giao dịch Thẻ, thiệt hại và bồi thường thiệt hại cho Vikki Bank và/ hoặc bên thứ ba (nếu có) đối với các giao dịch Thẻ, nếu:",
+                  "children": {
+                    "type": "list",
+                    "style": "roman",
+                    "items": [
+                      {
+                        "text": "Phát sinh từ việc Chủ thẻ gian lận hoặc làm trái các nội dung đã thỏa thuận với Vikki Bank tại Điều khoản và Điều kiện này trong quá trình sử dụng Thẻ hoặc bất cẩn trong việc quản lý, sử dụng Thẻ, PIN, mã OTP kể cả trong trường hợp Chủ thẻ để cho bên thứ ba sử dụng Thẻ, PIN, mã OTP;"
+                      },
+                      {
+                        "text": "Phát sinh từ việc Thẻ bị lợi dụng/ sử dụng trước khi Vikki Bank có xác nhận bằng văn bản về việc xử lý theo thông báo bị mất Thẻ, bị đánh cắp Thẻ hoặc việc sử dụng Thẻ của Chủ thẻ hoặc thông tin trên Thẻ trái phép, bao gồm nhưng không giới hạn: các giao dịch Thẻ phát sinh từ việc lừa đảo và/ hoặc giả mạo chữ ký."
+                      },
+                      {
+                        "text": "Chủ thẻ không thông báo cho Vikki Bank theo quy định tại Điều này ngay sau khi Thẻ bị mất hoặc Thẻ bị đánh cắp, sử dụng bởi người khác mà không có sự chấp thuận của Chủ thẻ hoặc bị lộ PIN, mã OTP, lộ thông tin Thẻ hoặc các vấn đề bảo mật liên quan khác."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Khi Vikki Bank thông báo chấm dứt hiệu lực sử dụng Thẻ vì bất cứ lý do gì, bao gồm nhưng không giới hạn thực hiện theo yêu cầu hợp pháp của cơ quan nhà nước có thẩm quyền, thực hiện theo yêu cầu chuyên môn, kỹ thuật,…Thẻ chấm dứt hiệu lực kể từ thời điểm Vikki Bank thông báo cho Khách hàng về việc chấm dứt hiệu lực sử dụng Thẻ."
+                },
+                {
+                  "text": "Nếu Thẻ bị giữ tại máy giao dịch tự động/ ĐVCNT của các ngân hàng khác, Chủ thẻ phải làm thủ tục thay đổi/ tái cấp Thẻ và số PIN. Chủ thẻ thực hiện cấp lại PIN điện tử khi thay Thẻ/ tái cấp Thẻ theo quy định của Vikki Bank triển khai trong từng thời kỳ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-11",
+          "title": "ĐIỀU 11. QUY ĐỊNH VỀ VIỆC THAY THẾ THẺ/TÁI CẤP THẺ/CHUYỂN ĐỔI THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank sẽ xem xét và quyết định việc cấp lại Thẻ trong trường hợp Chủ thẻ đề nghị tái cấp Thẻ hoặc Vikki Bank chủ động tái cấp trước ngày hết hạn bằng văn bản cho Vikki Bank. Trong thời gian tái cấp Thẻ, Chủ thẻ có thể sử dụng Thẻ cũ chưa hết hạn cho đến khi nhận Thẻ mới."
+                },
+                {
+                  "text": "Vikki Bank khi thay thế Thẻ/ tái cấp Thẻ/ chuyển đổi Thẻ, Vikki Bank sẽ không thu hồi lại Thẻ vật lý cũ. Chủ thẻ có nghĩa vụ tự hủy Thẻ vật lý cũ và thực hiện các trách nhiệm sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Khi Chủ thẻ yêu cầu Vikki Bank thay thế Thẻ/ tái cấp Thẻ/ chuyển đổi Thẻ và được Vikki Bank đồng ý cấp Thẻ mới. Chủ thẻ chịu trách nhiệm đối với tất cả các giao dịch liên quan đến Thẻ trong trường hợp Chủ thẻ không chủ động hủy Thẻ."
+                      },
+                      {
+                        "text": "Việc thay thế Thẻ/ tái cấp Thẻ/ chuyển đổi Thẻ sẽ không ảnh hưởng đến các trách nhiệm của Chủ thẻ được quy định trong Điều khoản và Điều kiện này."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-12",
+          "title": "ĐIỀU 12. QUY ĐỊNH VỀ PHÍ, MỨC PHÍ DỊCH VỤ THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Khi mở Thẻ và sử dụng dịch vụ Thẻ do Vikki Bank phát hành và cung cấp, Chủ thẻ có trách nhiệm thường xuyên kiểm tra và thanh toán các loại phí sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Phí phát hành Thẻ: là phí Vikki Bank thu khi Chủ thẻ yêu cầu phát hành Thẻ."
+                      },
+                      {
+                        "text": "Phí thường niên Thẻ: là phí Vikki Bank thu định kỳ hàng năm. Nếu Tài khoản thanh toán không đủ để thu phí, Vikki Bank sẽ ghi nhận và truy thu ngay khi Tài khoản thanh toán có phát sinh số dư cho đến khi Vikki Bank thu đủ Phí thường niên Thẻ."
+                      },
+                      {
+                        "text": "Phí giao dịch, phí dịch vụ khác: là các loại phí sẽ được Vikki Bank thu khi Chủ thẻ có phát sinh yêu cầu sử dụng dịch vụ do Vikki Bank cung cấp."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Biểu phí, mức phí cụ thể: thực hiện theo quy định của Vikki Bank trong từng thời kỳ, phù hợp với quy định Pháp luật. Tất cả các khoản phí Vikki Bank thu từ Chủ thẻ theo quy định tại khoản 1 Điều này và niêm yết công khai tại Điểm giao dịch của Vikki Bank trên toàn hệ thống và trên trang thông tin điện tử của Vikki Bank (website: vikkibank.vn)."
+                },
+                {
+                  "text": "Vikki Bank sẽ cập nhật và thông báo đến Chủ thẻ về bất cứ thay đổi hoặc điều chỉnh có liên quan đến biểu phí, mức phí tối thiểu là 07 (bảy) ngày trước khi áp dụng thông qua một trong các phương thức quy định tại khoản 1 Điều 17 Điều khoản và Điều kiện này."
+                },
+                {
+                  "text": "Căn cứ vào dịch vụ mà Chủ thẻ đã đăng ký và sử dụng, Vikki Bank được quyền ghi nợ và thu phí theo Biểu phí dịch vụ Thẻ của Vikki Bank ban hành tùy từng thời điểm. Chủ thẻ có quyền quyết định tiếp tục hoặc chấm dứt việc sử dụng Thẻ khi có sự thay đổi trên."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-13",
+          "title": "ĐIỀU 13. QUYỀN VÀ NGHĨA VỤ CỦA CHỦ THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Quyền của Chủ thẻ</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Được sử dụng Thẻ để thực hiện các giao dịch trong phạm vi sử dụng Thẻ và được Vikki Bank xem xét cho vay theo hạn mức thấu chi trên Tài khoản thanh toán gắn với Thẻ ghi nợ."
+                      },
+                      {
+                        "text": "Được hưởng các ưu đãi dành cho Chủ thẻ do Vikki Bank và/ hoặc Đối tác liên kết phát hành Thẻ của Vikki Bank cung cấp trong từng thời kỳ."
+                      },
+                      {
+                        "text": "Được yêu cầu Vikki Bank tra soát, khiếu nại khi Chủ thẻ phát hiện có sai sót và/ hoặc nghi ngờ có sai sót về giao dịch Thẻ."
+                      },
+                      {
+                        "text": "Yêu cầu phát hành lại Thẻ, cấp lại PIN và các yêu cầu liên quan đến việc phát hành và sử dụng Thẻ theo quy định của Vikki Bank."
+                      },
+                      {
+                        "text": "Được lựa chọn sử dụng các dịch vụ liên quan do Vikki Bank cung cấp và được yêu cầu Vikki Bank cung cấp các thông tin về giao dịch Thẻ, các thông tin cần thiết khác liên quan đến Thẻ."
+                      },
+                      {
+                        "text": "Được đề nghị khóa Thẻ, chấm dứt việc sử dụng Thẻ."
+                      },
+                      {
+                        "text": "Được hoàn trả lại số dư Thẻ khi chưa sử dụng hết theo quy định tại khoản 2, Điều 9 của Điều Khoản và Điều Kiện này."
+                      },
+                      {
+                        "text": "Các quyền khác theo quy định của Pháp luật."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Nghĩa vụ của Chủ thẻ</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Các hành vi Chủ thẻ không được thực hiện trong quá trình mở và sử dụng Thẻ:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Làm, sử dụng, chuyển nhượng và lưu hành Thẻ giả."
+                            },
+                            {
+                              "text": "Thực hiện, tổ chức thực hiện hoặc tạo điều kiện để người khác thực hiện các hành vi giao dịch Thẻ gian lận, giả mạo; giao dịch thanh toán khống tại ĐVCNT (không phát sinh việc mua bán hàng hóa và cung ứng dịch vụ)."
+                            },
+                            {
+                              "text": "Cung cấp các thông tin gian lận, không chính xác khi thực hiện mở và sử dụng Thẻ;"
+                            },
+                            {
+                              "text": "Giả mạo Giấy tờ tùy thân để định danh trực tuyến hoặc có hành vi chỉnh sửa làm thay đổi nội dung, hình ảnh trên giấy tờ tùy thân lúc thực hiện định danh trực tuyến;"
+                            },
+                            {
+                              "text": "Lấy cắp, thông đồng để lấy cắp thông tin Thẻ; tiết lộ và cung cấp thông tin Thẻ, Chủ thẻ; và giao dịch Thẻ không đúng quy định của pháp luật."
+                            },
+                            {
+                              "text": "Xâm nhập hoặc tìm cách xâm nhập trái phép, phá hủy chương trình hoặc cơ sở dữ liệu của hệ thống phát hành, thanh toán Thẻ, chuyển mạch Thẻ, bù trừ điện tử giao dịch Thẻ."
+                            },
+                            {
+                              "text": "Thực hiện, tổ chức thực hiện hoặc tạo điều kiện để người khác sử dụng Thẻ để thực hiện các giao dịch gian lận, giả mạo, các giao dịch khống tại ĐVCNT, các giao dịch vi phạm pháp luật về phòng, chống rửa tiền, chống tài trợ khủng bố và cấm vận và/ hoặc các giao dịch vi phạm pháp luật hiện hành khác."
+                            },
+                            {
+                              "text": "Mua, bán, thuê, cho thuê Thẻ hoặc thông tin Thẻ, mở hộ Thẻ."
+                            },
+                            {
+                              "text": "Các hành vi vi phạm pháp luật khác và quy định của Vikki Bank trong từng thời kỳ."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Chủ thẻ đồng ý rằng, khi tham gia các giao dịch thanh toán bằng Thẻ, tùy thuộc vào từng giao dịch Thẻ và yêu cầu/ quy định của Vikki Bank và/ hoặc của ĐVCNT phù hợp với quy định của pháp luật và quy định của các Tổ chức hỗ trợ hoạt động Thẻ, giao dịch thẻ có thể được xác thực bằng các phương thức bao gồm:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Thẻ và Chủ thẻ phải hiện diện tại ĐVCNT; hoặc"
+                            },
+                            {
+                              "text": "Chữ ký của Chủ thẻ trên hóa đơn giao dịch Thẻ; hoặc"
+                            },
+                            {
+                              "text": "Nhập PIN khi giao dịch; hoặc"
+                            },
+                            {
+                              "text": "Các thông tin Thẻ (Tên Thẻ/ số Thẻ/ thời hạn hiệu lực Thẻ/ mã CVV/ CVC….); hoặc"
+                            },
+                            {
+                              "text": "Bất kỳ phương thức xác thực nào khác mà Chủ thẻ đăng ký với Vikki Bank; hoặc"
+                            },
+                            {
+                              "text": "Bất kỳ phương thức xác thực nào khác mà Vikki Bank, Tổ chức hỗ trợ hoạt động Thẻ, TCTVN, TCTQT và ĐVCNT quy định."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Chủ thẻ hiểu và đồng ý rằng, khi Chủ thẻ thực hiện các giao dịch thanh toán Thẻ mà Thẻ và/ hoặc Chủ thẻ không hiện diện trực tiếp tại ĐVCNT (Ví dụ: giao dịch thanh toán trên internet/ trực tuyến….) và/ hoặc khi Chủ thẻ không bảo mật các thông tin về Thẻ thì Thẻ có thể bị lợi dụng cho các giao dịch thanh toán. Bằng việc ký/ xác nhận vào Hợp Đồng, Chủ thẻ xác nhận và chấp nhận hoàn toàn đối với các rủi ro liên quan đến các giao dịch này."
+                      },
+                      {
+                        "text": "Có trách nhiệm hợp tác và cung cấp đầy đủ và chính xác các thông tin cần thiết theo yêu cầu của Vikki Bank/ Đối tác liên kết phát hành Thẻ và các tổ chức, cá nhân được phép khác theo quy định của pháp luật khi đề nghị phát hành Thẻ và trong quá trình sử dụng Thẻ. Chủ thẻ phải chịu trách nhiệm về tính trung thực của các thông tin mà mình cung cấp."
+                      },
+                      {
+                        "text": "Chủ thẻ phải cung cấp cho Vikki Bank hóa đơn giao dịch hay bất cứ thông tin liên quan để giải thích, chứng minh cho các nội dung của khiếu nại theo yêu cầu của Vikki Bank. Chủ thẻ cần lưu giữ và cung cấp được bằng chứng đã huỷ dịch vụ thanh toán định kỳ trong trường hợp Chủ thẻ ngừng việc sử dụng Thẻ để chi tiêu qua mạng Internet/ các ứng dụng trên thiết bị di động với các giao dịch mang tính chất định kỳ (hàng tháng, hàng quý, hàng năm…). Việc xử lý tra soát, khiếu nại sẽ được tiến hành theo các quy định của Vikki Bank, Ngân hàng Nhà nước, Tổ chức chuyển mạch Thẻ, TCTQT về xử lý tra soát, khiếu nại."
+                      },
+                      {
+                        "text": "Chủ thẻ phải chịu trách nhiệm bảo đảm an toàn, bảo mật trong quá trình sử dụng Thẻ để quản lý Thẻ, thông tin liên quan đến Thẻ, mật khẩu, PIN theo quy định tại Điều 10 Điều khoản và Điều kiện này. Đồng thời, phải chịu trách nhiệm về mọi tổn thất tài chính nếu không thực hiện hoặc thực hiện không đúng các quy định tại Điều 10 Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Thông báo ngay cho Vikki Bank bằng văn bản khi có những thay đổi của Chủ thẻ về các thông tin như: địa chỉ liên lạc/ cư trú/ nơi làm việc/ điện thoại di động/ email… mà Chủ thẻ sử dụng để nhận dịch vụ và chịu mọi thiệt hại phát sinh nếu có thay đổi mà không thông báo hoặc thông báo chậm trễ cho Vikki Bank."
+                      },
+                      {
+                        "text": "Nếu Chủ thẻ sử dụng Thẻ để đặt trước các dịch vụ nhưng không sử dụng dịch vụ và không/ có thông báo hủy dịch vụ trong thời gian quy định của ĐVCNT, Chủ thẻ vẫn phải thanh toán một phần hoặc toàn bộ giá trị dịch vụ, các loại thuế, phí liên quan theo quy định của từng ĐVCNT."
+                      },
+                      {
+                        "text": "Chịu trách nhiệm giải quyết với ĐVCNT các vấn đề phát sinh đến nhận giao hàng, chất lượng, số lượng,… của dịch vụ/ hàng hóa mà Chủ thẻ thanh toán bằng Thẻ và việc này không ảnh hưởng đến việc báo nợ/ ghi nợ vào Tài khoản thanh toán, cũng như không ảnh hưởng đến nghĩa vụ thanh toán của Chủ thẻ cho Vikki Bank."
+                      },
+                      {
+                        "text": "Chịu trách nhiệm toàn bộ đối với mọi rủi ro, tranh chấp, thiệt hại phát sinh liên quan đến các giao dịch có chữ ký và/ hoặc sử dụng PIN/OTP của Chủ thẻ; các giao dịch Thẻ thực hiện thành công, các giao dịch được thực hiện thông qua Chip/ Contactless (tiếp xúc/ không tiếp xúc) và/ hoặc giao dịch chi tiêu qua mạng có sử dụng dịch vụ xác thực 3D Secured và các giao dịch khác nếu Vikki Bank cung cấp được bằng chứng về việc Thẻ đã thực hiện giao dịch."
+                      },
+                      {
+                        "text": "Để tránh phát sinh các Giao dịch Thẻ không tiếp xúc (Contactless) ngoài ý muốn, Chủ thẻ có nghĩa vụ:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Đảm bảo Thẻ Contactless luôn nằm trong tầm kiểm soát của mình;"
+                            },
+                            {
+                              "text": "Không đặt Thẻ Contactless ở cự ly gần (< 05 (năm) cm) với máy POS NFC;"
+                            },
+                            {
+                              "text": "Thực hiện các biện pháp cần thiết để ngăn ngừa các Giao dịch Thẻ không tiếp xúc (Contactless) phát sinh ngoài ý muốn khi Thẻ vẫn nằm trong dụng cụ đựng Thẻ của Chủ thẻ;"
+                            },
+                            {
+                              "text": "Trường hợp Chủ thẻ không thực hiện hoặc thực hiện không đúng, không đầy đủ các biện pháp trên dẫn đến việc phát sinh Giao dịch Thẻ không tiếp xúc (Contactless) ngoài ý muốn của Chủ thẻ, Chủ thẻ phải chịu trách nhiệm đối với các giao dịch đó."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Ký chữ ký mẫu vào ô chữ ký ở mặt sau Thẻ vật lý ngay sau khi nhận Thẻ. Mỗi lần sử dụng Thẻ để rút tiền mặt hoặc thanh toán hàng hóa dịch vụ qua máy POS, Chủ thẻ phải ký hóa đơn thanh toán giống chữ ký này trừ những giao dịch thực hiện bằng đơn đặt hàng qua thư, điện thoại, Internet hoặc các loại hình khác được sự chấp thuận của Vikki Bank mà không yêu cầu có chữ ký của Chủ thẻ."
+                      },
+                      {
+                        "text": "Khi chấm dứt sử dụng thẻ, Chủ thẻ phải nộp lại Thẻ cho Vikki Bank (trừ trường hợp chấm dứt sử dụng Thẻ phát sinh từ việc mất/ thất lạc Thẻ) và chấm dứt việc sử dụng Thẻ để thanh toán các giao dịch mua hàng hóa hay dịch vụ, kể cả các giao dịch thông qua Internet, điện thoại hoặc thư tín. Nếu Chủ thẻ đã chấm dứt sử dụng Thẻ nhưng vẫn tiếp tục sử dụng Thẻ để thanh toán hàng hóa, dịch vụ thì Chủ thẻ vẫn phải có trách nhiệm thanh toán các giao dịch trên."
+                      },
+                      {
+                        "text": "Chịu trách nhiệm toàn bộ các thiệt hại phát sinh (nếu có) đối với các giao dịch Thẻ được thực hiện do sai sót của Chủ thẻ hoặc do Chủ thẻ không thực hiện đúng các nghĩa vụ theo Hợp Đồng này (bao gồm cả Chủ thẻ chính và Chủ thẻ phụ). Trong trường hợp Thẻ bị lợi dụng, gây ra thiệt hại, Vikki Bank và Chủ thẻ xử lý theo quy định của pháp luật và quy định của Vikki Bank."
+                      },
+                      {
+                        "text": "Chịu trách nhiệm về mọi tổn thất tài chính (nếu có) do việc bị tạm khóa Thẻ/ chấm dứt sử dụng Thẻ và/ hoặc liên quan đến giao dịch/ sử dụng Thẻ. Khi ngừng dịch vụ sử dụng Thẻ để chi tiêu với các giao dịch mang tính chất định kỳ, Chủ thẻ phải giữ được bằng chứng đã hủy dịch vụ Thẻ này."
+                      },
+                      {
+                        "text": "Chủ thẻ đồng ý, không hủy ngang và chịu trách nhiệm thanh toán tất cả các giao dịch được thực hiện theo đúng quy định của Vikki Bank về quy trình thanh toán bằng Thẻ qua Internet và/ hoặc có sử dụng chữ ký, chữ ký điện tử của Chủ thẻ mà không được hủy, phủ nhận, từ chối, thay đổi, thoái thác giao dịch với bất kỳ lý do nào; cam kết chịu mọi rủi ro liên quan đến giao dịch đã được thực hiện."
+                      },
+                      {
+                        "text": "Chủ thẻ đồng ý rằng trường hợp Chủ thẻ xác nhận thông qua các phương tiện, công cụ do Vikki Bank cung cấp (như email, SMS,…) hoặc Chủ thẻ chủ động đăng ký/ sử dụng sản phẩm dịch vụ của Vikki Bank thông qua các phương tiện, công cụ này và được Vikki Bank chấp nhận thì sẽ ràng buộc trách nhiệm, nghĩa vụ của Chủ thẻ trong việc yêu cầu thay đổi hạn mức Thẻ và các yêu cầu khác trong quá trình phát hành, sử dụng Thẻ."
+                      },
+                      {
+                        "text": "Tuân thủ các quy định pháp luật về phòng, chống rửa tiền, chống tài trợ khủng bố và cấm vận. Nếu bất kỳ giao dịch nào của Thẻ bị chặn, phong tỏa, trì hoãn, từ chối hoặc hủy bỏ do có liên quan đến vi phạm các quy định này, Chủ thẻ hoàn toàn chịu trách nhiệm về các tổn thất, nghĩa vụ pháp lý, khoản phạt, chi phí hay phí tổn phát sinh, đồng thời bồi hoàn cho Vikki Bank đối với các nghĩa vụ tài chính mà Vikki Bank có thể phải thực hiện do các vi phạm này."
+                      },
+                      {
+                        "text": "Đồng ý cho Vikki Bank cung cấp các thông tin về (các) Chủ thẻ, thông tin liên quan đến Thẻ và việc sử dụng Thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của Vikki Bank và các trường hợp khác theo quy định pháp luật, theo yêu cầu của Cơ quan có thẩm quyền."
+                      },
+                      {
+                        "text": "Chấp hành các quy định, hướng dẫn của Vikki Bank liên quan đến việc quản lý, sử dụng Thẻ và/ hoặc các dịch vụ gia tăng đã đăng ký."
+                      },
+                      {
+                        "text": "Hợp tác với Vikki Bank trong quá trình điều tra các giao dịch gian lận phát sinh liên quan đến Thẻ bằng cách cung cấp các thông tin liên quan đến Thẻ, thông tin giấy tờ tùy thân, thông tin liên quan đến quá trình sử dụng Thẻ, thông tin về người thân của Chủ thẻ,... theo yêu cầu của Vikki Bank."
+                      },
+                      {
+                        "text": "Trong trường hợp Chủ thẻ yêu cầu Vikki Bank hỗ trợ giao dịch (xác nhận tình trạng Thẻ, thông tin giao dịch, hạn mức khả dụng…) hoặc yêu cầu Vikki Bank thực hiện các thao tác hỗ trợ (cấp phép giao dịch, kích hoạt Thẻ,…) bằng cuộc gọi điện thoại vào tổng đài Dịch vụ Khách hàng 19006608 và các số điện thoại khác theo quy định của Vikki Bank từng thời kỳ hoặc gửi email: 19006608@vikkibank.vn thì Chủ thẻ đồng ý rằng:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "Thông tin định danh Chủ thẻ được Vikki Bank xác định thông qua số điện thoại của Chủ thẻ đã đăng ký với Vikki Bank và các câu hỏi định danh theo quy định của Vikki Bank từng thời kỳ."
+                            },
+                            {
+                              "text": "Tùy vào đánh giá của Vikki Bank trên cơ sở các thông tin định danh Chủ thẻ cung cấp và nhằm hạn chế các rủi ro cho Chủ thẻ, Vikki Bank có quyền quyết định việc thực hiện hoặc không thực hiện việc hỗ trợ giao dịch, thao tác hỗ trợ cho Chủ thẻ."
+                            },
+                            {
+                              "text": "Trong một số trường hợp đặc biệt (bao gồm nhưng không giới hạn các trường hợp sau: Thẻ giả, Thẻ bị nghi ngờ giao dịch gian lận…) nhằm kịp thời hỗ trợ và đảm bảo an toàn cho Thẻ/ Chủ thẻ, Vikki Bank có quyền quyết định việc hạn chế một số tiện ích của Thẻ (khóa Thẻ, khóa chức năng giao dịch Ecom,…)."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Chủ thẻ chấp nhận các rủi ro phát sinh liên quan đến Thẻ/ Tài khoản thanh toán do việc Vikki Bank định danh, hỗ trợ giao dịch hoặc thực hiện các thao tác hỗ trợ theo quy định nêu trên. Chủ thẻ cam kết việc giao dịch bằng Thẻ ở nước ngoài đúng mục đích, hạn mức sử dụng Thẻ theo quy định quản lý ngoại hối, quy định phòng chống rửa tiền và quy định của pháp luật Việt Nam."
+                      },
+                      {
+                        "text": "Tuân thủ các quy định của Vikki Bank về hồ sơ, thủ tục, cách thức/ phương thức thực hiện khi đề nghị cung cấp các thông tin về lịch sử giao dịch Thẻ và các thông tin cần thiết khác liên quan đến Thẻ/ Tài khoản thanh toán."
+                      },
+                      {
+                        "text": "Đồng ý và thực hiện các nghĩa vụ khi Vikki Bank áp dụng biện pháp đảm bảo an toàn, bảo mật trong sử dụng Thẻ theo quy định tại Điều 15 của Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Các trách nhiệm và nghĩa vụ khác theo quy định tại Điều khoản và Điều kiện này và quy định pháp luật có liên quan."
+                      },
+                      {
+                        "text": "Tuân thủ các quy định của pháp luật, các quy định, thông báo của Vikki Bank trong từng thời kỳ và được đăng tải trên trang thông tin điện tử chính thức của Vikki Bank."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-14",
+          "title": "ĐIỀU 14. QUYỀN VÀ NGHĨA VỤ CỦA VIKKI BANK",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<b>Quyền của Vikki Bank</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Được quyền truy thu, tự động ghi nợ Tài khoản thanh toán của Chủ thẻ để thu các khoản phí, các khoản thanh toán, các nghĩa vụ tài chính khác của Chủ thẻ liên quan đến việc sử dụng Thẻ theo quy định của Vikki Bank, quy định của Ngân hàng Nhà nước và pháp luật có liên quan."
+                      },
+                      {
+                        "text": "Vikki Bank và các ĐVCNT có quyền kiểm tra chữ ký và giấy tờ tuỳ thân của Chủ thẻ khi thực hiện các giao dịch Thẻ."
+                      },
+                      {
+                        "text": "Có quyền thu thập thông tin từ các cá nhân, tổ chức khác về Chủ thẻ khi đề nghị phát hành Thẻ; và có quyền từ chối các yêu cầu không hợp lý của Chủ thẻ."
+                      },
+                      {
+                        "text": "Có quyền áp dụng các biện pháp cần thiết mà không cần thông báo trước cho Chủ thẻ (bao gồm ngăn chặn giao dịch Thẻ, từ chối giao dịch Thẻ, khóa Thẻ, tạm dừng giao dịch Thẻ, tạm ngưng/ chấm dứt việc sử dụng Thẻ, thu hồi Thẻ, hủy Thẻ theo Điều 5 và Điều 6 của Điều Khoản và Điều Kiện này)."
+                      },
+                      {
+                        "text": "Bất kỳ trường hợp nào được nêu trên áp dụng trên thực tế cũng sẽ không làm ảnh hưởng đến nghĩa vụ khác của Chủ thẻ đối với Vikki Bank được quy định trong Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Vikki Bank được quyền dựa vào bất kỳ chứng từ giao dịch liên quan đến Thẻ như là bằng chứng xác thực chứng minh rằng các giao dịch Thẻ do chính Chủ thẻ thực hiện."
+                      },
+                      {
+                        "text": "Thực hiện ghi nợ/ ghi có số tiền của các giao dịch Thẻ được ghi nhận tự động vào tài khoản thanh toán từ hệ thống của các tổ chức Thẻ, mà không phụ thuộc vào sự đồng ý của Chủ thẻ hoặc thông tin bảo mật Thẻ bị lợi dụng hoặc các trường hợp phát sinh khác mà Chủ thẻ không thông báo với Vikki Bank để thực hiện khóa Thẻ."
+                      },
+                      {
+                        "text": "Thực hiện việc phong tỏa/ tạm khóa số tiền trên Tài khoản thanh toán hoặc từ chối giao dịch/ tạm hoãn ghi có tiền vào Tài khoản thanh toán khi có giao dịch đáng ngờ hoặc nghi ngờ giao dịch ghi có bị sai sót, không hợp lệ... theo nhận định của Vikki Bank, nhằm đảm bảo an toàn cho Tài khoản thanh toán của Chủ thẻ. Thực hiện việc phong tỏa/ tạm khóa trước số tiền giao dịch và phí giao dịch khi giao dịch đã được Vikki Bank chấp thuận nhưng chưa báo nợ vào Tài khoản thanh toán."
+                      },
+                      {
+                        "text": "Vikki Bank không chịu bất kỳ trách nhiệm nào với Chủ thẻ về những giao dịch Thẻ đã thực hiện, các thiệt hại hay mất mát trong trường hợp:",
+                        "children": {
+                          "type": "list",
+                          "style": "roman",
+                          "items": [
+                            {
+                              "text": "ĐVCNT từ chối chấp nhận Thẻ mà nguyên nhân không là lỗi của Vikki Bank."
+                            },
+                            {
+                              "text": "Trục trặc, thiếu sót, hỏng hóc của hệ thống máy giao dịch tự động các ngân hàng khác và các máy móc thuộc hệ thống chấp nhận thanh toán Thẻ."
+                            },
+                            {
+                              "text": "Vikki Bank từ chối giao dịch Thẻ theo các quy định tại Điều khoản và Điều kiện này."
+                            },
+                            {
+                              "text": "Vikki Bank thực hiện chậm trễ hay không thực hiện được trách nhiệm của mình theo Điều khoản và Điều kiện này do thiên tai, sự thay đổi thời tiết, hoả hoạn, sự cố điện, sự cố viễn thông, trục trặc về máy móc, xử lý dữ liệu; hoặc bất kỳ tình huống nào nằm ngoài sự kiểm soát của Vikki Bank hay do hậu quả của sự gian lận, giả mạo."
+                            },
+                            {
+                              "text": "Lỗi của Chủ thẻ trong quá trình sử dụng Thẻ và/ hoặc do Chủ thẻ vi phạm thỏa thuận của Điều khoản và Điều kiện này vì bất cứ lý do gì."
+                            },
+                            {
+                              "text": "Chủ thẻ không chủ động hủy Thẻ cũ khi đề nghị Vikki Bank thay thế Thẻ/ tái cấp Thẻ/ chuyển đổi Thẻ/ hủy Thẻ."
+                            },
+                            {
+                              "text": "Bất kỳ hành động hoặc không hành động nào của bên thứ ba (không phải là một đại diện của Vikki Bank); mà thông qua hành động hoặc không hành động của bên thứ ba đó làm cho các dịch vụ của Vikki Bank không được cung cấp hoặc cung cấp chưa hoàn chỉnh cho Chủ thẻ."
+                            },
+                            {
+                              "text": "Bất kỳ tổn thất nào về danh dự, uy tín của Chủ thẻ trong vấn đề thu hồi Thẻ hoặc ngưng việc sử dụng Thẻ hoặc chấm dứt việc sử dụng Thẻ hoặc thu hồi nợ."
+                            },
+                            {
+                              "text": "Trường hợp Thẻ không được bảo đảm an toàn hoặc bị lộ thông tin Thẻ, PIN, OTP và các thông tin bảo mật khác của thẻ hoặc do sơ suất của Chủ thẻ làm kẻ gian lấy cắp được thông tin Thẻ."
+                            },
+                            {
+                              "text": "Thẻ không được bảo đảm an toàn, Thẻ bị lợi dụng để rút tiền mặt, chuyển khoản, thanh toán hàng hóa dịch vụ và/ hoặc các giao dịch khác trong trường hợp Thẻ bị mất cắp, lộ thông tin/ lộ PIN/ OTP hoặc thất lạc mà Chủ thẻ chưa kịp thông báo cho Vikki Bank."
+                            },
+                            {
+                              "text": "Việc giao hàng, chất lượng hàng hóa, dịch vụ và các tranh chấp phát sinh liên quan đến các giao dịch mua sắm hàng hóa, dịch vụ được thanh toán bằng Thẻ của Chủ thẻ. Tranh chấp giữa Chủ thẻ và ĐVCNT liên quan đến việc giao hàng, chất lượng dịch vụ/ hàng hóa không làm ảnh hưởng đến việc báo nợ vào Tài khoản thanh toán của Khách hàng."
+                            },
+                            {
+                              "text": "Các trường hợp khác theo quy định tại Điều khoản và Điều kiện này."
+                            }
+                          ]
+                        }
+                      },
+                      {
+                        "text": "Vikki Bank có quyền thực hiện ghi âm (các) cuộc trao đổi/ giao dịch qua điện thoại giữa Vikki Bank và Chủ thẻ để làm chứng từ đề nghị liên quan đến nghiệp vụ Thẻ từ Chủ thẻ; đồng thời là bằng chứng giải quyết tranh chấp giữa các bên (nếu có)."
+                      },
+                      {
+                        "text": "Vikki Bank có quyền (nhưng không có nghĩa vụ) chuyển đổi Thẻ Contact sang Thẻ Contactless cho Khách hàng. Trường hợp chuyển đổi/ thay thế Thẻ/ tái cấp từ Thẻ Contact sang Thẻ Contactless, Chủ thẻ phải đề nghị chuyển đổi đồng thời Thẻ chính và Thẻ phụ còn hiệu lực (nếu có) và Chủ thẻ cần đề nghị Vikki Bank thực hiện thủ tục đổi số Thẻ mới."
+                      },
+                      {
+                        "text": "Vikki Bank tự động đăng ký dịch vụ 3D Secured cho Thẻ ghi nợ quốc tế cấp mới/ tái cấp/ thay thế Thẻ (mà trước đó chưa được đăng ký 3D Secured) bằng số điện thoại di động/ Email mà Chủ thẻ đã đăng ký trên hệ thống Thẻ Vikki Bank. Bằng việc ký vào Giấy đề nghị, Khách hàng đã đồng ý việc Vikki Bank được tự động đăng ký và áp dụng phí dịch vụ 3D Secured (nếu có)."
+                      },
+                      {
+                        "text": "Khi yêu cầu giao Thẻ theo yêu cầu của Chủ thẻ được Vikki Bank chấp thuận, Vikki Bank có thể gửi cho Chủ thẻ, và sau đó là những Thẻ gia hạn hoặc Thẻ thay thế, qua đường bưu điện thông thường đến địa chỉ của Chủ thẻ đã đăng ký với Vikki Bank."
+                      },
+                      {
+                        "text": "Từ chối các yêu cầu dịch vụ, các yêu cầu cấp phép của Chủ thẻ nếu yêu cầu không phù hợp với điều kiện và quy định của Vikki Bank hoặc các trường hợp ngoài khả năng kiểm soát của Vikki Bank."
+                      },
+                      {
+                        "text": "Vikki Bank được quyền chủ động gửi các thông tin về thông báo, cảnh báo, tin tức truyền thông, quảng cáo, khuyến mãi,... khi Chủ thẻ xác nhận đồng ý nhận thông tin qua các phương thức đăng ký/ xác nhận mà Vikki Bank cung cấp (như Giấy Đề Nghị,…)."
+                      },
+                      {
+                        "text": "Vikki Bank được quyền sử dụng, cung cấp các thông tin về (các) Chủ thẻ, thông tin liên quan đến Thẻ và việc sử dụng Thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của Vikki Bank và các trường hợp theo quy định pháp luật, theo yêu cầu của Cơ quan có thẩm quyền."
+                      },
+                      {
+                        "text": "Vikki Bank không có nghĩa vụ cung cấp hóa đơn giao dịch đối với Giao Dịch Easy Payment."
+                      },
+                      {
+                        "text": "Cung cấp cho Cơ quan có thẩm quyền các thông tin về giao dịch Thẻ, tài khoản phục vụ việc tra soát, khiếu nại Thẻ theo đúng quy định của Pháp luật."
+                      },
+                      {
+                        "text": "Được quyền khóa/ thu hồi Thẻ và thay thế Thẻ đã khóa/ thu hồi bằng một Thẻ khác nhằm tăng cường tính bảo mật trong giao dịch cho Chủ thẻ theo quy định của Ngân hàng Nhà nước trong từng thời kỳ mà không cần thông báo trước cho Chủ thẻ."
+                      },
+                      {
+                        "text": "Không chịu trách nhiệm đối với các giao dịch Thẻ không tiếp xúc phát sinh do Chủ thẻ đặt Thẻ ngoài tầm kiểm soát của mình."
+                      },
+                      {
+                        "text": "Vikki Bank có quyền yêu cầu chủ Thẻ cung cấp giấy tờ, chứng từ liên quan đến các giao dịch Thẻ ra nước ngoài và thực hiện kiểm tra, lưu trữ giấy tờ, chứng từ theo quy định của pháp luật về quản lý ngoại hối, giao dịch điện tử."
+                      },
+                      {
+                        "text": "Các quyền khác theo quy định pháp luật và Điều khoản và Điều kiện này."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<b>Nghĩa vụ của Vikki Bank</b>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Tuân thủ các quy định về phát hành và thanh toán Thẻ của Ngân hàng Nhà nước Việt Nam."
+                      },
+                      {
+                        "text": "Hướng dẫn, thông báo cho Chủ thẻ về dịch vụ thẻ, thao tác sử dụng Thẻ và các rủi ro, các phương thức thủ đoạn tội phạm có thể gặp phải và cách xử lý khi gặp sự cố, những hành vi bị cấm khi sử dụng Thẻ, trách nhiệm của Chủ Thẻ khi vi phạm các quy định có liên quan của Vikki Bank trong việc quản lý và sử dụng Thẻ."
+                      },
+                      {
+                        "text": "Tôn trọng các quyền lợi của Chủ thẻ theo quy định của pháp luật và quy định của Điều khoản và Điều kiện này."
+                      },
+                      {
+                        "text": "Bảo mật thông tin của Chủ thẻ, ngoại trừ các trường hợp quy định tại Điều khoản và Điều kiện, theo yêu cầu của cơ quan Nhà nước có thẩm quyền hoặc theo quy định của pháp luật."
+                      },
+                      {
+                        "text": "Tiếp nhận thông tin tra soát, khiếu nại của Chủ thẻ, xử lý và thông báo kết quả tra soát, khiếu nại cho Chủ thẻ."
+                      },
+                      {
+                        "text": "Thực hiện việc phát hành lại Thẻ, cấp lại PIN và các yêu cầu liên quan đến việc phát hành và sử dụng Thẻ theo yêu cầu hợp pháp của Chủ thẻ."
+                      },
+                      {
+                        "text": "Cung cấp các thông tin về lịch sử giao dịch Thẻ và các thông tin cần thiết khác liên quan đến Thẻ/ Tài khoản thanh toán theo đề nghị phù hợp của Chủ thẻ theo quy định của Vikki Bank trong từng thời kỳ."
+                      },
+                      {
+                        "text": "Có trách nhiệm theo dõi, thông báo cho Khách hàng tối thiểu 30 ngày trước ngày hết hiệu lực của Giấy tờ tùy thân để để kịp thời yêu cầu Khách hàng cập nhật, bổ sung. Đồng thời Vikki Bank tạm dừng Giao dịch Thẻ với các trường hợp Giấy tờ tùy thân của Chủ thẻ hết hiệu lực."
+                      },
+                      {
+                        "text": "Các nghĩa vụ khác theo Điều khoản và Điều kiện này, thoả thuận giữa Vikki Bank và Chủ Thẻ, quy định của Vikki Bank và quy định pháp luật."
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-15",
+          "title": "ĐIỀU 15. BIỆN PHÁP ĐẢM BẢO AN TOÀN, BẢO MẬT TRONG SỬ DỤNG THẺ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Để đảm bảo an toàn, bảo mật trong quá trình mở và sử dụng Thẻ, Chủ Thẻ đồng ý và Vikki Bank xem xét đánh giá, áp dụng các biện pháp đảm bảo an toàn, bảo mật phù hợp quy định của pháp luật và quy định của Vikki Bank, bao gồm nhưng không giới hạn các biện pháp như sau:"
+            },
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank được quyền từ chối hoặc tạm dừng giao dịch thẻ bằng phương tiện điện tử khi xảy ra các trường hợp: quy định tại Điều 5 của Điều khoản và Điều kiện này."
+                },
+                {
+                  "text": "Vikki Bank được quyền thực hiện xác minh lại thông tin nhận biết Chủ thẻ và kịp thời áp dụng biện pháp theo quy định pháp luật về phòng, chống rửa tiền trong các trường hợp dưới đây:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Chủ thẻ có các dấu hiệu đáng ngờ theo quy định của Luật Phòng, chống rửa tiền;"
+                      },
+                      {
+                        "text": "Vikki Bank có cơ sở nghi ngờ tính hợp pháp, hợp lệ của tài liệu, thông tin, dữ liệu của Chủ thẻ đã thu thập khi giao kết hợp đồng phát hành và sử dụng thẻ và trong quá trình sử dụng Thẻ;"
+                      },
+                      {
+                        "text": "Thông tin của Chủ thẻ có trong danh sách nghi ngờ gian lận, lừa đảo của Hệ thống thông tin hỗ trợ quản lý, giám sát và phòng ngừa rủi ro gian lận trong hoạt động thanh toán của Ngân hàng Nhà nước hoặc danh sách khách hàng liên quan nghi ngờ gian lận, lừa đảo, vi phạm pháp luật đã được Bộ Công an và cơ quan chức năng khác cung cấp (nếu có);"
+                      },
+                      {
+                        "text": "Thông tin về Thẻ, Chủ thẻ sai lệch, không phù hợp thông tin, dữ liệu của cơ quan chức năng;"
+                      },
+                      {
+                        "text": "Trong trường hợp áp dụng các biện pháp này, Chủ thẻ cần phối hợp và cung cấp các hồ sơ, thông tin dữ liệu để Vikki Bank thực hiện xác minh nhằm đảm bảo an toàn, hạn chế rủi ro trong quá trình sử dụng Thẻ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Vikki Bank thực hiện các biện pháp đảm bảo rủi ro khác, nhằm phối hợp với cơ quan chức năng và các bên liên quan trong việc phòng, chống tội phạm liên quan đến hoạt động thẻ và việc điều tra, xử lý khi phát hiện tội phạm sử dụng thẻ theo quy định của pháp luật."
+                },
+                {
+                  "text": "Vikki Bank thực hiện việc kiểm soát việc thực hiện giao dịch thẻ ra nước ngoài đúng mục đích, hạn mức sử dụng Thẻ và lưu trữ giấy tờ, chứng từ theo quy định của Vikki Bank và quy định pháp luật."
+                },
+                {
+                  "text": "Áp dụng các biện pháp giới hạn rủi ro bao gồm nhưng không giới hạn phân hạn hạn mức, phạm vi sử dụng, các trường hợp cảnh báo, đánh giá, tạm dừng giao dịch và/ hoặc các biện pháp khác theo các tiêu chí/ quy định sản phẩm của Vikki Bank trong từng thời kỳ đối với Chủ thẻ là người chưa đủ 18 tuổi."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-16",
+          "title": "ĐIỀU 16. ĐIỀU KHOẢN BẤT KHẢ KHÁNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Sự kiện bất khả kháng là những sự kiện xảy ra một cách khách quan, không thể lường trước và không thể khắc phục được mặc dù đã áp dụng mọi biện pháp cần thiết mà khả năng cho phép, bao gồm nhưng không giới hạn ở các sự kiện như chiến tranh, hành động khủng bố, biểu tình, đình công, bạo loạn, hỏa hoạn, động đất, lũ lụt, thiếu hụt năng lượng, thiên tai, sự cố điện, sự hư hỏng/ lỗi của máy giao dịch tự động, POS; hệ thống thanh toán hoặc bất kì máy móc, thiết bị, hệ thống nào khác phục vụ cho hoạt động của Thẻ hoặc hệ thống xử lý dữ liệu hoặc hệ thống viễn thông/ internet hoặc dịch vụ trao đổi thông tin gặp sự cố, trục trặc; hành động hoặc, sự thay đổi chính sách, quy định pháp luật, hoặc theo yêu cầu của cơ quan nhà nước có thẩm quyền hoặc các sự kiện khách quan khác nằm ngoài sự kiểm soát của các bên và/ hoặc không phải do lỗi của Vikki Bank."
+                },
+                {
+                  "text": "Khi xảy ra sự kiện Bất khả kháng, Vikki Bank sẽ tạm ngưng việc thực hiện Hợp Đồng này và thông báo cho Chủ thẻ theo như quy định tại  Khoản 1 Điều 14 Điều khoản và Điều kiện này và không phát sinh trách nhiệm bồi thường đối với Chủ thẻ, bên thứ ba."
+                },
+                {
+                  "text": "Sự kiện bất khả kháng không là cơ sở để miễn trừ trách nhiệm, nghĩa vụ của Chủ thẻ với Vikki Bank."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-17",
+          "title": "ĐIỀU 17. SỬA ĐỔI, BỔ SUNG VÀ THÔNG BÁO",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Mọi thông báo, văn bản, tài liệu mà Vikki Bank gửi cho Chủ thẻ liên quan đến việc phát hành và sử dụng Thẻ được xem là Chủ thẻ đã nhận:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Vào ngày gửi đi nếu gửi thành công bằng email; hoặc"
+                      },
+                      {
+                        "text": "Thông tin đã được đưa lên trang thông tin điện tử của Vikki Bank (website: vikkibank.vn); hoặc"
+                      },
+                      {
+                        "text": "Thông tin đã được hiển thị trên tiện ích khi Chủ thẻ sử dụng dịch vụ; hoặc"
+                      },
+                      {
+                        "text": "Vào ngày gửi đi nếu gửi thành công thông qua hình thức thông báo tới số điện thoại di động của Chủ thẻ; hoặc"
+                      },
+                      {
+                        "text": "Ngày làm việc thứ 03 (ba) tính từ ngày gửi đi (theo dấu bưu điện) nếu gửi bằng thư đến địa chỉ liên lạc của Chủ thẻ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Chủ thẻ có nghĩa vụ cập nhật các sửa đổi, bổ sung và việc Chủ thẻ tiếp tục sử dụng dịch vụ kể từ thời điểm có hiệu lực của Điều khoản và Điều kiện đã được sửa đổi, bổ sung hoặc/ và các thông báo, yêu cầu khác được hiểu là Chủ thẻ đã chấp thuận các sửa đổi, bổ sung, các thông báo, yêu cầu đó."
+                },
+                {
+                  "text": "Vikki Bank có quyền thay đổi nội dung Điều khoản và Điều kiện này vào thời gian bất kỳ và thông báo cho Khách hàng theo cách thức quy định tại khoản 1 Điều này. Hiệu lực thay đổi Điều khoản và Điều kiện này sẽ căn cứ vào nội dung của thông báo. Chủ thẻ có quyền quyết định tiếp tục hoặc chấm dứt việc sử dụng Thẻ hoặc/ và các sản phẩm, dịch vụ khi có sự thay đổi trên."
+                },
+                {
+                  "text": "Bất kỳ yêu cầu nào của Chủ thẻ phải được lập thành văn bản và ký tên. Vikki Bank có quyền nhưng không có nghĩa vụ chấp nhận và thực hiện các yêu cầu đó thông qua telex, fax, điện thoại, các hình thức khác mà Vikki Bank tin rằng do chính Chủ thẻ đưa ra; và Vikki Bank không chịu trách nhiệm về những thiệt hại do hậu quả của việc thực hiện hay tuân theo các yêu cầu của Chủ thẻ thông qua telex, fax, điện thoại hoặc các hình thức khác."
+                },
+                {
+                  "text": "Nếu bất kỳ một hay nhiều Điều khoản và Điều kiện của Điều khoản và Điều kiện này hay bất kỳ phần nào của Điều khoản và Điều kiện này trở nên không hợp lệ, không giá trị hoặc không thể thi hành theo bất kỳ luật áp dụng, trong phạm vi quyền hạn sẽ không ảnh hưởng đến tính hợp pháp, hiệu lực và thi hành của những Điều khoản và Điều kiện còn lại của Điều khoản và Điều kiện này."
+                },
+                {
+                  "text": "Việc chưa hoặc chậm trễ thực hiện quyền hạn, nghĩa vụ của Vikki Bank theo như Điều khoản và Điều kiện này sẽ không được coi như là từ bỏ toàn bộ hay một phần quyền hạn, nghĩa vụ của Vikki Bank, trừ khi Vikki Bank có thông báo bằng văn bản về sự khước từ quyền hạn, nghĩa vụ của mình."
+                },
+                {
+                  "text": "Trường hợp Chủ thẻ vi phạm nghĩa vụ thông báo về sự thay đổi địa chỉ liên lạc, địa chỉ cư trú và/ hoặc xuất cảnh quá 06 (sáu) tháng mà không thông báo địa chỉ, nơi cư trú mới, Chủ thẻ được xem là giấu địa chỉ nhằm trốn tránh nghĩa vụ với Vikki Bank. Trong trường hợp này, nơi cư trú nêu tại văn bản này, tại Giấy Đề Nghị/ Hợp Đồng là nơi cư trú cuối cùng của Chủ thẻ. Vikki Bank được quyền yêu cầu Tòa án xét xử vắng mặt. Chủ thẻ chấp nhận việc Tòa án xét xử vụ án vắng mặt, kể cả trường hợp không lấy được lời khai của Chủ thẻ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-18",
+          "title": "ĐIỀU 18. NGÔN NGỮ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Ngôn ngữ chính sử dụng trong Hợp Đồng, và các văn bản, tài liệu liên quan giữa Vikki Bank và Khách hàng là tiếng Việt."
+                },
+                {
+                  "text": "Trong trường hợp có bên nước ngoài tham gia, các bên có thể thỏa thuận sử dụng tiếng nước ngoài thông dụng kèm theo bản tiếng Việt. Trong trường hợp mâu thuẫn về nội dung giữa bản tiếng Việt và bản tiếng nước ngoài thì bản tiếng Việt có giá trị sử dụng."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-19",
+          "title": "ĐIỀU 19. QUY ĐỊNH VỀ BẢO VỆ, XỬ LÝ DỮ LIỆU CÁ NHÂN",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Trong quá trình Chủ thẻ đăng ký, phát hành, sử dụng Thẻ, Vikki Bank áp dụng các biện pháp để bảo vệ dữ liệu cá nhân của Chủ thẻ, dữ liệu cá nhân của người có liên quan mà Chủ thẻ cung cấp theo các chính sách, quy định về bảo vệ, xử lý dữ liệu cá nhân của Vikki Bank trong từng thời kỳ và phù hợp với quy định pháp luật."
+                },
+                {
+                  "text": "Vikki Bank thực hiện xử lý dữ liệu cá nhân của Chủ thẻ, dữ liệu cá nhân của người có liên quan mà Chủ thẻ cung cấp nhằm mục đích phát hành Thẻ, cung cấp các sản phẩm/ dịch vụ của Vikki Bank cho Chủ Thẻ, và/ hoặc cho các mục đích khác theo Thông báo về xử lý dữ liệu, Điều khoản và Điều kiện về xử lý dữ liệu, các văn bản/ tài liệu mà Chủ thẻ đã đồng ý/ xác nhận với Vikki Bank."
+                },
+                {
+                  "text": "Vikki Bank thực hiện cung cấp thông tin của Chủ thẻ cho Bên thứ ba nhằm mục đích triển khai các dịch vụ, sản phẩm của Vikki Bank, xử lý các trường hợp nghi ngờ gian lận, giả mạo, vi phạm quy định pháp luật và các trường hợp theo quy định pháp luật, theo yêu cầu của Cơ quan Nhà nước có thẩm quyền."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-20",
+          "title": "ĐIỀU 20. LUẬT ÁP DỤNG VÀ GIẢI QUYẾT TRANH CHẤP",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Hợp Đồng được giải thích theo quy định pháp luật Việt Nam."
+                },
+                {
+                  "text": "Nếu có bất kỳ tranh chấp nào phát sinh hoặc liên quan đến việc thực hiện Hợp Đồng giữa Chủ thẻ và Vikki Bank, trước hết sẽ được giải quyết thông qua thương lượng, hoà giải. Các Bên thống nhất rằng trong trường hợp tranh chấp không giải quyết được bằng hoà giải, thì tranh chấp được giải quyết tại Toà án có thẩm quyền."
+                },
+                {
+                  "text": "Trường hợp theo bản án, quyết định của Tòa án ghi nhận Chủ Thẻ và/ hoặc Bên bảo đảm vi phạm, Chủ Thẻ và/ hoặc Bên bảo đảm phải chịu án phí theo quy định của pháp luật và chịu mọi chi phí phát sinh của Vikki Bank trong quá trình khởi kiện bao gồm: chi phí đi lại, phí luật sư (trường hợp thuê luật sư) và các phí khác."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-21",
+          "title": "ĐIỀU 21. CÁC CAM KẾT, GIẢI QUYẾT TRANH CHẤP VÀ HIỆU LỰC",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Trong phạm vi quy định của pháp luật và bằng văn bản này Chủ thẻ cho phép và công nhận Vikki Bank được quyền cung cấp thông tin về Khách hàng cho các Đơn vị trực thuộc của Vikki Bank; và cho phép Vikki Bank và các Đơn vị trực thuộc của Vikki Bank toàn quyền cung cấp thông tin về Chủ thẻ cho các tổ chức/ cơ quan có thẩm quyền tại Việt Nam mà Vikki Bank cho là hợp lý và cần thiết để thực hiện dịch vụ Thẻ cho Chủ thẻ; đồng thời cho phép công ty của Chủ thẻ hay bất cứ cơ quan, cá nhân nào khác cung cấp thông tin về Chủ thẻ cho Vikki Bank vào bất cứ lúc nào mà không cần có ý kiến chấp thuận hoặc có sự uỷ quyền của Chủ thẻ."
+                },
+                {
+                  "text": "Chủ thẻ đồng ý tiếp nhận tin nhắn/ cuộc gọi thoại liên quan đến dịch vụ cung cấp từ Vikki Bank hoặc bên thứ ba là các công ty viễn thông/ công ty công nghệ thông tin,... theo số điện thoại mà Chủ thẻ đã cung cấp cho Vikki Bank."
+                },
+                {
+                  "text": "Các thông báo/ văn bản thoả thuận giữa Vikki Bank và Chủ thẻ về Biểu phí dịch vụ, Biểu lãi suất và các văn bản cam kết khác liên quan đến việc sử dụng Thẻ giữa Vikki Bank và Chủ thẻ là bộ phận không tách rời bản Điều khoản và Điều kiện này."
+                },
+                {
+                  "text": "Chủ thẻ xác nhận đã đọc, hiểu rõ và cam kết thực hiện đúng và đầy đủ Điều khoản và Điều kiện này, cũng như các quy định hiện hành của pháp luật Việt Nam."
+                },
+                {
+                  "text": "Điều khoản và Điều kiện này có hiệu lực ràng buộc đối với Chủ thẻ kể từ ngày Chủ thẻ thực hiện xác nhận/ ký/ ký số/ đồng ý Giấy Đề Nghị, Điều khoản và Điều kiện này."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

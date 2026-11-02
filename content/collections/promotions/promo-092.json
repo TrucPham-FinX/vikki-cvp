@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-092",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE92",
+  "name": "A MÀ KITCHEN",
+  "thumbnail": "./assets/promo-092.jpg",
+  "shortDesc": "Giảm giá lên đến 10% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | A MÀ KITCHEN | Giảm 10%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 10% (tối đa 300.000 VNĐ) cho hóa đơn từ 500.000 VNĐ.</li><li>Địa điểm áp dụng:<ul><li>62 Võ Văn Tần, Phường Xuân Hòa, TP. Hồ Chí Minh.</li><li>189 Cống Quỳnh, Phường Cầu Ông Lãnh, TP. Hồ Chí Minh.</li></ul></li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li></ul>",
+  "startDate": "2026-09-29T00:00:00.000Z",
+  "endDate": "2027-09-30T23:59:59.000Z",
+  "createdDate": "2026-09-29T00:00:00.000Z",
+  "updatedDate": "2026-09-29T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 30/09/2027"
+}

@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../../content-types/card-intro.schema.json",
+  "type": "card-intro",
+  "id": "vikki-go-plus",
+  "name": "Thẻ Kép VikkiGO+",
+  "code": "",
+  "image": "./assets/vikki-go-plus.png",
+  "description": "",
+  "features": [],
+  "applyUrl": ""
+}

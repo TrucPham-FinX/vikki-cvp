@@ -1,0 +1,25 @@
+{
+  "$schema": "../content-types/_defs.json",
+  "version": "1.0.0",
+  "updatedAt": "2026-11-02T20:25:00Z",
+  "pages": {
+    "card-co-badged-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "card-intro": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "consumer-secured-loan-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "home-loan-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "promotion": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-foreign-exchange-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-go-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-go-plus-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-golden-savings": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-lixi-2026": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-loan-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-nnn-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-od-at-branch-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-od-cbnv-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-one-connect": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-pro-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-safe-plus-cvp": { "dev": "HEAD", "uat": "HEAD", "stg": false },
+    "vikki-savings-kilo-gold": { "dev": "HEAD", "uat": "HEAD", "stg": false }
+  }
+}

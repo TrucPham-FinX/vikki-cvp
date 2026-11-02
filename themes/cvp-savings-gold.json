@@ -1,0 +1,11 @@
+{
+  "id": "cvp-savings-gold",
+  "name": "Savings Gold Theme",
+  "tokens": {
+    "--cvp-color-primary": "#b45309",
+    "--cvp-color-secondary": "#f59e0b",
+    "--cvp-color-accent": "#fbbf24",
+    "--cvp-color-bg": "#fffbeb",
+    "--cvp-color-text": "#78350f"
+  }
+}

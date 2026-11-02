@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-102",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE102",
+  "name": "IHG® Hotels & Resorts",
+  "thumbnail": "./assets/promo-102.png",
+  "shortDesc": "Tiết kiệm 15% trên Giá linh hoạt tốt nhất (Best Flexible Rate) tại các khách sạn IHG tham gia chương trình",
+  "longDesc": "<p><strong>Vikki x Mastercard | IHG® Hotels &amp; Resorts | Tiết kiệm 15%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Tiết kiệm 15% trên Giá linh hoạt tốt nhất (Best Flexible Rate) tại các khách sạn IHG tham gia chương trình.</li><li>Thời gian đặt phòng: Đến hết ngày 31/12/2026.</li><li>Thời gian lưu trú: Đến hết ngày 07/01/2027 tại các khách sạn mang thương hiệu IHG tham gia chương trình.</li><li>Link đặt phòng dành cho chủ thẻ Mastercard APAC hợp lệ: <a href=\"https://www.ihg.com/mcoffers\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.ihg.com/mcoffers</a>.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Đối tượng áp dụng: Dành cho chủ thẻ Mastercard APAC hiện tại, hợp lệ (&quot;Thành viên đủ điều kiện&quot;) cư trú tại Singapore, Thái Lan, Việt Nam, Hàn Quốc, Indonesia, Malaysia, Philippines, Maldives, Lào, Nhật Bản, Micronesia, Úc, New Zealand, Quần đảo Nam Thái Bình Dương, Trung Quốc đại lục, Hồng Kông, Ma Cao, Đài Loan, Ấn Độ, Bangladesh và Nepal. Khách sạn IHG có quyền yêu cầu bằng chứng chứng minh đủ điều kiện của chủ thẻ Mastercard khi nhận phòng.</li><li>Yêu cầu thành viên: Cần phải là thành viên IHG One Rewards để đổi ưu đãi này (đăng ký thành viên hoàn toàn miễn phí tại <a href=\"http://www.ihgonerewards.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.ihgonerewards.com</a>).</li><li>Phương thức thanh toán: Phải thanh toán bằng thẻ Mastercard hợp lệ.</li><li>Quy định đặt phòng:<ul><li>Phải đặt phòng trước ít nhất bảy (7) ngày trước ngày đến.</li><li>Hủy phòng trong vòng 7 ngày kể từ ngày nhận phòng sẽ bị tính phí 1 đêm.</li><li>Đặt phòng phải bao gồm thời gian lưu trú ít nhất một đêm từ Thứ Năm đến Chủ Nhật.</li></ul></li><li>Các điều kiện khác:<ul><li>Ưu đãi này đủ điều kiện tích lũy điểm IHG One Rewards nhưng không thể kết hợp với bất kỳ ưu đãi, giảm giá hoặc khuyến mãi nào khác và không có giá trị quy đổi thành tiền mặt.</li><li>Điểm thưởng IHG One Rewards sẽ được cộng vào tài khoản của Thành viên đủ điều kiện trong vòng 4-6 tuần.</li><li>Giá phòng chưa bao gồm thuế, tiền boa hoặc các chi phí phát sinh bao gồm đồ ăn và thức uống.</li></ul></li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 31/12/2026"
+}

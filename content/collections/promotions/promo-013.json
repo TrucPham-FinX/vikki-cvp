@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-013",
+  "group": "PREPAID_CARD",
+  "categories": [
+    "VIKKIGO_PLUS"
+  ],
+  "code": "PREPRO",
+  "name": "Gói giải pháp Đồng hành Tài chính cho Hội Liên hiệp Phụ Nữ Việt Nam",
+  "thumbnail": "./assets/promo-013.png",
+  "shortDesc": "Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với thẻ VikkiGO+",
+  "longDesc": "Cam kết đồng hành dài hạn cùng Hội Liên hiệp Phụ Nữ Việt Nam, Tập đoàn Sovico nói chung và Vikki Digital Bank nói riêng tự hào mang đến Gói giải pháp Đồng hành Tài chính đặc biệt dành riêng cho hơn 20 triệu Chị/ Em hội viên trên khắp Việt Nam với Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với thẻ VikkiGO+",
+  "startDate": "2026-04-01T00:00:00.000Z",
+  "endDate": "2026-10-01T23:59:59.000Z",
+  "createdDate": "2026-01-22T09:00:00.000Z",
+  "updatedDate": "2026-01-22T09:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến hết 31/12/2030"
+}

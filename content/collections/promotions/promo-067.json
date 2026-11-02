@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-067",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE",
+    "VIKKIGO_PLUS",
+    "VIKKIGO_COBAGE",
+    "VIKKI_PRO"
+  ],
+  "code": "PRE67",
+  "name": "Giảm giá nhà hàng Bắc Kim Thang",
+  "thumbnail": "./assets/promo-067.png",
+  "shortDesc": "Giảm giá 10% trên tổng hóa đơn và tặng món 'Chả giò Bắc Kim Thang' cho nhóm khách từ 4 người",
+  "longDesc": "<strong>1. Thể lệ chương trình:</strong><p>Giảm giá <strong>10%</strong> trên tổng hóa đơn (chưa bao gồm VAT và phụ phí) dành cho khách hàng thanh toán bằng thẻ Vikki Bank và <strong>tặng món 'Chả giò Bắc Kim Thang'</strong> cho nhóm khách từ 4 người.</p><strong>2. Điều kiện và điều khoản chương trình:</strong><ul><li>Áp dụng tất cả các ngày trong tuần; không áp dụng ngày Lễ, Tết.</li><li>Áp dụng cho khách hàng dùng bữa tại nhà hàng và thanh toán bằng thẻ Vikki Bank, không áp dụng hình thức chuyển khoản ngân hàng để nhận ưu đãi.</li><li>Không áp dụng đồng thời các chương trình ưu đãi và khuyến mãi khác.</li><li>Không áp dụng tách bàn, tách hoá đơn.</li></ul><strong>3. Danh sách nhà hàng áp dụng:</strong><ul><li>Bắc Kim Thang Crescent Mall: 5F-53 Tầng 5, Crescent Mall, Số 101 Tôn Dật Tiên, Phường Tân Mỹ, Thành Phố Hồ Chí Minh.</li><li>Bắc Kim Thang Estella Place: L3-02 Tầng 3, Estella Place, 88 Song Hành, Phường Bình Trưng, Thành Phố Hồ Chí Minh.</li><li>Bắc Kim Thang Premium - Saigon Marina IFC Tower: L2-14-15 Tầng 2, Saigon Marina IFC Tower, 02 Tôn Đức Thắng, Phường Sài Gòn, Thành Phố Hồ Chí Minh.</li><li>Bắc Kim Thang Thiso Mall Sala: L1-18 Tầng 1, Trung Tâm Thương Mại Thiso Mall Sala, 10 Mai Chí Thọ, Phường An Khánh, Thành Phố Hồ Chí Minh.</li></ul>",
+  "startDate": "2026-04-20T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-04-22T14:00:00.000Z",
+  "updatedDate": "2026-04-22T14:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: 20/04/2026 - 31/12/2026"
+}

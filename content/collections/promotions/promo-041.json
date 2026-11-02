@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-041",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE"
+  ],
+  "code": "PRE50",
+  "name": "Hoàn tiền lên đến 10% chi tiêu, tối đa 6 Triệu đồng/năm",
+  "thumbnail": "./assets/m-2.png",
+  "shortDesc": "Hoàn tiền lên đến 10% chi tiêu, tối đa 6 Triệu đồng/năm",
+  "longDesc": "<p><strong>THỂ LỆ CHƯƠNG TRÌNH HOÀN TIỀN</strong><ul><li><strong>Tên Chương trình:</strong> Hoàn tiền cực chất.<li><strong>Thời gian triển khai:</strong> Dự kiến từ 31/03/2026 - 31/12/2026.<li><strong>Sản phẩm thẻ áp dụng:</strong> Thẻ Vạn năng VikkiONE Connect.<li><strong>Đầu BIN áp dụng:</strong> 526263 (Tính năng Thẻ tín dụng).</ul><p><strong>1. ​Chi tiết ưu đãi:​ </strong><ul><li><strong>Hoàn 10%</strong> cho chi tiêu hợp lệ khi tổng chi tiêu trong kỳ sao kê từ <strong>15 triệu VND</strong> trở lên, mức hoàn tiền tối đa <strong>500.000 VND/kỳ sao kê</strong>.<li><strong>Hoàn 5%</strong> cho chi tiêu hợp lệ khi tổng chi tiêu trong kỳ sao kê từ <strong>5 triệu VND đến dưới 15 triệu VND</strong>, mức hoàn tiền tối đa <strong>300.000 VND/kỳ sao kê</strong>.<li><strong>Hoàn 1%</strong> cho chi tiêu hợp lệ khi tổng chi tiêu trong kỳ sao kê dưới 5 triệu VND, mức hoàn tiền <strong>tối đa 200.000 VND</strong>/kỳ sao kê.</ul><p>Ghi chú: Mức hoàn tiền Tối đa cho 01 giao dịch là 20.000 VNĐ.<p><strong>2. Điều kiện xét ưu đãi:</strong><ul><li>Chi tiêu hợp lệ là giao dịch thanh toán hàng hóa, dịch vụ.​<li>Thời gian xét ưu đãi được tính theo kỳ sao kê kể từ ngày 16 của tháng T-1 đến ngày 15 của tháng T. Hệ thống sẽ tính toán các giao dịch hợp lệ trong kỳ và hoàn tiền vào Tài khoản quản lý thẻ tín dụng của Chủ thẻ trong vòng 10 ngày.<li>Và các điều kiện cụ thể khác của chương trình sẽ được thông báo khi chương trình được triển khai chính thức.</ul>",
+  "startDate": "2026-02-10T00:00:00.000Z",
+  "endDate": "2026-04-10T23:59:59.000Z",
+  "createdDate": "2026-01-12T14:00:00.000Z",
+  "updatedDate": "2026-01-12T14:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Dự kiến từ 31/03/2026 - 31/12/2026​."
+}

@@ -1,0 +1,398 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-foreign-exchange-cvp",
+  "filename": "tc-en",
+  "variant": "tc",
+  "id": "vikki-foreign-exchange-tnc-en",
+  "version": "1.0.0",
+  "header": {
+    "img": "assets/vikki-logo.png",
+    "h1": "TERMS AND CONDITIONS FOR THE USE OF THE CASH FOREIGN CURRENCY PURCHASE PRODUCT FOR INDIVIDUAL CUSTOMERS ON THE VIKKI APP",
+    "intro": []
+  },
+  "sections": [
+    {
+      "id": "general-provisions",
+      "title": "I. GENERAL PROVISIONS",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "list",
+          "style": "decimal",
+          "items": [
+            {
+              "text": "These Terms and Conditions apply to individual Customers who are Vietnamese citizens residing in Vietnam and who carry out Purchase of Foreign Currency in Cash transactions through Vikki Bank's digital banking platform, for the purpose of carrying such currency on their person when departing Vietnam through international air border checkpoints."
+            },
+            {
+              "text": "The Customer undertakes to comply fully with all provisions of this document and with the applicable regulations of Vietnamese law on foreign exchange management."
+            }
+          ]
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "definitions",
+      "title": "II. DEFINITIONS",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Purchase of Foreign Currency in Cash on the Vikki Digital Banking Application (hereinafter referred to as the &ldquo;Vikki App&rdquo;): a product provided by Vikki Bank that enables Customers who are Vietnamese citizens residing in Vietnam and who wish to purchase cash foreign currency for the purpose of carrying such currency abroad when departing Vietnam through international air border checkpoints to place Purchase of Foreign Currency in Cash orders via the Vikki App. Such transactions are created, confirmed, and paid for through electronic means and are hereinafter referred to as &ldquo;Transactions on the Vikki App.&rdquo;"
+        },
+        {
+          "type": "list",
+          "style": "decimal",
+          "items": [
+            {
+              "text": "<strong>Business Day:</strong> a day designated by Vikki Bank from time to time, excluding weekly days off and public holidays prescribed by Vietnamese law."
+            },
+            {
+              "text": "<strong>Working Hours (8:30 a.m. &ndash; 4:30 p.m.):</strong> the period during which the Customer may carry out a foreign currency purchase transaction on the Vikki App."
+            },
+            {
+              "text": "<strong>Transaction Deadline:</strong> the latest time within a Business Day by which the Customer may complete a Purchase of Foreign Currency in Cash on the Vikki App."
+            }
+          ]
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "policies-on-the-service",
+      "title": "III. POLICIES ON THE PURCHASE OF FOREIGN CURRENCY IN CASH SERVICE ON THE VIKKI APP",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "subheading",
+          "text": "1. Conditions for Registration and Use of the Service"
+        },
+        {
+          "type": "list",
+          "style": "alpha",
+          "items": [
+            {
+              "text": "<strong>Subject to Vikki Bank&rsquo;s policies from time to time:</strong> The Customer may register for and use the Purchase of Foreign Currency in Cash service upon successful registration for the Vikki App provided by Vikki Bank."
+            },
+            {
+              "text": "<strong>The Customer&rsquo;s requests and transactions shall be processed by Vikki Bank only where:</strong>",
+              "children": {
+                "style": "roman",
+                "items": [
+                  {
+                    "text": "The Customer has completed all steps to place an order to purchase foreign currency on the Vikki App and has received a transaction-completion confirmation returned by the Vikki App; and"
+                  },
+                  {
+                    "text": "The available balance in the Customer&rsquo;s VND account is sufficient to carry out such transaction."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "2. Transaction Limit"
+        },
+        {
+          "type": "paragraph",
+          "text": "The limit set by Vikki Bank for the Purchase of Foreign Currency in Cash service from time to time, in accordance with the regulations of the State Bank of Vietnam."
+        },
+        {
+          "type": "subheading",
+          "text": "3. Transaction Processing Time"
+        },
+        {
+          "type": "list",
+          "style": "alpha",
+          "items": [
+            {
+              "text": "Vikki Bank shall process the Customer&rsquo;s Purchase of Foreign Currency in Cash transactions during the Business Days prescribed by Vikki Bank."
+            },
+            {
+              "text": "The Customer must place an order to purchase foreign currency at least one (01) Business Day prior to the departure date and collect the cash foreign currency during Vikki Bank&rsquo;s working hours, provided that such collection is completed at least four (04) hours before the scheduled departure time."
+            }
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "4. Transaction Documentation Requirements"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Customer is responsible for providing documents evidencing the purpose of using foreign currency abroad, in accordance with applicable law and Vikki Bank&rsquo;s current guidelines. The documentation required for each purchase purpose is as follows:"
+        },
+        {
+          "type": "list",
+          "style": "alpha",
+          "items": [
+            {
+              "text": "<strong>Payment of Overseas Tuition and Study Expenses:</strong>",
+              "children": {
+                "style": "roman",
+                "items": [
+                  {
+                    "text": "A fee notice issued by the school or training institution showing the student&rsquo;s name. Where the notice is not addressed specifically to the student, the Customer must also submit a letter of acceptance from the relevant overseas institution, or other documents evidencing enrolment abroad (e.g., student pass, Form I-20, school confirmation letter, visa, etc.); or a printout from the school&rsquo;s website showing the student&rsquo;s information (full name, course name, duration of study, and the institution providing the course)."
+                  },
+                  {
+                    "text": "The decision of the employing organization assigning the employee to study abroad (if applicable)."
+                  },
+                  {
+                    "text": "Passport."
+                  },
+                  {
+                    "text": "Visa (if required by the destination country)."
+                  },
+                  {
+                    "text": "Air ticket, together with proof of payment for such ticket."
+                  }
+                ]
+              }
+            },
+            {
+              "text": "<strong>Payment of Overseas Medical Treatment Expenses:</strong>",
+              "children": {
+                "style": "roman",
+                "items": [
+                  {
+                    "text": "An admission notice for examination/treatment issued by the overseas medical facility, or a referral letter for overseas treatment issued by a domestic medical facility."
+                  },
+                  {
+                    "text": "A notice of actual or estimated costs issued by the overseas medical facility."
+                  },
+                  {
+                    "text": "Passport."
+                  },
+                  {
+                    "text": "Visa (if required by the destination country)."
+                  },
+                  {
+                    "text": "The patient&rsquo;s air ticket, together with proof of payment for such ticket."
+                  }
+                ]
+              }
+            },
+            {
+              "text": "<strong>Overseas Business Trips, Tourism, or Visits:</strong>",
+              "children": {
+                "style": "roman",
+                "items": [
+                  {
+                    "text": "An official assignment letter/dispatch (in the case of an overseas business trip)."
+                  },
+                  {
+                    "text": "A registration form for participation in an overseas tour, or confirmation from the foreign party regarding the use of services for tourism/visit purposes (if any)."
+                  },
+                  {
+                    "text": "A notice of costs for the overseas trip (if any)."
+                  },
+                  {
+                    "text": "Passport."
+                  },
+                  {
+                    "text": "Visa (if required by the destination country)."
+                  },
+                  {
+                    "text": "Air ticket, together with proof of payment for such ticket."
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "5. Policies on Purchase of Foreign Currency in Cash Transactions on the Vikki App"
+        },
+        {
+          "type": "list",
+          "style": "alpha",
+          "items": [
+            {
+              "text": "<strong>Order to Purchase Cash Foreign Currency on the Vikki App:</strong> a transaction in which the Customer submits a request to purchase cash foreign currency on the Vikki App, and Vikki Bank has recorded such order as successfully placed within the timeframe prescribed by Vikki Bank from time to time. By placing such an order, the Customer authorizes Vikki Bank to temporarily hold (block) the VND amount corresponding to the quantity of foreign currency ordered."
+            },
+            {
+              "text": "<strong>Transaction Date (Date T):</strong> the date on which the Customer successfully places an order to purchase cash foreign currency on the Vikki App. The transaction agreement between the Customer and Vikki Bank is established on this date."
+            },
+            {
+              "text": "<strong>Settlement Date:</strong> the date on which Vikki Bank disburses, at its counter, the cash foreign currency ordered by the Customer on the Transaction Date. The Settlement Date must be a Business Day prescribed by Vikki Bank and must not exceed two (02) Business Days from the &ldquo;Transaction Date&rdquo; on the Vikki App. Where the Settlement Date falls on a weekly day off or a public holiday under Vietnamese law, it may be moved to the next Business Day."
+            },
+            {
+              "text": "<strong>Time Limit for Collecting Foreign Currency:</strong> within two (02) Business Days from the date the transaction is recorded as successful on the application."
+            },
+            {
+              "text": "<strong>Foreign Currencies Available for Transaction:</strong> as prescribed by Vikki Bank from time to time, in compliance with the regulations of the State Bank of Vietnam."
+            },
+            {
+              "text": "<strong>Exchange Rate at the Time of Placing the Order:</strong> the exchange rate determined at the time the Customer successfully places the order to purchase cash foreign currency on the Vikki App. This rate is the cash selling rate applicable to the relevant foreign currency for the Customer&rsquo;s order, as prescribed by Vikki Bank from time to time and in compliance with the regulations of the State Bank of Vietnam."
+            },
+            {
+              "text": "<strong>Exchange Rate at the Time of Cancellation:</strong> the exchange rate determined at the time a transaction is successfully cancelled on the Vikki App in the circumstances set out herein, in compliance with the regulations of the State Bank of Vietnam."
+            }
+          ]
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "transaction-execution-principles",
+      "title": "IV. TRANSACTION EXECUTION PRINCIPLES",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "subheading",
+          "text": "1. General Principles"
+        },
+        {
+          "type": "list",
+          "style": "alpha",
+          "items": [
+            {
+              "text": "For each air ticket and corresponding passport provided by the Customer to Vikki Bank, for which the Customer is responsible for ensuring that there is no duplication, the Customer may place an order to purchase cash foreign currency up to the maximum transaction limit prescribed by Vikki Bank from time to time."
+            },
+            {
+              "text": "When collecting cash foreign currency at the transaction counter selected by the Customer on the Vikki App, the Customer must present all documents evidencing the purpose of using such foreign currency abroad."
+            },
+            {
+              "text": "Vikki Bank may charge a foreign currency cash handling/counting fee (if applicable) in accordance with Vikki Bank&rsquo;s policies from time to time, and the Customer shall be responsible for paying such fee. For the avoidance of doubt, the cash handling/counting fee is a cash service fee arising from the physical receipt and delivery of cash and does not constitute part of the foreign exchange transaction fee, exchange rate, or any foreign exchange-related charge."
+            }
+          ]
+        },
+        {
+          "type": "subheading",
+          "text": "2. Execution Principles"
+        },
+        {
+          "type": "subheading",
+          "text": "a. Cancellation of Transactions"
+        },
+        {
+          "type": "paragraph",
+          "text": "A transaction in which the Customer has successfully purchased cash foreign currency on the Vikki App but has not yet collected such currency at the transaction counter shall be cancelled in the following cases:"
+        },
+        {
+          "type": "list",
+          "style": "disc",
+          "items": [
+            {
+              "text": "The Customer proactively cancels the Purchase of Foreign Currency in Cash order on the Vikki App."
+            },
+            {
+              "text": "The Customer arrives to collect the cash foreign currency in accordance with the transaction, but the supporting documentation is invalid."
+            },
+            {
+              "text": "The Customer fails to collect the cash foreign currency within Vikki Bank&rsquo;s working hours from Date T to Date T+2, as committed on Date T."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Penalty Amount = the VND amount held by Vikki Bank for payment of the foreign currency purchase &minus; (quantity of foreign currency &times; Vikki Bank&rsquo;s buy-back exchange rate at the time of cancellation), where the result is a positive amount."
+        },
+        {
+          "type": "paragraph",
+          "text": "Refund Amount = the amount initially held &minus; the Penalty Amount."
+        },
+        {
+          "type": "subheading",
+          "text": "b. Collection of Cash Foreign Currency"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Customer shall collect the cash foreign currency at the location selected by the Customer when successfully submitting the Purchase of Foreign Currency in Cash request on the Vikki App."
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "irrevocable-transactions",
+      "title": "V. IRREVOCABLE TRANSACTIONS",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "list",
+          "style": "decimal",
+          "items": [
+            {
+              "text": "Any transaction that has been successfully executed shall be deemed by Vikki Bank to be valid and irrevocable. The Customer shall bear full responsibility and obligations to Vikki Bank in respect of such transaction(s)."
+            },
+            {
+              "text": "Where the Customer requests the cancellation of a transaction, the Customer shall be liable to pay a transaction cancellation penalty in accordance with Vikki Bank&rsquo;s prevailing policies."
+            }
+          ]
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "customer-undertakings",
+      "title": "VI. CUSTOMER UNDERTAKINGS",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "list",
+          "style": "decimal",
+          "items": [
+            {
+              "text": "The Customer shall comply with the service user guidelines, all relevant policies, and the provisions of these Terms and Conditions governing the use of Vikki Bank&rsquo;s services."
+            },
+            {
+              "text": "The Customer shall fully comply with all applicable foreign exchange management regulations of the State Bank of Vietnam and Vikki Bank as in effect from time to time."
+            },
+            {
+              "text": "The Customer shall bear sole responsibility for:",
+              "children": {
+                "style": "alpha",
+                "items": [
+                  {
+                    "text": "The legality of Purchase of Foreign Currency in Cash transactions conducted through Vikki Bank&rsquo;s digital banking channels."
+                  },
+                  {
+                    "text": "The lawful source of funds used to carry out the transaction."
+                  },
+                  {
+                    "text": "The information provided and declared to Vikki Bank, including but not limited to personal information and information evidencing the purpose of the Purchase of Foreign Currency in Cash transaction, as well as the authenticity and accuracy of all documents, records, and supporting evidence submitted to Vikki Bank."
+                  }
+                ]
+              }
+            },
+            {
+              "text": "The Customer shall not request a refund or cancellation of the air ticket after having collected the cash foreign currency purchased through the Vikki App at a Vikki Bank transaction counter."
+            },
+            {
+              "text": "The Customer shall collect the cash foreign currency at a Vikki Bank transaction counter in accordance with the &ldquo;Cash Foreign Currency Collection Period&rdquo; set out in these Terms and Conditions. If the Customer fails to collect the cash foreign currency within the prescribed period as notified on the Vikki App, the transaction shall be handled in accordance with the applicable regulations of the State Bank of Vietnam and Vikki Bank as in effect from time to time."
+            },
+            {
+              "text": "The Customer shall exercise due care in carrying out transactions, ensure that the transaction process is accurate and complete, and carefully review all information and data prior to submission."
+            },
+            {
+              "text": "The Customer shall provide fully, accurately, and promptly all necessary information, documents, records, and supporting evidence evidencing the purpose of the foreign currency purchase, in accordance with Vikki Bank&rsquo;s policies from time to time. Vikki Bank reserves the right to reject or cancel any transaction if the information, documents, records, or supporting evidence provided by the Customer are incomplete or invalid."
+            },
+            {
+              "text": "The Customer shall be responsible for providing Vikki Bank with original hard-copy foreign currency purchase documents and any related documents evidencing the source of funds upon the request of Vikki Bank and/or any competent governmental authority."
+            }
+          ]
+        }
+      ],
+      "sections": []
+    },
+    {
+      "id": "limitation-of-liability",
+      "title": "VII. LIMITATION OF LIABILITY",
+      "expanded": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Vikki Bank shall not be liable for any loss, damage, or claim arising from technical failures, system errors, connection interruptions, force majeure events, market fluctuations, exchange rate movements, or foreign exchange management policies beyond Vikki Bank&rsquo;s reasonable control."
+        },
+        {
+          "type": "paragraph",
+          "text": "Vikki Bank shall only be liable to the extent that such loss, damage, or claim is directly caused by Vikki Bank&rsquo;s fault, in accordance with applicable laws."
+        }
+      ],
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-safe-plus-cvp",
+  "filename": "tc-vi",
+  "variant": "tc",
+  "id": "vikki-safe-plus-cvp-tc-vi",
+  "version": "1.0.0",
+  "header": {
+    "img": "../assets/vikki-logo.png",
+    "h1": "Giới thiệu VIKKI SAFE PLUS"
+  },
+  "sections": [
+    {
+      "id": "product-overview",
+      "title": "NỘI DUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "the-insured",
+          "title": "1. Đối tượng tham gia bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Công dân Việt Nam và người ngoài đang sinh sống, học tập, làm việc, công tác tại Việt Nam và trong độ tuổi từ 18 tuổi đến 75 tuổi. Người tham gia bảo hiểm không thuộc các trường hợp sau:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Người đang bị mắc bệnh tâm thần, thần kinh, bệnh phong;"
+                },
+                {
+                  "text": "Người bị tàn phế hoặc thương tật vĩnh viễn từ 50% trở lên."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "benefits-and-coverage",
+          "title": "2. Quyền lợi và phạm vi bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Số tiền tham gia bảo hiểm: Theo từng gói bảo hiểm"
+                },
+                {
+                  "text": "Thời hạn bảo hiểm: Tùy chọn theo yêu cầu của khách hàng, tối đa 12 tháng"
+                },
+                {
+                  "text": "Người thụ hưởng: Người được bảo hiểm hoặc người thụ hưởng chỉ định"
+                },
+                {
+                  "text": "Phạm vi địa lý: Việt Nam"
+                },
+                {
+                  "text": "Thời gian chờ: Không áp dụng"
+                },
+                {
+                  "text": "Quyền lợi bảo hiểm:"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Tử vong, thương tật toàn bộ vĩnh viễn do tai nạn thuộc phạm vi bảo hiểm trả toàn bộ số tiền bảo hiểm;"
+                },
+                {
+                  "text": "Thương tật bộ phận vĩnh viễn do tai nạn thuộc phạm vi bảo hiểm trả theo Bảng trả tiền bảo hiểm thương tật;"
+                },
+                {
+                  "text": "Thương tật tạm thời do tai nạn thuộc phạm vi bảo hiểm trả theo bảng tỷ lệ trả tiền bảo hiểm thương tật (đối với Số tiền bảo hiểm từ 20 triệu trở xuống) hoặc chi phí y tế, tiền bồi dưỡng (đối với Số tiền bảo hiểm trên 20 triệu);"
+                },
+                {
+                  "text": "Chi trả tiền trợ cấp trong thời gian nằm viện điều trị thương tật do tai nạn."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "className": "legal-note",
+              "text": "<em>Quý khách vui lòng tham khảo quyền lợi bảo hiểm chi tiết trong chi tiết từng gói bảo hiểm.</em>"
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "insurance-plans",
+          "title": "3. Thông tin gói bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Quyền lợi bảo hiểm"
+                    },
+                    {
+                      "value": "Trọn ý"
+                    },
+                    {
+                      "value": "Trọn tâm"
+                    },
+                    {
+                      "value": "Trọn vẹn"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Tổng số tiền bảo hiểm</strong>"
+                    },
+                    {
+                      "value": "<strong>24,800,000</strong>"
+                    },
+                    {
+                      "value": "<strong>49,600,000</strong>"
+                    },
+                    {
+                      "value": "<strong>74,400,000</strong>"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Tai nạn"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Chi phí trợ cấp nằm viện"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "<strong>Số tiền bảo hiểm chi tiết</strong>"
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": ""
+                    },
+                    {
+                      "value": ""
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Tử vong/thương tật do tai nạn"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Tử vong"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Thương tật toàn bộ vĩnh viễn"
+                    },
+                    {
+                      "value": "20,000,000"
+                    },
+                    {
+                      "value": "40,000,000"
+                    },
+                    {
+                      "value": "60,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Thương tật bộ phận vĩnh viễn"
+                    },
+                    {
+                      "value": "Bảng tỉ lệ thương tật"
+                    },
+                    {
+                      "value": "Bảng tỉ lệ thương tật"
+                    },
+                    {
+                      "value": "Bảng tỉ lệ thương tật"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Thương tật tạm thời"
+                    },
+                    {
+                      "value": "% thương tật của Bảng tỉ lệ thương tật"
+                    },
+                    {
+                      "value": "Chi phí thực tế + trợ cấp = 0.1%/ ngày x STBH trong tối đa 180 ngày. Tổng chi trả không vượt quá tỷ lệ % thương tật"
+                    },
+                    {
+                      "value": "Chi phí thực tế + trợ cấp = 0.1%/ngày x STBH trong tối đa 180 ngày. Tổng chi trả không vượt quá tỷ lệ % thương tật"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Trợ cấp trong thời gian nằm viện điều trị tai nạn (tối đa 60 ngày/năm) *"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Mức trợ cấp cho mỗi ngày nằm viện"
+                    },
+                    {
+                      "value": "80,000"
+                    },
+                    {
+                      "value": "160,000"
+                    },
+                    {
+                      "value": "240,000"
+                    }
+                  ]
+                }
+              ],
+              "note": "<strong>* Số tiền bảo hiểm hiển thị áp dụng cho thời hạn bảo hiểm 1 năm. Số tiền bảo hiểm giảm dần theo thời hạn bảo hiểm, quy định theo bảng Bảng trợ cấp trong thời gian nằm viện điều trị tai nạn.</strong>"
+            },
+            {
+              "type": "subheading",
+              "text": "Bảng trợ cấp trong thời gian nằm viện điều trị tai nạn:"
+            },
+            {
+              "type": "table",
+              "headerRows": [
+                {
+                  "cells": [
+                    {
+                      "value": "Số tháng tham gia bảo hiểm",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Tổng số ngày hưởng trợ cấp",
+                      "rowspan": 2
+                    },
+                    {
+                      "value": "Số tiền trợ cấp tối đa (VNĐ)",
+                      "colspan": 3
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "Trọn ý"
+                    },
+                    {
+                      "value": "Trọn tâm"
+                    },
+                    {
+                      "value": "Trọn vẹn"
+                    }
+                  ]
+                }
+              ],
+              "rows": [
+                {
+                  "cells": [
+                    {
+                      "value": "12 tháng"
+                    },
+                    {
+                      "value": "60"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    },
+                    {
+                      "value": "14,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "11 tháng"
+                    },
+                    {
+                      "value": "55"
+                    },
+                    {
+                      "value": "4,400,000"
+                    },
+                    {
+                      "value": "8,800,000"
+                    },
+                    {
+                      "value": "13,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "10 tháng"
+                    },
+                    {
+                      "value": "50"
+                    },
+                    {
+                      "value": "4,000,000"
+                    },
+                    {
+                      "value": "8,000,000"
+                    },
+                    {
+                      "value": "12,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "9 tháng"
+                    },
+                    {
+                      "value": "45"
+                    },
+                    {
+                      "value": "3,600,000"
+                    },
+                    {
+                      "value": "7,200,000"
+                    },
+                    {
+                      "value": "10,800,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "8 tháng"
+                    },
+                    {
+                      "value": "40"
+                    },
+                    {
+                      "value": "3,200,000"
+                    },
+                    {
+                      "value": "6,400,000"
+                    },
+                    {
+                      "value": "9,600,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "7 tháng"
+                    },
+                    {
+                      "value": "35"
+                    },
+                    {
+                      "value": "2,800,000"
+                    },
+                    {
+                      "value": "5,600,000"
+                    },
+                    {
+                      "value": "8,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "6 tháng"
+                    },
+                    {
+                      "value": "30"
+                    },
+                    {
+                      "value": "2,400,000"
+                    },
+                    {
+                      "value": "4,800,000"
+                    },
+                    {
+                      "value": "7,200,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "5 tháng"
+                    },
+                    {
+                      "value": "25"
+                    },
+                    {
+                      "value": "2,000,000"
+                    },
+                    {
+                      "value": "4,000,000"
+                    },
+                    {
+                      "value": "6,000,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "4 tháng"
+                    },
+                    {
+                      "value": "20"
+                    },
+                    {
+                      "value": "1,600,000"
+                    },
+                    {
+                      "value": "3,200,000"
+                    },
+                    {
+                      "value": "4,800,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "3 tháng"
+                    },
+                    {
+                      "value": "15"
+                    },
+                    {
+                      "value": "1,200,000"
+                    },
+                    {
+                      "value": "2,400,000"
+                    },
+                    {
+                      "value": "3,600,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "2 tháng"
+                    },
+                    {
+                      "value": "10"
+                    },
+                    {
+                      "value": "800,000"
+                    },
+                    {
+                      "value": "1,600,000"
+                    },
+                    {
+                      "value": "2,400,000"
+                    }
+                  ]
+                },
+                {
+                  "cells": [
+                    {
+                      "value": "1 tháng"
+                    },
+                    {
+                      "value": "5"
+                    },
+                    {
+                      "value": "400,000"
+                    },
+                    {
+                      "value": "800,000"
+                    },
+                    {
+                      "value": "1,200,000"
+                    }
+                  ]
+                }
+              ],
+              "note": null
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "exclusions",
+          "title": "4. Loại trừ bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "Một số điểm loại trừ chính:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Người được bảo hiểm vi phạm nghiêm trọng pháp luật phải thụ án hình sự hoặc vi phạm nghiêm trọng luật lệ an toàn giao thông như: đua xe, điều khiển xe không có giấy phép lái xe hợp lệ, đi vào đường cấm. Mở rộng bồi thường 50% số tiền thuộc phạm vi trách nhiệm bảo hiểm (nhưng không vượt quá 150 triệu đồng) trong trường hợp người được bảo hiểm đủ tuổi điều khiển xe mô tô, xe máy nhưng không có giấy phép lái xe hoặc giấy phép lái xe không hợp lệ."
+                },
+                {
+                  "text": "Hành động cố ý của người được bảo hiểm hoặc người thừa kế hợp pháp."
+                },
+                {
+                  "text": "Hậu quả của việc uống rượu, bia vượt quá nồng độ theo quy định của Luật An toàn giao thông đường bộ hoặc các chất kích thích tương tự khác."
+                },
+                {
+                  "text": "Người được bảo hiểm tham gia đánh nhau, trừ khi được xác nhận đó là hành động tự vệ."
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "className": "legal-note",
+              "text": "Các loại trừ khác được quy định cụ thể trong Quy tắc bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "bold",
+              "text": "Để xem các thông tin khác về sản phẩm bảo hiểm này, vui lòng xem <a href=\"insurance-wording.html\" style=\"color: #0047ff;\">Quy tắc bảo hiểm tai nạn con người.</a>"
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

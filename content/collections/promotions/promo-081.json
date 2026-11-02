@@ -1,0 +1,22 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-081",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE",
+    "VIKKIGO_PLUS",
+    "VIKKI_PRO"
+  ],
+  "code": "PRE81",
+  "name": "Giảm giá khi đặt phòng trên AGODA",
+  "thumbnail": "./assets/promo-081.png",
+  "shortDesc": "Giảm 8% khi đặt phòng trên App AGODA",
+  "longDesc": "<p>Vikki x AGODA | Giảm 8%</p><p>Hết hạn vào: 23:59 31 thg 03, 2027</p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 8% (tối đa 25 USD) dành cho tất cả các loại thẻ tín dụng, thẻ ghi nợ và thẻ trả trước Mastercard Consumerkhác.</li>*Yêu cầu mức chi tiêu tối thiểu để được áp dụng ưu đãi, vui lòng tham khảo trang đặt phòng của từng khách sạn để biết thêm chi tiết.</ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li><strong>Phạm vi áp dụng:</strong> Giảm giá được áp dụng khi thanh toán bằng thẻ tín dụng, thẻ ghi nợ và thẻ trả trước Mastercard Consumer hợp lệ được phát hành tại Úc, Brunei, Campuchia, Trung Quốc, Hồng Kông, Indonesia, Nhật Bản, Hàn Quốc, Lào, Ma-cao, Malaysia, Myanmar, New Zealand, Singapore, Đài Loan, Thái Lan và Việt Nam.</li><li><strong>Hiển thị ưu đãi:</strong> Giảm giá của chương trình Khuyến mãi sẽ chỉ hiển thị trên biểu mẫu đặt phòng sau khi nhập thông tin thanh toán của thẻ tín dụng, thẻ ghi nợ hoặc thẻ trả trước Mastercard Consumer hợp lệ.</li><li><strong>Loại phòng áp dụng:</strong>Chương trình Khuyến mãi này chỉ áp dụng cho các khách sạn có biểu ngữ “Hợp lệ cho Khuyến mãi” (Promotion Eligible) trên trang kết quả tìm kiếm và chỉ áp dụng cho các loại phòng 'Trả trước' (Pre paid), 'Thanh toán ngay' (Pay now) và 'Đặt trước, Trả sau' (Book Now, Pay later). Những phòng có ký hiệu 'Thanh toán tại khách sạn' (Pay at the Hotel) sẽ không được kích hoạt ưu đãi này.</li><li><strong>Kênh đặt phòng:</strong> Chương trình Khuyến mãi chỉ áp dụng cho các lượt đặt chỗ được thực hiện thông qua liên kết chuyển hướng của chiến dịch Agoda-Mastercard hoặc qua URL được chỉ định trên trang web, ứng dụng (app) và trang web di động.</li><li><strong>Chi phí được giảm giá:</strong> Mức giảm giá của chương trình Khuyến mãi chỉ áp dụng cho tiền phòng ở (không bao gồm thuế địa phương, phí dịch vụ, phụ phí, chi phí tiêu dùng cá nhân và các chi phí tương tự).</li><li><strong>Thời gian giữ ưu đãi trên Ứng dụng (APP):</strong> Quyền nhận ưu đãi trên APP sẽ hết hạn nếu chủ thẻ không hoàn tất việc thanh toán trong vòng 2 giờ kể từ khi được chuyển hướng đến chiến dịch.</li><li><strong>Quy định chung về ưu đãi:</strong> Chương trình Khuyến mãi không được chuyển nhượng, không được cộng dồn, không có giá trị quy đổi thành tiền mặt hoặc các sản phẩm khác và không được sử dụng kết hợp với bất kỳ chương trình khuyến mãi, danh mục giảm giá hoặc danh mục cố định giá nào khác (trừ khi có quy định cụ thể).</li><li><strong>Ưu tiên ngôn ngữ:</strong> Trong trường hợp có bất kỳ sự khác biệt nào giữa bản tiếng Anh và bản ngôn ngữ địa phương của các điều khoản và điều kiện này, bản tiếng Anh sẽ được ưu tiên áp dụng.</li><li><strong>Giải quyết tranh chấp:</strong> Chương trình Khuyến mãi tuân theo các điều khoản và điều kiện của Agoda. Trong trường hợp xảy ra tranh chấp, quyết định của Mastercard và/hoặc Agoda sẽ là quyết định cuối cùng.</li><li><strong>Thay đổi điều khoản:</strong> Mastercard và/hoặc Agoda có thể thay đổi các điều khoản & điều kiện này vào bất kỳ lúc nào.</li><li><strong>Tính ràng buộc:</strong> Quyết định của Mastercard về tất cả các vấn đề liên quan đến chương trình Khuyến mãi là quyết định cuối cùng và có tính ràng buộc đối với chủ thẻ. Mastercard không có nghĩa vụ phải tham gia vào bất kỳ thư từ hay khiếu nại nào liên quan đến chương trình Khuyến mãi này.</li></ul>",
+  "startDate": "2026-06-02T04:50:04.997Z",
+  "endDate": "2027-03-31T04:50:04.997Z",
+  "createdDate": "2026-06-02T04:50:04.997Z",
+  "updatedDate": "2026-06-02T04:50:04.997Z",
+  "hotDeal": false,
+  "extraData": "Từ bây giờ - 31/03/2027"
+}

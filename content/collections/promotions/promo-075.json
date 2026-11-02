@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-075",
+  "group": "HDB",
+  "categories": [],
+  "code": "PRE75",
+  "name": "Giảm giá gần 400 nhà hàng trên toàn quốc",
+  "thumbnail": "./assets/promo-075.png",
+  "shortDesc": "Giảm giá lên đến <strong>50%</strong> tại gần <strong>400 nhà hàng</strong> trên toàn quốc:  MANWAH, ISUSHI, GOGIHOUSE, KICHI-KICHI, WOW YAKINIKU, SUMOGOYA, CLOUDPOT, BẮC KIM THANG",
+  "longDesc": "<strong>1. Giảm giá 50%</strong><ul><li>Nhà hàng áp dụng: MANWAH, ISUSHI, GOGIHOUSE, KICHI-KICHI, WOW YAKINIKU, SUMOGOYA, CLOUDPOT.</li><li>Thời gian áp dụng: Từ ngày 25/04/2026 đến ngày 20/08/2026 hoặc có thể kết thúc khi hết ngân sách của chương trình.</li><li>Sản phẩm thẻ áp dụng: Thẻ kép VikkiGO+ (tính năng thẻ tín dụng, BIN: 5262 6387), Thẻ đa tính năng VikkiONE Connect (tính năng thẻ tín dụng, BIN: 5262 6387), Thẻ tín dụng doanh nghiệp VikkiPRO.</li></ul><strong>2. Giảm giá 10% và tặng món 'Chả giò Bắc Kim Thang' cho nhóm khách từ 4 người</strong><ul><li>Nhà hàng áp dụng: Bắc Kim Thang.</li><li>Thời gian áp dụng: Từ ngày 20/04/2026 đến ngày 31/12/2026.</li><li>Sản phẩm thẻ áp dụng:  Thẻ kép VikkiGO+, Thẻ đa tính năng VikkiONE Connect, Thẻ tín dụng doanh nghiệp VikkiPRO, Thẻ thanh toán VikkiGO.</li></ul>",
+  "startDate": "2026-04-25T00:00:00.000Z",
+  "endDate": "2026-08-22T23:59:59.000Z",
+  "createdDate": "2026-04-23T14:00:00.000Z",
+  "updatedDate": "2026-04-23T14:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ 20/04/2026 - 31/12/2026"
+}

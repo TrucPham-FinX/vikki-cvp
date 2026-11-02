@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-084",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE",
+    "VIKKIGO_PLUS"
+  ],
+  "code": "PRE84",
+  "name": "iPhone 18",
+  "thumbnail": "./assets/promo-084.png",
+  "shortDesc": "Giảm ngay 2 triệu đồng",
+  "longDesc": "<p><strong>Vikki x Mastercard | iPhone 18 | Giảm ngay 2 triệu đồng</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 2.000.000 đồng khi mua trực tiếp sản phẩm điện thoại mới của Apple ra mắt từ Tháng 9/2026 &amp; thanh toán bằng thẻ Mastercard Vikki Digital Bank.</li><li>Tại Thế Giới Di Động, Điện Máy Xanh &amp; TopZone: Giảm 2 triệu đồng cho khách hàng đặt trước. Áp dụng cho Khách hàng đã đặt cọc mua sản phẩm trong giai đoạn đầu và thanh toán đơn hàng từ 30 triệu đồng. Số lượng ưu đãi: 375 lượt.</li><li>Thời gian áp dụng: từ ngày 18/09/2026 đến ngày 31/12/2026 hoặc có thể kết thúc khi hết ngân sách của chương trình.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho Khách hàng cá nhân sử dụng thẻ tín dụng quốc tế Vikki Digital Bank: Thẻ Kép VikkiGO+, Thẻ Vạn năng VikkiONE Connect (đầu BIN tính năng thẻ tín dụng: 5262 6387).</li><li>Mỗi thẻ được hưởng ưu đãi tối đa 01 lần xuyên suốt chương trình.</li><li>Chương trình bắt đầu từ 00h00 - 23h59 mỗi ngày.</li><li>Số lượng ưu đãi có giới hạn. Chương trình sẽ kết thúc trước thời hạn nếu sử dụng hết ngân sách khuyến mại.</li><li>Việc xác định giao dịch có phát sinh gian lận sẽ xử lý theo quy định pháp luật.</li><li>Chương trình này không áp dụng đồng thời với các ưu đãi khác của Vikki Digital Bank tại Điện Máy Xanh, Thế Giới Di Động, TopZone</li><li>Tại CellphoneS, ưu đãi chỉ áp dụng khi thanh toán bằng thẻ vật lý trên Payoo POS tại cửa hàng.</li><li>Không áp dụng ưu đãi cho thẻ ảo trên các ứng dụng thanh toán (như Samsung Pay, Google Wallet, Apple Pay, Garmin Pay v.v...).</li><li>Ưu đãi không có giá trị đổi thành tiền mặt hay hoàn trả.</li><li>Không áp dụng đối với các giao dịch hủy và giao dịch hoàn 100% giá trị giao dịch mua bán, sử dụng hàng hóa/dịch vụ/sản phẩm.</li><li>Khách hàng chỉ tiến hành thanh toán khi hệ thống đã hiển thị số tiền giảm giá. Vikki Digital Bank và Đối tác không chịu trách nhiệm về việc hệ thống không hiển thị số tiền giảm giá mà Khách hàng vẫn tiến hành thanh toán.</li><li>Khách hàng sử dụng mã ưu đãi sai mục đích hoặc vi phạm các điều khoản và điều kiện khuyến mại sẽ bị từ chối việc sử dụng mã ưu đãi của Đối tác trong tương lai.</li><li>Chương trình ưu đãi chỉ áp dụng cho Khách hàng cá nhân. Các đối tác bảo lưu quyền từ chối áp dụng Chương trình ưu đãi cho các đơn hàng có dấu hiệu hoặc có cơ sở chứng minh được Khách hàng mua đi bán lại hoặc mua với số lượng nhiều hơn hai (02) sản phẩm cùng loại trong thời gian diễn ra Chương trình ưu đãi.</li><li>Khi có phát sinh trường hợp nghi ngờ gian lận hoặc tranh chấp, quyền quyết định cuối cùng thuộc về đơn vị tổ chức chương trình.</li><li>Mọi thắc mắc vui lòng liên hệ Trung tâm dịch vụ khách hàng Hotline (24/7) 1900 6608 (1.000đ/phút). Chi tiết chương trình tại <a href=\"https://vikkibank.vn/\" target=\"_blank\" rel=\"noopener noreferrer\">https://vikkibank.vn/</a>.</li></ul>",
+  "startDate": "2026-09-18T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-29T00:00:00.000Z",
+  "updatedDate": "2026-09-29T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: 18/09/2026 - 31/12/2026"
+}

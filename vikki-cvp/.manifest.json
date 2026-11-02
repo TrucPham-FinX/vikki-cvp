@@ -1,9 +1,9 @@
 {
   "version": "1.0.0",
-  "generatedAt": "2026-11-02T11:04:21.436Z",
+  "generatedAt": "2026-11-02T13:34:11.865Z",
   "outputDir": "vikki-cvp",
-  "totalFiles": 1082,
-  "totalBytes": 777119975,
+  "totalFiles": 1083,
+  "totalBytes": 777134368,
   "files": {
     ".DS_Store": {
       "sha256": "e3b6aab44469183b004511a6199ec5926ffb3f6df62e8c9873e6a6d601ef0fa1",
@@ -398,17 +398,17 @@
     "card-co-badged-cvp/card-co-badged-cvp.html": {
       "sha256": "50cc2daad79ef5ab3ba12ee98375409e634a6a17fb37448399c0f050f10eeed8",
       "size": 106976,
-      "mtime": "2026-11-02T11:04:03.269Z"
+      "mtime": "2026-11-02T13:34:05.133Z"
     },
     "card-co-badged-cvp/fee.html": {
       "sha256": "549cb65800b35538de192a452e8fd7853404645170ac5cffc69bed97acea5a56",
       "size": 79432,
-      "mtime": "2026-11-02T11:04:03.274Z"
+      "mtime": "2026-11-02T13:34:05.139Z"
     },
     "card-co-badged-cvp/tc.html": {
       "sha256": "9580829f9fe24a45c6830de29584ffd9894b80ce57780cd6d891e72a9368be70",
       "size": 236050,
-      "mtime": "2026-11-02T11:04:03.280Z"
+      "mtime": "2026-11-02T13:34:05.148Z"
     },
     "card-intro/.DS_Store": {
       "sha256": "1216b951b2efe22ccdadd778b818cee6b599daf0af94d83e60561d89f903b3de",
@@ -448,32 +448,37 @@
     "card-intro/list.html": {
       "sha256": "0a695ac240c8ded30dad3e06bedd1db3082844356b7151227bd4ade6fdfba230",
       "size": 3998,
-      "mtime": "2026-11-02T11:04:03.281Z"
+      "mtime": "2026-11-02T13:34:05.159Z"
     },
     "card-intro/vikki-go-cobage.html": {
       "sha256": "c87ce07b52eeb35791d6c1f666ae4436080ced9dd86d690a54a8712a4117313e",
       "size": 5069,
-      "mtime": "2026-11-02T11:04:03.283Z"
+      "mtime": "2026-11-02T13:34:05.161Z"
     },
     "card-intro/vikki-go-plus.html": {
       "sha256": "c79caf2a7c18fac1f1a61d2fd1d69540cbbfe8b0b73985f51ddf96752f38bfb1",
       "size": 5320,
-      "mtime": "2026-11-02T11:04:03.282Z"
+      "mtime": "2026-11-02T13:34:05.161Z"
     },
     "card-intro/vikki-go.html": {
       "sha256": "22fad612c7adedbf3c11b8df8dfe1050fd80ad5d46ca95efa253a122226478f4",
       "size": 5080,
-      "mtime": "2026-11-02T11:04:03.283Z"
+      "mtime": "2026-11-02T13:34:05.161Z"
     },
     "card-intro/vikki-one-connect.html": {
       "sha256": "cb0210c70f8b9804a1e76f710440c1e852bf2c8aea02b3ed17b5238dc29ecf59",
       "size": 5050,
-      "mtime": "2026-11-02T11:04:03.283Z"
+      "mtime": "2026-11-02T13:34:05.161Z"
     },
     "card-intro/vikki-pro.html": {
       "sha256": "b55bc2e78dca78606b6325755677bfe74753f4bbc4a0d53a8d5a473cd3de5158",
       "size": 5329,
-      "mtime": "2026-11-02T11:04:03.282Z"
+      "mtime": "2026-11-02T13:34:05.160Z"
+    },
+    "catalogue.html": {
+      "sha256": "21319b5f7aaa43cc77e1de3ddbecd513292842b2eae882cd53ea656ddfb4c818",
+      "size": 14393,
+      "mtime": "2026-11-02T13:27:16.057Z"
     },
     "consumer-secured-loan-cvp/assets/cau-hoi-thuong-gap.png": {
       "sha256": "d6f3fe7a96dcf9e8cf237b08646066b34741ffa722ca1ff7aa7437646dcd5a0b",
@@ -608,12 +613,12 @@
     "consumer-secured-loan-cvp/index.html": {
       "sha256": "b80bc8e88e841668d4314bd1b7ded1650b75ef4ba25a2408aea226061ec88cfb",
       "size": 41506,
-      "mtime": "2026-11-02T11:04:03.287Z"
+      "mtime": "2026-11-02T13:34:05.167Z"
     },
     "consumer-secured-loan-cvp/tc.html": {
       "sha256": "c5c3582f234f6a84cd47e80e8f7ec842eedd6f375123e0fd4576da9beffc0cf4",
       "size": 9140,
-      "mtime": "2026-11-02T11:04:03.290Z"
+      "mtime": "2026-11-02T13:34:05.170Z"
     },
     "credit-card-sale-cvp/assets/card-cvp.mp4": {
       "sha256": "952296372bc87ab26d69b62e6be3821e3f250b037bf1e32ac822f3600e58ba9e",
@@ -1083,12 +1088,12 @@
     "home-loan-cvp/index.html": {
       "sha256": "27ded0c79564c736f1e8764c8818f7025b7ab6da80ba34b4e0a24cc35b12b187",
       "size": 41849,
-      "mtime": "2026-11-02T11:04:03.294Z"
+      "mtime": "2026-11-02T13:34:05.173Z"
     },
     "home-loan-cvp/tc.html": {
       "sha256": "846870528efc211fc2f83b804ac94991d0ba6c7b47cda604cdb958a3607824ad",
       "size": 8657,
-      "mtime": "2026-11-02T11:04:03.296Z"
+      "mtime": "2026-11-02T13:34:05.175Z"
     },
     "loan-cvp/assets/3_giai_phap_vay.png": {
       "sha256": "764885439f92e66358a766eadf7df707b83bf8d831a5cf76992783bfa4399c6a",
@@ -1623,7 +1628,7 @@
     "promotion/list.html": {
       "sha256": "260da5a18c7353bc837c26fb3656bb1e42873cd04411e728d4e9b2f295524f1b",
       "size": 30363,
-      "mtime": "2026-11-02T11:04:03.298Z"
+      "mtime": "2026-11-02T13:34:05.178Z"
     },
     "promotion/promo-001.html": {
       "sha256": "91db326bb9ae1c4ec46b63f6c0089d9f93c9af92302aa157e35d1ba6017183a2",
@@ -1688,7 +1693,7 @@
     "promotion/promo-013.html": {
       "sha256": "1e7c64df38695e2c768bca40e5243a0a2b06ccd3a3dbba29135896e3ea07dc49",
       "size": 5131,
-      "mtime": "2026-11-02T11:04:03.317Z"
+      "mtime": "2026-11-02T13:34:05.188Z"
     },
     "promotion/promo-014.html": {
       "sha256": "de002a71d5c3d21f929397cb46fb793dfca16c8af37e48ced85d44c97347528f",
@@ -1708,7 +1713,7 @@
     "promotion/promo-017.html": {
       "sha256": "1a2bc7a63584284f6c828b2df549e783ae46eb6a1c0fc548e6c85dc7572a5efd",
       "size": 5021,
-      "mtime": "2026-11-02T11:04:03.317Z"
+      "mtime": "2026-11-02T13:34:05.188Z"
     },
     "promotion/promo-019.html": {
       "sha256": "850a2df750b1fd25b53cd7c27d8715a1d637cfcb4528799f5bb575e057e5fa99",
@@ -1818,12 +1823,12 @@
     "promotion/promo-040.html": {
       "sha256": "60f6139ed13a6dd39389cbafc9ed2a8b1c8574afe8e335856cbe7d30610b0a03",
       "size": 5904,
-      "mtime": "2026-11-02T11:04:03.317Z"
+      "mtime": "2026-11-02T13:34:05.188Z"
     },
     "promotion/promo-041.html": {
       "sha256": "1b2d9401cd4c91999ee44082a8420500cec99b8c5183a3417c6147b8833885ee",
       "size": 6476,
-      "mtime": "2026-11-02T11:04:03.317Z"
+      "mtime": "2026-11-02T13:34:05.189Z"
     },
     "promotion/promo-042.html": {
       "sha256": "3ccd9fafb3b674d90056de555999a9fc45584262fb416c281428680622199750",
@@ -1923,17 +1928,17 @@
     "promotion/promo-061.html": {
       "sha256": "27aa75ec82bbbaa4bd430874343ac65582e8e9ff13d4334966333d00b55164f0",
       "size": 5465,
-      "mtime": "2026-11-02T11:04:03.317Z"
+      "mtime": "2026-11-02T13:34:05.189Z"
     },
     "promotion/promo-062.html": {
       "sha256": "3c9889158e8fff46b9e83f0ce2b5656aeed7046fc547581cafa8285d21f8ef03",
       "size": 5579,
-      "mtime": "2026-11-02T11:04:03.318Z"
+      "mtime": "2026-11-02T13:34:05.191Z"
     },
     "promotion/promo-063.html": {
       "sha256": "6fe0030e511ae08cbd45bfcf814213b0cc4d10eaaa2bb2c6f9f860ea0c20e4d2",
       "size": 5507,
-      "mtime": "2026-11-02T11:04:03.318Z"
+      "mtime": "2026-11-02T13:34:05.191Z"
     },
     "promotion/promo-064.html": {
       "sha256": "5d7c1a16a2367165e297ad9db50b9710808287d8852ab174b05d693984b51dbc",
@@ -1953,7 +1958,7 @@
     "promotion/promo-067.html": {
       "sha256": "2fd8a082e6f18d52e45fc83f60c20acacc2a0e558ff9a77558715935fef142f3",
       "size": 6137,
-      "mtime": "2026-11-02T11:04:03.318Z"
+      "mtime": "2026-11-02T13:34:05.193Z"
     },
     "promotion/promo-068.html": {
       "sha256": "950085fa99593083243d6e077bba8efba41edd99ec73b6947a3bc08220a72728",
@@ -1993,7 +1998,7 @@
     "promotion/promo-075.html": {
       "sha256": "98c05a9c3f5b7b20c1036d065217d07c89d0d70af420e90d6f096d94a7597bfd",
       "size": 5618,
-      "mtime": "2026-11-02T11:04:03.316Z"
+      "mtime": "2026-11-02T13:34:05.188Z"
     },
     "promotion/promo-076.html": {
       "sha256": "114c3d2357971779f6a10ae22e09384439bcde15042469d5242222cdd4b17888",
@@ -2023,172 +2028,172 @@
     "promotion/promo-081.html": {
       "sha256": "bcf1f62ab09ff3fc59f2f9a91429ee9f71c51939a754326013bca2647a6ca37a",
       "size": 8839,
-      "mtime": "2026-11-02T11:04:03.316Z"
+      "mtime": "2026-11-02T13:34:05.188Z"
     },
     "promotion/promo-082.html": {
       "sha256": "95d5b885575a55c2c36830ef4c0a26a753edeb37ac2c6a58daff4797de48eca9",
       "size": 7689,
-      "mtime": "2026-11-02T11:04:03.316Z"
+      "mtime": "2026-11-02T13:34:05.187Z"
     },
     "promotion/promo-083.html": {
       "sha256": "a708f96acdc155c36503efaa22939b9d1c94de3040a08a97f7cbfdeebf6bc44b",
       "size": 8984,
-      "mtime": "2026-11-02T11:04:03.316Z"
+      "mtime": "2026-11-02T13:34:05.187Z"
     },
     "promotion/promo-084.html": {
       "sha256": "0ec55b6328fd2cca4eb32849b7b6c50616e2a9a1bfd789db9759e82392f0baf9",
       "size": 8170,
-      "mtime": "2026-11-02T11:04:03.315Z"
+      "mtime": "2026-11-02T13:34:05.187Z"
     },
     "promotion/promo-085.html": {
       "sha256": "51b3f8cac76315ab56570ecab64aa7ef081bc0c4e8443d7f49eac0a1b9df4ca9",
       "size": 8003,
-      "mtime": "2026-11-02T11:04:03.315Z"
+      "mtime": "2026-11-02T13:34:05.187Z"
     },
     "promotion/promo-086.html": {
       "sha256": "7515c8dde3767721f3119c5cbb3aab9a6fb109675b475e7e8bb01a7d5d37f81e",
       "size": 7702,
-      "mtime": "2026-11-02T11:04:03.314Z"
+      "mtime": "2026-11-02T13:34:05.186Z"
     },
     "promotion/promo-087.html": {
       "sha256": "28d1c7fe45d4c771ddc390604f61c925c2439b2077d10b5565dad55092af86a9",
       "size": 7692,
-      "mtime": "2026-11-02T11:04:03.314Z"
+      "mtime": "2026-11-02T13:34:05.186Z"
     },
     "promotion/promo-088.html": {
       "sha256": "7bb8695acd69210e1df8d925251bb66e995a35cd8cc2133859b1d6a6b703cb9b",
       "size": 7737,
-      "mtime": "2026-11-02T11:04:03.314Z"
+      "mtime": "2026-11-02T13:34:05.186Z"
     },
     "promotion/promo-089.html": {
       "sha256": "1f3596dfec10a0d0f15e6e63953600c39ed937d57a4d402becac9435a8eb9c2f",
       "size": 7717,
-      "mtime": "2026-11-02T11:04:03.313Z"
+      "mtime": "2026-11-02T13:34:05.186Z"
     },
     "promotion/promo-090.html": {
       "sha256": "fe4f7754248da279085ad806d96ca098621d91a3a2a3abc8ea0316f5940fe6b6",
       "size": 5591,
-      "mtime": "2026-11-02T11:04:03.312Z"
+      "mtime": "2026-11-02T13:34:05.185Z"
     },
     "promotion/promo-091.html": {
       "sha256": "e9b8749f2426e575e86e72bec193b22e00ca7327a1cf00ff8378f071c2f586f9",
       "size": 7316,
-      "mtime": "2026-11-02T11:04:03.311Z"
+      "mtime": "2026-11-02T13:34:05.185Z"
     },
     "promotion/promo-092.html": {
       "sha256": "4cf4d0b20982d7f1137a2a6b19c0f87b1b0f4e850034f6a7303b646bdbae4c55",
       "size": 5599,
-      "mtime": "2026-11-02T11:04:03.311Z"
+      "mtime": "2026-11-02T13:34:05.185Z"
     },
     "promotion/promo-093.html": {
       "sha256": "ad787248d1149d8720621179ed585021cf28dbe7cbf2c65626d5ed145ea323c6",
       "size": 5484,
-      "mtime": "2026-11-02T11:04:03.308Z"
+      "mtime": "2026-11-02T13:34:05.185Z"
     },
     "promotion/promo-094.html": {
       "sha256": "84e37cb3c9c9abeb019523c45b309205596ddcd47838087b4751efe99ffe2117",
       "size": 5546,
-      "mtime": "2026-11-02T11:04:03.304Z"
+      "mtime": "2026-11-02T13:34:05.185Z"
     },
     "promotion/promo-095.html": {
       "sha256": "428f3f753c05dec9160a32935ebf134c214da542be341ac6ac7ac3e59256f1ea",
       "size": 5900,
-      "mtime": "2026-11-02T11:04:03.303Z"
+      "mtime": "2026-11-02T13:34:05.184Z"
     },
     "promotion/promo-096.html": {
       "sha256": "524fdc05fb53f3108717b1b49f34a0c3cbe504ecec412353d214016ca026afd4",
       "size": 5697,
-      "mtime": "2026-11-02T11:04:03.303Z"
+      "mtime": "2026-11-02T13:34:05.184Z"
     },
     "promotion/promo-097.html": {
       "sha256": "ef9cf9f441a634ba73a008ad463beaf1bd7b58d96e0f175c2ba6a1591b7ca861",
       "size": 5856,
-      "mtime": "2026-11-02T11:04:03.303Z"
+      "mtime": "2026-11-02T13:34:05.184Z"
     },
     "promotion/promo-098.html": {
       "sha256": "c479852bb2d70aae98d2404bc83304f2bd9f404a1b3c4a21ac410aa63b580eae",
       "size": 5596,
-      "mtime": "2026-11-02T11:04:03.303Z"
+      "mtime": "2026-11-02T13:34:05.184Z"
     },
     "promotion/promo-099.html": {
       "sha256": "cd45983aaf9de8861a45279b8a8a8fca94595469fe4402aed23f9cd4c027337b",
       "size": 5614,
-      "mtime": "2026-11-02T11:04:03.303Z"
+      "mtime": "2026-11-02T13:34:05.183Z"
     },
     "promotion/promo-100.html": {
       "sha256": "c185edcc2b595e7d845a204a03e18ebc2ce49740d025a314f4c13170bc7b496f",
       "size": 5614,
-      "mtime": "2026-11-02T11:04:03.302Z"
+      "mtime": "2026-11-02T13:34:05.183Z"
     },
     "promotion/promo-101.html": {
       "sha256": "c30a914ccf9f6addb5db3f9d620266a426b361a272961da29be92ea8e21b02ee",
       "size": 7138,
-      "mtime": "2026-11-02T11:04:03.302Z"
+      "mtime": "2026-11-02T13:34:05.183Z"
     },
     "promotion/promo-102.html": {
       "sha256": "5526a5129647decc75bf6071a71e6fa22820bc238692f1827ca5c868c340fd17",
       "size": 7207,
-      "mtime": "2026-11-02T11:04:03.302Z"
+      "mtime": "2026-11-02T13:34:05.182Z"
     },
     "promotion/promo-103.html": {
       "sha256": "ad94d98710e8b79997c9f9f684b61f0e623ba90b2ebae792f0b732f660c93da9",
       "size": 7206,
-      "mtime": "2026-11-02T11:04:03.302Z"
+      "mtime": "2026-11-02T13:34:05.182Z"
     },
     "promotion/promo-104.html": {
       "sha256": "4620c032fdd0467d13c157d701e214086d5326082cdb1ce6273d36baf8172c2e",
       "size": 6596,
-      "mtime": "2026-11-02T11:04:03.302Z"
+      "mtime": "2026-11-02T13:34:05.182Z"
     },
     "promotion/promo-105.html": {
       "sha256": "9d5bc3400cb1fee8c1ccd6eb19b9cfe18b676cbe3f34269e2fba9c0c383be4c3",
       "size": 8065,
-      "mtime": "2026-11-02T11:04:03.301Z"
+      "mtime": "2026-11-02T13:34:05.182Z"
     },
     "promotion/promo-106.html": {
       "sha256": "ac8cd1af44623e0e1ab9092d9112f82c5db7739fd35e0f3966ea0326df261124",
       "size": 7745,
-      "mtime": "2026-11-02T11:04:03.301Z"
+      "mtime": "2026-11-02T13:34:05.181Z"
     },
     "promotion/promo-107.html": {
       "sha256": "0de88cb1162894c777b56b48e739dc06f1d567ab1a8b21b21b9bf87689930ee1",
       "size": 6689,
-      "mtime": "2026-11-02T11:04:03.301Z"
+      "mtime": "2026-11-02T13:34:05.181Z"
     },
     "promotion/promo-108.html": {
       "sha256": "b28f80aa8849e8c9dadd3d0f7ff988776f5db87d8196190ef98386075b682d6e",
       "size": 7808,
-      "mtime": "2026-11-02T11:04:03.301Z"
+      "mtime": "2026-11-02T13:34:05.181Z"
     },
     "promotion/promo-109.html": {
       "sha256": "fb2159d16cb9e4bcd4f0ccb84437472c1fa7356cc20fe12e03ba1d6ed04ec8d3",
       "size": 5848,
-      "mtime": "2026-11-02T11:04:03.301Z"
+      "mtime": "2026-11-02T13:34:05.181Z"
     },
     "promotion/promo-110.html": {
       "sha256": "f146a54c1db886728776e021bd8cdd655d23089c79b8ed0d256f2bc35d1acd72",
       "size": 7182,
-      "mtime": "2026-11-02T11:04:03.300Z"
+      "mtime": "2026-11-02T13:34:05.180Z"
     },
     "promotion/promo-111.html": {
       "sha256": "0bdf95e082a8911ceec74e2c7929dfba27a79a033519c68b02cbf95aa8492780",
       "size": 5734,
-      "mtime": "2026-11-02T11:04:03.300Z"
+      "mtime": "2026-11-02T13:34:05.180Z"
     },
     "promotion/promo-112.html": {
       "sha256": "90d24f33052eea8d88279acd9642116133476391572398a020d1b02898f777bf",
       "size": 9836,
-      "mtime": "2026-11-02T11:04:03.300Z"
+      "mtime": "2026-11-02T13:34:05.180Z"
     },
     "promotion/promo-113.html": {
       "sha256": "e549d648f1706a92dfee2122fb053163e3441c821f555e8707504a7770e2f58c",
       "size": 7749,
-      "mtime": "2026-11-02T11:04:03.300Z"
+      "mtime": "2026-11-02T13:34:05.180Z"
     },
     "promotion/promo-114.html": {
       "sha256": "4652cc012c82b89ab8521b5fbd064caedc65f9cbe5b92df45a0ba5d37a843fef",
       "size": 6213,
-      "mtime": "2026-11-02T11:04:03.299Z"
+      "mtime": "2026-11-02T13:34:05.179Z"
     },
     "sim-cvp/assets/1.png": {
       "sha256": "2a515fc3f5cfaab09ade0826ffa2643f8fd95c9a06bc8921c887551160216d56",
@@ -2788,12 +2793,12 @@
     "vikki-foreign-exchange-cvp/en/index.html": {
       "sha256": "f7ef883c69e87f1291f647c87f1d050f52cadacca054f5805b5c3c380894f299",
       "size": 55286,
-      "mtime": "2026-11-02T11:04:03.322Z"
+      "mtime": "2026-11-02T13:34:05.199Z"
     },
     "vikki-foreign-exchange-cvp/en/tc.html": {
       "sha256": "1efe51e7dbb04b1e31c786f55b5218f03c2fa501bd8c2e0f3e02a3cc2df0bcb7",
       "size": 41559,
-      "mtime": "2026-11-02T11:04:03.324Z"
+      "mtime": "2026-11-02T13:34:05.202Z"
     },
     "vikki-foreign-exchange-cvp/vi/assets/FAQs.png": {
       "sha256": "f35037b0e0c9ee2ed1d18f86a6f6fcfbb3961bfbe23891e3fecc6da175cceb91",
@@ -2933,12 +2938,12 @@
     "vikki-foreign-exchange-cvp/vi/index.html": {
       "sha256": "93255b547afba7a7850a57c8a552dae0fe3c4ebc87ab4b7134572680fc1ff2da",
       "size": 55915,
-      "mtime": "2026-11-02T11:04:03.326Z"
+      "mtime": "2026-11-02T13:34:05.204Z"
     },
     "vikki-foreign-exchange-cvp/vi/tc.html": {
       "sha256": "3ee87b77036a22ad7d797b86d293202bc857e615ca150476c1206eb920e0d915",
       "size": 42315,
-      "mtime": "2026-11-02T11:04:03.328Z"
+      "mtime": "2026-11-02T13:34:05.206Z"
     },
     "vikki-go-cvp/.DS_Store": {
       "sha256": "e8757363e3b41eb324e5ec8f43a7477cfc17bab40c23f40021f87540012fe9c1",
@@ -3133,17 +3138,17 @@
     "vikki-go-cvp/fee.html": {
       "sha256": "09ba9e30486a8d5804408b8da9fad08d98580e39c2316bf15c2cef3972392c9c",
       "size": 37616,
-      "mtime": "2026-11-02T11:04:03.331Z"
+      "mtime": "2026-11-02T13:34:05.209Z"
     },
     "vikki-go-cvp/tc.html": {
       "sha256": "327ba529f97fa6f4c19697dc2938b9edb32d6a07bd29915530db7af1cac74930",
       "size": 248272,
-      "mtime": "2026-11-02T11:04:03.335Z"
+      "mtime": "2026-11-02T13:34:05.215Z"
     },
     "vikki-go-cvp/vikki-go-cvp.html": {
       "sha256": "2eb456f1512b8a03b018b297d29f1e7db8b1fe94706b9b7d3f5f02a128bcac91",
       "size": 54042,
-      "mtime": "2026-11-02T11:04:03.337Z"
+      "mtime": "2026-11-02T13:34:05.217Z"
     },
     "vikki-go-plus-cvp/.DS_Store": {
       "sha256": "104cf7c2d8ef00f30f3afccf149c73a3e2e90ea8167386af59bbd7374a97f7a0",
@@ -3373,17 +3378,17 @@
     "vikki-go-plus-cvp/fee.html": {
       "sha256": "99f03490101882709baab460faea830c8d190b3600f1a53ce969a6f73f2a0876",
       "size": 103340,
-      "mtime": "2026-11-02T11:04:03.340Z"
+      "mtime": "2026-11-02T13:34:05.222Z"
     },
     "vikki-go-plus-cvp/tc.html": {
       "sha256": "20837240e3b2d5b9f43b00b7aceadb1373b1775d5740dcd7a3752287fa1d4d9a",
       "size": 373686,
-      "mtime": "2026-11-02T11:04:03.346Z"
+      "mtime": "2026-11-02T13:34:05.229Z"
     },
     "vikki-go-plus-cvp/vikki-go-plus-cvp.html": {
       "sha256": "8a93a51fee77e01be11c1a09a53c1c1468ebe6a7a7a84a6c2a0f9f0b24745169",
       "size": 102210,
-      "mtime": "2026-11-02T11:04:03.349Z"
+      "mtime": "2026-11-02T13:34:05.233Z"
     },
     "vikki-golden-savings/assets/cau-hoi-thuong-gap.png": {
       "sha256": "d6f3fe7a96dcf9e8cf237b08646066b34741ffa722ca1ff7aa7437646dcd5a0b",
@@ -3523,27 +3528,27 @@
     "vikki-golden-savings/index.html": {
       "sha256": "3d991c07ed196d46bbcc972b8a66754dfba2164e1b7c1a41063c910858178b81",
       "size": 67986,
-      "mtime": "2026-11-02T11:04:03.353Z"
+      "mtime": "2026-11-02T13:34:05.237Z"
     },
     "vikki-golden-savings/tc-2.html": {
       "sha256": "f5cce69a267855a286b8ff7ef2bcd45e81bf1dd78804e53756d969871b7cd7c4",
       "size": 218165,
-      "mtime": "2026-11-02T11:04:03.361Z"
+      "mtime": "2026-11-02T13:34:05.242Z"
     },
     "vikki-golden-savings/tc-online-2.html": {
       "sha256": "16feed173acaf1409d301d4ac5f2f3b9c41cac1f3dbf7c4e6ba244e8c563ca6e",
       "size": 280546,
-      "mtime": "2026-11-02T11:04:03.367Z"
+      "mtime": "2026-11-02T13:34:05.246Z"
     },
     "vikki-golden-savings/tc-online.html": {
       "sha256": "93ab4067bb2d85c0cf9f89b3f7f839bd1f3155ef2f5f3f104bf34b5d57f6e4ad",
       "size": 77227,
-      "mtime": "2026-11-02T11:04:03.369Z"
+      "mtime": "2026-11-02T13:34:05.249Z"
     },
     "vikki-golden-savings/tc.html": {
       "sha256": "52512a23844ef81566cd40176ce0196acb116e5b1a2d472569c2ee0fcfda259f",
       "size": 50695,
-      "mtime": "2026-11-02T11:04:03.371Z"
+      "mtime": "2026-11-02T13:34:05.251Z"
     },
     "vikki-lixi-2026/assets/content-step-kich-hoat.png": {
       "sha256": "22454c891a7ddc1b5759bdf3989f30c28de56bfdf491cc5ec413573139370bc4",
@@ -3718,12 +3723,12 @@
     "vikki-lixi-2026/index.html": {
       "sha256": "0150d7d31f972be91f3087664f790b5199f2a4b2067b8adb8a9f9d115fe22fd2",
       "size": 45891,
-      "mtime": "2026-11-02T11:04:03.375Z"
+      "mtime": "2026-11-02T13:34:05.257Z"
     },
     "vikki-lixi-2026/tc.html": {
       "sha256": "602acac016175e4aea9a082c0d984599d6e540a5f725b50f028a8f12a9d79b59",
       "size": 21714,
-      "mtime": "2026-11-02T11:04:03.376Z"
+      "mtime": "2026-11-02T13:34:05.260Z"
     },
     "vikki-loan-cvp/assets/cau_hoi.png": {
       "sha256": "bab67b1b8f612d0f32de2ab6b4fc8392666174dea0ca704b11c5341f8daa68b3",
@@ -3878,12 +3883,12 @@
     "vikki-loan-cvp/index.html": {
       "sha256": "86c5e3dcf25d5aa6f0314263559134afac21044d72a27b66eddabc83ab6a21b5",
       "size": 42728,
-      "mtime": "2026-11-02T11:04:03.378Z"
+      "mtime": "2026-11-02T13:34:05.263Z"
     },
     "vikki-loan-cvp/tc.html": {
       "sha256": "bbe3be93f4b7b988826c1f35c437357b9e731f2c12fe0c72cc9397096a400919",
       "size": 37051,
-      "mtime": "2026-11-02T11:04:03.380Z"
+      "mtime": "2026-11-02T13:34:05.265Z"
     },
     "vikki-nnn-cvp/assets/3-steps-open-account.png": {
       "sha256": "cb65e326e36df866b0ae7517fbf61a8714b93fd35f28c4e6bcb2aba77a9e4149",
@@ -3973,7 +3978,7 @@
     "vikki-nnn-cvp/index.html": {
       "sha256": "b002553d2596453f41247dd2204592baf16e145b899145a517020f761822d78d",
       "size": 43857,
-      "mtime": "2026-11-02T11:04:03.382Z"
+      "mtime": "2026-11-02T13:34:05.267Z"
     },
     "vikki-od-at-branch-cvp/assets/cau_hoi_thuong_gap.png": {
       "sha256": "c1c3e27f1d5365d275e0495200c5008f4e1886c4689048249f3fca1f178c72dd",
@@ -4108,17 +4113,17 @@
     "vikki-od-at-branch-cvp/fee.html": {
       "sha256": "281db1ccf2a63eaf106bdbd1e19412b2954c1846b8349fe38afbe0418c98b477",
       "size": 12794,
-      "mtime": "2026-11-02T11:04:03.386Z"
+      "mtime": "2026-11-02T13:34:05.269Z"
     },
     "vikki-od-at-branch-cvp/index.html": {
       "sha256": "290c05823b27976f59a27d9c5c92737dd1eba15b19b9a6a63753a0fe0544e85a",
       "size": 47826,
-      "mtime": "2026-11-02T11:04:03.389Z"
+      "mtime": "2026-11-02T13:34:05.272Z"
     },
     "vikki-od-at-branch-cvp/tc.html": {
       "sha256": "9b1e77f52ba0e8956ab2802c012165923a18a0b57af4dfdfcd03d7f458f096da",
       "size": 52068,
-      "mtime": "2026-11-02T11:04:03.391Z"
+      "mtime": "2026-11-02T13:34:05.275Z"
     },
     "vikki-od-cbnv-cvp/assets/cau_hoi_thuong_gap.png": {
       "sha256": "0acc26b948f7b2f2337a747fb3acdc4a05c747e0a3e9f83315161dbcf2c91806",
@@ -4228,17 +4233,17 @@
     "vikki-od-cbnv-cvp/fee.html": {
       "sha256": "281db1ccf2a63eaf106bdbd1e19412b2954c1846b8349fe38afbe0418c98b477",
       "size": 12794,
-      "mtime": "2026-11-02T11:04:03.393Z"
+      "mtime": "2026-11-02T13:34:05.279Z"
     },
     "vikki-od-cbnv-cvp/index.html": {
       "sha256": "822961c930037f4bef4480b5c361273dc5c2703583fb071a7b137bd254926d86",
       "size": 45651,
-      "mtime": "2026-11-02T11:04:03.395Z"
+      "mtime": "2026-11-02T13:34:05.282Z"
     },
     "vikki-od-cbnv-cvp/tc.html": {
       "sha256": "9b1e77f52ba0e8956ab2802c012165923a18a0b57af4dfdfcd03d7f458f096da",
       "size": 52068,
-      "mtime": "2026-11-02T11:04:03.396Z"
+      "mtime": "2026-11-02T13:34:05.284Z"
     },
     "vikki-one-connect/.DS_Store": {
       "sha256": "ddb987c9744387e26b1996e93f8fa874603f3dadb75c13519e1cb54e6d504f91",
@@ -4763,22 +4768,22 @@
     "vikki-one-connect/fee.html": {
       "sha256": "c4405065879eb2b2015dc68a738317f6d113a9ffc0502b667d776ba434c42dfc",
       "size": 102268,
-      "mtime": "2026-11-02T11:04:03.400Z"
+      "mtime": "2026-11-02T13:34:05.293Z"
     },
     "vikki-one-connect/index.html": {
       "sha256": "6feeb8deee6e442453dd0702d81022eaaeaf9ac28cc9dc4b909b2c19f8fe4fcb",
       "size": 143249,
-      "mtime": "2026-11-02T11:04:03.407Z"
+      "mtime": "2026-11-02T13:34:05.306Z"
     },
     "vikki-one-connect/intro.html": {
       "sha256": "c9f7eaf480d111db08bf902cb5460f1246bfbd33c49e79bfe9d2d0466a245e5f",
       "size": 5870,
-      "mtime": "2026-11-02T11:04:03.408Z"
+      "mtime": "2026-11-02T13:34:05.309Z"
     },
     "vikki-one-connect/tc.html": {
       "sha256": "fdd60b7fba2a97a8286a36f70d1bd07f0423d23e685be7d8f55cea986b309c17",
       "size": 441555,
-      "mtime": "2026-11-02T11:04:03.415Z"
+      "mtime": "2026-11-02T13:34:05.316Z"
     },
     "vikki-pro-cvp/.DS_Store": {
       "sha256": "beb464ee95e08fa05fb8a662465b703105ccea4e27e667444b68e2bac2722951",
@@ -4993,17 +4998,17 @@
     "vikki-pro-cvp/fee.html": {
       "sha256": "4f5b75345aea08f33421daec5402ae6b2a01dea63761cc6dbb7d96dd4286336e",
       "size": 100825,
-      "mtime": "2026-11-02T11:04:03.418Z"
+      "mtime": "2026-11-02T13:34:05.319Z"
     },
     "vikki-pro-cvp/tc.html": {
       "sha256": "17dcc0901333991a8eb71947f9ad0a0572ff6db16426060888f281bf38f956a2",
       "size": 251539,
-      "mtime": "2026-11-02T11:04:03.422Z"
+      "mtime": "2026-11-02T13:34:05.324Z"
     },
     "vikki-pro-cvp/vikki-pro-cvp.html": {
       "sha256": "e6cc00fb91378ad43df548413532ff30e03fe852c62de59e354ee830f16cc3df",
       "size": 39454,
-      "mtime": "2026-11-02T11:04:03.423Z"
+      "mtime": "2026-11-02T13:34:05.325Z"
     },
     "vikki-safe-plus-cvp/assets/common/hero.png": {
       "sha256": "5448b257a6d3dfa4d74ca6fd35b41affde86a94c3df0ace4ec33a08a905d0b13",
@@ -5218,72 +5223,72 @@
     "vikki-safe-plus-cvp/en/claim.html": {
       "sha256": "1d9076aeb317985ae0fb27601ae5d918513a949083d6de982c8cc04174f267f5",
       "size": 20363,
-      "mtime": "2026-11-02T11:04:03.433Z"
+      "mtime": "2026-11-02T13:34:05.340Z"
     },
     "vikki-safe-plus-cvp/en/full-care.html": {
       "sha256": "bb6c6b3989dd8e8b49a54fb19367e02d9a6743d23f413132728126493d5bfa87",
       "size": 7410,
-      "mtime": "2026-11-02T11:04:03.430Z"
+      "mtime": "2026-11-02T13:34:05.336Z"
     },
     "vikki-safe-plus-cvp/en/full-choice.html": {
       "sha256": "f369ff26d0fea535869c648cb702a471101fe9f2f6fab78aa9777e7b2acd9c64",
       "size": 7411,
-      "mtime": "2026-11-02T11:04:03.430Z"
+      "mtime": "2026-11-02T13:34:05.337Z"
     },
     "vikki-safe-plus-cvp/en/full-coverage.html": {
       "sha256": "62b35f937beb14c29e32f1b52db5e95f6312bb1116385020af7ea30f14ea90c8",
       "size": 7426,
-      "mtime": "2026-11-02T11:04:03.429Z"
+      "mtime": "2026-11-02T13:34:05.335Z"
     },
     "vikki-safe-plus-cvp/en/insurance-wording.html": {
       "sha256": "e8cc70509751c177128ded0a2c901b591f13807195a6f9342ce0ea1a83c08613",
       "size": 145351,
-      "mtime": "2026-11-02T11:04:03.439Z"
+      "mtime": "2026-11-02T13:34:05.346Z"
     },
     "vikki-safe-plus-cvp/en/tc.html": {
       "sha256": "aac33440d704e5db09f7710ee90be46360356701768b82ec09d607759d061301",
       "size": 55523,
-      "mtime": "2026-11-02T11:04:03.442Z"
+      "mtime": "2026-11-02T13:34:05.348Z"
     },
     "vikki-safe-plus-cvp/en/vikki-safe-plus-cvp.html": {
       "sha256": "5f5b659e14b1f66f7232669469973ed0d978f50eab0a2d61f31cc0c7750a4a4a",
       "size": 52659,
-      "mtime": "2026-11-02T11:04:03.428Z"
+      "mtime": "2026-11-02T13:34:05.331Z"
     },
     "vikki-safe-plus-cvp/vi/claim.html": {
       "sha256": "7468bab3e81873ca3d9fbc7ab1f9e87378103c3f41072ab6f7da52a625160077",
       "size": 21737,
-      "mtime": "2026-11-02T11:04:03.449Z"
+      "mtime": "2026-11-02T13:34:05.357Z"
     },
     "vikki-safe-plus-cvp/vi/full-care.html": {
       "sha256": "31f274b88aa3d2b063ef144c03839a1fe4c6c47c273d013a2b7681e3ff5fd06b",
       "size": 7606,
-      "mtime": "2026-11-02T11:04:03.446Z"
+      "mtime": "2026-11-02T13:34:05.352Z"
     },
     "vikki-safe-plus-cvp/vi/full-choice.html": {
       "sha256": "19e6bb5becffb68de421828318e397bdc5f0ef4e2aeab3f44c39b55c81b21674",
       "size": 7519,
-      "mtime": "2026-11-02T11:04:03.448Z"
+      "mtime": "2026-11-02T13:34:05.354Z"
     },
     "vikki-safe-plus-cvp/vi/full-coverage.html": {
       "sha256": "b03219bbaf143a9aaa66e69dd8c9071bbf4016f42b5310d1832065c509c5a86f",
       "size": 7616,
-      "mtime": "2026-11-02T11:04:03.444Z"
+      "mtime": "2026-11-02T13:34:05.351Z"
     },
     "vikki-safe-plus-cvp/vi/insurance-wording.html": {
       "sha256": "6d6e659ed1c561fdc7474093dd3c38d13d859a7104983d92f5bb9e5b0bd28de4",
       "size": 145403,
-      "mtime": "2026-11-02T11:04:03.454Z"
+      "mtime": "2026-11-02T13:34:05.362Z"
     },
     "vikki-safe-plus-cvp/vi/tc.html": {
       "sha256": "aeb5ad4afb9becb99fa17337d65aca41926797871ccfa0d86b7115d59f7da1cc",
       "size": 55623,
-      "mtime": "2026-11-02T11:04:03.457Z"
+      "mtime": "2026-11-02T13:34:05.364Z"
     },
     "vikki-safe-plus-cvp/vi/vikki-safe-plus-cvp.html": {
       "sha256": "f2438ec98418893f38fbd48555b9d78d3f42a9739a3620d42e3b0d8a3771511d",
       "size": 54341,
-      "mtime": "2026-11-02T11:04:03.444Z"
+      "mtime": "2026-11-02T13:34:05.351Z"
     },
     "vikki-savings-kilo-gold/assets/campaign-mechanics-20261029-v01.png": {
       "sha256": "455b922cdbb6cdd650f5af9cd366f16beb91da7a6056525a214917e6c6d2ac94",
@@ -5383,17 +5388,17 @@
     "vikki-savings-kilo-gold/index.html": {
       "sha256": "ec980667722953f906a0d65fc82bba32093904ca2d6648a349faf3d8e22acb1d",
       "size": 67914,
-      "mtime": "2026-11-02T11:04:03.460Z"
+      "mtime": "2026-11-02T13:34:05.367Z"
     },
     "vikki-savings-kilo-gold/tc-online.html": {
       "sha256": "f90fff082d761647f5f1490bad1bc68d188f6e17691916c90ce922fca89529e8",
       "size": 301326,
-      "mtime": "2026-11-02T11:04:03.466Z"
+      "mtime": "2026-11-02T13:34:05.372Z"
     },
     "vikki-savings-kilo-gold/tc.html": {
       "sha256": "ad033be4b2d0bb4d641e84d2c393fd8da670a6bfbb096f9bf9562dd894d9e0ad",
       "size": 226920,
-      "mtime": "2026-11-02T11:04:03.470Z"
+      "mtime": "2026-11-02T13:34:05.377Z"
     },
     "vneid-cvp/assets/background.png": {
       "sha256": "64cad7ffb07f4c47c1d52a9f5a47d272585c64d527b4bac5a09f965ab09bd10b",

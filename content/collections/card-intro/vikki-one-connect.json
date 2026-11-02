@@ -1,0 +1,11 @@
+{
+  "$schema": "../../../../content-types/card-intro.schema.json",
+  "type": "card-intro",
+  "id": "vikki-one-connect",
+  "name": "Thẻ Thanh toán tích hợp VikkiGO",
+  "code": "",
+  "image": "./assets/vikki-one-connect.png",
+  "description": "",
+  "features": [],
+  "applyUrl": ""
+}

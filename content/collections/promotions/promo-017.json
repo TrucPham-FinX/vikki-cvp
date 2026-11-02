@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-017",
+  "group": "PREPAID_CARD",
+  "categories": [
+    "VIKKIGO_PLUS"
+  ],
+  "code": "PREPRO",
+  "name": "Vikki đồng hành Tài chính cùng Khách hàng sau bão lũ",
+  "thumbnail": "./assets/promo-017.png",
+  "shortDesc": "Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với Thẻ Kép VikkiGO+",
+  "longDesc": "Hòa chung tinh thần “tương thân tương ái”, đồng hành cùng Khách hàng Doanh nghiệp và Khách hàng Cá nhân tại các tỉnh, thành bị ảnh hưởng thiên tai, bão lũ,Vikki triển khai chương trình ưu đãi với Ưu đãi hạn mức tín dụng lên đến 1 tỷ đồng với Thẻ Kép VikkiGO+",
+  "startDate": "2026-04-01T00:00:00.000Z",
+  "endDate": "2026-10-01T23:59:59.000Z",
+  "createdDate": "2026-01-22T09:00:00.000Z",
+  "updatedDate": "2026-01-22T09:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến hết 31/12/2030"
+}

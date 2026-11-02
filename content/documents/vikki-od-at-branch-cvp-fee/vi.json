@@ -1,0 +1,100 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-od-at-branch-cvp",
+  "filename": "fee",
+  "variant": "fee",
+  "id": "vikki-od-at-branch-fee",
+  "version": "1.0.0",
+  "sections": [
+    {
+      "id": "main",
+      "title": "",
+      "expanded": true,
+      "blocks": [
+        {
+          "type": "subheading",
+          "className": "fz-125 fw-500 p-8",
+          "text": "BIỂU PHÍ DỊCH VỤ THẤU CHI"
+        },
+        {
+          "type": "table",
+          "headerRows": [
+            {
+              "cells": [
+                {
+                  "value": "STT",
+                  "rowspan": 1
+                },
+                {
+                  "value": "LOẠI PHÍ",
+                  "rowspan": 1
+                },
+                {
+                  "value": "MỨC PHÍ",
+                  "rowspan": 1
+                }
+              ]
+            }
+          ],
+          "rows": [
+            {
+              "cells": [
+                {
+                  "value": "1"
+                },
+                {
+                  "value": "Phí thẩm định khoản vay"
+                },
+                {
+                  "value": "Miễn phí"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "2"
+                },
+                {
+                  "value": "Phí cấp hạn mức thấu chi"
+                },
+                {
+                  "value": "Miễn phí"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "3"
+                },
+                {
+                  "value": "Phí quản lý tài khoản thấu chi"
+                },
+                {
+                  "value": "Miễn phí"
+                }
+              ]
+            },
+            {
+              "cells": [
+                {
+                  "value": "4"
+                },
+                {
+                  "value": "Phí đóng hạn mức thấu chi trước hạn"
+                },
+                {
+                  "value": "Miễn phí"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "sections": []
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "cvp-loan",
+  "name": "Loan Blue Theme",
+  "tokens": {
+    "--cvp-color-primary": "#0052cc",
+    "--cvp-color-secondary": "#0747a6",
+    "--cvp-color-accent": "#0065ff",
+    "--cvp-color-bg": "#f4f5f7",
+    "--cvp-color-text": "#172b4d"
+  }
+}

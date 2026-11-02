@@ -1,0 +1,372 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-od-cbnv-cvp",
+  "filename": "tc",
+  "variant": "tc",
+  "id": "vikki-pro-tnc",
+  "version": "2.1.0",
+  "header": {
+    "img": "assets/vikki-logo.png",
+    "h1": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN SỬ DỤNG HẠN MỨC THẤU CHI TÀI KHOẢN TRÊN ỨNG DỤNG VIKKI"
+  },
+  "sections": [
+    {
+      "id": "phan-a",
+      "title": "Phần A. QUY ĐỊNH CHUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "dieu-1",
+          "title": "ĐIỀU 1. ĐỐI TƯỢNG ÁP DỤNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "Khách hàng cá nhân đáp ứng đầy đủ các điều kiện được cấp Hạn mức thấu chi theo quy định của Vikki Bank tại từng thời kỳ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-2",
+          "title": "ĐIỀU 2. GIẢI THÍCH TỪ NGỮ VÀ CHỮ VIẾT TẮT",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<strong>Giải thích từ ngữ:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Cho vay theo hạn mức thấu chi trên tài khoản thanh toán: Là phương thức cho vay của Vikki Bank đối với khách hàng, theo đó Vikki Bank chấp thuận cho khách hàng chi vượt số tiền có trên tài khoản thanh toán của khách hàng một mức thấu chi tối đa để thực hiện dịch vụ thanh toán trên tài khoản thanh toán. Mức thấu chi tối đa được duy trì trong một khoảng thời gian tối đa mười hai (12) tháng."
+                      },
+                      {
+                        "text": "Dư nợ thấu chi: là số dư nợ gốc mà Bên vay đã sử dụng trong thời hạn thấu chi."
+                      },
+                      {
+                        "text": "Tài khoản thanh toán trực tuyến Vikki (Tài khoản thanh toán Vikki/Tài khoản thanh toán trực tuyến): Là tài khoản thanh toán Vikki Bank được mở bằng phương tiện điện tử áp dụng định danh trực tuyến (eKYC) đối với Khách hàng trên Ứng dụng Vikki. Theo đó, Khách hàng được xác thực và định danh trên các phương tiện điện tử tại thời điểm mở Tài khoản mà không cần phải đến điểm giao dịch của Vikki Bank."
+                      },
+                      {
+                        "text": "Ứng dụng Vikki (App Vikki): Là ứng dụng do Vikki Bank cung cấp, quản lý để cung cấp dịch vụ trung gian thanh toán, các dịch vụ khác theo các Giấy phép được Ngân hàng Nhà nước Việt Nam/Cơ quan có thẩm quyền khác cấp."
+                      },
+                      {
+                        "text": "Hợp đồng tín dụng hạn mức thấu chi: Hợp đồng tín dụng hạn mức thấu chi và (các) Phụ lục hợp đồng tín dụng hạn mức thấu chi (nếu có) được ký kết bằng chữ ký số giữa Khách hàng và Vikki Bank (chữ ký được cung cấp bởi tổ chức cung cấp dịch vụ chứng thực chữ ký số theo quy định tại Nghị định số 130/2018/NĐ-CP ngày 27/09/2018 của Chính phủ quy định chi tiết thi hành luật giao dịch điện tử về chữ ký số và dịch vụ chứng thực chữ ký số)."
+                      },
+                      {
+                        "text": "Định danh khách hàng (KYC – Know Your Customer): Là việc nhận biết và xác minh thông tin của khách hàng đảm bảo thông tin thực tế khớp đúng với những thông tin, hồ sơ mà khách hàng cung cấp cho Vikki Bank."
+                      },
+                      {
+                        "text": "Định danh khách hàng trực tuyến (eKYC – electronic Know Your Customer): Là phương thức định danh khách hàng trực tuyến bằng phương thức điện tử, không gặp mặt trực tiếp khách hàng. Theo đó Vikki Bank sử dụng công nghệ để thu thập, kiểm tra, đối chiếu, đảm bảo sự khớp đúng giữa thông tin nhận biết khách hàng, dữ liệu sinh trắc học của khách hàng với các thông tin, yếu tố sinh trắc học tương ứng trên các tài liệu, dữ liệu cần thiết nhằm nhận biết khách hàng, hoặc với dữ liệu định danh cá nhân được xác thực bởi cơ quan nhà nước có thẩm quyền, hoặc với cơ sở dữ liệu căn cước công dân, cơ sở dữ liệu quốc gia về dân cư hoặc bởi tổ chức cung cấp dịch vụ xác thực điện tử theo quy định của pháp luật về định danh và xác thực điện tử hoặc bởi tổ chức tín dụng khác."
+                      },
+                      {
+                        "text": "Chức năng thanh lý Hạn mức thấu chi trước hạn: Chức năng Vikki Bank cung cấp cho phép Khách hàng chủ động thanh lý Hạn mức thấu chi trước hạn trực tiếp trên ứng dụng Vikki đối với Hạn mức thấu chi trên Tài khoản thanh toán trực tuyến Vikki."
+                      },
+                      {
+                        "text": "Điều khoản và Điều kiện: Là Điều khoản và điều kiện vay hạn mức thấu chi tài khoản thanh toán bằng phương tiện điện tử trên ứng dụng Vikki."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Các chữ viết tắt:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Vikki Bank: Ngân hàng TNHH Một Thành Viên Số Vikki"
+                      },
+                      {
+                        "text": "KH: Khách hàng"
+                      },
+                      {
+                        "text": "HMTC: Hạn mức thấu chi"
+                      },
+                      {
+                        "text": "TKTT: Tài khoản thanh toán"
+                      },
+                      {
+                        "text": "HĐTD HMTC: Hợp đồng tín dụng hạn mức thấu chi"
+                      },
+                      {
+                        "text": "TCTD: Tổ chức tín dụng"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-3",
+          "title": "ĐIỀU 3. QUY ĐỊNH CHUNG VỀ SẢN PHẨM",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "<strong>Đối tượng khách hàng: </strong>Khách hàng đã có tài khoản thanh toán trực tuyến trên ứng dụng của Vikki Bank và thỏa các điều kiện sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "TKTT không bị giới về hạn mức giao dịch ghi nợ (100 triệu đồng/tháng) theo quy định về mở, sử dụng tài khoản thanh toán của Vikki Bank."
+                      },
+                      {
+                        "text": "Có nhu cầu cấp HMTC để phục vụ nhu cầu đời sống (sử dụng cho các mục đích tiêu dùng hợp pháp) thông qua TKTT Vikki."
+                      },
+                      {
+                        "text": "Khách hàng không thuộc trường hợp không cấp và/hoặc hạn chế cấp tín dụng theo quy định của pháp luật và Vikki Bank."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Điều kiện vay vốn:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "KH đáp ứng điều kiện vay vốn theo Quy định hiện hành của Vikki Bank."
+                      },
+                      {
+                        "text": "KH phải đồng ý với các điều khoản, điều kiện về sản phẩm này."
+                      },
+                      {
+                        "text": "KH đã có TKTT trực tuyến Vikki, có nhu cầu cấp HMTC để sử dụng cho các mục đích tiêu dùng hợp pháp thông qua TKTT Vikki."
+                      },
+                      {
+                        "text": "KH không phát sinh nợ nhóm 2 trở lên tại Vikki Bank và các TCTD khác vào thời điểm xét duyệt khoản vay."
+                      },
+                      {
+                        "text": "KH cam kết về việc có đủ năng lực hành vi dân sự theo quy định pháp luật, về tính trung thực và chính xác của các thông tin kê khai theo yêu cầu của Vikki Bank."
+                      },
+                      {
+                        "text": "KH được Vikki Bank đánh giá có đủ khả năng trả nợ, thể hiện thông qua thông tin về chức danh và vị trí công việc hoặc các tiêu chí khác do Vikki Bank công bố trong từng thời kỳ."
+                      },
+                      {
+                        "text": "KH đáp ứng các điều kiện khác theo quy định của Vikki Bank trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Xử lý quá hạn:</strong>",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Quá thời hạn 09 ngày (DPD9+) kể từ ngày ra sao kê gốc, lãi vay thấu chi hàng tháng mà KH vẫn chưa thanh toán đủ nợ cho Vikki Bank thì hệ thống tự động thực hiện tạm khóa HMTC (KH tạm thời không sử dụng được HMTC) và tự động thực hiện mở khóa HMTC khi KH hoàn tất nghĩa vụ thanh toán nợ và không vi phạm các trường hợp nợ quá hạn khác."
+                      },
+                      {
+                        "text": "Quá thời hạn 30 ngày (DPD30+) kể từ ngày sao kê gốc, lãi vay thấu chi mà KH vẫn chưa thanh toán đủ nợ cho Vikki Bank, hệ thống sẽ tự động khóa hẳn HMTC (KH không sử dụng được HMTC và không được mở lại HMTC) và tiến hành các bước để thu hồi nợ sớm."
+                      },
+                      {
+                        "text": "Trường hợp khách hàng có phân loại nợ (PLN) từ nhóm 2 trở lên (nhóm 2, 3, 4, 5) hệ thống sẽ thực hiện tạm khóa HMTC (KH tạm thời không sử dụng được HMTC) và tự động thực hiện mở khóa HMTC khi trạng thái PLN trở về nợ nhóm 1 và không vi phạm các trường hợp nợ quá hạn khác."
+                      },
+                      {
+                        "text": "Vikki Bank được quyền chủ động điều chỉnh các ngưỡng thời gian áp dụng việc tạm khóa, mở khóa hoặc khóa vĩnh viễn Hạn mức thấu chi (bao gồm các trường hợp quy định tại điểm a, b, c nêu trên) phù hợp với chính sách quản trị rủi ro trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Chấm dứt HMTC trước hạn:</strong><br>HMTC bị chấm dứt trước hạn trong những trường hợp sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "KH có yêu cầu chấm dứt HMTC trước hạn (sử dụng chức năng đóng HMTC trên Ứng dụng Vikki/liên hệ Tổng đài DVKH Vikki của Vikki Bank - tùy vào thực tế triển khai từng thời kỳ)."
+                      },
+                      {
+                        "text": "KH sử dụng vốn sai mục đích."
+                      },
+                      {
+                        "text": "KH vi phạm cam kết trong HĐTD HMTC."
+                      },
+                      {
+                        "text": "KH bị bắt/tạm giam/bị truy cứu trách nhiệm hình sự hoặc để thi hành bản án hình sự."
+                      },
+                      {
+                        "text": "KH chết hoặc mất tích."
+                      },
+                      {
+                        "text": "Vikki Bank đánh giá năng lực tài chính của KH bị suy giảm gây ảnh hưởng/mất khả năng thanh toán nợ cho Vikki Bank."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo thỏa thuận với KH tại HĐTDHMTC."
+                      },
+                      {
+                        "text": "KH vi phạm các cam kết, quy định của Vikki Bank về mở và sử dụng TKTT."
+                      },
+                      {
+                        "text": "Các trường hợp khác theo quy định của Vikki Bank trong từng thời kỳ <br>Trường hợp Vikki Bank đơn phương chấm dứt HMTC trước hạn: KH phải thanh toán toàn bộ dư nợ thấu chi, lãi phát sinh và các chi phí khác (nếu có) theo thời hạn được Vikki Bank thông báo.<br>Trường hợp KH yêu cầu chấm dứt HMTC trước hạn: KH phải thanh toán toàn bộ dư nợ thấu chi, lãi phát sinh và các chi phí khác (nếu có) trước khi KH chấm dứt."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "<strong>Gia hạn HMTC:</strong>Thực hiện theo quy định Vikki Bank trong từng thời kỳ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-4",
+          "title": "ĐIỀU 4. QUYỀN VÀ NGHĨA VỤ CỦA KHÁCH HÀNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "none",
+              "items": [
+                {
+                  "text": "KH chấp nhận vô điều kiện rằng:"
+                }
+              ]
+            },
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Bất cứ việc truy cập nào vào ứng dụng Vikki bằng chính tên đăng nhập với đúng mật khẩu và kết hợp phương pháp xác thực khác do Vikki Bank cung cấp/chấp thuận cho KH để thực hiện dịch vụ vay vốn online được coi là giao dịch vay vốn và/hoặc trả nợ và/hoặc thanh lý trước hạn HMTC của chính KH, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch."
+                },
+                {
+                  "text": "KH đồng ý rằng, trường hợp TKTT Vikki của KH được Vikki Bank cấp HMTC là TKTT trực tuyến được mở bằng phương tiện điện tử, áp dụng công nghệ eKYC không gặp mặt trực tiếp KH, các thông tin về nhân thân của KH khi mở và sử dụng tài khoản thanh toán là chính xác. Việc KH sử dụng HMTC qua TKTT sẽ phát sinh và ràng buộc trách nhiệm của KH theo HĐTDHMTC."
+                },
+                {
+                  "text": "Đồng thời, (các) HĐTDHMTC/PLHD/Cam kết được khởi tạo thông qua, ký kết khi KH thực hiện trên ứng dụng Vikki được coi là có hiệu lực pháp lý tương đương như KH đã ký kết trực tiếp với Vikki Bank, KH hoàn toàn chịu trách nhiệm đối với các giao dịch đó và bị ràng buộc bởi tất cả các nghĩa vụ phát sinh có liên quan đến giao dịch (HĐTD được gửi tới KH qua email của KH ngay khi khoản vay được khởi tạo thành công)."
+                },
+                {
+                  "text": "KH thừa nhận rằng việc thực hiện các giao dịch trực tuyến theo phương thức nêu trên luôn tồn tại những rủi ro tiềm tàng và cam kết chấp nhận mọi rủi ro, chậm trễ, mất mát hoặc thiệt hại do những rủi ro tiềm tàng gây ra. Những rủi ro tiềm tàng của các giao dịch trực tuyến bao gồm nhưng không giới hạn các nội dung sau:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Những sự cố liên quan đến đường truyền Internet do nhà cung cấp dịch vụ gây ra như: đứt đường truyền, dung lượng đường truyền bị hạn chế hoặc những sự cố tương tự có thể ảnh hưởng đến việc thực hiện các giao dịch trực tuyến của KH."
+                      },
+                      {
+                        "text": "Hệ thống của Vikki Bank gặp sự cố do bị mất nguồn điện, bị tấn công, nhiễm virus hoặc bị ảnh hưởng của những sự cố ngoài ý muốn dẫn đến việc không thể xử lý hoặc thực hiện các giao dịch trực tuyến của KH."
+                      },
+                      {
+                        "text": "Hệ thống, thiết bị điện tử của KH bị hỏng, bị nhiễm virus, bị tấn công dẫn đến việc làm lộ hoặc bị đánh cắp các thông tin về giao dịch của KH hoặc tài khoản của KH bị sử dụng một cách trái phép bởi một bên thứ ba."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Giao dịch trực tuyến do KH thực hiện sẽ được xử lý và thực hiện một cách tự động hoặc khi truyền đến hệ thống của Vikki Bank. Vikki Bank xác nhận mọi giao dịch trực tuyến của KH gửi đến Vikki Bank đều là đúng và do chính KH thực hiện. Vì vậy, mọi ý kiến/khiếu nại/tranh chấp cho rằng đó là nhầm lẫn hoặc sai sót liên quan đến giao dịch của KH đều không được chấp nhận. Mọi thiệt hại phát sinh do KH chịu trách nhiệm."
+                },
+                {
+                  "text": "Khi thực hiện thanh lý HMTC trước hạn, KH cam kết rằng đồng ý thực hiện thủ tục thanh lý HMTC trước hạn theo yêu cầu của chính KH và đồng ý để Vikki Bank tự động trích tiền/chuyển tiền từ Tài khoản thanh toán Vikki của KH để thực hiện thu nợ tự động đối với HMTC mà không cần sử dụng, áp dụng các phương thức xác thực giao dịch KH đã đăng ký. Đồng thời, KH cam kết miễn trừ toàn bộ trách nhiệm cho Vikki Bank và tự chịu mọi trách nhiệm phát sinh (nếu có) khi Vikki Bank đã thực hiện thu hồi nợ trước hạn đối với HMTC theo đề nghị của KH."
+                },
+                {
+                  "text": "KH chịu trách nhiệm bảo mật tên đăng nhập, mật khẩu của tài khoản Vikki. KH phải tự chịu trách nhiệm khi để lộ thông tin và/hoặc chủ động cung cấp thông tin User, mật khẩu đăng nhập ứng dụng Vikki và/hoặc OTP cho người khác. Thông báo bằng hình thức nhanh nhất cho Vikki Bank, theo Tổng đài (Hotline) 1900 6608 hoặc thư điện tử (email) 19006608@vikkibank.vn nếu các thông tin trên bị lộ hoặc nghi ngờ bị lộ. KH phải chịu trách nhiệm đối với tất cả các giao dịch được thực hiện trên ứng dụng Vikki trước khi Vikki Bank thực hiện khóa ứng dụng Vikki của KH khi KH thông báo cho Vikki Bank."
+                },
+                {
+                  "text": "KH phải chịu trách nhiệm với bất kỳ thiệt hại, tổn thất nào xảy ra do bất kỳ nguyên nhân nào khác mà không do lỗi trực tiếp của Vikki Bank."
+                },
+                {
+                  "text": "KH qua việc sử dụng ứng dụng Vikki, có trách nhiệm đối với thông tin cung cấp liên quan tới việc sử dụng sản phẩm cho vay."
+                },
+                {
+                  "text": "KH có trách nhiệm chấp hành tất cả các quy định, hướng dẫn của Vikki Bank liên quan đến việc sử dụng sản phẩm cho vay qua ứng dụng Vikki."
+                },
+                {
+                  "text": "Các quyền và trách nhiệm khác của KH được xác định theo quy định Pháp luật, Điều khoản và Điều kiện này, Hợp đồng tín dụng HMTC/Phụ lục Hợp đồng tín dụng HMTC, các Cam kết/Thỏa thuận giữa KH với Vikki Bank."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-5",
+          "title": "ĐIỀU 5. QUYỀN VÀ TRÁCH NHIỆM CỦA NGÂN HÀNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank có quyền được miễn trách nhiệm trong trường hợp hệ thống xử lý, hệ thống truyền tin... bị trục trặc hoặc vì bất kỳ lý do nào khác không phải lỗi chủ quan của Vikki Bank dẫn đến các giao dịch liên quan đến sản phẩm cho vay qua ứng dụng Vikki hoặc yêu cầu thanh lý trước hạn HMTC qua ứng dụng Vikki không thực hiện được hoặc chậm trễ trong việc thực hiện;"
+                },
+                {
+                  "text": "Vikki Bank có trách nhiệm cung cấp sản phẩm cho vay qua ứng dụng Vikki đúng các quy định tại Điều khoản và Điều kiện, HĐTD và quy định của Vikki Bank trong từng thời kỳ;"
+                },
+                {
+                  "text": "Vikki Bank có trách nhiệm xử lý các yêu cầu kiểm tra của KH liên quan đến các khoản vay thực hiện qua ứng dụng Vikki theo quy định của pháp luật và của Vikki Bank;"
+                },
+                {
+                  "text": "Vikki Bank không chịu trách nhiệm về lỗi phát sinh từ các pháp nhân có liên quan hoặc bên thứ ba khác."
+                },
+                {
+                  "text": "Các quyền và trách nhiệm khác của Vikki Bank được xác định theo quy định Pháp luật và Điều khoản và Điều kiện này."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-6",
+          "title": "ĐIỀU 6. ĐIỀU KHOẢN THI HÀNH",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Sau khi KH thực hiện cấp HMTC, Vikki Bank có quyền (nhưng không có nghĩa vụ) gửi thông tin cho KH thông qua tin nhắn, gọi điện thoại vào điện thoại di động, điện thoại cố định, gửi thư vào email của khách hàng."
+                },
+                {
+                  "text": "Trường hợp KH có bất cứ thắc mắc nào, KH có trách nhiệm gửi yêu cầu bằng văn bản đến Vikki Bank trong vòng 01 (một) ngày làm việc kể từ thời điểm nhận được HĐTDHMTC qua email/ứng dụng Vikki nhưng trong mọi trường hợp phải trước thời điểm KH sử dụng sản phẩm vay vốn online. Kể từ thời điểm KH sử dụng tiền vay từ HMTC của Vikki Bank cấp (một phần hoặc toàn bộ), KH đồng ý vô điều kiện nhận nợ và có nghĩa vụ thanh toán nợ theo đúng quy định của HĐTDHMTC/PLHD/Cam kết, quy định của Vikki Bank."
+                },
+                {
+                  "text": "Các Điều khoản và Điều kiện này có hiệu lực kể từ ngày KH xác nhận đồng ý sử dụng sản phẩm thấu chi trên ứng dụng Vikki."
+                },
+                {
+                  "text": "Các tranh chấp phát sinh nếu có liên quan đến khoản vay của KH và/hoặc việc thực hiện các nội dung của Điều khoản và Điều kiện này sẽ được xử lý theo quy định tại HĐTD/PLHD/Cam kết giữa Vikki Bank và KH."
+                },
+                {
+                  "text": "Điều khoản và Điều kiện này là một phần đính kèm của HĐTD HMTC."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ],
+  "note": {
+    "text": "KH chịu trách nhiệm trước pháp luật về tính trung thực, chính xác, đầy đủ, kịp thời và hợp pháp của các thông tin, tài liệu đã khai báo."
+  }
+}

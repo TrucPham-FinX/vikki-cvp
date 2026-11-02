@@ -1,0 +1,203 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-safe-plus-cvp",
+  "filename": "claim-vi",
+  "variant": "tc",
+  "id": "vikki-safe-plus-cvp-claim-vi",
+  "version": "1.0.0",
+  "header": {
+    "img": "../assets/vikki-logo.png",
+    "h1": "HƯỚNG DẪN BỒI THƯỜNG BẢO HIỂM TAI NẠN CON NGƯỜI"
+  },
+  "sections": [
+    {
+      "id": "claim-content",
+      "title": "NỘI DUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "claim-notice",
+          "title": "THÔNG BÁO SỰ KIỆN BẢO HIỂM",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Khi xảy ra rủi ro được bảo hiểm, Người được bảo hiểm hoặc thân nhân của Người được bảo hiểm phải áp dụng các biện pháp cần thiết và có thể thực hiện được để cứu chữa nạn nhân."
+                },
+                {
+                  "text": "Trong trường hợp cần thiết, thông báo cho cơ quan công an, chính quyền địa phương nơi xảy ra tai nạn để hỗ trợ người bị nạn theo quy định."
+                },
+                {
+                  "text": "Nhanh chóng liên hệ với HDI qua số tổng đài 1900068898 để thông báo sự kiện bảo hiểm và cung cấp thông tin vụ việc để nhận hướng dẫn cụ thể, thông tin khai báo như sau:",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      {
+                        "text": "Thông tin người yêu cầu trả tiền bảo hiểm."
+                      },
+                      {
+                        "text": "Thông tin hợp đồng bảo hiểm tai nạn con người: Chủ bảo hiểm; Số chứng minh thư, căn cước công dân: Số hợp đồng/ giấy chứng nhận bảo hiểm; Đơn vị tham gia bảo hiểm."
+                      },
+                      {
+                        "text": "Thông tin về sự kiện bảo hiểm: Thời gian, địa điểm và nguyên dân, diễn biến của sự kiện bảo hiểm."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Trong vòng 30 ngày kể từ thời điểm xảy ra sự kiện bảo hiểm cần gửi thông báo bằng văn bản đến HDI"
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "claim-dossier",
+          "title": "HOÀN THIỆN HỒ SƠ YÊU CẦU BỒI THƯỜNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Nhân viên bồi thường của HDI sẽ liên hệ ngay với Quý khách hàng để hướng dẫn thu thập hồ sơ và tiến hành giải quyết quyền lợi được bảo hiểm."
+                },
+                {
+                  "text": "Hồ sơ bồi thường bao gồm các chứng từ sau:"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "1. Giấy yêu cầu trả tiền bảo hiểm có xác nhận của chủ HĐBH (theo mẫu của HDI) (bản gốc)"
+            },
+            {
+              "type": "paragraph",
+              "text": "2. Tùy thuộc nguyên nhân sự cố, các chứng từ sau sẽ được yêu cầu:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Đối với tai nạn giao thông",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      {
+                        "text": "Cung cấp bản tường trình tai nạn (theo mẫu của HDI) có xác nhận của chủ HĐBH (bản gốc)."
+                      },
+                      {
+                        "text": "Trường hợp có CSGT lập biên bản, cần cung cấp biên bản tai nạn giao thông (bản gốc hoặc bản công chứng)."
+                      },
+                      {
+                        "text": "Giấy phép lái xe hợp lệ (nếu là người trực tiếp lái xe) và các giấy tờ khác liên quan (bản photo)."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Đối với tai nạn lao động và tai nạn sinh hoạt",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      {
+                        "text": "Cung cấp bản tường trình tai nạn (theo mẫu của HDI) có xác nhận của chủ HĐBH/công ty/chính quyền và các giấy tờ khác có liên quan (bản gốc)."
+                      },
+                      {
+                        "text": "Các giấy tờ khác có liên quan (bản gốc)."
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "3. Chứng từ y tế:"
+            },
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "Giấy ra viện/ phiếu điều trị (trường hợp điều trị nội trú)"
+                },
+                {
+                  "text": "Phiếu mổ (trường hợp phẫu thuật)"
+                },
+                {
+                  "text": "Tiền viện phí/ toa thuốc/ hóa đơn/ bảng kê"
+                },
+                {
+                  "text": "Các kết quả xét nghiệm lâm sàng"
+                },
+                {
+                  "text": "Và một số giấy tờ liên quan do người có thẩm quyền của cơ sở y tế ký, đóng dấu. (Các chứng từ y tế bản photo, các hóa đơn bản gốc)"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "4. Trích lục khai tử (trường hợp người được BH tử vong) (bản công chứng)"
+            },
+            {
+              "type": "paragraph",
+              "text": "5. Chứng từ chứng minh quyền thừa kế hợp pháp (trường hợp người được Bảo hiểm tử vong)."
+            },
+            {
+              "type": "paragraph",
+              "text": "6. Trường hợp người được Bảo hiểm ủy quyền cho người khác nhận tiền Bảo hiểm phải có giấy ủy quyền hợp pháp (bản công chứng)."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "claim-settlement",
+          "title": "GIẢI QUYẾT BỒI THƯỜNG:",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "disc",
+              "items": [
+                {
+                  "text": "HDI cam kết bồi thường đầy đủ cho quý khách hàng theo quy định, quy tắc và điều khoản hợp đồng bảo hiểm."
+                },
+                {
+                  "text": "Trong trường hợp quý khách hàng không phối hợp thực hiện theo hướng dẫn của HDI/ không thực hiện đầy đủ nghĩa vụ theo quy định của HDI. HDI có thể giảm trừ một phần hoặc toàn bộ số tiền bồi thường theo quy định."
+                },
+                {
+                  "text": "Để biết thêm thông tin và được tư vấn cụ thể về bảo hiểm tai nạn con người của HDI, vui lòng liên hệ:",
+                  "children": {
+                    "style": "disc",
+                    "items": [
+                      {
+                        "text": "CÔNG TY TNHH BẢO HIỂM HD"
+                      },
+                      {
+                        "text": "Hotline: 1900068898"
+                      },
+                      {
+                        "text": "Email: Giamdinhboithuong@hdinsurance.com.vn"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

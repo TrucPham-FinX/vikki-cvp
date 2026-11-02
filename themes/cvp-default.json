@@ -1,0 +1,11 @@
+{
+  "id": "cvp-default",
+  "name": "Default Brand Theme",
+  "tokens": {
+    "--cvp-color-primary": "#0000ff",
+    "--cvp-color-secondary": "#6100ff",
+    "--cvp-color-accent": "#da0191",
+    "--cvp-color-bg": "#ffffff",
+    "--cvp-color-text": "#111827"
+  }
+}

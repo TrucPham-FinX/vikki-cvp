@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-093",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE93",
+  "name": "ALL SEASON",
+  "thumbnail": "./assets/promo-093.jpg",
+  "shortDesc": "Giảm giá lên đến 10% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | ALL SEASON | Giảm 10%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 10% cho các gói buffet.</li><li>Địa điểm áp dụng: 193 Nguyễn Văn Thoại, Phường An Hải Đông, Quận Sơn Trà, Đà Nẵng.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li></ul>",
+  "startDate": "2026-09-29T00:00:00.000Z",
+  "endDate": "2027-02-20T23:59:59.000Z",
+  "createdDate": "2026-09-29T00:00:00.000Z",
+  "updatedDate": "2026-09-29T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 20/02/2027"
+}

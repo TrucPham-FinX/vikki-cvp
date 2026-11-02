@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-114",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE114",
+  "name": "Lotte Duty Free",
+  "thumbnail": "./assets/promo-114.png",
+  "shortDesc": "Giảm giá lên đến 50 USD",
+  "longDesc": "<p><strong>Vikki x Mastercard | Lotte Duty Free | Giảm 50 USD</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 10 USD cho hóa đơn từ 150 USD.</li><li>Giảm 30 USD cho hóa đơn từ 300 USD.</li><li>Giảm 50 USD cho hóa đơn từ 500 USD.</li><li>Địa điểm áp dụng: Mua sắm tại hệ thống cửa hàng Lotte Duty Free.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ (bao gồm cả Thẻ chính và Thẻ phụ).</li><li>Ưu đãi áp dụng cho hóa đơn nguyên giá hoặc hóa đơn đã được giảm giá khi thanh toán bằng thẻ Mastercard tại các cửa hàng Lotte Duty Free Việt Nam.</li><li>Ưu đãi này không áp dụng cho các sản phẩm thuốc lá và một số thương hiệu chọn lọc (ví dụ: Dior).</li><li>Mỗi khách hàng chỉ được hưởng ưu đãi 01 lần trong suốt thời gian diễn ra chương trình khuyến mãi.</li><li>Chương trình có thể kết thúc sớm hơn nếu hết ngân sách trước ngày kết thúc chính thức.</li><li>Chương trình có thể được kết thúc hoặc thay đổi theo yêu cầu của Lotte Duty Free và Mastercard.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li><li>Ưu đãi không có giá trị quy đổi thành tiền mặt hoặc chuyển khoản ngân hàng dưới bất kỳ hình thức nào. Ưu đãi cũng không được đổi thành sản phẩm hoặc chuyển nhượng cho người khác.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2026-11-30T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 30/11/2026"
+}

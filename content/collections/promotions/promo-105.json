@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-105",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE105",
+  "name": "ALMA RESORT CAM RANH",
+  "thumbnail": "./assets/promo-105.jpg",
+  "shortDesc": "Giảm giá lên đến 15% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | Alma Resort Cam Ranh | Giảm 15%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 15% giá phòng công bố trên website: <a href=\"http://www.alma-resort.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.alma-resort.com</a>.</li><li>Giảm 15% cho dịch vụ Spa.</li><li>Giảm 15% cho dịch vụ Ăn uống (ngoại trừ Alma Mart và Dịch vụ ăn uống tại phòng/Room service).</li><li>Địa điểm áp dụng: Tầng B1, Tòa nhà Khách sạn, Khu nghỉ dưỡng ALMA, Lô D7a2, TT4X6, Huyện Cam Lâm, Tỉnh Khánh Hòa, Việt Nam.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Quy trình đặt phòng: Vui lòng liên hệ Bộ phận Đặt phòng qua Email: <a href=\"mailto:reservation@alma-resort.com\">reservation@alma-resort.com</a> hoặc Điện thoại: (+84) 258 399 1666. Đặt phòng trực tiếp: Vui lòng sử dụng mã khuyến mãi ALMAMASTER để nhận ưu đãi.</li><li>Thanh toán phải được thực hiện hoàn toàn bằng thẻ Mastercard (qua liên kết Onepay đối với dịch vụ lưu trú và bằng thẻ cứng/thẻ vật lý đối với các dịch vụ khác tại khu nghỉ dưỡng).</li><li>Đối với các dịch vụ khác, vui lòng xuất trình thẻ Mastercard khi nhận phòng để được hưởng ưu đãi.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li><li>Ưu đãi không có giá trị quy đổi thành tiền mặt hoặc chuyển vào tài khoản ngân hàng của Chủ thẻ dưới bất kỳ hình thức nào. Ưu đãi cũng không được đổi thành sản phẩm hoặc chuyển nhượng cho người khác.</li><li>Chủ thẻ phải thanh toán toàn bộ số tiền và phí phát sinh từ việc sử dụng dịch vụ tại Alma Resort Cam Ranh bằng thẻ Mastercard đã phát hành của mình.</li><li>Chủ thẻ tự chịu trách nhiệm đối với mọi chi phí phát sinh (nếu có) liên quan đến việc nhận ưu đãi từ Chương trình, bao gồm nhưng không giới hạn ở thuế thu nhập cá nhân (nếu áp dụng).</li><li>Mọi quyết định của Mastercard liên quan đến Chương trình Khuyến mãi, bao gồm việc xác định Chủ thẻ có đủ điều kiện nhận ưu đãi hay không, đều là quyết định cuối cùng và có giá trị ràng buộc.</li><li>Các quyết định này có thể được Mastercard toàn quyền sửa đổi vào bất kỳ lúc nào, tuân thủ các thủ tục cần thiết theo quy định của pháp luật.</li><li>Trong trường hợp có tranh chấp, quyết định của Mastercard là quyết định cuối cùng. Việc tham gia Chương trình Khuyến mãi này đồng nghĩa với việc Chủ thẻ được xem là đã chấp nhận toàn bộ Điều kiện và Điều khoản của Chương trình như đã nêu.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2027-05-20T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 20/05/2027"
+}

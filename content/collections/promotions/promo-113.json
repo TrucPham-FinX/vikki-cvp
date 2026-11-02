@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-113",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE113",
+  "name": "LONG BEACH PEARL",
+  "thumbnail": "./assets/promo-113.jpg",
+  "shortDesc": "Giảm giá lên đến 15% cùng thẻ Mastercard",
+  "longDesc": "<p><strong>Vikki x Mastercard | LONG BEACH PEARL | Giảm 15%</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Giảm 15% trên tổng hóa đơn.</li><li>Địa điểm áp dụng: Áp dụng tại tất cả các cửa hàng Long Beach Pearl trên toàn quốc, theo danh sách trên website: <a href=\"https://longbeachpearl.com/pages/he-thong-cua-hang\" target=\"_blank\" rel=\"noopener noreferrer\">https://longbeachpearl.com/pages/he-thong-cua-hang</a></li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Sản phẩm áp dụng: Tất cả các sản phẩm trang sức ngọc trai kết hợp vàng và trang sức ngọc trai kết hợp bạc do Long Beach Pearl cung cấp.</li><li>Sản phẩm loại trừ:<ul><li>Các sản phẩm thuộc mã sản phẩm HE và HC.</li><li>Ngọc trai rời và phụ kiện, bao gồm nhưng không giới hạn ở các thành phần và phụ kiện trang sức như chốt bông tai, khóa dây chuyền, chuôi bông tai và các phụ kiện trang sức tương tự khác.</li></ul></li><li>Áp dụng cho khách hàng là Chủ thẻ Mastercard hợp lệ, thực hiện thanh toán và phát sinh chi tiêu tại Địa điểm áp dụng.</li><li>Áp dụng vào tất cả các ngày trong tuần (từ Thứ Hai đến Chủ Nhật), trừ các ngày Lễ theo quy định của pháp luật Việt Nam.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mãi, giảm giá hoặc ưu đãi khác.</li><li>Không được phép tách hoặc gộp hóa đơn dưới mọi hình thức.</li><li>Ưu đãi không có giá trị quy đổi thành tiền mặt hoặc chuyển vào tài khoản ngân hàng của Chủ thẻ dưới bất kỳ hình thức nào. Ưu đãi cũng không được đổi thành sản phẩm hoặc chuyển nhượng cho người khác.</li><li>Chủ thẻ phải thanh toán toàn bộ số tiền và phí phát sinh từ việc mua sắm hàng hóa/dịch vụ tại Long Beach Pearl bằng thẻ Mastercard đã phát hành của mình.</li><li>Chủ thẻ tự chịu trách nhiệm đối với mọi chi phí phát sinh (nếu có) liên quan đến việc nhận ưu đãi từ Chương trình, bao gồm nhưng không giới hạn ở thuế thu nhập cá nhân (nếu áp dụng).</li><li>Mọi quyết định của Mastercard liên quan đến Chương trình Khuyến mãi, bao gồm việc xác định Chủ thẻ có đủ điều kiện nhận ưu đãi hay không, đều là quyết định cuối cùng và có giá trị ràng buộc.</li><li>Các quyết định này có thể được Mastercard toàn quyền sửa đổi vào bất kỳ lúc nào, tuân thủ các thủ tục cần thiết theo quy định của pháp luật.</li><li>Trong trường hợp có tranh chấp, quyết định của Mastercard là quyết định cuối cùng. Việc tham gia Chương trình Khuyến mãi này đồng nghĩa với việc Chủ thẻ được xem là đã chấp nhận toàn bộ Điều kiện và Điều khoản của Chương trình như đã nêu.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2027-06-30T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 30/06/2027"
+}

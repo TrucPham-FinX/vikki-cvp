@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-063",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE"
+  ],
+  "code": "PRE63",
+  "name": "Tặng 01 món ăn trị giá 500.000 VNĐ trên mỗi hóa đơn tại nhà hàng IBUKI",
+  "thumbnail": "./assets/promo-063.png",
+  "shortDesc": "Tặng 01 món ăn trị giá 500.000 VNĐ trên mỗi hóa đơn tại nhà hàng IBUKI",
+  "longDesc": "<strong>Hình thức thanh toán: </strong>Ưu đãi phải được quy đổi trong thời gian diễn ra chương trình.<br><strong>Điều kiện áp dụng: </strong>Không áp dụng tách hóa đơn - toàn bộ giao dịch phải được thanh toán bằng một thẻ Mastercard duy nhất.<br><strong>Kết hợp ưu đãi: </strong>Ưu đãi không được kết hợp đồng thời với các chương trình khuyến mãi hoặc giảm giá khác<br><strong>Thời hạn chương trình: </strong>Chỉ các giao dịch thanh toán bằng thẻ Mastercard mới đủ điều kiện nhận ưu đãi.<br><strong>Cách thức nhận ưu đãi:</strong> Xuất trình thẻ Mastercard (thẻ vật lý hoặc thẻ ảo trên ứng dụng) tại quầy thanh toán.",
+  "startDate": "2026-10-01T00:00:00.000Z",
+  "endDate": "2026-09-30T23:59:59.000Z",
+  "createdDate": "2026-03-13T14:00:00.000Z",
+  "updatedDate": "2026-03-13T14:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: 01/10/2025 - 30/09/2026"
+}

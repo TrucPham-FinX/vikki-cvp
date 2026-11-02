@@ -1,0 +1,11 @@
+{
+  "id": "cvp-card",
+  "name": "Card Gradient Theme",
+  "tokens": {
+    "--cvp-color-primary": "#1e293b",
+    "--cvp-color-secondary": "#6366f1",
+    "--cvp-color-accent": "#ec4899",
+    "--cvp-color-bg": "#0f172a",
+    "--cvp-color-text": "#f8fafc"
+  }
+}

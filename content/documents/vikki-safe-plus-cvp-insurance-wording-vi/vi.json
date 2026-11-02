@@ -1,0 +1,2836 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-safe-plus-cvp",
+  "filename": "insurance-wording-vi",
+  "variant": "tc",
+  "id": "vikki-safe-plus-cvp-insurance-wording-vi",
+  "version": "1.0.0",
+  "header": {
+    "img": "../assets/vikki-logo.png",
+    "h1": "QUY TẮC BẢO HIỂM TAI NẠN CON NGƯỜI",
+    "intro": [
+      "Trên cơ sở giấy yêu cầu bảo hiểm, các kê khai khác (nếu có) của người yêu cầu bảo hiểm và được Công ty TNHH Bảo hiểm HD (HDI) chấp nhận, HDI đồng ý nhận bảo hiểm theo Quy tắc bảo hiểm như sau:"
+    ]
+  },
+  "sections": [
+    {
+      "id": "wording-chapter-1",
+      "title": "CHƯƠNG I: NGUYÊN TẮC CHUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-1",
+          "title": "Điều 1: Phạm vi địa lý được bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Phạm vi địa lý được bảo hiểm là phạm vi khu vực địa lý được xác định theo Quy tắc bảo hiểm này và được quy định chi tiết tại hợp đồng bảo hiểm (HĐBH) giữa HDI và bên mua bảo hiểm (BMBH)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Phạm vi địa lý theo Quy tắc bảo hiểm này được xác định là lãnh thổ Việt Nam. Nếu muốn được bảo hiểm ngoài lãnh thổ Việt Nam thì bên mua bảo hiểm phải đóng thêm phụ phí bảo hiểm được quy định tại biểu phí bảo hiểm và phạm vi địa lý bảo hiểm phải được ghi cụ thể tại hợp đồng bảo hiểm."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-2",
+          "title": "Điều 2: Đối tượng bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Đối tượng bảo hiểm"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Để có thể được HDI xem xét chấp thuận việc tham gia bảo hiểm theo Quy tắc bảo hiểm này, người được bảo hiểm là cá nhân phải đáp ứng đầy đủ tất cả các điều kiện dưới đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Là công dân Việt Nam hoặc người nước ngoài cư trú tại Việt Nam tại thời điểm HĐBH có hiệu lực;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Từ 15 ngày tuổi đến tối đa 80 tuổi;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "c. Không thuộc trường hợp quy định tại khoản 2 Điều này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Không nhận bảo hiểm và không chịu trách nhiệm đối với các trường hợp sau:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Những người có tiền sử hoặc đang bị bệnh tâm thần, thần kinh, bệnh phong."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Những người bị tàn phế hoặc thương tật vĩnh viễn từ 50% trở lên."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-3",
+          "title": "Điều 3: Các định nghĩa",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Những thuật ngữ sau đây trong Quy tắc bảo hiểm này được hiểu:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Công dân Việt Nam</strong>: là người đang có quốc tịch Việt Nam hợp pháp theo quy định pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Người nước ngoài</strong>: là người có quốc tịch nhưng không có quốc tịch Việt Nam, không bao gồm những người không có quốc tịch theo quy định pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Cư trú tại:</strong> là chỗ ở hợp pháp mà người đó thường xuyên sinh sống. Nơi cư trú của công dân là nơi thường trú hoặc nơi tạm trú."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Người được bảo hiểm</strong>: là cá nhân có sức khỏe, tính mạng được bảo hiểm theo hợp đồng bảo hiểm, có tên trong hợp đồng bảo hiểm hoặc giấy chứng nhận bảo hiểm, và được hưởng quyền lợi theo hợp đồng bảo hiểm. Người được bảo hiểm có thể đồng thời là người thụ hưởng."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>HDI</strong>: là Công ty TNHH Bảo hiểm HD."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Số tiền bảo hiểm</strong>: là số tiền tối đa mà HDI có thể phải bồi thường cho người được bảo hiểm hoặc phải trả cho người thụ hưởng. Số tiền bảo hiểm là số tiền cố định và là hạn mức trách nhiệm bảo hiểm tối đa của HDI tương ứng với mỗi người được bảo hiểm khi xảy ra sự kiện thuộc phạm vi bảo hiểm. Số tiền bảo hiểm được bên mua bảo hiểm và HDI thỏa thuận trong hợp đồng bảo hiểm / giấy chứng nhận bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Tai nạn</strong>: là bất kỳ sự kiện bất ngờ, không lường trước được, gây ra bởi tác động của một lực hoặc một vật bất ngờ, không lường trước được từ bên ngoài, không chủ định và ngoài ý muốn lên cơ thể người được bảo hiểm xảy ra trong thời hạn bảo hiểm là nguyên nhân trực tiếp dẫn đến thương tật thân thể hoặc tử vong cho người được bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Cơ sở y tế:</strong> là các cơ sở cung cấp các dịch vụ khám bệnh, điều trị bệnh được thành lập hợp pháp theo quyết định của các cơ quan có thẩm quyền được nhà nước công nhận và:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Có khả năng và phương tiện chẩn đoán bệnh, điều trị và phẫu thuật;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Có điều kiện thuận lợi cho việc điều trị nội trú và có hệ thống theo dõi sức khỏe hàng ngày cho các bệnh nhân điều trị nội trú;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Không phải là nơi dùng để nghỉ ngơi hoặc điều dưỡng hay một cơ sở đặc biệt dành riêng cho người già, hoặc để cai nghiện rượu, ma túy, chất kích thích hoặc để điều trị các căn bệnh rối loạn tâm thần, phong;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Không bao gồm mọi cơ sở y tế cấp xã, phường (trừ khi có thỏa thuận khác hoặc cấp cứu)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thương tật tạm thời:</strong> là thương tật thân thể làm cho NĐBH không thể thực hiện một phần hoặc toàn bộ công việc hàng ngày trong một khoảng thời gian nhất định."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thương tật vĩnh viễn:</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a) Thương tật bộ phận vĩnh viễn:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Là thương tật làm cho một hay nhiều bộ phận cơ thể của người được bảo hiểm không có khả năng phục hồi chức năng hoạt động bình thường."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b) Thương tật toàn bộ vĩnh viễn:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Là thương tật làm cho người được bảo hiểm bị cản trở hoàn toàn khi tham gia công việc của người đó hay bị mất hoàn toàn khả năng lao động trong bất kỳ loại lao động nào và kéo dài 180 ngày liên tục và không hy vọng vào sự tiến triển của thương tật đó."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Việc chứng nhận người được bảo hiểm bị mất hoàn toàn bộ phận cơ thể (tay, chân hoặc mắt) có thể được thực hiện ngay sau khi sự kiện bảo hiểm xảy ra hoặc sau khi kết thúc việc điều trị."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Việc chứng nhận bị liệt hoàn toàn và không thể phục hồi chức năng của các bộ phận cơ thể hoặc mù hoàn toàn hoặc bị tổn thương cơ thể từ 81% trở lên được thực hiện không sớm hơn 180 ngày kể từ ngày xảy ra sự kiện bảo hiểm hoặc từ ngày bệnh lý được chẩn đoán."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thương tật có sẵn</strong>: là những thương tật cho người được bảo hiểm xảy ra trước khi tham gia bảo hiểm với HDI."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Căn cứ xác định thương tật</strong>: được thể hiện ở chẩn đoán của bác sĩ tại hồ sơ bệnh án / chứng từ y tế hoặc di chứng / tổn thương tồn tại trên cơ thể hoặc theo ý kiến của cơ quan chuyên môn có liên quan."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Bệnh nghề nghiệp</strong>: là bệnh phát sinh do điều kiện lao động có hại của nghề nghiệp tác động đối với người lao động thuộc danh mục các loại bệnh nghề nghiệp do cơ quan nhà nước có thẩm quyền ban hành."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Nằm viện:</strong> là việc bệnh nhân cần thiết phải nằm điều trị bệnh / thương tật tại cơ sở y tế trong ít nhất 24 giờ liên tục cho đến khi ra viện. Trong trường hợp bệnh viện không cấp giấy xuất viện thì hồ sơ y tế hoặc hóa đơn thanh toán thể hiện rõ thời gian điều trị sẽ được coi như chứng từ thay thế."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Tai nạn nghiêm trọng</strong>: là tai nạn khiến cho người được bảo hiểm bị thương tật toàn bộ vĩnh viễn hoặc chết."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Chi phí y tế</strong>: là những chi phí do bác sỹ trực tiếp điều trị cho người được bảo hiểm chỉ định, phát sinh trực tiếp từ việc điều trị thương tật và nhằm mục đích điều trị thương tật cho người được bảo hiểm. Các chi phí này phải là chi phí thực tế, cần thiết và hợp lý tại cơ sở y tế cung cấp dịch vụ điều trị."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Hợp đồng bảo hiểm</strong>: là thỏa thuận giữa bên mua bảo hiểm và HDI, phù hợp với quy định của pháp luật, theo đó bên mua bảo hiểm phải đóng phí bảo hiểm và HDI phải trả tiền bảo hiểm cho người thụ hưởng khi xảy ra sự kiện bảo hiểm theo Quy tắc bảo hiểm này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Giấy yêu cầu bảo hiểm, đơn bảo hiểm, giấy chứng nhận bảo hiểm, quy tắc bảo hiểm, danh sách người được bảo hiểm, hoặc hình thức văn bản khác phù hợp theo quy định pháp luật, các phụ lục sửa đổi, bổ sung (nếu có) có liên quan đến hợp đồng bảo hiểm là bộ phận không thể tách rời của hợp đồng bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Chủ hợp đồng bảo hiểm</strong>: là bên mua bảo hiểm hoặc là cá nhân / tổ chức đại diện hợp pháp cho bên mua bảo hiểm giao kết hợp đồng bảo hiểm với HDI. Chủ hợp đồng bảo hiểm là cá nhân phải từ 18 tuổi trở lên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thời hạn bảo hiểm</strong>: thời hạn bảo hiểm được xác định tương ứng với mỗi người được bảo hiểm riêng biệt, được ghi trên giấy chứng nhận bảo hiểm / hợp đồng bảo hiểm theo thỏa thuận giữa bên mua bảo hiểm và HDI. Thời hạn bảo hiểm là 1 năm (hoặc ngắn hơn) và được tái tục hàng năm. Thời hạn bảo hiểm là khoảng thời gian từ ngày bắt đầu bảo hiểm đến ngày kết thúc thời hạn bảo hiểm và được quy định trong giấy chứng nhận bảo hiểm / hợp đồng bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thời hạn đóng phí bảo hiểm:</strong> thời hạn đóng phí bảo hiểm được thỏa thuận giữa HDI và người được bảo hiểm, được ghi trong hợp đồng / phụ lục hợp đồng bảo hiểm. Thời hạn đóng phí bảo hiểm không trái với quy định của pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Tuổi của người được bảo hiểm</strong>: là tuổi được tính tại thời điểm ký giấy yêu cầu bảo hiểm theo ngày, tháng, năm sinh dương lịch của người đó, được xác định bởi các căn cứ theo thứ tự ưu tiên dưới đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Giấy khai sinh;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Giấy chứng minh nhân dân / căn cước công dân / căn cước;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Hộ chiếu hoặc các giấy tờ hợp pháp khác (nếu có)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Người thụ hưởng</strong>: là tổ chức, cá nhân được bên mua bảo hiểm chỉ định để nhận tiền bảo hiểm theo hợp đồng bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp người được bảo hiểm đồng thời là người thụ hưởng và người được bảo hiểm chết hoặc mất năng lực hành vi dân sự, doanh nghiệp bảo hiểm sẽ giải quyết theo các quy định của Bộ luật Dân sự về đại diện và thừa kế."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Phẫu thuật:</strong> là phương pháp khoa học để điều trị thương tật được thực hiện bởi những phẫu thuật viên có bằng cấp thông qua những ca mổ bằng tay với các dụng cụ y tế hoặc mổ bằng thiết bị y tế trong bệnh viện, bao gồm cả hình thức mổ bằng tia laser, mổ nội soi."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Theo Quy tắc bảo hiểm này, phẫu thuật chỉ bao gồm các loại phẫu thuật thuộc Danh mục phẫu thuật do Bộ Y tế Việt Nam ban hành và các quy định pháp luật khác có liên quan."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thuốc kê đơn</strong>: là những loại thuốc được bác sỹ kê đơn thuốc đúng theo quy định về đơn thuốc và kê đơn thuốc hóa dược, sinh phẩm trong điều trị nội trú, điều trị ngoại trú theo quy định của pháp luật và theo đơn của bác sĩ điều trị, không bao gồm bất kỳ sản phẩm nào là thực phẩm chức năng hoặc không phải là thuốc theo quy định pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Bên mua bảo hiểm</strong>: là tổ chức, cá nhân giao kết hợp đồng bảo hiểm với HDI, đóng phí bảo hiểm và có quyền lợi bảo hiểm với người được bảo hiểm. Bên mua bảo hiểm đáp ứng quy định tại Luật Kinh doanh bảo hiểm. Bên mua bảo hiểm có thể đồng thời là người được bảo hiểm hoặc người thụ hưởng."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Thương tật thân thể</strong>: là tổn thương thân thể gây ra bởi tai nạn, là hậu quả đầu tiên của tai nạn và không phải là hậu quả của tai nạn hoặc chấn thương trước đó và không phải là hậu quả của sự suy yếu thể lực, khuyết tật, quá trình thoái hóa hoặc bệnh tồn tại trước khi bắt đầu bảo hiểm theo Quy tắc bảo hiểm này. Thương tật thân thể bao gồm thương tật vĩnh viễn và thương tật tạm thời."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Bác sĩ</strong>: là người có bằng cấp chuyên môn y khoa được cơ quan có thẩm quyền cấp phép hoặc thừa nhận được thực hành nghề y hợp pháp trong phạm vi giấy phép theo pháp luật của nước sở tại nơi người được bảo hiểm tiến hành việc khám và điều trị."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Bác sĩ</strong> trong Quy tắc bảo hiểm này loại trừ những người sau: chính là người được bảo hiểm, vợ hoặc chồng, bố, mẹ, bố, mẹ (vợ hoặc chồng) hoặc con đẻ, con nuôi hợp pháp, anh chị em ruột của người được bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Điều trị nội trú:</strong> là việc bệnh nhân vào nằm điều trị tại cơ sở y tế ít nhất 24 giờ liên tục. Giấy ra (xuất) viện là một trong những chứng từ cần thiết để yêu cầu bồi thường cho quyền lợi này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Đột tử:</strong> là trường hợp người được bảo hiểm bị tử vong và có kết luận của cơ quan có thẩm quyền là đột tử."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Sự kiện bảo hiểm:</strong> là sự kiện khách quan do các bên thỏa thuận mà khi sự kiện đó xảy ra thì HDI phải trả tiền bảo hiểm cho người thụ hưởng hoặc người được bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Phòng vệ chính đáng</strong>: là hành vi của người được bảo hiểm vì bảo vệ lợi ích hợp pháp của nhà nước, của tổ chức, bảo vệ quyền, lợi ích hợp pháp của mình hoặc của người khác, mà chống trả lại một cách cần thiết người đang có hành vi xâm phạm các lợi ích nói trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Bộ phận giả:</strong> là bất kỳ thiết bị, bộ phận, dụng cụ hoặc vật nào được cấu tạo một phần hoặc toàn bộ từ các nguyên, vật liệu, chất liệu nhân tạo được lắp đặt / cấy / ghép / trồng vào cơ thể nhằm thay thế các bộ phận, cơ quan của cơ thể vì bất kỳ mục đích nào."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Hồ sơ yêu cầu trả tiền bảo hiểm hợp lệ</strong>: là hồ sơ yêu cầu bồi thường có đầy đủ các chứng từ, tài liệu cần thiết theo đúng hình thức quy định tại Điều 13 của Quy tắc bảo hiểm này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Tái tục bảo hiểm</strong>: là trường hợp giao kết hợp đồng bảo hiểm mới sau khi hợp đồng bảo hiểm liền kề trước đó chấm dứt hiệu lực bảo hiểm với điều kiện:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Ngày bắt đầu thời hạn bảo hiểm của HĐBH mới là ngày kế tiếp ngày chấm dứt thời hạn bảo hiểm của HĐBH kế trước đó;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Nội dung của HĐBH mới giống với HĐBH liền kề trước đó về: doanh nghiệp bảo hiểm, người được bảo hiểm, phạm vi bảo hiểm chính, các trường hợp loại trừ trách nhiệm bảo hiểm chính."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Sự kiện bất khả kháng</strong>: là sự kiện xảy ra một cách khách quan không thể lường trước được và không thể khắc phục được mặc dù đã áp dụng mọi biện pháp cần thiết và khả năng cho phép."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>Trở ngại khách quan:</strong> là những trở ngại do hoàn cảnh khách quan tác động làm cho người có quyền, nghĩa vụ dân sự không thể biết về việc quyền, lợi ích hợp pháp của mình bị xâm phạm hoặc không thể thực hiện được quyền, nghĩa vụ dân sự của mình."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-2",
+      "title": "CHƯƠNG II: PHẠM VI BẢO HIỂM",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-4",
+          "title": "Điều 4: Phạm vi bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Tử vong, thương tật thân thể do tai nạn."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Phạm vi bảo hiểm này bảo hiểm cho cả các trường hợp tai nạn, thương tật thân thể hoặc chết xảy ra do người được bảo hiểm có hành động cứu người, cứu tài sản của nhà nước, của nhân dân và tham gia chống các hành động phạm pháp."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Trợ cấp ngày nằm viện do tại nạn."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trong trường hợp người được bảo hiểm tham gia bảo hiểm theo khoản 1, Điều 4 có yêu cầu bảo hiểm thêm về khoản trợ cấp nằm viện được quy định tại Điều 9 của Quy tắc bảo hiểm này. Với điều kiện được HDI chấp nhận và bên mua bảo hiểm đã nộp đủ phí bảo hiểm được quy định tại biểu phí, khi bị thương tật thân thể do tai nạn thuộc phạm vi bảo hiểm phải nằm viện để điều trị, sẽ được HDI chi trả thêm một khoản tiền trợ cấp nằm viện trong thời gian nằm điều trị thương tật do tai nạn được quy định cụ thể trong Quy tắc bảo hiểm này."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-3",
+      "title": "CHƯƠNG III: KHÔNG THUỘC PHẠM VI BẢO HIỂM",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-5",
+          "title": "Điều 5: Các điểm loại trừ:",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "HDI sẽ không chịu bất kỳ trách nhiệm bồi thường trong những trường hợp dưới đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Người được bảo hiểm vi phạm nghiêm trọng pháp luật phải thụ án hình sự hoặc vi phạm nghiêm trọng luật lệ an toàn giao thông như: đua xe, điều khiển xe không có giấy phép lái xe hợp lệ, đi vào đường cấm. Mở rộng bồi thường 50% số tiền thuộc phạm vi trách nhiệm bảo hiểm (nhưng không vượt quá 150 triệu đồng) trong trường hợp người được bảo hiểm đủ tuổi điều khiển xe mô tô, xe máy nhưng không có giấy phép lái xe hoặc giấy phép lái xe không hợp lệ."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Hành động cố ý của người được bảo hiểm hoặc người thừa kế hợp pháp."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Hậu quả của việc uống rượu, bia vượt quá nồng độ theo quy định của Luật An toàn giao thông đường bộ hoặc các chất kích thích tương tự khác."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Người được bảo hiểm tham gia các hoạt động hàng không (trừ khi với tư cách là hành khách), tham gia các cuộc diễn tập, huấn luyện quân sự, tham gia chiến đấu của các lực lượng vũ trang."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Người được bảo hiểm tham gia đánh nhau, trừ khi được xác nhận đó là hành động tự vệ."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Cảm đột ngột, trúng gió, bệnh tật, sảy thai, bệnh nghề nghiệp, những tai biến trong quá trình điều trị bệnh và thai sản."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Ngộ độc thực phẩm, đồ uống."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Điều trị thuốc không theo chỉ dẫn của cơ quan y tế."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "+ Động đất, núi lửa, nhiễm phóng xạ, chiến tranh, nội chiến, đình công."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-4",
+      "title": "CHƯƠNG IV: NGÀY HIỆU LỰC VÀ CHẤM DỨT HỢP ĐỒNG BẢO HIỂM",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-6",
+          "title": "Điều 6: Hiệu lực của hợp đồng bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Hợp đồng bảo hiểm có hiệu lực kể từ ngày giao kết và bên mua bảo hiểm đã hoàn thành nghĩa vụ thanh toán phí bảo hiểm đầy đủ được quy định trên giấy chứng nhận bảo hiểm / đơn bảo hiểm / hợp đồng bảo hiểm, trừ trường hợp hợp đồng bảo hiểm hoặc pháp luật có quy định khác."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-7",
+          "title": "Điều 7: Chấm dứt hiệu lực của hợp đồng bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Ngoài các trường hợp chấm dứt hợp đồng bảo hiểm theo quy định pháp luật, hợp đồng bảo hiểm còn chấm dứt theo thỏa thuận của các bên. Trường hợp một trong hai bên đề nghị chấm dứt hợp đồng bảo hiểm, bên yêu cầu chấm dứt phải thông báo bằng văn bản cho bên kia biết trước 30 ngày kể từ ngày có ý định chấm dứt:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Trường hợp người được bảo hiểm chấm dứt hiệu lực hợp đồng bảo hiểm trước thời hạn. HDI sẽ hoàn trả 80% phí bảo hiểm tương ứng với thời hạn bảo hiểm còn lại với điều kiện HDI chưa nhận được bất kỳ yêu cầu bồi thường bảo hiểm nào theo Hợp đồng bảo hiểm đó;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Trường hợp HDI chấm dứt hiệu lực hợp đồng bảo hiểm trước thời hạn, HDI sẽ hoàn trả 100% phí bảo hiểm tương ứng với thời hạn bảo hiểm còn lại."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-5",
+      "title": "CHƯƠNG V: QUYỀN LỢI BẢO HIỂM",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-8",
+          "title": "Điều 8: Quyền lợi bảo hiểm chính của người được bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.1. Tử vong và thương tật vĩnh viễn:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.1.1. Trường hợp người được bảo hiểm bị tử vong / thương tật toàn bộ vĩnh viễn do tai nạn thuộc phạm vi bảo hiểm: HDI trả toàn bộ số tiền bảo hiểm ghi trong hợp đồng bảo hiểm hoặc giấy chứng nhận bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.1.2. Trường hợp người được bảo hiểm bị thương tật bộ phận vĩnh viễn do tai nạn thuộc phạm vi bảo hiểm, HDI trả tiền bảo hiểm theo tỷ lệ phần trăm của số tiền bảo hiểm nêu trong Bảng tỷ lệ trả tiền bảo hiểm thương tật do HDI ban hành kèm theo Quy tắc bảo hiểm này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.1.3. Trường hợp người được bảo hiểm bị tai nạn dẫn đến thương tật bộ phận vĩnh viễn đã được trả tiền bảo hiểm, trong vòng một (01) năm kể từ ngày xảy ra tai nạn người được bảo hiểm bị chết do hậu quả của chính tai nạn đó, HDI sẽ trả phần chênh lệch giữa số tiền bảo hiểm ghi trong hợp đồng bảo hiểm hoặc giấy chứng nhận bảo hiểm với số tiền đã trả trước đó. Trong mọi trường hợp số tiền chi trả không được vượt quá số tiền bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.2. Thương tật tạm thời:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.2.1. Đối với số tiền bảo hiểm bằng hoặc dưới 20 (hai mươi) triệu đồng / người / vụ"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp người được bảo hiểm bị thương tật tạm thời do tai nạn thuộc phạm vi bảo hiểm, HDI trả tiền bảo hiểm theo tỷ lệ phần trăm của số tiền bảo hiểm nêu trong Bảng tỷ lệ trả tiền bảo hiểm thương tật do HDI ban hành kèm theo Quy tắc bảo hiểm này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.2.2. Đối với số tiền bảo hiểm trên 20 triệu đồng / người / vụ"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp người được bảo hiểm bị thương tật tạm thời do tai nạn thuộc phạm vi bảo hiểm, HDI trả toàn bộ các chi phí hợp lý phát sinh cho việc điều trị thương tật, bao gồm: dịch vụ xe cấp cứu (loại trừ bằng đường hàng không), tiền phẫu thuật, tiền khám, chi phí điều trị như: xét nghiệm, chiếu rọi hình ảnh, chụp phim, truyền dịch, truyền máu, ôxy, huyết thanh, tiền giường bệnh, tiền thuốc điều trị, viện phí."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Tiền trợ cấp bằng 0,1% x số tiền bảo hiểm x số ngày nằm viện điều trị nội trú, nhưng tối đa không vượt quá 180 ngày / vụ tai nạn. Trong mọi trường hợp tổng số tiền chi trả không vượt tỷ lệ % thương tật trong Bảng tỷ lệ trả tiền bảo hiểm của HDI ban hành kèm theo Quy tắc bảo hiểm này."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8.2.3. Chi phí y tế đối với trường hợp tham gia nhiều hợp đồng bảo hiểm"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp người được bảo hiểm tham gia nhiều hợp đồng bảo hiểm tai nạn, khi phát sinh tai nạn thuộc trách nhiệm bảo hiểm, HDI sẽ trả quyền lợi về chi phí y tế phát sinh cho việc điều trị thương tật trên cơ sở của từng hợp đồng và số tiền chi trả được tính theo tỷ lệ giữa số tiền bảo hiểm tham gia của từng hợp đồng trên tổng các hợp đồng bảo hiểm. Trong mọi trường hợp số tiền chi trả cho từng hợp đồng không vượt quá số tiền bảo hiểm tham gia của từng hợp đồng bảo hiểm và tổng số tiền chi trả cho các hợp đồng bảo hiểm tham gia không được vượt quá tổng chi phí điều trị thực tế cũng như không được vượt quá tổng số tiền bảo hiểm tham gia."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-9",
+          "title": "Điều 9: Quyền lợi bảo hiểm bổ sung của người được bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Quyền lợi trợ cấp ngày nằm viện do tai nạn:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- HDI chi trả cho người được bảo hiểm tiền trợ cấp do tai nạn thuộc trách nhiệm bảo hiểm, mức chi trả 01 ngày nằm viện được căn cứ theo số tiền bảo hiểm được quy định tại hợp đồng bảo hiểm / giấy chứng nhận bảo hiểm."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Tối đa không quá 60 ngày nằm viện / năm bảo hiểm. Trong trường hợp hợp đồng bảo hiểm có thời hạn dưới 01 năm, số ngày nằm viện tối đa được hưởng trợ cấp tương ứng (60 ngày x số ngày tham gia bảo hiểm) / 365 ngày."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "- Quyền lợi một ngày nằm viện = 0,4% x Số tiền bảo hiểm quyền lợi chính"
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-10",
+          "title": "Điều 10: Giải quyết hậu quả của tai nạn",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp hậu quả của tai nạn thuộc phạm vi trách nhiệm bảo hiểm bị trầm trọng hơn do thương tật có sẵn của người được bảo hiểm hoặc điều trị thương tật thân thể không kịp thời và không theo chỉ dẫn của cơ sở y tế / bác sĩ điều trị trực tiếp thì HDI chỉ trả tiền bảo hiểm như đối với loại thương tật tương tự ở người có sức khỏe bình thường được điều trị một cách hợp lý."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-6",
+      "title": "CHƯƠNG VI: QUYỀN LỢI VÀ NGHĨA VỤ CỦA CÁC BÊN",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-11",
+          "title": "Điều 11: Quyền và nghĩa vụ của bên mua bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>11.1. Bên mua bảo hiểm có các quyền sau đây:</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Lựa chọn doanh nghiệp bảo hiểm để giao kết hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Yêu cầu doanh nghiệp bảo hiểm cung cấp bản yêu cầu bảo hiểm, quy tắc, điều kiện, điều khoản bảo hiểm và giải thích các điều kiện, điều khoản bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "c. Yêu cầu doanh nghiệp bảo hiểm cung cấp bằng chứng giao kết hợp đồng bảo hiểm theo quy định của Luật Kinh doanh bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "d. Yêu cầu doanh nghiệp bảo hiểm cấp hóa đơn thu phí bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm và quy định của pháp luật có liên quan;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "e. Hủy bỏ hợp đồng bảo hiểm quy định tại khoản 3 Điều 22 và Điều 35 hoặc đơn phương chấm dứt thực hiện hợp đồng bảo hiểm quy định tại Điều 26 của Luật Kinh doanh bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "f. Yêu cầu doanh nghiệp bảo hiểm bồi thường, trả tiền bảo hiểm khi xảy ra sự kiện bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "g. Chuyển giao hợp đồng bảo hiểm theo thoả thuận trong hợp đồng bảo hiểm hoặc theo quy định của pháp luật;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "h. Quyền khác theo quy định của pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>11.2. Bên mua bảo hiểm có các nghĩa vụ sau đây:</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Kê khai đầy đủ, trung thực mọi thông tin có liên quan đến hợp đồng bảo hiểm theo yêu cầu của doanh nghiệp bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Đọc và hiểu rõ điều kiện, điều khoản bảo hiểm, quyền, nghĩa vụ của bên mua bảo hiểm khi giao kết hợp đồng bảo hiểm và nội dung khác của hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "c. Đóng phí bảo hiểm đầy đủ, đúng hạn theo thỏa thuận trong hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "d. Thông báo cho doanh nghiệp bảo hiểm những trường hợp có thể làm tăng rủi ro hoặc giảm rủi ro hoặc làm phát sinh thêm trách nhiệm của doanh nghiệp bảo hiểm trong quá trình thực hiện hợp đồng bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "e. Thông báo cho doanh nghiệp bảo hiểm về việc xảy ra sự kiện bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm; phối hợp với doanh nghiệp bảo hiểm trong giám định tổn thất;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "f. Áp dụng các biện pháp đề phòng, hạn chế tổn thất theo quy định của Luật Kinh doanh bảo hiểm và quy định khác của pháp luật có liên quan;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "g. Nghĩa vụ khác theo quy định của pháp luật."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-12",
+          "title": "Điều 12: Quyền và nghĩa vụ của HDI",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>12.1. HDI có các quyền sau đây:</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Thu phí bảo hiểm theo thoả thuận trong hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Yêu cầu bên mua bảo hiểm cung cấp đầy đủ, trung thực mọi thông tin có liên quan đến việc giao kết và thực hiện hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "c. Hủy bỏ hợp đồng bảo hiểm quy định tại khoản 2 Điều 22 hoặc đơn phương chấm dứt thực hiện hợp đồng bảo hiểm quy định tại Điều 26 của Luật Kinh doanh bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "d. Từ chối bồi thường, trả tiền bảo hiểm trong trường hợp không thuộc phạm vi trách nhiệm bảo hiểm hoặc trường hợp loại trừ trách nhiệm bảo hiểm theo thoả thuận trong hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "e. Yêu cầu bên mua bảo hiểm áp dụng các biện pháp đề phòng, hạn chế tổn thất theo quy định của Luật Kinh doanh bảo hiểm và quy định khác của pháp luật có liên quan;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "f. Yêu cầu người thứ ba bồi hoàn số tiền mà doanh nghiệp bảo hiểm đã bồi thường cho người được bảo hiểm đối với thiệt hại về tài sản; lợi ích kinh tế hoặc nghĩa vụ thực hiện hợp đồng hoặc nghĩa vụ theo pháp luật; trách nhiệm dân sự do người thứ ba gây ra;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "g. Quyền khác theo quy định của pháp luật."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "<strong>12.2. HDI có các nghĩa vụ sau đây:</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Cung cấp cho bên mua bảo hiểm bản yêu cầu bảo hiểm, quy tắc, điều kiện, điều khoản bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Giải thích rõ ràng, đầy đủ cho bên mua bảo hiểm về quyền lợi bảo hiểm, điều khoản loại trừ trách nhiệm bảo hiểm, quyền và nghĩa vụ của bên mua bảo hiểm khi giao kết hợp đồng bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "c. Cung cấp cho bên mua bảo hiểm bằng chứng giao kết hợp đồng bảo hiểm quy định tại Điều 18 của Luật Kinh doanh bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "d. Cấp hóa đơn thu phí bảo hiểm cho bên mua bảo hiểm theo thỏa thuận trong hợp đồng bảo hiểm và quy định của pháp luật có liên quan;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "e. Bồi thường, trả tiền bảo hiểm khi xảy ra sự kiện bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "f. Giải thích bằng văn bản lý do từ chối bồi thường, trả tiền bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "g. Phối hợp với bên mua bảo hiểm để giải quyết yêu cầu của người thứ ba đòi bồi thường về những thiệt hại thuộc trách nhiệm bảo hiểm khi xảy ra sự kiện bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "h. Lưu trữ hồ sơ hợp đồng bảo hiểm theo quy định của pháp luật;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "i. Bảo mật thông tin do bên mua bảo hiểm, người được bảo hiểm cung cấp, trừ trường hợp theo yêu cầu của cơ quan nhà nước có thẩm quyền hoặc được sự đồng ý của bên mua bảo hiểm, người được bảo hiểm;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "k. Nghĩa vụ khác theo quy định của pháp luật."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-7",
+      "title": "CHƯƠNG VII: THỦ TỤC TRẢ TIỀN BẢO HIỂM",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-13",
+          "title": "Điều 13: Hồ sơ yêu cầu trả tiền bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Khi yêu cầu HDI trả tiền bảo hiểm, người được bảo hiểm và / hoặc người thừa kế hợp pháp phải gửi cho HDI các chứng từ sau đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Giấy yêu cầu trả tiền bảo hiểm (mẫu của HDI)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Giấy chứng nhận bảo hiểm hoặc hợp đồng bảo hiểm, các Phụ lục nếu có (bản sao)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "3. Biên bản tai nạn / bản tường trình tai nạn có xác nhận của: chủ hợp đồng bảo hiểm / cơ quan, chính quyền địa phương, công an, cảnh sát giao thông nơi người được bảo hiểm bị tai nạn:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Đối với tai nạn giao thông: cung cấp bản tường trình tai nạn, trường hợp có cảnh sát giao thông lập biên bản, cần cung cấp biên bản tai nạn giao thông, giấy đăng ký xe và giấy phép lái xe hợp lệ (nếu là người trực tiếp lái xe) và các giấy tờ khác có liên quan;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Tai nạn lao động: cung cấp bản tai nạn lao động hoặc bản tường trình tai nạn có xác nhận của cơ quan / công ty / chính quyền. Nếu là tai nạn trong sinh hoạt cần có bản tường trình tai nạn có xác nhận của chủ hợp đồng bảo hiểm hoặc cơ quan / chính quyền địa phương và các giấy tờ khác có liên quan."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "4. Các chứng từ y tế: giấy ra viện, phiếu điều trị (trường hợp điều trị nội trú), phiếu mổ (trường hợp phẫu thuật), tiền viện phí, toa thuốc, hóa đơn... do người có thẩm quyền của cơ sở y tế ký, đóng dấu."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "5. Giấy chứng tử (trường hợp người được bảo hiểm chết)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "6. Chứng từ chứng minh quyền thừa kế hợp pháp (trường hợp người được bảo hiểm chết)."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Trường hợp người được bảo hiểm ủy quyền cho người khác nhận tiền bảo hiểm, phải có giấy ủy quyền hợp pháp và tuân thủ quy định khác về việc nhận bồi thường thay do HDI ban hành."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-14",
+          "title": "Điều 14: Nghĩa vụ trung thực",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Bên mua bảo hiểm có trách nhiệm cung cấp đầy đủ thông tin liên quan đến đối tượng bảo hiểm cho HDI. Bên mua bảo hiểm chịu trách nhiệm về tính chính xác, trung thực của thông tin đó. HDI có trách nhiệm giữ bí mật về thông tin do bên mua bảo hiểm cung cấp."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. HDI có quyền đơn phương đình chỉ thực hiện hoặc hủy bỏ hợp đồng bảo hiểm và thu phí bảo hiểm đến thời điểm đình chỉ thực hiện hợp đồng bảo hiểm khi bên mua bảo hiểm có một trong những hành vi sau đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Cố ý cung cấp thông tin sai sự thật nhằm giao kết hợp đồng bảo hiểm để được trả tiền bảo hiểm hoặc được bồi thường;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Không thực hiện nghĩa vụ thông báo những trường hợp có thể làm tăng rủi ro hoặc làm phát sinh thêm trách nhiệm của HDI trong quá trình thực hiện hợp đồng bảo hiểm theo yêu cầu của HDI."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-15",
+          "title": "Điều 15: Thời hạn thông báo sự kiện bảo hiểm và thời hạn yêu cầu trả tiền bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Thời hạn thông báo sự kiện bảo hiểm:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Trong thời hạn 30 ngày kể từ ngày xảy ra sự kiện bảo hiểm, bên mua bảo hiểm phải thông báo cho HDI bằng văn bản về sự kiện bảo hiểm đã xảy ra theo mẫu do HDI ban hành."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Trong trường hợp có lý do chính đáng mà người có nghĩa vụ thông báo không thể thực hiện được việc thông báo trong thời hạn nêu trên, thời hạn thông báo sự kiện bảo hiểm xảy ra sẽ được gia hạn thêm 15 ngày."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Thời hạn yêu cầu trả tiền bảo hiểm:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "a. Trong thời hạn một năm kể từ ngày xảy ra sự kiện bảo hiểm, người có quyền yêu cầu giải quyết bồi thường bảo hiểm theo quy định phải nộp trực tiếp cho HDI hoặc gửi cho HDI bằng đường công văn hồ sơ yêu cầu trả tiền bảo hiểm bao gồm đúng và đầy đủ các tài liệu cần thiết theo quy định tại Điều 13 của Quy tắc bảo hiểm này và các tài liệu khác theo quy định tại hợp đồng bảo hiểm (nếu có). Thời gian xảy ra sự kiện bất khả kháng hoặc trở ngại khách quan không tính vào thời hạn yêu cầu trả tiền bảo hiểm hoặc bồi thường."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "b. Quá thời hạn quy định tại điểm a khoản này, mọi yêu cầu trả tiền bảo hiểm đều không có giá trị."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-16",
+          "title": "Điều 16: Thời hạn giải quyết yêu cầu trả tiền bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "HDI có trách nhiệm giải quyết yêu cầu bồi thường bảo hiểm trong thời hạn 15 ngày, kể từ ngày HDI nhận được hồ sơ yêu cầu bồi thường bảo hiểm đầy đủ và hợp lệ trừ khi có thỏa thuận khác."
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-17",
+          "title": "Điều 17: Thời hạn khởi kiện",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Thời hiệu khởi kiện về hợp đồng bảo hiểm là ba năm, kể từ thời điểm phát sinh tranh chấp."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-8",
+      "title": "CHƯƠNG VIII: GIẢI QUYẾT TRANH CHẤP",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-18",
+          "title": "Điều 18: Giải quyết tranh chấp",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Mọi tranh chấp phát sinh từ hoặc có liên quan đến Quy tắc bảo hiểm này hoặc hợp đồng bảo hiểm được giao kết theo Quy tắc bảo hiểm này trước hết phải được giải quyết thông qua thương lượng. Nếu không giải quyết được bằng thương lượng, mỗi bên có quyền khởi kiện tại các tòa án có thẩm quyền;"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Luật áp dụng cho Quy tắc bảo hiểm này và các hợp đồng bảo hiểm được giao kết theo Quy tắc bảo hiểm này là pháp luật Việt Nam."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    },
+    {
+      "id": "wording-chapter-9",
+      "title": "CHƯƠNG IX: BẢNG TỶ LỆ TRẢ TIỀN BẢO HIỂM THƯƠNG TẬT",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "wording-article-19",
+          "title": "Điều 19: Bảng tỷ lệ trả tiền bảo hiểm thương tật",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TOÀN BỘ VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Mất, liệt hoàn toàn chức năng: hai mắt; hoặc một tay và một mắt; hoặc một chân và một mắt. Mất hoàn toàn và không thể phục hồi được chức năng của mắt được hiểu là mất hoàn toàn hoặc mù hoàn toàn — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Rối loạn tâm thần hoàn toàn không thể chữa được — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "3. Hỏng toàn bộ chức năng nhai và nói — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "4. Mất hoặc liệt hoàn toàn 2 tay (tính từ cổ tay trở lên) hoặc 2 chân (tính từ mắt cá chân trở lên). — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "5. Mất cả 2 bàn tay hoặc 2 bàn chân, hoặc mất 1 cánh tay và 1 bàn chân, hoặc mất 1 cánh tay và 1 cẳng chân, hoặc 1 bàn tay và 1 cẳng chân, hoặc 1 bàn tay và 1 bàn chân — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "6. Cắt toàn bộ 1 bên phổi và 1 phần phổi bên kia — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "7.   Mất hoàn toàn khả năng lao động mà không thể làm bất cứ việc gì (toàn bộ bị tê liệt, bị thương dẫn đến tình trạng nằm liệt giường hoặc dẫn đến tàn tật toàn bộ vĩnh viễn) — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "8. Người được bảo hiểm bị tổn thương cơ thể từ 81% trở lên theo xác nhận của cơ quan y tế hoặc Hội đồng giám định y khoa cấp tỉnh, thành phố trực thuộc trung ương hoặc tổ chức giám định y tế hợp pháp được doanh nghiệp bảo hiểm chấp thuận — 100%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Chi Trên</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "9. Mất 1 cánh tay từ vai xuống (tháo khớp vai) — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "10. Cắt cụt cánh tay từ dưới vai xuống — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "11. Cắt cụt 1 cánh tay từ khuỷu xuống (tháo khớp khuỷu) — 70%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "12. Mất trọn 1 bàn tay hoặc cả 5 ngón tay — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "13. Mất đồng thời cả 4 ngón tay (trừ ngón cái) — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "14. Mất đồng thời cả ngón cái và ngón trỏ — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "15. Mất 3 ngón 3 - 4 - 5 — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "16. Mất ngón cái và 2 ngón khác — 37%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "17. Mất ngón cái và 1 ngón khác — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "18. Mất ngón trỏ và 2 ngón khác — 37%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "19. Mất ngón trỏ và 1 ngón giữa — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "20. Mất trọn ngón cái và đốt bàn — 27%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất trọn ngón cái — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất cả đốt ngoài — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất 1/2 đốt ngoài — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "21. Mất ngón trỏ và đốt bàn — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất ngón trỏ — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất 2 đốt 2 và 3 — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất đốt 3 — 9%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "22. Mất trọn ngón giữa hoặc ngón nhẫn (cả đốt bàn) — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất trọn ngón giữa hoặc ngón nhẫn — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất 2 đốt 2 và 3 — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất đốt 3 — 5%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "23. Mất cả ngón út và đốt bàn — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất cả ngón út — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất 2 đốt 2 và 3 — 9%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-    Mất đốt 3 — 5%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "24. Cứng khớp bả vai — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "25. Cứng khớp khuỷu tay — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "26. Cứng khớp cổ tay — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "27. Gãy tay can lệch hoặc mất xương làm chi ngắn trên 3 cm và chức năng quay sấp ngửa hạn chế hoặc tạo thành khớp giả — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "28. Gãy xương cánh tay ở cổ giải phẫu, không phẫu thuật, can tốt, cử động bình thường — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "29. Gãy xương cánh tay ở cổ giải phẫu, không phẫu thuật, can xấu, hạn chế cử động khớp vai — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "30. Gãy xương cánh tay ở cổ giải phẫu, có phẫu thuật, can tốt, cử động bình thường — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "31. Gãy xương cánh tay ở cổ giải phẫu, có phẫu thuật, can xấu, hạn chế cử động khớp vai — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "32. Gãy xương cánh tay, không phẫu thuật, can tốt, cử động bình thường — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "33. Gãy xương cánh tay, có phẫu thuật, can tốt, cử động bình thường — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "34. Gãy xương cánh tay, không phẫu thuật, can xấu, teo cơ  — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "35. Gãy xương cánh tay, có phẫu thuật, can xấu, teo cơ  — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "36. Gãy 2 xương cẳng tay, không phẫu thuật, can tốt, cử động bình thường — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "37. Gãy 2 xương cẳng tay, có phẫu thuật, can tốt, cử động bình thường — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "38. Gãy 2 xương cẳng tay, không phẫu thuật, can xấu, hạn chế cử động sấp ngửa — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "39. Gãy 2 xương cẳng tay, có phẫu thuật, can xấu, hạn chế cử động sấp ngửa — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "40. Gãy 1 xương quay hoặc trụ, không phẫu thuật, can tốt, cử động bình thường — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "41. Gãy 1 xương quay hoặc trụ, có phẫu thuật, can tốt, cử động bình thường — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "42. Gãy 1 xương quay hoặc trụ, không phẫu thuật, can xấu, hạn chế cử động sấp ngửa — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "43. Gãy 1 xương quay hoặc trụ, có phẫu thuật, can xấu, hạn chế cử động sấp ngửa — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "44. Gãy 2 xương cẳng tay, không phẫu thuật, di chứng khớp giả 2 xương — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "45. Gãy 2 xương cẳng tay, có phẫu thuật, di chứng khớp giả 2 xương — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "46. Gãy 2 xương cẳng tay, không phẫu thuật, di chứng khớp giả 1 xương — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "47. Gãy 2 xương cẳng tay, có phẫu thuật, di chứng khớp giả 1 xương — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "48. Gãy đầu dưới xương quay, không phẫu thuật, can tốt, cử động bình thường — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "49. Gãy đầu dưới xương quay, có phẫu thuật, can tốt, cử động bình thường — 14%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "50. Gãy đầu dưới xương quay, không phẫu thuật, can xấu, hạn chế động tác cổ tay — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "51. Gãy đầu dưới xương quay, có phẫu thuật, can xấu, hạn chế động tác cổ tay — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "52. Gãy mỏm trâm quay hoặc trụ, không phẫu thuật, can tốt, cử động bình thường — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "53. Gãy mỏm trâm quay hoặc trụ, có phẫu thuật, can tốt, cử động bình thường — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "54. Gãy mỏm trâm quay hoặc trụ, không phẫu thuật, can xấu, hạn chế động tác cổ tay — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "55. Gãy mỏm trâm quay hoặc trụ, có phẫu thuật, can xấu, hạn chế động tác cổ tay — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "56. Gãy xương cổ tay, không phẫu thuật, can tốt, cử động bình thường — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "57. Gãy xương cổ tay, có phẫu thuật, can tốt, cử động bình thường — 13%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "58. Gãy xương cổ tay, không phẫu thuật, can xấu, hạn chế động tác cổ tay — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "59. Gãy xương cổ tay, có phẫu thuật, can xấu, hạn chế động tác cổ tay — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "60. Gãy xương đốt bàn (tùy mức độ từ 1 đến nhiều đốt, mỗi đốt tăng thêm tương ứng 2%) — 8-16%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "61. Gãy xương đòn, không phẫu thuật, can tốt, cử động bình thường — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "62. Gãy xương đòn, có phẫu thuật, can tốt, cử động bình thường — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "63. Gãy xương đòn không phẫu thuật, can gồ, cứng vai — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "64. Gãy xương đòn, có phẫu thuật, can gồ, cứng vai — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "65. Gãy xương đòn, không phẫu thuật, có chèn ép thần kinh mũ vai — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "66. Gãy xương đòn, có phẫu thuật, có chèn ép thần kinh mũ vai — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "67. Gãy xương bả vai, gãy vỡ, khuyết phần thân xương, không phẫu thuật — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "68. Gãy xương bả vai, gãy vỡ, khuyết phần thân xương, có phẫu thuật — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "69. Gãy xương bả vai, gãy vỡ ngành ngang, không phẫu thuật — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "70. Gãy xương bả vai, gãy vỡ ngành ngang, có phẫu thuật — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "71. Gãy xương bả vai, gãy vỡ phần khớp vai, không phẫu thuật — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "72. Gãy xương bả vai, gãy vỡ phần khớp vai, có phẫu thuật — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "73. Gãy xương ngón tay (tùy mức độ từ 1 đến nhiều ngón, mỗi ngón tăng thêm tương ứng 3%) — 3-12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Chi Dưới</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "74. Mất 1 chân từ háng xuống (tháo khớp háng 1 đùi) — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "75. Cắt cụt 1 đùi"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   1/3 trên — 5%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   1/3 giữa hoặc dưới — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "76. Cắt cụt 1 chân từ gối xuống (tháo khớp gối) — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "77. Tháo khớp cổ chân hoặc mất 1 bàn chân — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "78. Mất xương sên — 37%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "79. Mất xương gót — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "80. Mất đoạn xương chày, mác gây khớp giả cẳng chân — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "81. Mất đoạn xương mác — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "82. Mất mắt cá chân"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Mắt cá ngoài — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Mắt cá trong — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "83. Mất cả 5 ngón chân — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "84. Mất 4 ngón cả ngón cái — 42%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "85. Mất 4 ngón trừ ngón cái — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "86. Mất 3 ngón 3 - 4 - 5 — 27%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "87. Mất 3 ngón 1 - 2 - 3 — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "88. Mất 1 ngón cái và ngón 2 — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "89. Mất 1 ngón cái — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "90. Mất 1 ngón ngoài ngón cái — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "91. Mất 1 đốt ngón cái — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "92. Cứng khớp háng — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "93. Cứng khớp gối  — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "94. Mất phần lớn xương bánh chè và giới hạn nhiều khả năng duỗi cẳng chân trên đùi — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "95. Gãy chân can lệch hoặc mất xương làm ngắn chi"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   ít nhất 5 cm — 42%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   từ 3 - 5 cm — 37%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "96. Liệt hoàn toàn dây thần kinh hông khoeo ngoài  — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "97. Liệt hoàn toàn dây thần kinh hông khoeo trong — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "98. Gãy xương đùi 1/3 giữa hoặc dưới, không phẫu thuật, can tốt, cử động bình thường — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "99. Gãy xương đùi 1/3 giữa hoặc dưới, có phẫu thuật, can tốt, cử động bình thường — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "100.    Gãy xương đùi 1/3 giữa hoặc dưới, không phẫu thuật, can xấu, trục lệch, chân dạng hoặc khép, teo cơ — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "101.    Gãy xương đùi 1/3 giữa hoặc dưới, có phẫu thuật, can xấu, trục lệch, chân dạng hoặc khép, teo cơ — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "102.    Gãy 1/3 trên hay cổ xương đùi, không phẫu thuật, can tốt, trục thẳng — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "103.    Gãy 1/3 trên hay cổ xương đùi, có phẫu thuật, can tốt, trục thẳng — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "104.    Gãy 1/3 trên hay cổ xương đùi, không phẫu thuật, can xấu, chân vẹo, đi đau, teo cơ — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "105.   Gãy 1/3 trên hay cổ xương đùi, có phẫu thuật, can xấu, chân vẹo, đi đau, teo cơ — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "106.   Gãy cổ xương đùi, không phẫu thuật, di chứng khớp giả cổ xương đùi — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "107.   Gãy cổ xương đùi, có phẫu thuật, di chứng khớp giả cổ xương đùi — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "108.   Gãy 2 xương cẳng chân, không phẫu thuật, can tốt, trục thẳng — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "109.   Gãy 2 xương cẳng chân, có phẫu thuật, can tốt, trục thẳng — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "110.   Gãy 2 xương cẳng chân, không phẫu thuật, can xấu, chân vẹo — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "111.   Gãy 2 xương cẳng chân, có phẫu thuật, can xấu, chân vẹo — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "112.   Gãy xương chày, không phẫu thuật, can tốt, trục thẳng — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "113.   Gãy xương chày, có phẫu thuật, can tốt, trục thẳng — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "114.   Gãy xương chày, không phẫu thuật, can xấu, chân vẹo — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "115.   Gãy xương chày, có phẫu thuật, can xấu, chân vẹo — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "116.   Gãy đoạn mâm chày, không phẫu thuật — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "117.   Gãy đoạn mâm chày, có phẫu thuật  — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "118.   Gãy xương mác, không phẫu thuật  — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "119.   Gãy xương mác, có phẫu thuật — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "120.   Đứt gân bánh chè, cơ năng khớp gối tốt — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "121.   Đứt gân bánh chè, hạn chế cơ năng khớp gối — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "122.   Gãy xương bánh chè, không phẫu thuật — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "123.   Gãy xương bánh chè, có phẫu thuật — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "124.   Gãy xương bánh chè không phẫu thuật, bị cứng khớp gối hoặc teo cơ tứ đầu — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "125.   Gãy xương bánh chè có phẫu thuật, bị cứng khớp gối hoặc teo cơ tứ đầu — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "126.   Đứt gân Achille, cơ năng vùng gót chân tốt  — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "127.   Đứt gân Achille, cơ năng vùng gót chân bị hạn chế  — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "128.   Gãy xương đốt bàn (tùy theo mức độ từ 1 đến nhiều đốt, mỗi đốt tương ứng 2%)  — 7-15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "129.   Gãy xương gót, không phẫu thuật — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "130.   Gãy xương gót, có phẫu thuật — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "131.   Gãy xương ngón chân (tùy mức độ từ 1 đến nhiều đốt, mỗi đốt tương ứng 2%)  — 4-12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "132.     Gãy ngành ngang xương mu, không dập niệu đạo — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "133.     Gãy ngành ngang xương mu, có dập niệu đạo — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "134.     Gãy ụ ngồi  — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "135.     Gãy cánh xương chậu 1 bên, không điều trị chỉnh hình  — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "136.     Gãy cánh xương chậu 1 bên, có điều trị chỉnh hình — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "137.     Gãy xương chậu 2 bên, liền xương tốt, không méo xương chậu  — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "138.     Gãy xương chậu 2 bên, méo xương chậu ảnh hưởng đến sinh đẻ — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "139.     Gãy xương cùng, không phẫu thuật, không rối loạn cơ tròn — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "140.     Gãy xương cùng, có phẫu thuật, không rối loạn cơ tròn — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "141.     Gãy xương cùng, không phẫu thuật, có rối loạn cơ tròn — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "142.     Gãy xương cùng, có phẫu thuật, có rối loạn cơ tròn — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Cột Sống</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "143.     Cắt bỏ cung sau của 1 đốt sống — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "144.     Cắt bỏ cung sau của 2 - 3 đốt sống trở lên — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "145.     Gãy xẹp thân 1 đốt sống, không phẫu thuật, không liệt tủy — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "146.     Gãy xẹp thân 1 đốt sống, có phẫu thuật, không liệt tủy — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "147.     Gãy xẹp thân 2 đốt sống trở lên, không phẫu thuật, không liệt tủy — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "148.     Gãy vỡ mõm gai hoặc mõm bên của 1 đốt sống, không phẫu thuật — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "149.     Gãy vỡ mõm gai hoặc mõm bên của 1 đốt sống, có phẫu thuật — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "150.     Gãy vỡ mõm gai hoặc mõm bên của 2 - 3 đốt sống, không phẫu thuật — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "151.     Gãy vỡ mõm gai hoặc mõm bên của 2 - 3 đốt sống, có phẫu thuật — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Sọ Não</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "152.     Khuyết xương sọ, chưa có biểu hiện thần kinh, tâm thần, đường kính dưới 6 cm — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "153.     Khuyết xương sọ, chưa có biểu hiện thần kinh, tâm thần, đường kính từ 6 đến 10cm — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "154.     Khuyết xương sọ, chưa có biểu hiện thần kinh, tâm thần, đường kính trên 10 cm — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "155.   Rối loạn ngôn ngữ do ảnh hưởng của vết thương đại não:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   nói ngọng, nói lắp, nói khó khăn ảnh hưởng đến giao tiếp — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   không nói được (câm) do tổn hại vùng Broca — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   mất khả năng giao dịch bằng chữ viết, mất nhận biết về ngôn ngữ do tổn hại vùng Werricke — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "156.   Lột da đầu toàn bộ (1 phần theo tỷ lệ) — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "157.   Vết thương sọ não hở, xương bị nứt rạn — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "158.   Vết thương sọ não hở, lún xương sọ — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "159.   Vết thương sọ não hở, nhiều mảnh xương đi sâu vào não — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "160.   Chấn thương sọ não kín, gãy xương vòm sọ (đường rạn nứt thường, lõm hoặc lún xương), không điều trị phẫu thuật — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "161.   Chấn thương sọ não kín, gãy xương vòm sọ (đường rạn nứt thường, lõm hoặc lún xương), có điều trị phẫu thuật — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "162.   Chấn thương sọ não kín, gãy xương lan xuống nền sọ không liệt dây thần kinh ở nền sọ, không điều trị phẫu thuật — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "163.   Chấn thương sọ não kín, gãy xương lan xuống nền sọ không liệt dây thần kinh ở nền sọ, có điều trị phẫu thuật — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "164.   Chấn thương sọ não kín, gãy xương lan xuống nền sọ có liệt dây thần kinh ở nền sọ, không điều trị phẫu thuật — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "165.   Chấn thương sọ não kín, gãy xương lan xuống nền sọ có liệt dây thần kinh ở nền sọ, có điều trị phẫu thuật — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "166.   Chấn thương sọ não gây chấn động não — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "167.   Chấn thương sọ não gây phù não — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "168.   Chấn thương sọ não gây giập não, dẹp não — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "169.   Chấn thương sọ não gây chảy máu khoang dưới nhện — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "170.   Chấn thương sọ não gây máu tụ trong sọ (ngoài màng cứng, trong màng cứng, trong não).. — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Lồng Ngực</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "171.   Cắt bỏ 1 - 2 xương sườn — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "172.   Cắt bỏ 3 xương sườn (mỗi xương sườn cắt bỏ trên 03 xương sườn tăng thêm 5%)  — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "173.   Cắt bỏ đoạn mỗi xương sườn (mỗi đoạn xương sườn cắt bỏ thêm tăng 3%)  — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "174.   Cắt toàn bộ 1 bên phổi — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "175.   Cắt nhiều thùy phổi ở 2 bên, dung tích sống giảm trên 50% — 70%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "176.   Cắt nhiều thùy phổi ở 1 bên — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "177.   Cắt 1 thùy phổi  — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "178.   Gãy 1 - 2 xương sườn, không phẫu thuật — 7%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "179.   Gãy 1 - 2 xương sườn, có phẫu thuật — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "180.   Gãy 3 xương sườn trở lên, không phẫu thuật — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "181.   Gãy 3 xương sườn trở lên, có phẫu thuật — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "182.   Gãy xương ức đơn thuần, không phẫu thuật (chức năng tim và hô hấp bình thường)  — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "183.   Gãy xương ức đơn thuần, có phẫu thuật (chức năng tim và hô hấp bình thường) — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "184.   Mẽ hoặc rạn nứt xương ức — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "185.   Tràn dịch, khí, máu màng phổi (chỉ chọc hút đơn thuần) — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "186.   Tràn khí, máu màng phổi (phải dẫn lưu, mổ cầm máu) — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "187.   Tổn thương các van tim, vách tim do chấn thương (chưa suy tim) — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "188.   Khâu màng ngoài tim, phẫu thuật kết quả hạn chế — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "189.   Khâu màng ngoài tim, phẫu thuật kết quả tốt — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Bụng</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "190.   Cắt toàn bộ dạ dày — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "191.   Cắt đoạn dạ dày — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "192.   Cắt gần hết ruột non (còn lại dưới 1 m) — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "193.   Cắt đoạn ruột non — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "194.   Cắt toàn bộ đại tràng — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "195.   Cắt đoạn đại tràng — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "196.   Cắt bỏ gan phải đơn thuần — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "197.   Cắt bỏ gan trái đơn thuần — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "198.   Cắt 1/2 của một thùy gan — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "199.   Cắt 1/3 của một thùy gan — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "200.   Cắt dưới 1/3 của một thùy gan — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "201.   Cắt bỏ túi mật — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "202.   Cắt bỏ lá lách — 45%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "203.   Cắt bỏ đuôi tụy, lách — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "204.   Khâu lỗ thủng dạ dày — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "205.   Khâu lỗ thủng ruột non (có thể 1 hay nhiều lỗ thủng) — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "206.   Khâu lỗ thủng đại tràng (có thể 1 hay nhiều lỗ thủng) — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "207.   Đụng dập gan, khâu gan — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "208.   Khâu vỡ lách — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "209.   Khâu tụy — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Cơ quan tiết niệu, sinh dục</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "210.   Cắt bỏ 1 thận, thận còn lại bình thường — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "211.   Cắt bỏ 1 thận, thận còn lại bị tổn thương hoặc bệnh lý — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "212.   Cắt 1 phần thận trái hoặc phải — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "213.   Mất dương vật và 2 tinh hoàn ở người dưới 55 tuổi chưa con — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "214.   Mất dương vật và 2 tinh hoàn ở người dưới 55 tuổi đã có con rồi — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "215.   Mất dương vật và 2 tinh hoàn ở người trên 55 tuổi — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "216.   Cắt bỏ dạ con và buồng trứng 1 bên ở người dưới 45 tuổi chưa con — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "217.   Cắt bỏ dạ con và buồng trứng 1 bên ở người dưới 45 tuổi đã có con — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "218.   Cắt bỏ dạ con và buồng trứng 1 bên ở người trên 45 tuổi — 27%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "219.   Cắt vú ở nữ dưới 45 tuổi 1 bên — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "220.   Cắt vú ở nữ dưới 45 tuổi 2 bên — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "221.   Cắt vú ở nữ trên 45 tuổi 1 bên — 17%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "222.   Cắt vú ở nữ trên 45 tuổi 2 bên — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "223.   Cắt 1 phần bàng quang — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "224.   Chấn thương thận nhẹ (không phải xử lý đặc hiệu, theo dõi dưới 5 ngày) — 6%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "225.   Chấn thương thận trung bình (phải dùng thuốc đặc trị, theo dõi trên 5 ngày) — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "226.   Chấn thương thận nặng (có đụng dập, phải can thiệp ngoại khoa) — 50%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "227.   Mổ thông bàng quang vĩnh viễn — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "228.   Khâu lỗ thủng bàng quang (có thể một hay nhiều lỗ thủng) — 32%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Mắt</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "229.   Mất hoặc mù hoàn toàn 1 mắt, không lắp được mắt giả — 60%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "230.   Mất hoặc mù hoàn toàn 1 mắt, lắp được mắt giả — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "231.   Một mắt thị lực còn đến 1/10 — 37%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "232.   Một mắt thị lực còn từ 2/10 đến 4/10 — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "233.   Một mắt thị lực còn từ 5/10 đến 7/10 — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "234.   Mất hoặc mù hoàn toàn 1 mắt nhưng trước khi xảy ra tai nạn này đã mất hoặc mù 1 mắt rồi — 90%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Tai - Mũi - Họng</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "235.   Điếc 2 tai hoàn toàn không phục hồi được — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "236.   Điếc 2 tai nặng (nói to hoặc thét vào tai còn nghe) — 65%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "237.   Điếc 2 tai vừa (nói to 1 - 2 m còn nghe) — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "238.   Điếc 2 tai nhẹ (nói to 2 - 4 m còn nghe) — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "239.   Điếc 1 tai hoàn toàn không phục hồi được — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "240.   Điếc 1 tai mức độ vừa — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "241.   Điếc 1 tai mức độ nhẹ — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "242.   Mất vành tai 2 bên — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "243.   Mất vành tai 1 bên — 15%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "244.   Sẹo rúm vành tai, chít hẹp ống tai — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "245.   Mất mũi hoàn toàn — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "246.   Biến dạng mũi — 18%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "247.   Vết thương họng sẹo hẹp ảnh hưởng đến nuốt — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Răng - Hàm - Mặt</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "248.   Mất toàn bộ xương hàm trên và một phần xương hàm dưới từ cành cao trở xuống khác bên — 85%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "249.   Mất toàn bộ xương hàm trên và một phần xương hàm dưới từ cành cao trở xuống cùng bên — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "250.   Mất toàn bộ xương hàm trên hoặc dưới — 75%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "251.   Mất 1 phần xương hàm trên hoặc 1 phần xương hàm dưới từ 1/3 đến 1/2 bị mất từ cành cao trở xuống — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "252.   Khớp hàm giả do không liền xương hay khuyết xương — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "253.   Mất răng trên 8 cái không lắp được răng giả — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "254.   Mất răng trên 8 cái lắp được răng giả — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "255.   Mất từ 5 đến 7 răng — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "256.   Mất từ 3 đến 4 răng — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "257.   Mất từ 1 đến 2 răng — 4%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "258.   Mất 3/4 lưỡi còn gốc lưỡi (từ đường gai V trở ra) — 80%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "259.   Mất 2/3 lưỡi từ đầu lưỡi  — 55%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "260.   Mất 1/3 lưỡi ảnh hưởng đến phát âm — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "261.   Mất 1 phần nhỏ lưỡi (dưới 1/3) ảnh hưởng đến phát âm — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "262.   Gãy xương hàm trên và hàm dưới, không phẫu thuật, cơ năng các khớp tốt  — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "263.   Gãy xương hàm trên và hàm dưới, có phẫu thuật, cơ năng các khớp tốt — 25%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "264.   Gãy xương hàm trên và hàm dưới, không phẫu thuật, di chứng can xấu gây sai khớp nhai, ăn khó — 30%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "265.   Gãy xương hàm trên và hàm dưới, có phẫu thuật, di chứng can xấu gây sai khớp nhai, ăn khó — 35%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "266.   Gãy xương gò má, cung tiếp xương hàm trên hoặc xương hàm dưới gây rối loạn nhẹ khớp cắn và chức năng nhai — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>Vết Thương Phần Mềm - Bỏng</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT TẠM THỜI</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "267.   Vết thương phần mềm (VTPM) là các vết cắt, chém bề rộng dưới 2 cm gây rách da, rách niêm mạc… không ảnh hưởng đến cơ năng, chiều dài:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 2 cm – 4 cm  — 2%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 4 cm – 7 cm  — 3%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 7 cm – 10 cm — 4%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 10 cm – 15 cm — 5%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Trên 15 cm — 7%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "268.   Vết thương phần mềm là các tổn thương dập nát, không để lại di chứng, diện tích:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Dưới 9 cm2 — 2%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 9 cm2 đến 12 cm2 — 3%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 12 cm2 đến 16 cm2 — 4%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 16 cm2 đến 24 cm2 — 6%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 24 cm2 đến 30 cm2 — 8%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Từ 30 cm2 đến 35 cm2 — 10%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   Trên 35 cm2 — 12% (Nếu các vết thương trên do súc vật gây ra thì cộng thêm 1% vào tỷ lệ ở trên)"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "269.   Vết thương phần mềm gây bong gân ở các khớp cổ chân, khớp gối, khớp háng, khớp cổ tay, khớp khuỷu, khớp vai — 4%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "270.   Vết thương phần mềm gây trật khớp ở các khớp bàn ngón tay và bàn ngón chân — 2%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "271.   Vết thương phần mềm gây trật khớp ở các khớp cổ chân, khớp gối, khớp háng, khớp cổ tay, khớp khuỷu, khớp vai — 7%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "272.   Bỏng nông (độ I, độ II)"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích dưới 5% — 4%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích từ 5 - 15% — 12%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích trên 15% — 20%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "273.   Bỏng sâu (độ III, độ IV)"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích dưới 5% — 22%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích từ 5 - 15% — 40%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "-   diện tích trên 15% — 70%"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph wording-subheading",
+              "text": "<strong>THƯƠNG TẬT BỘ PHẬN VĨNH VIỄN</strong>"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "274.    VTPM như nêu trong các mục 267, 268 để lại di chứng đau, rát, tê, co, kéo lâu dài sau khi liền vết thương: cộng thêm 5% vào các tỷ lệ tương ứng ở trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "275.    VTPM như nêu trong các mục 267, 268 ảnh hưởng đến mạch máu lớn, thần kinh: cộng thêm 10% vào các tỷ lệ tương ứng ở trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "276.    VTPM như nêu trong các mục 267, 268 nhưng là vết thương ở ngực, bụng, sau khi liền vết thương để lại di chứng ảnh hưởng đến hô hấp: cộng thêm 20% vào các tỷ lệ tương ứng ở trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "277.    VTPM như nêu trong các mục 267, 268 để lại di chứng sẹo cơ cứng làm biến dạng mặt gây trở ngại đến ăn, nhai và cử động cổ: cộng thêm 30% vào các tỷ lệ tương ứng ở trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "278.    VTPM như nêu trong các mục 267, 268 để lại khuyết hổng lớn ở chung quanh hốc miệng, ảnh hưởng nhiều đến ăn uống: cộng thêm 35% vào các tỷ lệ tương ứng ở trên."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "279.    Mất 1 phần hàm ếch làm thông giữa mũi và miệng — 25%"
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "wording-article-20",
+          "title": "Điều 20: Nguyên tắc trả tiền bảo hiểm",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "Việc trả tiền bảo hiểm theo bảng này tuân theo những nguyên tắc sau đây:"
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "1. Mất hẳn chức năng của từng bộ phận hoặc hỏng vĩnh viễn chi được coi như mất từng bộ phận đó hoặc mất chi."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "2. Những trường hợp thương tật không liệt kê trong bảng sẽ được bồi thường theo tỉ lệ trên cơ sở so sánh tính nghiêm trọng của nó với những trường hợp khác có trong bảng."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "3. Trường hợp có nhiều thương tật, tiền bảo hiểm được trả cho từng thương tật tương ứng nhưng tổng số tiền trả cho Người được bảo hiểm không vượt quá số tiền bảo hiểm. Trường hợp có nhiều thương tật ở cùng một chi, tổng số tiền trả cho các thương tật không được vượt quá tỷ lệ mất chi đó."
+            },
+            {
+              "type": "paragraph",
+              "className": "wording-paragraph",
+              "text": "4. Những trường hợp phải mổ lại, đập can xương làm lại được trả thêm 50% của tỷ lệ trả cho trường hợp đó nhưng tổng số tiền chi trả không vượt quá số tiền bảo hiểm."
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

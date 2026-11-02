@@ -1,0 +1,200 @@
+{
+  "$schema": "../../content-types/document.schema.json",
+  "type": "document",
+  "schemaVersion": 1,
+  "slug": "vikki-lixi-2026",
+  "filename": "tc",
+  "variant": "tc",
+  "id": "vikki-go-tnc",
+  "version": "2.1.0",
+  "header": {
+    "img": "assets/logo-vikki.png",
+    "h1": "ĐIỀU KHOẢN VÀ ĐIỀU KIỆN DỊCH VỤ LÌ XÌ ONLINE TRÊN ỨNG DỤNGVIKKI",
+    "intro": [
+      "Điều Khoản và Điều Kiện này quy định việc Khách hàng sử dụng dịch vụ 'Lì Xì Online' (sau đây gọi là 'Dịch vụ') trên ứng dụng di động của Vikki Bank."
+    ]
+  },
+  "sections": [
+    {
+      "id": "phan-a",
+      "title": "Phần A. QUY ĐỊNH CHUNG",
+      "expanded": true,
+      "blocks": [],
+      "sections": [
+        {
+          "id": "dieu-1",
+          "title": "Điều 1. Giải thích từ ngữ",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank: là Ngân hàng Trách nhiệm hữu hạn một thành viên SốVikki."
+                },
+                {
+                  "text": "Khách hàng (“KH”): bao gồm Người gửi (Người khởi tạo bao lì xì) và Người nhận(Người thụ hưởng bao lì xì) có tài khoản thanh toán VikkiME."
+                },
+                {
+                  "text": "Lì xì cá nhân: là hình thức người gửi tạo bao lì xì cho một người nhận."
+                },
+                {
+                  "text": "Lì xì nhóm: là hình thức người gửi tạo bao lì xì cho nhiều người nhận với chế độ chia tiền Ngẫu nhiên hoặc Chia đều."
+                },
+                {
+                  "text": "Chia tiền ngẫu nhiên: Hệ thống chia tiền ngẫu nhiên, đảmbảo số tiền mỗi người nhận là khác nhau."
+                },
+                {
+                  "text": "Chia tiền đều: Hệ thống chia đều tổng số tiền để đảm bảo số tiền mỗi người nhận là bằng nhau."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-2",
+          "title": "Điều 2. ĐIỀU KIỆN GIAO DỊCH",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Phạm vi áp dụng: Người nhận phải có tài khoản VikkiME để nhận tiền."
+                },
+                {
+                  "text": "Hạn mức tối thiểu: giá trị mỗi bao lì xì tối thiểu là 2.000 VND."
+                },
+                {
+                  "text": "Hạn mức tối đa:",
+                  "children": {
+                    "type": "list",
+                    "style": "alpha",
+                    "items": [
+                      {
+                        "text": "Lì xì cá nhân: giá trị mỗi bao lì xì tối đa là nhỏ hơn 500.000.000VND."
+                      },
+                      {
+                        "text": "Lì xì nhóm: giá trị mỗi bao lì xì tối đa là không giới hạn nhưng không vượt quá hạn mức giao dịch thanh toán tối đa theo quy định của pháp luật và của Vikki Bank trong từng thời kỳ."
+                      }
+                    ]
+                  }
+                },
+                {
+                  "text": "Thời hạn hiệu lực bao lì xì: Mỗi bao lì xì có thời hạn hiệu lực tùy theo thiết lập của khách hàng."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-3",
+          "title": "Điều 3. QUY ĐỊNH VỀ GIAO DỊCH VÀ CƠ CHẾ TÍNH LÃI",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "numeric",
+              "items": [
+                {
+                  "text": "Số tiền mừng được trích từ tài khoản thanh toán của khách hàng tại Vikki Bank và được hệ thống quản lý theo từng bao lì xì đã tạo. Số tiền trong baolì xì được tính lãi theo mức lãi suất tiền gửi không kỳ hạn do Vikki Bank công bố theo từng thời kỳ."
+                },
+                {
+                  "text": "Trường hợp hết thời hạn bao lì xì mà vẫn còn số tiền chưa được nhận, hệ thống sẽ tự động hoàn trả số tiền còn dư về tài khoản của người gửi theo quy định."
+                },
+                {
+                  "text": "Mỗi người nhận chỉ được nhận tối đa 01 (một) lần cho mỗi bao lì xì nhóm từ cùng một Người gửi."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-4",
+          "title": "Điều 4. QUYỀN LỢI VÀ TRÁCH NHIỆM CỦA KHÁCH HÀNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Khách hàng được sử dụng dịch vụ “Lì Xì Online”, bao gồm tạo và theo dõi cácbao tiền mừng đã gửi. Được chia sẻ bao lì xì dưới dạng video và nhận hoàn tiền tự động đối với số tiền chưa được nhận khi bao hết hiệu lực."
+                },
+                {
+                  "text": "Khách hàng có quyền hủy hiệu lực bao lì xì tại bất kỳ thời điểm nào trước thời gian hết hạn của bao lì xì đã tạo, số tiền còn lại (nếu có) sẽ được hệ thống hoàn trả về tài khoản thanh toán của khách hàng theo quy định dịch vụ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-5",
+          "title": "Điều 5. NGHĨA VỤ VÀ TRÁCH NHIỆM CỦA VIKKI BANK",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Thực hiện xử lý giao dịch, hoàn tiền và hỗ trợ khách hàng trong quá trình sử dụng dịch vụ theo quy định của Vikki Bank và quy định pháp luật hiện hành."
+                },
+                {
+                  "text": "Đảm bảo an toàn, bảo mật hệ thống và thông tin khách hàng theo quy định của pháp luật."
+                },
+                {
+                  "text": "Vikki Bank có quyền giám sát, tạm dừng, từ chối hoặc xử lý giao dịch theo quy định về phòng, chống rửa tiền và tài trợ khủng bố khi phát hiện dấu hiệu bất thường."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-6",
+          "title": "Điều 6. MIỄN TRỪ TRÁCH NHIỆM",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Vikki Bank không chịu trách nhiệm nếu Khách hàng chia sẻ nhầm liên kết/mã QR dẫn đến việc người không mong muốn nhận được tiền."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        },
+        {
+          "id": "dieu-7",
+          "title": "ĐIỀU 7. ĐIỀU KHOẢN CHUNG",
+          "expanded": false,
+          "blocks": [
+            {
+              "type": "list",
+              "style": "decimal",
+              "items": [
+                {
+                  "text": "Việc sử dụng dịch vụ đồng nghĩa với việc Khách hàng đã đọc, hiểu và đồng ý với toàn bộ Điều khoản và điều kiện này. Sự đồng ý của Khách hàng có hiệu lực từ thời điểm Khách hàng xác nhận trên nền tảng điện tử Vikki Bank."
+                },
+                {
+                  "text": " Điều khoản và điều kiện này có thể được điều chỉnh để phù hợp với chính sách vận hành dịch vụ và quy định pháp luật trong từng thời kỳ."
+                }
+              ]
+            }
+          ],
+          "sections": []
+        }
+      ]
+    }
+  ]
+}

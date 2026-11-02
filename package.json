@@ -14,11 +14,20 @@
     "manifest:verify": "node core/manifest.js --verify",
     "manifest:orphans": "node core/manifest.js --check-orphans",
     "import:promotions": "node tools/import-promotions.js",
+    "catalogue": "node tools/catalogue.js",
+    "test:roadmap": "node tools/verify-roadmap.js",
+    "publish:env": "node core/publish.js",
+    "spike:engine": "node tools/spike-template-engine.js",
+    "cvp": "node bin/cvp.js",
     "install:all": "npm install && npm install --prefix front-end"
+  },
+  "bin": {
+    "cvp": "./bin/cvp.js"
   },
   "dependencies": {
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
+    "handlebars": "^4.7.10",
     "xlsx": "^0.18.5"
   }
 }

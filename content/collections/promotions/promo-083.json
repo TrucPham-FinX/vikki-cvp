@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-083",
+  "group": "HDB",
+  "categories": [
+    "VIKKI_ONE",
+    "VIKKIGO_PLUS"
+  ],
+  "code": "PRE83",
+  "name": "Giảm đến 1 triệu VNĐ khi thanh toán dịch vụ trên App Traveloka",
+  "thumbnail": "./assets/promo-083.png",
+  "shortDesc": "Giảm đến 1 triệu VNĐ khi thanh toán dịch vụ trên App Traveloka",
+  "longDesc": "<p><strong>1. Thể lệ:</strong></p><ol type=\"a\"><li>Tất cả các ngày trong tuần (không bao gồm thứ Tư hàng tuần): giảm ngay 250.000 VNĐ (đã bao gồm VAT) cho tổng thanh toán tối thiểu 2.500.000 VNĐ khi đặt dịch vụ với Traveloka cho dịch vụ: Vé máy bay hoặc Lưu trú Khách sạn/Resorts hoặc các dịch vụ du lịch khác do Traveloka cung cấp</li><li>Đặc biệt Thứ Tư hàng tuần:<ol type=\"i\"><li>Các ngày thứ Tư của tháng 07 năm 2026: giảm ngay 700.000 VNĐ (đã bao gồm VAT) cho tổng thanh toán tối thiểu 4.000.000 VNĐ khi đặt dịch vụ với Traveloka cho dịch vụ: Vé máy bay hoặc Lưu trú Khách sạn/Resorts hoặc các dịch vụ du lịch khác do Traveloka cung cấp.</li><li>Các ngày thứ Tư của tháng 08 năm 2026: giảm ngay 800.000 VNĐ (đã bao gồm VAT) cho tổng thanh toán tối thiểu 4.000.000 VNĐ khi đặt dịch vụ với Traveloka cho dịch vụ: Vé máy bay hoặc Lưu trú Khách sạn/Resorts hoặc các dịch vụ du lịch khác do Traveloka cung cấp.</li><li>Các ngày thứ Tư của tháng 09 năm 2026: giảm ngay 900.000 VNĐ (đã bao gồm VAT) cho tổng thanh toán tối thiểu 4.000.000 VNĐ khi đặt dịch vụ với Traveloka cho dịch vụ: Vé máy bay hoặc Lưu trú Khách sạn/Resorts các dịch vụ du lịch khác do Traveloka cung cấp.</li><li>Các ngày thứ Tư của tháng 10 năm 2026: giảm ngay 1.000.000 VNĐ (đã bao gồm VAT) cho tổng thanh toán tối thiểu 4.000.000 VNĐ khi đặt dịch vụ với Traveloka cho dịch vụ: Vé máy bay hoặc Lưu trú Khách sạn/Resorts hoặc các dịch vụ du lịch khác do Traveloka cung cấp.</li></ol></li></ol><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ol type=\"a\"><li>Ưu đãi áp dụng khi thanh toán trực tiếp tại ứng dụng và Website của Traveloka: <a href=\"http://www.traveloka.com\" target=\"_blank\" rel=\"noopener noreferrer\">www.traveloka.com</a></li><li>Cách thức nhận ưu đãi:<ol type=\"i\"><li>Bước 1: Sao chép mã giảm giá trên chương trình ưu đãi bạn muốn sử dụng.</li><li>Bước 2: Đặt chỗ và tiến hành thanh toán.</li><li>Bước 3: Chọn phương thức thanh toán. Trong ô Mã giảm giá, nhấn Thêm. Dán mã giảm giá vào ô và nhấn Thêm một lần nữa.</li><li>Bước 4: Tổng giá trị đơn hàng sẽ được điều chỉnh. Nhấn Xong và tiến hành thanh toán.</li></ol></li><li>Mỗi người dùng được sử dụng tối đa 01 lượt/ngày trong thời gian diễn ra chương trình</li><li>Số lượng ưu đãi có hạn trong ngày chủ thẻ nên thực hiện giao dịch đủ điều kiện sớm trước.</li><li>Giới hạn tối đa:<ol type=\"i\"><li>103 lượt/tuần cho các ngày trong tuần (không bao gồm thứ Tư hàng tuần).</li><li>12 lượt/tuần áp dụng cho mỗi thứ Tư hàng tuần.</li></ol></li><li>Chương trình áp dụng khi mua Vé máy bay hoặc Lưu trú Khách sạn/Resorts hoặc các dịch vụ du lịch khác do Traveloka cung cấp.</li><li>Ưu đãi không có giá trị đổi thành tiền mặt hay hoàn trả.</li><li>Chương trình không áp dụng đồng thời với các chương trình khuyến mại khác.</li><li>Giao dịch phải thỏa mãn điều kiện giao dịch thành công, không áp dụng cho giao dịch hủy/giao dịch hoàn tiền (“giao dịch thành công” là giao dịch đã được ghi nhận tại hệ thống của Vikki Digital Bank, được hiểu là giao dịch được bút toán, được ghi nhận trên sao kê tài khoản hoặc giao dịch đang chờ cập nhật sao kê).</li><li>Đối với những thắc mắc, khiếu nại liên quan đến chương trình khuyến mại nêu trên, chủ thẻ liên hệ tới hotline Vikki Digital Bank để được hướng dẫn và giải quyết.</li><li>Chương trình có thể kết thúc sớm hơn thời hạn quy định tại Thời Gian Áp Dụng khi đạt ngân sách thực hiện ưu đãi tối đa của chương trình, tùy theo điều kiện nào đến trước.</li></ol>",
+  "startDate": "2026-07-16T00:00:00.000Z",
+  "endDate": "2026-10-31T23:59:59.000Z",
+  "createdDate": "2026-08-25T00:00:00.000Z",
+  "updatedDate": "2026-08-25T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: 16/07/2026 - 31/10/2026"
+}

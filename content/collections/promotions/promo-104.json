@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../../content-types/promotion.schema.json",
+  "type": "promotion",
+  "id": "promo-104",
+  "group": "HDB",
+  "categories": [
+    "VIKKIGO_PLUS",
+    "VIKKI_ONE"
+  ],
+  "code": "PRE104",
+  "name": "Dhawa",
+  "thumbnail": "./assets/promo-104.jpg",
+  "shortDesc": "Tặng 01 đêm nghỉ miễn phí",
+  "longDesc": "<p><strong>Vikki x Mastercard | Dhawa | Tặng 01 đêm nghỉ miễn phí</strong></p><p><strong>1. Thể lệ</strong></p><ul><li>Tặng 01 đêm nghỉ miễn phí (áp dụng cho các đặt phòng lưu trú từ 03 đêm liên tiếp trở lên).</li><li>Giảm 20% cho dịch vụ spa và gallery trong thời gian lưu trú.</li><li>Ưu tiên nhận phòng sớm và trả phòng muộn (tùy thuộc vào tình trạng phòng trống).</li><li>Thời gian đặt phòng: Đến hết ngày 31/12/2026.</li><li>Thời gian lưu trú: Đến hết ngày 30/06/2027.</li><li>Xem chi tiết và đặt phòng tại: <a href=\"https://www.groupbanyan.com/offers/mastercard-exclusive\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.groupbanyan.com/offers/mastercard-exclusive</a>.</li></ul><p><strong>2. Điều kiện và điều khoản chương trình</strong></p><ul><li>Ưu đãi áp dụng độc quyền cho chủ thẻ Mastercard khi đặt phòng tại các cơ sở lưu trú tham gia chương trình và thanh toán bằng thẻ Mastercard hợp lệ.</li><li>Yêu cầu bắt buộc phải đặt phòng trước. Các chính sách thanh toán sẽ được áp dụng tương ứng.</li><li>Chủ thẻ Mastercard phải xuất trình thẻ của mình khi làm thủ tục nhận phòng (check-in).</li><li>Tuyệt đối không chấp nhận các loại thẻ khác để hưởng ưu đãi này.</li><li>Việc hủy đặt phòng sẽ tuân theo các chính sách hủy, sửa đổi và vắng mặt (no-show) thông thường của từng khu nghỉ dưỡng.</li><li>Chương trình không áp dụng đồng thời với các khuyến mãi, ưu đãi hoặc đặc quyền khác.</li><li>Các sản phẩm và dịch vụ trong chương trình này hoàn toàn do Banyan Group cung cấp, dựa trên các điều khoản và điều kiện do Banyan Group quy định. Mastercard không chịu bất kỳ trách nhiệm pháp lý nào liên quan đến các sản phẩm và dịch vụ đó.</li></ul>",
+  "startDate": "2026-09-30T00:00:00.000Z",
+  "endDate": "2026-12-31T23:59:59.000Z",
+  "createdDate": "2026-09-30T00:00:00.000Z",
+  "updatedDate": "2026-09-30T00:00:00.000Z",
+  "hotDeal": false,
+  "extraData": "Thời gian: Từ nay đến 31/12/2026"
+}
