@@ -1,0 +1,18 @@
+{
+  "type": "tooltip",
+  "version": "1.0.0",
+  "title": "Interactive Tooltip",
+  "description": "Tooltip popup trigger explaining product or financial concepts",
+  "category": "widget",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "properties": {
+      "type": { "type": "string", "const": "tooltip" },
+      "id": { "type": "string" },
+      "title": { "type": "string" },
+      "content": { "type": "string" },
+      "className": { "type": "string" }
+    }
+  }
+}

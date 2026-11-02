@@ -7,6 +7,12 @@
     "build": "npm run --prefix front-end build",
     "check": "npm run --prefix front-end check",
     "dev": "npm run --prefix front-end dev",
-    "install:all": "npm install --prefix front-end"
+    "validate": "node core/validate.js",
+    "inventory": "node core/inventory.js",
+    "install:all": "npm install && npm install --prefix front-end"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
   }
 }

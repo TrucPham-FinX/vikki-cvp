@@ -1,0 +1,35 @@
+{
+  "type": "slider",
+  "version": "1.0.0",
+  "title": "Image Slider / Carousel",
+  "description": "Swiper carousel of image slides with optional popup links",
+  "category": "content",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "required": ["items"],
+    "properties": {
+      "type": { "type": "string", "const": "slider" },
+      "title": {
+        "type": "object",
+        "properties": {
+          "src": { "type": "string" },
+          "className": { "type": "string" }
+        }
+      },
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["src"],
+          "properties": {
+            "src": { "type": "string" },
+            "link": { "type": "string" },
+            "popupTitle": { "type": "string" },
+            "className": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

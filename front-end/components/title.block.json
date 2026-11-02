@@ -1,0 +1,17 @@
+{
+  "type": "title",
+  "version": "1.0.0",
+  "title": "HTML Title Header",
+  "description": "Custom raw title or styled header text block",
+  "category": "content",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "required": ["title"],
+    "properties": {
+      "type": { "type": "string", "const": "title" },
+      "title": { "type": "string" },
+      "className": { "type": "string" }
+    }
+  }
+}

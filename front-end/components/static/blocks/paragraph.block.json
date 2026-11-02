@@ -1,0 +1,18 @@
+{
+  "type": "paragraph",
+  "version": "1.0.0",
+  "title": "Document Paragraph",
+  "description": "Standard legal document paragraph block",
+  "category": "document",
+  "templates": ["document"],
+  "props": {
+    "type": "object",
+    "required": ["text"],
+    "properties": {
+      "type": { "type": "string", "const": "paragraph" },
+      "text": { "type": "string" },
+      "id": { "type": "string" },
+      "className": { "type": "string" }
+    }
+  }
+}

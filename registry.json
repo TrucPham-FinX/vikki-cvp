@@ -1,0 +1,707 @@
+{
+  "version": "1.0.0",
+  "generatedAt": "2026-11-02T10:15:43.861Z",
+  "contentTypes": [
+    "cvp:_defs",
+    "cvp:card-intro",
+    "cvp:document",
+    "cvp:landing-page",
+    "cvp:promotion"
+  ],
+  "blocks": {
+    "activation": {
+      "type": "activation",
+      "version": "1.0.0",
+      "title": "Call-to-Action / Legal Links",
+      "description": "Row of action buttons for fee and terms & conditions document popups",
+      "category": "cta",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "activation"
+          },
+          "bgGreen": {
+            "type": "boolean"
+          },
+          "feeButton": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "popupTitle": {
+                "type": "string"
+              }
+            }
+          },
+          "termsButton": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "popupTitle": {
+                "type": "string"
+              }
+            }
+          },
+          "termsButtonFullW": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "popupTitle": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/activation.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/activation.hbs"
+    },
+    "imageSection": {
+      "type": "imageSection",
+      "version": "1.0.0",
+      "title": "Image Section",
+      "description": "Full-width or bounded image with optional link, popup trigger, and loading spinner",
+      "category": "content",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "src"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "imageSection"
+          },
+          "src": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          },
+          "container": {
+            "type": "string"
+          },
+          "cellClassName": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string"
+          },
+          "popupTitle": {
+            "type": "string"
+          },
+          "hasLoading": {
+            "type": "boolean"
+          },
+          "hotspots": {
+            "type": "array"
+          }
+        }
+      },
+      "filePath": "front-end/components/image.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/image.hbs"
+    },
+    "flex": {
+      "type": "flex",
+      "version": "1.0.0",
+      "title": "Partner Grid",
+      "description": "Grid of co-branded ecosystem partners with active/inactive state and OPEN_CARD bridge action",
+      "category": "widget",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "partners"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "flex"
+          },
+          "className": {
+            "type": "string"
+          },
+          "partners": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "logo"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "logo": {
+                  "type": "string"
+                },
+                "logoActive": {
+                  "type": "string"
+                },
+                "logoInactive": {
+                  "type": "string"
+                },
+                "primary": {
+                  "type": "boolean"
+                },
+                "link": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/partners.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/partners.hbs"
+    },
+    "qa": {
+      "type": "qa",
+      "version": "1.0.0",
+      "title": "FAQ Teaser / Accordion",
+      "description": "Frequently asked questions teaser with optional 'see more' button opening full FAQ popup",
+      "category": "content",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "qa"
+          },
+          "title": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "className": {
+                "type": "string"
+              }
+            }
+          },
+          "seeMore": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/qa.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/qa.hbs"
+    },
+    "safePlusOverview": {
+      "type": "safePlusOverview",
+      "version": "1.0.0",
+      "title": "Safe Plus Overview",
+      "description": "Insurance product summary banner, highlights, and benefit badges",
+      "category": "widget",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "safePlusOverview"
+          }
+        },
+        "additionalProperties": true
+      },
+      "filePath": "front-end/components/safePlusOverview.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/safePlusOverview.hbs"
+    },
+    "safePlusPlanDetails": {
+      "type": "safePlusPlanDetails",
+      "version": "1.0.0",
+      "title": "Safe Plus Plan Details",
+      "description": "Insurance plan comparison cards and coverage details",
+      "category": "widget",
+      "templates": [
+        "landing",
+        "safe-plus-detail"
+      ],
+      "props": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "safePlusPlanDetails"
+          }
+        },
+        "additionalProperties": true
+      },
+      "filePath": "front-end/components/safePlusPlanDetails.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/safePlusPlanDetails.hbs"
+    },
+    "slider": {
+      "type": "slider",
+      "version": "1.0.0",
+      "title": "Image Slider / Carousel",
+      "description": "Swiper carousel of image slides with optional popup links",
+      "category": "content",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "slider"
+          },
+          "title": {
+            "type": "object",
+            "properties": {
+              "src": {
+                "type": "string"
+              },
+              "className": {
+                "type": "string"
+              }
+            }
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "src"
+              ],
+              "properties": {
+                "src": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "popupTitle": {
+                  "type": "string"
+                },
+                "className": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/slider.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/slider.hbs"
+    },
+    "list": {
+      "type": "list",
+      "version": "1.0.0",
+      "title": "Document List",
+      "description": "Numbered or bulleted list of items within legal documents",
+      "category": "document",
+      "templates": [
+        "document"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "list"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": [
+                "string",
+                "object"
+              ]
+            }
+          },
+          "ordered": {
+            "type": "boolean"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/static/blocks/list.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/static/blocks/list.hbs"
+    },
+    "paragraph": {
+      "type": "paragraph",
+      "version": "1.0.0",
+      "title": "Document Paragraph",
+      "description": "Standard legal document paragraph block",
+      "category": "document",
+      "templates": [
+        "document"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "paragraph"
+          },
+          "text": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/static/blocks/paragraph.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/static/blocks/paragraph.hbs"
+    },
+    "subheading": {
+      "type": "subheading",
+      "version": "1.0.0",
+      "title": "Document Subheading",
+      "description": "Subheading or section header within legal documents",
+      "category": "document",
+      "templates": [
+        "document"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "subheading"
+          },
+          "text": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/static/blocks/subheading.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/static/blocks/subheading.hbs"
+    },
+    "table": {
+      "type": "table",
+      "version": "1.0.0",
+      "title": "Document Table",
+      "description": "Tabular fee schedule or benefit comparison table",
+      "category": "document",
+      "templates": [
+        "document"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "rows"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "table"
+          },
+          "headerRows": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "rows": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "cells": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "value": {
+                        "type": "string"
+                      },
+                      "colspan": {
+                        "type": [
+                          "number",
+                          "string"
+                        ]
+                      },
+                      "rowspan": {
+                        "type": [
+                          "number",
+                          "string"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/static/blocks/table.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/static/blocks/table.hbs"
+    },
+    "title": {
+      "type": "title",
+      "version": "1.0.0",
+      "title": "HTML Title Header",
+      "description": "Custom raw title or styled header text block",
+      "category": "content",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "title"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "title"
+          },
+          "title": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/title.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/title.hbs"
+    },
+    "tooltip": {
+      "type": "tooltip",
+      "version": "1.0.0",
+      "title": "Interactive Tooltip",
+      "description": "Tooltip popup trigger explaining product or financial concepts",
+      "category": "widget",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "tooltip"
+          },
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/tooltip.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/tooltip.hbs"
+    },
+    "topMenu": {
+      "type": "topMenu",
+      "version": "1.0.0",
+      "title": "Top Navigation Menu",
+      "description": "Navigation bar with anchor scroll or popup triggers",
+      "category": "navigation",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "required": [
+          "items"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "topMenu"
+          },
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "label"
+              ],
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "scroll",
+                    "popup",
+                    "link"
+                  ]
+                },
+                "popupTitle": {
+                  "type": "string"
+                },
+                "target": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "filePath": "front-end/components/topMenu.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/topMenu.hbs"
+    },
+    "video": {
+      "type": "video",
+      "version": "1.0.0",
+      "title": "Hero Video Player",
+      "description": "Hero video banner player supporting HLS streaming and MP4 fallback",
+      "category": "hero",
+      "templates": [
+        "landing"
+      ],
+      "props": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "video"
+          },
+          "id": {
+            "type": "string"
+          },
+          "src": {
+            "type": "string"
+          },
+          "poster": {
+            "type": "string"
+          },
+          "className": {
+            "type": "string"
+          }
+        }
+      },
+      "filePath": "front-end/components/video.block.json",
+      "templatePath": "/Users/trucpham/Projects/vikki-cvp/front-end/components/video.hbs"
+    }
+  },
+  "templates": {
+    "base": {
+      "name": "base",
+      "file": "base.hbs",
+      "path": "front-end/layouts/base.hbs"
+    },
+    "blank": {
+      "name": "blank",
+      "file": "blank.hbs",
+      "path": "front-end/layouts/blank.hbs"
+    },
+    "fee": {
+      "name": "fee",
+      "file": "fee.hbs",
+      "path": "front-end/layouts/fee.hbs"
+    },
+    "legal-document": {
+      "name": "legal-document",
+      "file": "legal-document.hbs",
+      "path": "front-end/layouts/legal-document.hbs"
+    },
+    "promotion": {
+      "name": "promotion",
+      "file": "promotion.hbs",
+      "path": "front-end/layouts/promotion.hbs"
+    },
+    "safe-plus-detail": {
+      "name": "safe-plus-detail",
+      "file": "safe-plus-detail.hbs",
+      "path": "front-end/layouts/safe-plus-detail.hbs"
+    },
+    "static": {
+      "name": "static",
+      "file": "static.hbs",
+      "path": "front-end/layouts/static.hbs"
+    },
+    "template": {
+      "name": "template",
+      "file": "template.hbs",
+      "path": "front-end/layouts/template.hbs"
+    }
+  }
+}

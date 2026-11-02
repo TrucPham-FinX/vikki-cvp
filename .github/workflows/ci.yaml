@@ -23,5 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm run install:all
 
+      - name: Validate schemas & blocks
+        run: npm run validate
+
+      - name: Generate inventory & registry
+        run: npm run inventory
+
       - name: Check build parity
         run: npm run check

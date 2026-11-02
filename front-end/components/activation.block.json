@@ -1,0 +1,42 @@
+{
+  "type": "activation",
+  "version": "1.0.0",
+  "title": "Call-to-Action / Legal Links",
+  "description": "Row of action buttons for fee and terms & conditions document popups",
+  "category": "cta",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "properties": {
+      "type": { "type": "string", "const": "activation" },
+      "bgGreen": { "type": "boolean" },
+      "feeButton": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "link": { "type": "string" },
+          "popupTitle": { "type": "string" }
+        }
+      },
+      "termsButton": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "link": { "type": "string" },
+          "popupTitle": { "type": "string" }
+        }
+      },
+      "termsButtonFullW": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "text": { "type": "string" },
+          "link": { "type": "string" },
+          "popupTitle": { "type": "string" }
+        }
+      }
+    }
+  }
+}

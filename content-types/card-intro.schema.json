@@ -1,0 +1,15 @@
+{
+  "$id": "cvp:card-intro",
+  "title": "Card Intro Item",
+  "description": "Schema for Card Intro collection item",
+  "type": "object",
+  "required": ["id", "name"],
+  "properties": {
+    "id": { "type": "string" },
+    "cardGroup": { "type": "string" },
+    "thumbnail": { "type": "string" },
+    "name": { "type": "string" },
+    "longDesc": { "type": "string" }
+  },
+  "additionalProperties": true
+}

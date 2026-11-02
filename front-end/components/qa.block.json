@@ -1,0 +1,29 @@
+{
+  "type": "qa",
+  "version": "1.0.0",
+  "title": "FAQ Teaser / Accordion",
+  "description": "Frequently asked questions teaser with optional 'see more' button opening full FAQ popup",
+  "category": "content",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "required": ["title"],
+    "properties": {
+      "type": { "type": "string", "const": "qa" },
+      "title": {
+        "type": "object",
+        "properties": {
+          "src": { "type": "string" },
+          "className": { "type": "string" }
+        }
+      },
+      "seeMore": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "text": { "type": "string" }
+        }
+      }
+    }
+  }
+}

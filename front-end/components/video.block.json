@@ -1,0 +1,18 @@
+{
+  "type": "video",
+  "version": "1.0.0",
+  "title": "Hero Video Player",
+  "description": "Hero video banner player supporting HLS streaming and MP4 fallback",
+  "category": "hero",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "properties": {
+      "type": { "type": "string", "const": "video" },
+      "id": { "type": "string" },
+      "src": { "type": "string" },
+      "poster": { "type": "string" },
+      "className": { "type": "string" }
+    }
+  }
+}

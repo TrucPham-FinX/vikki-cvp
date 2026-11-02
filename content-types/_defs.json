@@ -1,0 +1,38 @@
+{
+  "$id": "cvp:_defs",
+  "description": "Shared definition fragments for Vikki CVP content types and blocks",
+  "definitions": {
+    "assetImage": {
+      "type": "string",
+      "description": "Path to an image asset (PNG, JPG, SVG, WebP)"
+    },
+    "assetVideo": {
+      "type": "string",
+      "description": "Path to video file or HLS m3u8 playlist"
+    },
+    "plainText": {
+      "type": "string",
+      "description": "Plain text string without HTML markup"
+    },
+    "richText": {
+      "type": "string",
+      "description": "Rich text string, potentially containing safe HTML markup"
+    },
+    "action": {
+      "type": "object",
+      "description": "App runtime bridge action or navigation",
+      "properties": {
+        "type": { "type": "string", "enum": ["OPEN_CARD", "OPEN_PROMO_DETAIL", "navigate-screen", "setHeight", "redirect", "popup", "scroll"] },
+        "action": { "type": "string" },
+        "redirectTo": { "type": "string" },
+        "additionalData": { "type": "object" },
+        "url": { "type": "string" },
+        "target": { "type": "string" }
+      }
+    },
+    "ref": {
+      "type": "string",
+      "description": "Reference identifier to another page, document, or collection item"
+    }
+  }
+}

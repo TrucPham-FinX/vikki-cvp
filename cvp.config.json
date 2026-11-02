@@ -1,0 +1,30 @@
+{
+  "name": "vikki-cvp",
+  "contentTypes": "content-types",
+  "blocks": "front-end/components",
+  "layouts": "front-end/layouts",
+  "pages": "front-end/pages",
+  "data": "front-end/data",
+  "output": "vikki-cvp",
+  "locales": {
+    "default": "vi",
+    "supported": ["vi", "en"]
+  },
+  "environments": {
+    "dev": {
+      "cdnHost": "https://dev-cdn.galaxyfinx.cloud",
+      "target": "dev/s3-bucket-apse5-dev-vikki/vikki-cvp"
+    },
+    "uat": {
+      "cdnHost": "https://vikki-cdn.uat.galaxyfinx.cloud",
+      "target": "uat/non-prod-uat-vikki-587199685549/vikki-cvp"
+    },
+    "stg": {
+      "cdnHost": "https://stg-cdn.galaxyfinx.cloud",
+      "target": "stg/s3-bucket-apse5-stg-vikki/vikki-cvp"
+    }
+  },
+  "security": {
+    "allowedLinkHosts": ["vikkibank.vn", "*.galaxyfinx.cloud"]
+  }
+}

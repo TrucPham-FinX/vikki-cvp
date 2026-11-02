@@ -1,0 +1,32 @@
+{
+  "type": "flex",
+  "version": "1.0.0",
+  "title": "Partner Grid",
+  "description": "Grid of co-branded ecosystem partners with active/inactive state and OPEN_CARD bridge action",
+  "category": "widget",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "required": ["partners"],
+    "properties": {
+      "type": { "type": "string", "const": "flex" },
+      "className": { "type": "string" },
+      "partners": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": ["id", "logo"],
+          "properties": {
+            "id": { "type": "string" },
+            "name": { "type": "string" },
+            "logo": { "type": "string" },
+            "logoActive": { "type": "string" },
+            "logoInactive": { "type": "string" },
+            "primary": { "type": "boolean" },
+            "link": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

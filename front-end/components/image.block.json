@@ -1,0 +1,24 @@
+{
+  "type": "imageSection",
+  "version": "1.0.0",
+  "title": "Image Section",
+  "description": "Full-width or bounded image with optional link, popup trigger, and loading spinner",
+  "category": "content",
+  "templates": ["landing"],
+  "props": {
+    "type": "object",
+    "required": ["src"],
+    "properties": {
+      "type": { "type": "string", "const": "imageSection" },
+      "src": { "type": "string" },
+      "id": { "type": "string" },
+      "className": { "type": "string" },
+      "container": { "type": "string" },
+      "cellClassName": { "type": "string" },
+      "link": { "type": "string" },
+      "popupTitle": { "type": "string" },
+      "hasLoading": { "type": "boolean" },
+      "hotspots": { "type": "array" }
+    }
+  }
+}

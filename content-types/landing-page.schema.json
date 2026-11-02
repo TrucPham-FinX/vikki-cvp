@@ -1,0 +1,58 @@
+{
+  "$id": "cvp:landing-page",
+  "title": "CVP Landing Page",
+  "description": "Schema for CVP Landing Pages (e.g. vikki-one-connect, vikki-safe-plus-cvp)",
+  "type": "object",
+  "required": ["title"],
+  "properties": {
+    "title": { "type": "string" },
+    "layout": { "type": "string", "default": "template" },
+    "className": { "type": "string" },
+    "hasTopSpace": { "type": "boolean" },
+    "hasBackground": { "type": "boolean" },
+    "bannerVideoHlsSrc": { "type": "string" },
+    "assetBase": { "type": "string" },
+    "language": { "type": "string" },
+    "htmlLanguage": { "type": "string" },
+    "components": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "qa": {
+      "type": "array",
+      "items": { "type": "object" }
+    },
+    "qaGroup": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": { "type": "string" },
+          "children": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": { "type": "string" },
+                "content": { "type": "string" },
+                "numOrder": { "type": "number" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "details": {
+      "type": "array",
+      "items": { "type": "object" }
+    }
+  },
+  "additionalProperties": true
+}

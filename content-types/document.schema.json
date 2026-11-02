@@ -1,0 +1,51 @@
+{
+  "$id": "cvp:document",
+  "title": "Legal Document & Fee Schedule",
+  "description": "Schema for Terms & Conditions, Claim Guides, Insurance Wordings, and Fee Schedules",
+  "type": "object",
+  "properties": {
+    "id": { "type": "string" },
+    "version": { "type": "string" },
+    "layout": { "type": "string", "enum": ["static", "legal-document", "fee", "base"] },
+    "title": { "type": "string" },
+    "header": {
+      "type": "object",
+      "properties": {
+        "img": { "type": "string" },
+        "h1": { "type": "string" },
+        "intro": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "blocks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type"],
+        "properties": {
+          "type": { "type": "string", "enum": ["paragraph", "subheading", "list", "table"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "defaultExpanded": { "type": ["boolean", "string"] },
+          "blocks": { "type": "array" },
+          "articles": { "type": "array" },
+          "sections": { "type": "array" }
+        }
+      }
+    },
+    "note": { "type": ["string", "object"] },
+    "footer": { "type": ["string", "object"] }
+  },
+  "additionalProperties": true
+}

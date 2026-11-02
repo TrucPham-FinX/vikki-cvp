@@ -1,0 +1,38 @@
+{
+  "type": "table",
+  "version": "1.0.0",
+  "title": "Document Table",
+  "description": "Tabular fee schedule or benefit comparison table",
+  "category": "document",
+  "templates": ["document"],
+  "props": {
+    "type": "object",
+    "required": ["rows"],
+    "properties": {
+      "type": { "type": "string", "const": "table" },
+      "headerRows": {
+        "type": "array",
+        "items": { "type": "object" }
+      },
+      "rows": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "cells": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "value": { "type": "string" },
+                  "colspan": { "type": ["number", "string"] },
+                  "rowspan": { "type": ["number", "string"] }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

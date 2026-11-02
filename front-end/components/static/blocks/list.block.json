@@ -1,0 +1,21 @@
+{
+  "type": "list",
+  "version": "1.0.0",
+  "title": "Document List",
+  "description": "Numbered or bulleted list of items within legal documents",
+  "category": "document",
+  "templates": ["document"],
+  "props": {
+    "type": "object",
+    "required": ["items"],
+    "properties": {
+      "type": { "type": "string", "const": "list" },
+      "items": {
+        "type": "array",
+        "items": { "type": ["string", "object"] }
+      },
+      "ordered": { "type": "boolean" },
+      "className": { "type": "string" }
+    }
+  }
+}
