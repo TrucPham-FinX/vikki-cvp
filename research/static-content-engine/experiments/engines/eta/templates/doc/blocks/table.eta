@@ -1,0 +1,6 @@
+<% const { b } = it
+   const cell = (tag, c) => `<${tag}${c.className ? ` class="${it.$.esc(c.className)}"` : ''}${c.colspan ? ` colspan="${it.$.esc(c.colspan)}"` : ''}${c.rowspan ? ` rowspan="${it.$.esc(c.rowspan)}"` : ''}>${c.value ?? ''}</${tag}>` %>
+<div class="table-scroll"><table class="fee-table">
+<thead><% for (const r of b.headerRows || []) { %><tr><% for (const c of r.cells) { %><%~ cell('th', c) %><% } %></tr><% } %></thead>
+<tbody><% for (const r of b.rows || []) { %><tr><% for (const c of r.cells) { %><%~ cell('td', c) %><% } %></tr><% } %></tbody>
+</table><% if (b.note) { %><div class="legal-note"><%~ b.note %></div><% } %></div>

@@ -1,0 +1,11 @@
+{{#> layouts/shell}}
+{{#*inline "head"}}<link rel="stylesheet" href="{{asset "css/landing.css"}}">{{/inline}}
+{{#*inline "main"}}
+<main class="landing">
+{{> blocks/hero hero}}
+{{#each components}}{{> (concat "blocks/" type) }}{{/each}}
+{{> blocks/faqTemplate}}
+</main>
+{{/inline}}
+{{#*inline "scripts"}}<script>window.CVP_VIDEO = {{json hero.video}};</script>{{/inline}}
+{{/layouts/shell}}

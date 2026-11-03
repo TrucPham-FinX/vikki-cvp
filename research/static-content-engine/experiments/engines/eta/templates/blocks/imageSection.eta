@@ -1,0 +1,2 @@
+<% const { $, b } = it %>
+<div class="<%= $.cx('gjs-row container', b.className) %>"<% if (b.id) { %> id="<%= b.id %>"<% } %>><div class="gjs-cell"><img class="section" src="<%= b.src %>" alt=""></div></div>

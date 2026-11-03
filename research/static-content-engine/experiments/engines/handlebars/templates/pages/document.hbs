@@ -1,0 +1,11 @@
+{{#> layouts/shell}}
+{{#*inline "head"}}<link rel="stylesheet" href="{{asset "css/document.css"}}">{{/inline}}
+{{#*inline "main"}}
+<main class="legal-doc">
+<header class="legal-header"><img class="legal-logo" src="{{document.header.img}}" alt=""><h1 class="legal-title">{{document.header.h1}}</h1>{{#each document.header.intro}}<p class="legal-intro">{{this}}</p>{{/each}}</header>
+<nav class="toc" aria-label="{{t "doc.toc"}}"><ol>{{#each document.sections}}<li><a href="#{{id}}">{{title}}</a></li>{{/each}}</ol></nav>
+{{#each document.sections}}{{> doc/section}}{{/each}}
+</main>
+{{/inline}}
+{{#*inline "scripts"}}{{/inline}}
+{{/layouts/shell}}

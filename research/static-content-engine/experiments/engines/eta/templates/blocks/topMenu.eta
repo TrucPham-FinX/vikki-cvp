@@ -1,0 +1,4 @@
+<% const { b } = it %>
+<nav class="menu-top" id="qa">
+<% for (const i of b.items) { %><span class="menu-item"<% if (i.popup) { %> data-popup="<%= i.popup %>"<% } %><% if (i.scroll) { %> data-scroll="<%= i.scroll %>"<% } %> data-title="<%= i.title %>"><img src="<%= i.iconSrc %>" alt=""><span><%= i.text %></span></span><% } %>
+</nav>

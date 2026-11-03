@@ -1,0 +1,4 @@
+<% const { $ } = it %>
+<template id="qaTemplate"><div class="popup-inner"><h2 class="popup-title"><%= $.t('faq.title') %></h2>
+<% for (const g of it.qaGroup) { %><div class="group-item"><div class="group-heading"><%= g.title %></div><div class="group-content"><% for (const c of g.children) { %><div class="group-sub"><div class="group-sub-title"><%= c.numOrder %>. <%= c.title %></div><div><%~ c.content %></div></div><% } %></div></div><% } %>
+</div></template>

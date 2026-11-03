@@ -1,0 +1,13 @@
+<section class="product-list cols-{{columns}}" id="{{id}}">
+<h2 class="section-title">{{title}}</h2>
+<ul class="product-grid">
+{{#each items}}<li class="{{cx "product-card" (when isHotDeal "is-hot")}}" data-id="{{id}}">
+<img class="product-thumb" src="{{thumbnail}}" alt="{{name}}" loading="lazy">
+{{#if isHotDeal}}<span class="badge badge-hot">{{t "badge.hot"}}</span>{{/if}}
+<h3 class="product-name">{{name}}</h3>
+<div class="product-desc">{{{shortDesc}}}</div>
+<ul class="product-tags">{{#each categories}}<li class="tag tag-{{lower this}}">{{this}}</li>{{/each}}</ul>
+<span class="button" data-promo-id="{{id}}">{{t "products.cta"}}</span>
+</li>{{/each}}
+</ul>
+</section>

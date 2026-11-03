@@ -1,0 +1,32 @@
+Cases:
+  text               hero heading = <script>alert(1)</script>
+  attr               imageSection.className = x" onmouseover="alert(1)
+  url                imageSection.src = javascript:alert(1)
+  script-json        hero.video.src = </script><script>alert(1)</script>
+  rich               FAQ content = <img src=x onerror=alert(1)><a href="&#106;avascript:alert(1)">x</a>
+  typo-spelling      components[] contains { type: "imageSectoin" }
+  typo-case          components[] contains { type: "imagesection" } (case only; host FS: darwin)
+  unknown-doc-block  document block { type: "note" }
+┌─────────┬──────────────┬──────────┬──────────┬────────────────┬─────────────┬──────────┬───────────────┬────────────┬───────────────────┐
+│ (index) │ engine       │ text     │ attr     │ url            │ script-json │ rich     │ typo-spelling │ typo-case  │ unknown-doc-block │
+├─────────┼──────────────┼──────────┼──────────┼────────────────┼─────────────┼──────────┼───────────────┼────────────┼───────────────────┤
+│ 0       │ 'handlebars' │ 'safe ✓' │ 'safe ✓' │ 'VULNERABLE ✗' │ 'safe ✓'    │ 'safe ✓' │ 'throws ✓'    │ 'throws ✓' │ 'throws ✓'        │
+│ 1       │ 'nunjucks'   │ 'safe ✓' │ 'safe ✓' │ 'VULNERABLE ✗' │ 'safe ✓'    │ 'safe ✓' │ 'throws ✓'    │ 'SILENT ✗' │ 'throws ✓'        │
+│ 2       │ 'liquid'     │ 'safe ✓' │ 'safe ✓' │ 'VULNERABLE ✗' │ 'safe ✓'    │ 'safe ✓' │ 'throws ✓'    │ 'SILENT ✗' │ 'throws ✓'        │
+│ 3       │ 'eta'        │ 'safe ✓' │ 'safe ✓' │ 'VULNERABLE ✗' │ 'safe ✓'    │ 'safe ✓' │ 'throws ✓'    │ 'SILENT ✗' │ 'throws ✓'        │
+│ 4       │ 'preact'     │ 'safe ✓' │ 'safe ✓' │ 'VULNERABLE ✗' │ 'safe ✓'    │ 'safe ✓' │ 'throws ✓'    │ 'throws ✓' │ 'throws ✓'        │
+└─────────┴──────────────┴──────────┴──────────┴────────────────┴─────────────┴──────────┴───────────────┴────────────┴───────────────────┘
+
+Sanitiser comparison (input -> core/sanitize.js | sanitize-html with lib/prepare.js config):
+  <a href="&#106;avascript:alert(1)">x</a>
+     repo: <a href="&#106;avascript:alert(1)">x</a>
+     s-h : <a>x</a>
+  <a href="java&#x09;script:alert(1)">x</a>
+     repo: <a href="java&#x09;script:alert(1)">x</a>
+     s-h : <a>x</a>
+  <a title='"onmouseover=alert(1) x="'>x</a>
+     repo: <a title=""onmouseover=alert(1) x="">x</a>
+     s-h : <a>x</a>
+  <ul class="note-plus-list"><li>kept?</li></ul>
+     repo: <ul><li>kept?</li></ul>
+     s-h : <ul class="note-plus-list"><li>kept?</li></ul>

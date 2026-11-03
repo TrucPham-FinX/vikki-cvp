@@ -1,0 +1,416 @@
+<title>CVP Template Engine Audit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a single reading column of figure panels; summary first, evidence next, decision last */
+:root {
+  --bg: #f6f7f8;
+  --surface: #fcfcfd;
+  --fg: #0f1720;
+  --fg2: #4a5563;
+  --muted: #7d848d;
+  --line: #e1e4e8;
+  --base: #c5cad1;
+  --accent: #2a78d6;
+  --s-org: #2a78d6;
+  --s-engine: #eb6834;
+  --s-na: #b9bec5;
+  --good: #0ca30c;
+  --warning: #fab219;
+  --serious: #ec835a;
+  --critical: #d03b3b;
+  --good-ink: #006300;
+  --crit-ink: #b42828;
+  --wash: rgba(42,120,214,0.08);
+  --font-ui: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1114; --surface: #161a1e; --fg: #eef0f2; --fg2: #b9c0c8; --muted: #8a919a;
+    --line: #2a2f35; --base: #3a4048; --accent: #3987e5; --s-org: #3987e5; --s-engine: #d95926; --s-na: #4f555d;
+    --good-ink: #2fc02f; --crit-ink: #ef6b6b; --wash: rgba(57,135,229,0.12); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1114; --surface: #161a1e; --fg: #eef0f2; --fg2: #b9c0c8; --muted: #8a919a;
+  --line: #2a2f35; --base: #3a4048; --accent: #3987e5; --s-org: #3987e5; --s-engine: #d95926; --s-na: #4f555d;
+  --good-ink: #2fc02f; --crit-ink: #ef6b6b; --wash: rgba(57,135,229,0.12); color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-ui); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 980px; margin: 0 auto; padding-block: 40px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 28px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(26px, 4vw, 36px); font-weight: 700; letter-spacing: -0.01em; line-height: 1.2; }
+h2 { font-size: 19px; font-weight: 600; }
+h3 { font-size: 14px; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.sub { color: var(--fg2); }
+.small { font-size: 13px; color: var(--muted); }
+code, .mono { font-family: var(--font-mono); font-size: 0.88em; }
+header { display: grid; gap: 12px; }
+.verdict { border-left: 3px solid var(--accent); padding: 4px 0 4px 16px; display: grid; gap: 6px; }
+.verdict strong { font-size: 17px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: grid; gap: 4px; align-content: start; }
+.stat .n { font-size: 30px; font-weight: 700; line-height: 1.1; }
+.stat .l { font-size: 13px; color: var(--fg2); }
+
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: grid; gap: 16px; min-width: 0; }
+.panel-head { display: grid; gap: 4px; }
+.src { font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
+.two { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.two > * { min-width: 0; }
+
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 13px; color: var(--fg2); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 10px; height: 10px; border-radius: 3px; display: inline-block; }
+
+/* horizontal bar charts, drawn as HTML so they scale with the column */
+.hbar { display: grid; gap: 10px; }
+.row { display: grid; grid-template-columns: 112px minmax(0, 1fr) 76px; align-items: center; gap: 10px; }
+.row .name { font-size: 13px; color: var(--fg2); text-align: right; }
+.row .name b { color: var(--fg); font-weight: 600; }
+.row .val { font-size: 13px; font-variant-numeric: tabular-nums; color: var(--fg); }
+.track { position: relative; height: 22px; }
+.track .grid { position: absolute; inset: 0; background-image: linear-gradient(to right, var(--line) 1px, transparent 1px); background-size: 25% 100%; border-left: 1px solid var(--base); }
+.bar { position: absolute; top: 3px; bottom: 3px; left: 0; display: flex; gap: 2px; }
+.seg { height: 100%; cursor: default; }
+.seg:first-child { border-radius: 0; }
+.seg:last-child { border-radius: 0 4px 4px 0; }
+.seg:hover, .seg:focus-visible { filter: brightness(1.1); outline: 2px solid var(--fg); outline-offset: 1px; }
+.axis { display: grid; grid-template-columns: 112px minmax(0, 1fr) 76px; gap: 10px; }
+.ticks { position: relative; height: 16px; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.ticks span { position: absolute; transform: translateX(-50%); }
+.ticks span:first-child { transform: none; }
+.ticks span:last-child { transform: translateX(-100%); }
+
+.tip { position: fixed; z-index: 20; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 12px; padding: 6px 9px; border-radius: 6px; max-width: 260px; line-height: 1.4; }
+
+/* severity × cause */
+.gaps { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+.gap { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 8px; align-items: start; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; font-size: 13px; }
+.gap .id { font-family: var(--font-mono); font-size: 12px; font-weight: 500; }
+.gap .t { color: var(--fg2); }
+.gap.engine { border-color: var(--s-engine); }
+.sev { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+.sev::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: currentColor; }
+.sev.c { color: var(--critical); } .sev.h { color: var(--serious); } .sev.m { color: #c98500; } .sev.l { color: var(--muted); }
+
+/* security matrix */
+.tablewrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 13px; min-width: 620px; }
+th, td { padding: 8px 10px; text-align: center; border-bottom: 1px solid var(--line); }
+th { font-weight: 600; color: var(--fg2); font-size: 12px; }
+th:first-child, td:first-child { text-align: left; }
+td.ok { color: var(--good-ink); }
+td.bad { color: var(--crit-ink); font-weight: 600; background: color-mix(in srgb, var(--critical) 9%, transparent); }
+td.cur { font-weight: 600; }
+
+/* options ranges */
+.range-row { display: grid; grid-template-columns: 150px minmax(0, 1fr) 96px; gap: 10px; align-items: center; }
+.range-row .name { font-size: 13px; }
+.range-row .name small { display: block; color: var(--muted); font-size: 12px; }
+.rng { position: absolute; top: 5px; bottom: 5px; border-radius: 4px; background: var(--accent); opacity: 0.85; }
+.rng.rec { background: var(--good); opacity: 1; }
+.risk { font-size: 12px; }
+.risk.low { color: var(--good-ink); } .risk.high { color: var(--crit-ink); }
+
+/* roadmap */
+.phases { display: grid; gap: 10px; }
+.phase { display: grid; grid-template-columns: 30px minmax(0, 1fr) 120px; gap: 12px; align-items: start; padding: 12px 0; border-top: 1px solid var(--line); }
+.phase:first-child { border-top: 0; }
+.phase .no { font-family: var(--font-mono); font-size: 18px; font-weight: 500; color: var(--accent); }
+.phase .body { display: grid; gap: 3px; }
+.phase .body p { font-size: 13px; color: var(--fg2); }
+.phase .dur { font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
+.tag { display: inline-block; font-size: 11px; padding: 1px 7px; border-radius: 999px; border: 1px solid var(--line); color: var(--fg2); margin-left: 6px; font-weight: 500; vertical-align: 2px; }
+.tag.now { border-color: var(--good); color: var(--good-ink); }
+
+pre.mermaid { background: transparent; margin: 0; overflow-x: auto; text-align: center; }
+.diagram { overflow-x: auto; }
+footer { font-size: 12px; color: var(--muted); display: grid; gap: 4px; }
+
+@media (max-width: 720px) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .two { grid-template-columns: minmax(0, 1fr); }
+  .row, .axis { grid-template-columns: 84px minmax(0, 1fr) 64px; }
+  .range-row { grid-template-columns: 96px minmax(0, 1fr) 64px; }
+  .phase { grid-template-columns: 24px minmax(0, 1fr); }
+  .phase .dur { grid-column: 2; text-align: left; }
+  .panel { padding: 16px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .bar, .rng { transition: filter .15s; }
+}
+</style>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Research · Static content engine · 2026-11-02</span>
+    <h1>CVP Template Engine Audit</h1>
+    <p class="sub">Tóm tắt trực quan của bộ tài liệu <code>docs/research/static-content-engine/01–08</code>. Số liệu lấy từ audit repo và thử nghiệm trong <code>research/static-content-engine/experiments/</code>.</p>
+    <div class="verdict">
+      <strong>Giữ Handlebars (Option A), tái cấu trúc theo view model + schema đóng + dispatch fail-fast.</strong>
+      <p class="sub">Làm Phase 0 ngay. Để sẵn seam <code>renderBlock</code> cấp block để chuyển dần sang Preact TSX khi có trigger cụ thể. Không thay engine toàn bộ, không dùng Astro/Eleventy lúc này.</p>
+    </div>
+  </header>
+
+  <section class="stats" aria-label="Số liệu chính">
+    <div class="stat"><span class="n">0 / 9</span><span class="l">gap Critical/High do engine gây ra</span></div>
+    <div class="stat"><span class="n">47 / 107</span><span class="l">trang mà <code>core/build.js</code> (pipeline publish) build được</span></div>
+    <div class="stat"><span class="n">1</span><span class="l">điều khoản T&amp;C bị mất trên production, validator vẫn báo 53/53 hợp lệ</span></div>
+    <div class="stat"><span class="n">6 / 6</span><span class="l">cách cài đặt cho HTML tương đương 4/4 trang</span></div>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">01 · Kiến trúc hiện tại</span>
+      <h2>Hai pipeline cùng ghi vào <code>vikki-cvp/</code>, CI chỉ kiểm tra một</h2>
+      <p class="sub">Pipeline legacy được CI kiểm tra parity. Workflow publish lại gọi pipeline core. Sanitize, theme và shell của core không được gọi ở đâu.</p>
+    </div>
+    <div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  XL["Excel"] -->|"import-promotions.js<br/>ghép HTML, không escape"| DATA["front-end/data/**"]
+  CONTENT["content/** (80 file)<br/>không build nào đọc"]
+  DATA --> L["front-end/build.js<br/>handlebars 4.7.8"]
+  DATA --> C["core/build.js"]
+  L -->|"107/107 khớp byte"| OUT["vikki-cvp/"]
+  C -->|"47 trang"| OUT
+  CI["CI parity gate"] -.kiểm tra.-> L
+  PUB["publish-to-static.yaml"] -.gọi.-> C
+  DEAD["core/sanitize.js · theme.js · shell.hbs<br/>code chết"] -.-x C
+</pre>
+    </div>
+    <p class="src">Nguồn: 01-current-architecture.md, 02-repository-inventory.md</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">F1 · Pipeline drift</span>
+      <h2>Core thiếu 60 trang và lệch 18 trang so với legacy</h2>
+      <p class="sub">So sánh từng trang trong 107 trang đầu ra kỳ vọng. Core chưa port locale, trang chi tiết và đánh số FAQ.</p>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--good)"></i>Khớp byte</span>
+      <span><i class="sw" style="background:var(--serious)"></i>Khác nội dung</span>
+      <span><i class="sw" style="background:var(--critical)"></i>Không được build</span>
+    </div>
+    <div class="hbar" id="drift"></div>
+    <p class="src">Nguồn: build trên bản copy repo, 01 §F1</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">06 · Gap analysis</span>
+      <h2>Mọi gap Critical/High đều đến từ cách tổ chức code</h2>
+      <p class="sub">18 gap, chia theo mức độ và nguyên nhân gốc. Gap duy nhất do engine là G11 (props không có kiểu), mức Medium.</p>
+    </div>
+    <div class="legend">
+      <span><i class="sw" style="background:var(--s-org)"></i>Tổ chức code</span>
+      <span><i class="sw" style="background:var(--s-engine)"></i>Engine</span>
+      <span><i class="sw" style="background:var(--s-na)"></i>Không áp dụng</span>
+    </div>
+    <div class="hbar" id="sev"></div>
+    <div class="gaps" id="gaplist"></div>
+    <p class="src">Nguồn: 06-gap-analysis.md §1, §3</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">05 · Thử nghiệm thực tế</span>
+      <h2>Hiệu năng không quyết định lựa chọn</h2>
+      <p class="sub">Cùng dữ liệu thật (landing + T&amp;C, vi/en), render 1.000 trang, median của 5 lần chạy. Build hiện tại mất khoảng 0,2 s cho 107 trang, nên engine chậm nhất vẫn đủ nhanh.</p>
+    </div>
+    <div class="two">
+      <div style="display:grid;gap:12px">
+        <h3>Throughput (trang/giây, càng dài càng nhanh)</h3>
+        <div class="hbar" id="tput"></div>
+      </div>
+      <div style="display:grid;gap:12px">
+        <h3>Kích thước template (ký tự không tính khoảng trắng)</h3>
+        <div class="hbar" id="size"></div>
+      </div>
+    </div>
+    <p class="small">Eleventy 3 không nằm trong biểu đồ throughput vì đo theo cách khác: build CLI 4 trang mất khoảng 558 ms kể cả khởi động process. Template Eleventy chỉ 924 ký tự vì dùng lại template Nunjucks.</p>
+    <p class="src">Nguồn: results/bench.txt, results/metrics.txt · Node 24.5, Apple M5, 10 core</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">05 §3 · Bảo mật &amp; fail-fast</span>
+      <h2>Không engine nào chặn được URL <code>javascript:</code></h2>
+      <p class="sub">8 payload chạy qua từng engine, sau khi dữ liệu đi qua <code>lib/prepare.js</code>. Lỗi gõ chỉ khác hoa/thường bị bỏ qua trên macOS (APFS không phân biệt hoa/thường) nhưng sẽ throw trên Linux CI.</p>
+    </div>
+    <div class="tablewrap">
+      <table id="sec"></table>
+    </div>
+    <p class="src">Nguồn: results/security.txt</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">07 · Các phương án</span>
+      <h2>Option A rẻ nhất và rủi ro thấp nhất với nội dung pháp lý</h2>
+      <p class="sub">Công sức ước lượng sau Phase 0, tính bằng tuần, cho 1–2 FE engineer đã quen repo. Đây là ước lượng [INFERENCE], không phải số đo.</p>
+    </div>
+    <div class="hbar" id="opts"></div>
+    <div class="axis"><span></span><div class="ticks" id="optticks"></div><span></span></div>
+    <p class="src">Nguồn: 07-architecture-proposals.md · C1 = A (3–5 tuần) + seam và block TSX đầu tiên (1–2 tuần)</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">08 · Kiến trúc đích</span>
+      <h2>Một pipeline, renderer là chi tiết thay được</h2>
+      <p class="sub">validate → prepare → render → assemble → manifest, dùng chung cho CI và publish. Mặc định block render bằng Handlebars, chuyển sang TSX từng block khi cần.</p>
+    </div>
+    <div class="diagram">
+<pre class="mermaid">
+flowchart LR
+  D["content JSON"] --> V["validate<br/>schema đóng, lỗi thay vì cảnh báo"]
+  V --> P["prepare(raw) → view model<br/>đánh số · sanitize-html · URL policy · t() · deep-freeze"]
+  P --> REG{"renderBlock(type, props, ctx)"}
+  REG -- "hbs (mặc định)" --> H["Handlebars ≥ 4.7.10 partial<br/>throw khi type lạ"]
+  REG -. "tsx (khi có trigger)" .-> J["Preact TSX<br/>renderToString"]
+  H --> S["shell.hbs nhiều slot<br/>4 template"]
+  J --> S
+  S --> A["assemble"] --> M["manifest sha256"] --> OUT["vikki-cvp/"]
+</pre>
+    </div>
+    <p class="src">Nguồn: 07 Option A, C1 · 08 §4 câu 7</p>
+  </section>
+
+  <section class="panel">
+    <div class="panel-head">
+      <span class="eyebrow">08 §2 · Lộ trình</span>
+      <h2>Phase 0 làm ngay, không phụ thuộc engine</h2>
+    </div>
+    <div class="phases">
+      <div class="phase"><span class="no">0</span><div class="body"><h3>Correctness &amp; safety <span class="tag now">làm ngay</span></h3><p>Một pipeline cho CI và publish · schema đóng, dispatch fail-fast, khôi phục điều khoản (Legal xác nhận) · sanitize-html + URL policy, escape import Excel · handlebars ≥ 4.7.10, xử lý xlsx · sửa dev server.</p><p class="small">Xong khi: publish ra 107/107 trang, test fail khi block thiếu type, <code>npm audit</code> không còn high/critical.</p></div><span class="dur">1,5–2,5 tuần</span></div>
+      <div class="phase"><span class="no">1</span><div class="body"><h3>View model &amp; contract</h3><p><code>prepare(raw) → vm</code> thuần, có unit test · <code>t()</code> + <code>ui.&lt;locale&gt;.json</code> · siết <code>*.block.json</code>.</p><p class="small">Xong khi: 0 chuỗi UI hard-code, validator 0 warning.</p></div><span class="dur">1–1,5 tuần</span></div>
+      <div class="phase"><span class="no">2</span><div class="body"><h3>Templates</h3><p>Một <code>shell.hbs</code> nhiều slot + 4 template · gộp <code>legal/*</code> vào <code>static/*</code> · skin bằng <code>className</code> + theme.</p><p class="small">Xong khi: 8 → ≤5 layout, visual diff được duyệt.</p></div><span class="dur">2–4 tuần</span></div>
+      <div class="phase"><span class="no">3</span><div class="body"><h3>Seam <span class="tag">tuỳ chọn</span></h3><p><code>renderBlock(type, props, ctx)</code> trong registry, mặc định <code>renderer: 'hbs'</code>, helper dùng chung.</p></div><span class="dur">2–3 ngày</span></div>
+      <div class="phase"><span class="no">4</span><div class="body"><h3>Theo trigger <span class="tag">có điều kiện</span></h3><p>Chuyển từng block sang TSX chỉ khi: admin UI có live preview được duyệt · lỗi props vẫn lọt production sau Phase 1 · block mới phức tạp · team xác nhận thạo JSX/TS.</p></div><span class="dur">theo từng block</span></div>
+    </div>
+  </section>
+
+  <footer>
+    <span>Ghi chú: [RUN] là kết quả chạy thật trong thư mục experiments; [INFERENCE] là ước lượng. Không có thay đổi nào với code production.</span>
+    <span>Chạy lại: <code>cd research/static-content-engine/experiments &amp;&amp; npm install &amp;&amp; npm run all</code></span>
+  </footer>
+</div>
+
+<div class="tip" id="tip" hidden></div>
+
+<script>
+const $ = (s) => document.querySelector(s);
+const fmt = (n) => n.toLocaleString('vi-VN');
+
+// rows: [{name, segs:[{v, color, tip}], label}], max = axis max
+function hbar(el, rows, max) {
+  el.innerHTML = rows.map(r => {
+    let segs = r.segs.filter(s => s.v > 0).map(s =>
+      `<span class="seg" tabindex="0" data-tip="${s.tip}" style="width:${s.v / r.total * 100}%;background:${s.color}"></span>`).join('');
+    return `<div class="row"><span class="name">${r.name}</span>
+      <div class="track"><div class="grid"></div><div class="bar" style="width:${r.total / max * 100}%">${segs}</div></div>
+      <span class="val">${r.label}</span></div>`;
+  }).join('');
+}
+
+// F1 drift
+hbar($('#drift'), [
+  { name: '<b>legacy</b>', total: 107, label: '107 khớp', segs: [{ v: 107, color: 'var(--good)', tip: 'front-end/build.js: 107/107 trang khớp byte' }] },
+  { name: '<b>core</b>', total: 107, label: '29 khớp', segs: [
+    { v: 29, color: 'var(--good)', tip: 'core: 29 trang khớp byte' },
+    { v: 18, color: 'var(--serious)', tip: 'core: 18 trang khác nội dung (vd. mất số thứ tự FAQ)' },
+    { v: 60, color: 'var(--critical)', tip: 'core: 60 trang không được build (locale en, trang chi tiết)' }] },
+], 107);
+
+// Severity × cause
+const sev = [
+  ['Critical', 3, 0, 0, 'G1, G2, G3'],
+  ['High', 6, 0, 0, 'G4–G9'],
+  ['Medium', 5, 1, 0, 'G10–G12, G14–G16 · engine: G11'],
+  ['Low', 2, 0, 1, 'G13, G17, G18'],
+];
+hbar($('#sev'), sev.map(([n, o, e, na, ids]) => ({
+  name: n, total: o + e + na, label: `${o + e + na} gap`,
+  segs: [
+    { v: o, color: 'var(--s-org)', tip: `${n}: ${o} gap do tổ chức code (${ids})` },
+    { v: e, color: 'var(--s-engine)', tip: `${n}: ${e} gap do engine (G11 – props không có kiểu)` },
+    { v: na, color: 'var(--s-na)', tip: `${n}: ${na} gap không áp dụng (G13 hiệu năng)` }],
+})), 6);
+
+const gaps = [
+  ['G1', 'c', 'Hai pipeline lệch nhau'], ['G2', 'c', 'Block thiếu type bị bỏ qua im lặng'], ['G3', 'c', 'XSS qua rich text, sanitizer chết'],
+  ['G4', 'h', 'URL không được kiểm tra'], ['G5', 'h', 'handlebars 4.7.8, xlsx có advisory'], ['G6', 'h', '8 layout một slot'],
+  ['G7', 'h', 'Partial trùng lặp, CSS copy'], ['G8', 'h', 'Schema lỏng, không có kiểu TS'], ['G9', 'h', 'Logic lẫn trong vòng build'],
+  ['G10', 'm', 'Chuỗi UI hard-code vi/en'], ['G11', 'm', 'Props không có kiểu (engine)', true], ['G12', 'm', 'CSS/JS inline mọi trang'],
+  ['G14', 'm', 'Dev server path traversal'], ['G15', 'm', 'Hai nguồn dữ liệu'], ['G16', 'm', 'Import Excel ra chuỗi HTML'],
+  ['G13', 'l', 'Hiệu năng render'], ['G17', 'l', 'Công cụ đo roadmap sai'], ['G18', 'l', 'Admin preview (tương lai)'],
+];
+const sevName = { c: 'Critical', h: 'High', m: 'Medium', l: 'Low' };
+$('#gaplist').innerHTML = gaps.map(([id, s, t, eng]) =>
+  `<div class="gap${eng ? ' engine' : ''}"><span class="id">${id}</span><div><span class="sev ${s}">${sevName[s]}</span><div class="t">${t}</div></div></div>`).join('');
+
+// Throughput
+const bench = [['Eta', 12046, 83.0], ['Preact', 5451, 183.4], ['Nunjucks', 4388, 227.9], ['Handlebars', 2964, 337.4], ['LiquidJS', 373, 2684.0]];
+hbar($('#tput'), bench.map(([n, v, ms]) => ({
+  name: n === 'Handlebars' ? '<b>Handlebars</b>' : n, total: v, label: fmt(v),
+  segs: [{ v, color: n === 'Handlebars' ? 'var(--s-engine)' : 'var(--s-org)', tip: `${n}: ${fmt(v)} trang/s · 1.000 trang trong ${String(ms).replace('.', ',')} ms` }],
+})), 12046);
+
+// Template size
+const size = [['Handlebars', 5552, 87], ['Nunjucks', 6008, 92], ['LiquidJS', 6019, 89], ['Eta', 6128, 94], ['Preact', 9994, 215]];
+hbar($('#size'), size.map(([n, v, lines]) => ({
+  name: n === 'Handlebars' ? '<b>Handlebars</b>' : n, total: v, label: fmt(v),
+  segs: [{ v, color: n === 'Handlebars' ? 'var(--s-engine)' : 'var(--s-org)', tip: `${n}: ${fmt(v)} ký tự, ${lines} dòng template` }],
+})), 9994);
+
+// Security matrix
+const cols = ['Text', 'Attribute', 'URL <code>src</code>', 'Script JSON', 'Rich HTML', 'Sai chính tả type', 'Sai hoa/thường type', 'Doc block lạ'];
+const sec = {
+  Handlebars: [1, 1, 0, 1, 1, 1, 1, 1], Nunjucks: [1, 1, 0, 1, 1, 1, 0, 1], LiquidJS: [1, 1, 0, 1, 1, 1, 0, 1],
+  Eta: [1, 1, 0, 1, 1, 1, 0, 1], Preact: [1, 1, 0, 1, 1, 1, 1, 1],
+};
+const okWord = (i) => i >= 5 ? 'throw ✓' : 'an toàn ✓';
+const badWord = (i) => i >= 5 ? 'im lặng ✗' : 'lỗ hổng ✗';
+$('#sec').innerHTML = `<thead><tr><th>Engine</th>${cols.map(c => `<th>${c}</th>`).join('')}</tr></thead><tbody>` +
+  Object.entries(sec).map(([e, r]) => `<tr><td class="${e === 'Handlebars' ? 'cur' : ''}">${e}</td>${r.map((v, i) =>
+    `<td class="${v ? 'ok' : 'bad'}">${v ? okWord(i) : badWord(i)}</td>`).join('')}</tr>`).join('') + '</tbody>';
+
+// Options effort ranges (weeks after Phase 0)
+const opts = [
+  ['A', 'Hardened Handlebars', 3, 5, 'Rủi ro thấp', 'low', true],
+  ['C1', 'Hybrid hbs + tsx', 4, 7, 'Rủi ro thấp', 'low'],
+  ['B', 'Preact TSX toàn bộ', 6, 10, 'Rủi ro cao', 'high'],
+  ['C2', 'Astro / Eleventy', 6, 12, 'Rủi ro cao', 'high'],
+];
+const OMAX = 12;
+$('#opts').innerHTML = opts.map(([k, n, lo, hi, r, rc, rec]) =>
+  `<div class="row"><span class="name"><b>${k}</b><br><span class="small">${n}</span></span>
+   <div class="track"><div class="grid"></div><span class="rng${rec ? ' rec' : ''}" tabindex="0" data-tip="${k}: ${lo}–${hi} tuần sau Phase 0 · ${r.toLowerCase()} với nội dung pháp lý" style="left:${lo / OMAX * 100}%;width:${(hi - lo) / OMAX * 100}%"></span></div>
+   <span class="val">${lo}–${hi} tuần<br><span class="risk ${rc}">${r}</span></span></div>`).join('');
+$('#optticks').innerHTML = [0, 3, 6, 9, 12].map(t => `<span style="left:${t / OMAX * 100}%">${t}</span>`).join('');
+document.querySelectorAll('#opts .track .grid').forEach(g => g.style.backgroundSize = `${3 / OMAX * 100}% 100%`);
+
+// Tooltip
+const tip = $('#tip');
+function show(e) {
+  const t = e.target.closest('[data-tip]'); if (!t) return;
+  tip.textContent = t.dataset.tip; tip.hidden = false;
+  const r = t.getBoundingClientRect();
+  const x = e.clientX ?? (r.left + r.width / 2), y = e.clientY ?? r.top;
+  tip.style.left = Math.min(x + 12, innerWidth - tip.offsetWidth - 8) + 'px';
+  tip.style.top = Math.max(y - tip.offsetHeight - 10, 8) + 'px';
+}
+document.addEventListener('pointermove', show);
+document.addEventListener('focusin', show);
+document.addEventListener('pointerout', (e) => { if (e.target.closest('[data-tip]')) tip.hidden = true; });
+document.addEventListener('focusout', () => { tip.hidden = true; });
+</script>

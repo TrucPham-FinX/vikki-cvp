@@ -1,0 +1,3 @@
+<template id="qaTemplate"><div class="popup-inner"><h2 class="popup-title">{{ 'faq.title' | t }}</h2>
+{% for g in qaGroup %}<div class="group-item"><div class="group-heading">{{ g.title }}</div><div class="group-content">{% for c in g.children %}<div class="group-sub"><div class="group-sub-title">{{ c.numOrder }}. {{ c.title }}</div><div>{{ c.content | raw }}</div></div>{% endfor %}</div></div>{% endfor %}
+</div></template>

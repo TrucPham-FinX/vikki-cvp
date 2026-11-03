@@ -1,0 +1,7 @@
+<section class="faq container">
+{% if b.title.src %}<img class="section" src="{{ b.title.src }}" alt="">{% endif %}
+<div class="accordion js-accordion">
+{% for it in b.items %}<div class="accordion-item"><button class="accordion-header" type="button"><span>{{ it.title }}</span></button><div class="accordion-content">{{ it.content | safe }}</div></div>{% endfor %}
+</div>
+{% if b.button %}<span class="button bg-transparent w-full" data-popup="qa" data-title="{{ t('faq.title') }}"><span>{{ b.button.text }}</span></span>{% endif %}
+</section>

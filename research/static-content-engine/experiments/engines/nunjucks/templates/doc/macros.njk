@@ -1,0 +1,22 @@
+{% macro section(s) %}<section class="accordion" id="{{ s.id }}"><h2 class="accordion-header" data-toggle="body-{{ s.id }}">{{ s.title }}</h2><div class="{{ cx('accordion-body', 'is-open' if s.defaultExpanded) }}" id="body-{{ s.id }}">
+{% for a in s.articles %}{{ section(a) }}{% endfor %}
+{% for x in s.sections %}{{ section(x) }}{% endfor %}
+{% for b in s.blocks %}{{ block(b) }}{% endfor %}
+</div></section>{% endmacro %}
+
+{% macro block(b) %}
+{%- if b.type == 'paragraph' %}<div class="{{ cx('legal-paragraph', b.className) }}">{{ b.text | safe }}</div>
+{%- elif b.type == 'subheading' %}<h3 class="{{ cx('legal-subheading', b.className) }}">{{ b.text | safe }}</h3>
+{%- elif b.type == 'list' %}{{ list(b) }}
+{%- elif b.type == 'table' %}{{ table(b) }}
+{%- else %}{{ fail('unknown document block type "' + b.type + '"') }}{% endif -%}
+{% endmacro %}
+
+{% macro list(l) %}<ul class="{{ cx('legal-list', l.style) }}">{% for it in l.items %}<li class="{{ cx('legal-list-item', it.className) }}"><span class="legal-list-text">{{ it.text | safe }}</span>{% if it.type == 'table' %}{{ table(it) }}{% endif %}{% if it.children and it.children.items.length %}{{ list(it.children) }}{% endif %}</li>{% endfor %}</ul>{% endmacro %}
+
+{% macro cell(tag, c) %}<{{ tag }}{% if c.className %} class="{{ c.className }}"{% endif %}{% if c.colspan %} colspan="{{ c.colspan }}"{% endif %}{% if c.rowspan %} rowspan="{{ c.rowspan }}"{% endif %}>{{ c.value | safe }}</{{ tag }}>{% endmacro %}
+
+{% macro table(tb) %}<div class="table-scroll"><table class="fee-table">
+<thead>{% for r in tb.headerRows %}<tr>{% for c in r.cells %}{{ cell('th', c) }}{% endfor %}</tr>{% endfor %}</thead>
+<tbody>{% for r in tb.rows %}<tr>{% for c in r.cells %}{{ cell('td', c) }}{% endfor %}</tr>{% endfor %}</tbody>
+</table>{% if tb.note %}<div class="legal-note">{{ tb.note | safe }}</div>{% endif %}</div>{% endmacro %}

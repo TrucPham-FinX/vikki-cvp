@@ -1,0 +1,1 @@
+<ul class="{{ 'legal-list' | cx: b.style }}">{% for it in b.items %}<li class="{{ 'legal-list-item' | cx: it.className }}"><span class="legal-list-text">{{ it.text | raw }}</span>{% if it.type == 'table' %}{% render 'doc/blocks/table', b: it %}{% endif %}{% if it.children.items.size > 0 %}{% render 'doc/blocks/list', b: it.children %}{% endif %}</li>{% endfor %}</ul>

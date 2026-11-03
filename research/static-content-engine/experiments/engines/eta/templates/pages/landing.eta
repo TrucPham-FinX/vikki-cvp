@@ -1,0 +1,9 @@
+<% const { $ } = it %>
+<% layout('/layouts/shell', { ...it,
+  head: `<link rel="stylesheet" href="${$.esc($.asset('css/landing.css'))}">`,
+  scripts: `<script>window.CVP_VIDEO = ${$.scriptJson(it.hero.video)};</script>` }) %>
+<main class="landing">
+<%~ include('/blocks/hero', { $, b: it.hero }) %>
+<% for (const c of it.components) { %><%~ include('/blocks/' + c.type, { $, b: c }) %><% } %>
+<%~ include('/blocks/faqTemplate', { $, qaGroup: it.qaGroup }) %>
+</main>

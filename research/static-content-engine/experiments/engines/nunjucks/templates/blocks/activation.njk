@@ -1,0 +1,6 @@
+{% macro btn(x, extra) %}<span class="{{ cx('button bg-transparent', extra) }}" data-popup="{{ x.popup }}" data-title="{{ x.title }}">{{ x.text }}</span>{% endmacro %}
+<section class="{{ cx('activation gjs-row container p-1', b.bgClass or 'bg-green', b.className) }}">
+{% if b.termsButtonFullW %}{{ btn(b.termsButtonFullW, 'full-w') }}{% endif %}
+{% if b.feeButton %}{{ btn(b.feeButton) }}{% endif %}
+{% if b.termsButton %}{{ btn(b.termsButton) }}{% endif %}
+</section>

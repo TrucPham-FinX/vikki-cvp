@@ -1,0 +1,6 @@
+<% const { $, s } = it %>
+<section class="accordion" id="<%= s.id %>"><h2 class="accordion-header" data-toggle="body-<%= s.id %>"><%= s.title %></h2><div class="<%= $.cx('accordion-body', s.defaultExpanded && 'is-open') %>" id="body-<%= s.id %>">
+<% for (const a of s.articles || []) { %><%~ include('/doc/section', { $, s: a }) %><% } %>
+<% for (const x of s.sections || []) { %><%~ include('/doc/section', { $, s: x }) %><% } %>
+<% for (const b of s.blocks || []) { %><%~ include('/doc/blocks/' + b.type, { $, b }) %><% } %>
+</div></section>

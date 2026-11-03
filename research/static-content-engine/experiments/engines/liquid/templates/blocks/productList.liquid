@@ -1,0 +1,13 @@
+<section class="product-list cols-{{ b.columns }}" id="{{ b.id }}">
+<h2 class="section-title">{{ b.title }}</h2>
+<ul class="product-grid">
+{% for p in b.items %}{% if p.isHotDeal %}{% assign hot = 'is-hot' %}{% else %}{% assign hot = '' %}{% endif %}<li class="{{ 'product-card' | cx: hot }}" data-id="{{ p.id }}">
+<img class="product-thumb" src="{{ p.thumbnail }}" alt="{{ p.name }}" loading="lazy">
+{% if p.isHotDeal %}<span class="badge badge-hot">{{ 'badge.hot' | t }}</span>{% endif %}
+<h3 class="product-name">{{ p.name }}</h3>
+<div class="product-desc">{{ p.shortDesc | raw }}</div>
+<ul class="product-tags">{% for c in p.categories %}<li class="tag tag-{{ c | downcase }}">{{ c }}</li>{% endfor %}</ul>
+<span class="button" data-promo-id="{{ p.id }}">{{ 'products.cta' | t }}</span>
+</li>{% endfor %}
+</ul>
+</section>

@@ -1,0 +1,18 @@
+{
+  "vi": {
+    "faq.title": "Hỏi đáp",
+    "backToTop": "Về đầu trang",
+    "badge.hot": "Hot",
+    "products.cta": "Xem chi tiết",
+    "doc.toc": "Mục lục",
+    "close": "Đóng"
+  },
+  "en": {
+    "faq.title": "FAQs",
+    "backToTop": "Back to top",
+    "badge.hot": "Hot",
+    "products.cta": "View details",
+    "doc.toc": "Contents",
+    "close": "Close"
+  }
+}

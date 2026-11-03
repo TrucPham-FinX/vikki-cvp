@@ -1,0 +1,7 @@
+<% const { $ } = it, d = it.document %>
+<% layout('/layouts/shell', { ...it, head: `<link rel="stylesheet" href="${$.esc($.asset('css/document.css'))}">` }) %>
+<main class="legal-doc">
+<header class="legal-header"><img class="legal-logo" src="<%= d.header.img %>" alt=""><h1 class="legal-title"><%= d.header.h1 %></h1><% for (const p of d.header.intro) { %><p class="legal-intro"><%= p %></p><% } %></header>
+<nav class="toc" aria-label="<%= $.t('doc.toc') %>"><ol><% for (const s of d.sections) { %><li><a href="#<%= s.id %>"><%= s.title %></a></li><% } %></ol></nav>
+<% for (const s of d.sections) { %><%~ include('/doc/section', { $, s }) %><% } %>
+</main>

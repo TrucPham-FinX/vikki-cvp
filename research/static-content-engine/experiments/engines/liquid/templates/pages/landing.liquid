@@ -1,0 +1,10 @@
+{% layout 'layouts/shell' %}
+{% block head %}<link rel="stylesheet" href="{{ 'css/landing.css' | asset }}">{% endblock %}
+{% block main %}
+<main class="landing">
+{% render 'blocks/hero', b: hero %}
+{% for c in components %}{% assign tpl = 'blocks/' | append: c.type %}{% render tpl, b: c %}{% endfor %}
+{% render 'blocks/faqTemplate', qaGroup: qaGroup %}
+</main>
+{% endblock %}
+{% block scripts %}<script>window.CVP_VIDEO = {{ hero.video | script_json | raw }};</script>{% endblock %}

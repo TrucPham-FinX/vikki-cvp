@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }}</title>
+<link rel="stylesheet" href="{{ asset('css/base.css') }}">
+{% block head %}{% endblock %}
+</head>
+<body class="{{ cx('hasTopSpace' if hasTopSpace, className, 'lang-' + locale) }}" id="body">
+<header class="site-header"><img class="site-logo" src="{{ asset('logo-vikki.png') }}" alt="Vikki Digital Bank"></header>
+{% block main %}{% endblock %}
+<footer class="site-footer"><button type="button" id="backToTop" aria-label="{{ t('backToTop') }}"><img src="{{ asset('icon-btt.svg') }}" alt=""></button></footer>
+<script src="{{ asset('js/runtime.js') }}" defer></script>
+{% block scripts %}{% endblock %}
+</body>
+</html>

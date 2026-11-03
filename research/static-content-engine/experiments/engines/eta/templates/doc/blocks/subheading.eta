@@ -1,0 +1,1 @@
+<h3 class="<%= it.$.cx('legal-subheading', it.b.className) %>"><%~ it.b.text %></h3>

@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", "module": "commonjs", "strict": true, "noEmit": true,
+    "jsx": "react-jsx", "jsxImportSource": "preact", "skipLibCheck": true, "types": []
+  },
+  "include": ["src"]
+}

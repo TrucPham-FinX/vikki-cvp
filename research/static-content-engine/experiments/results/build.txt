@@ -1,0 +1,6 @@
+✓ handlebars vi: index 9593B, tc 170667B | en: index 9573B, tc 170681B
+✓ nunjucks   vi: index 9600B, tc 170550B | en: index 9580B, tc 170564B
+✓ liquid     vi: index 9599B, tc 170806B | en: index 9579B, tc 170820B
+✓ eta        vi: index 9577B, tc 170567B | en: index 9557B, tc 170581B
+✓ preact     vi: index 9500B, tc 170390B | en: index 9480B, tc 170404B
+[11ty] Wrote 4 files in 0.11 seconds (v3.1.7)

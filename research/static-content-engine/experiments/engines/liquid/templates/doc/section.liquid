@@ -1,0 +1,6 @@
+{%- if s.defaultExpanded %}{% assign open = 'is-open' %}{% else %}{% assign open = '' %}{% endif -%}
+<section class="accordion" id="{{ s.id }}"><h2 class="accordion-header" data-toggle="body-{{ s.id }}">{{ s.title }}</h2><div class="{{ 'accordion-body' | cx: open }}" id="body-{{ s.id }}">
+{% for a in s.articles %}{% render 'doc/section', s: a %}{% endfor %}
+{% for x in s.sections %}{% render 'doc/section', s: x %}{% endfor %}
+{% for b in s.blocks %}{% assign tpl = 'doc/blocks/' | append: b.type %}{% render tpl, b: b %}{% endfor %}
+</div></section>

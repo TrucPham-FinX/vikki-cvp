@@ -1,0 +1,3 @@
+<nav class="menu-top" id="qa">
+{% for it in b.items %}<span class="menu-item"{% if it.popup %} data-popup="{{ it.popup }}"{% endif %}{% if it.scroll %} data-scroll="{{ it.scroll }}"{% endif %} data-title="{{ it.title }}"><img src="{{ it.iconSrc }}" alt=""><span>{{ it.text }}</span></span>{% endfor %}
+</nav>

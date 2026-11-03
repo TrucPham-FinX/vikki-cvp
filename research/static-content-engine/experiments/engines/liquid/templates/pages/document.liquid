@@ -1,0 +1,9 @@
+{% layout 'layouts/shell' %}
+{% block head %}<link rel="stylesheet" href="{{ 'css/document.css' | asset }}">{% endblock %}
+{% block main %}
+<main class="legal-doc">
+<header class="legal-header"><img class="legal-logo" src="{{ document.header.img }}" alt=""><h1 class="legal-title">{{ document.header.h1 }}</h1>{% for p in document.header.intro %}<p class="legal-intro">{{ p }}</p>{% endfor %}</header>
+<nav class="toc" aria-label="{{ 'doc.toc' | t }}"><ol>{% for s in document.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>
+{% for s in document.sections %}{% render 'doc/section', s: s %}{% endfor %}
+</main>
+{% endblock %}

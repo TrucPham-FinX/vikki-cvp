@@ -1,0 +1,5 @@
+<section class="accordion" id="{{id}}"><h2 class="accordion-header" data-toggle="body-{{id}}">{{title}}</h2><div class="{{cx "accordion-body" (when defaultExpanded "is-open")}}" id="body-{{id}}">
+{{#each articles}}{{> doc/section}}{{/each}}
+{{#each sections}}{{> doc/section}}{{/each}}
+{{#each blocks}}{{> (concat "doc/blocks/" type) }}{{/each}}
+</div></section>

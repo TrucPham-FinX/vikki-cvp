@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{@root.locale}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{@root.title}}</title>
+<link rel="stylesheet" href="{{asset "css/base.css"}}">
+{{> head}}
+</head>
+<body class="{{cx (when @root.hasTopSpace "hasTopSpace") @root.className (concat "lang-" @root.locale)}}" id="body">
+<header class="site-header"><img class="site-logo" src="{{asset "logo-vikki.png"}}" alt="Vikki Digital Bank"></header>
+{{> main}}
+<footer class="site-footer"><button type="button" id="backToTop" aria-label="{{t "backToTop"}}"><img src="{{asset "icon-btt.svg"}}" alt=""></button></footer>
+<script src="{{asset "js/runtime.js"}}" defer></script>
+{{> scripts}}
+</body>
+</html>

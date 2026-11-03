@@ -1,0 +1,4 @@
+<div class="table-scroll"><table class="fee-table">
+<thead>{% for r in b.headerRows %}<tr>{% for c in r.cells %}{% render 'doc/blocks/cell', tag: 'th', c: c %}{% endfor %}</tr>{% endfor %}</thead>
+<tbody>{% for r in b.rows %}<tr>{% for c in r.cells %}{% render 'doc/blocks/cell', tag: 'td', c: c %}{% endfor %}</tr>{% endfor %}</tbody>
+</table>{% if b.note %}<div class="legal-note">{{ b.note | raw }}</div>{% endif %}</div>

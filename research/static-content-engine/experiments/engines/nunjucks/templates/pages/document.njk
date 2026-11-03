@@ -1,0 +1,10 @@
+{% extends "layouts/shell.njk" %}
+{% from "doc/macros.njk" import section %}
+{% block head %}<link rel="stylesheet" href="{{ asset('css/document.css') }}">{% endblock %}
+{% block main %}
+<main class="legal-doc">
+<header class="legal-header"><img class="legal-logo" src="{{ document.header.img }}" alt=""><h1 class="legal-title">{{ document.header.h1 }}</h1>{% for p in document.header.intro %}<p class="legal-intro">{{ p }}</p>{% endfor %}</header>
+<nav class="toc" aria-label="{{ t('doc.toc') }}"><ol>{% for s in document.sections %}<li><a href="#{{ s.id }}">{{ s.title }}</a></li>{% endfor %}</ol></nav>
+{% for s in document.sections %}{{ section(s) }}{% endfor %}
+</main>
+{% endblock %}

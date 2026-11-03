@@ -1,0 +1,14 @@
+<% const { $, b } = it %>
+<section class="product-list cols-<%= b.columns %>" id="<%= b.id %>">
+<h2 class="section-title"><%= b.title %></h2>
+<ul class="product-grid">
+<% for (const p of b.items) { %><li class="<%= $.cx('product-card', p.isHotDeal && 'is-hot') %>" data-id="<%= p.id %>">
+<img class="product-thumb" src="<%= p.thumbnail %>" alt="<%= p.name %>" loading="lazy">
+<% if (p.isHotDeal) { %><span class="badge badge-hot"><%= $.t('badge.hot') %></span><% } %>
+<h3 class="product-name"><%= p.name %></h3>
+<div class="product-desc"><%~ p.shortDesc %></div>
+<ul class="product-tags"><% for (const c of p.categories) { %><li class="tag tag-<%= c.toLowerCase() %>"><%= c %></li><% } %></ul>
+<span class="button" data-promo-id="<%= p.id %>"><%= $.t('products.cta') %></span>
+</li><% } %>
+</ul>
+</section>

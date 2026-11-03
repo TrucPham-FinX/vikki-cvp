@@ -1,0 +1,1 @@
+<ul class="{{cx "legal-list" style}}">{{#each items}}<li class="{{cx "legal-list-item" className}}"><span class="legal-list-text">{{{text}}}</span>{{#if (eq type "table")}}{{> doc/blocks/table}}{{/if}}{{#if children.items.length}}{{> doc/blocks/list children}}{{/if}}</li>{{/each}}</ul>

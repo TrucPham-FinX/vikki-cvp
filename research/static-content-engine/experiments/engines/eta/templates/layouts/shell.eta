@@ -1,0 +1,18 @@
+<% const { $ } = it %>
+<!DOCTYPE html>
+<html lang="<%= it.locale %>">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= it.title %></title>
+<link rel="stylesheet" href="<%= $.asset('css/base.css') %>">
+<%~ it.head || '' %>
+</head>
+<body class="<%= $.cx(it.hasTopSpace && 'hasTopSpace', it.className, 'lang-' + it.locale) %>" id="body">
+<header class="site-header"><img class="site-logo" src="<%= $.asset('logo-vikki.png') %>" alt="Vikki Digital Bank"></header>
+<%~ it.body %>
+<footer class="site-footer"><button type="button" id="backToTop" aria-label="<%= $.t('backToTop') %>"><img src="<%= $.asset('icon-btt.svg') %>" alt=""></button></footer>
+<script src="<%= $.asset('js/runtime.js') %>" defer></script>
+<%~ it.scripts || '' %>
+</body>
+</html>

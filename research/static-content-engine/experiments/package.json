@@ -1,0 +1,30 @@
+{
+  "name": "static-content-engine-experiments",
+  "private": true,
+  "description": "Isolated research experiments. Not part of the production build. Do not import from core/ or front-end/.",
+  "type": "commonjs",
+  "scripts": {
+    "fixtures": "node fixtures/build-fixtures.js",
+    "build": "node run-all.js",
+    "verify": "node verify.js",
+    "bench": "node bench.js",
+    "security": "node security.js",
+    "metrics": "node metrics.js",
+    "all": "npm run fixtures && npm run build && npm run verify && npm run security && npm run metrics && npm run bench"
+  },
+  "dependencies": {
+    "eta": "4.6.0",
+    "handlebars": "4.7.10",
+    "liquidjs": "10.30.1",
+    "nunjucks": "3.2.4",
+    "preact": "11.1.1",
+    "preact-render-to-string": "6.8.2",
+    "sanitize-html": "2.18.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.7",
+    "esbuild": "0.28.2",
+    "parse5": "8.1.0",
+    "typescript": "7.0.2"
+  }
+}

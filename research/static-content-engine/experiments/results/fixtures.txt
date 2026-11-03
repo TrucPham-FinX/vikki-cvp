@@ -1,0 +1,4 @@
+  repaired untyped block at sections[0].articles[14].blocks[1] -> list
+  repaired untyped block at sections[0].articles[14].blocks[1] -> list
+  repaired untyped block at sections[0].articles[14].blocks[1] -> list
+fixtures written: components=7 (topMenu, imageSection, imageSection, imageSection, productList, qa, activation), qaGroup=1, document.sections=3

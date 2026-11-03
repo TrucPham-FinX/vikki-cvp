@@ -1,0 +1,1 @@
+<div class="<%= it.$.cx('legal-paragraph', it.b.className) %>"><%~ it.b.text %></div>

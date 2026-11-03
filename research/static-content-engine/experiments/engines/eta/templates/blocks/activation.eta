@@ -1,0 +1,7 @@
+<% const { $, b } = it
+   const btn = (x, extra) => `<span class="${$.esc($.cx('button bg-transparent', extra))}" data-popup="${$.esc(x.popup)}" data-title="${$.esc(x.title)}">${$.esc(x.text)}</span>` %>
+<section class="<%= $.cx('activation gjs-row container p-1', b.bgClass || 'bg-green', b.className) %>">
+<% if (b.termsButtonFullW) { %><%~ btn(b.termsButtonFullW, 'full-w') %><% } %>
+<% if (b.feeButton) { %><%~ btn(b.feeButton) %><% } %>
+<% if (b.termsButton) { %><%~ btn(b.termsButton) %><% } %>
+</section>

@@ -1,0 +1,7 @@
+<section class="faq container">
+{{#if title.src}}<img class="section" src="{{title.src}}" alt="">{{/if}}
+<div class="accordion js-accordion">
+{{#each items}}<div class="accordion-item"><button class="accordion-header" type="button"><span>{{title}}</span></button><div class="accordion-content">{{{content}}}</div></div>{{/each}}
+</div>
+{{#if button}}<span class="button bg-transparent w-full" data-popup="qa" data-title="{{t "faq.title"}}"><span>{{button.text}}</span></span>{{/if}}
+</section>

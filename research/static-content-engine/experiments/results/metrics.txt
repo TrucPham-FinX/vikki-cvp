@@ -1,0 +1,12 @@
+┌─────────┬──────────────┬───────────────┬───────────────┬───────────────┬───────────┬──────────────┐
+│ (index) │ engine       │ templateFiles │ templateLines │ templateChars │ glueLines │ rawHtmlSites │
+├─────────┼──────────────┼───────────────┼───────────────┼───────────────┼───────────┼──────────────┤
+│ 0       │ 'handlebars' │ 15            │ 87            │ 5552          │ 38        │ 9            │
+│ 1       │ 'nunjucks'   │ 11            │ 92            │ 6008          │ 19        │ 8            │
+│ 2       │ 'liquid'     │ 17            │ 89            │ 6019          │ 25        │ 9            │
+│ 3       │ 'eta'        │ 15            │ 94            │ 6128          │ 18        │ 24           │
+│ 4       │ 'preact'     │ 6             │ 215           │ 9994          │ 18        │ 10           │
+│ 5       │ 'eleventy'   │ 4             │ 23            │ 924           │ 15        │ 0            │
+└─────────┴──────────────┴───────────────┴───────────────┴───────────────┴───────────┴──────────────┘
+Shared by all engines (not counted above): lib/prepare.js, lib/helpers.js
+templateChars = non-whitespace characters (less sensitive to formatting than line counts).

@@ -1,0 +1,2 @@
+<% const { $, b } = it %>
+<ul class="<%= $.cx('legal-list', b.style) %>"><% for (const i of b.items) { %><li class="<%= $.cx('legal-list-item', i.className) %>"><span class="legal-list-text"><%~ i.text %></span><% if (i.type === 'table') { %><%~ include('/doc/blocks/table', { $, b: i }) %><% } %><% if (i.children && i.children.items && i.children.items.length) { %><%~ include('/doc/blocks/list', { $, b: i.children }) %><% } %></li><% } %></ul>

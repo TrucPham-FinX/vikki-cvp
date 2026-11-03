@@ -1,0 +1,6 @@
+{%- assign bg = b.bgClass | default: 'bg-green' -%}
+<section class="{{ 'activation gjs-row container p-1' | cx: bg, b.className }}">
+{% if b.termsButtonFullW %}{% render 'blocks/button', x: b.termsButtonFullW, extra: 'full-w' %}{% endif %}
+{% if b.feeButton %}{% render 'blocks/button', x: b.feeButton %}{% endif %}
+{% if b.termsButton %}{% render 'blocks/button', x: b.termsButton %}{% endif %}
+</section>

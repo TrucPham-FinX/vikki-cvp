@@ -1,0 +1,10 @@
+{% extends "layouts/shell.njk" %}
+{% block head %}<link rel="stylesheet" href="{{ asset('css/landing.css') }}">{% endblock %}
+{% block main %}
+<main class="landing">
+{% set b = hero %}{% include "blocks/hero.njk" %}
+{% for b in components %}{% include "blocks/" + b.type + ".njk" %}{% endfor %}
+{% include "blocks/faqTemplate.njk" %}
+</main>
+{% endblock %}
+{% block scripts %}<script>window.CVP_VIDEO = {{ hero.video | scriptJson }};</script>{% endblock %}

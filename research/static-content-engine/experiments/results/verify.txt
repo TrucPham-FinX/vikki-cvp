@@ -1,0 +1,6 @@
+reference: handlebars  vi/index.html=4e8907c760fc  vi/tc.html=b29f0517ef8d  en/index.html=1b69f51778af  en/tc.html=d0c529c4ac23
+✓ eleventy   4/4 pages equivalent
+✓ eta        4/4 pages equivalent
+✓ liquid     4/4 pages equivalent
+✓ nunjucks   4/4 pages equivalent
+✓ preact     4/4 pages equivalent

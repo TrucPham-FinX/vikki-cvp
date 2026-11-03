@@ -1,0 +1,8 @@
+<% const { $, b } = it %>
+<section class="faq container">
+<% if (b.title && b.title.src) { %><img class="section" src="<%= b.title.src %>" alt=""><% } %>
+<div class="accordion js-accordion">
+<% for (const i of b.items) { %><div class="accordion-item"><button class="accordion-header" type="button"><span><%= i.title %></span></button><div class="accordion-content"><%~ i.content %></div></div><% } %>
+</div>
+<% if (b.button) { %><span class="button bg-transparent w-full" data-popup="qa" data-title="<%= $.t('faq.title') %>"><span><%= b.button.text %></span></span><% } %>
+</section>
