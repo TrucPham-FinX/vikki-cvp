@@ -82,6 +82,17 @@ function verifyAllRoadmapPhases() {
     return parsed.hasTopSpace === false && parsed.hasCard === true && parsed.productScheme === 'HDBANK';
   });
 
+  check('Phase 5', 'Runtime env reads ?lang as vi | en | ko, falling back to en', () => {
+    const lang = (search) => env.parseQueryParams(search).lang;
+    return (
+      lang('') === null &&
+      lang('?lang=vi') === 'vi' &&
+      lang('?lang=KO') === 'ko' &&
+      lang('?lang=en-US') === 'en' &&
+      lang('?lang=fr') === 'en'
+    );
+  });
+
   // Phase 6: Publishing & Manifest Integrity
   check('Phase 6', 'Publishing configuration content/publish.json exists', () => {
     return fs.existsSync(path.join(root, 'content/publish.json'));

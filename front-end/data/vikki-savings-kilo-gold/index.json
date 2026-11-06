@@ -1,73 +1,75 @@
 {
   "title": "Vikki Savings Kilo Gold | VikkiBank",
-  "layout": "template",
-  "hasTopSpace": true,
-  "className": "vikki-savings-kilo-gold",
   "components": [
     {
       "type": "imageSection",
+      "src": "./assets/hero-20261030-v03.jpg",
       "id": "hero",
       "className": "golden-image-section",
-      "imgClassName": "golden-image",
-      "src": "./assets/hero-20261030-v03.jpg"
+      "imgClassName": "golden-image"
     },
     {
       "type": "imageSection",
+      "src": "./assets/campaign-mechanics-20261029-v01.png",
       "id": "intro",
       "className": "golden-image-section",
       "cellClassName": "golden-steps-cell",
-      "imgClassName": "golden-image",
-      "src": "./assets/campaign-mechanics-20261029-v01.png"
+      "imgClassName": "golden-image"
     },
     {
       "type": "imageSection",
+      "src": "./assets/flying-people-20261029-v01.png",
       "id": "intro",
       "className": "golden-image-section",
-      "imgClassName": "golden-image",
-      "src": "./assets/flying-people-20261029-v01.png"
+      "imgClassName": "golden-image"
     },
     {
       "type": "slider",
-      "className": "golden-slider",
       "title": {
         "src": "assets/product-collection-title-20261029-v01.png"
       },
       "items": [
-        { "src": "assets/product-phat-loc-20261029-v01.png" },
-        { "src": "assets/product-phu-quy-20261029-v01.png" },
-        { "src": "assets/product-an-tam-20261029-v01.png" },
-        { "src": "assets/product-an-nhan-20261029-v01.png" }
-      ]
+        {
+          "src": "assets/product-phat-loc-20261029-v01.png"
+        },
+        {
+          "src": "assets/product-phu-quy-20261029-v01.png"
+        },
+        {
+          "src": "assets/product-an-tam-20261029-v01.png"
+        },
+        {
+          "src": "assets/product-an-nhan-20261029-v01.png"
+        }
+      ],
+      "className": "golden-slider"
     },
     {
       "type": "imageSection",
+      "src": "./assets/interest-rate-20261029-v01.png",
       "id": "intro",
       "className": "golden-image-section",
-      "imgClassName": "golden-image",
-      "src": "./assets/interest-rate-20261029-v01.png"
+      "imgClassName": "golden-image"
     },
     {
       "type": "imageSection",
+      "src": "./assets/flexible-saving-plan-20261029-v01.png",
       "id": "intro",
       "className": "golden-image-section",
-      "imgClassName": "golden-image",
-      "src": "./assets/flexible-saving-plan-20261029-v01.png"
+      "imgClassName": "golden-image"
     },
     {
       "type": "imageSection",
+      "src": "./assets/vikki-benefits-20261029-v01.png",
       "id": "intro",
       "className": "golden-image-section",
       "cellClassName": "golden-benefits-cell",
-      "imgClassName": "golden-image",
-      "src": "./assets/vikki-benefits-20261029-v01.png"
+      "imgClassName": "golden-image"
     },
     {
       "type": "qa",
       "title": {
         "src": "./assets/cau-hoi-thuong-gap.png"
-      },
-      "button": {
-        "text": "Xem thêm"
       },
       "items": [
         {
@@ -106,23 +108,24 @@
           "title": "Đối với tiết kiệm trả lãi định kỳ, tôi có những lựa chọn tái tục nào?",
           "content": "<p>Bạn có thể lựa chọn:</p><ul><li>Không tái tục: Toàn bộ gốc và lãi sẽ được chuyển vào tài khoản thanh toán bạn đã đăng ký</li><li>Tái tục gốc, lãi chuyển tài khoản: Gốc sẽ tiếp tục sang kỳ hạn mới, còn lãi sẽ chuyển vào tài khoản thanh toán của bạn</li></ul>"
         }
-      ]
+      ],
+      "button": {
+        "text": "Xem thêm"
+      }
     },
     {
       "type": "activation",
-      "className": "golden-terms-activation",
       "bgClass": "bg-white",
+      "className": "golden-terms-activation",
+      "image": {
+        "src": "AAAA"
+      },
       "termsButtonFullW": {
         "title": "Điều khoản và Điều kiện",
-        "popup": "/vikki-cvp/vikki-savings-kilo-gold/tc-online.html",
-        "text": "Điều khoản & điều kiện"
+        "text": "Điều khoản & điều kiện",
+        "popup": "/vikki-cvp/vikki-savings-kilo-gold/tc-online.html"
       }
     }
-  ],
-  "qaGroups": [
-    { "title": "Sản phẩm Tiết kiệm trả lãi cuối kỳ", "count": 3 },
-    { "title": "Sản phẩm Tiết kiệm trả lãi đầu kỳ", "count": 3 },
-    { "title": "Sản phẩm Tiết kiệm trả lãi định kỳ", "count": 3 }
   ],
   "qaGroup": [
     {
@@ -203,6 +206,23 @@
           "content": "<p>Bạn có thể rút một phần hoặc toàn bộ tiền gửi trước hạn với các điều kiện sau:</p><ul><li>Số tiền rút tối thiểu: 1.000.000 VNĐ/lần.</li><li>Số dư còn lại sau khi rút phải tối thiểu: 1.000.000 VNĐ.</li></ul><p>Bạn có thể thực hiện rút tiền ngay cả trong cùng ngày gửi.</p>"
         }
       ]
+    }
+  ],
+  "layout": "template",
+  "className": "vikki-savings-kilo-gold",
+  "hasTopSpace": true,
+  "qaGroups": [
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi cuối kỳ",
+      "count": 3
+    },
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi đầu kỳ",
+      "count": 3
+    },
+    {
+      "title": "Sản phẩm Tiết kiệm trả lãi định kỳ",
+      "count": 3
     }
   ]
 }

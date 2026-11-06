@@ -17,6 +17,23 @@ The host app loads CVP web pages in a WebView by passing URL parameters. The web
 | `hasCard` | `boolean` (`true` \| `false`) | `false` | When `true`, indicates that the authenticated user already holds the card. The page hides the "Open Card" / "Đăng ký mở thẻ" button. | `vikki-one-connect`, `runtime/env.js` |
 | `productScheme` | `string` | `null` | Co-branded partner scheme identifier (`HDBANK`, `VIKKI_BANK`, `SOVICO`, `DAMTC`). Pre-selects and highlights the corresponding partner. | `vikki-one-connect:241` |
 | `category` | `string` | `null` | Promotion category filter code (e.g. `VIKKI_ONE`, `VIKKIGO_PLUS`). Filters the active promotion list. | `promotion/list.hbs:29` |
+| `lang` | `string` (`vi` \| `en` \| `ko`) | `vi` | Language of the page. See [1.1](#11-language-lang). | `components/localeRedirect.hbs`, `scripts.hbs` (`withLang`), `runtime/env.js` |
+
+### 1.1 Language (`lang`)
+
+Each page has one address; `?lang` picks the language. Consumers (the app, hello-vietnam) add it to the link they already load.
+
+```
+https://vikki-cdn.uat.galaxyfinx.cloud/vikki-cvp/vikki-foreign-exchange-cvp/tc.html?lang=en
+```
+
+- **Values:** `vi`, `en`, `ko`, case-insensitive; a region is ignored (`en-US` reads as `en`).
+- **Fallback:** when the page has no copy in that language, or the value is anything else, it opens English; when it has no English either, Vietnamese.
+- **No `?lang`:** Vietnamese, as before. A link straight to a language's copy (`…/en/tc.html`) still opens that copy.
+- **Pages in one language** (most pages today) ignore `?lang` and show Vietnamese.
+- **Popups** pass `?lang` on to the CVP pages they open (same origin, not PDFs).
+
+How it works: a page with `data/<page>/<lang>.json` is built into `<page>/<lang>/<file>.html` for each language, plus `<page>/<file>.html`, a small page that sends the visitor to the copy `?lang` asks for with `location.replace` (no history entry; the query and hash are kept). Each language's copy carries the same check, for a `?lang` naming another language. Adding Korean to a page means adding `data/<page>/ko.json` (and `<template>-ko.json` for its other files) and its `ko/assets/`.
 
 ### Example URL
 ```

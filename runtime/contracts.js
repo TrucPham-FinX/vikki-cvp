@@ -53,6 +53,15 @@ const QueryParams = {
     name: 'category',
     type: 'string',
     description: 'Category filter code for promotion lists (e.g., VIKKI_ONE, VIKKIGO_PLUS).'
+  },
+  lang: {
+    name: 'lang',
+    type: 'string',
+    description:
+      'Language of the page. A page the language is missing for, or any other value, opens English, else Vietnamese. Popups pass it on to the CVP pages they open.',
+    allowedValues: ['vi', 'en', 'ko'],
+    defaultValue: 'vi',
+    fallbackValue: 'en'
   }
 };
 

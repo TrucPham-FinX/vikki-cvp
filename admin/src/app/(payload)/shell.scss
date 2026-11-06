@@ -1,0 +1,537 @@
+@use "sass:color";
+@use "sass:map";
+@use "sass:math";
+
+/*
+ * The admin SHELL — sidebar, header, login screen — and the theme bridge underneath it: the
+ * `--color-*` ramp Payload reads and the nav's own `--gg-nav-*` palette. galaxy-g-admin's
+ * `shell.scss`, without what the CVP admin does not have (tenant and host-app selectors, the
+ * notification bell, Keycloak, core-ui's control resets).
+ *
+ * Rules for Payload's generated screens live next door in `payload-collections.scss`. Nothing
+ * feature-level belongs in either file; a screen's own chrome is the design layer's.
+ *
+ * Hex is allowed here in exactly two places, both palette DEFINITIONS: the `$*-anchors` the
+ * ramp interpolates, and the `--gg-nav-*` values. A rule spends a token; it does not name a
+ * colour.
+ *
+ * Payload derives its whole UI from these custom properties, so a reskin here survives Payload
+ * upgrades in a way that overriding component classes does not. Payload maps
+ * --theme-elevation-N -> --color-base-N in light mode and reads the same ramp from the opposite
+ * end in dark mode, so the base ramp is declared ONCE (white -> black).
+ */
+
+/* ---------------------------------------------------------------- tokens -- */
+
+// Vikki Blue: the brand's solid colour, white text on it measures 8.6:1. $brand-dark is hover.
+$brand: #0000ff;
+$brand-dark: #0000cc;
+
+$base-anchors: (
+  0: #ffffff,
+  50: #fafafa,
+  100: #f1f1f1,
+  200: #e3e3e3,
+  300: #dfdfdf,
+  400: #929292,
+  500: #666666,
+  600: #484848,
+  700: #333333,
+  800: #222222,
+  900: #111111,
+  1000: #000000,
+);
+
+$success-anchors: (
+  50: #eafdf1,
+  100: #b9f9cf,
+  500: #11a849,
+  700: #11843c,
+  950: #06331a,
+);
+
+$error-anchors: (
+  50: #fdf0f1,
+  100: #f7d4d6,
+  500: #ee0000,
+  700: #c50000,
+  950: #3d0000,
+);
+
+$warning-anchors: (
+  50: #fff8ea,
+  100: #ffefcf,
+  500: #f5a623,
+  700: #ab570a,
+  950: #3a1d02,
+);
+
+$blue-anchors: (
+  50: #eef5ff,
+  100: #d3e5ff,
+  500: #0070f3,
+  700: #0761d1,
+  950: #041f42,
+);
+
+/* ------------------------------------------------------------- interpolate -- */
+
+/* Linear interpolation between the nearest anchors on either side of $pos. */
+@function ramp($anchors, $pos) {
+  @if map.has-key($anchors, $pos) {
+    @return map.get($anchors, $pos);
+  }
+
+  $lower: null;
+  $upper: null;
+
+  @each $stop, $value in $anchors {
+    @if $stop < $pos and ($lower == null or $stop > $lower) {
+      $lower: $stop;
+    }
+    @if $stop > $pos and ($upper == null or $stop < $upper) {
+      $upper: $stop;
+    }
+  }
+
+  @if $lower == null {
+    @return map.get($anchors, $upper);
+  }
+  @if $upper == null {
+    @return map.get($anchors, $lower);
+  }
+
+  $weight: math.div($pos - $lower, $upper - $lower) * 100%;
+  @return color.mix(map.get($anchors, $upper), map.get($anchors, $lower), $weight);
+}
+
+$base-steps:
+  0, 50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950,
+  1000;
+$semantic-steps:
+  50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 850, 900, 950;
+
+/* ------------------------------------------------------------------ apply -- */
+
+/* Declared outside @layer payload-default, so these win over Payload's defaults without !important. */
+:root {
+  @each $step in $base-steps {
+    --color-base-#{$step}: #{ramp($base-anchors, $step)};
+  }
+
+  @each $step in $semantic-steps {
+    --color-success-#{$step}: #{ramp($success-anchors, $step)};
+    --color-error-#{$step}: #{ramp($error-anchors, $step)};
+    --color-warning-#{$step}: #{ramp($warning-anchors, $step)};
+    --color-blue-#{$step}: #{ramp($blue-anchors, $step)};
+  }
+
+  /*
+   * One typeface, named once. Be Vietnam Pro is loaded from Google Fonts by the `<link>` in
+   * `layout.tsx` (all four weights, the vietnamese subset included); the stack after it is what
+   * renders if that request is blocked.
+   *
+   * `--font-body` is Payload's; `--d-mono` (design.module.css) reads `--gg-font` too.
+   */
+  --gg-font:
+    "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif;
+  --font-body: var(--gg-font);
+
+  --style-radius-s: 4px;
+  --style-radius-m: 6px;
+  --style-radius-l: 10px;
+
+  /* Brand accent as a runtime custom property, for custom nav/header components. */
+  --gg-brand: #{$brand};
+
+  /* One height for every control on the top bar: language and theme. */
+  --gg-topbar-control-height: 32px;
+}
+
+/*
+ * The one place the family is applied rather than declared; everything below inherits it.
+ *
+ * Form controls are named as well: Payload sets `font-family` on some controls and not others,
+ * and the rest fall back to the user agent's own font — a second family on any screen with a
+ * `<select>` on it.
+ */
+html,
+body {
+  font-family: var(--gg-font);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--gg-font);
+}
+
+/* Payload's primary button defaults to a near-black elevation; this swaps in the brand. */
+.btn--style-primary {
+  --bg-color: #{$brand};
+  --hover-bg: #{$brand-dark};
+  --color: var(--color-base-0);
+  --hover-color: var(--color-base-0);
+}
+
+/* ----------------------------------------------------------------- header -- */
+
+/*
+ * Header controls: [language] [theme]. The account avatar is hidden — the session lives in the
+ * sidebar's user card (NavUserCard).
+ *
+ * Payload nests its actions two wrappers deep; `display: contents` collapses them so the
+ * controls become children of `__controls-wrapper` and `order` can arrange them. This is the one
+ * place the shell depends on Payload's header DOM rather than its custom properties: re-check it
+ * after a Payload upgrade.
+ */
+.app-header__actions-wrapper,
+.app-header__actions,
+.app-header__actions > div {
+  display: contents;
+}
+
+.app-header__controls-wrapper {
+  gap: calc(var(--base) / 2);
+}
+
+.language-toggle {
+  order: 2;
+}
+
+.theme-toggle {
+  order: 3;
+}
+
+/*
+ * The content-language picker (Payload's localizer: vi / en / ko), last in the row.
+ *
+ * galaxy-g-admin has no localization, so its header never met this. Payload draws the picker
+ * twice: an invisible `__localizer-spacing` that holds its place in the row, and the real one
+ * absolutely positioned outside the row's `overflow: hidden` (so its popup is not clipped), at a
+ * fixed `right` that assumes the account avatar is the last thing in the row. With the avatar
+ * hidden, that fixed offset landed the picker on top of the language and theme buttons.
+ *
+ * So the placeholder goes last and the real picker is pinned to the same edge the row ends at:
+ * `.app-header__content` pads by `--gutter-h`, and the picker is positioned against
+ * `.app-header`, which spans the same width.
+ */
+.app-header__localizer-spacing {
+  order: 4;
+}
+
+.app-header__localizer.localizer {
+  right: var(--gutter-h);
+}
+
+.language-toggle__code {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Account lives in the sidebar user card. */
+.app-header__account {
+  display: none;
+}
+
+.app-header {
+  position: sticky;
+  top: 0;
+}
+
+/*
+ * Translucent with a blur and a hairline under it, so content is visibly sliding beneath.
+ * Painted on `.app-header__bg` — Payload's own backdrop layer, which normally fades in only once
+ * the page scrolls — and pinned visible.
+ */
+.app-header__bg {
+  backdrop-filter: blur(6px);
+  background: color-mix(in srgb, var(--theme-bg) 88%, transparent);
+  border-bottom: 1px solid var(--theme-elevation-100);
+  opacity: 1;
+}
+
+/* The header's icon controls, outlined so they read as buttons on the translucent bar. */
+.header-icon-btn {
+  align-items: center;
+  background: var(--theme-input-bg, var(--theme-bg));
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m);
+  color: var(--theme-elevation-600);
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: var(--gg-topbar-control-height);
+  justify-content: center;
+  padding: 0;
+  transition:
+    color 100ms ease,
+    background-color 100ms ease;
+  width: calc(var(--base) * 1.5);
+
+  &:hover {
+    background-color: var(--theme-elevation-100);
+    color: var(--theme-elevation-800);
+  }
+
+  &:focus-visible {
+    outline: var(--accessibility-outline);
+    outline-offset: 2px;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+/* A globe PLUS the code of the language it switches to: not the fixed square the others are. */
+.header-icon-btn.language-toggle {
+  gap: 5px;
+  padding-inline: 9px;
+  width: auto;
+}
+
+/* ---------------------------------------------------------------- sidebar -- */
+
+/*
+ * The sidebar's palette, on `:root`: the collapse chevron (a sibling of `.nav`) and
+ * NavBrand.module.css read it too. Only the token values change per theme.
+ */
+:root {
+  --gg-nav-bg-top: #f7f8fc;
+  --gg-nav-bg-mid: #f1f3f9;
+  --gg-nav-bg-bottom: #e7eaf3;
+  --gg-nav-text: #3d4457;
+  --gg-nav-text-strong: #12151f;
+  --gg-nav-text-muted: #5c6376;
+  --gg-nav-kicker: #5c6376;
+  --gg-nav-hover: rgb(18 21 31 / 6%);
+  /* Solid at the left, easing to 62%: white stays legible along the whole active row. */
+  --gg-nav-active-from: rgb(0 0 255 / 92%);
+  --gg-nav-active-to: rgb(0 0 255 / 62%);
+  --gg-nav-active-text: #ffffff;
+  --gg-nav-scrollbar: rgb(18 21 31 / 22%);
+  /* The logo gradient's two ends — violet in, amber out. */
+  --gg-nav-accent-from: #6100ff;
+  --gg-nav-accent-to: #ffb907;
+  --gg-nav-ring: #ffb907;
+  --gg-nav-hairline: rgb(18 21 31 / 10%);
+}
+
+.nav {
+  background: linear-gradient(
+    185deg,
+    var(--gg-nav-bg-top) 0%,
+    var(--gg-nav-bg-mid) 55%,
+    var(--gg-nav-bg-bottom) 100%
+  );
+  color: var(--gg-nav-text);
+  border-right-color: var(--gg-nav-bg-bottom);
+
+  .nav__scroll,
+  .nav__wrap {
+    background: transparent;
+  }
+
+  /*
+   * Padding moves off the scroller onto the chrome (NavBrand, NavSection, `.nav-user-card`), so
+   * the sticky brand and user card pin flush to the rail's edges.
+   */
+  .nav__scroll {
+    padding: 0;
+    scrollbar-color: var(--gg-nav-scrollbar) transparent;
+  }
+
+  /* Rows as wide as the rail; full height so the user card drops to the bottom. */
+  .nav__wrap {
+    align-items: stretch;
+    min-height: 100%;
+  }
+}
+
+html[data-theme="dark"] {
+  --gg-nav-bg-top: #080b18;
+  --gg-nav-bg-mid: #0e1226;
+  --gg-nav-bg-bottom: #131834;
+  --gg-nav-text: #c7ccdc;
+  --gg-nav-text-strong: #ffffff;
+  --gg-nav-text-muted: #98a0b8;
+  --gg-nav-kicker: #98a0b8;
+  --gg-nav-hover: rgb(255 255 255 / 6%);
+  --gg-nav-active-from: rgb(0 0 255 / 45%);
+  --gg-nav-active-to: rgb(0 0 255 / 10%);
+  --gg-nav-hairline: rgb(255 255 255 / 8%);
+  --gg-nav-scrollbar: rgb(255 255 255 / 18%);
+}
+
+/*
+ * The collapse chevron straddles the seam between sidebar and page, centred on the edge — a
+ * handle that opens and closes the rail. Only while the nav is open; collapsed, it stays at the
+ * screen edge. NavBrand reserves the matching half (its `padding-inline-end`).
+ */
+.template-default__nav-toggler-wrapper:has(.nav-toggler--is-open) {
+  margin-inline-start: calc(var(--nav-width) - var(--gutter-h) / 2);
+
+  .hamburger {
+    background-color: var(--theme-bg);
+    border-radius: 999px;
+    box-shadow: 0 0 0 1px rgb(18 21 31 / 14%);
+    color: var(--gg-nav-text-muted);
+
+    &:hover {
+      background-color: rgb(18 21 31 / 6%);
+      box-shadow: 0 0 0 1px rgb(18 21 31 / 28%);
+      color: var(--gg-nav-text-strong);
+    }
+  }
+
+  html[data-theme="dark"] & .hamburger {
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 12%);
+
+    &:hover {
+      background-color: rgb(255 255 255 / 6%);
+      box-shadow: 0 0 0 1px rgb(255 255 255 / 24%);
+    }
+  }
+}
+
+/* The signed-in editor, pinned to the bottom of the rail (NavUserCard). */
+.nav-user-card {
+  align-items: center;
+  /* Opaque, the bottom of the rail's gradient: rows scroll underneath it. */
+  background: var(--gg-nav-bg-bottom);
+  bottom: 0;
+  display: flex;
+  flex-shrink: 0;
+  gap: 8px;
+  margin-block-start: auto;
+  padding-block: 12px;
+  padding-inline: var(--nav-padding-inline-start, var(--base))
+    var(--nav-padding-inline-end, var(--base));
+  position: sticky;
+  width: 100%;
+  z-index: 2;
+  border-top: 1px solid var(--gg-nav-hairline, rgb(255 255 255 / 8%));
+
+  &__identity {
+    align-items: center;
+    border-radius: 4px;
+    color: inherit;
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    margin: -4px;
+    min-width: 0;
+    padding: 4px;
+    text-decoration: none;
+
+    &:hover {
+      background: var(--gg-nav-hover, rgb(255 255 255 / 6%));
+    }
+  }
+
+  &__avatar {
+    align-items: center;
+    background: linear-gradient(135deg, var(--gg-nav-accent-to), var(--gg-nav-accent-from));
+    border-radius: 50%;
+    color: var(--gg-nav-active-text);
+    display: flex;
+    flex: none;
+    font-size: 11px;
+    font-weight: 700;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+  }
+
+  &__text {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  &__name,
+  &__role {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__name {
+    color: var(--gg-nav-text-strong);
+    font-size: 12.5px;
+    font-weight: 600;
+  }
+
+  &__role {
+    color: var(--gg-nav-text-muted);
+    font-size: 10.5px;
+  }
+
+  &__logout {
+    align-items: center;
+    border-radius: 4px;
+    color: var(--gg-nav-text-muted);
+    display: flex;
+    flex: none;
+    height: 28px;
+    justify-content: center;
+    transition:
+      color 100ms ease,
+      background-color 100ms ease;
+    width: 28px;
+
+    &:hover {
+      background: var(--gg-nav-hover, rgb(255 255 255 / 6%));
+      color: var(--gg-nav-text-strong);
+    }
+
+    &:focus-visible {
+      outline: var(--accessibility-outline);
+      outline-offset: 2px;
+    }
+  }
+}
+
+/* Payload's own nav controls would render UNDER the pinned card and push it off the bottom. */
+.nav__controls:empty {
+  display: none;
+}
+
+/*
+ * No "Forgot password?" under the login form: the admin has no email adapter, so the reset
+ * mail is never sent. A lost password is reset by another editor (Người dùng) or by a script.
+ */
+.login__form a[href$="/forgot"] {
+  display: none;
+}
+
+/* The spacing and type scale the nav and the Payload overrides read (galaxy-g-admin pins
+   core-ui's here; the CVP admin has no core-ui, so these are the only declarations). */
+:root:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+}
+
+/* Placeholders on the theme's own ramp rather than Chrome's fixed #757575, which is the same
+   grey in both themes. */
+::placeholder {
+  color: var(--theme-elevation-400);
+  opacity: 1;
+}

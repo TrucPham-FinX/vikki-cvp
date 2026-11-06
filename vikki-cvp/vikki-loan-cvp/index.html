@@ -1359,11 +1359,26 @@
       function looksLikePdf(url) {
         return /\.pdf($|\?)/i.test(url);
       }
-     
+  
+      // The page's ?lang (vi|en|ko, runtime/README.md) goes on with the CVP pages its popups open
+      function withLang(url) {
+        const lang = new URLSearchParams(window.location.search).get('lang');
+        if (!lang || looksLikePdf(url)) return url;
+        try {
+          const target = new URL(url, window.location.href);
+          if (target.origin !== window.location.origin || target.searchParams.has('lang')) return url;
+          target.searchParams.set('lang', lang);
+          return url.startsWith('/') ? target.pathname + target.search + target.hash : target.href;
+        } catch (e) {
+          return url;
+        }
+      }
+  
       function openPopup(type, title) {
         popupBody.innerHTML = '';
         const isLink = type.startsWith('https://') || type.startsWith('/')
         const isPdfLink = looksLikePdf(type)
+        if (isLink) type = withLang(type)
   
        // if(title){
            // popupTitle.textContent = title;

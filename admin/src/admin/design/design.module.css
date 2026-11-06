@@ -1,0 +1,3117 @@
+/*
+ * The tenant screens' visual layer, from "Galaxy G Admin — Unified Screens".
+ *
+ * Scoped rather than global on purpose: the design has only been drawn for the
+ * Tenant Information menu, and the rest of the portal still runs on core-ui's
+ * default palette. `.scope` is what keeps the two apart — put it on a screen's
+ * outermost element and everything below it renders in the new language.
+ *
+ * Two things happen in `.scope`, and the order matters:
+ *
+ *   1. It retunes core-ui's own custom properties. Every core-ui component
+ *      reads its colours through `var(--color-*)`, so redefining them here
+ *      restyles Button, Badge, DataGrid and the rest without a single
+ *      `!important` and without touching the library. DataGrid in particular
+ *      inline-styles its cells from those variables — a stylesheet could not
+ *      reach them any other way.
+ *   2. It defines the design's own tokens (`--d-*`) for the parts that have no
+ *      core-ui equivalent: the panel chrome, the uppercase column headers, the
+ *      badge tones.
+ *
+ * Brand: the design's blue is #0000FF, which core-ui ships as the `vikki`
+ * brand. Applying `.gg-brand-vikki` alongside `.scope` is what supplies it;
+ * this file assumes that class is present and does not restate the gradients.
+ */
+
+/*
+ * The design's own tokens live at :root, not on `.scope`.
+ *
+ * They have to resolve everywhere the design's classes can end up, and two
+ * places are outside any scoped wrapper: a core-ui Modal portals to
+ * `document.body`, and a screen that returns early (the wizard's "queued" and
+ * "done" states) renders before the wrapper is reached. In both, a button whose
+ * fill is `var(--d-accent)` came out with no fill at all — present, clickable,
+ * invisible.
+ *
+ * Defining them globally is safe in a way the block below is not: nothing but
+ * this design's own classes reads a `--d-*`, so a page that never uses them is
+ * unaffected. What stays scoped is the part that RETUNES core-ui —
+ * `--color-*`, the radii, the gradients — because that would repaint every
+ * other menu in the portal.
+ */
+:global(:root) {
+  --d-radius: 6px;
+  --d-radius-pill: 10px;
+
+  --d-z-sticky: 20;
+  --d-z-modal: 9999;
+  --d-z-popover: 10000;
+  --d-shadow-sticky: 0 -4px 12px rgba(0, 0, 0, 0.05);
+  --d-shadow-dialog: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+
+  /*
+   * The non-colour scale.
+   *
+   * The colour roles below have been tokenised since they were drawn; these
+   * had not, and the portal accumulated 1,647 raw px and 19 distinct font
+   * sizes in their absence. Named by ROLE, never by value: a step that turns
+   * out to be 2px too small is retuned here and nowhere else.
+   *
+   * The spacing steps are the values the stylesheets already cluster on
+   * (2/4/6/8/10/12/16/20/24) rather than a tidier 4-grid invented over them —
+   * 10px and 12px are both load-bearing in this design, and forcing one onto
+   * the other would move several hundred edges for no reason anybody asked
+   * for. The seven off-scale values (3, 5, 7, 9, 11, 14, 18) are snapped by
+   * FND-03; they are 36 declarations in total.
+   */
+  --d-space-1: 2px;
+  --d-space-2: 4px;
+  --d-space-3: 6px;
+  --d-space-4: 8px;
+  --d-space-5: 10px;
+  --d-space-6: 12px;
+  --d-space-7: 16px;
+  --d-space-8: 20px;
+  --d-space-9: 24px;
+
+  /*
+   * Six type steps, down from the nineteen sizes in use.
+   *
+   * `md` is the portal's body, which `.scope` also feeds to core-ui as
+   * `--font-size-md`. The half-pixel sizes (10.5, 11.5, 12.5) were never a
+   * decision — they are what happens when a screen nudges a value until it
+   * looks right — and they collapse into the step below them.
+   */
+  --d-text-xs: 11px;
+  --d-text-sm: 12px;
+  --d-text-md: 13px;
+  --d-text-lg: 15px;
+  --d-text-xl: 20px;
+  --d-text-2xl: 24px;
+
+  --d-weight-medium: 500;
+  --d-weight-semibold: 600;
+  --d-weight-bold: 700;
+
+  /*
+   * One control height for the whole portal, which `.scope` also hands core-ui
+   * as `--size-control-lg`. `sm` is the dense strip (the bulk bar).
+   */
+  --d-control-h: 32px;
+  --d-control-h-sm: 26px;
+  --d-row-h: 36px;
+  --d-cell-pad-x: 12px;
+  --d-cell-pad-y: 9px;
+
+  --d-icon-sm: 12px;
+  --d-icon-md: 14px;
+  --d-icon-lg: 16px;
+
+  --d-hairline: 1px;
+  --d-radius-sm: 4px;
+  --d-radius-lg: 10px;
+
+  /*
+   * Desktop-first, per the standards doc §7: 1280px is the narrowest window
+   * this portal is designed to hold. The steps below it exist so a component
+   * that genuinely must reflow has a named place to do it, not because a phone
+   * layout is planned.
+   *
+   * These are reference values, not switches: a custom property cannot appear
+   * in a media query, so `@media (max-width: var(--d-bp-lg))` is invalid CSS.
+   * The one query that reflows at the floor (`.fieldsTwoUp`, below) spells
+   * 1280px out, and it is the only place in the design layer that may — a new
+   * breakpoint is a new token here first, then a literal that quotes it.
+   *
+   * Horizontal scroll belongs to a table, never to the page. `.tableWrap` and
+   * `.tabs` own it with `overflow-x: auto`; `.screen` and `.sectionStack` take
+   * `min-width: 0` so a wide child cannot widen the column they sit in, which
+   * is what would hand the scroll to the page.
+   */
+  --d-bp-sm: 768px;
+  --d-bp-md: 1024px;
+  --d-bp-lg: 1280px;
+  --d-bp-xl: 1440px;
+  --d-page-max: 1440px;
+
+  /*
+   * The rhythm between two sections of a screen.
+   *
+   * A token because two things have to agree on it: `.screen`, which spaces
+   * its children and pads its own bottom by the same amount, and any wrapper
+   * that has to sit between the two for a non-visual reason — see
+   * `.sectionStack`. When it was a literal in `.screen` alone, the `<form>`
+   * around the CRUD edit sheet and its action bar had no gap at all, and the
+   * bar sat flush against the panel above it.
+   */
+  --d-gap-section: var(--d-space-8);
+  --d-surface: #fff;
+  --d-surface-alt: #fafafa;
+  --d-border: #e3e3e3;
+  --d-border-soft: #f1f1f1;
+  --d-border-hover: #dfdfdf;
+  --d-ink: #111;
+  --d-text: #222;
+  --d-text-strong: #333;
+  --d-muted: #666;
+  --d-faint: #929292;
+  --d-divider: #dfdfdf;
+  /*
+   * The `info` role, under its older name. `--d-accent` is the brand fill
+   * (#0000FF) and `--d-accent-ink` is its readable ink; the aliases below let
+   * the five roles be addressed by one naming scheme — `--d-<role>-<slot>` —
+   * which is what lets a button variant be two lines instead of a special case.
+   */
+  --d-accent: #0000ff;
+  --d-accent-hover: #0000cc;
+  --d-accent-wash: #eef5ff;
+  --d-accent-line: #d3e5ff;
+  --d-accent-ink: #0761d1;
+  --d-info-wash: var(--d-accent-wash);
+  --d-info-ink: var(--d-accent-ink);
+  --d-info-line: var(--d-accent-line);
+  --d-info-solid: var(--d-accent);
+
+  /*
+   * The portal's semantic palette: five roles, four slots each, no exceptions.
+   *
+   * A role is a MEANING, never a colour someone liked. Pick the role from what
+   * the thing says, then take the slot; never reach past this table for a hex.
+   *
+   *   neutral  nothing is at stake — plain chrome, an absent state
+   *   info     the screen's own affirmative verb; a purely informational state
+   *   ok       healthy, complete, active, granted
+   *   warn     wants attention; an action that is reversible but not free
+   *   bad      failed, revoked, terminated; an action that is hard to undo
+   *
+   * And the four slots, which is what makes a role usable in every context:
+   *
+   *   wash   the light ground — a badge's fill, a button's hover, a callout
+   *   line   the hairline that separates that ground from the page
+   *   ink    the one value that carries TEXT and a BORDER on this theme's
+   *          ground: the role's hue darkened (or, in dark mode, lightened)
+   *          until it clears 4.5:1. This is the slot a button outline uses.
+   *   solid  the role's hue at full strength, for a shape rather than a
+   *          glyph — a filled dot, a track segment, a chart series
+   *
+   * Why `ink` and `solid` are two slots and not one: a hue strong enough to
+   * read as a 10px dot is usually too light to carry 13px text. Green is the
+   * clearest case — `--d-ok-solid` #11a849 is 3.12:1 on white, so `--d-ok-ink`
+   * is the same hue darkened to 4.78:1.
+   *
+   * `warn` is the deliberate exception. Its ink and its solid are both
+   * #f5a623, on the product owner's instruction that the warning yellow be one
+   * value everywhere; that is 2.03:1 on white, and the note on the token says
+   * what it costs. Do not read the exception as permission — for any other
+   * role, taking `solid` as an ink because it "looks more saturated" is the
+   * mistake this pair exists to prevent.
+   *
+   * Everything resolves through a token so the dark block below is the only
+   * place that has to know a second palette exists — these were hardcoded in
+   * eighteen rules and three lookup tables once, which rendered the whole design
+   * layer light-only: Payload's theme switch stamps `data-theme` on <html>, and
+   * a literal cannot answer to it.
+   *
+   * ── Risk scale ────────────────────────────────────────────────────────────
+   * Which role an ACTION takes is not a judgement call. It is what the action
+   * does if it succeeds:
+   *
+   *   neutral   nothing changes that anyone would have to undo
+   *             Xuất dữ liệu · Sao chép · Đóng · Huỷ · Xoá bộ lọc
+   *             — also every button that only NAVIGATES, even to a screen
+   *               full of destructive verbs: the risk belongs to the button
+   *               that commits, not to the one that opens the door
+   *   info      the screen's own affirmative verb; writes, but forward
+   *             Tạo mới · Lưu · Gửi duyệt · Kích hoạt · Lấy token
+   *   warn      reversible, but someone has to do the reversing
+   *             Sửa · Tạm dừng · Bật/Tắt · Xoay khoá · Cấp lại
+   *   bad       hard or impossible to undo, or it breaks a live integration
+   *             Xoá · Gỡ · Chấm dứt · Lưu trữ · Thu hồi
+   *
+   * A confirm step does NOT soften the colour. A "Xoá" behind a dialog is still
+   * `bad` — the colour is how a reader knows to expect the dialog.
+   */
+  --d-neutral-wash: #f1f1f1;
+  --d-neutral-ink: #484848;
+  --d-neutral-line: #e3e3e3;
+  /* #929292, not the muted text grey: a dot has to read as a shape beside
+     the text, not as another piece of it. */
+  --d-neutral-solid: #929292;
+  --d-ok-wash: #eafdf1;
+  --d-ok-ink: #11843c;
+  --d-ok-line: #b9f9cf;
+  --d-ok-solid: #11a849;
+  --d-warn-wash: #fff8ea;
+  /*
+   * The two ambers, which is what the mockup settles.
+   *
+   * `#f5a623` is the warning yellow the product owner named, and it stays —
+   * as `solid`, the slot for a SHAPE: the warning icon, the readiness mark,
+   * the audit dot. Wherever the amber is a fill rather than a glyph, it is
+   * that exact value.
+   *
+   * `ink` carries TEXT and a control's edge, and there #f5a623 does not
+   * survive contact with a light ground: 2.03:1 on #fff and 1.92:1 on its own
+   * wash, against the 4.5:1 that 13px text needs. #ab570a is the same hue
+   * darkened until it clears (5.12:1) — the value the mockup's status badge
+   * uses, so a "Tạm dừng" badge and a "Sửa" button are readable and still
+   * unmistakably the warning colour. Dark mode keeps #f5a623 for both, where
+   * it is 8.41:1 and needs no darkening.
+   */
+  --d-warn-ink: #ab570a;
+  --d-warn-line: #ffefcf;
+  --d-warn-solid: #f5a623;
+  --d-bad-wash: #fdf0f1;
+  --d-bad-ink: #c50000;
+  --d-bad-line: #f7d4d6;
+  --d-bad-solid: #ee0000;
+
+  /* Text that sits on a filled accent or solid — never flips with the theme. */
+  --d-on-solid: #fff;
+
+  /*
+   * Amber is the one solid white cannot sit on: #f5a623 against white is
+   * 2.0:1, well under the 4.5 a 10px glyph needs. The warning dot therefore
+   * carries dark ink in both themes, which is why it has its own token.
+   */
+  --d-on-warn: #1b1c1f;
+
+  /* The mockup's error red — lifecycle track, readiness marks, step dots. */
+  --d-danger: var(--d-bad-solid);
+  /*
+   * Ids, keys and JSON — the one token those ~40 call sites go through.
+   *
+   * It resolves to the SAME family as everything else, on the product owner's
+   * instruction to force one typeface across the portal. The token stays rather
+   * than being inlined away so that decision has one place to live: point this
+   * at a real monospace stack and every call site follows.
+   *
+   * It used to name "JetBrains Mono", which is loaded nowhere, so it silently fell through to
+   * the system stack. `--gg-font` is declared in `src/app/(payload)/shell.scss` and loaded from
+   * Google Fonts in `layout.tsx`; the fallback here is so a screen rendered without that
+   * stylesheet still gets a family rather than an invalid declaration.
+   */
+  --d-mono: var(
+    --gg-font,
+    "Be Vietnam Pro",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif
+  );
+}
+
+/*
+ * Dark, keyed off the attribute Payload's ThemeToggle writes on <html>.
+ *
+ * Only the tokens are redefined — no component rule is repeated here, which is
+ * what keeps the two themes from drifting apart. The neutrals carry a slight
+ * blue bias so they sit with the admin chrome rather than reading as pure grey,
+ * and every wash is a low-alpha tint of its own solid instead of a lightened
+ * pastel: a pastel that works on white turns into a glare on a dark ground.
+ *
+ * Contrast is checked against the surface it lands on, not against white.
+ */
+:global(html[data-theme="dark"]) {
+  --d-surface: #1b1c1f;
+  --d-surface-alt: #232428;
+  --d-border: #34363c;
+  --d-border-soft: #2a2c31;
+  --d-border-hover: #43454c;
+  --d-ink: #f2f3f5;
+  --d-text: #e6e7ea;
+  --d-text-strong: #d3d5da;
+  --d-muted: #9aa0aa;
+  --d-faint: #878d97;
+  --d-divider: #34363c;
+
+  /*
+   * Pure #0000FF is unreadable on a dark ground — it has almost no luminance to
+   * separate it from the surface. The brand hue stays; the lightness moves.
+   */
+  /*
+   * Two accents, because one cannot do both jobs on a dark ground. Text on the
+   * surface needs a LIGHT accent (4.5:1 against #1b1c1f); white on a filled
+   * button needs a DARK one (4.5:1 the other way). A single value that met one
+   * requirement always failed the other, so the fill lives here and the text
+   * colour lives in `--d-accent-ink`.
+   */
+  --d-accent: #5560e0;
+  /*
+   * Deeper than the accent, not lighter — its only two uses are the ground of
+   * a FILLED button (`.btnPrimary` and core-ui's
+   * `--gradient-action-primary-hover`), and lightening one moves its white
+   * label toward its ground: #6874ea put it at 3.98:1, under the 4.5:1 it
+   * needs. This is the accent at 80% per channel, the same operation that
+   * takes light's #0000ff to #0000cc, and it lands at 7.10:1.
+   */
+  --d-accent-hover: #444db3;
+  --d-accent-wash: rgb(111 123 255 / 14%);
+  --d-accent-line: rgb(111 123 255 / 34%);
+  --d-accent-ink: #a3abff;
+
+  --d-ok-wash: rgb(17 168 73 / 16%);
+  --d-ok-ink: #5fd98c;
+  --d-ok-line: rgb(17 168 73 / 38%);
+  --d-ok-solid: #15803d;
+  --d-warn-wash: rgb(245 166 35 / 16%);
+  /* The same amber as light, and here it needs no darkening: 8.41:1. */
+  --d-warn-ink: #f5a623;
+  --d-warn-line: rgb(245 166 35 / 38%);
+  --d-warn-solid: #d18b16;
+  --d-bad-wash: rgb(238 0 0 / 16%);
+  --d-bad-ink: #ff8080;
+  --d-bad-line: rgb(238 0 0 / 40%);
+  --d-bad-solid: #e03131;
+  --d-neutral-wash: #2a2c31;
+  --d-neutral-ink: #c2c5cc;
+  --d-neutral-line: #34363c;
+  --d-neutral-solid: #9aa0aa;
+
+  --d-on-solid: #fff;
+}
+
+.scope {
+  /* ── the design's own tokens ─────────────────────────────────────────── */
+
+  /* ── core-ui, retuned to match ───────────────────────────────────────── */
+  --color-bg-surface: var(--d-surface);
+  --color-bg-surface-alt: var(--d-surface-alt);
+  --color-bg-row-stripe: var(--d-surface-alt);
+  --color-border-default: var(--d-border);
+  --color-border-subtle: var(--d-border);
+  --color-border-faint: var(--d-border-soft);
+  --color-text-primary: var(--d-text);
+  --color-text-secondary: var(--d-muted);
+  --color-text-tertiary: var(--d-faint);
+
+  /*
+   * The control size step, retuned to this screen's body rather than core-ui's.
+   *
+   * A core-ui `Input` or `Select` defaults to `size="md"`, which it applies as
+   * INLINE `font-size: var(--font-size-md)` and `height: var(--size-control-lg)`
+   * — 16px text in a 40px box, calibrated against a 16px body. Every screen
+   * inside this scope sets its body to 13px two lines below, and draws the same
+   * values at 13px when it is only reading them (`.kvValue`). So a field grew
+   * three pixels the moment it became editable, on the CRUD edit sheet and in
+   * the tenant onboarding wizard alike.
+   *
+   * 32px because that is the portal's one control height — `.btn`, `.select`
+   * and the top bar are all 32.
+   *
+   * It lives here rather than on each form's own wrapper because it is the same
+   * decision every time, and it was made twice already: the CRUD form fixed
+   * itself and the wizard stayed at 16px, which is exactly the "each one has
+   * its own style" this scope exists to prevent. Inline styles read custom
+   * properties from the cascade, so the scope is enough — no call site needs a
+   * `size` prop, which matters because `FieldControl` is shared with the v1
+   * renderer and must keep drawing v1 at core-ui's own sizes.
+   *
+   * Only core-ui controls read these two inside a design screen; no stylesheet
+   * of ours does, and the v1 renderer sits outside this scope.
+   */
+  --font-size-md: 13px;
+  --size-control-lg: 32px;
+
+  color: var(--d-text);
+  font-size: var(--d-text-md);
+}
+
+/*
+ * Doubled on purpose. `.gg-brand-vikki` sits on this very element and sets the
+ * same properties; one class each means equal specificity, and the library
+ * stylesheet loads last, so a single `.scope` silently loses. `.scope.scope`
+ * outranks it without touching the library or reaching for `!important`.
+ *
+ * Two things have to be taken back from the brand:
+ *
+ *   Radius — the brand draws at 12–22px, the design at 6 throughout. Buttons
+ *   read the token through `gg-button--r-sm`, so retuning it here is enough.
+ *   NOT `--radius-full`: it is not the top of the scale, it is the "make this
+ *   round" token, and every brand leaves it at 9999px for that reason. Pulling
+ *   it down to 6px turned core-ui's spinner — a ring plus a rotating arc, both
+ *   drawn with it — into a small rotating rounded square.
+ *
+ *   Gradient — the brand's primary action is a rainbow, and core-ui writes it
+ *   as `var(--gradient-action-primary, var(--color-action-primary))`. The
+ *   fallback can never fire while the gradient is defined, so the flat blue the
+ *   design asks for only arrives by overwriting the gradient itself.
+ */
+.scope.scope {
+  --radius-sm: var(--d-radius);
+  --radius-md: var(--d-radius);
+  --radius-lg: var(--d-radius);
+
+  --gradient-action-primary: var(--d-accent);
+  --gradient-action-primary-hover: var(--d-accent-hover);
+  --gradient-action-secondary: var(--d-surface);
+  --gradient-action-secondary-hover: var(--d-surface-alt);
+}
+
+/* ── page header ───────────────────────────────────────────────────────── */
+
+.head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--d-space-9);
+  flex-wrap: wrap;
+  padding-top: var(--d-space-5);
+}
+
+.headText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-2);
+  min-width: 0;
+}
+
+.title {
+  margin: 0;
+  font-size: var(--d-text-xl);
+  font-weight: var(--d-weight-bold);
+  letter-spacing: -0.01em;
+  color: var(--d-ink);
+}
+
+.subtitle {
+  margin: 0;
+  font-size: var(--d-text-md);
+  color: var(--d-muted);
+  /* The design caps the measure rather than the box, so it reflows with the page. */
+  max-width: 72ch;
+}
+
+.headActions {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex-wrap: wrap;
+}
+
+/* ── panel ─────────────────────────────────────────────────────────────── */
+
+/*
+ * Does NOT clip, on purpose.
+ *
+ * `overflow: hidden` was the default here so a table's last row would not square
+ * off the rounded bottom corners. It also cut off every popover: core-ui's
+ * Select, SearchableSelect and MultiSelect render their list as an absolutely
+ * positioned child, so the "Môi trường phát hành" dropdown disappeared under
+ * the section's bottom edge the moment it opened — and the same was waiting in
+ * every other step and screen that holds a field.
+ *
+ * One clipped panel with a visible dropdown is a bug; one unclipped panel with
+ * a square corner under its last row is a detail. So clipping became opt-in:
+ * `clip` is for panels whose bottom edge is met by a filled row (the tables and
+ * their pagers), and nothing else asks for it.
+ */
+.panel {
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  background: var(--d-surface);
+}
+
+/* Opt-in clipping — see the note on `.panel`. */
+.panelClip {
+  overflow: hidden;
+}
+
+.panelHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--d-space-6);
+  padding: var(--d-space-6) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border);
+}
+
+.panelTitle {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.panelNote {
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+}
+
+/*
+ * A card whose title opens it.
+ *
+ * The whole title side is the hit target, not a chevron the reader has to aim
+ * at — the capability groups on the mini app edit screen set that precedent and
+ * it is the half of the header nobody would click for any other reason. The
+ * button keeps the header's own type and colour: this is a card title that
+ * happens to be pressable, not a control dressed as one.
+ */
+.panelToggle {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* A triangle rather than a glyph from an icon set: pure state, at the smallest
+   step the scale has. */
+.panelCaret {
+  color: var(--d-faint);
+  font-size: var(--d-text-xs);
+  line-height: 1;
+  transition: transform 0.12s ease;
+}
+
+.panelCaretOpen {
+  transform: rotate(90deg);
+}
+
+.panelBody {
+  padding: var(--d-space-7);
+}
+
+/* A run-in heading inside a panel — the uppercase strip above a field group. */
+.sectionHead {
+  padding: var(--d-space-5) var(--d-space-7);
+  background: var(--d-surface-alt);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--d-muted);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+/* Select-all sits beside the panel title — see the note in the list screen. */
+.panelSelect {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--d-space-5);
+}
+
+/* ── toolbar ───────────────────────────────────────────────────────────── */
+
+.toolbar {
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  background: var(--d-surface);
+  padding: var(--d-space-5) var(--d-space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex-wrap: wrap;
+}
+
+.toolbarSpacer {
+  flex: 1;
+}
+
+.toolbarCount {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+  white-space: nowrap;
+}
+
+/*
+ * The search field. A ring rather than a border so the 32px height is the whole
+ * box — a 1px border would make it 34 and break the row's alignment.
+ */
+.search {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  height: 32px;
+  padding: 0 var(--d-space-5);
+  border-radius: var(--d-radius);
+  box-shadow: 0 0 0 1px var(--d-border);
+  background: var(--d-surface);
+  flex: 1 1 260px;
+  min-width: 200px;
+  max-width: 340px;
+}
+
+.searchInput {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font: inherit;
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+}
+
+.searchIcon {
+  flex: none;
+  color: var(--d-faint);
+}
+
+/*
+ * `D.Textarea` — the multiline twin of core-ui's `Input`, matched to it on
+ * radius, border and ink so a form does not read as two kits. `font: inherit`
+ * first: a bare `<textarea>` otherwise draws in the browser's monospace default.
+ */
+.textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--d-space-4) var(--d-space-5);
+  font: inherit;
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+  background: var(--d-surface);
+  border: var(--d-hairline) solid var(--d-border);
+  border-radius: var(--d-radius);
+  resize: vertical;
+}
+
+.textarea:disabled {
+  opacity: 0.6;
+}
+
+/*
+ * The trigger. Same box the native `<select>` drew — 32px, hairline, surface —
+ * with the value and the chevron laid out rather than left to the platform.
+ */
+.select {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--d-space-3);
+  height: 32px;
+  padding: 0 var(--d-space-4);
+  min-width: 140px;
+  border-radius: var(--d-radius);
+  border: 0;
+  box-shadow: 0 0 0 1px var(--d-border);
+  background: var(--d-surface);
+  font: inherit;
+  font-size: var(--d-text-md);
+  color: var(--d-text-strong);
+  cursor: pointer;
+  outline: none;
+  text-align: left;
+}
+
+.select:focus-visible {
+  box-shadow: 0 0 0 2px var(--d-accent);
+}
+
+.select:disabled {
+  color: var(--d-faint);
+  background: var(--d-surface-alt);
+  cursor: not-allowed;
+}
+
+.selectValue {
+  flex: 1;
+  min-width: 0;
+}
+
+.selectCaret {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  color: var(--d-muted);
+}
+
+/*
+ * The list, and the reason this control is no longer native: a page cannot cap
+ * or scroll a platform popup. 320px is ten rows, and `50vh` is what keeps it
+ * inside a short window — the case that started this.
+ */
+.selectSheet {
+  position: fixed;
+  z-index: var(--d-z-popover, 10000);
+  max-height: min(320px, 50vh);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--d-space-2);
+  display: flex;
+  flex-direction: column;
+  background: var(--d-surface);
+  border-radius: var(--d-radius-lg);
+  box-shadow:
+    0 0 0 1px var(--d-border),
+    0 10px 24px rgb(16 24 40 / 12%);
+}
+
+.selectOption {
+  padding: var(--d-space-4) var(--d-space-5);
+  border-radius: var(--d-radius);
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Where the keyboard is, which is also where the pointer is — one highlight. */
+.selectOptionActive {
+  background: var(--d-surface-alt);
+}
+
+/* What the control currently holds, lit whether or not it is the highlight. */
+.selectOptionOn {
+  color: var(--d-accent-ink);
+  font-weight: var(--d-weight-semibold);
+}
+
+.linkButton {
+  height: 32px;
+  padding: 0 var(--d-space-5);
+  background: transparent;
+  border: 0;
+  border-radius: var(--d-radius);
+  /* Text, not fill — the light accent, so it reads on the surface. */
+  color: var(--d-accent-ink);
+  font: inherit;
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-medium);
+  cursor: pointer;
+}
+
+.linkButton:hover {
+  background: var(--d-accent-wash);
+}
+
+/* ── bulk selection bar ────────────────────────────────────────────────── */
+
+.bulkBar {
+  border: 1px solid var(--d-accent-line);
+  background: var(--d-accent-wash);
+  border-radius: var(--d-radius);
+  padding: var(--d-space-4) var(--d-space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-5);
+  flex-wrap: wrap;
+}
+
+.bulkLabel {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-accent-ink);
+}
+
+.bulkRule {
+  width: 1px;
+  height: 18px;
+  background: var(--d-accent-line);
+}
+
+/* ── cells ─────────────────────────────────────────────────────────────── */
+
+.mono {
+  font-family: var(--d-mono);
+  font-size: var(--d-text-sm);
+}
+
+/*
+ * The copy affordance beside a long opaque value — a commit, a digest, an
+ * artifact URI.
+ *
+ * Not `.btn`: this one sits on the baseline of the text it copies, inside a KV
+ * row, and a 28px control there pushes the row open and reads as a second
+ * action on the record rather than a handle on the value. It is a chip, at the
+ * meta size, and it only ever says "copy".
+ *
+ * It lives here because two screens had written it separately — the submission
+ * dossier and the build artifact — down to the same padding and the same
+ * hover.
+ */
+.copyChip {
+  background: none;
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  padding: 0 var(--d-space-4);
+  cursor: pointer;
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+  white-space: nowrap;
+}
+
+.copyChip:hover {
+  color: var(--d-ink);
+  border-color: var(--d-border-hover);
+}
+
+/* Confirmation is the label change; the ink carries it the 1.5s it is up. */
+.copyChipDone {
+  color: var(--d-ink);
+}
+
+/* The value and its chip on one baseline, wrapping together when narrow. */
+.copyRow {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--d-space-4);
+}
+
+.checkbox {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--d-accent);
+  cursor: pointer;
+  display: block;
+}
+
+.checkbox:disabled {
+  cursor: default;
+  opacity: 0.45;
+}
+
+/* Name cell: avatar, then name over industry, both clipped rather than wrapped. */
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-5);
+  min-width: 0;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: var(--d-radius-sm);
+  background: var(--d-border-soft);
+  color: var(--d-text);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.nameLines {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.nameMain {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.nameSub {
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+}
+
+.clip {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── badges ────────────────────────────────────────────────────────────── */
+
+/*
+ * Light: the role's `wash` as the ground, its `ink` as the text, and an edge a
+ * shade lighter than that text — the same three parts, in the same order, as
+ * the button chip below, so a badge and the button that means the same thing
+ * read as one object at two sizes.
+ *
+ * The edge is the `line` slot, declared per role rather than derived from the
+ * ink. It was `color-mix(ink 55%, transparent)` for one iteration, on the
+ * argument that "a shade lighter than the text" is a relationship and should
+ * follow a role that changes its ink. The relationship held; the value did
+ * not. Mixing `--d-ok-ink` down lands on #73ba8d, a mid-green that draws a
+ * visible ring around a 20px pill; the `line` slot is #b9f9cf, which sits
+ * close enough to the wash to read as the pill's own edge. Every role differs
+ * the same way, because each `line` was picked against its own wash rather
+ * than computed from a value chosen for text.
+ */
+.badge {
+  --badge-ink: var(--d-neutral-ink);
+  --badge-wash: var(--d-neutral-wash);
+  --badge-edge: var(--d-neutral-line);
+
+  display: inline-flex;
+  align-items: center;
+  height: 20px;
+  padding: 0 var(--d-space-4);
+  border-radius: var(--d-radius-pill);
+  background: var(--badge-wash);
+  border: 1px solid var(--badge-edge);
+  color: var(--badge-ink);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  white-space: nowrap;
+}
+
+.toneSuccess {
+  --badge-ink: var(--d-ok-ink);
+  --badge-wash: var(--d-ok-wash);
+  --badge-edge: var(--d-ok-line);
+}
+
+.toneDanger {
+  --badge-ink: var(--d-bad-ink);
+  --badge-wash: var(--d-bad-wash);
+  --badge-edge: var(--d-bad-line);
+}
+
+.toneWarning {
+  --badge-ink: var(--d-warn-ink);
+  --badge-wash: var(--d-warn-wash);
+  --badge-edge: var(--d-warn-line);
+}
+
+.toneInfo {
+  --badge-ink: var(--d-info-ink);
+  --badge-wash: var(--d-info-wash);
+  --badge-edge: var(--d-info-line);
+}
+
+.toneNeutral {
+  --badge-ink: var(--d-neutral-ink);
+  --badge-wash: var(--d-neutral-wash);
+  --badge-edge: var(--d-neutral-line);
+}
+
+/* ── row action button ─────────────────────────────────────────────────── */
+
+.rowMenu {
+  width: 26px;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  border-radius: var(--d-radius);
+  background: transparent;
+  color: var(--d-muted);
+  cursor: pointer;
+}
+
+.rowMenu:hover {
+  background: var(--d-border-soft);
+  border-color: var(--d-border);
+  color: var(--d-text);
+}
+
+/* ── checklist ─────────────────────────────────────────────────────────── */
+
+/*
+ * A checklist row, at the mockup's measurements.
+ *
+ * Three things this gets right that the previous version did not:
+ *
+ *   - No per-item surface. The mockup separates rows with a hairline, not with
+ *     a filled card each; a stack of cards inside a panel reads as a list of
+ *     panels.
+ *   - `align-items: center`, so the box sits on the row's centre line rather
+ *     than on the label's. With a two-line row the difference is obvious.
+ *   - Label and note in ONE column, which is what keeps them flush. They used
+ *     to be siblings with the note pushed right by a margin to clear the box —
+ *     that margin was the indent.
+ */
+.checkRow {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-6);
+  padding: var(--d-space-6) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+  background: transparent;
+  /* The whole row toggles the box — a `<label>` already does, so the pointer
+     says so rather than leaving the hit target discoverable by trial. */
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkRow:last-child {
+  border-bottom: 0;
+}
+
+/* Same wash as `.optionOn` — checked hosts must not keep a light pastel in dark. */
+.checkRowOn {
+  background: var(--d-accent-wash);
+}
+
+.checkRowDisabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.checkBoxSlot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+}
+
+.checkBox {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  accent-color: var(--d-accent);
+  cursor: pointer;
+}
+
+.checkRowText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.checkRowLabel {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.checkRowNote {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+/*
+ * One line each, with the rest on hover — see `clamp` on `CheckRow`.
+ *
+ * A roster of names is the case this exists for: a long tenant name either
+ * wrapped the row to three lines or, inside a scrolling panel, pushed a
+ * horizontal scrollbar under it. Neither is a way to read a name. The row
+ * carries the whole string as its `title`.
+ */
+.checkRowClamp .checkRowLabel,
+.checkRowClamp .checkRowNote {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*
+ * The hairline between the record verbs and the lifecycle verbs in a detail
+ * header. The mockup separates the two groups this way rather than by spacing,
+ * which reads as one undifferentiated row once there are more than two buttons.
+ */
+.vRule {
+  width: 1px;
+  height: 22px;
+  flex: none;
+  background: var(--d-border);
+}
+
+/*
+ * Alerts that follow a list of rows.
+ *
+ * The review rows each end in a hairline, so a callout placed straight after
+ * one sits flush against that line and reads as another row rather than as a
+ * verdict on all of them. The gap is the panel body's own 16px padding — the
+ * rhythm every other block on a panel already uses.
+ */
+/*
+ * A column of callouts. No outer margin: a stack does not space itself off its
+ * neighbour, its container does — and on a screen whose container already has a
+ * gap, a margin here simply added to it.
+ */
+.calloutStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-6);
+}
+
+/*
+ * The exception: callouts that follow content INSIDE a panel body, where there
+ * is no gap to inherit. The wizard's last step is the case — its alerts sit
+ * under the readiness rows, and the 16px matches `panelBody`'s own padding so
+ * the block does not read as part of the list above it.
+ */
+.calloutStackTop {
+  margin-top: var(--d-space-7);
+}
+
+/* ── colour chip ───────────────────────────────────────────────────────── */
+
+/*
+ * A hex code beside the colour it names. The chip is a button because the
+ * conversions matter: a designer hands over hex, and the people wiring it into
+ * a native app need rgb or hsl.
+ */
+.colorField {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  min-width: 0;
+}
+
+.colorChip {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  padding: 0;
+  border-radius: var(--d-radius);
+  /* A hairline, so a chip the colour of the surface still reads as a chip. */
+  border: 1px solid var(--d-border);
+  cursor: pointer;
+}
+
+.colorChip:focus-visible {
+  outline: 2px solid var(--d-accent);
+  outline-offset: 2px;
+}
+
+/* Positioned like the overflow sheet, and for the same reason: panels clip. */
+.colorSheet {
+  position: fixed;
+  z-index: var(--d-z-popover, 10000);
+  width: 232px;
+  padding: var(--d-space-2);
+  display: flex;
+  flex-direction: column;
+  background: var(--d-surface);
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius-lg);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 14%);
+}
+
+.colorRow {
+  display: flex;
+  align-items: baseline;
+  gap: var(--d-space-5);
+  padding: var(--d-space-3) var(--d-space-5);
+  border-radius: var(--d-radius);
+}
+
+.colorRow + .colorRow {
+  border-top: 1px solid var(--d-border-soft);
+}
+
+.colorSpace {
+  flex: none;
+  width: 42px;
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--d-muted);
+}
+
+.colorValue {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--d-mono);
+  font-size: var(--d-text-sm);
+  color: var(--d-text);
+  overflow-wrap: anywhere;
+}
+
+/* ── overflow menu ─────────────────────────────────────────────────────── */
+
+/*
+ * The sheet is portalled to <body> and positioned in viewport coordinates, so
+ * it escapes the panel's own stacking and overflow. Measurements are the
+ * mockup's: 190px wide, 8px radius, a soft drop shadow rather than a border
+ * alone, and 4px of padding so the hovered item's own radius has room.
+ */
+.menuSheet {
+  position: fixed;
+  z-index: var(--d-z-popover, 10000);
+  width: 190px;
+  padding: var(--d-space-2);
+  display: flex;
+  flex-direction: column;
+  background: var(--d-surface);
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius-lg);
+  box-shadow: 0 8px 28px rgb(0 0 0 / 14%);
+}
+
+.menuItem {
+  padding: var(--d-space-4) var(--d-space-5);
+  border: 0;
+  background: transparent;
+  border-radius: var(--d-radius);
+  font: inherit;
+  font-size: var(--d-text-sm);
+  text-align: left;
+  color: var(--d-text-strong);
+  cursor: pointer;
+}
+
+.menuItem:hover:not(:disabled) {
+  background: var(--d-border-soft);
+}
+
+.menuItem:focus-visible {
+  outline: 2px solid var(--d-accent);
+  outline-offset: -2px;
+}
+
+.menuItem:disabled {
+  color: var(--d-faint);
+  cursor: not-allowed;
+}
+
+/* Destructive last and red — the same rule the row menus follow. */
+.menuItemCaution {
+  color: var(--d-warn-ink);
+}
+
+.menuItemDanger {
+  color: var(--d-bad-ink);
+}
+
+/* ── buttons ───────────────────────────────────────────────────────────── */
+
+/*
+ * The mockup's own buttons, traced from its markup.
+ *
+ * core-ui's Button was used first and never sat right here: it carries its
+ * colours and its box as inline styles, so the height, the padding and the
+ * gradient all had to be fought from outside — and inline styles cannot be
+ * fought, only shouted over. These are three plain classes with the mockup's
+ * measurements, and nothing to override.
+ *
+ * Two heights on purpose: 32px for the toolbars and headers, 34px for the
+ * wizard's footer, which is what the mockup draws.
+ */
+/*
+ * Light, the same construction as a badge: the role's `wash` as the ground,
+ * its `ink` as the text, and an edge a shade lighter than that text.
+ *
+ * It was outline (transparent ground) for one iteration and read as thin —
+ * a 13px label with nothing behind it, next to badges that had a fill. Now a
+ * button and the badge that means the same thing are visibly the same object
+ * at two sizes, which is the whole point of one palette.
+ *
+ * `--btn-edge` is the role's `line` slot, the same value the badge's edge
+ * takes — see `.badge` for why it is declared per role rather than mixed down
+ * from the ink. Full `ink` is kept for hover, so the border firming up stays
+ * the affordance.
+ *
+ * Three sizes of the same chip live on the selector list below. They used to
+ * be three rules with three slightly different borders and hovers, which is
+ * how a page ends up with four button styles nobody chose; what differs now is
+ * height, padding and font-size, and nothing else.
+ */
+.btn,
+.pagerBtn,
+.checkFix {
+  --btn-ink: var(--d-neutral-ink);
+  --btn-wash: var(--d-neutral-wash);
+  --btn-edge: var(--d-neutral-line);
+  /*
+   * Hover and focus are slots, not properties, for one reason: `.btnPrimary`
+   * is filled, and a filled button cannot take the light chip's hover. Mixing
+   * 12% of its ink into its ground means mixing WHITE into blue — the button
+   * would pale on hover instead of deepening — and `border-color: var(--btn-ink)`
+   * would ring it in white. Both defaults still describe the light chip; the
+   * one variant that is not a light chip overrides two variables rather than
+   * declaring its own `background`, which is what keeps every variant a role.
+   */
+  --btn-hover-wash: color-mix(in srgb, var(--btn-ink) 12%, var(--btn-wash));
+  --btn-hover-edge: var(--btn-ink);
+  --btn-focus: var(--btn-ink);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--d-space-3);
+  border-radius: var(--d-radius);
+  font: inherit;
+  font-weight: var(--d-weight-medium);
+  cursor: pointer;
+  white-space: nowrap;
+  background: var(--btn-wash);
+  border: 1px solid var(--btn-edge);
+  color: var(--btn-ink);
+}
+
+.btn:hover:not(:disabled),
+.pagerBtn:hover:not(:disabled),
+.checkFix:hover:not(:disabled) {
+  background: var(--btn-hover-wash);
+  border-color: var(--btn-hover-edge);
+}
+
+.btn:focus-visible,
+.pagerBtn:focus-visible,
+.checkFix:focus-visible {
+  outline: 2px solid var(--btn-focus);
+  outline-offset: 1px;
+}
+
+/*
+ * Disabled drops the role rather than fading it. A pale red button still reads
+ * as "the dangerous one, dimmed"; a grey one reads as unavailable, which is
+ * what it is.
+ */
+.btn:disabled,
+.pagerBtn:disabled,
+.checkFix:disabled {
+  --btn-ink: var(--d-faint);
+  --btn-wash: var(--d-surface-alt);
+  --btn-edge: var(--d-border);
+
+  cursor: not-allowed;
+}
+
+.btn {
+  height: 32px;
+  padding: 0 var(--d-space-6);
+  font-size: var(--d-text-md);
+}
+
+/*
+ * The screen's own affirmative verb — Lưu, Tạo mới, Gửi duyệt — and the one
+ * variant that is FILLED rather than light, taken from the mockup.
+ *
+ * It was a light chip like every other variant for one iteration, on the rule
+ * that a button and the badge meaning the same thing are one object at two
+ * sizes. That rule holds for the four risk levels, which describe a STATE the
+ * reader is being told about. Primary is not a risk level: it is the one thing
+ * on the screen the reader is being asked to do, and a pale blue chip in a row
+ * of pale chips does not say that. The mockup fills it, and the difference is
+ * the whole point — the commit button should be the only filled thing in view.
+ *
+ * `--d-accent` rather than `--d-info-solid` even though both are #0000FF in
+ * light: `--d-accent` is the slot that already carries "the ground a white
+ * label sits on", and it is the one that moves in dark mode (#5560e0, chosen
+ * so white clears 4.5:1 on it — `--d-info-ink` is the light value for text ON
+ * the surface and would fail the other way round).
+ *
+ * Weight 600 stays, and now earns its keep twice: it separated primary from
+ * neutral when only hue did, and hue is the one channel a colour-blind reader
+ * may not have.
+ */
+.btnPrimary {
+  --btn-ink: var(--d-on-solid);
+  --btn-wash: var(--d-accent);
+  --btn-edge: var(--d-accent);
+  /*
+   * The fill deepens and the rim HOLDS at the resting accent, which is not a
+   * flourish — it is the only construction that survives dark mode. There the
+   * accent is #5560e0 and clears the page (#1b1c1f) by 3.36:1, with nothing to
+   * spare; deepen the rim along with the fill and the button's outline sinks
+   * into the page (2.34:1), while lightening the fill instead drops the white
+   * label below 4.5:1. Holding the rim resolves both at once, and in light it
+   * is invisible — #0000ff against #0000cc on white.
+   */
+  --btn-hover-wash: var(--d-accent-hover);
+  --btn-hover-edge: var(--d-accent);
+  /* The ring goes outside the button, onto the page — so it takes the accent,
+     not the label's white, which would vanish against the surface. */
+  --btn-focus: var(--d-accent);
+
+  padding: 0 var(--d-space-7);
+  font-weight: var(--d-weight-semibold);
+}
+
+/* The mockup gives the filled verb more room at the footer size than the
+   outlined Huỷ beside it: 16px against 14px. */
+.btnPrimary.btnLg {
+  padding: 0 var(--d-space-7);
+}
+
+/* Reversible, but someone has to do the reversing: Sửa, Tạm dừng, Xoay khoá. */
+.btnCaution {
+  --btn-ink: var(--d-warn-ink);
+  --btn-wash: var(--d-warn-wash);
+  --btn-edge: var(--d-warn-line);
+}
+
+/* Hard to undo, or it breaks a live integration: Xoá, Gỡ, Chấm dứt. */
+.btnDanger {
+  --btn-ink: var(--d-bad-ink);
+  --btn-wash: var(--d-bad-wash);
+  --btn-edge: var(--d-bad-line);
+}
+
+.btnSm {
+  height: 28px;
+  padding: 0 var(--d-space-5);
+  font-size: var(--d-text-sm);
+}
+
+.btnLg {
+  height: 34px;
+  padding: 0 var(--d-space-7);
+}
+
+/* ── option card ───────────────────────────────────────────────────────── */
+
+/*
+ * A radio row, not a card with a badge in its corner.
+ *
+ * The whole row is the target — the mockup gives it a wash when chosen instead
+ * of a "selected" chip, which is why nothing here can shrink below its own
+ * label the way a fixed-size badge could.
+ */
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--d-space-6);
+  padding: var(--d-space-6) var(--d-space-7);
+  border: 0;
+  border-bottom: 1px solid var(--d-border-soft);
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+}
+
+.option:last-child {
+  border-bottom: 0;
+}
+
+.option:hover {
+  background: var(--d-surface-alt);
+}
+
+.optionOn {
+  background: var(--d-accent-wash);
+}
+
+/*
+ * A tier or a type the portal does not release.
+ *
+ * Dimmed and inert rather than hidden: the card is the answer to "why can I not
+ * release a brand kit here?", and a card that is absent answers it with
+ * nothing. `:hover` is neutralised too, or the row still reads as pressable.
+ */
+.optionOff {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.optionOff:hover {
+  background: transparent;
+}
+
+.optionOn:hover {
+  background: var(--d-accent-wash);
+}
+
+/* The dot is drawn, not an <input>: a native radio cannot take this ring. */
+.optionRadio {
+  width: 16px;
+  height: 16px;
+  flex: none;
+  margin-top: var(--d-space-1);
+  border-radius: 50%;
+  border: 2px solid var(--d-divider);
+  background: var(--d-surface);
+}
+
+.optionOn .optionRadio {
+  border-color: var(--d-accent);
+  background: radial-gradient(var(--d-accent) 0 42%, var(--d-surface) 44%);
+}
+
+.optionText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-2);
+  min-width: 0;
+  flex: 1;
+}
+
+.optionHead {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex-wrap: wrap;
+}
+
+.optionLabel {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.optionDesc {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+/* ── switch ────────────────────────────────────────────────────────────── */
+
+/*
+ * The design's toggle: a 36×20 track that pushes its knob to one end with
+ * `justify-content`. No transform, no transition length to keep in sync — the
+ * knob's position IS the state, so it cannot drift out of step with `on`.
+ */
+.switch {
+  width: 36px;
+  height: 20px;
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: var(--d-radius-lg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--d-divider);
+}
+
+.switchOn {
+  justify-content: flex-end;
+  background: var(--d-accent);
+}
+
+.switch:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.switchKnob {
+  width: 16px;
+  height: 16px;
+  margin: 0 var(--d-space-1);
+  border-radius: 50%;
+  background: var(--d-on-solid);
+  display: block;
+}
+
+/* A row that carries a switch: label over its scope, control at the end. */
+.switchRow {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-6);
+  padding: var(--d-space-5) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.switchRow:last-child {
+  border-bottom: 0;
+}
+
+.switchText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.switchLabel {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.switchScope {
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+  font-family: var(--d-mono);
+}
+
+/* The lock that replaces a switch the operator may not touch. */
+.lock {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--d-space-3);
+  height: 22px;
+  padding: 0 var(--d-space-4);
+  border-radius: var(--d-radius-lg);
+  background: var(--d-warn-wash);
+  color: var(--d-warn-ink);
+  border: 1px solid var(--d-warn-line);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  white-space: nowrap;
+}
+
+/* ── sub-list ──────────────────────────────────────────────────────────── */
+
+/* A list panel nested inside a tab: its own toolbar, table and meta line. */
+.subBar {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  padding: var(--d-space-5) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+  flex-wrap: wrap;
+}
+
+/* ── key / value rows ──────────────────────────────────────────────────── */
+
+/* Two panels side by side on wide screens, stacked when there is no room. */
+.panels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+  gap: var(--d-space-7);
+  align-items: start;
+}
+
+/*
+ * The label column has a basis rather than a fixed width: a long label may take
+ * the space it needs instead of being clipped, and a short one gives it back.
+ * `baseline` rather than `center` so a wrapped value still lines up with its
+ * label on the first line.
+ */
+.kv {
+  display: flex;
+  gap: var(--d-space-6);
+  align-items: baseline;
+  padding: var(--d-space-5) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.kv:last-child {
+  border-bottom: 0;
+}
+
+/*
+ * Label over value, for a value that is a block rather than a phrase. The label
+ * keeps its own line at full width instead of holding a 150px column open
+ * beside a table.
+ */
+.kvStacked {
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--d-space-3);
+}
+
+/*
+ * Undo the row's sizing, which means something else entirely in a column.
+ *
+ * `flex-basis` is the MAIN-axis size, so the label's `150px` — a column width
+ * in the default row — became a 150px HEIGHT the moment the container turned
+ * vertical, and the label sat alone in a block of empty space above its value.
+ * `flex: 1` on the value did the matching thing: it stretched to fill whatever
+ * height was left.
+ *
+ * Both are told to size themselves from their content instead. This has to live
+ * beside `.kvStacked` rather than in `.kvLabel`, because the row layout wants
+ * the original values and is by far the common case.
+ */
+.kvStacked .kvLabel,
+.kvStacked .kvValue {
+  flex: none;
+  min-width: 0;
+}
+
+.kvLabel {
+  flex: 0 1 auto;
+  flex-basis: 150px;
+  min-width: 88px;
+  font-size: var(--d-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--d-muted);
+  overflow-wrap: anywhere;
+}
+
+.kvValue {
+  flex: 1;
+  min-width: 0;
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+  overflow-wrap: anywhere;
+}
+
+.kvMono {
+  font-family: var(--d-mono);
+  font-size: var(--d-text-sm);
+}
+
+/* ── activity timeline ─────────────────────────────────────────────────── */
+
+.event {
+  display: flex;
+  gap: var(--d-space-6);
+  padding: var(--d-space-6) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.event:last-of-type {
+  border-bottom: 0;
+}
+
+/* A dot, not a badge: the tone is the whole signal, the action names itself. */
+.eventDot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  margin-top: var(--d-space-3);
+  border-radius: 50%;
+}
+
+.eventBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.eventHead {
+  display: flex;
+  align-items: baseline;
+  gap: var(--d-space-4);
+  flex-wrap: wrap;
+}
+
+.eventAction {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.eventAt {
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+  font-family: var(--d-mono);
+}
+
+.eventDetail {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+  overflow-wrap: anywhere;
+}
+
+.eventActor {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+  white-space: nowrap;
+}
+
+/* The way out of a truncated list, on the panel's own footer rule. */
+.panelFoot {
+  padding: var(--d-space-5) var(--d-space-7);
+  background: var(--d-surface-alt);
+  border-top: 1px solid var(--d-border);
+  text-align: center;
+  font-size: var(--d-text-sm);
+}
+
+/* ── stat tiles ────────────────────────────────────────────────────────── */
+
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(180px, 100%), 1fr));
+  gap: var(--d-space-6);
+}
+
+.tile {
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  background: var(--d-surface);
+  padding: var(--d-space-6) var(--d-space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-2);
+}
+
+.tileLabel {
+  font-size: var(--d-text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--d-muted);
+}
+
+.tileValue {
+  font-size: var(--d-text-xl);
+  font-weight: var(--d-weight-bold);
+  color: var(--d-ink);
+  letter-spacing: -0.01em;
+}
+
+.tileNote {
+  font-size: var(--d-text-xs);
+  color: var(--d-faint);
+}
+
+/* ── lifecycle track ───────────────────────────────────────────────────── */
+
+/*
+ * Four stages laid on one line, each followed by the rule that reaches the
+ * next. The last stage's rule is hidden rather than omitted so every stage
+ * keeps the same width and the dots stay evenly spaced.
+ */
+.track {
+  display: flex;
+  align-items: flex-start;
+  padding: var(--d-space-8) var(--d-space-7);
+}
+
+.trackStep {
+  display: flex;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+}
+
+.trackText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-3);
+  min-width: 0;
+  align-items: flex-start;
+}
+
+.trackDot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-bold);
+  color: var(--d-on-solid);
+}
+
+.trackLabel {
+  font-size: var(--d-text-sm);
+  font-weight: var(--d-weight-semibold);
+}
+
+.trackNote {
+  font-size: var(--d-text-xs);
+  color: var(--d-faint);
+}
+
+.trackLine {
+  flex: 1;
+  height: 1px;
+  margin: var(--d-space-6) var(--d-space-5) 0;
+  background: var(--d-border);
+}
+
+.trackLineLast {
+  visibility: hidden;
+}
+
+/* ── readiness ─────────────────────────────────────────────────────────── */
+
+.readyHead {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-7);
+  padding: var(--d-space-7) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+  background: var(--d-surface-alt);
+}
+
+/* The ring is a conic gradient with a punched-out centre — no SVG, no library. */
+.ring {
+  width: 68px;
+  height: 68px;
+  flex: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringHole {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--d-surface-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--d-text-lg);
+  font-weight: var(--d-weight-bold);
+  color: var(--d-ink);
+  line-height: 1;
+}
+
+.readyText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+}
+
+.readyHeadline {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.readySummary {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+.check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--d-space-6);
+  padding: var(--d-space-6) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.check:last-child {
+  border-bottom: 0;
+}
+
+.checkText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.checkLabel {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.checkDetail {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+/*
+ * The remedy offered beside a failing readiness check. The chip above supplies
+ * everything but the size; it carries the `info` role because "go and fix it"
+ * is this row's affirmative verb.
+ *
+ * A fix whose destination is not wired yet stays on screen rather than
+ * disappearing: the row is telling the operator something is wrong, and the
+ * shape of the remedy is part of that message. Disabled with the reason as the
+ * tooltip, which is the rule the gated lifecycle buttons follow.
+ */
+.checkFix {
+  --btn-ink: var(--d-info-ink);
+  --btn-wash: var(--d-info-wash);
+  --btn-edge: var(--d-info-line);
+
+  height: 26px;
+  padding: 0 var(--d-space-5);
+  flex: none;
+  font-size: var(--d-text-sm);
+}
+
+/* ── detail ────────────────────────────────────────────────────────────── */
+
+/* Underline tabs. Scrolls sideways rather than wrapping — a wrapped tab row
+   loses the single baseline the underline is measured from. */
+.tabs {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--d-space-1);
+  border-bottom: 1px solid var(--d-border);
+  overflow-x: auto;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  padding: var(--d-space-5) var(--d-space-7);
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  font: inherit;
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-medium);
+  color: var(--d-muted);
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.tabOn {
+  border-bottom-color: var(--d-accent);
+  color: var(--d-accent);
+  font-weight: var(--d-weight-semibold);
+}
+
+.tabCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 var(--d-space-3);
+  border-radius: var(--d-radius-lg);
+  background: var(--d-border-soft);
+  color: var(--d-neutral-ink);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+}
+
+/* The same chip, counting what is wrong rather than what is there. */
+.tabCountBad {
+  background: var(--d-bad-wash);
+  color: var(--d-bad-ink);
+}
+
+/* Identity header: logo, name over its meta line, actions opposite. */
+.identity {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--d-space-8);
+  flex-wrap: wrap;
+}
+
+.identityMain {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-7);
+  min-width: 0;
+}
+
+.identityName {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-5);
+  flex-wrap: wrap;
+}
+
+.identityTitle {
+  margin: 0;
+  font-size: var(--d-text-xl);
+  font-weight: var(--d-weight-bold);
+  letter-spacing: -0.01em;
+  color: var(--d-ink);
+}
+
+.identityMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex-wrap: wrap;
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+.identityLines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-3);
+  min-width: 0;
+}
+
+/*
+ * The separator between meta entries.
+ *
+ * Two things were wrong with it. `·` (U+00B7 MIDDLE DOT) is a couple of pixels
+ * of ink at this text size, and `--d-divider` is a hairline colour — 1.33:1 on
+ * white and 1.41:1 on the dark surface, which is below the 3:1 that any
+ * non-text mark needs to be seen at all. Between them the dot was there and
+ * nobody could tell.
+ *
+ * `•` (U+2022 BULLET) at a stated size, in the faintest colour that still
+ * clears 3:1 (3.11:1 light, 5.10:1 dark). Still a character rather than a drawn
+ * circle, so a copied line keeps its separators — "Loại định danh • 7" rather
+ * than the two values run together.
+ */
+.dot {
+  flex: none;
+  font-size: var(--d-text-xs);
+  /* The bullet sits high in its em box; 1 keeps it from growing the row. */
+  line-height: 1;
+  color: var(--d-faint);
+}
+
+/* ── wizard ────────────────────────────────────────────────────────────── */
+
+/* The back affordance above the title — a link in everything but markup. */
+.back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--d-space-3);
+  align-self: flex-start;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: var(--d-muted);
+  font: inherit;
+  font-size: var(--d-text-sm);
+  cursor: pointer;
+}
+
+.back:hover {
+  color: var(--d-accent);
+}
+
+.steps {
+  display: flex;
+  gap: var(--d-space-2);
+  flex-wrap: wrap;
+}
+
+/*
+ * A step is a button because it is one: the design lets an operator jump back
+ * to a finished step. Pending steps stay flat and unbordered so the row reads
+ * as progress rather than as five equal tabs.
+ */
+.step {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  flex: 1 1 150px;
+  min-width: 0;
+  padding: var(--d-space-5) var(--d-space-6);
+  border-radius: var(--d-radius-lg);
+  border: 1px solid transparent;
+  background: transparent;
+  text-align: left;
+  font: inherit;
+  font-size: var(--d-text-sm);
+  font-weight: var(--d-weight-medium);
+  color: var(--d-muted);
+  cursor: pointer;
+}
+
+.stepActive {
+  background: var(--d-surface-alt);
+  border-color: var(--d-border);
+}
+
+.stepCurrent {
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.stepDot {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  background: var(--d-border-soft);
+  color: var(--d-muted);
+  border: 2px solid var(--d-border);
+}
+
+.stepDotActive {
+  background: var(--d-accent);
+  color: var(--d-on-solid);
+  border-color: transparent;
+}
+
+/*
+ * A step the operator opened and left incomplete.
+ *
+ * Red on the dot rather than on the whole chip: the chip still has to read as a
+ * reachable destination, and colouring all five would make the stepper look
+ * like an error summary instead of a map.
+ *
+ * It has to sit AFTER `.stepDot`, not merely after `.stepDotActive`. Both are
+ * one class deep, so the cascade is decided by source order alone — declared
+ * higher up the file, as this was, the base rule's grey background and muted
+ * text won and the failed step rendered exactly like an untouched one.
+ */
+.stepDotError {
+  background: var(--d-danger);
+  border-color: transparent;
+  /* White on red in both themes — the ground is the solid, not the surface. */
+  color: var(--d-on-solid);
+}
+
+.stepLabel {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Two columns on wide screens, stacked below — the rail is not a sidebar. */
+.wizardBody {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+  gap: var(--d-space-7);
+  align-items: start;
+}
+
+/* The strip under the step panel: why Next is disabled, then the two steps. */
+/*
+ * Pinned to the bottom of the viewport.
+ *
+ * `sticky`, not `fixed`: the footer is a sibling of the wizard body, so it
+ * inherits that column's width for free and stays in the page's flow — a fixed
+ * element would need its width measured in JavaScript and would still drift the
+ * moment the sidebar or the viewport changed. The mockup's own form footer is
+ * `position: sticky; bottom: 0` for the same reason.
+ *
+ * The translucent ground plus blur is what keeps the panel scrolling *under* it
+ * readable rather than colliding with it; `z-index` is above the panels and
+ * below the overflow sheets, which sit at 60.
+ */
+.actionBar {
+  position: sticky;
+  bottom: 0;
+  z-index: var(--d-z-sticky, 20);
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  padding: var(--d-space-6) var(--d-space-7);
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  box-shadow: var(--d-shadow-sticky);
+  /*
+   * A tint of the surface rather than the surface itself, so the blur has
+   * something to do. `color-mix` keeps it correct in both themes without a
+   * second literal.
+   */
+  background: color-mix(in srgb, var(--d-surface-alt) 88%, transparent);
+  backdrop-filter: blur(6px);
+  flex-wrap: wrap;
+}
+
+.actionBarNote {
+  flex: 1;
+  min-width: 180px;
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+/*
+ * core-ui's SearchableSelect list is `position: absolute` at z-index 10.
+ * This bar is 20, so a list that opens downward from the last field on a
+ * step — CBS account type on tenant onboarding — paints under the buttons.
+ * Lift the open control above the bar and under the popovers (10000). Only
+ * while it holds focus, so a closed field still scrolls underneath.
+ */
+.screen :global(.gg-searchable-select):focus-within {
+  z-index: 40;
+}
+
+/* ── gates rail ────────────────────────────────────────────────────────── */
+
+.gate {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--d-space-5);
+  padding: var(--d-space-6) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.gate:last-child {
+  border-bottom: 0;
+}
+
+.gateMark {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  margin-top: var(--d-hairline);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-bold);
+  color: var(--d-on-solid);
+}
+
+.gatePass {
+  background: var(--d-ok-solid);
+}
+
+.gateFail {
+  background: var(--d-bad-solid);
+}
+
+.gateWarn {
+  background: var(--d-warn-solid);
+  color: var(--d-on-warn);
+}
+
+.gateText {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-1);
+  min-width: 0;
+}
+
+.gateLabel {
+  font-size: var(--d-text-sm);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text);
+}
+
+.gateDetail {
+  font-size: var(--d-text-xs);
+  color: var(--d-muted);
+}
+
+/* A bullet list of what provisioning will create. */
+.artifact {
+  display: flex;
+  gap: var(--d-space-5);
+  padding: var(--d-space-5) var(--d-space-7);
+  border-bottom: 1px solid var(--d-border-soft);
+  font-size: var(--d-text-sm);
+  color: var(--d-text-strong);
+}
+
+.artifact:last-child {
+  border-bottom: 0;
+}
+
+.artifactDot {
+  width: 6px;
+  height: 6px;
+  flex: none;
+  margin-top: var(--d-space-3);
+  border-radius: 50%;
+  background: var(--d-faint);
+}
+
+/* ── field grid ────────────────────────────────────────────────────────── */
+
+/*
+ * One column, as the mockup draws it.
+ *
+ * A two-column grid fits more above the fold but reads as two forms: the eye has
+ * to decide, on every row, whether the next field is to the right or below. The
+ * mockup stacks them, and a wizard step is read once, in order.
+ */
+.fields {
+  padding: var(--d-space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-7);
+}
+
+/*
+ * For a group whose children are already full-bleed rows — checklist lines,
+ * option cards. They carry their own 16px inset and their own hairline, so the
+ * body must add neither padding nor gap or every row is inset twice and the
+ * dividers stop meeting the panel's edges.
+ */
+.fieldsFlush {
+  padding: 0;
+  gap: 0;
+}
+
+/*
+ * The line under a section head, for a rule the field labels cannot carry —
+ * "a mini app may hold at most one financial scope". Muted, because it is
+ * context for the fields rather than one of them.
+ */
+.fieldGroupDesc {
+  margin: 0;
+  padding: var(--d-space-4) var(--d-space-7) 0;
+  color: var(--d-muted);
+  font-size: var(--d-text-sm);
+}
+
+/*
+ * Two columns, folding back to one below the narrowest window the portal is
+ * designed for. Screens used to reach for a local grid rule here; this is that
+ * rule, once.
+ */
+.fieldsTwoUp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  /* Keep row gap even when this class overrides `.fields`' display. */
+  gap: var(--d-space-7);
+}
+
+@media (max-width: 1280px) {
+  .fieldsTwoUp {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fieldGroup {
+  border-bottom: 1px solid var(--d-border-soft);
+}
+
+.fieldGroup:last-child {
+  border-bottom: 0;
+}
+
+/*
+ * Modal Form sections. Stack as one column with a hairline between groups —
+ * not separate rounded cards (that doubled the frame and left gaps of radius).
+ */
+.modalForm > .fieldGroup,
+.modalFormScroll > .fieldGroup {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid var(--d-border);
+  overflow: hidden;
+}
+
+.modalForm > .fieldGroup:last-child,
+.modalFormScroll > .fieldGroup:last-child {
+  border-bottom: none;
+}
+
+/*
+ * A Modal Form taller than the viewport.
+ *
+ * The core-ui dialog sizes itself to its content and never scrolls, so a form
+ * with a search box, a result list and settings simply runs off the bottom of
+ * the screen on a laptop — taking Cancel/Confirm with it.
+ *
+ * Layout: flex column. Put fields in `.modalFormScroll` (the only pane that
+ * scrolls). `.modalFoot` stays pinned below it and is never part of the
+ * scrollport. Always alongside `modalForm`, never instead of it.
+ */
+.modalFormTall {
+  max-height: min(85vh, 52rem);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 0;
+}
+
+/*
+ * Cap height on the scroll pane itself. Relying on flex-shrink alone failed:
+ * with `flex-basis: auto` the pane sized to its content, the form hit
+ * max-height + overflow:hidden, and nothing scrolled. The foot stays outside
+ * this pane so Cancel/Confirm never move with the fields.
+ */
+.modalFormScroll {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: min(calc(85vh - 6rem), 46rem);
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.modalFormTall > .modalFoot {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+
+.modalFoot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--d-space-7);
+  margin-top: var(--d-space-7);
+  padding-top: var(--d-space-6);
+  border-top: 1px solid var(--d-border-soft);
+  background: var(--d-surface);
+}
+
+.modalFootNote {
+  flex: 1;
+  min-width: 0;
+  color: var(--d-muted);
+  font-size: var(--d-text-xs);
+}
+
+.modalFootBtns {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--d-space-4);
+}
+
+/* ── table ─────────────────────────────────────────────────────────────── */
+
+/*
+ * Hand-drawn rather than `DataGrid`.
+ *
+ * The grid was the first choice and it does not fit this screen. Its column
+ * `header` is typed `string`, so the design's select-all checkbox cannot live in
+ * the header cell where it belongs; and it inline-styles its rows, which no
+ * stylesheet can reach — the doubled frame, the pill pager and the 40px rows
+ * were all inline. What it would have contributed beyond that is sorting,
+ * resizing and a search box, none of which this design draws.
+ */
+
+/*
+ * Cell modifiers, as four atoms rather than every combination.
+ *
+ * `.table td` already carries the padding, the hairline and the type; these
+ * only say what is different about one column. They exist because the screens
+ * that came from the legacy table wrote each of these as an inline style on
+ * every cell, which is how a table ends up with its own font size.
+ */
+.cellMono {
+  font-family: var(--d-mono);
+}
+
+.cellMuted {
+  color: var(--d-muted);
+}
+
+.cellNoWrap {
+  white-space: nowrap;
+}
+
+.cellRight {
+  text-align: right;
+}
+
+.tableWrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  padding: var(--d-space-5) var(--d-space-6);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--d-surface-alt);
+  border-bottom: 1px solid var(--d-border);
+  white-space: nowrap;
+}
+
+/* The checkbox column: flush to the panel's inset, no label to align to. */
+.table th.pick,
+.table td.pick {
+  width: 40px;
+  padding-left: var(--d-space-7);
+  padding-right: 0;
+}
+
+.table th.end,
+.table td.end {
+  width: 44px;
+  padding-right: var(--d-space-7);
+  text-align: right;
+}
+
+.table th.right,
+.table td.right {
+  text-align: right;
+}
+
+.table td {
+  padding: var(--d-space-5) var(--d-space-6);
+  border-bottom: 1px solid var(--d-border-soft);
+  vertical-align: middle;
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+}
+
+.table tbody tr {
+  cursor: pointer;
+}
+
+.table tbody tr:hover {
+  background: var(--d-surface-alt);
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.muted {
+  color: var(--d-muted);
+}
+
+/* ── pager ─────────────────────────────────────────────────────────────── */
+
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--d-space-6);
+  padding: var(--d-space-5) var(--d-space-7);
+  border-top: 1px solid var(--d-border);
+  background: var(--d-surface-alt);
+  flex-wrap: wrap;
+}
+
+.pagerMeta {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+.pagerRight {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-5);
+}
+
+.pagerRows {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-3);
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+}
+
+.pagerRows select {
+  height: 28px;
+  padding: 0 var(--d-space-3);
+  border-radius: var(--d-radius);
+  border: 0;
+  box-shadow: 0 0 0 1px var(--d-border);
+  background: var(--d-surface);
+  font: inherit;
+  font-size: var(--d-text-sm);
+  color: var(--d-text-strong);
+  cursor: pointer;
+  outline: none;
+}
+
+.pagerNav {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-2);
+}
+
+/* Prev/next. The chip above supplies everything but the size; paging is the
+   definition of a `neutral` verb, so it takes the default role. */
+/*
+ * The one chip at pager size — and the one that has to move its ground.
+ *
+ * Every other button sits on the page; this one sits inside `.pager`, whose
+ * strip is `--d-surface-alt`. The neutral wash there is #f1f1f1 on #fafafa,
+ * 1.08:1 — a slightly darker grey patch in a grey strip, which reads as part
+ * of the strip rather than as something to press. The mockup puts it back on
+ * the page's own ground, so the button is the surface and the strip is the
+ * alt, and the 1px edge is what separates them in both themes.
+ *
+ * `--d-surface` rather than a literal #fff: in dark the pair inverts (surface
+ * #1b1c1f, strip #232428) and the relationship — the control wears the page's
+ * colour, not the strip's — is what carries over, not the direction.
+ *
+ * Disabled still wins over this: `.pagerBtn:disabled` outweighs `.pagerBtn`,
+ * so an unavailable pager keeps the strip's own grey, exactly as the mockup
+ * greys it out.
+ */
+.pagerBtn {
+  --btn-wash: var(--d-surface);
+
+  height: 28px;
+  padding: 0 var(--d-space-5);
+  font-size: var(--d-text-sm);
+}
+
+.pagerOf {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+  padding: 0 var(--d-space-2);
+  white-space: nowrap;
+}
+
+/* ── grid ──────────────────────────────────────────────────────────────── */
+
+/*
+ * DataGrid draws its own header, body and footer from core-ui's variables,
+ * which `.scope` has already retuned. What is left is the design's own table
+ * chrome, which the component has no token for: the shaded uppercase header
+ * strip, and a footer that sits on the alternate surface.
+ */
+.grid [role="columnheader"],
+.grid thead th {
+  background: var(--d-surface-alt);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.grid tbody tr:hover {
+  background: var(--d-surface-alt);
+}
+
+.grid td {
+  font-size: var(--d-text-md);
+  vertical-align: middle;
+}
+
+.gridClickable tbody tr {
+  cursor: pointer;
+}
+
+/* ── empty state ───────────────────────────────────────────────────────── */
+
+.empty {
+  padding: 44px var(--d-space-9);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--d-space-4);
+}
+
+.emptyTitle {
+  font-size: var(--d-text-md);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-text-strong);
+}
+
+.emptyBody {
+  font-size: var(--d-text-sm);
+  color: var(--d-muted);
+  max-width: 44ch;
+}
+
+/* ── layout helpers ────────────────────────────────────────────────────── */
+
+/*
+ * No page-level width cap.
+ *
+ * The design draws these screens inside its own `<main>`, where 1400px is about
+ * the whole column, so the cap never shows. Payload's content area is wider, and
+ * a cap with no auto margin left the slack all on one side — the screen sat
+ * against the left gutter with a gap on the right.
+ *
+ * Centring it would have evened the margins and broken something else: no other
+ * menu in this portal caps its width (`Gutter` just adds equal padding), so a
+ * centred tenant screen would start at a different left edge from every screen
+ * beside it in the nav. Filling the column keeps both — equal margins, and a
+ * left edge that lines up.
+ *
+ * Measures that genuinely need a limit set their own: prose at 72ch, the search
+ * box at 340px, the wizard's field grid through its own column minimum.
+ */
+/*
+ * The page's vertical rhythm.
+ *
+ * `padding-bottom` matches the gap, so the last section sits as far from the
+ * bottom of the page as the sections sit from each other — without it the last
+ * panel ran straight into the edge of the viewport.
+ */
+.screen {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-gap-section);
+  padding-bottom: var(--d-gap-section);
+  /* A flex child defaults to min-width:auto — its content's width — so one wide
+     table would push the whole screen, and the page, past the viewport. */
+  min-width: 0;
+  max-width: 100%;
+}
+
+/*
+ * A wrapper that exists for a reason other than layout, holding sections that
+ * would otherwise be children of `.screen`.
+ *
+ * The case is a `<form>`: the panel of fields and the sticky action bar have
+ * to be inside one form element for submit and Enter to work, and that element
+ * then becomes their container — so it, not `.screen`, is what spaces them.
+ * Without this the bar sat flush against the panel while every other pair on
+ * the page sat 20px apart.
+ *
+ * Same gap as `.screen`, through the same token, so a screen reads the same
+ * whether or not a wrapper happens to be in the way.
+ */
+.sectionStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-gap-section);
+  min-width: 0;
+}
+
+/*
+ * For a screen whose last child is `position: sticky; bottom: 0`.
+ *
+ * Padding under a sticky element is still scrollable content, so the footer
+ * would lift off the viewport's edge at the end of the scroll — which is the
+ * opposite of what sticking it there was for. The onboard wizard is the case.
+ */
+.screenFlush {
+  padding-bottom: 0;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-7);
+  min-width: 0;
+}
+
+/* ── avatar edit affordance ─────────────────────────────────────────────── */
+
+/*
+ * The logo is its own control, and used to say so with a "Đổi ảnh" caption
+ * under it. The caption pushed the identity row taller than the design draws it
+ * and read as a label for the tenant rather than a verb. The affordance is now
+ * a pencil in the corner of the frame, on hover — the pattern every avatar
+ * upload on the web uses, and one that costs no layout.
+ */
+.avatarEdit {
+  position: relative;
+  display: inline-flex;
+  flex: none;
+  border-radius: var(--d-radius);
+}
+
+.avatarPen {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid var(--d-surface);
+  background: var(--d-accent);
+  color: var(--d-on-solid);
+  opacity: 0;
+  transform: scale(0.85);
+  transition:
+    opacity 120ms ease,
+    transform 120ms ease;
+  /* The <label> around it owns the click; the badge must not intercept it. */
+  pointer-events: none;
+}
+
+/*
+ * `focus-within` as well as `:hover`: the file input inside the label is the
+ * only focusable thing here, so a keyboard operator would otherwise have no
+ * indication that the logo is a control at all.
+ */
+.avatarEdit:hover .avatarPen,
+.avatarEdit:focus-within .avatarPen {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* An upload in flight keeps the badge up — with the dimmed image it is the
+   only thing left saying the click was received. */
+.avatarBusy .avatarPen {
+  opacity: 1;
+  transform: scale(1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .avatarPen {
+    transition: none;
+    transform: none;
+  }
+}
+
+/*
+ * The back link and the identity card, grouped.
+ *
+ * `.screen` spaces its children 20px apart, which is right between sections and
+ * too much between a back link and the card it introduces. The padding and the
+ * gap are the same number so the link sits the same distance from the edge
+ * above it as from the card below.
+ */
+.identityGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-5);
+  padding-top: var(--d-space-5);
+}
+
+/* ── Foundation Primitives: Dialog, Skeleton, StatusBadge ──────────────────── */
+
+/* ConfirmDialog */
+.dialogOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--d-z-modal, 9999);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--d-space-7);
+}
+
+.dialogBackdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.dialogCard {
+  position: relative;
+  width: min(440px, 100vw - 32px);
+  max-width: calc(100vw - 32px);
+  background: var(--d-surface);
+  border: 1px solid var(--d-border);
+  border-radius: var(--d-radius);
+  box-shadow: var(--d-shadow-dialog);
+  /*
+   * Visible, not hidden. The card carries its own padding, so nothing reaches
+   * a corner for a clip to round — and a clip would swallow a core-ui Select's
+   * sheet and an Input's focus ring, the two things a dialog with fields is
+   * made of.
+   */
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  padding: var(--d-space-8);
+  gap: var(--d-space-7);
+  margin: 0;
+  /* Never taller than the overlay's padded viewport: a long form (API
+     registry's Add surface) scrolls its fields; head and foot stay put. */
+  max-height: calc(100dvh - 2 * var(--d-space-7));
+  min-height: 0;
+}
+
+.dialogHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--d-space-6);
+}
+
+.dialogTitle {
+  font-size: var(--d-text-lg);
+  font-weight: var(--d-weight-semibold);
+  color: var(--d-ink);
+  line-height: 1.4;
+  margin: 0;
+  min-width: 0;
+  /* A title naming a record can be one unbroken id — it wraps, it never bleeds. */
+  overflow-wrap: anywhere;
+}
+
+.dialogBody {
+  font-size: var(--d-text-md);
+  color: var(--d-text);
+  line-height: 1.5;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/*
+ * The slot for the fields — `children`, which make the dialog a form.
+ *
+ * A column, because fields arrive as siblings and `.dialogBody` above holds a
+ * sentence (a flex column there would break `strong` off its text). A
+ * `D.FieldGroup` draws its own section strip and inset, so the slot adds
+ * nothing else — a bare FormField inside still sits on the card's own padding.
+ */
+.dialogChildren {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-6);
+  min-width: 0;
+  /*
+   * The part that scrolls when the card hits its max-height. Safe for the
+   * sheets: Select, menu and colour popovers are portaled to `body`. The inset
+   * pays back what `overflow` would clip of an Input's focus ring.
+   */
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--d-space-2);
+  margin: calc(-1 * var(--d-space-2));
+}
+
+.dialogFoot {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--d-space-4);
+  margin-top: var(--d-space-2);
+}
+
+/*
+ * Skeletons — one shimmer primitive for every loading placeholder.
+ *
+ * `.skeletonBar` is the atomic rectangle: every block, row line, avatar mark,
+ * trailing chip, and table cell is drawn from it. Tint is `--d-skeleton-tint`
+ * so a scope with its own palette (the sidebar, a dark surface) can retune the
+ * colour once on a container instead of forking the class.
+ *
+ * `.skeletonHost` / `.skeletonRow` / `.skeletonCell` are the table-variant
+ * wrappers; the foundation test still greps for `[class*='skeletonRow']` and
+ * `[class*='skeletonCell']`, so those names stay. `.skeletonRowHost` and
+ * `.skeletonRowLines` compose the row variant.
+ */
+.skeletonBar {
+  display: block;
+  border-radius: var(--d-radius);
+  background: linear-gradient(
+    90deg,
+    var(--d-skeleton-tint, var(--d-surface-alt)) 25%,
+    var(--d-skeleton-tint-hi, var(--d-border-soft)) 50%,
+    var(--d-skeleton-tint, var(--d-surface-alt)) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite linear;
+}
+
+.skeletonRadiusMd {
+  border-radius: var(--d-radius-lg);
+}
+
+.skeletonRadiusPill {
+  border-radius: var(--d-radius-pill);
+}
+
+.skeletonRadiusCircle {
+  border-radius: 50%;
+}
+
+.skeletonRowHost {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-4);
+  width: 100%;
+}
+
+.skeletonRowLines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--d-space-2);
+  flex: 1;
+  min-width: 0;
+}
+
+.skeletonHost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: var(--d-space-5);
+  padding: var(--d-space-7) var(--d-space-7);
+}
+
+.skeletonRow {
+  display: flex;
+  align-items: center;
+  gap: var(--d-space-6);
+  width: 100%;
+}
+
+/* Table-cell only owns its size and flex; the shimmer/tint come from `.skeletonBar`. */
+.skeletonCell {
+  height: 16px;
+  flex: 1;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* StatusBadge */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--d-space-3);
+}
+
+.statusBadgeDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}

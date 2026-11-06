@@ -1,0 +1,35 @@
+{{!--
+  ?lang=vi|en|ko (runtime/README.md) for a page built in several languages (build.js, buildLocalePage).
+  A language the page lacks, or an unknown one, opens English, else Vietnamese. Without ?lang a
+  language's own page (current set) stays as it is, and the page's root address opens Vietnamese.
+--}}
+{{#if localeRedirect}}
+<script>
+  (function () {
+    var variants = {{{json localeRedirect.variants}}};
+    var current = {{{json localeRedirect.current}}};
+    var defaultLocale = {{{json localeRedirect.defaultLocale}}};
+    var fallbackLocale = {{{json localeRedirect.fallbackLocale}}};
+    var has = function (code) {
+      return !!code && Object.prototype.hasOwnProperty.call(variants, code);
+    };
+    var asked = null;
+    try {
+      asked = new URLSearchParams(window.location.search).get('lang');
+    } catch (e) {}
+    var text = asked ? String(asked).trim().toLowerCase() : '';
+    var lang = text ? text.split(/[-_]/)[0] || text : '';
+    var target = '';
+    if (lang) {
+      target = has(lang) ? lang : has(fallbackLocale) ? fallbackLocale : '';
+    } else if (current) {
+      return;
+    }
+    if (!target) {
+      target = has(defaultLocale) ? defaultLocale : has(fallbackLocale) ? fallbackLocale : Object.keys(variants)[0];
+    }
+    if (!target || target === current) return;
+    window.location.replace(variants[target] + window.location.search + window.location.hash);
+  })();
+</script>
+{{/if}}

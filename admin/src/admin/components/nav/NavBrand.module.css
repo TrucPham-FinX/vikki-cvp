@@ -1,0 +1,77 @@
+/* ---------------------------------------------------------------------------
+ * NavBrand — the orbit mark + wordmark at the top of the sidebar.
+ *
+ * Height matches `--app-header-height` so the wordmark lines up with the sticky
+ * page header. Sticky inside `.nav__scroll` (whose Payload padding is zeroed in
+ * shell.scss) so long menus scroll under the mark while it stays pinned —
+ * mirror of the bottom user card. Opaque top-of-rail colour so rows cannot
+ * show through.
+ * ------------------------------------------------------------------------- */
+
+.brand {
+  align-items: center;
+  /*
+   * Opaque: menu rows scroll underneath while sticky. Same colour as the TOP of
+   * the sidebar gradient (see shell.scss `--gg-nav-bg-top`).
+   */
+  background: var(--gg-nav-bg-top, #f7f8fc);
+  border-bottom: 1px solid var(--gg-nav-hairline, rgb(18 21 31 / 10%));
+  display: flex;
+  flex-shrink: 0;
+  gap: 10px;
+  height: var(--app-header-height);
+  min-width: 0;
+  padding-inline-start: var(--nav-padding-inline-start, var(--base));
+  /*
+   * Clear of the collapse chevron. It is centred on the sidebar's edge, so only
+   * half of it reaches in here — reserving the whole gutter, as this did while
+   * the button sat inside the rail, cost the wordmark a chevron's width for
+   * nothing. Kept in step with shell.scss's `margin-inline-start`.
+   */
+  padding-inline-end: max(var(--nav-padding-inline-end, var(--base)), calc(var(--gutter-h) / 2));
+  position: sticky;
+  top: 0;
+  width: 100%;
+  /* Above menu rows and the sticky user card while both ends are pinned. */
+  z-index: 2;
+}
+
+/* ---- brand mark ---- */
+
+/* The symbol is a full-colour PNG on a transparent ground; the slot only sizes it. */
+.mark {
+  display: flex;
+  flex: none;
+}
+
+/* ---- wordmark ---- */
+
+.text {
+  display: flex;
+  flex-direction: column;
+  /* Air between the name and the line under it; at a bare line-height they touch. */
+  gap: 3px;
+  min-width: 0;
+  line-height: 1.15;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  /* Written as the constant spells it, like the Partner Portal and Digital
+     Center wordmarks — the three portals share one naming style. */
+  letter-spacing: 0.02em;
+  color: var(--gg-nav-text-strong, #ffffff);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.suffix {
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  color: var(--gg-nav-text-muted, #98a0b8);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
