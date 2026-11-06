@@ -9,8 +9,13 @@ Handlebars.registerHelper('eq', function (a, b) {
 });
 
 const ROOT = __dirname;
-const PAGES = path.join(ROOT, 'pages');
-const OUT = path.resolve(ROOT, '../vikki-cvp');
+// CVP_DATA_DIR / CVP_OUT_DIR / CVP_PAGES_DIR point a build at another copy of data/, another
+// output folder and another copy of pages/ (the admin's preview and publish, admin/src/cvp), so
+// the repo's own stay untouched. CVP_ONLY_PAGE builds that one page folder and no other.
+const PAGES = process.env.CVP_PAGES_DIR ? path.resolve(process.env.CVP_PAGES_DIR) : path.join(ROOT, 'pages');
+const DATA = process.env.CVP_DATA_DIR ? path.resolve(process.env.CVP_DATA_DIR) : path.join(ROOT, 'data');
+const OUT = process.env.CVP_OUT_DIR ? path.resolve(process.env.CVP_OUT_DIR) : path.resolve(ROOT, '../vikki-cvp');
+const ONLY_PAGE = process.env.CVP_ONLY_PAGE || '';
 const HOST = path.resolve(ROOT, '../');
 
 /* ========= PARTIALS ========= */
@@ -75,11 +80,11 @@ function prepareNumOrder(data) {
 
 function loadData(pageName, templateName) {
   const candidates = [
-    path.join(ROOT, 'data', pageName, `${templateName}.json`),
+    path.join(DATA, pageName, `${templateName}.json`),
 
-    path.join(ROOT, 'data', pageName, 'list.json'),
-    path.join(ROOT, 'data', pageName, `${pageName}.json`),
-    path.join(ROOT, 'data', pageName, 'index.json'),
+    path.join(DATA, pageName, 'list.json'),
+    path.join(DATA, pageName, `${pageName}.json`),
+    path.join(DATA, pageName, 'index.json'),
   ];
 
   for (const p of candidates) {
@@ -91,8 +96,15 @@ function loadData(pageName, templateName) {
   return {};
 }
 
+// ?lang=vi|en|ko (runtime/README.md). A page is built in each language it has a
+// data/<page>/<lang>.json for; `en` stays first because the first file found
+// decides the template's filename (buildPage).
+const LOCALES = ['en', 'vi', 'ko'];
+const DEFAULT_LOCALE = 'vi';
+const FALLBACK_LOCALE = 'en';
+
 function loadLocaleData(pageName, locale) {
-  const dataPath = path.join(ROOT, 'data', pageName, `${locale}.json`);
+  const dataPath = path.join(DATA, pageName, `${locale}.json`);
   if (!fs.existsSync(dataPath)) return null;
 
   return JSON.parse(fs.readFileSync(dataPath, 'utf8'));
@@ -164,14 +176,96 @@ function renderPage({ pageName, templateName, templatePath, data, outDir, output
   fs.writeFileSync(path.join(outDir, outputName), html);
 }
 
+/**
+ * What the localeRedirect partial needs on a file built in several languages:
+ * where each language's copy is, from the page's root (current = null) or from
+ * the copy of `current` in <page>/<current>/.
+ */
+function localeRedirect(locales, outputName, current = null) {
+  const prefix = current ? '../' : '';
+  return {
+    current,
+    defaultLocale: DEFAULT_LOCALE,
+    fallbackLocale: FALLBACK_LOCALE,
+    variants: Object.fromEntries(
+      locales.map((locale) => [locale, `${prefix}${locale}/${outputName}`]),
+    ),
+  };
+}
+
+const localeIndexTpl = Handlebars.compile(`<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex" />
+  <title>{{title}}</title>
+  {{> localeRedirect}}
+  <noscript><meta http-equiv="refresh" content="0; url={{noscriptHref}}" /></noscript>
+</head>
+<body></body>
+</html>
+`);
+
+/**
+ * Writes each file of a page built per language to <page>/<lang>/<file>, and
+ * <page>/<file> as the file's one address: it opens the copy in the language
+ * ?lang asks for (components/localeRedirect.hbs). A copy whose file exists in
+ * other languages too carries the same redirect, for a ?lang naming another one.
+ */
+function buildLocalePage(pageName, files) {
+  const localesByOutput = new Map();
+  files.forEach(({ locale, outputName }) => {
+    const locales = localesByOutput.get(outputName) || [];
+    if (!locales.includes(locale)) locales.push(locale);
+    localesByOutput.set(outputName, locales);
+  });
+
+  files.forEach(({ locale, outputName, templateName, templatePath, data }) => {
+    const locales = localesByOutput.get(outputName);
+    renderPage({
+      pageName,
+      templateName,
+      templatePath,
+      data:
+        locales.length > 1
+          ? { ...data, localeRedirect: localeRedirect(locales, outputName, locale) }
+          : data,
+      outDir: path.join(OUT, pageName, locale),
+      outputName,
+    });
+
+    console.log(`✓ build ${pageName}/${locale}/${outputName}`);
+  });
+
+  localesByOutput.forEach((locales, outputName) => {
+    const redirect = localeRedirect(locales, outputName);
+    const shown = locales.includes(DEFAULT_LOCALE) ? DEFAULT_LOCALE : locales[0];
+    const shownFile = files.find(
+      (file) => file.locale === shown && file.outputName === outputName,
+    );
+
+    fs.writeFileSync(
+      path.join(OUT, pageName, outputName),
+      localeIndexTpl({
+        lang: shown,
+        title: shownFile.data.title,
+        noscriptHref: redirect.variants[shown],
+        localeRedirect: redirect,
+      }),
+    );
+
+    console.log(`✓ build ${pageName}/${outputName} (?lang: ${locales.join(', ')})`);
+  });
+}
+
 function buildPage(dir) {
   const pageName = path.basename(dir);
   const templates = fs.readdirSync(dir).filter((f) => f.endsWith('.hbs'));
 
   if (!templates.length) return;
 
-  const locales = ['en', 'vi'];
-  const localeData = locales
+  const localeData = LOCALES
     .map((locale) => ({ locale, data: loadLocaleData(pageName, locale) }))
     .filter(({ data }) => data);
 
@@ -191,14 +285,18 @@ function buildPage(dir) {
       throw new Error(`Missing locale template: pages/${pageName}/${pageName}.hbs`);
     }
 
+    // Every file of the page in every language, written by buildLocalePage
+    const files = [];
+
     localeData.forEach(({ locale, data }) => {
       // Output filename defaults to the page name (matching every other
       // template's own name -> its own .html), but a page can opt into a
       // different filename (e.g. "index") via an explicit "filename" field.
       const outputBaseName = data.filename || pageName;
 
-      renderPage({
-        pageName,
+      files.push({
+        locale,
+        outputName: `${outputBaseName}.html`,
         templateName: pageName,
         templatePath,
         data: {
@@ -206,11 +304,7 @@ function buildPage(dir) {
           language: data.language || locale,
           htmlLanguage: data.language || locale,
         },
-        outDir: path.join(OUT, pageName, locale),
-        outputName: `${outputBaseName}.html`,
       });
-
-      console.log(`✓ build ${pageName}/${locale}/${outputBaseName}.html`);
 
       if (Array.isArray(data.details) && data.details.length) {
         const detailIds = new Set();
@@ -245,8 +339,9 @@ function buildPage(dir) {
             );
           }
 
-          renderPage({
-            pageName,
+          files.push({
+            locale,
+            outputName: `${detailId}.html`,
             templateName: detailTemplateName,
             templatePath: detailTemplatePath,
             data: {
@@ -255,11 +350,7 @@ function buildPage(dir) {
               language: detail.language || data.language || locale,
               htmlLanguage: detail.language || data.language || locale,
             },
-            outDir: path.join(OUT, pageName, locale),
-            outputName: `${detailId}.html`,
           });
-
-          console.log(`✓ build ${pageName}/${locale}/${detailId}.html`);
         });
       }
 
@@ -268,8 +359,7 @@ function buildPage(dir) {
         .forEach((file) => {
           const localizedTemplateName = path.basename(file, '.hbs');
           const localizedDataPath = path.join(
-            ROOT,
-            'data',
+            DATA,
             pageName,
             `${localizedTemplateName}-${locale}.json`,
           );
@@ -280,8 +370,9 @@ function buildPage(dir) {
             fs.readFileSync(localizedDataPath, 'utf8'),
           );
 
-          renderPage({
-            pageName,
+          files.push({
+            locale,
+            outputName: `${localizedTemplateName}.html`,
             templateName: localizedTemplateName,
             templatePath: path.join(dir, file),
             data: {
@@ -289,16 +380,11 @@ function buildPage(dir) {
               language: localizedData.language || locale,
               htmlLanguage: localizedData.language || locale,
             },
-            outDir: path.join(OUT, pageName, locale),
-            outputName: `${localizedTemplateName}.html`,
           });
-
-          console.log(
-            `✓ build ${pageName}/${locale}/${localizedTemplateName}.html`,
-          );
         });
     });
 
+    buildLocalePage(pageName, files);
     return;
   }
 
@@ -388,6 +474,7 @@ function buildPage(dir) {
 function buildAll() {
   console.log('⚙️ rebuilding...');
   fs.readdirSync(PAGES).forEach((folder) => {
+    if (ONLY_PAGE && folder !== ONLY_PAGE) return;
     const dir = path.join(PAGES, folder);
     if (fs.statSync(dir).isDirectory()) {
       buildPage(dir);
@@ -397,6 +484,53 @@ function buildAll() {
 
 /* ========= WATCH + SERVER ========= */
 
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function renderDirListing(dirPath, reqPath) {
+  const base = reqPath.endsWith('/') ? reqPath : reqPath + '/';
+  const entries = fs
+    .readdirSync(dirPath, { withFileTypes: true })
+    .filter((e) => !e.name.startsWith('.'))
+    .filter((e) => e.isDirectory() || e.name.endsWith('.html'))
+    .sort((a, b) =>
+      a.isDirectory() === b.isDirectory()
+        ? a.name.localeCompare(b.name)
+        : a.isDirectory()
+          ? -1
+          : 1,
+    );
+
+  const parentPath = path.posix.dirname(base.slice(0, -1));
+  const parent =
+    base !== '/'
+      ? `<li><a href="${escapeHtml(parentPath === '/' ? '/' : parentPath + '/')}">../</a></li>`
+      : '';
+  const items = entries
+    .map((e) => {
+      // thư mục có dấu "/" cuối để không bị fallback sang <name>.html
+      const label = e.isDirectory() ? `${e.name}/` : e.name;
+      const href = encodeURI(base + label);
+      return `<li><a href="${escapeHtml(href)}">${escapeHtml(label)}</a></li>`;
+    })
+    .join('\n');
+
+  return `<!DOCTYPE html>
+<html><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>${escapeHtml(base)}</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;margin:0;padding:24px 16px;line-height:1.7}
+h1{font-size:1.25rem;margin:0 0 12px}ul{list-style:none;padding:0;margin:0}a{color:#0000ff;text-decoration:none}a:hover{text-decoration:underline}</style>
+</head><body><h1>${escapeHtml(base)}</h1><ul>
+${parent}
+${items}
+</ul></body></html>`;
+}
+
 function startDev() {
   buildAll();
 
@@ -404,7 +538,7 @@ function startDev() {
     path.join(ROOT, 'pages'),
     path.join(ROOT, 'components'),
     path.join(ROOT, 'layouts'),
-    path.join(ROOT, 'data'),
+    DATA,
   ];
   watchDirs.forEach((dir) => {
     fs.watch(dir, { recursive: true }, () => {
@@ -451,6 +585,23 @@ function startDev() {
       if (fs.existsSync(htmlPath)) {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         return res.end(fs.readFileSync(htmlPath));
+      }
+
+      // 3️⃣ directory: index.html hoặc danh sách trang (dev only)
+      const insideHost =
+        filePath === HOST || filePath.startsWith(HOST + path.sep);
+      if (
+        insideHost &&
+        fs.existsSync(filePath) &&
+        fs.statSync(filePath).isDirectory()
+      ) {
+        const indexPath = path.join(filePath, 'index.html');
+        if (fs.existsSync(indexPath)) {
+          res.writeHead(200, { 'Content-Type': 'text/html' });
+          return res.end(fs.readFileSync(indexPath));
+        }
+        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
+        return res.end(renderDirListing(filePath, reqPath));
       }
 
       res.writeHead(404);

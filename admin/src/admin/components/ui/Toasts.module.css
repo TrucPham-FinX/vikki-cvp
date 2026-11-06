@@ -1,0 +1,52 @@
+/*
+ * The stack sits over everything, top-right, and does not intercept clicks.
+ *
+ * `pointer-events: none` on the viewport with it restored on each toast: a
+ * stack pinned over the top-right corner otherwise swallows clicks on whatever
+ * is under it for as long as a message is up — including the dialog that just
+ * raised the message.
+ */
+.viewport {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2, 8px);
+  inset-block-start: var(--space-4, 16px);
+  inset-inline-end: var(--space-4, 16px);
+  max-width: min(420px, calc(100vw - 32px));
+  pointer-events: none;
+  position: fixed;
+  /* Above the record screen's dialogs, which sit at 1000. */
+  z-index: 2000;
+}
+
+.item {
+  animation: slide-in 180ms ease-out;
+  pointer-events: auto;
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Motion is the only thing conveying arrival here, so it degrades to a fade. */
+@media (prefers-reduced-motion: reduce) {
+  .item {
+    animation: fade-in 180ms ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

@@ -38,6 +38,12 @@ npm run build
 
 This will generate HTML files in the `../vikki-cvp` directory.
 
+`CVP_DATA_DIR`, `CVP_OUT_DIR` and `CVP_PAGES_DIR` point a build at another copy of `data/`, another output folder and another copy of `pages/`. `CVP_ONLY_PAGE=<folder>` builds that one page folder. The admin's round-trip checks and its preview use them (see `../admin/README.md`); left unset, the build is unchanged:
+
+```bash
+CVP_DATA_DIR=/tmp/data CVP_OUT_DIR=/tmp/out node build.js
+```
+
 ### Development Mode
 
 To start development mode with live reloading:

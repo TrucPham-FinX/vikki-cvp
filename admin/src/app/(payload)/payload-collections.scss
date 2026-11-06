@@ -1,0 +1,189 @@
+/*
+ * Payload's generated collection screens — `/admin/collections/*` list and
+ * edit views — and the widgets they draw. What is here is the chrome Payload
+ * renders on its own, brought into step with the rest of the portal.
+ *
+ * The shell (sidebar, header, theme bridge) is in `shell.scss`. A screen the
+ * portal draws itself never needs a rule here: it uses the design layer.
+ *
+ * Plain rules only — no SCSS variables, so nothing to `@use`. Every value is a
+ * custom property Payload or the shell declares at runtime.
+ */
+
+/*
+ * react-datepicker ships inside Payload with the family hard-coded
+ * (`Helvetica Neue,helvetica,arial,sans-serif`), which no token can reach. It is
+ * the calendar popover on every date field, so it was the most visible of the
+ * stray families. Layered CSS loses to this unlayered rule at equal specificity.
+ */
+.react-datepicker,
+.react-datepicker__current-month,
+.react-datepicker-time__header {
+  font-family: var(--gg-font);
+}
+
+/*
+ * The page header's title LINE and its optional status badge.
+ *
+ * `align-self` on the last child is the whole reason this is CSS and not a Stack: core-ui's
+ * Badge sets `align-self: flex-start` on ITSELF, which wins over the row's `align-items` and
+ * pins the pill to the top of the line. Measured 10px above centre before this rule.
+ *
+ * Scoped to this slot on purpose — a badge in a table row or a card may well want to hug the
+ * top, and this is not the place to decide that for it.
+ */
+.page-header__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+
+  > :last-child {
+    align-self: center;
+  }
+}
+
+/*
+ * "Toggle block" printing on top of a row's own name — seen on a role's Permission rows.
+ *
+ * Payload's collapsible header is an absolutely-positioned, full-size `<button>` laid over
+ * the row (`elements/Collapsible/index.scss`), and it carries nothing but a `<span>` with
+ * the accessible label; the row's real name is a SIBLING (`__header-wrap`) underneath it.
+ * That label is hidden by one declaration and one only: `color: transparent`.
+ *
+ * Which is a coin flip. The same button `@extend %btn-reset`, and that placeholder sets
+ * `color: currentColor` (`scss/resets.scss`) — two declarations of the same property, at the
+ * same specificity, on the same element. The winner is decided purely by which rule lands
+ * later in the compiled stylesheet, and dev and production bundle CSS differently. When
+ * `currentColor` wins, the glyphs paint straight over the row name.
+ *
+ * Colour was never the right tool anyway: transparent text still paints in forced-colors
+ * mode, still appears when selected, and returns with any stray `color` rule. Clipping it to
+ * a 1px box removes the glyphs geometrically — nothing can undo that — while screen readers
+ * still announce the button, so the accessible name survives.
+ *
+ * Applies to every collapsible in the admin: array rows, blocks, and grouped fields.
+ */
+.collapsible__toggle > span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/*
+ * The text inset in Payload's list-view search box.
+ *
+ * Payload renders the magnifier in `.search-bar` and the input in `.search-filter`, and
+ * the ONLY thing keeping the text clear of the icon is `.search-bar .search-filter input`
+ * — a descendant selector inside `@layer payload-default`, sharing that layer with
+ * `.search-filter__input { padding: 0 }`. Nothing but selector specificity separates
+ * them, so the moment a `.search-filter` renders outside its `.search-bar` wrapper the
+ * padding collapses to zero and the text runs to the left edge, under the icon.
+ *
+ * Declared unlayered, so it beats both and holds wherever the input appears. Reported
+ * from a collection list view and NOT reproducible here — measured at 40px across 31
+ * admin routes, 12 widths from 380 to 3440px, both themes, inside the relationship
+ * drawer, and sampled every frame for 6s after navigation to rule out a CSS-load race.
+ * Rather than keep hunting the trigger, this removes the fragile dependency: the inset no
+ * longer relies on an ancestor class being present.
+ *
+ * `--icon-width` is declared on `.search-bar`, so the fallback is what applies precisely
+ * in the case this guards against. Logical properties, not `padding-left`, so the RTL
+ * layout keeps the inset on the side the icon is actually on.
+ *
+ * The extra 4px is the gap itself: the icon column is exactly `--icon-width` wide, so
+ * matching it puts the glyph's box edge flush against the first character.
+ */
+.search-filter__input {
+  padding-inline-start: calc(var(--icon-width, 40px) + 4px);
+  padding-inline-end: var(--base);
+}
+
+/*
+ * Payload's page titles, aligned with our own.
+ *
+ * Every custom screen heads with `PageHeader` (admin/components/ui.tsx), which is
+ * `Text size="xl" weight="bold"` — 20px/700. Payload's built-in views ship their own
+ * `h1` at 25px/500, growing to 32px on a wide viewport. Both sit at the same gutter, so
+ * moving between "Mini app catalog" and "Announcements" changed the size AND the weight
+ * of the page title with nothing else changing — the two halves of the admin read as two
+ * products.
+ *
+ * Ours is the one to match: it is the majority of the screens and the one the mockup was
+ * drawn against. `--font-size-xl` rather than a literal, so this tracks the same scale
+ * the `PageHeader` does.
+ *
+ * `.list-header__title` is the collection list; `.doc-header__title` the edit form.
+ * Unlayered, so it wins over `@layer payload-default` without `!important`.
+ */
+.list-header__title,
+.doc-header__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+/*
+ * The generated list table, on the design layer's grid.
+ *
+ * Payload's own list view (Người dùng here) drew a row
+ * 44px tall (12px padding round 20px text, top-aligned) under a regular-weight
+ * grey header, beside portal tables that draw 38px rows under a semibold
+ * uppercase one. Same portal, two tables. These rules give the generated table
+ * the same type size, row height and header the design's `D.Table` spends, so
+ * a reader crossing from a portal list to a Payload list sees one table.
+ *
+ * Only what the task names — type, row height, badge colour. Payload's zebra
+ * ground, its 150px cell floor and its pill geometry are left as they are; each
+ * is a further decision, not a consequence of this one.
+ */
+.collection-list .table thead th {
+  padding: var(--d-space-5) var(--d-space-6);
+  font-size: var(--d-text-xs);
+  font-weight: var(--d-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--d-muted);
+  background: var(--d-surface-alt);
+  border-bottom: 1px solid var(--d-border);
+}
+
+.collection-list .table td {
+  padding: var(--d-space-5) var(--d-space-6);
+  font-size: var(--d-text-md);
+  vertical-align: middle;
+}
+
+/*
+ * Pills wear the design's tones. Payload colours them from its own elevation
+ * and error ramps, so a status that is amber everywhere else in the portal was
+ * grey here. Colour only: the pill keeps Payload's height and padding, because
+ * the column-toggle pills in the list controls are buttons and their target
+ * size is theirs to set.
+ */
+.collection-list .pill {
+  background: var(--d-neutral-wash);
+  color: var(--d-neutral-ink);
+  border: 1px solid var(--d-neutral-line);
+}
+
+.collection-list .pill--style-light-gray {
+  background: var(--d-neutral-wash);
+  color: var(--d-neutral-ink);
+}
+
+.collection-list .pill--style-error {
+  background: var(--d-bad-wash);
+  color: var(--d-bad-ink);
+  border-color: var(--d-bad-line);
+}
+
+.collection-list .pill--style-dark {
+  background: var(--d-neutral-solid);
+  color: var(--d-surface);
+  border-color: var(--d-neutral-solid);
+}

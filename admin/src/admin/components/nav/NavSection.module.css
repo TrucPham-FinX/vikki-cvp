@@ -1,0 +1,142 @@
+/* ---------------------------------------------------------------------------
+ * NavSection — one collapsible sidebar group.
+ *
+ * Shared visual language for every group in NavSections: same kicker,
+ * same 13px rows, same accent bar. The one deliberate difference is the
+ * indent below: child rows sit in from their group header instead of
+ * sharing its inline padding.
+ * ------------------------------------------------------------------------- */
+
+.section {
+  box-sizing: border-box;
+  margin-bottom: 2px;
+  /* Payload's rail gutter — moved off `.nav__scroll` so sticky chrome can pin. */
+  padding-inline: var(--nav-padding-inline-start, var(--base))
+    var(--nav-padding-inline-end, var(--base));
+  width: 100%;
+}
+
+/* ---- Kicker (group header) ---- */
+
+.kicker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: transparent;
+  border: medium;
+  cursor: pointer;
+  padding: 5px var(--space-2, 8px);
+  font-family: inherit;
+}
+
+.kickerLabel {
+  font-size: 10.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gg-nav-kicker, #6b7280);
+}
+
+.kicker:hover .kickerLabel {
+  color: var(--gg-nav-text, #4b5563);
+}
+
+.kickerToggle {
+  font-size: 11px;
+  color: color-mix(in srgb, var(--gg-nav-kicker, #6b7280) 70%, transparent);
+  font-family: var(--d-mono);
+}
+
+/* ---- Items ---- */
+
+.items {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  border: medium;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  /* Indented from the kicker: the extra inline-start padding is what makes a
+     row read as a CHILD of its group rather than a sibling of the header. */
+  padding: 7px var(--space-2, 8px) 7px calc(var(--space-2, 8px) + 10px);
+  text-align: left;
+  background: transparent;
+  color: var(--gg-nav-text, #1f2937);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition:
+    background-color 120ms ease,
+    color 120ms ease;
+}
+
+.navItem:hover {
+  background: var(--gg-nav-hover, #f9fafb);
+  color: var(--gg-nav-text-strong, #111827);
+}
+
+/*
+ * Active row: an indigo wash that fades out to the right, so the eye is pulled
+ * to the accent bar on the left edge rather than to a flat filled pill.
+ */
+.navItemActive,
+.navItemActive:hover {
+  background: linear-gradient(
+    90deg,
+    var(--gg-nav-active-from, rgb(79 70 229 / 18%)),
+    var(--gg-nav-active-to, rgb(79 70 229 / 4%))
+  );
+  /* Its own token, not the rail's strong text: on the light rail the wash is
+     dark enough that the row's label has to invert, while every other label
+     stays as it was. */
+  color: var(--gg-nav-active-text, var(--gg-nav-text-strong, #111827));
+}
+
+/* ---- Accent bar (left edge indicator) ---- */
+
+.accentBar {
+  width: 3px;
+  height: 16px;
+  flex: 0 0 auto;
+  display: block;
+  background: transparent;
+  border-radius: 2px;
+}
+
+.accentBarVisible {
+  background: linear-gradient(
+    180deg,
+    var(--gg-nav-accent-from, #6100ff),
+    var(--gg-nav-accent-to, #ffb907)
+  );
+}
+
+.navLabel {
+  flex: 1 1 0%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---- Inactive: still listed, not a destination ---- */
+
+.navItemInactive {
+  cursor: not-allowed;
+  opacity: 0.45;
+  color: var(--gg-nav-text-muted, #9ca3af);
+}
+
+.navItemInactive:hover {
+  background: transparent;
+  color: var(--gg-nav-text-muted, #9ca3af);
+}

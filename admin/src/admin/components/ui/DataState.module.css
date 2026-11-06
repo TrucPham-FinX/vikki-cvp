@@ -1,0 +1,93 @@
+/*
+ * Drawn from the design layer's own `--d-*` tokens.
+ *
+ * These states appear INSIDE a `D.Panel` on every screen that has moved to the
+ * design, so taking their greys from core-ui made the panel and the message it
+ * contained answer to two different palettes — and only one of them followed
+ * the theme switch the same way. The tokens live on `:global(:root)`, so this
+ * works on the screens still drawn the old way too.
+ */
+/*
+ * Self-contained on purpose: these two states are used by the CRUD engine, by
+ * the tenant and workflow views, and by anything else that fetches. Styling
+ * them against one screen's local variables is how a shared component ends up
+ * only looking right on the screen it was born in — so everything here comes
+ * from core-ui's tokens, with literal fallbacks.
+ */
+
+/*
+ * Centred both ways, which needs a height to be centred IN. Inside a panel
+ * that height is the panel's own body; standing in for a whole screen it is
+ * the window, less the bar above it — otherwise "centred" lands a third of the
+ * way down an empty page, which is what `.fill` is for.
+ */
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: min(50vh, 420px);
+  gap: var(--space-2, 8px);
+  padding: var(--space-8, 40px) var(--space-4, 16px);
+  text-align: center;
+}
+
+.fill {
+  min-height: calc(100vh - 160px);
+}
+
+.icon {
+  color: var(--d-faint);
+  margin-bottom: var(--space-1, 4px);
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--d-ink);
+}
+
+.reason {
+  font-size: 13px;
+  color: var(--d-muted);
+  max-width: 46ch;
+}
+
+/*
+ * The exception, kept for whoever gets asked about it — never the headline,
+ * but not the faintest ink either: the one moment this line matters is the
+ * moment someone has to read it out.
+ */
+.detail {
+  font-family: var(--d-mono);
+  font-size: 12px;
+  color: var(--d-muted);
+  max-width: 60ch;
+  word-break: break-word;
+}
+
+/* The host of an overlay needs a positioned box; this gives it one, plus the
+   height a first load has no content to supply. */
+.host {
+  position: relative;
+  min-height: 220px;
+}
+
+/*
+ * `inherit` on the radius so the veil stops exactly where its host does; a
+ * square overlay on a rounded panel is the tell that it was bolted on.
+ */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3, 12px);
+  border-radius: inherit;
+  background: color-mix(in srgb, var(--d-surface) 72%, transparent);
+  color: var(--d-muted);
+  font-size: 13px;
+}

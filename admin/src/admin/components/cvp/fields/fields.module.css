@@ -1,0 +1,415 @@
+/* The pickers and editors of Payload's edit form (LinkField, ImageField, PageField, FileField,
+   ChoiceField, HtmlField). Payload's own tokens: they sit in its form, not inside a design-layer
+   screen. */
+
+.field {
+  margin-bottom: var(--spacing-field, 24px);
+  min-width: 0;
+}
+
+/* What the data file will say: the path a picked option stands for */
+.saved {
+  color: var(--theme-elevation-500);
+  font-size: 12px;
+  margin-top: 4px;
+  overflow-wrap: anywhere;
+}
+
+.saved code {
+  background: var(--theme-elevation-50);
+  border-radius: var(--style-radius-s, 3px);
+  padding: 0 4px;
+}
+
+.note {
+  color: var(--theme-elevation-600);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.error {
+  color: var(--theme-error-500);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* ── image ─────────────────────────────────────────────────────────────── */
+
+.current {
+  align-items: center;
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m, 4px);
+  display: flex;
+  gap: 12px;
+  padding: 8px;
+}
+
+.thumb {
+  align-items: center;
+  background: var(--theme-elevation-50);
+  border-radius: var(--style-radius-s, 3px);
+  display: flex;
+  flex: none;
+  height: 72px;
+  justify-content: center;
+  overflow: hidden;
+  width: 96px;
+}
+
+.thumb img,
+.thumb video {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.thumbEmpty {
+  color: var(--theme-elevation-400);
+  font-size: 11px;
+  padding: 4px;
+  text-align: center;
+}
+
+.meta {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.name {
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.button {
+  background: var(--theme-elevation-0);
+  border: 1px solid var(--theme-elevation-200);
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  line-height: 1;
+  padding: 7px 10px;
+}
+
+.button:hover:not(:disabled) {
+  border-color: var(--theme-elevation-400);
+}
+
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.primary {
+  background: var(--theme-text);
+  border-color: var(--theme-text);
+  color: var(--theme-elevation-0);
+}
+
+.primary:hover:not(:disabled) {
+  border-color: var(--theme-text);
+  opacity: 0.85;
+}
+
+.danger {
+  color: var(--theme-error-500);
+}
+
+/* The page's images, opened under the field */
+.library {
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m, 4px);
+  margin-top: 8px;
+  padding: 10px;
+}
+
+.libraryBar {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.search {
+  background: var(--theme-input-bg, var(--theme-elevation-0));
+  border: 1px solid var(--theme-elevation-200);
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-text);
+  flex: 1;
+  font: inherit;
+  font-size: 13px;
+  min-width: 0;
+  padding: 6px 8px;
+}
+
+.grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(112px, 1fr));
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.tile {
+  background: var(--theme-elevation-0);
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-text);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font: inherit;
+  gap: 4px;
+  padding: 4px;
+  position: relative;
+  text-align: left;
+}
+
+.tile:hover,
+.tileOn {
+  border-color: var(--theme-success-500);
+}
+
+.tileOn {
+  box-shadow: 0 0 0 1px var(--theme-success-500);
+}
+
+.tileImage {
+  align-items: center;
+  background: var(--theme-elevation-50);
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.tileImage img,
+.tileImage video {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.tileName {
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge {
+  background: var(--theme-warning-100, var(--theme-elevation-100));
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-warning-800, var(--theme-text));
+  font-size: 10px;
+  left: 6px;
+  padding: 1px 4px;
+  position: absolute;
+  top: 6px;
+}
+
+/* The raw path, for a path the pickers do not offer (a web address) */
+.raw {
+  margin-top: 8px;
+}
+
+.raw summary {
+  color: var(--theme-elevation-500);
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.rawInput {
+  background: var(--theme-input-bg, var(--theme-elevation-0));
+  border: 1px solid var(--theme-elevation-200);
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-text);
+  font-family: var(--d-mono);
+  font-size: 12px;
+  margin-top: 6px;
+  padding: 6px 8px;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ── rich text (HtmlField) ─────────────────────────────────────────────── */
+
+.html {
+  background: var(--theme-input-bg, var(--theme-elevation-0));
+  border: 1px solid var(--theme-elevation-150);
+  border-radius: var(--style-radius-m, 4px);
+}
+
+.html:focus-within {
+  border-color: var(--theme-elevation-400);
+}
+
+.htmlBar {
+  align-items: center;
+  border-bottom: 1px solid var(--theme-elevation-100);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 4px;
+}
+
+.htmlSpacer {
+  flex: 1;
+}
+
+.tool {
+  align-items: center;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: var(--style-radius-s, 3px);
+  color: var(--theme-text);
+  cursor: pointer;
+  display: inline-flex;
+  font: inherit;
+  font-size: 12px;
+  height: 28px;
+  justify-content: center;
+  line-height: 1;
+  min-width: 28px;
+  padding: 0 7px;
+}
+
+.tool:hover:not(:disabled) {
+  background: var(--theme-elevation-50);
+  border-color: var(--theme-elevation-150);
+}
+
+.tool:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.toolOn {
+  background: var(--theme-elevation-100);
+  border-color: var(--theme-elevation-200);
+}
+
+.tool_bold {
+  font-weight: 700;
+}
+
+.tool_italic {
+  font-style: italic;
+}
+
+.tool_underline {
+  text-decoration: underline;
+}
+
+.linkBar {
+  align-items: center;
+  border-bottom: 1px solid var(--theme-elevation-100);
+  display: flex;
+  gap: 6px;
+  padding: 6px;
+}
+
+.linkBar .rawInput {
+  flex: 1;
+  margin-top: 0;
+}
+
+/* The content as the pages show it: paragraphs, lists, links */
+.htmlEditor {
+  color: var(--theme-text);
+  font-size: 14px;
+  line-height: 1.5;
+  max-height: 420px;
+  min-height: 96px;
+  outline: none;
+  overflow-y: auto;
+  overflow-wrap: anywhere;
+  padding: 10px 12px;
+}
+
+.htmlEditor:empty::before {
+  color: var(--theme-elevation-400);
+  content: attr(data-placeholder);
+}
+
+.htmlEditor p {
+  margin: 0 0 8px;
+}
+
+.htmlEditor ul,
+.htmlEditor ol {
+  margin: 0 0 8px;
+  padding-left: 22px;
+}
+
+.htmlEditor ul {
+  list-style: disc;
+}
+
+.htmlEditor ol {
+  list-style: decimal;
+}
+
+.htmlEditor a {
+  color: var(--theme-success-600, var(--theme-text));
+  text-decoration: underline;
+}
+
+.htmlEditor img {
+  max-width: 100%;
+}
+
+.htmlSource {
+  background: none;
+  border: 0;
+  color: var(--theme-text);
+  display: block;
+  font-family: var(--d-mono);
+  font-size: 12px;
+  line-height: 1.5;
+  min-height: 120px;
+  outline: none;
+  padding: 10px 12px;
+  resize: vertical;
+  width: 100%;
+}
+
+/* ── the editors inside the structured editor (JsonFormField) ─────────────── */
+
+.picker,
+.linkPicker {
+  min-width: 0;
+}
+
+/* A list row or a table cell's text: one line until it is written in, the toolbar while it is */
+.htmlCompact .htmlBar {
+  display: none;
+}
+
+.htmlCompact:focus-within .htmlBar {
+  display: flex;
+}
+
+.htmlCompact .htmlEditor {
+  min-height: 0;
+  padding: 6px 10px;
+}
+
+.htmlCompact .htmlEditor:empty::before {
+  content: none;
+}

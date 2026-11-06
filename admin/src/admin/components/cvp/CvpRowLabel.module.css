@@ -1,0 +1,26 @@
+/* A block or array row header in Payload's edit form. Payload's own tokens: this sits in its
+   form, not inside a design-layer screen. */
+
+.label {
+  align-items: baseline;
+  display: inline-flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.number {
+  color: var(--theme-elevation-500);
+  font-variant-numeric: tabular-nums;
+}
+
+.kind {
+  flex: none;
+  font-weight: 600;
+}
+
+.summary {
+  color: var(--theme-elevation-700);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

@@ -2,6 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function () {
+        var variants = {"en":"../en/full-choice.html","vi":"../vi/full-choice.html"};
+        var current = "en";
+        var defaultLocale = "vi";
+        var fallbackLocale = "en";
+        var has = function (code) {
+          return !!code && Object.prototype.hasOwnProperty.call(variants, code);
+        };
+        var asked = null;
+        try {
+          asked = new URLSearchParams(window.location.search).get('lang');
+        } catch (e) {}
+        var text = asked ? String(asked).trim().toLowerCase() : '';
+        var lang = text ? text.split(/[-_]/)[0] || text : '';
+        var target = '';
+        if (lang) {
+          target = has(lang) ? lang : has(fallbackLocale) ? fallbackLocale : '';
+        } else if (current) {
+          return;
+        }
+        if (!target) {
+          target = has(defaultLocale) ? defaultLocale : has(fallbackLocale) ? fallbackLocale : Object.keys(variants)[0];
+        }
+        if (!target || target === current) return;
+        window.location.replace(variants[target] + window.location.search + window.location.hash);
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Full Choice plan details</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
